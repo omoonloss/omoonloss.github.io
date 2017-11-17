@@ -2,7 +2,7 @@
 
 <div id="app mdui-container">
   <!-- Weather card -->
-  <div class="weather_card mdui-color-blue" v-bind:class="{weather_card_active: hasWeather}">
+ <!--  <div class="weather_card mdui-color-blue" v-bind:class="{weather_card_active: hasWeather}">
 
     <div class="weather_console">
       <div class="city_edit" mdui-dialog="{target: '#cities'}" v-on:click="toggleWeather">
@@ -38,9 +38,9 @@
         <p class="weather_list-temp"></p>
       </li>
     </ul>
-  </div>
+  </div> -->
 
-  <div class="mdui-dialog" id="cities">
+<!--   <div class="mdui-dialog" id="cities">
     <div class="mdui-dialog-title">选择城市</div>
     <div class="mdui-dialog-content">
       <select class="province"></select>
@@ -52,18 +52,18 @@
       <button class="mdui-btn mdui-ripple" mdui-dialog-cancel>取消</button>
       <button class="setCity mdui-btn mdui-ripple" mdui-dialog-confirm>确定</button>
     </div>
-  </div>
+  </div> -->
 
 	<!-- Header -->
 	<div class="header mdui-color-blue mdui-col-xs-12 mdui-toolbar">
-		<div>oSogaPage</div>
+		<div>oSoga</div>
 		<div class="mdui-toolbar-spacer"></div>
-		<div class="weather_entry" v-on:click="toggleWeather">
+		<!-- <div class="weather_entry" v-on:click="toggleWeather">
 			<p class="now_city"></p>
 			<span class="now_temp"></span>
-		</div>
-    <i class="mdui-icon material-icons weather_more_icon" v-bind:class="{iconHidden: hasWeather}">keyboard_arrow_down</i>
-    <i class="mdui-icon material-icons weather_more_icon" v-bind:class="{iconHidden: !hasWeather}">keyboard_arrow_up</i>
+		</div> -->
+<!--     <i class="mdui-icon material-icons weather_more_icon" v-bind:class="{iconHidden: hasWeather}">keyboard_arrow_down</i>
+    <i class="mdui-icon material-icons weather_more_icon" v-bind:class="{iconHidden: !hasWeather}">keyboard_arrow_up</i> -->
 	</div>
 
 	<!-- Search bar -->
@@ -90,6 +90,7 @@
       <img src="./assets/img/search/Bing-icon.svg" v-bind:class="{iconHidden: this.searchEngine!='bing'}" width="20px" height="36px"/>
       <img src="./assets/img/search/Baidu-icon.svg" v-bind:class="{iconHidden: this.searchEngine!='baidu'}" width="20px" height="36px"/>
       <img src="./assets/img/search/Duckduckgo-icon.svg" v-bind:class="{iconHidden: this.searchEngine!='duckduckgo'}" width="20px" height="36px"/>
+      <img src="./assets/img/search/Yandex-icon.svg" v-bind:class="{iconHidden: this.searchEngine!='yandex'}" width="20px" height="36px"/>
       
     </div>
     <ul class="mdui-menu" id="search_engine">
@@ -108,7 +109,9 @@
       <li class="mdui-menu-item" v-on:click="useDuckduckgo">
         <a href="javascript:;" class="mdui-ripple">Duckduckgo</a>
       </li>
-      
+      <li class="mdui-menu-item" v-on:click="useYandex">
+        <a href="javascript:;" class="mdui-ripple">Yandex</a>
+      </li>
     </ul>
 
     <!-- Google -->
@@ -196,6 +199,24 @@
         class="mdui-textfield-input searchbar_input"
         type="text"
         name="q"
+        autocomplete="off"
+        placeholder="Search"
+      >
+    </form>
+
+    <!-- Yandex-->
+    <form
+      action="https://www.yandex.com/search"
+      v-bind:class="{searchbar_form_active: isSearch}"
+      v-if="searchEngine == 'yandex'"
+      class="searchbar_form"
+    >
+      <input
+        v-on:click="toSearch"
+        v-bind:class="{searchbar_input_active: isSearch}"
+        class="mdui-textfield-input searchbar_input"
+        type="text"
+        name="text"
         autocomplete="off"
         placeholder="Search"
       >
@@ -292,6 +313,56 @@
 
 <!--     </div> -->
 
+
+    <!-- 咨讯 -->
+    <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-6 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
+      <!-- Card title -->
+      <div class="mdui-card-header card-header">
+        咨讯
+      </div>
+
+      <div class="mdui-divider"></div>
+
+      <!-- Sites list -->
+      <ul class="mdui-list">
+        <li v-for="(info_site, index) in info_sites" class="site">
+          <a v-bind:href="info_site.url" target="_blank">
+            <div>
+              <img v-bind:src="info_site.icon" width="55px" height="55px" />
+            </div>
+            <div class="site-title">{{ info_site.title }}</div>
+          </a>
+        </li>
+       
+      </ul>
+
+    </div>
+
+
+    <!-- 社区 -->
+    <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-6 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
+      <!-- Card title -->
+      <div class="mdui-card-header card-header">
+        社区
+      </div>
+
+      <div class="mdui-divider"></div>
+
+      <!-- Sites list -->
+      <ul class="mdui-list">
+        <li v-for="(community_site, index) in community_sites" class="site">
+          <a v-bind:href="community_site.url" target="_blank">
+            <div>
+              <img v-bind:src="community_site.icon" width="55px" height="55px" />
+            </div>
+            <div class="site-title">{{ community_site.title }}</div>
+          </a>
+        </li>
+       
+      </ul>
+
+    </div>
+
     <!-- Coding -->
     <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-6 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
       <!-- Card title -->
@@ -341,6 +412,127 @@
 
     </div>
 
+    <!-- 翻译 -->
+    <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-6 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
+      <!-- Card title -->
+      <div class="mdui-card-header card-header">
+        翻译
+      </div>
+
+      <div class="mdui-divider"></div>
+
+      <!-- Sites list -->
+      <ul class="mdui-list">
+        <li v-for="(translate_site, index) in translate_sites" class="site">
+          <a v-bind:href="translate_site.url" target="_blank">
+            <div>
+              <img v-bind:src="translate_site.icon" width="55px" height="55px" />
+            </div>
+            <div class="site-title">{{ translate_site.title }}</div>
+          </a>
+        </li>
+       
+      </ul>
+
+    </div>
+
+
+    <!-- Book -->
+    <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-6 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
+      <!-- Card title -->
+      <div class="mdui-card-header card-header">
+        Book
+      </div>
+
+      <div class="mdui-divider"></div>
+
+      <!-- Sites list -->
+      <ul class="mdui-list">
+        <li v-for="(book_site, index) in book_sites" class="site">
+          <a v-bind:href="book_site.url" target="_blank">
+            <div>
+              <img v-bind:src="book_site.icon" width="55px" height="55px" />
+            </div>
+            <div class="site-title">{{ book_site.title }}</div>
+          </a>
+        </li>
+       
+      </ul>
+
+    </div>
+
+
+    <!-- 工具 -->
+    <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-6 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
+      <!-- Card title -->
+      <div class="mdui-card-header card-header">
+        工具
+      </div>
+
+      <div class="mdui-divider"></div>
+
+      <!-- Sites list -->
+      <ul class="mdui-list">
+        <li v-for="(tool_site, index) in tool_sites" class="site">
+          <a v-bind:href="tool_site.url" target="_blank">
+            <div>
+              <img v-bind:src="tool_site.icon" width="55px" height="55px" />
+            </div>
+            <div class="site-title">{{ tool_site.title }}</div>
+          </a>
+        </li>
+       
+      </ul>
+
+    </div>
+
+    <!-- Photos -->
+    <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-6 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
+      <!-- Card title -->
+      <div class="mdui-card-header card-header">
+        Photos
+      </div>
+
+      <div class="mdui-divider"></div>
+
+      <!-- Sites list -->
+      <ul class="mdui-list">
+        <li v-for="(photos_site, index) in photos_sites" class="site">
+          <a v-bind:href="photos_site.url" target="_blank">
+            <div>
+              <img v-bind:src="photos_site.icon" width="55px" height="55px" />
+            </div>
+            <div class="site-title">{{ photos_site.title }}</div>
+          </a>
+        </li>
+       
+      </ul>
+
+    </div>
+
+    <!-- 博客 -->
+    <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-6 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
+      <!-- Card title -->
+      <div class="mdui-card-header card-header">
+        博客
+      </div>
+
+      <div class="mdui-divider"></div>
+
+      <!-- Sites list -->
+      <ul class="mdui-list">
+        <li v-for="(blog_site, index) in blog_sites" class="site">
+          <a v-bind:href="blog_site.url" target="_blank">
+            <div>
+              <img v-bind:src="blog_site.icon" width="55px" height="55px" />
+            </div>
+            <div class="site-title">{{ blog_site.title }}</div>
+          </a>
+        </li>
+       
+      </ul>
+
+    </div>
 
     <!-- MDUI card -->
   	<div class="mdui-card mdui-col-xs-12 mdui-col-md-5 mdui-col-offset-md-1 mdui-col-lg-3 mdui-shadow-0 todos-card">
@@ -386,11 +578,11 @@
   <div class="footer mdui-card mdui-col-xs-12">
       <ul class="social-buttons">
         <!-- <li><a href="https://github.com/viosey/O" target="_blank"><img src="./assets/img/footer/github.svg" alt="" width="24px" height="24px;"></a></li> -->
-        <li><a href="https://sogaso.ga" target="_blank"><img src="./assets/img/footer/about.svg" alt="" width="24px" height="24px;"></i></a></li>
+        <li><a href="https://github.com/ZetaoYang/oSoga" target="_blank"><img src="./assets/img/footer/about.svg" alt="" width="24px" height="24px;"></i></a></li>
       </ul>
 
       <p class="copyright">
-        © 2017~2018 <a href="https://sogaso.ga" target="_blank">SogaPage</a>
+        © 2017~2018 &nbsp;<a href="https://sogaso.ga" target="_blank">旧版</a>
       </p>
   </div>
 
@@ -399,32 +591,32 @@
 
 <script>
 import Store from './store'
-import './assets/js/jquery.cxselect.min.js'
+//import './assets/js/jquery.cxselect.min.js'
 
 // jQuery
-$(document).ready(function() {
-  $(".setCity").click(function(){
-    Store.setCookie("cityid", $(".area").val(), 365);
-  });
-  // City select
-  $.cxSelect.defaults.url = "https://o.sogaso.ga/static/cityid.min.json";
-  $("#cities").cxSelect({
-    selects : ["province", "city", "area"],
-    nodata : "none",
-    jsonName : "name",
-    jsonValue : "code",
-    jsonSub : "sublist"
-  });
+// $(document).ready(function() {
+//   $(".setCity").click(function(){
+//     Store.setCookie("cityid", $(".area").val(), 365);
+//   });
+//   // City select
+//   $.cxSelect.defaults.url = "https://o.sogaso.ga/static/cityid.min.json";
+//   $("#cities").cxSelect({
+//     selects : ["province", "city", "area"],
+//     nodata : "none",
+//     jsonName : "name",
+//     jsonValue : "code",
+//     jsonSub : "sublist"
+//   });
 
   // Time
-  function getDate(addDayCount) {
-      var dd = new Date();
-      dd.setDate(dd.getDate()+addDayCount);// 获取 AddDayCount 天后的日期
-      var y = dd.getFullYear();
-      var m = dd.getMonth()+1;// 获取当前月份的日期
-      var d = dd.getDate();
-      return y + '/' + (m<10 ? "0" + m : m)+ '/' + (d<10 ? "0"+ d : d);
-  }
+  // function getDate(addDayCount) {
+  //     var dd = new Date();
+  //     dd.setDate(dd.getDate()+addDayCount);// 获取 AddDayCount 天后的日期
+  //     var y = dd.getFullYear();
+  //     var m = dd.getMonth()+1;// 获取当前月份的日期
+  //     var d = dd.getDate();
+  //     return y + '/' + (m<10 ? "0" + m : m)+ '/' + (d<10 ? "0"+ d : d);
+  // }
 
   // 一言
   // var aword=$.ajax({url:"https://api.lwl12.com/hitokoto/main/get", async:false});
@@ -432,75 +624,71 @@ $(document).ready(function() {
 
   // Weather
   // var cityid = 101020100;
-  var cityid = Store.getCookie('cityid');
-  var weather=$.ajax({url:"https://weather.yk.tn/myapp/weather/data/index.php?ityID=" + cityid, async:false});
+//   var cityid = Store.getCookie('cityid');
+//   var weather=$.ajax({url:"https://weather.yk.tn/myapp/weather/data/index.php?ityID=" + cityid, async:false});
 
-  var weatherJson = JSON.parse(weather.responseText);
+//   var weatherJson = JSON.parse(weather.responseText);
 
-  var weather = new Array();
-  var temp = new Array();
-  weather[0] = weatherJson.weatherinfo.weather1;
-  weather[1] = weatherJson.weatherinfo.weather2;
-  weather[2] = weatherJson.weatherinfo.weather3;
-  weather[3] = weatherJson.weatherinfo.weather4;
-  weather[4] = weatherJson.weatherinfo.weather5;
-  temp[0] = weatherJson.weatherinfo.temp1;
-  temp[1] = weatherJson.weatherinfo.temp2;
-  temp[2] = weatherJson.weatherinfo.temp3;
-  temp[3] = weatherJson.weatherinfo.temp4;
-  temp[4] = weatherJson.weatherinfo.temp5;
+//   var weather = new Array();
+//   var temp = new Array();
+//   weather[0] = weatherJson.weatherinfo.weather1;
+//   weather[1] = weatherJson.weatherinfo.weather2;
+//   weather[2] = weatherJson.weatherinfo.weather3;
+//   weather[3] = weatherJson.weatherinfo.weather4;
+//   weather[4] = weatherJson.weatherinfo.weather5;
+//   temp[0] = weatherJson.weatherinfo.temp1;
+//   temp[1] = weatherJson.weatherinfo.temp2;
+//   temp[2] = weatherJson.weatherinfo.temp3;
+//   temp[3] = weatherJson.weatherinfo.temp4;
+//   temp[4] = weatherJson.weatherinfo.temp5;
 
-  $(".now_city_edit").html(weatherJson.weatherinfo.city);
-  $(".now_city").html(weatherJson.weatherinfo.city);
-  $(".now_temp").html(weatherJson.weatherinfo.temp1);
+//   $(".now_city_edit").html(weatherJson.weatherinfo.city);
+//   $(".now_city").html(weatherJson.weatherinfo.city);
+//   $(".now_temp").html(weatherJson.weatherinfo.temp1);
 
-  for (var i=0; i<5; i++){
-      $(".weather_list-date").eq(i).html(getDate(i));
-      $(".weather_list-weather").eq(i).html(weather[i]);
-      $(".weather_list-temp").eq(i).html(temp[i]);
-  }
+//   for (var i=0; i<5; i++){
+//       $(".weather_list-date").eq(i).html(getDate(i));
+//       $(".weather_list-weather").eq(i).html(weather[i]);
+//       $(".weather_list-temp").eq(i).html(temp[i]);
+//   }
 
-  $( ".search-button" ).click(function() {
-    $( ".searchbar_form" ).submit();
-  });
-})
+//   $( ".search-button" ).click(function() {
+//     $( ".searchbar_form" ).submit();
+//   });
+// })
 
 // init first visit
 if (!Store.getCookie('visited')) {
   if(Store.fetch_site().length == 0){
     Store.save_site([
       {
-  			"url": "https://github.com/",
-  			"title": "Github",
+  			"url": "https://github.com",
+  			"title": "GitHub",
   			"icon": require('./assets/img/icons/github.svg')
   		}, {
-  			"url": "https://store.steampowered.com",
-  			"title": "Steam",
-  			"icon": require('./assets/img/icons/steam.svg')
+        "url": "https://about.gitlab.com",
+        "title": "GitLab",
+        "icon": require('./assets/img/icons/gitlab.svg')
+      }, {
+        "url": "https://bitbucket.org",
+        "title": "Bitbucket",
+        "icon": require('./assets/img/icons/bitbucket.svg')
+      }, {
+        "url": "https://coding.net",
+        "title": "Coding",
+        "icon": require('./assets/img/icons/coding.svg')
+      }, {
+  			"url": "https://codepen.io",
+  			"title": "CodePen",
+  			"icon": require('./assets/img/icons/codepen.svg')
   		}, {
-  			"url": "https://www.wikipedia.org/",
+  			"url": "https://www.wikipedia.org",
   			"title": "Wikipedia",
   			"icon": require('./assets/img/icons/wikipedia.svg')
   		}, {
-  			"url": "https://www.reddit.com/",
-  			"title": "Reddit",
-  			"icon": require('./assets/img/icons/reddit.svg')
-  		}, {
-  			"url": "https://www.flickr.com/",
-  			"title": "Flickr",
-  			"icon": require('./assets/img/icons/flickr.svg')
-  		}, {
-  			"url": "https://500px.com/",
-  			"title": "500px",
-  			"icon": require('./assets/img/icons/500.svg')
-  		}, {
-  			"url": "http://digg.com/",
-  			"title": "Digg",
-  			"icon": require('./assets/img/icons/digg.svg')
-  		}, {
-  			"url": "https://tumblr.com/",
-  			"title": "Tumblr",
-  			"icon": require('./assets/img/icons/tumblr.svg')
+  			"url": "https://medium.com",
+  			"title": "Medium",
+  			"icon": require('./assets/img/icons/medium.svg')
   		}, {
   			"url": "https://facebook.com/",
   			"title": "Facebook",
@@ -510,19 +698,35 @@ if (!Store.getCookie('visited')) {
   			"title": "Twitter",
   			"icon": require('./assets/img/icons/twitter.svg')
   		}, {
-  			"url": "https://zhihu.com/",
+  			"url": "https://zhihu.com",
   			"title": "知乎",
   			"icon": require('./assets/img/icons/zhihu.svg')
   		}, {
-  			"url": "https://www.dropbox.com/",
+        "url": "http://www.jianshu.com",
+        "title": "简书",
+        "icon": require('./assets/img/icons/jianshu.svg')
+      }, {
+        "url": "https://wx.qq.com",
+        "title": "微信网页版",
+        "icon": require('./assets/img/icons/weixin.svg')
+      }, {
+        "url": "https://qzone.qq.com",
+        "title": "QZone",
+        "icon": require('./assets/img/icons/qzone.svg')
+      }, {
+        "url": "http://weibo.com/",
+        "title": "微博",
+        "icon": require('./assets/img/icons/weibo.svg')
+      }, {
+  			"url": "https://www.dropbox.com",
   			"title": "Dropbox",
   			"icon": require('./assets/img/icons/dropbox.svg')
   		}, {
-  			"url": "https://plus.google.com/",
+  			"url": "https://plus.google.com",
   			"title": "Google+",
   			"icon": require('./assets/img/icons/google_plus.svg')
   		}, {
-  			"url": "https://quora.com/",
+  			"url": "https://quora.com",
   			"title": "Quora",
   			"icon": require('./assets/img/icons/quora.svg')
   		}, {
@@ -542,18 +746,35 @@ if (!Store.getCookie('visited')) {
   			"title": "淘宝",
   			"icon": require('./assets/img/icons/taobao.svg')
   		}, {
-  			"url": "http://weibo.com/",
-  			"title": "微博",
-  			"icon": require('./assets/img/icons/weibo.svg')
-  		}, {
-  			"url": "http://coolapk.com/",
+  			"url": "http://coolapk.com",
   			"title": "酷安",
   			"icon": require('./assets/img/icons/coolapk.svg')
   		}, {
-  			"url": "http://douban.com/",
+  			"url": "http://douban.com",
   			"title": "豆瓣",
   			"icon": require('./assets/img/icons/douban.svg')
-  		}
+  		}, {
+        "url": "http://www.latexstudio.net",
+        "title": "LaTeX工作室",
+        "icon": require('./assets/img/icons/latexstudio.svg')
+      }, {
+        "url": "http://weixin.sogou.com",
+        "title": "搜狗微信",
+        "icon": require('./assets/img/icons/weixin-sogou.svg')
+      }, {
+        "url": "https://www.ted.com",
+        "title": "TED",
+        "icon": require('./assets/img/icons/ted.svg')
+      }, {
+        "url": "https://libraries.io",
+        "title": "Libraries.io",
+        "icon": require('./assets/img/icons/libraries-io.svg')
+      }, {
+        "url": "http://theme.npm.edu.tw/opendata",
+        "title": "故宮Open Data專區",
+        "icon": require('./assets/img/icons/npm-opendata.svg')
+      },
+
   	])
   }
 
@@ -570,11 +791,8 @@ if (!Store.getCookie('visited')) {
 
   if(Store.fetch_todo().length == 0){
     Store.save_todo([
-  		{
-  			"label": "1. Search",
-  			"isFinished": false
-  		}, {
-        "label": "2. Add your own TODO",
+      {
+        "label": "1. Add your own TODO ITEMS.",
   			"isFinished": false
   		}
   	])
@@ -587,24 +805,135 @@ if (!Store.getCookie('visited')) {
   }
 }
 
+//资讯
+var info_items = [
+      {
+        "url": "https://news.ycombinator.com",
+        "title": "Hacker News",
+        "icon": require('./assets/img/icons/hacker-news.svg')
+      }, {
+        "url": "http://www.echojs.com",
+        "title": "Echo JS",
+        "icon": require('./assets/img/icons/echo-js.svg')
+      },{
+        "url": "https://juejin.im",
+        "title": "掘金",
+        "icon": require('./assets/img/icons/juejin.svg')
+      },{
+        "url": "http://gank.io",
+        "title": "干货集中营",
+        "icon": require('./assets/img/icons/gank.svg')
+      },{
+        "url": "https://weekly.75team.com",
+        "title": "奇舞周刊",
+        "icon": require('./assets/img/icons/75team.svg')
+      },{
+        "url": "https://wanqu.co",
+        "title": "湾区日报",
+        "icon": require('./assets/img/icons/wanqu.svg')
+      },{
+        "url": "https://coolshell.cn",
+        "title": "酷壳",
+        "icon": require('./assets/img/icons/coolshell.svg')
+      },{
+        "url": "https://itsfoss.com",
+        "title": "It's FOSS",
+        "icon": require('./assets/img/icons/itsfoss.svg')
+      },{
+        "url": "http://digg.com",
+        "title": "Digg",
+        "icon": require('./assets/img/icons/digg.svg')
+      },{
+        "url": "https://www.usatoday.com",
+        "title": "USA TODAY",
+        "icon": require('./assets/img/icons/usatoday.svg')
+      },{
+        "url": "http://fortune.com",
+        "title": "Fortune",
+        "icon": require('./assets/img/icons/fortune.svg')
+      },{
+        "url": "http://www.foxnews.com",
+        "title": "Foxnews",
+        "icon": require('./assets/img/icons/foxnews.svg')
+      }
+
+    ];
+
+//社区
+var community_items = [
+      {
+        "url": "https://v2ex.com",
+        "title": "V2EX",
+        "icon": require('./assets/img/icons/v2ex.svg')
+      },{
+        "url": "https://segmentfault.com",
+        "title": "SegmentFault",
+        "icon": require('./assets/img/icons/segmentfault.svg')
+      },{
+        "url": "https://hacpai.com",
+        "title": "黑客派",
+        "icon": require('./assets/img/icons/hacpai.svg')
+      },{
+        "url": "http://www.jcodecraeer.com",
+        "title": "泡在网上的日子",
+        "icon": require('./assets/img/icons/jcodecraeer.svg')
+      },{
+        "url": "https://www.reddit.com/",
+        "title": "Reddit",
+        "icon": require('./assets/img/icons/reddit.svg')
+      }
+]
+
 //Coding
 var coding_items = [
       {
         "url": "http://www.spoj.com",
         "title": "SPOJ",
-        "icon": require('./assets/img/icons/spoj.png')
+        "icon": require('./assets/img/icons/spoj.svg')
       }, {
         "url": "http://www.hihocoder.com",
         "title": "hihoCoder",
-        "icon": require('./assets/img/icons/hiho.png')
+        "icon": require('./assets/img/icons/hiho.svg')
       },{
         "url": "https://leetcode.com",
         "title": "LeetCode",
-        "icon": require('./assets/img/icons/leetcode.png')
+        "icon": require('./assets/img/icons/leetcode.svg')
       },{
         "url": "http://www.lintcode.com/zh-cn",
         "title": "LintCode",
-        "icon": require('./assets/img/icons/lintcode.png')
+        "icon": require('./assets/img/icons/lintcode.svg')
+      },{
+        "url": "https://www.nowcoder.com",
+        "title": "牛客网",
+        "icon": require('./assets/img/icons/nowcoder.svg')
+      },{
+        "url": "http://cssreference.io",
+        "title": "CSS Reference",
+        "icon": require('./assets/img/icons/css-reference.svg')
+      },{
+        "url": "http://htmlreference.io",
+        "title": "HTML Reference",
+        "icon": require('./assets/img/icons/html-reference.svg')
+      },{
+        "url": "https://www.shiyanlou.com",
+        "title": "实验楼",
+        "icon": require('./assets/img/icons/shiyanlou.svg')
+      },{
+        "url": "http://www.imooc.com",
+        "title": "慕课网",
+        "icon": require('./assets/img/icons/imooc.svg')
+      },{
+        "url": "https://uiiiuiii.com",
+        "title": "优优教程网",
+        "icon": require('./assets/img/icons/uiiiuiii.svg')
+      },{
+        "url": "https://www.tutorialspoint.com",
+        "title": "TutorialSpoint",
+        "icon": require('./assets/img/icons/tutorialspoint.svg')
+      },{
+        "url": "https://www.w3schools.com",
+        "title": "W3Schools",
+        "icon": require('./assets/img/icons/w3schools.svg')
       }
 
     ];
@@ -620,13 +949,230 @@ var design_items = [
         "title": "Dribbble",
         "icon": require('./assets/img/icons/dribbble.svg')
      },{
-        "url": "https://www.pinterest.com/",
+        "url": "https://www.pinterest.com",
         "title": "Pinterest",
         "icon": require('./assets/img/icons/pinterest.svg')
+     },{
+        "url": "https://www.artstation.com",
+        "title": "Artstation",
+        "icon": require('./assets/img/icons/artstation.svg')
+     },{
+        "url": "http://www.ui.cn",
+        "title": "UI中国",
+        "icon": require('./assets/img/icons/ui-cn.svg')
+     },{
+        "url": "http://www.uisdc.com",
+        "title": "优设",
+        "icon": require('./assets/img/icons/uisdc.svg')
+     },{
+        "url": "https://www.deviantart.com",
+        "title": "Deviantart",
+        "icon": require('./assets/img/icons/deviantart.svg')
+     },{
+        "url": "https://webkul.github.io/coolhue",
+        "title": "coolHue",
+        "icon": require('./assets/img/icons/coolhue.svg')
+     },{
+        "url": "http://tgideas.qq.com",
+        "title": "TGideas",
+        "icon": require('./assets/img/icons/tgideas.svg')
+     }
+    ];
+
+//翻译
+var translate_items = [
+     {
+        "url": "http://www.zcfy.cc",
+        "title": "众成翻译",
+        "icon": require('./assets/img/icons/zcfy.svg')
+     },{
+        "url": "https://github.com/xitu/gold-miner",
+        "title": "掘金翻译",
+        "icon": require('./assets/img/icons/juejin.svg')
+     },{
+        "url": "http://g.yeeyan.org",
+        "title": "译言古登堡计划",
+        "icon": require('./assets/img/icons/yeeyan.svg')
      }
 
     ];
 
+//Book
+var book_items = [
+     {
+        "url": "http://www.epubit.com.cn",
+        "title": "异步社区",
+        "icon": require('./assets/img/icons/epubit.svg')
+     },{
+        "url": "https://www.oreilly.com",
+        "title": "O'Reilly Media",
+        "icon": require('./assets/img/icons/oreilly.svg')
+     },{
+        "url": "https://www.manning.com",
+        "title": "Manning",
+        "icon": require('./assets/img/icons/manning.svg')
+     }
+
+    ];
+
+//工具
+var tool_items = [
+     {
+        "url": "https://unicode-table.com",
+        "title": "Unicode 字符百科",
+        "icon": require('./assets/img/icons/unicode.svg')
+     },{
+        "url": "https://image.online-convert.com",
+        "title": "Online image converter",
+        "icon": require('./assets/img/icons/online-converter.svg')
+     },{
+        "url": "http://hslpicker.com",
+        "title": "HSL Color Picker",
+        "icon": require('./assets/img/icons/hsl-color-picker.svg')
+     },{
+        "url": "http://www.favicon.cc",
+        "title": "favicon Generator",
+        "icon": require('./assets/img/icons/favicon-generator.svg')
+     },{
+        "url": "http://asciiflow.com",
+        "title": "ASCIIFlow",
+        "icon": require('./assets/img/icons/asciiflow.svg')
+     },{
+        "url": "https://sketch.io/sketchpad",
+        "title": "Sketchpad",
+        "icon": require('./assets/img/icons/sketchpad.svg')
+     },{
+        "url": "http://ping.chinaz.com",
+        "title": "Ping 检测",
+        "icon": require('./assets/img/icons/chinaz.svg')
+     },{
+        "url": "https://www.ipip.net",
+        "title": "IPIP.NET",
+        "icon": require('./assets/img/icons/ipip.svg')
+     },{
+        "url": "https://uptimerobot.com",
+        "title": "Uptime Robot",
+        "icon": require('./assets/img/icons/uptime-robot.svg')
+     },{
+        "url": "https://code2flow.com",
+        "title": "code2flow",
+        "icon": require('./assets/img/icons/code2flow.svg')
+     },{
+        "url": "https://www.iloveimg.com",
+        "title": "iLoveIMG",
+        "icon": require('./assets/img/icons/iloveimg.svg')
+     },{
+        "url": "https://browserframe.com",
+        "title": "BrowserFrame",
+        "icon": require('./assets/img/icons/browserframe.svg')
+     },{
+        "url": "https://cn.office-converter.com",
+        "title": "Office-converter",
+        "icon": require('./assets/img/icons/office-converter.svg')
+     },{
+        "url": "https://www.wolframalpha.com",
+        "title": "WolframAlpha",
+        "icon": require('./assets/img/icons/wolframalpha.svg')
+     },{
+        "url": "https://www.kuaidi100.com",
+        "title": "快递100",
+        "icon": require('./assets/img/icons/kuaidi100.svg')
+     },{
+        "url": "http://www.freesmsverifications.com",
+        "title": "Receive Free SMS Online",
+        "icon": require('./assets/img/icons/freesmsverifications.svg')
+     },{
+        "url": "https://www.tutorialspoint.com/execute_bash_online.php",
+        "title": "Bash Online",
+        "icon": require('./assets/img/icons/bash-online.svg')
+     },{
+        "url": "https://www.onlineocr.net",
+        "title": "Online OCR",
+        "icon": require('./assets/img/icons/onlineocr.svg')
+     },{
+        "url": "https://explainshell.com",
+        "title": "ExplainShell",
+        "icon": require('./assets/img/icons/explainshell.svg')
+     },{
+        "url": "https://gitpitch.com",
+        "title": "GitPitch",
+        "icon": require('./assets/img/icons/gitpitch.svg')
+     },{
+        "url": "https://audio.rip",
+        "title": "Audio Rip",
+        "icon": require('./assets/img/icons/audio-rip.svg')
+     },{
+        "url": "https://zh-hans.tld-list.com",
+        "title": "TLD LIST",
+        "icon": require('./assets/img/icons/tld-list.svg')
+     },{
+        "url": "https://svg-edit.github.io/svgedit/releases/svg-edit-2.8.1/svg-editor.html",
+        "title": "SVG-edit",
+        "icon": require('./assets/img/icons/svg-edit.svg')
+     }
+
+    ];
+
+
+//Photos
+var photos_items = [
+     {
+        "url": "https://unsplash.com",
+        "title": "Unsplash",
+        "icon": require('./assets/img/icons/unsplash.svg')
+     },{
+        "url": "https://500px.com",
+        "title": "500px",
+        "icon": require('./assets/img/icons/500.svg')
+      },{
+        "url": "https://bing.ioliu.cn",
+        "title": "必应壁纸",
+        "icon": require('./assets/img/icons/bing.svg')
+      },{
+        "url": "https://www.novapattern.com",
+        "title": "Novapattern",
+        "icon": require('./assets/img/icons/novapattern.svg')
+      },{
+        "url": "https://www.z4a.net",
+        "title": "Z4A图床",
+        "icon": require('./assets/img/icons/z4a.svg')
+      },{
+        "url": "https://sm.ms",
+        "title": "SM.MS",
+        "icon": require('./assets/img/icons/smms.svg')
+      },{
+        "url": "https://imgur.com",
+        "title": "imgur",
+        "icon": require('./assets/img/icons/imgur.svg')
+      },{
+        "url": "https://www.flickr.com",
+        "title": "Flickr",
+        "icon": require('./assets/img/icons/flickr.svg')
+      }
+
+    ];
+
+  //Blog
+var blog_items = [
+     {
+        "url": "https://blog.spoongraphics.co.uk",
+        "title": "Spoon Graphics",
+        "icon": require('./assets/img/icons/spoongraphics.svg')
+     },{
+        "url": "http://www.ruanyifeng.com/blog",
+        "title": "阮一峰的网络日志",
+        "icon": require('./assets/img/icons/ruanyifeng.svg')
+      },{
+        "url": "https://zetaoyang.github.io",
+        "title": "True Me",
+        "icon": require('./assets/img/icons/true-me.svg')
+      },{
+        "url": "https://lepture.com",
+        "title": "Just lepture",
+        "icon": require('./assets/img/icons/lepture.svg')
+      }
+
+    ];
 
   //  console.log(Store.fetch_site().length)
 export default {
@@ -642,27 +1188,46 @@ export default {
 			canRemove: false,
 			hasAddPanel: false,
 			isSearch: false,
-      hasWeather: false,
-			sites: Store.fetch_site(),
+      //hasWeather: false,
       // test_sites: Store.fetch_test_site(),
+			sites: Store.fetch_site(),
+      info_sites: info_items,
+      community_sites: community_items,
       coding_sites: coding_items,
       design_sites: design_items,
+      translate_sites: translate_items,
+      book_sites: book_items,
+      tool_sites: tool_items,
+      photos_sites: photos_items,
+      blog_sites: blog_items,
       todos: Store.fetch_todo()
 		}
 	},
 	watch: {
-    test_sites: {
-      handler: function(test_sites) {
-        Store.save_test_site(test_sites)
-      },
-      deep: true
-    },
+    // test_sites: {
+    //   handler: function(test_sites) {
+    //     Store.save_test_site(test_sites)
+    //   },
+    //   deep: true
+    // },
 		sites: {
 			handler: function(sites) {
 				Store.save_site(sites)
 			},
 			deep: true
 		},
+    info_sites: {
+      handler: function(info_sites) {
+        Store.fetch_nostore_site(info_sites)
+      },
+      deep: true
+    },
+    community_sites: {
+      handler: function(community_sites) {
+        Store.fetch_nostore_site(community_sites)
+      },
+      deep: true
+    },
     coding_sites: {
       handler: function(coding_sites) {
         Store.fetch_nostore_site(coding_sites)
@@ -672,6 +1237,36 @@ export default {
     design_sites: {
       handler: function(design_sites) {
         Store.fetch_nostore_site(design_sites)
+      },
+      deep: true
+    },
+    translate_sites:{
+      handler: function(translate_sites) {
+        Store.fetch_nostore_site(translate_sites)
+      },
+      deep: true
+    },
+    book_sites:{
+      handler: function(book_sites) {
+        Store.fetch_nostore_site(book_sites)
+      },
+      deep: true
+    },
+    tool_sites:{
+      handler: function(tool_sites) {
+        Store.fetch_nostore_site(tool_sites)
+      },
+      deep: true
+    },
+    photos_sites:{
+      handler: function(photos_sites) {
+        Store.fetch_nostore_site(photos_sites)
+      },
+      deep: true
+    },
+    blog_sites:{
+      handler: function(blog_sites) {
+        Store.fetch_nostore_site(blog_sites)
       },
       deep: true
     },
@@ -738,9 +1333,9 @@ export default {
   			this.isSearch = false
       }
     },
-    toggleWeather: function() {
-      this.hasWeather = !this.hasWeather
-    },
+    // toggleWeather: function() {
+    //   this.hasWeather = !this.hasWeather
+    // },
     useGoogle: function() {
       this.searchEngine = 'google';
       Store.setCookie("se", "google", 30);
@@ -760,6 +1355,10 @@ export default {
     useDuckduckgo: function() {
       this.searchEngine = 'duckduckgo';
       Store.setCookie("se", "duckduckgo", 30);
+    },
+    useYandex: function() {
+      this.searchEngine = 'yandex';
+      Store.setCookie("se", "yandex", 30);
     }
 	}
 }
