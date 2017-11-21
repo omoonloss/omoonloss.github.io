@@ -1109,6 +1109,10 @@ var tool_items = [
         "url": "https://svg-edit.github.io/svgedit/releases/svg-edit-2.8.1/svg-editor.html",
         "title": "SVG-edit",
         "icon": require('./assets/img/icons/svg-edit.svg')
+     },{
+        "url": "http://devdocs.io",
+        "title": "DevDocs API Documentation",
+        "icon": require('./assets/img/icons/devdocs.svg')
      }
 
     ];
