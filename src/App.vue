@@ -662,10 +662,10 @@ if (!Store.getCookie('visited')) {
   if(Store.fetch_site().length == 0){
     Store.save_site([
       {
-  			"url": "https://github.com",
-  			"title": "GitHub",
-  			"icon": require('./assets/img/icons/github.svg')
-  		}, {
+		"url": "https://github.com",
+		"title": "GitHub",
+		"icon": require('./assets/img/icons/github.svg')
+  	  }, {
         "url": "https://about.gitlab.com",
         "title": "GitLab",
         "icon": require('./assets/img/icons/gitlab.svg')
@@ -678,29 +678,29 @@ if (!Store.getCookie('visited')) {
         "title": "Coding",
         "icon": require('./assets/img/icons/coding.svg')
       }, {
-  			"url": "https://codepen.io",
-  			"title": "CodePen",
-  			"icon": require('./assets/img/icons/codepen.svg')
-  		}, {
-  			"url": "https://www.wikipedia.org",
-  			"title": "Wikipedia",
-  			"icon": require('./assets/img/icons/wikipedia.svg')
-  		}, {
-  			"url": "https://medium.com",
-  			"title": "Medium",
-  			"icon": require('./assets/img/icons/medium.svg')
-  		}, {
-  			"url": "https://facebook.com/",
-  			"title": "Facebook",
-  			"icon": require('./assets/img/icons/facebook.svg')
-  		}, {
-  			"url": "https://twitter.com/",
-  			"title": "Twitter",
-  			"icon": require('./assets/img/icons/twitter.svg')
-  		}, {
-  			"url": "https://zhihu.com",
-  			"title": "知乎",
-  			"icon": require('./assets/img/icons/zhihu.svg')
+			"url": "https://codepen.io",
+			"title": "CodePen",
+			"icon": require('./assets/img/icons/codepen.svg')
+		}, {
+			"url": "https://www.wikipedia.org",
+			"title": "Wikipedia",
+			"icon": require('./assets/img/icons/wikipedia.svg')
+		}, {
+			"url": "https://medium.com",
+			"title": "Medium",
+			"icon": require('./assets/img/icons/medium.svg')
+		}, {
+			"url": "https://facebook.com/",
+			"title": "Facebook",
+			"icon": require('./assets/img/icons/facebook.svg')
+		}, {
+			"url": "https://twitter.com/",
+			"title": "Twitter",
+			"icon": require('./assets/img/icons/twitter.svg')
+		}, {
+			"url": "https://zhihu.com",
+			"title": "知乎",
+			"icon": require('./assets/img/icons/zhihu.svg')
   		}, {
         "url": "http://www.jianshu.com",
         "title": "简书",
@@ -773,6 +773,10 @@ if (!Store.getCookie('visited')) {
         "url": "http://theme.npm.edu.tw/opendata",
         "title": "故宮Open Data專區",
         "icon": require('./assets/img/icons/npm-opendata.svg')
+      },{
+        "url": "https://a.sogaso.ga",
+        "title": "Analysis|aSoga",
+        "icon": require('./assets/img/icons/analysis-asoga.svg')
       },
 
   	])
