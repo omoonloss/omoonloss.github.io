@@ -942,6 +942,10 @@ var coding_items = [
         "url": "https://www.w3schools.com",
         "title": "W3Schools",
         "icon": require('./assets/img/icons/w3schools.svg')
+      },{
+        "url": "https://www.w3cplus.com",
+        "title": "w3cplus",
+        "icon": require('./assets/img/icons/w3schools.svg')
       }
 
     ];
@@ -984,6 +988,10 @@ var design_items = [
         "url": "http://tgideas.qq.com",
         "title": "TGideas",
         "icon": require('./assets/img/icons/tgideas.svg')
+     },{
+        "url": "https://mockuper.net",
+        "title": "Mockuper",
+        "icon": require('./assets/img/icons/mockuper.svg')
      }
     ];
 
@@ -1121,6 +1129,14 @@ var tool_items = [
         "url": "http://devdocs.io",
         "title": "DevDocs API Documentation",
         "icon": require('./assets/img/icons/devdocs.svg')
+     },{
+        "url": "https://www.flightradar24.com",
+        "title": "Flightradar24",
+        "icon": require('./assets/img/icons/flightradar24.svg')
+     },{
+        "url": "https://carbon.now.sh",
+        "title": "Carbon",
+        "icon": require('./assets/img/icons/carbon.svg')
      }
 
     ];
