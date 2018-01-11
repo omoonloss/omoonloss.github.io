@@ -945,7 +945,7 @@ var coding_items = [
       },{
         "url": "https://www.w3cplus.com",
         "title": "w3cplus",
-        "icon": require('./assets/img/icons/w3schools.svg')
+        "icon": require('./assets/img/icons/w3cplus.svg')
       }
 
     ];
