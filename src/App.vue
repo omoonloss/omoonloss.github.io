@@ -1016,6 +1016,10 @@ var translate_items = [
 //Book
 var book_items = [
      {
+        "url": "https://bookset.me",
+        "title": "Bookset",
+        "icon": require('./assets/img/icons/bookset.svg')
+     },{
         "url": "http://www.epubit.com.cn",
         "title": "异步社区",
         "icon": require('./assets/img/icons/epubit.svg')
