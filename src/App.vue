@@ -777,7 +777,19 @@ if (!Store.getCookie('visited')) {
         "url": "https://a.sogaso.ga",
         "title": "Analysis|aSoga",
         "icon": require('./assets/img/icons/analysis-asoga.svg')
-      },
+      },{
+        "url": "https://itch.io",
+        "title": "itch.io",
+        "icon": require('./assets/img/icons/itch-io.svg')
+      },{
+        "url": "https://www.humblebundle.com",
+        "title": "Humble Bundle",
+        "icon": require('./assets/img/icons/humblebundle.svg')
+      },{
+        "url": "https://www.listennotes.com",
+        "title": "Listen Notes",
+        "icon": require('./assets/img/icons/listennotes.svg')
+      }
 
   	])
   }
@@ -1141,6 +1153,30 @@ var tool_items = [
         "url": "https://carbon.now.sh",
         "title": "Carbon",
         "icon": require('./assets/img/icons/carbon.svg')
+     },{
+        "url": "http://chartmage.com/intro.html",
+        "title": "Chart Mage",
+        "icon": require('./assets/img/icons/chartmage.svg')
+     },{
+        "url": "https://www.osboxes.org",
+        "title": "OSBoxes",
+        "icon": require('./assets/img/icons/osboxes.svg')
+     },{
+        "url": "http://www.downfi.com/video",
+        "title": "小视频下载",
+        "icon": require('./assets/img/icons/downfi-video.svg')
+     },{
+        "url": "https://www.parsevideo.com",
+        "title": "视频解析网",
+        "icon": require('./assets/img/icons/parsevideo.svg')
+     },{
+        "url": "https://avogadr.io",
+        "title": "Molecular Wallpaper Generator",
+        "icon": require('./assets/img/icons/avogadr.svg')
+     },{
+        "url": "http://papersizes.io",
+        "title": "Paper Sizes",
+        "icon": require('./assets/img/icons/papersizes.svg')
      }
 
     ];
@@ -1180,6 +1216,10 @@ var photos_items = [
         "url": "https://www.flickr.com",
         "title": "Flickr",
         "icon": require('./assets/img/icons/flickr.svg')
+      },{
+        "url": "http://pngimg.com",
+        "title": "PNG images with transparent background",
+        "icon": require('./assets/img/icons/pngimg.svg')
       }
 
     ];
