@@ -1032,6 +1032,10 @@ var book_items = [
         "title": "Bookset",
         "icon": require('./assets/img/icons/bookset.svg')
      },{
+        "url": "https://bookfere.com",
+        "title": "书伴",
+        "icon": require('./assets/img/icons/bookfere.svg')
+     },{
         "url": "http://www.epubit.com.cn",
         "title": "异步社区",
         "icon": require('./assets/img/icons/epubit.svg')
