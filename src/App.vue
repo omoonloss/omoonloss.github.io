@@ -774,10 +774,6 @@ if (!Store.getCookie('visited')) {
         "title": "故宮Open Data專區",
         "icon": require('./assets/img/icons/npm-opendata.svg')
       },{
-        "url": "https://a.sogaso.ga",
-        "title": "Analysis|aSoga",
-        "icon": require('./assets/img/icons/analysis-asoga.svg')
-      },{
         "url": "https://itch.io",
         "title": "itch.io",
         "icon": require('./assets/img/icons/itch-io.svg')
@@ -1239,7 +1235,7 @@ var blog_items = [
         "title": "阮一峰的网络日志",
         "icon": require('./assets/img/icons/ruanyifeng.svg')
       },{
-        "url": "https://zetaoyang.github.io",
+        "url": "https://zty.js.org",
         "title": "True Me",
         "icon": require('./assets/img/icons/true-me.svg')
       },{
