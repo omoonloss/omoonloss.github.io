@@ -1028,6 +1028,14 @@ var book_items = [
         "title": "Bookset",
         "icon": require('./assets/img/icons/bookset.svg')
      },{
+        "url": "http://ebooksplan.club",
+        "title": "扫地僧的橱柜",
+        "icon": require('./assets/img/icons/ebooksplan.svg')
+     },{
+        "url": "https://itbook.download",
+        "title": "Itbook",
+        "icon": require('./assets/img/icons/itbook.svg')
+     },{
         "url": "https://bookfere.com",
         "title": "书伴",
         "icon": require('./assets/img/icons/bookfere.svg')
