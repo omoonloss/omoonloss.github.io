@@ -1024,9 +1024,21 @@ var translate_items = [
 //Book
 var book_items = [
      {
+        "url": "https://shuge.org",
+        "title": "书格",
+        "icon": require('./assets/img/icons/shuge.svg')
+     },{
         "url": "https://bookset.me",
         "title": "Bookset",
         "icon": require('./assets/img/icons/bookset.svg')
+     },{
+        "url": "http://www.gutenberg.org",
+        "title": "Gutenberg",
+        "icon": require('./assets/img/icons/gutenberg.svg')
+     },{
+        "url": "https://www.planetebook.com",
+        "title": "Planet eBook",
+        "icon": require('./assets/img/icons/planetebook.svg')
      },{
         "url": "http://ebooksplan.club",
         "title": "扫地僧的橱柜",
