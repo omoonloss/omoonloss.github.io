@@ -1063,6 +1063,10 @@ var book_items = [
         "url": "https://www.manning.com",
         "title": "Manning",
         "icon": require('./assets/img/icons/manning.svg')
+     },{
+        "url": "https://www.jiumodiary.com",
+        "title": "鸠摩搜索",
+        "icon": require('./assets/img/icons/jiumodiary.svg')
      }
 
     ];
@@ -1197,6 +1201,40 @@ var tool_items = [
         "url": "http://papersizes.io",
         "title": "Paper Sizes",
         "icon": require('./assets/img/icons/papersizes.svg')
+     },{
+        "url": "https://opencc.byvoid.com",
+        "title": "開放中文轉換",
+        "icon": require('./assets/img/icons/occ.svg')
+     },{
+        "url": "http://www.nirsoft.net",
+        "title": "NirSoft",
+        "icon": require('./assets/img/icons/nirsoft.svg')
+     },{
+        "url": "http://www.htaccesstools.com",
+        "title": "Htaccess tools"
+     },{
+        "url": "https://randomkeygen.com",
+        "title": "RandomKeygen",
+        "icon": require('./assets/img/icons/randomkeygen.svg')
+     },{
+        "url": "http://www.feemic.cn/mooc",
+        "title": "Mooc search",
+        "icon": require('./assets/img/icons/mooc-search.svg')
+     },{
+        "url": "http://www.tlhiv.org/rast2vec",
+        "title": "Rast2Vec",
+        "icon": require('./assets/img/icons/rast2vec.svg')
+     },{
+        "url": "http://bccto.me",
+        "title": "十分钟邮箱"
+     },{
+        "url": "https://regex101.com",
+        "title": "regex101",
+        "icon": require('./assets/img/icons/regex101.svg')
+     },{
+        "url": "https://lunwen.im",
+        "title": "喵咪论文",
+        "icon": require('./assets/img/icons/lunwen.svg')
      }
 
     ];
