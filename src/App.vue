@@ -582,7 +582,7 @@
       </ul>
 
       <p class="copyright">
-        © 2017~2018 &nbsp;<a href="https://sogaso.ga" target="_blank">旧版</a>
+        © 2017~2019 &nbsp;<a href="https://sogaso.ga" target="_blank">HOME</a>
       </p>
   </div>
 
