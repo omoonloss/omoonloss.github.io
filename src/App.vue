@@ -1210,9 +1210,6 @@ var tool_items = [
         "title": "NirSoft",
         "icon": require('./assets/img/icons/nirsoft.svg')
      },{
-        "url": "http://www.htaccesstools.com",
-        "title": "Htaccess tools"
-     },{
         "url": "https://randomkeygen.com",
         "title": "RandomKeygen",
         "icon": require('./assets/img/icons/randomkeygen.svg')
@@ -1224,9 +1221,6 @@ var tool_items = [
         "url": "http://www.tlhiv.org/rast2vec",
         "title": "Rast2Vec",
         "icon": require('./assets/img/icons/rast2vec.svg')
-     },{
-        "url": "http://bccto.me",
-        "title": "十分钟邮箱"
      },{
         "url": "https://regex101.com",
         "title": "regex101",
