@@ -1,10 +1,14 @@
 /*!
- * mdui v0.3.0 (https://mdui.org)
- * Copyright 2016-2017 zdhxiong
+ * mdui v0.4.2 (https://mdui.org)
+ * Copyright 2016-2018 zdhxiong
  * Licensed under MIT
  */
 /* jshint ignore:start */
-;(function (window, document, undefined) {
+;(function(global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global.mdui = factory());
+}(this, (function() {
   'use strict';
 
   /* jshint ignore:end */
@@ -51,28 +55,169 @@
 
 
   /**
-   * =============================================================================
-   * ************   JavaScript 工具库，语法和 jQuery 类似   ************
-   * =============================================================================
+   * JQ 1.0.0 (https://github.com/zdhxiong/mdui.JQ#readme)
+   * Copyright 2018-2018 zdhxiong
+   * Licensed under MIT
    */
-  /* jshint ignore:start */
-  var $ = (function (window, document, undefined) {
+  var $ = (function () {
     'use strict';
-  /* jshint ignore:end */
 
+    var JQ = function JQ(arr) {
+      var self = this;
 
-    var emptyArray = [];
-    var slice = emptyArray.slice;
-    var concat = emptyArray.concat;
-    var isArray = Array.isArray;
+      for (var i = 0; i < arr.length; i += 1) {
+        self[i] = arr[i];
+      }
 
-    var documentElement = document.documentElement;
+      self.length = arr.length;
+
+      return this;
+    };
+
+    function $$1(selector) {
+      var arr = [];
+
+      if (!selector) {
+        return new JQ(arr);
+      }
+
+      if (selector instanceof JQ) {
+        return selector;
+      }
+
+      if (typeof selector === 'string') {
+        var html = selector.trim();
+
+        if (html[0] === '<' && html[html.length - 1] === '>') {
+          // 创建 HTML 字符串
+          var toCreate = 'div';
+
+          if (html.indexOf('<li') === 0) {
+            toCreate = 'ul';
+          }
+
+          if (html.indexOf('<tr') === 0) {
+            toCreate = 'tbody';
+          }
+
+          if (html.indexOf('<td') === 0 || html.indexOf('<th') === 0) {
+            toCreate = 'tr';
+          }
+
+          if (html.indexOf('<tbody') === 0) {
+            toCreate = 'table';
+          }
+
+          if (html.indexOf('<option') === 0) {
+            toCreate = 'select';
+          }
+
+          var tempParent = document.createElement(toCreate);
+          tempParent.innerHTML = html;
+
+          for (var i = 0; i < tempParent.childNodes.length; i += 1) {
+            arr.push(tempParent.childNodes[i]);
+          }
+        } else {
+          // 选择器
+          var elems = selector[0] === '#' && !selector.match(/[ .<>:~]/)
+            ? [document.getElementById(selector.slice(1))]
+            : document.querySelectorAll(selector);
+
+          for (var i$1 = 0; i$1 < elems.length; i$1 += 1) {
+            if (elems[i$1]) {
+              arr.push(elems[i$1]);
+            }
+          }
+        }
+      } else if (typeof selector === 'function') {
+        // function
+        return $$1(document).ready(selector);
+      } else if (selector.nodeType || selector === window || selector === document) {
+        // Node
+        arr.push(selector);
+      } else if (selector.length > 0 && selector[0].nodeType) {
+        // NodeList
+        for (var i$2 = 0; i$2 < selector.length; i$2 += 1) {
+          arr.push(selector[i$2]);
+        }
+      }
+
+      return new JQ(arr);
+    }
+
+    $$1.fn = JQ.prototype;
+
+    function extend() {
+      var this$1 = this;
+      var args = [], len = arguments.length;
+      while ( len-- ) args[ len ] = arguments[ len ];
+
+      if (!args.length) {
+        return this;
+      }
+
+      // $.extend(obj)
+      if (args.length === 1) {
+        Object.keys(args[0]).forEach(function (prop) {
+          this$1[prop] = args[0][prop];
+        });
+
+        return this;
+      }
+
+      // $.extend({}, defaults[, obj])
+      var target = args.shift();
+
+      var loop = function ( i ) {
+        Object.keys(args[i]).forEach(function (prop) {
+          target[prop] = args[i][prop];
+        });
+      };
+
+      for (var i = 0; i < args.length; i += 1) loop( i );
+
+      return target;
+    }
+
+    $$1.fn.extend = extend;
+    $$1.extend = extend;
 
     /**
-     * 是否是类数组的数据
-     * @param obj
+     * 判断一个节点名
+     * @param ele
+     * @param name
      * @returns {boolean}
      */
+    function isNodeName(ele, name) {
+      return ele.nodeName && ele.nodeName.toLowerCase() === name.toLowerCase();
+    }
+
+    /**
+     * 除去 null 后的 object 类型
+     * @param obj
+     * @returns {*|boolean}
+     */
+    function isObjectLike(obj) {
+      return typeof obj === 'object' && obj !== null;
+    }
+
+    function isFunction(fn) {
+      return typeof fn === 'function';
+    }
+
+    function isString(obj) {
+      return typeof obj === 'string';
+    }
+
+    function isWindow(win) {
+      return win && win === win.window;
+    }
+
+    function isDocument(doc) {
+      return doc && doc.nodeType === doc.DOCUMENT_NODE;
+    }
+
     function isArrayLike(obj) {
       return typeof obj.length === 'number';
     }
@@ -84,21 +229,17 @@
      * @returns {*}
      */
     function each(obj, callback) {
-      var i;
-      var prop;
-
       if (isArrayLike(obj)) {
-        for (i = 0; i < obj.length; i++) {
+        for (var i = 0; i < obj.length; i += 1) {
           if (callback.call(obj[i], i, obj[i]) === false) {
             return obj;
           }
         }
       } else {
-        for (prop in obj) {
-          if (obj.hasOwnProperty(prop)) {
-            if (callback.call(obj[prop], prop, obj[prop]) === false) {
-              return obj;
-            }
+        var keys = Object.keys(obj);
+        for (var i$1 = 0; i$1 < keys.length; i$1 += 1) {
+          if (callback.call(obj[keys[i$1]], keys[i$1], obj[keys[i$1]]) === false) {
+            return obj;
           }
         }
       }
@@ -106,18 +247,27 @@
       return obj;
     }
 
+    /**
+     * 遍历数组或对象，通过函数返回一个新的数组或对象，null 和 undefined 将被过滤掉。
+     * @param elems
+     * @param callback
+     * @returns {Array}
+     */
     function map(elems, callback) {
+      var ref;
+
       var value;
       var ret = [];
 
       each(elems, function (i, elem) {
         value = callback(elem, i);
+
         if (value !== null && value !== undefined) {
           ret.push(value);
         }
       });
 
-      return concat.apply([], ret);
+      return (ref = []).concat.apply(ref, ret);
     }
 
     /**
@@ -135,67 +285,20 @@
     }
 
     /**
-     * 返回去重后的数组
-     * @param arr
+     * 删除数组中重复元素
+     * @param arr {Array}
      * @returns {Array}
      */
     function unique(arr) {
-      var unique = [];
-      for (var i = 0; i < arr.length; i++) {
-        if (unique.indexOf(arr[i]) === -1) {
-          unique.push(arr[i]);
+      var result = [];
+
+      for (var i = 0; i < arr.length; i += 1) {
+        if (result.indexOf(arr[i]) === -1) {
+          result.push(arr[i]);
         }
       }
 
-      return unique;
-    }
-
-    /**
-     * 是否是 null
-     * @param obj
-     * @returns {boolean}
-     */
-    function isNull(obj) {
-      return obj === null;
-    }
-
-    /**
-     * 判断一个节点名
-     * @param ele
-     * @param name
-     * @returns {boolean}
-     */
-    function nodeName(ele, name) {
-      return ele.nodeName && ele.nodeName.toLowerCase() === name.toLowerCase();
-    }
-
-    function isFunction(fn) {
-      return typeof fn === 'function';
-    }
-
-    function isString(obj) {
-      return typeof obj === 'string';
-    }
-
-    function isObject(obj) {
-      return typeof obj === 'object';
-    }
-
-    /**
-     * 除去 null 后的 object 类型
-     * @param obj
-     * @returns {*|boolean}
-     */
-    function isObjectLike(obj) {
-      return isObject(obj) && !isNull(obj);
-    }
-
-    function isWindow(win) {
-      return win && win === win.window;
-    }
-
-    function isDocument(doc) {
-      return doc && doc.nodeType === doc.DOCUMENT_NODE;
+      return result;
     }
 
     var elementDisplay = {};
@@ -224,183 +327,10 @@
       return elementDisplay[nodeName];
     }
 
-
-    var JQ = function (arr) {
-      var _this = this;
-
-      for (var i = 0; i < arr.length; i++) {
-        _this[i] = arr[i];
-      }
-
-      _this.length = arr.length;
-
-      return this;
-    };
-
-    /**
-     * @param selector {String|Function|Node|Window|NodeList|Array|JQ=}
-     * @returns {JQ}
-     */
-    var $ = function (selector) {
-      var arr = [];
-      var i = 0;
-
-      if (!selector) {
-        return new JQ(arr);
-      }
-
-      if (selector instanceof JQ) {
-        return selector;
-      }
-
-      if (isString(selector)) {
-        var els;
-        var tempParent;
-        selector = selector.trim();
-
-        // 创建 HTML 字符串
-        if (selector[0] === '<' && selector[selector.length - 1] === '>') {
-          // HTML
-          var toCreate = 'div';
-          if (selector.indexOf('<li') === 0) {
-            toCreate = 'ul';
-          }
-
-          if (selector.indexOf('<tr') === 0) {
-            toCreate = 'tbody';
-          }
-
-          if (selector.indexOf('<td') === 0 || selector.indexOf('<th') === 0) {
-            toCreate = 'tr';
-          }
-
-          if (selector.indexOf('<tbody') === 0) {
-            toCreate = 'table';
-          }
-
-          if (selector.indexOf('<option') === 0) {
-            toCreate = 'select';
-          }
-
-          tempParent = document.createElement(toCreate);
-          tempParent.innerHTML = selector;
-          for (i = 0; i < tempParent.childNodes.length; i++) {
-            arr.push(tempParent.childNodes[i]);
-          }
-        }
-
-        // 选择器
-        else {
-
-          // id 选择器
-          if (selector[0] === '#' && !selector.match(/[ .<>:~]/)) {
-            els = [document.getElementById(selector.slice(1))];
-          }
-
-          // 其他选择器
-          else {
-            els = document.querySelectorAll(selector);
-          }
-
-          for (i = 0; i < els.length; i++) {
-            if (els[i]) {
-              arr.push(els[i]);
-            }
-          }
-        }
-      }
-
-      // function
-      else if (isFunction(selector)) {
-        return $(document).ready(selector);
-      }
-
-      // Node
-      else if (selector.nodeType || selector === window || selector === document) {
-        arr.push(selector);
-      }
-
-      // NodeList
-      else if (selector.length > 0 && selector[0].nodeType) {
-        for (i = 0; i < selector.length; i++) {
-          arr.push(selector[i]);
-        }
-      }
-
-      return new JQ(arr);
-    };
-
-    $.fn = JQ.prototype;
-
-    /**
-     * 扩展函数和原型属性
-     * @param obj
-     */
-    $.extend = $.fn.extend = function (obj) {
-      if (obj === undefined) {
-        return this;
-      }
-
-      var length = arguments.length;
-      var prop;
-      var i;
-      var options;
-
-      // $.extend(obj)
-      if (length === 1) {
-        for (prop in obj) {
-          if (obj.hasOwnProperty(prop)) {
-            this[prop] = obj[prop];
-          }
-        }
-
-        return this;
-      }
-
-      // $.extend({}, defaults[, obj])
-      for (i = 1; i < length; i++) {
-        options = arguments[i];
-        for (prop in options) {
-          if (options.hasOwnProperty(prop)) {
-            obj[prop] = options[prop];
-          }
-        }
-      }
-
-      return obj;
-    };
-
-    $.extend({
-
-      /**
-       * 遍历对象
-       * @param obj {String|Array|Object}
-       * @param callback {Function}
-       * @returns {Array|Object}
-       */
+    $$1.extend({
       each: each,
-
-      /**
-       * 合并两个数组，返回的结果会修改第一个数组的内容
-       * @param first {Array}
-       * @param second {Array}
-       * @returns {Array}
-       */
       merge: merge,
-
-      /**
-       * 删除数组中重复元素
-       * @param arr {Array}
-       * @returns {Array}
-       */
       unique: unique,
-
-      /**
-       * 通过遍历集合中的节点对象，通过函数返回一个新的数组，null 或 undefined 将被过滤掉。
-       * @param elems
-       * @param callback
-       * @returns {Array}
-       */
       map: map,
 
       /**
@@ -409,9 +339,9 @@
        * @param node {Node} 子节点
        * @returns {Boolean}
        */
-      contains: function (parent, node) {
+      contains: function contains(parent, node) {
         if (parent && !node) {
-          return documentElement.contains(parent);
+          return document.documentElement.contains(parent);
         }
 
         return parent !== node && parent.contains(node);
@@ -422,34 +352,29 @@
        * @param obj
        * @returns {String}
        */
-      param: function (obj) {
+      param: function param(obj) {
         if (!isObjectLike(obj)) {
           return '';
         }
 
         var args = [];
-        each(obj, function (key, value) {
-          destructure(key, value);
-        });
-
-        return args.join('&');
 
         function destructure(key, value) {
           var keyTmp;
 
           if (isObjectLike(value)) {
             each(value, function (i, v) {
-              if (isArray(value) && !isObjectLike(v)) {
+              if (Array.isArray(value) && !isObjectLike(v)) {
                 keyTmp = '';
               } else {
                 keyTmp = i;
               }
 
-              destructure(key + '[' + keyTmp + ']', v);
+              destructure((key + "[" + keyTmp + "]"), v);
             });
           } else {
-            if (!isNull(value) && value !== '') {
-              keyTmp = '=' + encodeURIComponent(value);
+            if (value !== null && value !== '') {
+              keyTmp = "=" + (encodeURIComponent(value));
             } else {
               keyTmp = '';
             }
@@ -457,17 +382,22 @@
             args.push(encodeURIComponent(key) + keyTmp);
           }
         }
+
+        each(obj, function (key, value) {
+          destructure(key, value);
+        });
+
+        return args.join('&');
       },
     });
 
-    $.fn.extend({
-
+    $$1.fn.extend({
       /**
        * 遍历对象
        * @param callback {Function}
        * @return {JQ}
        */
-      each: function (callback) {
+      each: function each$1(callback) {
         return each(this, callback);
       },
 
@@ -476,10 +406,8 @@
        * @param callback {Function}
        * @returns {JQ}
        */
-      map: function (callback) {
-        return new JQ(map(this, function (el, i) {
-          return callback.call(el, i, el);
-        }));
+      map: function map$1(callback) {
+        return new JQ(map(this, function (el, i) { return callback.call(el, i, el); }));
       },
 
       /**
@@ -487,19 +415,22 @@
        * @param index {Number=}
        * @returns {Node|Array}
        */
-      get: function (index) {
-        return index === undefined ?
-          slice.call(this) :
-          this[index >= 0 ? index : index + this.length];
+      get: function get(index) {
+        return index === undefined
+          ? [].slice.call(this)
+          : this[index >= 0 ? index : index + this.length];
       },
 
       /**
        * array中提取的方法。从start开始，如果end 指出。提取不包含end位置的元素。
-       * @param argument {start, end}
+       * @param args {start, end}
        * @returns {JQ}
        */
-      slice: function (argument) {
-        return new JQ(slice.apply(this, arguments));
+      slice: function slice() {
+        var args = [], len = arguments.length;
+        while ( len-- ) args[ len ] = arguments[ len ];
+
+        return new JQ([].slice.apply(this, args));
       },
 
       /**
@@ -507,17 +438,14 @@
        * @param selector {String|JQ|Node|Function}
        * @returns {JQ}
        */
-      filter: function (selector) {
+      filter: function filter(selector) {
         if (isFunction(selector)) {
-          return this.map(function (index, ele) {
-            return selector.call(ele, index, ele) ? ele : undefined;
-          });
-        } else {
-          var $selector = $(selector);
-          return this.map(function (index, ele) {
-            return $selector.index(ele) > -1 ? ele : undefined;
-          });
+          return this.map(function (index, ele) { return (selector.call(ele, index, ele) ? ele : undefined); });
         }
+
+        var $selector = $$1(selector);
+
+        return this.map(function (index, ele) { return ($selector.index(ele) > -1 ? ele : undefined); });
       },
 
       /**
@@ -525,20 +453,20 @@
        * @param selector {String|Node|JQ|Function}
        * @return {JQ}
        */
-      not: function (selector) {
+      not: function not(selector) {
         var $excludes = this.filter(selector);
-        return this.map(function (index, ele) {
-          return $excludes.index(ele) > -1 ? undefined : ele;
-        });
+
+        return this.map(function (index, ele) { return ($excludes.index(ele) > -1 ? undefined : ele); });
       },
 
       /**
        * 获取元素相对于 document 的偏移
        * @returns {Object}
        */
-      offset: function () {
+      offset: function offset() {
         if (this[0]) {
           var offset = this[0].getBoundingClientRect();
+
           return {
             left: offset.left + window.pageXOffset,
             top: offset.top + window.pageYOffset,
@@ -554,15 +482,15 @@
        * 返回最近的用于定位的父元素
        * @returns {*|JQ}
        */
-      offsetParent: function () {
+      offsetParent: function offsetParent() {
         return this.map(function () {
-          var offsetParent = this.offsetParent;
+          var parent = this.offsetParent;
 
-          while (offsetParent && $(offsetParent).css('position') === 'static') {
-            offsetParent = offsetParent.offsetParent;
+          while (parent && $$1(parent).css('position') === 'static') {
+            parent = parent.offsetParent;
           }
 
-          return offsetParent || documentElement;
+          return parent || document.documentElement;
         });
       },
 
@@ -570,10 +498,10 @@
        * 获取元素相对于父元素的偏移
        * @return {Object}
        */
-      position: function () {
-        var _this = this;
+      position: function position() {
+        var self = this;
 
-        if (!_this[0]) {
+        if (!self[0]) {
           return null;
         }
 
@@ -584,12 +512,12 @@
           left: 0,
         };
 
-        if (_this.css('position') === 'fixed') {
-          offset = _this[0].getBoundingClientRect();
+        if (self.css('position') === 'fixed') {
+          offset = self[0].getBoundingClientRect();
         } else {
-          offsetParent = _this.offsetParent();
-          offset = _this.offset();
-          if (!nodeName(offsetParent[0], 'html')) {
+          offsetParent = self.offsetParent();
+          offset = self.offset();
+          if (!isNodeName(offsetParent[0], 'html')) {
             parentOffset = offsetParent.offset();
           }
 
@@ -600,8 +528,8 @@
         }
 
         return {
-          top: offset.top - parentOffset.top - _this.css('marginTop'),
-          left: offset.left - parentOffset.left - _this.css('marginLeft'),
+          top: offset.top - parentOffset.top - self.css('marginTop'),
+          left: offset.left - parentOffset.left - self.css('marginLeft'),
           width: offset.width,
           height: offset.height,
         };
@@ -611,7 +539,7 @@
        * 显示指定元素
        * @returns {JQ}
        */
-      show: function () {
+      show: function show() {
         return this.each(function () {
           if (this.style.display === 'none') {
             this.style.display = '';
@@ -627,7 +555,7 @@
        * 隐藏指定元素
        * @returns {JQ}
        */
-      hide: function () {
+      hide: function hide() {
         return this.each(function () {
           this.style.display = 'none';
         });
@@ -637,7 +565,7 @@
        * 切换元素的显示状态
        * @returns {JQ}
        */
-      toggle: function () {
+      toggle: function toggle() {
         return this.each(function () {
           this.style.display = this.style.display === 'none' ? '' : 'none';
         });
@@ -648,7 +576,7 @@
        * @param className {String}
        * @returns {boolean}
        */
-      hasClass: function (className) {
+      hasClass: function hasClass(className) {
         if (!this[0] || !className) {
           return false;
         }
@@ -661,7 +589,7 @@
        * @param attr {String}
        * @returns {JQ}
        */
-      removeAttr: function (attr) {
+      removeAttr: function removeAttr(attr) {
         return this.each(function () {
           this.removeAttribute(attr);
         });
@@ -672,11 +600,13 @@
        * @param name {String}
        * @returns {JQ}
        */
-      removeProp: function (name) {
+      removeProp: function removeProp(name) {
         return this.each(function () {
           try {
             delete this[name];
-          } catch (e) {}
+          } catch (e) {
+            // empty
+          }
         });
       },
 
@@ -685,8 +615,11 @@
        * @param index {Number}
        * @returns {JQ}
        */
-      eq: function (index) {
-        var ret = index === -1 ? this.slice(index) : this.slice(index, +index + 1);
+      eq: function eq(index) {
+        var ret = index === -1
+          ? this.slice(index)
+          : this.slice(index, +index + 1);
+
         return new JQ(ret);
       },
 
@@ -694,7 +627,7 @@
        * 获取对象中第一个元素
        * @returns {JQ}
        */
-      first: function () {
+      first: function first() {
         return this.eq(0);
       },
 
@@ -702,28 +635,42 @@
        * 获取对象中最后一个元素
        * @returns {JQ}
        */
-      last: function () {
+      last: function last() {
         return this.eq(-1);
       },
 
       /**
        * 获取一个元素的位置。
-       * 当 ele 参数没有给出时，返回当前元素在兄弟节点中的位置。
-       * 有给出了 ele 参数时，返回 ele 元素在当前对象中的位置
-       * @param ele {Selector|Node=}
+       * 当 elem 参数没有给出时，返回当前元素在兄弟节点中的位置。
+       * 有给出了 elem 参数时，返回 elem 元素在当前对象中的位置
+       * @param elem {Selector|Node=}
        * @returns {Number}
        */
-      index: function (ele) {
-        if (!ele) {
+      index: function index(elem) {
+        if (!elem) {
           // 获取当前 JQ 对象的第一个元素在同辈元素中的位置
-          return this.eq(0).parent().children().get().indexOf(this[0]);
-        } else if (isString(ele)) {
-          // 返回当前 JQ 对象的第一个元素在指定选择器对应的元素中的位置
-          return $(ele).eq(0).parent().children().get().indexOf(this[0]);
-        } else {
-          // 返回指定元素在当前 JQ 对象中的位置
-          return this.get().indexOf(ele);
+          return this
+            .eq(0)
+            .parent()
+            .children()
+            .get()
+            .indexOf(this[0]);
         }
+
+        if (isString(elem)) {
+          // 返回当前 JQ 对象的第一个元素在指定选择器对应的元素中的位置
+          return $$1(elem)
+            .eq(0)
+            .parent()
+            .children()
+            .get()
+            .indexOf(this[0]);
+        }
+
+        // 返回指定元素在当前 JQ 对象中的位置
+        return this
+          .get()
+          .indexOf(elem);
       },
 
       /**
@@ -732,45 +679,45 @@
        * @param selector {String|Node|NodeList|Array|JQ|Window}
        * @returns boolean
        */
-      is: function (selector) {
-        var _this = this[0];
+      is: function is(selector) {
+        var self = this[0];
 
-        if (!_this || selector === undefined || selector === null) {
+        if (!self || selector === undefined || selector === null) {
           return false;
         }
 
-        var $compareWith;
-        var i;
         if (isString(selector)) {
-          if (_this === document || _this === window) {
+          if (self === document || self === window) {
             return false;
           }
 
-          var matchesSelector =
-            _this.matches ||
-            _this.matchesSelector ||
-            _this.webkitMatchesSelector ||
-            _this.mozMatchesSelector ||
-            _this.oMatchesSelector ||
-            _this.msMatchesSelector;
+          var matchesSelector = self.matches
+            || self.matchesSelector
+            || self.webkitMatchesSelector
+            || self.mozMatchesSelector
+            || self.oMatchesSelector
+            || self.msMatchesSelector;
 
-          return matchesSelector.call(_this, selector);
-        } else if (selector === document || selector === window) {
-          return _this === selector;
-        } else {
-          if (selector.nodeType || isArrayLike(selector)) {
-            $compareWith = selector.nodeType ? [selector] : selector;
-            for (i = 0; i < $compareWith.length; i++) {
-              if ($compareWith[i] === _this) {
-                return true;
-              }
+          return matchesSelector.call(self, selector);
+        }
+
+        if (selector === document || selector === window) {
+          return self === selector;
+        }
+
+        if (selector.nodeType || isArrayLike(selector)) {
+          var $compareWith = selector.nodeType ? [selector] : selector;
+
+          for (var i = 0; i < $compareWith.length; i += 1) {
+            if ($compareWith[i] === self) {
+              return true;
             }
-
-            return false;
           }
 
           return false;
         }
+
+        return false;
       },
 
       /**
@@ -778,10 +725,17 @@
        * @param selector {String}
        * @returns {JQ}
        */
-      find: function (selector) {
+      find: function find(selector) {
         var foundElements = [];
 
         this.each(function (i, _this) {
+          var nodeType = _this.nodeType;
+
+          if (nodeType !== 1 && nodeType !== 9) {
+            // 不是 element 和 document 则跳过
+            return;
+          }
+
           merge(foundElements, _this.querySelectorAll(selector));
         });
 
@@ -793,15 +747,16 @@
        * @param selector {String=}
        * @returns {JQ}
        */
-      children: function (selector) {
+      children: function children(selector) {
         var children = [];
-        this.each(function (i, _this) {
-          each(_this.childNodes, function (i, childNode) {
+
+        this.each(function (_, _this) {
+          each(_this.childNodes, function (__, childNode) {
             if (childNode.nodeType !== 1) {
-              return true;
+              return;
             }
 
-            if (!selector || (selector && $(childNode).is(selector))) {
+            if (!selector || (selector && $$1(childNode).is(selector))) {
               children.push(childNode);
             }
           });
@@ -815,15 +770,20 @@
        * @param selector {String|Node|JQ|NodeList|Array}
        * @return {JQ}
        */
-      has: function (selector) {
-        var $targets = isString(selector) ? this.find(selector) : $(selector);
-        var len = $targets.length;
+      has: function has(selector) {
+        var $targets = isString(selector) ? this.find(selector) : $$1(selector);
+        var length = $targets.length;
+
         return this.filter(function () {
-          for (var i = 0; i < len; i++) {
-            if ($.contains(this, $targets[i])) {
+          var this$1 = this;
+
+          for (var i = 0; i < length; i += 1) {
+            if ($$1.contains(this$1, $targets[i])) {
               return true;
             }
           }
+
+          return false;
         });
       },
 
@@ -832,7 +792,7 @@
        * @param selector {String=}
        * @returns {JQ}
        */
-      siblings: function (selector) {
+      siblings: function siblings(selector) {
         return this.prevAll(selector).add(this.nextAll(selector));
       },
 
@@ -841,21 +801,21 @@
        * @param selector {String}
        * @returns {JQ}
        */
-      closest: function (selector) {
-        var _this = this;
+      closest: function closest(selector) {
+        var self = this;
 
-        if (!_this.is(selector)) {
-          _this = _this.parents(selector).eq(0);
+        if (!self.is(selector)) {
+          self = self.parents(selector).eq(0);
         }
 
-        return _this;
+        return self;
       },
 
       /**
        * 删除所有匹配的元素
        * @returns {JQ}
        */
-      remove: function () {
+      remove: function remove() {
         return this.each(function (i, _this) {
           if (_this.parentNode) {
             _this.parentNode.removeChild(_this);
@@ -868,15 +828,15 @@
        * @param selector {String|JQ}
        * @returns {JQ}
        */
-      add: function (selector) {
-        return new JQ(unique(merge(this.get(), $(selector))));
+      add: function add(selector) {
+        return new JQ(unique(merge(this.get(), $$1(selector))));
       },
 
       /**
        * 删除子节点
        * @returns {JQ}
        */
-      empty: function () {
+      empty: function empty() {
         return this.each(function () {
           this.innerHTML = '';
         });
@@ -887,7 +847,7 @@
        * (通过原生 cloneNode 方法深度克隆来复制集合中的所有元素。此方法不会有数据和事件处理程序复制到新的元素。这点和jquery中利用一个参数来确定是否复制数据和事件处理不相同。)
        * @returns {JQ}
        */
-      clone: function () {
+      clone: function clone() {
         return this.map(function () {
           return this.cloneNode(true);
         });
@@ -898,7 +858,7 @@
        * @param newContent {String|Node|NodeList|JQ}
        * @returns {JQ}
        */
-      replaceWith: function (newContent) {
+      replaceWith: function replaceWith(newContent) {
         return this.before(newContent).remove();
       },
 
@@ -906,28 +866,26 @@
        * 将表单元素的值组合成键值对数组
        * @returns {Array}
        */
-      serializeArray: function () {
+      serializeArray: function serializeArray() {
         var result = [];
-        var $ele;
-        var type;
-        var ele = this[0];
+        var elem = this[0];
 
-        if (!ele || !ele.elements) {
+        if (!elem || !elem.elements) {
           return result;
         }
 
-        $(slice.call(ele.elements)).each(function () {
-          $ele = $(this);
-          type = $ele.attr('type');
+        $$1([].slice.call(elem.elements)).each(function () {
+          var $elem = $$1(this);
+          var type = $elem.attr('type');
           if (
-            this.nodeName.toLowerCase() !== 'fieldset' &&
-            !this.disabled &&
-            ['submit', 'reset', 'button'].indexOf(type) === -1 &&
-            (['radio', 'checkbox'].indexOf(type) === -1 || this.checked)
+            this.nodeName.toLowerCase() !== 'fieldset'
+            && !this.disabled
+            && ['submit', 'reset', 'button'].indexOf(type) === -1
+            && (['radio', 'checkbox'].indexOf(type) === -1 || this.checked)
           ) {
             result.push({
-              name: $ele.attr('name'),
-              value: $ele.val(),
+              name: $elem.attr('name'),
+              value: $elem.val(),
             });
           }
         });
@@ -939,10 +897,11 @@
        * 将表单元素或对象序列化
        * @returns {String}
        */
-      serialize: function () {
+      serialize: function serialize() {
         var result = [];
-        each(this.serializeArray(), function (i, elm) {
-          result.push(encodeURIComponent(elm.name) + '=' + encodeURIComponent(elm.value));
+
+        each(this.serializeArray(), function (i, elem) {
+          result.push(((encodeURIComponent(elem.name)) + "=" + (encodeURIComponent(elem.value))));
         });
 
         return result.join('&');
@@ -977,16 +936,16 @@
         2: null,
       };
 
-      $.fn[name] = function (value) {
+      $$1.fn[name] = function (value) {
         if (value === undefined) {
           // 获取值
           return this[0] ? this[0][props[nameIndex]] : defaults[nameIndex];
-        } else {
-          // 设置值
-          return this.each(function (i, ele) {
-            ele[props[nameIndex]] = value;
-          });
         }
+
+        // 设置值
+        return this.each(function (i, elem) {
+          elem[props[nameIndex]] = value;
+        });
       };
     });
 
@@ -1006,51 +965,50 @@
      * @return {String|JQ}
      */
     each(['attr', 'prop', 'css'], function (nameIndex, name) {
-      var set = function (ele, key, value) {
+      function set(elem, key, value) {
         if (nameIndex === 0) {
-          ele.setAttribute(key, value);
+          elem.setAttribute(key, value);
         } else if (nameIndex === 1) {
-          ele[key] = value;
+          elem[key] = value;
         } else {
-          ele.style[key] = value;
+          elem.style[key] = value;
         }
-      };
+      }
 
-      var get = function (ele, key) {
-        if (!ele) {
+      function get(elem, key) {
+        if (!elem) {
           return undefined;
         }
 
-        var value;
         if (nameIndex === 0) {
-          value = ele.getAttribute(key);
-        } else if (nameIndex === 1) {
-          value = ele[key];
-        } else {
-          value = window.getComputedStyle(ele, null).getPropertyValue(key);
+          return elem.getAttribute(key);
         }
 
-        return value;
-      };
+        if (nameIndex === 1) {
+          return elem[key];
+        }
 
-      $.fn[name] = function (key, value) {
+        return window.getComputedStyle(elem, null).getPropertyValue(key);
+      }
+
+      $$1.fn[name] = function (key, value) {
         var argLength = arguments.length;
 
         if (argLength === 1 && isString(key)) {
           // 获取值
           return get(this[0], key);
-        } else {
-          // 设置值
-          return this.each(function (i, ele) {
-            if (argLength === 2) {
-              set(ele, key, value);
-            } else {
-              each(key, function (k, v) {
-                set(ele, k, v);
-              });
-            }
-          });
         }
+
+        // 设置值
+        return this.each(function (i, elem) {
+          if (argLength === 2) {
+            set(elem, key, value);
+          } else {
+            each(key, function (k, v) {
+              set(elem, k, v);
+            });
+          }
+        });
       };
     });
 
@@ -1070,15 +1028,16 @@
      * @return {JQ}
      */
     each(['add', 'remove', 'toggle'], function (nameIndex, name) {
-      $.fn[name + 'Class'] = function (className) {
+      $$1.fn[(name + "Class")] = function (className) {
         if (!className) {
           return this;
         }
 
         var classes = className.split(' ');
-        return this.each(function (i, ele) {
+
+        return this.each(function (i, elem) {
           each(classes, function (j, cls) {
-            ele.classList[name](cls);
+            elem.classList[name](cls);
           });
         });
       };
@@ -1096,43 +1055,43 @@
       Width: 'width',
       Height: 'height',
     }, function (prop, name) {
-      $.fn[name] = function (val) {
+      $$1.fn[name] = function (val) {
         if (val === undefined) {
           // 获取
-          var ele = this[0];
+          var elem = this[0];
 
-          if (isWindow(ele)) {
-            return ele['inner' + prop];
+          if (isWindow(elem)) {
+            return elem[("inner" + prop)];
           }
 
-          if (isDocument(ele)) {
-            return ele.documentElement['scroll' + prop];
+          if (isDocument(elem)) {
+            return elem.documentElement[("scroll" + prop)];
           }
 
-          var $ele = $(ele);
+          var $elem = $$1(elem);
 
           // IE10、IE11 在 box-sizing:border-box 时，不会包含 padding 和 border，这里进行修复
           var IEFixValue = 0;
           var isWidth = name === 'width';
           if ('ActiveXObject' in window) { // 判断是 IE 浏览器
-            if ($ele.css('box-sizing') === 'border-box') {
-              IEFixValue =
-                parseFloat($ele.css('padding-' + (isWidth ? 'left' : 'top'))) +
-                parseFloat($ele.css('padding-' + (isWidth ? 'right' : 'bottom'))) +
-                parseFloat($ele.css('border-' + (isWidth ? 'left' : 'top') + '-width')) +
-                parseFloat($ele.css('border-' + (isWidth ? 'right' : 'bottom') + '-width'));
+            if ($elem.css('box-sizing') === 'border-box') {
+              IEFixValue = parseFloat($elem.css(("padding-" + (isWidth ? 'left' : 'top'))))
+                + parseFloat($elem.css(("padding-" + ((isWidth ? 'right' : 'bottom')))))
+                + parseFloat($elem.css(("border-" + (isWidth ? 'left' : 'top') + "-width")))
+                + parseFloat($elem.css(("border-" + (isWidth ? 'right' : 'bottom') + "-width")));
             }
           }
 
-          return parseFloat($(ele).css(name)) + IEFixValue;
-        } else {
-          // 设置
-          if (!isNaN(Number(val)) && val !== '') {
-            val += 'px';
-          }
-
-          return this.css(name, val);
+          return parseFloat($$1(elem).css(name)) + IEFixValue;
         }
+
+        // 设置
+        /* eslint no-restricted-globals: 0 */
+        if (!isNaN(Number(val)) && val !== '') {
+          val += 'px';
+        }
+
+        return this.css(name, val);
       };
     });
 
@@ -1148,52 +1107,51 @@
       Width: 'width',
       Height: 'height',
     }, function (prop, name) {
-      $.fn['inner' + prop] = function () {
+      $$1.fn[("inner" + prop)] = function () {
         var value = this[name]();
-        var $ele = $(this[0]);
+        var $elem = $$1(this[0]);
 
-        if ($ele.css('box-sizing') !== 'border-box') {
-          value += parseFloat($ele.css('padding-' + (name === 'width' ? 'left' : 'top')));
-          value += parseFloat($ele.css('padding-' + (name === 'width' ? 'right' : 'bottom')));
+        if ($elem.css('box-sizing') !== 'border-box') {
+          value += parseFloat($elem.css(("padding-" + (name === 'width' ? 'left' : 'top'))));
+          value += parseFloat($elem.css(("padding-" + (name === 'width' ? 'right' : 'bottom'))));
         }
 
         return value;
       };
     });
 
-    var dir = function (nodes, selector, nameIndex, node) {
+    function dir(nodes, selector, nameIndex, node) {
       var ret = [];
-      var ele;
+      var elem;
+
       nodes.each(function (j, _this) {
-        ele = _this[node];
-        while (ele) {
+        elem = _this[node];
+        while (elem) {
           if (nameIndex === 2) {
             // prevUntil
-            if (!selector || (selector && $(ele).is(selector))) {
+            if (!selector || (selector && $$1(elem).is(selector))) {
               break;
             }
 
-            ret.push(ele);
+            ret.push(elem);
           } else if (nameIndex === 0) {
             // prev
-            if (!selector || (selector && $(ele).is(selector))) {
-              ret.push(ele);
+            if (!selector || (selector && $$1(elem).is(selector))) {
+              ret.push(elem);
             }
 
             break;
-          } else {
+          } else if (!selector || (selector && $$1(elem).is(selector))) {
             // prevAll
-            if (!selector || (selector && $(ele).is(selector))) {
-              ret.push(ele);
-            }
+            ret.push(elem);
           }
 
-          ele = ele[node];
+          elem = elem[node];
         }
       });
 
       return new JQ(unique(ret));
-    };
+    }
 
     /**
      * prev - 取得前一个匹配的元素
@@ -1211,10 +1169,10 @@
      * @return {JQ}
      */
     each(['', 'All', 'Until'], function (nameIndex, name) {
-      $.fn['prev' + name] = function (selector) {
-
+      $$1.fn[("prev" + name)] = function (selector) {
         // prevAll、prevUntil 需要把元素的顺序倒序处理，以便和 jQuery 的结果一致
-        var $nodes = nameIndex === 0 ? this : $(this.get().reverse());
+        var $nodes = nameIndex === 0 ? this : $$1(this.get().reverse());
+
         return dir($nodes, selector, nameIndex, 'previousElementSibling');
       };
     });
@@ -1235,7 +1193,7 @@
      * @return {JQ}
      */
     each(['', 'All', 'Until'], function (nameIndex, name) {
-      $.fn['next' + name] = function (selector) {
+      $$1.fn[("next" + name)] = function (selector) {
         return dir(this, selector, nameIndex, 'nextElementSibling');
       };
     });
@@ -1256,10 +1214,10 @@
      * @return {JQ}
      */
     each(['', 's', 'sUntil'], function (nameIndex, name) {
-      $.fn['parent' + name] = function (selector) {
-
+      $$1.fn[("parent" + name)] = function (selector) {
         // parents、parentsUntil 需要把元素的顺序反向处理，以便和 jQuery 的结果一致
-        var $nodes = nameIndex === 0 ? this : $(this.get().reverse());
+        var $nodes = nameIndex === 0 ? this : $$1(this.get().reverse());
+
         return dir($nodes, selector, nameIndex, 'parentNode');
       };
     });
@@ -1275,16 +1233,16 @@
      * @return {JQ}
      */
     each(['append', 'prepend'], function (nameIndex, name) {
-      $.fn[name] = function (newChild) {
+      $$1.fn[name] = function (newChild) {
         var newChilds;
         var copyByClone = this.length > 1;
 
         if (isString(newChild)) {
           var tempDiv = document.createElement('div');
           tempDiv.innerHTML = newChild;
-          newChilds = slice.call(tempDiv.childNodes);
+          newChilds = [].slice.call(tempDiv.childNodes);
         } else {
-          newChilds = $(newChild).get();
+          newChilds = $$1(newChild).get();
         }
 
         if (nameIndex === 1) {
@@ -1322,13 +1280,14 @@
      * @return {JQ}
      */
     each(['insertBefore', 'insertAfter'], function (nameIndex, name) {
-      $.fn[name] = function (selector) {
-        var $ele = $(selector);
+      $$1.fn[name] = function (selector) {
+        var $elem = $$1(selector);
+
         return this.each(function (i, _this) {
-          $ele.each(function (j, ele) {
-            ele.parentNode.insertBefore(
-              $ele.length === 1 ? _this : _this.cloneNode(true),
-              nameIndex === 0 ? ele : ele.nextSibling
+          $elem.each(function (j, elem) {
+            elem.parentNode.insertBefore(
+              $elem.length === 1 ? _this : _this.cloneNode(true),
+              nameIndex === 0 ? elem : elem.nextSibling
             );
           });
         });
@@ -1367,888 +1326,914 @@
       after: 'insertAfter',
       replaceAll: 'replaceWith',
     }, function (name, original) {
-      $.fn[name] = function (selector) {
-        $(selector)[original](this);
+      $$1.fn[name] = function (selector) {
+        $$1(selector)[original](this);
         return this;
       };
     });
 
+    var dataNS = 'mduiElementDataStorage';
 
+    $$1.extend({
+      /**
+       * 在指定元素上存储数据，或从指定元素上读取数据
+       * @param elem 必须， DOM 元素
+       * @param key 必须，键名
+       * @param value 可选，值
+       */
+      data: function data(elem, key, value) {
+        var data = {};
 
-    (function () {
-      var dataNS = 'mduiElementDataStorage';
+        if (value !== undefined) {
+          // 根据 key、value 设置值
+          data[key] = value;
+        } else if (isObjectLike(key)) {
+          // 根据键值对设置值
+          data = key;
+        } else if (key === undefined) {
+          // 获取所有值
+          var result = {};
 
-      $.extend({
-        /**
-         * 在指定元素上存储数据，或从指定元素上读取数据
-         * @param ele 必须， DOM 元素
-         * @param key 必须，键名
-         * @param value 可选，值
-         */
-        data: function (ele, key, value) {
-          var data = {};
+          each(elem.attributes, function (i, attribute) {
+            var name = attribute.name;
 
-          if (value !== undefined) {
-            // 根据 key、value 设置值
-            data[key] = value;
-          } else if (isObjectLike(key)) {
-            // 根据键值对设置值
-            data = key;
-          } else if (key === undefined) {
-            // 获取所有值
-            var result = {};
-            each(ele.attributes, function (i, attribute) {
-              var name = attribute.name;
-              if (name.indexOf('data-') === 0) {
-                var prop = name.slice(5).replace(/-./g, function (u) {
-                  // 横杠转为驼峰法
-                  return u.charAt(1).toUpperCase();
-                });
+            if (name.indexOf('data-') === 0) {
+              var prop = name.slice(5).replace(/-./g, function (u) { return u.charAt(1).toUpperCase(); });
 
-                result[prop] = attribute.value;
-              }
-            });
-
-            if (ele[dataNS]) {
-              each(ele[dataNS], function (k, v) {
-                result[k] = v;
-              });
+              result[prop] = attribute.value;
             }
-
-            return result;
-          } else {
-            // 获取指定值
-            if (ele[dataNS] && (key in ele[dataNS])) {
-              return ele[dataNS][key];
-            } else {
-              var dataKey = ele.getAttribute('data-' + key);
-              if (dataKey) {
-                return dataKey;
-              } else {
-                return undefined;
-              }
-            }
-          }
-
-          // 设置值
-          if (!ele[dataNS]) {
-            ele[dataNS] = {};
-          }
-
-          each(data, function (k, v) {
-            ele[dataNS][k] = v;
           });
-        },
 
-        /**
-         * 移除指定元素上存放的数据
-         * @param ele 必须，DOM 元素
-         * @param key 必须，键名
-         */
-        removeData: function (ele, key) {
-          if (ele[dataNS] && ele[dataNS][key]) {
-            ele[dataNS][key] = null;
-            delete ele.mduiElementDataStorage[key];
-          }
-        },
-
-      });
-
-      $.fn.extend({
-
-        /**
-         * 在元素上读取或设置数据
-         * @param key 必须
-         * @param value
-         * @returns {*}
-         */
-        data: function (key, value) {
-          if (value === undefined) {
-            if (isObjectLike(key)) {
-
-              // 同时设置多个值
-              return this.each(function (i, ele) {
-                $.data(ele, key);
-              });
-            } else if (this[0]) {
-
-              // 获取值
-              return $.data(this[0], key);
-            } else {
-              return undefined;
-            }
-          } else {
-            // 设置值
-            return this.each(function (i, ele) {
-              $.data(ele, key, value);
-            });
-          }
-        },
-
-        /**
-         * 移除元素上存储的数据
-         * @param key 必须
-         * @returns {*}
-         */
-        removeData: function (key) {
-          return this.each(function (i, ele) {
-            $.removeData(ele, key);
-          });
-        },
-
-      });
-    })();
-
-
-    (function () {
-      // 存储事件
-      var handlers = {
-        // i: { // 元素ID
-        //   j: { // 事件ID
-        //     e: 事件名
-        //     fn: 事件处理函数
-        //     i: 事件ID
-        //     proxy:
-        //     sel: 选择器
-        //   }
-        // }
-      };
-
-      // 元素ID
-      var _elementId = 1;
-
-      var fnFalse = function () {
-        return false;
-      };
-
-      $.fn.extend({
-        /**
-         * DOM 加载完毕后调用的函数
-         * @param callback
-         * @returns {ready}
-         */
-        ready: function (callback) {
-          if (/complete|loaded|interactive/.test(document.readyState) && document.body) {
-            callback($);
-          } else {
-            document.addEventListener('DOMContentLoaded', function () {
-              callback($);
-            }, false);
-          }
-
-          return this;
-        },
-
-        /**
-         * 绑定事件
-         *
-         * $().on({eventName: fn}, selector, data);
-         * $().on({eventName: fn}, selector)
-         * $().on({eventName: fn})
-         * $().on(eventName, selector, data, fn);
-         * $().on(eventName, selector, fn);
-         * $().on(eventName, data, fn);
-         * $().on(eventName, fn);
-         * $().on(eventName, false);
-         *
-         * @param eventName
-         * @param selector
-         * @param data
-         * @param callback
-         * @param one 是否是 one 方法，只在 JQ 内部使用
-         * @returns
-         */
-        on: function (eventName, selector, data, callback, one) {
-          var _this = this;
-
-          // 默认
-          // $().on(event, selector, data, callback)
-
-          // event 使用 事件:函数 键值对
-          // event = {
-          //   'event1': callback1,
-          //   'event2': callback2
-          // }
-          //
-          // $().on(event, selector, data)
-          if (eventName && !isString(eventName)) {
-            each(eventName, function (type, fn) {
-              _this.on(type, selector, data, fn);
-            });
-
-            return _this;
-          }
-
-          // selector 不存在
-          // $().on(event, data, callback)
-          if (!isString(selector) && !isFunction(callback) && callback !== false) {
-            callback = data;
-            data = selector;
-            selector = undefined;
-          }
-
-          // data 不存在
-          // $().on(event, callback)
-          if (isFunction(data) || data === false) {
-            callback = data;
-            data = undefined;
-          }
-
-          // callback 为 false
-          // $().on(event, false)
-          if (callback === false) {
-            callback = fnFalse;
-          }
-
-          if (one === 1) {
-            var origCallback = callback;
-            callback = function () {
-              _this.off(eventName, selector, callback);
-              return origCallback.apply(this, arguments);
-            };
-          }
-
-          return this.each(function () {
-            add(this, eventName, callback, data, selector);
-          });
-        },
-
-        /**
-         * 绑定事件，只触发一次
-         * @param eventName
-         * @param selector
-         * @param data
-         * @param callback
-         */
-        one: function (eventName, selector, data, callback) {
-          var _this = this;
-
-          if (!isString(eventName)) {
-            each(eventName, function (type, fn) {
-              type.split(' ').forEach(function (eName) {
-                _this.on(eName, selector, data, fn, 1);
-              });
-            });
-          } else {
-            eventName.split(' ').forEach(function (eName) {
-              _this.on(eName, selector, data, callback, 1);
+          if (elem[dataNS]) {
+            each(elem[dataNS], function (k, v) {
+              result[k] = v;
             });
           }
 
-          return this;
-        },
+          return result;
+        } else if (elem[dataNS] && (key in elem[dataNS])) {
+          // 获取指定值
+          return elem[dataNS][key];
+        } else {
+          // 从 data- 中获取指定值
+          var dataKey = elem.getAttribute(("data-" + key));
 
-        /**
-         * 取消绑定事件
-         *
-         * $().off(eventName, selector);
-         * $().off(eventName, callback);
-         * $().off(eventName, false);
-         *
-         */
-        off: function (eventName, selector, callback) {
-          var _this = this;
-
-          // event 使用 事件:函数 键值对
-          // event = {
-          //   'event1': callback1,
-          //   'event2': callback2
-          // }
-          //
-          // $().off(event, selector)
-          if (eventName && !isString(eventName)) {
-            each(eventName, function (type, fn) {
-              _this.off(type, selector, fn);
-            });
-
-            return _this;
+          if (dataKey) {
+            return dataKey;
           }
 
-          // selector 不存在
-          // $().off(event, callback)
-          if (!isString(selector) && !isFunction(callback) && callback !== false) {
-            callback = selector;
-            selector = undefined;
-          }
+          return undefined;
+        }
 
-          // callback 为 false
-          // $().off(event, false)
-          if (callback === false) {
-            callback = fnFalse;
-          }
+        // 设置值
+        if (!elem[dataNS]) {
+          elem[dataNS] = {};
+        }
 
-          return _this.each(function () {
-            remove(this, eventName, callback, selector);
-          });
-        },
+        each(data, function (k, v) {
+          elem[dataNS][k] = v;
+        });
 
-        /**
-         * 触发一个事件
-         * @param eventName
-         * @param data
-         * @returns {*|JQ}
-         */
-        trigger: function (eventName, data) {
-          if (!isString(eventName)) {
-            return;
-          }
-
-          var evt;
-          try {
-            evt = new CustomEvent(eventName, {
-              detail: data,
-              bubbles: true,
-              cancelable: true,
-            });
-          } catch (e) {
-            evt = document.createEvent('Event');
-            evt.initEvent(eventName, true, true);
-            evt.detail = data;
-          }
-
-          evt._detailData = data;
-
-          return this.each(function () {
-            this.dispatchEvent(evt);
-          });
-        },
-      });
+        return undefined;
+      },
 
       /**
-       * 添加事件监听
-       * @param element
-       * @param eventName
-       * @param func
-       * @param data
-       * @param selector
+       * 移除指定元素上存放的数据
+       * @param elem 必须，DOM 元素
+       * @param key 必须，键名
        */
-      function add(element, eventName, func, data, selector) {
-        var elementId = getElementId(element);
-        if (!handlers[elementId]) {
-          handlers[elementId] = [];
+      removeData: function removeData(elem, key) {
+        if (elem[dataNS] && elem[dataNS][key]) {
+          elem[dataNS][key] = null;
+          delete elem[dataNS][key];
+        }
+      },
+    });
+
+    $$1.fn.extend({
+      /**
+       * 在元素上读取或设置数据
+       * @param key 必须
+       * @param value
+       * @returns {*}
+       */
+      data: function data(key, value) {
+        if (value === undefined) {
+          if (isObjectLike(key)) {
+            // 同时设置多个值
+            return this.each(function (i, elem) {
+              $$1.data(elem, key);
+            });
+          }
+
+          if (this[0]) {
+            // 获取值
+            return $$1.data(this[0], key);
+          }
+
+          return undefined;
         }
 
-        // 传入 data.useCapture 来设置 useCapture: true
-        var useCapture = false;
-        if (isObjectLike(data) && data.useCapture) {
-          useCapture = true;
+        // 设置值
+        return this.each(function (i, elem) {
+          $$1.data(elem, key, value);
+        });
+      },
+
+      /**
+       * 移除元素上存储的数据
+       * @param key 必须
+       * @returns {*}
+       */
+      removeData: function removeData(key) {
+        return this.each(function (i, elem) {
+          $$1.removeData(elem, key);
+        });
+      },
+    });
+
+    !function(){!function(){try{return new e("test"),!1}catch(e){}var e=function(e,n){n=n||{bubbles:!1,cancelable:!1};var t=document.createEvent("MouseEvent");return t.initMouseEvent(e,n.bubbles,n.cancelable,window,0,0,0,0,0,!1,!1,!1,!1,0,null),t};e.prototype=Event.prototype,window.MouseEvent=e;}();}();
+
+    !function(){!function(){if("function"==typeof window.CustomEvent){ return!1; }function t(t,n){n=n||{bubbles:!1,cancelable:!1,detail:void 0};var e=document.createEvent("CustomEvent");return e.initCustomEvent(t,n.bubbles,n.cancelable,n.detail),e}t.prototype=window.Event.prototype,window.CustomEvent=t;}();}();
+
+  // 存储事件
+    var handlers = {
+      // i: { // 元素ID
+      //   j: { // 事件ID
+      //     e: 事件名
+      //     fn: 事件处理函数
+      //     i: 事件ID
+      //     proxy:
+      //     sel: 选择器
+      //   }
+      // }
+    };
+
+  // 元素ID
+    var mduiElementId = 1;
+
+    function fnFalse() {
+      return false;
+    }
+
+    /**
+     * 为元素赋予一个唯一的ID
+     * @param element
+     * @returns {number|*}
+     */
+    function getElementId(element) {
+      if (!element.mduiElementId) {
+        mduiElementId += 1;
+        element.mduiElementId = mduiElementId;
+      }
+
+      return element.mduiElementId;
+    }
+
+    /**
+     * 获取匹配的事件
+     * @param element
+     * @param eventName
+     * @param func
+     * @param selector
+     * @returns {Array}
+     */
+    function getHandlers(element, eventName, func, selector) {
+      return (handlers[getElementId(element)] || []).filter(function (handler) { return handler
+        && (!eventName || handler.e === eventName)
+        && (!func || handler.fn.toString() === func.toString())
+        && (!selector || handler.sel === selector); });
+    }
+
+    /**
+     * 添加事件监听
+     * @param element
+     * @param eventName
+     * @param func
+     * @param data
+     * @param selector
+     */
+    function add(element, eventName, func, data, selector) {
+      var elementId = getElementId(element);
+
+      if (!handlers[elementId]) {
+        handlers[elementId] = [];
+      }
+
+      // 传入 data.useCapture 来设置 useCapture: true
+      var useCapture = false;
+      if (isObjectLike(data) && data.useCapture) {
+        useCapture = true;
+      }
+
+      eventName.split(' ').forEach(function (event) {
+        var handler = {
+          e: event,
+          fn: func,
+          sel: selector,
+          i: handlers[elementId].length,
+        };
+
+        function callFn(e, elem) {
+          // 因为鼠标事件模拟事件的 detail 属性是只读的，因此在 e._detail 中存储参数
+          /* eslint no-underscore-dangle: 0 */
+          var result = func.apply(elem, e._detail === undefined ? [e] : [e].concat(e._detail));
+
+          if (result === false) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
         }
 
-        eventName.split(' ').forEach(function (event) {
+        function proxyfn(e) {
+          e._data = data;
 
-          var handler = {
-            e: event,
-            fn: func,
-            sel: selector,
-            i: handlers[elementId].length,
-          };
-
-          var callFn = function (e, ele) {
-            var result = func.apply(ele, e._detailData === undefined ? [e] : [e].concat(e._detailData));
-
-            if (result === false) {
-              e.preventDefault();
-              e.stopPropagation();
-            }
-          };
-
-          var proxyfn = handler.proxy = function (e) {
-            e._data = data;
-
+          if (selector) {
             // 事件代理
-            if (selector) {
-              $(element).find(selector).get().reverse().forEach(function (ele) {
-                if (ele === e.target || $.contains(ele, e.target)) {
-                  callFn(e, ele);
+            $$1(element)
+              .find(selector)
+              .get()
+              .reverse()
+              .forEach(function (elem) {
+                if (elem === e.target || $$1.contains(elem, e.target)) {
+                  callFn(e, elem);
                 }
               });
-            }
-
-            // 不使用事件代理
-            else {
-              callFn(e, element);
-            }
-          };
-
-          handlers[elementId].push(handler);
-          element.addEventListener(handler.e, proxyfn, useCapture);
-        });
-      }
-
-      /**
-       * 移除事件监听
-       * @param element
-       * @param eventName
-       * @param func
-       * @param selector
-       */
-      function remove(element, eventName, func, selector) {
-        (eventName || '').split(' ').forEach(function (event) {
-          getHandlers(element, event, func, selector).forEach(function (handler) {
-            delete handlers[getElementId(element)][handler.i];
-            element.removeEventListener(handler.e, handler.proxy, false);
-          });
-        });
-      }
-
-      /**
-       * 为元素赋予一个唯一的ID
-       * @param element
-       * @returns {number|*}
-       */
-      function getElementId(element) {
-        return element._elementId || (element._elementId = _elementId++);
-      }
-
-      /**
-       * 获取匹配的事件
-       * @param element
-       * @param eventName
-       * @param func
-       * @param selector
-       * @returns {Array.<T>}
-       */
-      function getHandlers(element, eventName, func, selector) {
-        return (handlers[getElementId(element)] || []).filter(function (handler) {
-
-          return handler &&
-            (!eventName  || handler.e === eventName) &&
-            (!func || handler.fn.toString() === func.toString()) &&
-            (!selector || handler.sel === selector);
-        });
-      }
-
-    })();
-
-
-    (function () {
-      var globalOptions = {};
-      var jsonpID = 0;
-
-      // 全局事件名
-      var ajaxEvent = {
-        ajaxStart: 'start.mdui.ajax',
-        ajaxSuccess: 'success.mdui.ajax',
-        ajaxError: 'error.mdui.ajax',
-        ajaxComplete: 'complete.mdui.ajax',
-      };
-
-      /**
-       * 判断此请求方法是否通过查询字符串提交参数
-       * @param method 请求方法，大写
-       * @returns {boolean}
-       */
-      var isQueryStringData = function (method) {
-        return ['GET', 'HEAD'].indexOf(method) >= 0;
-      };
-
-      /**
-       * 添加参数到 URL 上，且 URL 中不存在 ? 时，自动把第一个 & 替换为 ?
-       * @param url
-       * @param query 参数 key=value
-       * @returns {string}
-       */
-      var appendQuery = function (url, query) {
-        return (url + '&' + query).replace(/[&?]{1,2}/, '?');
-      };
-
-      $.extend({
-
-        /**
-         * 为 ajax 请求设置全局配置参数
-         * @param options
-         */
-        ajaxSetup: function (options) {
-          $.extend(globalOptions, options || {});
-        },
-
-        /**
-         * 发送 ajax 请求
-         * @param options
-         */
-        ajax: function (options) {
-
-          // 配置参数
-          var defaults = {
-            method: 'GET',         // 请求方式
-            data: false,           // 请求的数据，查询字符串或对象
-            processData: true,     // 是否把数据转换为查询字符串发送，为 false 时不进行自动转换。
-            async: true,           // 是否为异步请求
-            cache: true,           // 是否从缓存中读取，只对 GET/HEAD 请求有效，dataType 为 jsonp 时为 false
-            username: '',          // HTTP 访问认证的用户名
-            password: '',          // HTTP 访问认证的密码
-            headers: {},           // 一个键值对，随着请求一起发送
-            xhrFields: {},         // 设置 XHR 对象
-            statusCode: {},        // 一个 HTTP 代码和函数的对象
-            dataType: 'text',      // 预期服务器返回的数据类型 text、json、jsonp
-            jsonp: 'callback',     // jsonp 请求的回调函数名称
-            jsonpCallback: function () {  // （string 或 Function）使用指定的回调函数名代替自动生成的回调函数名
-              return 'mduijsonp_' + Date.now() + '_' + (jsonpID += 1);
-            },
-
-            contentType: 'application/x-www-form-urlencoded', // 发送信息至服务器时内容编码类型
-            timeout: 0,            // 设置请求超时时间（毫秒）
-            global: true,          // 是否在 document 上触发全局 ajax 事件
-            // beforeSend:    function (XMLHttpRequest) 请求发送前执行，返回 false 可取消本次 ajax 请求
-            // success:       function (data, textStatus, XMLHttpRequest) 请求成功时调用
-            // error:         function (XMLHttpRequest, textStatus) 请求失败时调用
-            // statusCode:    {404: function ()}
-            //                200-299之间的状态码表示成功，参数和 success 回调一样；其他状态码表示失败，参数和 error 回调一样
-            // complete:      function (XMLHttpRequest, textStatus) 请求完成后回调函数 (请求成功或失败之后均调用)
-          };
-
-          // 回调函数
-          var callbacks = [
-            'beforeSend',
-            'success',
-            'error',
-            'statusCode',
-            'complete',
-          ];
-
-          // 是否已取消请求
-          var isCanceled = false;
-
-          // 保存全局配置
-          var globals = globalOptions;
-
-          // 事件参数
-          var eventParams = {};
-
-          // 合并全局参数到默认参数，全局回调函数不覆盖
-          each(globals, function (key, value) {
-            if (callbacks.indexOf(key) < 0) {
-              defaults[key] = value;
-            }
-          });
-
-          // 参数合并
-          options = $.extend({}, defaults, options);
-
-          /**
-           * 触发全局事件
-           * @param event string 事件名
-           * @param xhr XMLHttpRequest 事件参数
-           */
-          function triggerEvent(event, xhr) {
-            if (options.global) {
-              $(document).trigger(event, xhr);
-            }
-          }
-
-          /**
-           * 触发 XHR 回调和事件
-           * @param callback string 回调函数名称
-           */
-          function triggerCallback(callback) {
-            var a = arguments;
-            var result1;
-            var result2;
-
-            if (callback) {
-              // 全局回调
-              if (callback in globals) {
-                result1 = globals[callback](a[1], a[2], a[3], a[4]);
-              }
-
-              // 自定义回调
-              if (options[callback]) {
-                result2 = options[callback](a[1], a[2], a[3], a[4]);
-              }
-
-              // beforeSend 回调返回 false 时取消 ajax 请求
-              if (callback === 'beforeSend' && (result1 === false || result2 === false)) {
-                isCanceled = true;
-              }
-            }
-          }
-
-          // 请求方式转为大写
-          var method = options.method = options.method.toUpperCase();
-
-          // 默认使用当前页面 URL
-          if (!options.url) {
-            options.url = window.location.toString();
-          }
-
-          // 需要发送的数据
-          // GET/HEAD 请求和 processData 为 true 时，转换为查询字符串格式，特殊格式不转换
-          var sendData;
-          if (
-            (isQueryStringData(method) || options.processData) &&
-            options.data &&
-            [ArrayBuffer, Blob, Document, FormData].indexOf(options.data.constructor) < 0
-          ) {
-            sendData = isString(options.data) ? options.data : $.param(options.data);
           } else {
-            sendData = options.data;
+            // 不使用事件代理
+            callFn(e, element);
           }
+        }
 
-          // 对于 GET、HEAD 类型的请求，把 data 数据添加到 URL 中
-          if (isQueryStringData(method) && sendData) {
-            // 查询字符串拼接到 URL 中
-            options.url = appendQuery(options.url, sendData);
-            sendData = null;
+        handler.proxy = proxyfn;
+        handlers[elementId].push(handler);
+        element.addEventListener(handler.e, proxyfn, useCapture);
+      });
+    }
+
+    /**
+     * 移除事件监听
+     * @param element
+     * @param eventName
+     * @param func
+     * @param selector
+     */
+    function remove(element, eventName, func, selector) {
+      (eventName || '').split(' ').forEach(function (event) {
+        getHandlers(element, event, func, selector).forEach(function (handler) {
+          delete handlers[getElementId(element)][handler.i];
+          element.removeEventListener(handler.e, handler.proxy, false);
+        });
+      });
+    }
+
+    $$1.fn.extend({
+      /**
+       * DOM 加载完毕后调用的函数
+       * @param callback
+       * @returns {ready}
+       */
+      ready: function ready(callback) {
+        if (/complete|loaded|interactive/.test(document.readyState) && document.body) {
+          callback($$1);
+        } else {
+          document.addEventListener('DOMContentLoaded', function () {
+            callback($$1);
+          }, false);
+        }
+
+        return this;
+      },
+
+      /**
+       * 绑定事件
+       *
+       * $().on({eventName: fn}, selector, data);
+       * $().on({eventName: fn}, selector)
+       * $().on({eventName: fn})
+       * $().on(eventName, selector, data, fn);
+       * $().on(eventName, selector, fn);
+       * $().on(eventName, data, fn);
+       * $().on(eventName, fn);
+       * $().on(eventName, false);
+       *
+       * @param eventName
+       * @param selector
+       * @param data
+       * @param callback
+       * @param one 是否是 one 方法，只在 JQ 内部使用
+       * @returns
+       */
+      on: function on(eventName, selector, data, callback, one) {
+        var self = this;
+
+        // 默认
+        // $().on(event, selector, data, callback)
+
+        // event 使用 事件:函数 键值对
+        // event = {
+        //   'event1': callback1,
+        //   'event2': callback2
+        // }
+        //
+        // $().on(event, selector, data)
+        if (eventName && !isString(eventName)) {
+          each(eventName, function (type, fn) {
+            self.on(type, selector, data, fn);
+          });
+
+          return self;
+        }
+
+        // selector 不存在
+        // $().on(event, data, callback)
+        if (!isString(selector) && !isFunction(callback) && callback !== false) {
+          callback = data;
+          data = selector;
+          selector = undefined;
+        }
+
+        // data 不存在
+        // $().on(event, callback)
+        if (isFunction(data) || data === false) {
+          callback = data;
+          data = undefined;
+        }
+
+        // callback 为 false
+        // $().on(event, false)
+        if (callback === false) {
+          callback = fnFalse;
+        }
+
+        if (one === 1) {
+          var origCallback = callback;
+          callback = function () {
+            self.off(eventName, selector, callback);
+            /* eslint prefer-rest-params: 0 */
+            return origCallback.apply(this, arguments);
+          };
+        }
+
+        return this.each(function () {
+          add(this, eventName, callback, data, selector);
+        });
+      },
+
+      /**
+       * 绑定事件，只触发一次
+       * @param eventName
+       * @param selector
+       * @param data
+       * @param callback
+       */
+      one: function one(eventName, selector, data, callback) {
+        var self = this;
+
+        if (!isString(eventName)) {
+          each(eventName, function (type, fn) {
+            type.split(' ').forEach(function (eName) {
+              self.on(eName, selector, data, fn, 1);
+            });
+          });
+        } else {
+          eventName.split(' ').forEach(function (eName) {
+            self.on(eName, selector, data, callback, 1);
+          });
+        }
+
+        return this;
+      },
+
+      /**
+       * 取消绑定事件
+       *
+       * $().off(eventName, selector);
+       * $().off(eventName, callback);
+       * $().off(eventName, false);
+       *
+       */
+      off: function off(eventName, selector, callback) {
+        var self = this;
+
+        // event 使用 事件:函数 键值对
+        // event = {
+        //   'event1': callback1,
+        //   'event2': callback2
+        // }
+        //
+        // $().off(event, selector)
+        if (eventName && !isString(eventName)) {
+          each(eventName, function (type, fn) {
+            self.off(type, selector, fn);
+          });
+
+          return self;
+        }
+
+        // selector 不存在
+        // $().off(event, callback)
+        if (!isString(selector) && !isFunction(callback) && callback !== false) {
+          callback = selector;
+          selector = undefined;
+        }
+
+        // callback 为 false
+        // $().off(event, false)
+        if (callback === false) {
+          callback = fnFalse;
+        }
+
+        return self.each(function () {
+          remove(this, eventName, callback, selector);
+        });
+      },
+
+      /**
+       * 触发一个事件
+       * @param eventName
+       * @param data
+       * @returns {*|JQ}
+       */
+      trigger: function trigger(eventName, data) {
+        var isMouseEvent = ['click', 'mousedown', 'mouseup', 'mousemove'].indexOf(eventName) > -1;
+        var evt;
+
+        if (isMouseEvent) {
+          // Note: MouseEvent 无法传入 detail 参数
+          evt = new MouseEvent(eventName, {
+            bubbles: true,
+            cancelable: true,
+          });
+        } else {
+          evt = new CustomEvent(eventName, {
+            detail: data,
+            bubbles: true,
+            cancelable: true,
+          });
+        }
+
+        evt._detail = data;
+
+        return this.each(function () {
+          this.dispatchEvent(evt);
+        });
+      },
+    });
+
+    var globalOptions = {};
+    var jsonpID = 0;
+
+  // 全局事件名
+    var ajaxEvent = {
+      ajaxStart: 'start.mdui.ajax',
+      ajaxSuccess: 'success.mdui.ajax',
+      ajaxError: 'error.mdui.ajax',
+      ajaxComplete: 'complete.mdui.ajax',
+    };
+
+    /**
+     * 判断此请求方法是否通过查询字符串提交参数
+     * @param method 请求方法，大写
+     * @returns {boolean}
+     */
+    function isQueryStringData(method) {
+      return ['GET', 'HEAD'].indexOf(method) >= 0;
+    }
+
+    /**
+     * 添加参数到 URL 上，且 URL 中不存在 ? 时，自动把第一个 & 替换为 ?
+     * @param url
+     * @param query 参数 key=value
+     * @returns {string}
+     */
+    function appendQuery(url, query) {
+      return ((url + "&" + query)).replace(/[&?]{1,2}/, '?');
+    }
+
+    $$1.extend({
+
+      /**
+       * 为 ajax 请求设置全局配置参数
+       * @param options
+       */
+      ajaxSetup: function ajaxSetup(options) {
+        $$1.extend(globalOptions, options || {});
+      },
+
+      /**
+       * 发送 ajax 请求
+       * @param options
+       */
+      ajax: function ajax(options) {
+        // 配置参数
+        var defaults = {
+          // 请求方式
+          method: 'GET',
+          // 请求的数据，查询字符串或对象
+          data: false,
+          // 是否把数据转换为查询字符串发送，为 false 时不进行自动转换。
+          processData: true,
+          // 是否为异步请求
+          async: true,
+          // 是否从缓存中读取，只对 GET/HEAD 请求有效，dataType 为 jsonp 时为 false
+          cache: true,
+          // HTTP 访问认证的用户名
+          username: '',
+          // HTTP 访问认证的密码
+          password: '',
+          // 一个键值对，随着请求一起发送
+          headers: {},
+          // 设置 XHR 对象
+          xhrFields: {},
+          // 一个 HTTP 代码和函数的对象
+          statusCode: {},
+          // 预期服务器返回的数据类型 text、json、jsonp
+          dataType: 'text',
+          // jsonp 请求的回调函数名称
+          jsonp: 'callback',
+          // （string 或 Function）使用指定的回调函数名代替自动生成的回调函数名
+          jsonpCallback: function () {
+            jsonpID += 1;
+
+            return ("mduijsonp_" + (Date.now()) + "_" + jsonpID);
+          },
+          // 发送信息至服务器时内容编码类型
+          contentType: 'application/x-www-form-urlencoded',
+          // 设置请求超时时间（毫秒）
+          timeout: 0,
+          // 是否在 document 上触发全局 ajax 事件
+          global: true,
+          // beforeSend:    function (XMLHttpRequest) 请求发送前执行，返回 false 可取消本次 ajax 请求
+          // success:       function (data, textStatus, XMLHttpRequest) 请求成功时调用
+          // error:         function (XMLHttpRequest, textStatus) 请求失败时调用
+          // statusCode:    {404: function ()}
+          //                200-299之间的状态码表示成功，参数和 success 回调一样；其他状态码表示失败，参数和 error 回调一样
+          // complete:      function (XMLHttpRequest, textStatus) 请求完成后回调函数 (请求成功或失败之后均调用)
+        };
+
+        // 回调函数
+        var callbacks = [
+          'beforeSend',
+          'success',
+          'error',
+          'statusCode',
+          'complete' ];
+
+        // 是否已取消请求
+        var isCanceled = false;
+
+        // 保存全局配置
+        var globals = globalOptions;
+
+        // 事件参数
+        var eventParams = {};
+
+        // 合并全局参数到默认参数，全局回调函数不覆盖
+        each(globals, function (key, value) {
+          if (callbacks.indexOf(key) < 0) {
+            defaults[key] = value;
           }
+        });
 
-          // JSONP
-          if (options.dataType === 'jsonp') {
-            // URL 中添加自动生成的回调函数名
-            var callbackName = isFunction(options.jsonpCallback) ?
-              options.jsonpCallback() :
-              options.jsonpCallback;
-            var requestUrl = appendQuery(options.url, options.jsonp + '=' + callbackName);
+        // 参数合并
+        options = $$1.extend({}, defaults, options);
 
-            eventParams.options = options;
+        /**
+         * 触发全局事件
+         * @param event string 事件名
+         * @param xhr XMLHttpRequest 事件参数
+         */
+        function triggerEvent(event, xhr) {
+          if (options.global) {
+            $$1(document).trigger(event, xhr);
+          }
+        }
 
-            triggerEvent(ajaxEvent.ajaxStart, eventParams);
-            triggerCallback('beforeSend', null);
+        /**
+         * 触发 XHR 回调和事件
+         * @param callback string 回调函数名称
+         * @param args
+         */
+        function triggerCallback(callback) {
+          var args = [], len = arguments.length - 1;
+          while ( len-- > 0 ) args[ len ] = arguments[ len + 1 ];
 
-            if (isCanceled) {
-              return;
+          var result1;
+          var result2;
+
+          if (callback) {
+            // 全局回调
+            if (callback in globals) {
+              result1 = globals[callback].apply(globals, args);
             }
 
-            var abortTimeout;
-
-            // 创建 script
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-
-            // 创建 script 失败
-            script.onerror = function () {
-              if (abortTimeout) {
-                clearTimeout(abortTimeout);
-              }
-
-              triggerEvent(ajaxEvent.ajaxError, eventParams);
-              triggerCallback('error', null, 'scripterror');
-
-              triggerEvent(ajaxEvent.ajaxComplete, eventParams);
-              triggerCallback('complete', null, 'scripterror');
-            };
-
-            script.src = requestUrl;
-
-            // 处理
-            window[callbackName] = function (data) {
-              if (abortTimeout) {
-                clearTimeout(abortTimeout);
-              }
-
-              eventParams.data = data;
-
-              triggerEvent(ajaxEvent.ajaxSuccess, eventParams);
-              triggerCallback('success', data, 'success', null);
-
-              $(script).remove();
-              script = null;
-              delete window[callbackName];
-            };
-
-            $('head').append(script);
-
-            if (options.timeout > 0) {
-              abortTimeout = setTimeout(function () {
-                $(script).remove();
-                script = null;
-
-                triggerEvent(ajaxEvent.ajaxError, eventParams);
-                triggerCallback('error', null, 'timeout');
-              }, options.timeout);
+            // 自定义回调
+            if (options[callback]) {
+              result2 = options[callback].apply(options, args);
             }
 
-            return;
+            // beforeSend 回调返回 false 时取消 ajax 请求
+            if (callback === 'beforeSend' && (result1 === false || result2 === false)) {
+              isCanceled = true;
+            }
           }
+        }
 
-          // GET/HEAD 请求的缓存处理
-          if (isQueryStringData(method) && !options.cache) {
-            options.url = appendQuery(options.url, '_=' + Date.now());
-          }
+        // 请求方式转为大写
+        var method = options.method.toUpperCase();
 
-          // 创建 XHR
-          var xhr = new XMLHttpRequest();
+        // 默认使用当前页面 URL
+        if (!options.url) {
+          options.url = window.location.toString();
+        }
 
-          xhr.open(method, options.url, options.async, options.username, options.password);
+        // 需要发送的数据
+        // GET/HEAD 请求和 processData 为 true 时，转换为查询字符串格式，特殊格式不转换
+        var sendData;
+        if (
+          (isQueryStringData(method) || options.processData)
+          && options.data
+          && [ArrayBuffer, Blob, Document, FormData].indexOf(options.data.constructor) < 0
+        ) {
+          sendData = isString(options.data) ? options.data : $$1.param(options.data);
+        } else {
+          sendData = options.data;
+        }
 
-          xhr.setRequestHeader('Content-Type', options.contentType);
+        // 对于 GET、HEAD 类型的请求，把 data 数据添加到 URL 中
+        if (isQueryStringData(method) && sendData) {
+          // 查询字符串拼接到 URL 中
+          options.url = appendQuery(options.url, sendData);
+          sendData = null;
+        }
 
-          // 设置 Accept
-          if (options.contentType === 'json') {
-            xhr.setRequestHeader('Accept', 'application/json, text/javascript');
-          }
+        // JSONP
+        if (options.dataType === 'jsonp') {
+          // URL 中添加自动生成的回调函数名
+          var callbackName = isFunction(options.jsonpCallback)
+            ? options.jsonpCallback()
+            : options.jsonpCallback;
+          var requestUrl = appendQuery(options.url, ((options.jsonp) + "=" + callbackName));
 
-          // 添加 headers
-          if (options.headers) {
-            each(options.headers, function (key, value) {
-              xhr.setRequestHeader(key, value);
-            });
-          }
-
-          // 检查是否是跨域请求
-          if (options.crossDomain === undefined) {
-            options.crossDomain =
-              /^([\w-]+:)?\/\/([^\/]+)/.test(options.url) &&
-              RegExp.$2 !== window.location.host;
-          }
-
-          if (!options.crossDomain) {
-            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-          }
-
-          if (options.xhrFields) {
-            each(options.xhrFields, function (key, value) {
-              xhr[key] = value;
-            });
-          }
-
-          eventParams.xhr = xhr;
           eventParams.options = options;
 
-          var xhrTimeout;
+          triggerEvent(ajaxEvent.ajaxStart, eventParams);
+          triggerCallback('beforeSend', null);
 
-          xhr.onload = function () {
-            if (xhrTimeout) {
-              clearTimeout(xhrTimeout);
+          if (isCanceled) {
+            return undefined;
+          }
+
+          var abortTimeout;
+
+          // 创建 script
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+
+          // 创建 script 失败
+          script.onerror = function () {
+            if (abortTimeout) {
+              clearTimeout(abortTimeout);
             }
 
-            // 包含成功或错误代码的字符串
-            var textStatus;
+            triggerEvent(ajaxEvent.ajaxError, eventParams);
+            triggerCallback('error', null, 'scripterror');
 
-            // AJAX 返回的 HTTP 响应码是否表示成功
-            var isHttpStatusSuccess = (xhr.status >= 200 && xhr.status < 300) || xhr.status === 0;
+            triggerEvent(ajaxEvent.ajaxComplete, eventParams);
+            triggerCallback('complete', null, 'scripterror');
+          };
 
-            if (isHttpStatusSuccess) {
+          script.src = requestUrl;
 
-              if (xhr.status === 204 || method === 'HEAD') {
-                textStatus = 'nocontent';
-              } else if (xhr.status === 304) {
-                textStatus = 'notmodified';
-              } else {
-                textStatus = 'success';
+          // 处理
+          window[callbackName] = function (data) {
+            if (abortTimeout) {
+              clearTimeout(abortTimeout);
+            }
+
+            eventParams.data = data;
+
+            triggerEvent(ajaxEvent.ajaxSuccess, eventParams);
+            triggerCallback('success', data, 'success', null);
+
+            $$1(script).remove();
+            script = null;
+            delete window[callbackName];
+          };
+
+          $$1('head').append(script);
+
+          if (options.timeout > 0) {
+            abortTimeout = setTimeout(function () {
+              $$1(script).remove();
+              script = null;
+
+              triggerEvent(ajaxEvent.ajaxError, eventParams);
+              triggerCallback('error', null, 'timeout');
+            }, options.timeout);
+          }
+
+          return undefined;
+        }
+
+        // GET/HEAD 请求的缓存处理
+        if (isQueryStringData(method) && !options.cache) {
+          options.url = appendQuery(options.url, ("_=" + (Date.now())));
+        }
+
+        // 创建 XHR
+        var xhr = new XMLHttpRequest();
+
+        xhr.open(method, options.url, options.async, options.username, options.password);
+
+        if (
+          options.contentType
+          || (
+            sendData
+            && !isQueryStringData(method)
+            && options.contentType !== false
+          )
+        ) {
+          xhr.setRequestHeader('Content-Type', options.contentType);
+        }
+
+        // 设置 Accept
+        if (options.dataType === 'json') {
+          xhr.setRequestHeader('Accept', 'application/json, text/javascript');
+        }
+
+        // 添加 headers
+        if (options.headers) {
+          each(options.headers, function (key, value) {
+            xhr.setRequestHeader(key, value);
+          });
+        }
+
+        // 检查是否是跨域请求
+        if (options.crossDomain === undefined) {
+          options.crossDomain = /^([\w-]+:)?\/\/([^/]+)/.test(options.url)
+            && RegExp.$2 !== window.location.host;
+        }
+
+        if (!options.crossDomain) {
+          xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        }
+
+        if (options.xhrFields) {
+          each(options.xhrFields, function (key, value) {
+            xhr[key] = value;
+          });
+        }
+
+        eventParams.xhr = xhr;
+        eventParams.options = options;
+
+        var xhrTimeout;
+
+        xhr.onload = function () {
+          if (xhrTimeout) {
+            clearTimeout(xhrTimeout);
+          }
+
+          // 包含成功或错误代码的字符串
+          var textStatus;
+
+          // AJAX 返回的 HTTP 响应码是否表示成功
+          var isHttpStatusSuccess = (xhr.status >= 200 && xhr.status < 300) || xhr.status === 0;
+
+          var responseData;
+
+          if (isHttpStatusSuccess) {
+            if (xhr.status === 204 || method === 'HEAD') {
+              textStatus = 'nocontent';
+            } else if (xhr.status === 304) {
+              textStatus = 'notmodified';
+            } else {
+              textStatus = 'success';
+            }
+
+            if (options.dataType === 'json') {
+              try {
+                responseData = JSON.parse(xhr.responseText);
+                eventParams.data = responseData;
+              } catch (err) {
+                textStatus = 'parsererror';
+
+                triggerEvent(ajaxEvent.ajaxError, eventParams);
+                triggerCallback('error', xhr, textStatus);
               }
 
-              var responseData;
-              if (options.dataType === 'json') {
-                try {
-                  eventParams.data = responseData = JSON.parse(xhr.responseText);
-
-                  triggerEvent(ajaxEvent.ajaxSuccess, eventParams);
-                  triggerCallback('success', responseData, textStatus, xhr);
-                } catch (err) {
-                  textStatus = 'parsererror';
-
-                  triggerEvent(ajaxEvent.ajaxError, eventParams);
-                  triggerCallback('error', xhr, textStatus);
-                }
-              } else {
-                eventParams.data = responseData =
-                  xhr.responseType === 'text' || xhr.responseType === '' ?
-                  xhr.responseText :
-                  xhr.response;
-
+              if (textStatus !== 'parsererror') {
                 triggerEvent(ajaxEvent.ajaxSuccess, eventParams);
                 triggerCallback('success', responseData, textStatus, xhr);
               }
             } else {
-              textStatus = 'error';
+              responseData = xhr.responseType === 'text' || xhr.responseType === ''
+                ? xhr.responseText
+                : xhr.response;
+              eventParams.data = responseData;
 
-              triggerEvent(ajaxEvent.ajaxError, eventParams);
-              triggerCallback('error', xhr, textStatus);
+              triggerEvent(ajaxEvent.ajaxSuccess, eventParams);
+              triggerCallback('success', responseData, textStatus, xhr);
             }
-
-            // statusCode
-            each([globals.statusCode, options.statusCode], function (i, func) {
-              if (func && func[xhr.status]) {
-                if (isHttpStatusSuccess) {
-                  func[xhr.status](responseData, textStatus, xhr);
-                } else {
-                  func[xhr.status](xhr, textStatus);
-                }
-              }
-            });
-
-            triggerEvent(ajaxEvent.ajaxComplete, eventParams);
-            triggerCallback('complete', xhr, textStatus);
-          };
-
-          xhr.onerror = function () {
-            if (xhrTimeout) {
-              clearTimeout(xhrTimeout);
-            }
-
-            triggerEvent(ajaxEvent.ajaxError, eventParams);
-            triggerCallback('error', xhr, xhr.statusText);
-
-            triggerEvent(ajaxEvent.ajaxComplete, eventParams);
-            triggerCallback('complete', xhr, 'error');
-          };
-
-          xhr.onabort = function () {
-            var textStatus = 'abort';
-
-            if (xhrTimeout) {
-              textStatus = 'timeout';
-              clearTimeout(xhrTimeout);
-            }
+          } else {
+            textStatus = 'error';
 
             triggerEvent(ajaxEvent.ajaxError, eventParams);
             triggerCallback('error', xhr, textStatus);
-
-            triggerEvent(ajaxEvent.ajaxComplete, eventParams);
-            triggerCallback('complete', xhr, textStatus);
-          };
-
-          // ajax start 回调
-          triggerEvent(ajaxEvent.ajaxStart, eventParams);
-          triggerCallback('beforeSend', xhr);
-
-          if (isCanceled) {
-            return xhr;
           }
 
-          // Timeout
-          if (options.timeout > 0) {
-            xhrTimeout = setTimeout(function () {
-              xhr.abort();
-            }, options.timeout);
-          }
-
-          // 发送 XHR
-          xhr.send(sendData);
-
-          return xhr;
-        },
-      });
-
-      // 监听全局事件
-      //
-      // 通过 $(document).on('success.mdui.ajax', function (event, params) {}) 调用时，包含两个参数
-      // event: 事件对象
-      // params: {
-      //   xhr: XMLHttpRequest 对象
-      //   options: ajax 请求的配置参数
-      //   data: ajax 请求返回的数据
-      // }
-
-      // 全局 Ajax 事件快捷方法
-      // $(document).ajaxStart(function (event, xhr, options) {})
-      // $(document).ajaxSuccess(function (event, xhr, options, data) {})
-      // $(document).ajaxError(function (event, xhr, options) {})
-      // $(document).ajaxComplete(function (event, xhr, options) {})
-      each(ajaxEvent, function (name, eventName) {
-        $.fn[name] = function (fn) {
-          return this.on(eventName, function (e, params) {
-            fn(e, params.xhr, params.options, params.data);
+          // statusCode
+          each([globals.statusCode, options.statusCode], function (i, func) {
+            if (func && func[xhr.status]) {
+              if (isHttpStatusSuccess) {
+                func[xhr.status](responseData, textStatus, xhr);
+              } else {
+                func[xhr.status](xhr, textStatus);
+              }
+            }
           });
+
+          triggerEvent(ajaxEvent.ajaxComplete, eventParams);
+          triggerCallback('complete', xhr, textStatus);
         };
-      });
-    })();
 
+        xhr.onerror = function () {
+          if (xhrTimeout) {
+            clearTimeout(xhrTimeout);
+          }
 
-  /* jshint ignore:start */
-    return $;
-  })(window, document);
-  /* jshint ignore:end */
+          triggerEvent(ajaxEvent.ajaxError, eventParams);
+          triggerCallback('error', xhr, xhr.statusText);
+
+          triggerEvent(ajaxEvent.ajaxComplete, eventParams);
+          triggerCallback('complete', xhr, 'error');
+        };
+
+        xhr.onabort = function () {
+          var textStatus = 'abort';
+
+          if (xhrTimeout) {
+            textStatus = 'timeout';
+            clearTimeout(xhrTimeout);
+          }
+
+          triggerEvent(ajaxEvent.ajaxError, eventParams);
+          triggerCallback('error', xhr, textStatus);
+
+          triggerEvent(ajaxEvent.ajaxComplete, eventParams);
+          triggerCallback('complete', xhr, textStatus);
+        };
+
+        // ajax start 回调
+        triggerEvent(ajaxEvent.ajaxStart, eventParams);
+        triggerCallback('beforeSend', xhr);
+
+        if (isCanceled) {
+          return xhr;
+        }
+
+        // Timeout
+        if (options.timeout > 0) {
+          xhrTimeout = setTimeout(function () {
+            xhr.abort();
+          }, options.timeout);
+        }
+
+        // 发送 XHR
+        xhr.send(sendData);
+
+        return xhr;
+      },
+    });
+
+  // 监听全局事件
+  //
+  // 通过 $(document).on('success.mdui.ajax', function (event, params) {}) 调用时，包含两个参数
+  // event: 事件对象
+  // params: {
+  //   xhr: XMLHttpRequest 对象
+  //   options: ajax 请求的配置参数
+  //   data: ajax 请求返回的数据
+  // }
+
+  // 全局 Ajax 事件快捷方法
+  // $(document).ajaxStart(function (event, xhr, options) {})
+  // $(document).ajaxSuccess(function (event, xhr, options, data) {})
+  // $(document).ajaxError(function (event, xhr, options) {})
+  // $(document).ajaxComplete(function (event, xhr, options) {})
+    each(ajaxEvent, function (name, eventName) {
+      $$1.fn[name] = function (fn) {
+        return this.on(eventName, function (e, params) {
+          fn(e, params.xhr, params.options, params.data);
+        });
+      };
+    });
+
+    return $$1;
+
+  }());
 
 
   /**
@@ -2668,28 +2653,115 @@
         }
       };
     },
-
-    /**
-     * 生成唯一 id
-     * @param pluginName 插件名，若传入该参数，guid 将以该参数作为前缀
-     * @returns {string}
-     */
-    guid: function (pluginName) {
-      function s4() {
-        return Math.floor((1 + Math.random()) * 0x10000)
-          .toString(16)
-          .substring(1);
-      }
-
-      var guid = s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
-      if (pluginName) {
-        guid = 'mdui-' + pluginName + '-' + guid;
-      }
-
-      return guid;
-    },
-
   });
+
+  /**
+   * 生成唯一 id
+   * @param string name id的名称，若该名称对于的guid不存在，则生成新的guid并返回；若已存在，则返回原有guid
+   * @returns {string}
+   */
+  (function () {
+    var GUID = {};
+
+    $.extend({
+      guid: function (name) {
+        if (typeof name !== 'undefined' && typeof GUID[name] !== 'undefined') {
+          return GUID[name];
+        }
+
+        function s4() {
+          return Math.floor((1 + Math.random()) * 0x10000)
+            .toString(16)
+            .substring(1);
+        }
+
+        var guid = s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+
+        if (typeof name !== 'undefined') {
+          GUID[name] = guid;
+        }
+
+        return guid;
+      },
+    });
+  })();
+
+
+  /**
+   * =============================================================================
+   * ************   Mutation   ************
+   * =============================================================================
+   */
+
+  (function () {
+    /**
+     * API 初始化代理, 当 DOM 突变再次执行代理的初始化函数. 使用方法:
+     *
+     * 1. 代理组件 API 执行初始化函数, selector 必须为字符串.
+     *    mdui.mutation(selector, apiInit);
+     *    mutation 会执行 $(selector).each(apiInit)
+     *
+     * 2. 突变时, 再次执行代理的初始化函数
+     *    mdui.mutation()        等价 $(document).mutation()
+     *    $(selector).mutation() 在 selector 节点内进行 API 初始化
+     *
+     * 原理:
+     *
+     *    mutation 执行了 $().data('mdui.mutation', [selector]).
+     *    当元素被重构时, 该数据会丢失, 由此判断是否突变.
+     *
+     * 提示:
+     *
+     *    类似 Drawer 可以使用委托事件完成.
+     *    类似 Collapse 需要知道 DOM 发生突变, 并再次进行初始化.
+     */
+    var entries = { };
+
+    function mutation(selector, apiInit, that, i, item) {
+      var $this = $(that);
+      var m = $this.data('mdui.mutation');
+
+      if (!m) {
+        m = [];
+        $this.data('mdui.mutation', m);
+      }
+
+      if (m.indexOf(selector) === -1) {
+        m.push(selector);
+        apiInit.call(that, i, item);
+      }
+    }
+
+    $.fn.extend({
+      mutation: function () {
+        return this.each(function (i, item) {
+          var $this = $(this);
+          $.each(entries, function (selector, apiInit) {
+            if ($this.is(selector)) {
+              mutation(selector, apiInit, $this[0], i, item);
+            }
+
+            $this.find(selector).each(function (i, item) {
+              mutation(selector, apiInit, this, i, item);
+            });
+          });
+        });
+      },
+    });
+
+    mdui.mutation = function (selector, apiInit) {
+      if (typeof selector !== 'string' || typeof apiInit !== 'function') {
+        $(document).mutation();
+        return;
+      }
+
+      entries[selector] = apiInit;
+      $(selector).each(function (i, item) {
+        mutation(selector, apiInit, this, i, item);
+      });
+    };
+
+  })();
 
 
   /**
@@ -2931,7 +3003,7 @@
    */
 
   $(function () {
-    $('[mdui-headroom]').each(function () {
+    mdui.mutation('[mdui-headroom]', function () {
       var $this = $(this);
       var options = parseOptions($this.attr('mdui-headroom'));
 
@@ -3192,7 +3264,7 @@
    */
 
   $(function () {
-    $('[mdui-collapse]').each(function () {
+    mdui.mutation('[mdui-collapse]', function () {
       var $target = $(this);
 
       var inst = $target.data('mdui.collapse');
@@ -3360,14 +3432,14 @@
       });
     };
 
-    $(function () {
-      // 实例化表格
-      $('.mdui-table').each(function () {
-        var $table = $(this);
-        if (!$table.data('mdui.table')) {
-          $table.data('mdui.table', new Table($table));
-        }
-      });
+    /**
+     * 初始化表格
+     */
+    mdui.mutation('.mdui-table', function () {
+      var $table = $(this);
+      if (!$table.data('mdui.table')) {
+        $table.data('mdui.table', new Table($table));
+      }
     });
 
     /**
@@ -3702,7 +3774,6 @@
       // 实时字数统计
       if (reInit) {
         $textField
-          .removeClass('mdui-textfield-has-counter')
           .find('.mdui-textfield-counter')
           .remove();
       }
@@ -3713,19 +3784,19 @@
           $('<div class="mdui-textfield-counter">' +
               '<span class="mdui-textfield-counter-inputed"></span> / ' + maxlength +
             '</div>').appendTo($textField);
-
-          // 如果没有 .mdui-textfield-error 作为占位，需要增加 .mdui-textfield 的下边距，
-          // 使 .mdui-textfield-counter 不会覆盖在文本框上
-          if (!$textField.find('.mdui-textfield-error').length) {
-            $textField.addClass('mdui-textfield-has-counter');
-          }
         }
 
-        // 字符长度，确保统计方式和 maxlength 一致
-        var inputed = value.length + value.split('\n').length - 1;
-        $textField.find('.mdui-textfield-counter-inputed').text(inputed.toString());
+        $textField.find('.mdui-textfield-counter-inputed').text(value.length.toString());
       }
 
+      // 含 帮助文本、错误提示、字数统计 时，增加文本框底部内边距
+      if (
+        $textField.find('.mdui-textfield-helper').length ||
+        $textField.find('.mdui-textfield-error').length ||
+        maxlength
+      ) {
+        $textField.addClass('mdui-textfield-has-bottom');
+      }
     };
 
     // 绑定事件
@@ -3769,17 +3840,20 @@
           });
       });
     };
+  })();
 
-    $(function () {
-      // DOM 加载完后自动执行
-      $('.mdui-textfield-input').each(function () {
-        $(this).trigger('input', {
+  $(function () {
+    /**
+     * 初始化文本框
+     */
+    mdui.mutation('.mdui-textfield', function () {
+      $(this)
+        .find('.mdui-textfield-input')
+        .trigger('input', {
           domLoadedEvent: true,
         });
-      });
     });
-
-  })();
+  });
 
 
   /**
@@ -3910,22 +3984,22 @@
       .on(TouchHandler.unlock, rangeSelector, TouchHandler.register);
 
     /**
-     * 页面加载完后自动初始化
-     */
-    $(function () {
-      $('.mdui-slider').each(function () {
-        reInit($(this));
-      });
-    });
-
-    /**
-     * 重新初始化滑块
+     * 重新初始化滑块（强制重新初始化）
      */
     mdui.updateSliders = function () {
       $(arguments.length ? arguments[0] : '.mdui-slider').each(function () {
         reInit($(this));
       });
     };
+
+    $(function () {
+      /**
+       * 页面加载完后自动初始化（未初始化时，可以调用该方法初始化）
+       */
+      mdui.mutation('.mdui-slider', function () {
+        reInit($(this));
+      });
+    });
   })();
 
 
@@ -4259,7 +4333,7 @@
       _this.options = $.extend({}, DEFAULT, (opts || {}));
 
       // 为当前 select 生成唯一 ID
-      _this.uniqueID = $.guid('select');
+      _this.uniqueID = $.guid();
 
       _this.state = 'closed';
 
@@ -4377,6 +4451,7 @@
         _this.selectedIndex = itemData.index;
         _this.value = itemData.value;
         _this.text = itemData.text;
+        $selectNative.trigger('change');
 
         _this.close();
       });
@@ -4491,7 +4566,7 @@
    */
 
   $(function () {
-    $('[mdui-select]').each(function () {
+    mdui.mutation('[mdui-select]', function () {
       var $this = $(this);
       var inst = $this.data('mdui.select');
       if (!inst) {
@@ -4513,13 +4588,13 @@
 
   $(function () {
     // 滚动时隐藏应用栏
-    $('.mdui-appbar-scroll-hide').each(function () {
+    mdui.mutation('.mdui-appbar-scroll-hide', function () {
       var $this = $(this);
       $this.data('mdui.headroom', new mdui.Headroom($this));
     });
 
     // 滚动时只隐藏应用栏中的工具栏
-    $('.mdui-appbar-scroll-toolbar-hide').each(function () {
+    mdui.mutation('.mdui-appbar-scroll-toolbar-hide', function () {
       var $this = $(this);
       var inst = new mdui.Headroom($this, {
         pinnedClass: 'mdui-headroom-pinned-toolbar',
@@ -4573,7 +4648,7 @@
       _this.options = $.extend({}, DEFAULT, (opts || {}));
       _this.$tabs = _this.$tab.children('a');
       _this.$indicator = $('<div class="mdui-tab-indicator"></div>').appendTo(_this.$tab);
-      _this.activeIndex = false;
+      _this.activeIndex = false; // 为 false 时表示没有激活的选项卡，或不存在选项卡
 
       // 根据 url hash 获取默认激活的选项卡
       var hash = location.hash;
@@ -4596,8 +4671,8 @@
         });
       }
 
-      // 默认激活第一个选项卡
-      if (_this.activeIndex === false) {
+      // 存在选项卡时，默认激活第一个选项卡
+      if (_this.$tabs.length && _this.activeIndex === false) {
         _this.activeIndex = 0;
       }
 
@@ -4611,39 +4686,49 @@
 
       // 监听点击选项卡事件
       _this.$tabs.each(function (i, tab) {
-        var $tab = $(tab);
-
-        // 点击或鼠标移入触发的事件
-        var clickEvent = function (e) {
-          // 禁用状态的选项无法选中
-          if (isDisabled($tab)) {
-            e.preventDefault();
-            return;
-          }
-
-          _this.activeIndex = i;
-          _this._setActive();
-        };
-
-        // 无论 trigger 是 click 还是 hover，都会响应 click 事件
-        $tab.on('click', clickEvent);
-
-        // trigger 为 hover 时，额外响应 mouseenter 事件
-        if (_this.options.trigger === 'hover') {
-          $tab.on('mouseenter', clickEvent);
-        }
-
-        $tab.on('click', function (e) {
-          // 阻止链接的默认点击动作
-          if ($tab.attr('href').indexOf('#') === 0) {
-            e.preventDefault();
-          }
-        });
+        _this._bindTabEvent(tab);
       });
     }
 
     /**
+     * 绑定在 Tab 上点击或悬浮的事件
+     * @private
+     */
+    Tab.prototype._bindTabEvent = function (tab) {
+      var _this = this;
+      var $tab = $(tab);
+
+      // 点击或鼠标移入触发的事件
+      var clickEvent = function (e) {
+        // 禁用状态的选项无法选中
+        if (isDisabled($tab)) {
+          e.preventDefault();
+          return;
+        }
+
+        _this.activeIndex = _this.$tabs.index(tab);
+        _this._setActive();
+      };
+
+      // 无论 trigger 是 click 还是 hover，都会响应 click 事件
+      $tab.on('click', clickEvent);
+
+      // trigger 为 hover 时，额外响应 mouseenter 事件
+      if (_this.options.trigger === 'hover') {
+        $tab.on('mouseenter', clickEvent);
+      }
+
+      $tab.on('click', function (e) {
+        // 阻止链接的默认点击动作
+        if ($tab.attr('href').indexOf('#') === 0) {
+          e.preventDefault();
+        }
+      });
+    };
+
+    /**
      * 设置激活状态的选项卡
+     * @private
      */
     Tab.prototype._setActive = function () {
       var _this = this;
@@ -4657,7 +4742,7 @@
           if (!$tab.hasClass('mdui-tab-active')) {
             componentEvent('change', 'tab', _this, _this.$tab, {
               index: _this.activeIndex,
-              target: tab,
+              id: targetId.substr(1),
             });
             componentEvent('show', 'tab', _this, $tab);
 
@@ -4678,13 +4763,25 @@
      */
     Tab.prototype._setIndicatorPosition = function () {
       var _this = this;
+      var $activeTab;
+      var activeTabOffset;
 
-      var $activeTab = _this.$tabs.eq(_this.activeIndex);
+      // 选项卡数量为 0 时，不显示指示器
+      if (_this.activeIndex === false) {
+        _this.$indicator.css({
+          left: 0,
+          width: 0,
+        });
+
+        return;
+      }
+
+      $activeTab = _this.$tabs.eq(_this.activeIndex);
       if (isDisabled($activeTab)) {
         return;
       }
 
-      var activeTabOffset = $activeTab.offset();
+      activeTabOffset = $activeTab.offset();
       _this.$indicator.css({
         left: activeTabOffset.left + _this.$tab[0].scrollLeft -
               _this.$tab[0].getBoundingClientRect().left + 'px',
@@ -4697,6 +4794,10 @@
      */
     Tab.prototype.next = function () {
       var _this = this;
+
+      if (_this.activeIndex === false) {
+        return;
+      }
 
       if (_this.$tabs.length > _this.activeIndex + 1) {
         _this.activeIndex++;
@@ -4712,6 +4813,10 @@
      */
     Tab.prototype.prev = function () {
       var _this = this;
+
+      if (_this.activeIndex === false) {
+        return;
+      }
 
       if (_this.activeIndex > 0) {
         _this.activeIndex--;
@@ -4729,6 +4834,10 @@
     Tab.prototype.show = function (index) {
       var _this = this;
 
+      if (_this.activeIndex === false) {
+        return;
+      }
+
       if (parseInt(index) === index) {
         _this.activeIndex = index;
       } else {
@@ -4745,9 +4854,54 @@
 
     /**
      * 在父元素的宽度变化时，需要调用该方法重新调整指示器位置
+     * 在添加或删除选项卡时，需要调用该方法
      */
     Tab.prototype.handleUpdate = function () {
-      this._setIndicatorPosition();
+      var _this = this;
+
+      var $oldTabs = _this.$tabs;               // 旧的 tabs JQ对象
+      var $newTabs = _this.$tab.children('a');  // 新的 tabs JQ对象
+      var oldTabsEle = $oldTabs.get();          // 旧 tabs 的元素数组
+      var newTabsEle = $newTabs.get();          // 新的 tabs 元素数组
+
+      if (!$newTabs.length) {
+        _this.activeIndex = false;
+        _this.$tabs = $newTabs;
+        _this._setIndicatorPosition();
+
+        return;
+      }
+
+      // 重新遍历选项卡，找出新增的选项卡
+      $newTabs.each(function (i, tab) {
+        // 有新增的选项卡
+        if (oldTabsEle.indexOf(tab) < 0) {
+          _this._bindTabEvent(tab);
+
+          if (_this.activeIndex === false) {
+            _this.activeIndex = 0;
+          } else if (i <= _this.activeIndex) {
+            _this.activeIndex++;
+          }
+        }
+      });
+
+      // 找出被移除的选项卡
+      $oldTabs.each(function (i, tab) {
+        // 有被移除的选项卡
+        if (newTabsEle.indexOf(tab) < 0) {
+
+          if (i < _this.activeIndex) {
+            _this.activeIndex--;
+          } else if (i === _this.activeIndex) {
+            _this.activeIndex = 0;
+          }
+        }
+      });
+
+      _this.$tabs = $newTabs;
+
+      _this._setActive();
     };
 
     return Tab;
@@ -4761,7 +4915,7 @@
    */
 
   $(function () {
-    $('[mdui-tab]').each(function () {
+    mdui.mutation('[mdui-tab]', function () {
       var $this = $(this);
       var inst = $this.data('mdui.tab');
       if (!inst) {
@@ -5140,7 +5294,7 @@
    */
 
   $(function () {
-    $('[mdui-drawer]').each(function () {
+    mdui.mutation('[mdui-drawer]', function () {
       var $this = $(this);
       var options = parseOptions($this.attr('mdui-drawer'));
       var selector = options.target;
@@ -5157,6 +5311,7 @@
       $this.on('click', function () {
         inst.toggle();
       });
+
     });
   });
 
@@ -5199,7 +5354,6 @@
 
     /**
      * 队列名
-     * @type {string}
      */
     var queueName = '__md_dialog';
 
@@ -5228,18 +5382,14 @@
       });
 
       // 调整 mdui-dialog-content 的高度
-      $dialogContent.height(
-        dialogHeight -
-        ($dialogTitle.height() || 0) -
-        ($dialogActions.height() || 0)
-      );
+      $dialogContent.height(dialogHeight - ($dialogTitle.height() || 0) - ($dialogActions.height() || 0));
     };
 
     /**
      * hashchange 事件触发时关闭对话框
      */
     var hashchangeEvent = function () {
-      if (location.hash.substring(1).indexOf('&mdui-dialog') < 0) {
+      if (location.hash.substring(1).indexOf('mdui-dialog') < 0) {
         currentInst.close(true);
       }
     };
@@ -5375,7 +5525,7 @@
 
       // 不存在遮罩层元素时，添加遮罩层
       if (!$overlay) {
-        $overlay = $.showOverlay(2999);
+        $overlay = $.showOverlay(5100);
       }
 
       $overlay
@@ -5387,14 +5537,20 @@
         .css('opacity', _this.options.overlay ? '' : 0);
 
       if (_this.options.history) {
-        // 如果 hash 中原来就有 &mdui-dialog，先删除，避免后退历史纪录后仍然有 &mdui-dialog 导致无法关闭
+        // 如果 hash 中原来就有 mdui-dialog，先删除，避免后退历史纪录后仍然有 mdui-dialog 导致无法关闭
+        // 包括 mdui-dialog 和 &mdui-dialog 和 ?mdui-dialog
         var hash = location.hash.substring(1);
-        if (hash.indexOf('&mdui-dialog') > -1) {
-          hash = hash.replace(/&mdui-dialog/g, '');
+        if (hash.indexOf('mdui-dialog') > -1) {
+          hash = hash.replace(/[&?]?mdui-dialog/g, '');
         }
 
         // 后退按钮关闭对话框
-        location.hash = hash + '&mdui-dialog';
+        if (hash) {
+          location.hash = hash + (hash.indexOf('?') > -1 ? '&' : '?') + 'mdui-dialog';
+        } else {
+          location.hash = 'mdui-dialog';
+        }
+
         $window.on('hashchange', hashchangeEvent);
       }
     };
@@ -5429,6 +5585,7 @@
      */
     Dialog.prototype.close = function () {
       var _this = this;
+      var _arguments = arguments;
 
       // setTimeout 的作用是：
       // 当同时关闭一个对话框，并打开另一个对话框时，使打开对话框的操作先执行，以使需要打开的对话框先加入队列
@@ -5458,7 +5615,7 @@
           // 是否需要后退历史纪录，默认为 false。
           // 为 false 时是通过 js 关闭，需要后退一个历史记录
           // 为 true 时是通过后退按钮关闭，不需要后退历史记录
-          if (!arguments[0]) {
+          if (!_arguments[0]) {
             window.history.back();
           }
 
@@ -5574,9 +5731,9 @@
    * ************   mdui.dialog(options)   ************
    * =============================================================================
    */
-
+  
   mdui.dialog = function (options) {
-
+  
     /**
      * 默认参数
      */
@@ -5593,17 +5750,17 @@
       destroyOnClosed: true,    // 关闭后销毁
       onOpen: function () {     // 打开动画开始时的回调
       },
-
+  
       onOpened: function () {   // 打开动画结束后的回调
       },
-
+  
       onClose: function () {    // 关闭动画开始时的回调
       },
-
+  
       onClosed: function () {   // 关闭动画结束时的回调
       },
     };
-
+  
     /**
      * 按钮的默认参数
      */
@@ -5614,13 +5771,13 @@
       onClick: function (inst) {  // 点击按钮的回调
       },
     };
-
+  
     // 合并参数
     options = $.extend({}, DEFAULT, (options || {}));
     $.each(options.buttons, function (i, button) {
       options.buttons[i] = $.extend({}, DEFAULT_BUTTON, button);
     });
-
+  
     // 按钮的 HTML
     var buttonsHTML = '';
     if (options.buttons.length) {
@@ -5636,10 +5793,10 @@
             button.text +
           '</a>';
       });
-
+  
       buttonsHTML += '</div>';
     }
-
+  
     // Dialog 的 HTML
     var HTML =
       '<div class="mdui-dialog ' + options.cssClass + '">' +
@@ -5647,7 +5804,7 @@
         (options.content ? '<div class="mdui-dialog-content">' + options.content + '</div>' : '') +
         buttonsHTML +
       '</div>';
-
+  
     // 实例化 Dialog
     var inst = new mdui.Dialog(HTML, {
       history: options.history,
@@ -5656,7 +5813,7 @@
       closeOnEsc: options.closeOnEsc,
       destroyOnClosed: options.destroyOnClosed,
     });
-
+  
     // 绑定按钮事件
     if (options.buttons.length) {
       inst.$dialog.find('.mdui-dialog-actions .mdui-btn').each(function (i, button) {
@@ -5664,14 +5821,14 @@
           if (typeof options.buttons[i].onClick === 'function') {
             options.buttons[i].onClick(inst);
           }
-
+  
           if (options.buttons[i].close) {
             inst.close();
           }
         });
       });
     }
-
+  
     // 绑定打开关闭事件
     if (typeof options.onOpen === 'function') {
       inst.$dialog
@@ -5688,9 +5845,9 @@
           options.onClosed(inst);
         });
     }
-
+  
     inst.open();
-
+  
     return inst;
   };
 
@@ -5858,6 +6015,7 @@
       type: 'text',             // 输入框类型，text: 单行文本框 textarea: 多行文本框
       maxlength: '',            // 最大输入字符数
       defaultValue: '',         // 输入框中的默认文本
+      confirmOnEnter: false,    // 按下 enter 确认输入内容
     };
 
     options = $.extend({}, DEFAULT, options);
@@ -5913,6 +6071,17 @@
 
         // 聚焦到输入框
         $input[0].focus();
+
+        // 捕捉文本框回车键，在单行文本框的情况下触发回调
+        if (options.type === 'text' && options.confirmOnEnter === true) {
+          $input.on('keydown', function (event) {
+            if (event.keyCode === 13) {
+              var value = inst.$dialog.find('.mdui-textfield-input').val();
+              onConfirm(value, inst);
+              inst.close();
+            }
+          });
+        }
 
         // 如果是多行输入框，监听输入框的 input 事件，更新对话框高度
         if (options.type === 'textarea') {
@@ -6056,16 +6225,19 @@
       _this.state = 'closed';
 
       // 创建 Tooltip HTML
-      var guid = $.guid('tooltip');
       _this.$tooltip = $(
-        '<div class="mdui-tooltip" id="mdui-tooltip-' + guid + '">' +
+        '<div class="mdui-tooltip" id="' + $.guid() + '">' +
           _this.options.content +
         '</div>'
       ).appendTo(document.body);
 
-      // 绑定事件
+      // 绑定事件。元素处于 disabled 状态时无法触发鼠标事件，为了统一，把 touch 事件也禁用
       _this.$target
         .on('touchstart mouseenter', function (e) {
+          if (this.disabled) {
+            return;
+          }
+
           if (!TouchHandler.isAllow(e)) {
             return;
           }
@@ -6075,13 +6247,23 @@
           _this.open();
         })
         .on('touchend mouseleave', function (e) {
+          if (this.disabled) {
+            return;
+          }
+
           if (!TouchHandler.isAllow(e)) {
             return;
           }
 
           _this.close();
         })
-        .on(TouchHandler.unlock, TouchHandler.register);
+        .on(TouchHandler.unlock, function (e) {
+          if (this.disabled) {
+            return;
+          }
+
+          TouchHandler.register(e);
+        });
     }
 
     /**
@@ -6228,8 +6410,6 @@
         var options = parseOptions($this.attr('mdui-tooltip'));
         inst = new mdui.Tooltip($this, options);
         $this.data('mdui.tooltip', inst);
-
-        inst.open();
       }
     });
   });
@@ -6255,7 +6435,6 @@
     var queueName = '__md_snackbar';
 
     var DEFAULT = {
-      message: '',                    // 文本内容
       timeout: 4000,                  // 在用户没有操作时多长时间自动隐藏
       buttonText: '',                 // 按钮的文本
       buttonColor: '',                // 按钮的颜色，支持 blue #90caf9 rgba(...)
@@ -6294,16 +6473,18 @@
 
     /**
      * Snackbar 实例
+     * @param message
      * @param opts
      * @constructor
      */
-    function Snackbar(opts) {
+    function Snackbar(message, opts) {
       var _this = this;
 
+      _this.message = message;
       _this.options = $.extend({}, DEFAULT, (opts || {}));
 
       // message 参数必须
-      if (!_this.options.message) {
+      if (!_this.message) {
         return;
       }
 
@@ -6328,7 +6509,7 @@
       _this.$snackbar = $(
         '<div class="mdui-snackbar">' +
           '<div class="mdui-snackbar-text">' +
-            _this.options.message +
+            _this.message +
           '</div>' +
           (_this.options.buttonText ?
             ('<a href="javascript:void(0)" ' +
@@ -6401,6 +6582,10 @@
     Snackbar.prototype.open = function () {
       var _this = this;
 
+      if (!_this.message) {
+        return;
+      }
+
       if (_this.state === 'opening' || _this.state === 'opened') {
         return;
       }
@@ -6456,9 +6641,11 @@
           }
 
           // 超时后自动关闭
-          _this.timeoutId = setTimeout(function () {
-            _this.close();
-          }, _this.options.timeout);
+          if (_this.options.timeout) {
+            _this.timeoutId = setTimeout(function () {
+              _this.close();
+            }, _this.options.timeout);
+          }
         });
     };
 
@@ -6467,6 +6654,10 @@
      */
     Snackbar.prototype.close = function () {
       var _this = this;
+
+      if (!_this.message) {
+        return;
+      }
 
       if (_this.state === 'closing' || _this.state === 'closed') {
         return;
@@ -6501,10 +6692,16 @@
 
     /**
      * 打开 Snackbar
-     * @param params
+     * @param message
+     * @param opts
      */
-    mdui.snackbar = function (params) {
-      var inst = new Snackbar(params);
+    mdui.snackbar = function (message, opts) {
+      if (typeof message !== 'string') {
+        opts = message;
+        message = opts.message;
+      }
+
+      var inst = new Snackbar(message, opts);
 
       inst.open();
       return inst;
@@ -6539,7 +6736,7 @@
     });
 
     // 滚动时隐藏 mdui-bottom-nav-scroll-hide
-    $('.mdui-bottom-nav-scroll-hide').each(function () {
+    mdui.mutation('.mdui-bottom-nav-scroll-hide', function () {
       var $this = $(this);
       var inst = new mdui.Headroom($this, {
         pinnedClass: 'mdui-headroom-pinned-down',
@@ -6596,10 +6793,8 @@
     /**
      * 页面加载完后自动填充 HTML 结构
      */
-    $(function () {
-      $('.mdui-spinner').each(function () {
-        fillHTML(this);
-      });
+    mdui.mutation('.mdui-spinner', function () {
+      fillHTML(this);
     });
 
     /**
@@ -6639,7 +6834,7 @@
    */
 
   $(function () {
-    $('[mdui-panel]').each(function () {
+    mdui.mutation('[mdui-panel]', function () {
       var $target = $(this);
 
       var inst = $target.data('mdui.panel');
@@ -7329,6 +7524,6 @@
 
   /* jshint ignore:start */
   mdui.JQ = $;
-  window.mdui = mdui;
-})(window, document);
+  return mdui;
+})));
 /* jshint ignore:end */
