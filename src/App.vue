@@ -1071,6 +1071,18 @@ var book_items = [
         "url": "https://www.jiumodiary.com",
         "title": "鸠摩搜索",
         "icon": require('./assets/img/icons/jiumodiary.svg')
+     },{
+        "url": "http://gen.lib.rus.ec",
+        "title": "Library Genesis",
+        "icon": require('./assets/img/icons/libgen.svg')
+     },{
+        "url": "https://ebook.huzerui.com",
+        "title": "熊猫搜书",
+        "icon": require('./assets/img/icons/panda-search.svg')
+     },{
+        "url": "https://ctext.org",
+        "title": "中国哲学书籍电子化计划",
+        "icon": require('./assets/img/icons/default.svg')
      }
 
     ];
