@@ -682,6 +682,10 @@ if (!Store.getCookie('visited')) {
 			"title": "CodePen",
 			"icon": require('./assets/img/icons/codepen.svg')
 		}, {
+			"url": "https://codesandbox.io",
+			"title": "CodeSandbox",
+			"icon": require('./assets/img/icons/codesandbox.svg')
+		}, {
 			"url": "https://www.wikipedia.org",
 			"title": "Wikipedia",
 			"icon": require('./assets/img/icons/wikipedia.svg')
@@ -718,42 +722,42 @@ if (!Store.getCookie('visited')) {
         "title": "微博",
         "icon": require('./assets/img/icons/weibo.svg')
       }, {
-  			"url": "https://www.dropbox.com",
-  			"title": "Dropbox",
-  			"icon": require('./assets/img/icons/dropbox.svg')
-  		}, {
-  			"url": "https://plus.google.com",
-  			"title": "Google+",
-  			"icon": require('./assets/img/icons/google_plus.svg')
-  		}, {
-  			"url": "https://quora.com",
-  			"title": "Quora",
-  			"icon": require('./assets/img/icons/quora.svg')
-  		}, {
-  			"url": "https://getpocket.com/",
-  			"title": "Pocket",
-  			"icon": require('./assets/img/icons/pocket.svg')
-  		}, {
-  			"url": "http://stackoverflow.com/",
-  			"title": "Stack Overflow",
-  			"icon": require('./assets/img/icons/stackoverflow.svg')
-  		}, {
-  			"url": "https://www.amazon.com/",
-  			"title": "Amazon",
-  			"icon": require('./assets/img/icons/amazon.svg')
-  		}, {
-  			"url": "https://taobao.com/",
-  			"title": "淘宝",
-  			"icon": require('./assets/img/icons/taobao.svg')
-  		}, {
-  			"url": "http://coolapk.com",
-  			"title": "酷安",
-  			"icon": require('./assets/img/icons/coolapk.svg')
-  		}, {
-  			"url": "http://douban.com",
-  			"title": "豆瓣",
-  			"icon": require('./assets/img/icons/douban.svg')
-  		}, {
+			"url": "https://www.dropbox.com",
+			"title": "Dropbox",
+			"icon": require('./assets/img/icons/dropbox.svg')
+		}, {
+			"url": "https://www.youtube.com",
+			"title": "Youtube",
+			"icon": require('./assets/img/icons/youtube.svg')
+		}, {
+			"url": "https://quora.com",
+			"title": "Quora",
+			"icon": require('./assets/img/icons/quora.svg')
+		}, {
+			"url": "https://getpocket.com/",
+			"title": "Pocket",
+			"icon": require('./assets/img/icons/pocket.svg')
+		}, {
+			"url": "http://stackoverflow.com/",
+			"title": "Stack Overflow",
+			"icon": require('./assets/img/icons/stackoverflow.svg')
+		}, {
+			"url": "https://www.amazon.com/",
+			"title": "Amazon",
+			"icon": require('./assets/img/icons/amazon.svg')
+		}, {
+			"url": "https://taobao.com/",
+			"title": "淘宝",
+			"icon": require('./assets/img/icons/taobao.svg')
+		}, {
+			"url": "http://coolapk.com",
+			"title": "酷安",
+			"icon": require('./assets/img/icons/coolapk.svg')
+		}, {
+			"url": "http://douban.com",
+			"title": "豆瓣",
+			"icon": require('./assets/img/icons/douban.svg')
+		}, {
         "url": "http://www.latexstudio.net",
         "title": "LaTeX工作室",
         "icon": require('./assets/img/icons/latexstudio.svg')
