@@ -662,9 +662,9 @@ if (!Store.getCookie('visited')) {
   if(Store.fetch_site().length == 0){
     Store.save_site([
       {
-		"url": "https://github.com",
-		"title": "GitHub",
-		"icon": require('./assets/img/icons/github.svg')
+		    "url": "https://github.com",
+		    "title": "GitHub",
+		    "icon": require('./assets/img/icons/github.svg')
   	  }, {
         "url": "https://about.gitlab.com",
         "title": "GitLab",
@@ -678,33 +678,33 @@ if (!Store.getCookie('visited')) {
         "title": "Coding",
         "icon": require('./assets/img/icons/coding.svg')
       }, {
-			"url": "https://codepen.io",
-			"title": "CodePen",
-			"icon": require('./assets/img/icons/codepen.svg')
-		}, {
-			"url": "https://codesandbox.io",
-			"title": "CodeSandbox",
-			"icon": require('./assets/img/icons/codesandbox.svg')
-		}, {
-			"url": "https://www.wikipedia.org",
-			"title": "Wikipedia",
-			"icon": require('./assets/img/icons/wikipedia.svg')
-		}, {
-			"url": "https://medium.com",
-			"title": "Medium",
-			"icon": require('./assets/img/icons/medium.svg')
-		}, {
-			"url": "https://facebook.com/",
-			"title": "Facebook",
-			"icon": require('./assets/img/icons/facebook.svg')
-		}, {
-			"url": "https://twitter.com/",
-			"title": "Twitter",
-			"icon": require('./assets/img/icons/twitter.svg')
-		}, {
-			"url": "https://zhihu.com",
-			"title": "知乎",
-			"icon": require('./assets/img/icons/zhihu.svg')
+			  "url": "https://codepen.io",
+			  "title": "CodePen",
+			  "icon": require('./assets/img/icons/codepen.svg')
+		  }, {
+			  "url": "https://codesandbox.io",
+			  "title": "CodeSandbox",
+			  "icon": require('./assets/img/icons/codesandbox.svg')
+		  }, {
+			  "url": "https://www.wikipedia.org",
+			  "title": "Wikipedia",
+			  "icon": require('./assets/img/icons/wikipedia.svg')
+		  }, {
+			  "url": "https://medium.com",
+			  "title": "Medium",
+			  "icon": require('./assets/img/icons/medium.svg')
+		  }, {
+			  "url": "https://facebook.com/",
+			  "title": "Facebook",
+			  "icon": require('./assets/img/icons/facebook.svg')
+		  }, {
+			  "url": "https://twitter.com/",
+			  "title": "Twitter",
+			  "icon": require('./assets/img/icons/twitter.svg')
+		  }, {
+			  "url": "https://zhihu.com",
+			  "title": "知乎",
+			  "icon": require('./assets/img/icons/zhihu.svg')
   		}, {
         "url": "http://www.jianshu.com",
         "title": "简书",
@@ -722,42 +722,42 @@ if (!Store.getCookie('visited')) {
         "title": "微博",
         "icon": require('./assets/img/icons/weibo.svg')
       }, {
-			"url": "https://www.dropbox.com",
-			"title": "Dropbox",
-			"icon": require('./assets/img/icons/dropbox.svg')
-		}, {
-			"url": "https://www.youtube.com",
-			"title": "Youtube",
-			"icon": require('./assets/img/icons/youtube.svg')
-		}, {
-			"url": "https://quora.com",
-			"title": "Quora",
-			"icon": require('./assets/img/icons/quora.svg')
-		}, {
-			"url": "https://getpocket.com/",
-			"title": "Pocket",
-			"icon": require('./assets/img/icons/pocket.svg')
-		}, {
-			"url": "http://stackoverflow.com/",
-			"title": "Stack Overflow",
-			"icon": require('./assets/img/icons/stackoverflow.svg')
-		}, {
-			"url": "https://www.amazon.com/",
-			"title": "Amazon",
-			"icon": require('./assets/img/icons/amazon.svg')
-		}, {
-			"url": "https://taobao.com/",
-			"title": "淘宝",
-			"icon": require('./assets/img/icons/taobao.svg')
-		}, {
-			"url": "http://coolapk.com",
-			"title": "酷安",
-			"icon": require('./assets/img/icons/coolapk.svg')
-		}, {
-			"url": "http://douban.com",
-			"title": "豆瓣",
-			"icon": require('./assets/img/icons/douban.svg')
-		}, {
+			  "url": "https://www.dropbox.com",
+			  "title": "Dropbox",
+			  "icon": require('./assets/img/icons/dropbox.svg')
+		  }, {
+			  "url": "https://www.youtube.com",
+			  "title": "Youtube",
+			  "icon": require('./assets/img/icons/youtube.svg')
+		  }, {
+			  "url": "https://quora.com",
+			  "title": "Quora",
+			  "icon": require('./assets/img/icons/quora.svg')
+		  }, {
+			  "url": "https://getpocket.com/",
+			  "title": "Pocket",
+			  "icon": require('./assets/img/icons/pocket.svg')
+		  }, {
+			  "url": "http://stackoverflow.com/",
+			  "title": "Stack Overflow",
+			  "icon": require('./assets/img/icons/stackoverflow.svg')
+		  }, {
+			  "url": "https://www.amazon.com/",
+			  "title": "Amazon",
+			  "icon": require('./assets/img/icons/amazon.svg')
+		  }, {
+			  "url": "https://taobao.com/",
+			  "title": "淘宝",
+			  "icon": require('./assets/img/icons/taobao.svg')
+		  }, {
+			  "url": "http://coolapk.com",
+			  "title": "酷安",
+			  "icon": require('./assets/img/icons/coolapk.svg')
+		  }, {
+			  "url": "http://douban.com",
+			  "title": "豆瓣",
+			  "icon": require('./assets/img/icons/douban.svg')
+		  }, {
         "url": "http://www.latexstudio.net",
         "title": "LaTeX工作室",
         "icon": require('./assets/img/icons/latexstudio.svg')
@@ -777,15 +777,15 @@ if (!Store.getCookie('visited')) {
         "url": "http://theme.npm.edu.tw/opendata",
         "title": "故宮Open Data專區",
         "icon": require('./assets/img/icons/npm-opendata.svg')
-      },{
+      }, {
         "url": "https://itch.io",
         "title": "itch.io",
         "icon": require('./assets/img/icons/itch-io.svg')
-      },{
+      }, {
         "url": "https://www.humblebundle.com",
         "title": "Humble Bundle",
         "icon": require('./assets/img/icons/humblebundle.svg')
-      },{
+      }, {
         "url": "https://www.listennotes.com",
         "title": "Listen Notes",
         "icon": require('./assets/img/icons/listennotes.svg')
@@ -898,9 +898,13 @@ var community_items = [
         "title": "泡在网上的日子",
         "icon": require('./assets/img/icons/jcodecraeer.svg')
       },{
-        "url": "https://www.reddit.com/",
+        "url": "https://www.reddit.com",
         "title": "Reddit",
         "icon": require('./assets/img/icons/reddit.svg')
+      },{
+        "url": "http://liqi.io",
+        "title": "利器",
+        "icon": require('./assets/img/icons/liqi.svg')
       }
 ]
 
@@ -1178,9 +1182,9 @@ var tool_items = [
         "title": "TLD LIST",
         "icon": require('./assets/img/icons/tld-list.svg')
      },{
-        "url": "https://svg-edit.github.io/svgedit/releases/svg-edit-2.8.1/svg-editor.html",
-        "title": "SVG-edit",
-        "icon": require('./assets/img/icons/svg-edit.svg')
+        "url": "https://www.remove.bg",
+        "title": "Remove Background from Image",
+        "icon": require('./assets/img/icons/remove-bg.svg')
      },{
         "url": "http://devdocs.io",
         "title": "DevDocs API Documentation",
@@ -1245,6 +1249,10 @@ var tool_items = [
         "url": "https://lunwen.im",
         "title": "喵咪论文",
         "icon": require('./assets/img/icons/lunwen.svg')
+     },{
+        "url": "https://www.80xueshu.com",
+        "title": "80学术",
+        "icon": require('./assets/img/icons/default.svg')
      }
 
     ];
