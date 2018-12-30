@@ -790,9 +790,9 @@ if (!Store.getCookie('visited')) {
         "title": "indienova 独立游戏",
         "icon": require('./assets/img/icons/indienova.svg')
     }, {
-        "url": "https://www.listennotes.com",
-        "title": "Listen Notes",
-        "icon": require('./assets/img/icons/listennotes.svg')
+        "url": "https://agirls.aotter.net",
+        "title": "電獺少女",
+        "icon": require('./assets/img/icons/agirls.svg')
     }
 
 	])
@@ -1257,6 +1257,18 @@ var tool_items = [
         "url": "https://www.80xueshu.com",
         "title": "80学术",
         "icon": require('./assets/img/icons/default.svg')
+     },{
+        "url": "https://www.listennotes.com",
+        "title": "Listen Notes",
+        "icon": require('./assets/img/icons/listennotes.svg')
+     },{
+        "url": "https://squoosh.app",
+        "title": "Squoosh",
+        "icon": require('./assets/img/icons/squoosh.svg')
+     },{
+        "url": "https://www.draw.io",
+        "title": "Draw",
+        "icon": require('./assets/img/icons/draw.svg')
      }
 
     ];
@@ -1300,6 +1312,14 @@ var photos_items = [
         "url": "http://pngimg.com",
         "title": "PNG images with transparent background",
         "icon": require('./assets/img/icons/pngimg.svg')
+    },{
+        "url": "https://www.hppic.com",
+        "title": "嗬品 | 小清新简约手机壁纸",
+        "icon": require('./assets/img/icons/hppic.svg')
+    },{
+        "url": "https://wallroom.io",
+        "title": "HD/4K/5K Resolution Wallpapers/Backgrounds",
+        "icon": require('./assets/img/icons/wallroom.svg')
     }
 
 ];
