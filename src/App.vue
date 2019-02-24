@@ -714,6 +714,10 @@ if (!Store.getCookie('visited')) {
         "title": "微信网页版",
         "icon": require('./assets/img/icons/weixin.svg')
     }, {
+        "url": "https://wx.zsxq.com/dweb",
+        "title": "知识星球",
+        "icon": require('./assets/img/icons/zsxq.svg')
+    }, {
         "url": "https://qzone.qq.com",
         "title": "QZone",
         "icon": require('./assets/img/icons/qzone.svg')
