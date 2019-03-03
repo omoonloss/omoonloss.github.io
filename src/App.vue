@@ -797,6 +797,26 @@ if (!Store.getCookie('visited')) {
         "url": "https://agirls.aotter.net",
         "title": "電獺少女",
         "icon": require('./assets/img/icons/agirls.svg')
+    }, {
+        "url": "https://luooqi.com",
+        "title": "鱼声音乐",
+        "icon": require('./assets/img/icons/luooqi.svg')
+    }, {
+    	"url": "https://www.yixi.tv",
+        "title": "一席",
+        "icon": require('./assets/img/icons/yixi.svg')
+    }, {
+    	"url": "https://www.britishcouncil.org",
+        "title": "British Council",
+        "icon": require('./assets/img/icons/britishcouncil.svg')
+    }, {
+    	"url": "https://tw.voicetube.com",
+        "title": "VoiceTube",
+        "icon": require('./assets/img/icons/voicetube.svg')
+    }, {
+    	"url": "http://songtasty.com/song",
+        "title": "SongTasty",
+        "icon": require('./assets/img/icons/songtasty.svg')
     }
 
 	])
@@ -1095,6 +1115,10 @@ var book_items = [
         "url": "https://ctext.org",
         "title": "中国哲学书籍电子化计划",
         "icon": require('./assets/img/icons/default.svg')
+     },{
+        "url": "http://mebook.cc",
+        "title": "我的小书屋",
+        "icon": require('./assets/img/icons/mebook.svg')
      }
 
     ];
@@ -1273,6 +1297,14 @@ var tool_items = [
         "url": "https://www.draw.io",
         "title": "Draw",
         "icon": require('./assets/img/icons/draw.svg')
+     },{
+        "url": "https://www.channelshunt.com",
+        "title": "ChannelsHunt",
+        "icon": require('./assets/img/icons/channelshunt.svg')
+     },{
+        "url": "https://www.findyoutube.net",
+        "title": "FindYoutube",
+        "icon": require('./assets/img/icons/findyoutube.svg')
      }
 
     ];
