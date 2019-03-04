@@ -1119,6 +1119,14 @@ var book_items = [
         "url": "http://mebook.cc",
         "title": "我的小书屋",
         "icon": require('./assets/img/icons/mebook.svg')
+     },{
+        "url": "https://sobooks.cc",
+        "title": "SoBooks",
+        "icon": require('./assets/img/icons/sobooks.svg')
+     },{
+        "url": "https://b-ok.xyz",
+        "title": "Electronic library",
+        "icon": require('./assets/img/icons/b-ok.svg')
      }
 
     ];
