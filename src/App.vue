@@ -903,6 +903,18 @@ var info_items = [
         "url": "http://www.foxnews.com",
         "title": "Foxnews",
         "icon": require('./assets/img/icons/foxnews.svg')
+      },{
+        "url": "https://sspai.com",
+        "title": "少数派",
+        "icon": require('./assets/img/icons/sspai.svg')
+      },{
+        "url": "http://www.qdaily.com",
+        "title": "好奇心日报",
+        "icon": require('./assets/img/icons/qdaily.svg')
+      },{
+        "url": "https://www.toodaylab.com",
+        "title": "理想生活实验室",
+        "icon": require('./assets/img/icons/toodaylab.svg')
       }
 
     ];
