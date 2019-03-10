@@ -1329,6 +1329,10 @@ var tool_items = [
         "url": "https://www.findyoutube.net",
         "title": "FindYoutube",
         "icon": require('./assets/img/icons/findyoutube.svg')
+     },{
+        "url": "http://www.everyonepiano.cn",
+        "title": "人人钢琴网",
+        "icon": require('./assets/img/icons/everyonepiano.svg')
      }
 
     ];
