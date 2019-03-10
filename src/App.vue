@@ -817,6 +817,10 @@ if (!Store.getCookie('visited')) {
     	"url": "http://songtasty.com/song",
         "title": "SongTasty",
         "icon": require('./assets/img/icons/songtasty.svg')
+    }, {
+    	"url": "https://musescore.org",
+        "title": "Musescore",
+        "icon": require('./assets/img/icons/musescore.svg')
     }
 
 	])
