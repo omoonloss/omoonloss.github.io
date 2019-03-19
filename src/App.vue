@@ -1341,6 +1341,10 @@ var tool_items = [
         "url": "http://www.everyonepiano.cn",
         "title": "人人钢琴网",
         "icon": require('./assets/img/icons/everyonepiano.svg')
+     },{
+        "url": "https://www.midifan.com",
+        "title": "Midifan",
+        "icon": require('./assets/img/icons/midifan.svg')
      }
 
     ];
