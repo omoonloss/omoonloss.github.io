@@ -923,6 +923,10 @@ var info_items = [
         "url": "https://www.toodaylab.com",
         "title": "理想生活实验室",
         "icon": require('./assets/img/icons/toodaylab.svg')
+      },{
+        "url": "https://matters.news",
+        "title": "Matters",
+        "icon": require('./assets/img/icons/matters.svg')
       }
 
     ];
