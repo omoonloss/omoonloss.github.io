@@ -802,6 +802,10 @@ if (!Store.getCookie('visited')) {
         "title": "鱼声音乐",
         "icon": require('./assets/img/icons/luooqi.svg')
     }, {
+    	"url": "https://www.tianfateng.cn",
+        "title": "田间小站",
+        "icon": require('./assets/img/icons/default.svg')
+    }, {
     	"url": "https://www.yixi.tv",
         "title": "一席",
         "icon": require('./assets/img/icons/yixi.svg')
