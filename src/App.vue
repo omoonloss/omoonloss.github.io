@@ -1155,7 +1155,12 @@ var book_items = [
         "url": "https://b-ok.xyz",
         "title": "Electronic library",
         "icon": require('./assets/img/icons/b-ok.svg')
+     },{
+        "url": "https://readfree.me",
+        "title": "Readfree",
+        "icon": require('./assets/img/icons/readfree.svg')
      }
+
 
     ];
 
