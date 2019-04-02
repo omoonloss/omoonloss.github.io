@@ -1104,7 +1104,7 @@ var translate_items = [
 		"icon": require('./assets/img/icons/yeeyan.svg')
 	}
 
-;
+];
 
 // Book
 var book_items = [
