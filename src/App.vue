@@ -1189,7 +1189,12 @@ var publishing_items = [
 		"url": "https://www.manning.com",
 		"title": "Manning",
 		"icon": require('./assets/img/icons/manning.svg')
-	}
+	},{
+        "url": "https://leanpub.com",
+        "title": "Leanpub",
+        "icon": require('./assets/img/icons/leanpub.svg')
+    }
+
 ];
 
 // 工具
