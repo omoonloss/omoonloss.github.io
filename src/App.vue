@@ -882,7 +882,7 @@ if (!Store.getCookie('visited')) {
 	}
 }
 
-// 资讯
+// 资讯&阅读
 var info_items = [
 	{
 		"url": "https://news.ycombinator.com",
@@ -952,6 +952,10 @@ var info_items = [
 		"url": "https://matters.news",
 		"title": "Matters",
 		"icon": require('./assets/img/icons/matters.svg')
+	},{
+		"url": "https://chengbao.bitcron.com",
+		"title": "城堡阅读周刊",
+		"icon": require('./assets/img/icons/chengbao.svg')
 	}
 
 ];
