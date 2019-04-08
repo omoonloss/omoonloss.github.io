@@ -1043,6 +1043,10 @@ var coding_items = [
 		"url": "https://www.w3cplus.com",
 		"title": "w3cplus",
 		"icon": require('./assets/img/icons/w3cplus.svg')
+	},{
+		"url": "https://visualgo.net/zh",
+		"title": "Visualgo",
+		"icon": require('./assets/img/icons/visualgo.svg')
 	}
 
 ];
@@ -1391,6 +1395,30 @@ var tool_items = [
 		"url": "https://www.midifan.com",
 		"title": "Midifan",
 		"icon": require('./assets/img/icons/midifan.svg')
+	},{
+		"url": "https://dbdiagram.io/home",
+		"title": "dbdiagram",
+		"icon": require('./assets/img/icons/dbdiagram.svg')
+	},{
+		"url": "http://fulichaoshi.com",
+		"title": "fulichaoshi",
+		"icon": require('./assets/img/icons/fulichaoshi.svg')
+	},{
+		"url": "https://mybinder.org",
+		"title": "Binder",
+		"icon": require('./assets/img/icons/binder.svg')
+	},{
+		"url": "https://ip-api.io",
+		"title": "IP-API",
+		"icon": require('./assets/img/icons/default.svg')
+	},{
+		"url": "https://www.geogebra.org",
+		"title": "GeoGebra | Free Math Apps",
+		"icon": require('./assets/img/icons/geogebra.svg')
+	},{
+		"url": "https://kroki.io",
+		"title": "Kroki!",
+		"icon": require('./assets/img/icons/default.svg')
 	}
 
 ];
