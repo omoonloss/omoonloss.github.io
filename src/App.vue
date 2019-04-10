@@ -336,7 +336,6 @@
 
     </div>
 
-
     <!-- 社区 -->
     <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
       <!-- Card title -->
@@ -354,6 +353,54 @@
               <img v-bind:src="community_site.icon" width="55px" height="55px" />
             </div>
             <div class="site-title">{{ community_site.title }}</div>
+          </a>
+        </li>
+       
+      </ul>
+
+    </div>
+
+    <!-- 游记 -->
+    <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
+      <!-- Card title -->
+      <div class="mdui-card-header card-header">
+        游记
+      </div>
+
+      <div class="mdui-divider"></div>
+
+      <!-- Sites list -->
+      <ul class="mdui-list">
+        <li v-for="(travel_literature_site, index) in travel_literature_sites" class="site">
+          <a v-bind:href="community_site.url" target="_blank">
+            <div>
+              <img v-bind:src="travel_literature_site.icon" width="55px" height="55px" />
+            </div>
+            <div class="site-title">{{ travel_literature_site.title }}</div>
+          </a>
+        </li>
+       
+      </ul>
+
+    </div>
+
+    <!-- documentary -->
+    <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
+      <!-- Card title -->
+      <div class="mdui-card-header card-header">
+        纪录片
+      </div>
+
+      <div class="mdui-divider"></div>
+
+      <!-- Sites list -->
+      <ul class="mdui-list">
+        <li v-for="(documentary_site, index) in documentary_sites" class="site">
+          <a v-bind:href="documentary_site.url" target="_blank">
+            <div>
+              <img v-bind:src="documentary_site.icon" width="55px" height="55px" />
+            </div>
+            <div class="site-title">{{ documentary_site.title }}</div>
           </a>
         </li>
        
@@ -987,7 +1034,61 @@ var community_items = [
 		"title": "利器",
 		"icon": require('./assets/img/icons/liqi.svg')
 	}
-]
+];
+
+// Travel literature
+var travel_literature_items = [
+	{
+		"url": "http://www.sao.com",
+		"title": "SAO",
+		"icon": require('./assets/img/icons/sao.svg')
+	},{
+		"url": "http://vagaband.blog.sohu.com",
+		"title": "流浪者",
+		"icon": require('./assets/img/icons/default.svg')
+	},{
+		"url": "https://space.bilibili.com/107044807",
+		"title": "琮麟日日记",
+		"icon": require('./assets/img/icons/zonglin.svg')
+	},{
+		"url": "http://www.mafengwo.cn",
+		"title": "马蜂窝",
+		"icon": require('./assets/img/icons/mafengwo.svg')
+	},{
+		"url": "https://space.bilibili.com/19577966",
+		"title": "李子柒",
+		"icon": require('./assets/img/icons/liziqi.svg')
+	}
+];
+
+// Documentary film
+var documentary_items = [
+	{
+		"url": "https://rocumentaries.com",
+		"title": "Rocumentaries — Watch the best documentaries online",
+		"icon": require('./assets/img/icons/rocumentaries.svg')
+	},{
+		"url": "https://vdianying.cc",
+		"title": "唯电影",
+		"icon": require('./assets/img/icons/vdianying.svg')
+	},{
+		"url": "https://v.qq.com/x/channel/doco",
+		"title": "腾讯视频纪录片频道",
+		"icon": require('./assets/img/icons/default.svg')
+	},{
+		"url": "http://jishi.cctv.com",
+		"title": "CCTV 纪实频道",
+		"icon": require('./assets/img/icons/default.svg')
+	},{
+		"url": "https://www.bilibili.com/documentary",
+		"title": "Bilibili 纪录片频道",
+		"icon": require('./assets/img/icons/default.svg')
+	},{
+		"url": "https://www.douban.com/doulist/223273/",
+		"title": "豆瓣豆列",
+		"icon": require('./assets/img/icons/default.svg')
+	}
+];
 
 // Coding
 var coding_items = [
@@ -1509,11 +1610,13 @@ export default {
 			canRemove: false,
 			hasAddPanel: false,
 			isSearch: false,
-      //hasWeather: false,
-      // test_sites: Store.fetch_test_site(),
+	      //hasWeather: false,
+	      // test_sites: Store.fetch_test_site(),
 			sites: Store.fetch_site(),
 			info_sites: info_items,
 			community_sites: community_items,
+			travel_literature_sites: travel_literature_items,
+			documentary_sites: documentary_items,
 			coding_sites: coding_items,
 			design_sites: design_items,
 			translate_sites: translate_items,
