@@ -372,7 +372,7 @@
       <!-- Sites list -->
       <ul class="mdui-list">
         <li v-for="(travel_literature_site, index) in travel_literature_sites" class="site">
-          <a v-bind:href="community_site.url" target="_blank">
+          <a v-bind:href="travel_literature_site.url" target="_blank">
             <div>
               <img v-bind:src="travel_literature_site.icon" width="55px" height="55px" />
             </div>
