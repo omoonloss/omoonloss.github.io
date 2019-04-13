@@ -1227,7 +1227,7 @@ var book_items = [
 		"icon": require('./assets/img/icons/bookset.svg')
 	},{
 		"url": "http://www.gutenberg.org",
-		"title": "Gutenberg",
+		"title": "古登堡计划",
 		"icon": require('./assets/img/icons/gutenberg.svg')
 	},{
 		"url": "https://www.planetebook.com",
@@ -1285,6 +1285,22 @@ var book_items = [
 		"url": "https://readfree.me",
 		"title": "Readfree",
 		"icon": require('./assets/img/icons/readfree.svg')
+	},{
+		"url": "https://book.douban.com",
+		"title": "豆瓣读书",
+		"icon": require('./assets/img/icons/douban.svg')
+	},{
+		"url": "https://love2.io",
+		"title": "LOVE2.io",
+		"icon": require('./assets/img/icons/love2io.svg')
+	},{
+		"url": "https://manybooks.net",
+		"title": "Manybooks",
+		"icon": require('./assets/img/icons/manybooks.svg')
+	},{
+		"url": "http://bestcbooks.com",
+		"title": "计算机书籍控",
+		"icon": require('./assets/img/icons/bestcbooks.svg')
 	}
 ];
 
