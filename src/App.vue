@@ -1047,10 +1047,6 @@ var travel_literature_items = [
 		"title": "流浪者",
 		"icon": require('./assets/img/icons/default.svg')
 	},{
-		"url": "https://space.bilibili.com/107044807",
-		"title": "琮麟日日记",
-		"icon": require('./assets/img/icons/zonglin.svg')
-	},{
 		"url": "http://www.mafengwo.cn",
 		"title": "马蜂窝",
 		"icon": require('./assets/img/icons/mafengwo.svg')
