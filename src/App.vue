@@ -1278,9 +1278,9 @@ var book_items = [
 		"title": "Electronic library",
 		"icon": require('./assets/img/icons/b-ok.svg')
 	},{
-		"url": "https://readfree.me",
-		"title": "Readfree",
-		"icon": require('./assets/img/icons/readfree.svg')
+		"url": "http://ebook.lorefree.com",
+		"title": "LoreFree",
+		"icon": require('./assets/img/icons/lorefree.svg')
 	},{
 		"url": "https://book.douban.com",
 		"title": "豆瓣读书",
