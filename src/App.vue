@@ -1597,7 +1597,7 @@ var blog_items = [
 		"title": "阮一峰的网络日志",
 		"icon": require('./assets/img/icons/ruanyifeng.svg')
 	},{
-		"url": "https://zty.js.org",
+		"url": "https://vitzy.me",
 		"title": "True Me",
 		"icon": require('./assets/img/icons/true-me.svg')
 	},{
