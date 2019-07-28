@@ -894,6 +894,10 @@ if (!Store.getCookie('visited')) {
 			    "title": "Musescore",
 			    "icon": require('./assets/img/icons/musescore.svg')
 			}, {
+				"url": "https://www.hqgq.com",
+			    "title": "环球钢琴网",
+			    "icon": require('./assets/img/icons/hqgq.svg')
+			}, {
 				"url": "https://www.kuaiyilicai.com",
 			    "title": "快易理财网--理财改变生活",
 			    "icon": require('./assets/img/icons/default.svg')
@@ -1600,6 +1604,10 @@ var blog_items = [
 		"url": "https://vitzy.me",
 		"title": "True Me",
 		"icon": require('./assets/img/icons/true-me.svg')
+	},{
+		"url": "https://zty.js.org",
+		"title": "Alume",
+		"icon": require('./assets/img/icons/alu-me.svg')
 	},{
 		"url": "https://lepture.com",
 		"title": "Just lepture",
