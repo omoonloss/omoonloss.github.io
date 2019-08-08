@@ -1301,7 +1301,15 @@ var book_items = [
 		"url": "http://bestcbooks.com",
 		"title": "计算机书籍控",
 		"icon": require('./assets/img/icons/bestcbooks.svg')
-	}
+	},{
+    "url": "https://ebookee.org",
+    "title": "EBOOKEE",
+    "icon": require('./assets/img/icons/ebookee.svg')
+  },{
+    "url": "http://audiobookbay.nl",
+    "title": "AudioBookBay",
+    "icon": require('./assets/img/icons/audiobookbay.svg')
+  }
 ];
 
 // Publishing
