@@ -1007,6 +1007,10 @@ var info_items = [
 		"url": "https://chengbao.bitcron.com",
 		"title": "城堡阅读周刊",
 		"icon": require('./assets/img/icons/chengbao.svg')
+	},{
+		"url": "https://indiehacker.im",
+		"title": "Indie Hackers",
+		"icon": require('./assets/img/icons/indiehacker.svg')
 	}
 
 ];
