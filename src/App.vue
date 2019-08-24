@@ -898,9 +898,25 @@ if (!Store.getCookie('visited')) {
 			    "title": "环球钢琴网",
 			    "icon": require('./assets/img/icons/hqgq.svg')
 			}, {
+				"url": "https://www.exound.com",
+			    "title": "人人都来玩音乐 | 叉烧网",
+			    "icon": require('./assets/img/icons/default.svg')
+			}, {
 				"url": "https://www.kuaiyilicai.com",
 			    "title": "快易理财网--理财改变生活",
 			    "icon": require('./assets/img/icons/default.svg')
+			}, {
+				"url": "https://lookao.com",
+			    "title": "Lookao",
+			    "icon": require('./assets/img/icons/lookao.svg')
+			}, {
+				"url": "https://wht.im",
+			    "title": "万花筒",
+			    "icon": require('./assets/img/icons/wht.svg')
+			}, {
+				"url": "https://www.vmovier.com",
+			    "title": "场库",
+			    "icon": require('./assets/img/icons/vmovier.svg')
 			}
 
 		])
@@ -1011,6 +1027,14 @@ var info_items = [
 		"url": "https://indiehacker.im",
 		"title": "Indie Hackers",
 		"icon": require('./assets/img/icons/indiehacker.svg')
+	},{
+		"url": "https://digitalimmigrant.org",
+		"title": "数字移民",
+		"icon": require('./assets/img/icons/digitalimmigrant.svg')
+	},{
+		"url": "https://japanjobs.dev",
+		"title": "Developer Jobs in Japan - A Job A Day Keeps The Doctor Away",
+		"icon": require('./assets/img/icons/japanjobs.svg')
 	}
 
 ];
@@ -1041,6 +1065,14 @@ var community_items = [
 		"url": "http://liqi.io",
 		"title": "利器",
 		"icon": require('./assets/img/icons/liqi.svg')
+	},{
+		"url": "https://4think.net",
+		"title": "4THINK | 為增進思考而閱讀",
+		"icon": require('./assets/img/icons/4think.svg')
+	},{
+		"url": "https://www.cup.com.hk",
+		"title": "*CUP - 每日十條世界要聞 與你清醒同行",
+		"icon": require('./assets/img/icons/cup.svg')
 	}
 ];
 
@@ -1198,6 +1230,14 @@ var design_items = [
 		"url": "https://mockuper.net",
 		"title": "Mockuper",
 		"icon": require('./assets/img/icons/mockuper.svg')
+	},{
+		"url": "https://stubborn.fun",
+		"title": "Stubborn - Free Illustrations Generator",
+		"icon": require('./assets/img/icons/stubborn.svg')
+	},{
+		"url": "http://refs.cn",
+		"title": "原型设计元件库",
+		"icon": require('./assets/img/icons/default.svg')
 	}
 ];
 
@@ -1222,6 +1262,14 @@ var translate_items = [
 // Book
 var book_items = [
 	{
+		"url": "https://www.zjlib.cn",
+		"title": "浙江图书馆",
+		"icon": require('./assets/img/icons/zjlib.svg')
+	},{
+		"url": "http://wap.gxlib.org/ermsClient/browse.do",
+		"title": "广西壮族自治区图书馆 | 电子资源平台",
+		"icon": require('./assets/img/icons/default.svg')
+	},{
 		"url": "https://shuge.org",
 		"title": "书格",
 		"icon": require('./assets/img/icons/shuge.svg')
@@ -1306,14 +1354,26 @@ var book_items = [
 		"title": "计算机书籍控",
 		"icon": require('./assets/img/icons/bestcbooks.svg')
 	},{
-    "url": "https://ebookee.org",
-    "title": "EBOOKEE",
-    "icon": require('./assets/img/icons/ebookee.svg')
-  },{
-    "url": "http://audiobookbay.nl",
-    "title": "AudioBookBay",
-    "icon": require('./assets/img/icons/audiobookbay.svg')
-  }
+	    "url": "https://ebookee.org",
+	    "title": "EBOOKEE",
+	    "icon": require('./assets/img/icons/ebookee.svg')
+	},{
+		"url": "http://audiobookbay.nl",
+		"title": "AudioBookBay",
+		"icon": require('./assets/img/icons/audiobookbay.svg')
+	},{
+		"url": "http://www.haodoo.net",
+		"title": "好读",
+		"icon": require('./assets/img/icons/haodoo.svg')
+	},{
+		"url": "https://epubw.com",
+		"title": "ePUBw",
+		"icon": require('./assets/img/icons/epubw.svg')
+	},{
+		"url": "https://www.zjlib.cn",
+		"title": "ePUBw",
+		"icon": require('./assets/img/icons/epubw.svg')
+	}
 ];
 
 // Publishing
@@ -1548,6 +1608,18 @@ var tool_items = [
 		"url": "https://kroki.io",
 		"title": "Kroki!",
 		"icon": require('./assets/img/icons/default.svg')
+	},{
+		"url": "https://www.midishow.com",
+		"title": "MidiShow",
+		"icon": require('./assets/img/icons/midishow.svg')
+	},{
+		"url": "http://duilian.msra.cn",
+		"title": "微软对联",
+		"icon": require('./assets/img/icons/default.svg')
+	},{
+		"url": "https://colorkitty.com",
+		"title": "ColorKitty - Find the perfect color palettes from pictures.",
+		"icon": require('./assets/img/icons/colorkitty.svg')
 	}
 
 ];
@@ -1599,6 +1671,10 @@ var photos_items = [
 		"url": "https://wallroom.io",
 		"title": "HD/4K/5K Resolution Wallpapers/Backgrounds",
 		"icon": require('./assets/img/icons/wallroom.svg')
+	},{
+		"url": "https://himawari8.nict.go.jp",
+		"title": "向日葵-8号",
+		"icon": require('./assets/img/icons/himawari8.svg')
 	}
 ];
 
