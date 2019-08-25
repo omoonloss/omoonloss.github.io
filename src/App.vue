@@ -1035,6 +1035,10 @@ var info_items = [
 		"url": "https://japanjobs.dev",
 		"title": "Developer Jobs in Japan - A Job A Day Keeps The Doctor Away",
 		"icon": require('./assets/img/icons/japanjobs.svg')
+	},{
+		"url": "https://cosx.org",
+		"title": "统计之都",
+		"icon": require('./assets/img/icons/cosx.svg')
 	}
 
 ];
@@ -1123,6 +1127,10 @@ var documentary_items = [
 		"url": "https://www.douban.com/doulist/223273/",
 		"title": "豆瓣豆列",
 		"icon": require('./assets/img/icons/default.svg')
+	},{
+		"url": "https://www.onehourlife.com",
+		"title": "每天一小时纪录片",
+		"icon": require('./assets/img/icons/onehourlife.svg')
 	}
 ];
 
@@ -1358,6 +1366,10 @@ var book_items = [
 	    "title": "EBOOKEE",
 	    "icon": require('./assets/img/icons/ebookee.svg')
 	},{
+		"url": "http://www.xkreading.com",
+		"title": "醒客读书",
+		"icon": require('./assets/img/icons/default.svg')
+	},{
 		"url": "http://audiobookbay.nl",
 		"title": "AudioBookBay",
 		"icon": require('./assets/img/icons/audiobookbay.svg')
@@ -1373,6 +1385,10 @@ var book_items = [
 		"url": "https://www.zjlib.cn",
 		"title": "ePUBw",
 		"icon": require('./assets/img/icons/epubw.svg')
+	},{
+		"url": "http://www.qcenglish.com",
+		"title": "七彩英语",
+		"icon": require('./assets/img/icons/default.svg')
 	}
 ];
 
@@ -1700,6 +1716,10 @@ var blog_items = [
 		"url": "https://lepture.com",
 		"title": "Just lepture",
 		"icon": require('./assets/img/icons/lepture.svg')
+	},{
+		"url": "https://jesor.me",
+		"title": "大破进击",
+		"icon": require('./assets/img/icons/jesor.svg')
 	}
 
 ];
