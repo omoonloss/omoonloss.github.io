@@ -1382,10 +1382,6 @@ var book_items = [
 		"title": "ePUBw",
 		"icon": require('./assets/img/icons/epubw.svg')
 	},{
-		"url": "https://www.zjlib.cn",
-		"title": "ePUBw",
-		"icon": require('./assets/img/icons/epubw.svg')
-	},{
 		"url": "http://www.qcenglish.com",
 		"title": "七彩英语",
 		"icon": require('./assets/img/icons/default.svg')
