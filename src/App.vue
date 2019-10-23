@@ -1039,6 +1039,10 @@ var info_items = [
 		"url": "https://cosx.org",
 		"title": "统计之都",
 		"icon": require('./assets/img/icons/cosx.svg')
+	},{
+		"url": "https://www.gcores.com",
+		"title": "机核 GCORES",
+		"icon": require('./assets/img/icons/gcores.svg')
 	}
 
 ];
