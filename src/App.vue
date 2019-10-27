@@ -388,7 +388,7 @@
     <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
       <!-- Card title -->
       <div class="mdui-card-header card-header">
-        纪录片
+        纪录片 & Vlog
       </div>
 
       <div class="mdui-divider"></div>
@@ -1139,7 +1139,11 @@ var documentary_items = [
 		"url": "https://www.onehourlife.com",
 		"title": "每天一小时纪录片",
 		"icon": require('./assets/img/icons/onehourlife.svg')
-	}
+	},{
+    "url": "https://immian.com",
+    "title": "巷子內的生活，國內外美食旅遊隨筆",
+    "icon": require('./assets/img/icons/immian.svg')
+  }
 ];
 
 // Coding
