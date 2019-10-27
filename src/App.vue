@@ -1397,7 +1397,11 @@ var book_items = [
 		"url": "http://www.qcenglish.com",
 		"title": "七彩英语",
 		"icon": require('./assets/img/icons/default.svg')
-	}
+	},{
+    "url": "https://www.tianfateng.cn/tag/magazine",
+    "title": "原版英文杂志 - 田间小站",
+    "icon": require('./assets/img/icons/default.svg')
+  }
 ];
 
 // Publishing
