@@ -1043,6 +1043,10 @@ var info_items = [
 		"url": "https://www.gcores.com",
 		"title": "机核 GCORES",
 		"icon": require('./assets/img/icons/gcores.svg')
+	},{
+		"url": "https://www.zfrontier.com",
+		"title": "zFrontier 装备前线",
+		"icon": require('./assets/img/icons/zfrontier.svg')
 	}
 
 ];
