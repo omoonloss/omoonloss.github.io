@@ -1047,7 +1047,11 @@ var info_items = [
 		"url": "https://www.zfrontier.com",
 		"title": "zFrontier 装备前线",
 		"icon": require('./assets/img/icons/zfrontier.svg')
-	}
+	},{
+    "url": "https://creatorsdaily.com",
+    "title": "创造者日报 - 让灵感完美爆炸",
+    "icon": require('./assets/img/icons/creatorsdaily.svg')
+  }
 
 ];
 
@@ -1401,7 +1405,12 @@ var book_items = [
     "url": "https://www.tianfateng.cn/tag/magazine",
     "title": "原版英文杂志 - 田间小站",
     "icon": require('./assets/img/icons/default.svg')
+  },{
+    "url": "https://www.neohytung.com",
+    "title": "瀚堂近代报刊数据库",
+    "icon": require('./assets/img/icons/neohytung.svg')
   }
+
 ];
 
 // Publishing
@@ -1648,7 +1657,15 @@ var tool_items = [
 		"url": "https://colorkitty.com",
 		"title": "ColorKitty - Find the perfect color palettes from pictures.",
 		"icon": require('./assets/img/icons/colorkitty.svg')
-	}
+	},{
+    "url": "https://gitmind.cn",
+    "title": "GitMind - 在线免费思维导图软件",
+    "icon": require('./assets/img/icons/gitmind.svg')
+  },{
+    "url": "http://www.faxin.cn/keyword/index.aspx",
+    "title": "法信大纲 - 法信 - 懂法，更懂法律人",
+    "icon": require('./assets/img/icons/default.svg')
+  }
 
 ];
 
