@@ -1048,10 +1048,14 @@ var info_items = [
 		"title": "zFrontier 装备前线",
 		"icon": require('./assets/img/icons/zfrontier.svg')
 	},{
-    "url": "https://creatorsdaily.com",
-    "title": "创造者日报 - 让灵感完美爆炸",
-    "icon": require('./assets/img/icons/creatorsdaily.svg')
-  }
+	    "url": "https://creatorsdaily.com",
+	    "title": "创造者日报 - 让灵感完美爆炸",
+	    "icon": require('./assets/img/icons/creatorsdaily.svg')
+    },{
+	    "url": "https://www.jiligame.com",
+	    "title": "叽哩叽哩单机游戏",
+	    "icon": require('./assets/img/icons/jiligame.svg')
+    }
 
 ];
 
