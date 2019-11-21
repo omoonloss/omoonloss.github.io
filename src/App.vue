@@ -782,6 +782,10 @@ if (!Store.getCookie('visited')) {
 			    "title": "微信网页版",
 			    "icon": require('./assets/img/icons/weixin.svg')
 			}, {
+			    "url": "https://weread.qq.com",
+			    "title": "微信读书",
+			    "icon": require('./assets/img/icons/weread.svg')
+			}, {
 			    "url": "https://wx.zsxq.com/dweb",
 			    "title": "知识星球",
 			    "icon": require('./assets/img/icons/zsxq.svg')
@@ -963,6 +967,10 @@ var info_items = [
 		"url": "https://juejin.im",
 		"title": "掘金",
 		"icon": require('./assets/img/icons/juejin.svg')
+	},{
+		"url": "https://wubaiqing.github.io/zaobao/other/latest.html",
+		"title": "每日时报",
+		"icon": require('./assets/img/icons/default.svg')
 	},{
 		"url": "http://gank.io",
 		"title": "干货集中营",
@@ -1662,14 +1670,18 @@ var tool_items = [
 		"title": "ColorKitty - Find the perfect color palettes from pictures.",
 		"icon": require('./assets/img/icons/colorkitty.svg')
 	},{
-    "url": "https://gitmind.cn",
-    "title": "GitMind - 在线免费思维导图软件",
-    "icon": require('./assets/img/icons/gitmind.svg')
-  },{
-    "url": "http://www.faxin.cn/keyword/index.aspx",
-    "title": "法信大纲 - 法信 - 懂法，更懂法律人",
-    "icon": require('./assets/img/icons/default.svg')
-  }
+	    "url": "https://gitmind.cn",
+	    "title": "GitMind - 在线免费思维导图软件",
+	    "icon": require('./assets/img/icons/gitmind.svg')
+	},{
+		"url": "http://www.faxin.cn/keyword/index.aspx",
+		"title": "法信大纲 - 法信 - 懂法，更懂法律人",
+		"icon": require('./assets/img/icons/default.svg')
+	},{
+		"url": "https://apkcombo.com",
+		"title": "APKCombo | APK Downloader",
+		"icon": require('./assets/img/icons/apkcombo.svg')
+	}
 
 ];
 
