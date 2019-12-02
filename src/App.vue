@@ -730,21 +730,21 @@ if (!Store.getCookie('visited')) {
 	if(Store.fetch_site().length == 0){
 		Store.save_site([
 			{
-			    "url": "https://github.com",
-			    "title": "GitHub",
-			    "icon": require('./assets/img/icons/github.svg')
+        "url": "https://github.com",
+        "title": "GitHub",
+        "icon": require('./assets/img/icons/github.svg')
 			}, {
-			    "url": "https://about.gitlab.com",
-			    "title": "GitLab",
-			    "icon": require('./assets/img/icons/gitlab.svg')
+        "url": "https://about.gitlab.com",
+        "title": "GitLab",
+        "icon": require('./assets/img/icons/gitlab.svg')
 			}, {
 				"url": "https://bitbucket.org",
-			    "title": "Bitbucket",
-			    "icon": require('./assets/img/icons/bitbucket.svg')
+			  "title": "Bitbucket",
+			  "icon": require('./assets/img/icons/bitbucket.svg')
 			}, {
-			    "url": "https://coding.net",
-			    "title": "Coding",
-			    "icon": require('./assets/img/icons/coding.svg')
+			  "url": "https://coding.net",
+			  "title": "Coding",
+        "icon": require('./assets/img/icons/coding.svg')
 			}, {
 				"url": "https://codepen.io",
 				"title": "CodePen",
@@ -774,153 +774,153 @@ if (!Store.getCookie('visited')) {
 				"title": "知乎",
 				"icon": require('./assets/img/icons/zhihu.svg')
 			}, {
-			    "url": "http://www.jianshu.com",
-			    "title": "简书",
-			    "icon": require('./assets/img/icons/jianshu.svg')
+        "url": "http://www.jianshu.com",
+        "title": "简书",
+        "icon": require('./assets/img/icons/jianshu.svg')
 			}, {
-			    "url": "https://wx.qq.com",
-			    "title": "微信网页版",
-			    "icon": require('./assets/img/icons/weixin.svg')
+        "url": "https://wx.qq.com",
+        "title": "微信网页版",
+        "icon": require('./assets/img/icons/weixin.svg')
 			}, {
-			    "url": "https://weread.qq.com",
-			    "title": "微信读书",
-			    "icon": require('./assets/img/icons/weread.svg')
+        "url": "https://weread.qq.com",
+        "title": "微信读书",
+        "icon": require('./assets/img/icons/weread.svg')
 			}, {
-			    "url": "https://wx.zsxq.com/dweb",
-			    "title": "知识星球",
-			    "icon": require('./assets/img/icons/zsxq.svg')
+        "url": "https://wx.zsxq.com/dweb",
+        "title": "知识星球",
+        "icon": require('./assets/img/icons/zsxq.svg')
 			}, {
-			    "url": "https://qzone.qq.com",
-			    "title": "QZone",
-			    "icon": require('./assets/img/icons/qzone.svg')
+        "url": "https://qzone.qq.com",
+        "title": "QZone",
+        "icon": require('./assets/img/icons/qzone.svg')
 			}, {
-			    "url": "http://weibo.com/",
-			    "title": "微博",
-			    "icon": require('./assets/img/icons/weibo.svg')
+        "url": "http://weibo.com/",
+        "title": "微博",
+        "icon": require('./assets/img/icons/weibo.svg')
 			}, {
-				"url": "https://www.dropbox.com",
-			    "title": "Dropbox",
-			    "icon": require('./assets/img/icons/dropbox.svg')
+        "url": "https://www.dropbox.com",
+        "title": "Dropbox",
+        "icon": require('./assets/img/icons/dropbox.svg')
 			}, {
-			    "url": "https://www.youtube.com",
-			    "title": "Youtube",
-			    "icon": require('./assets/img/icons/youtube.svg')
+        "url": "https://www.youtube.com",
+        "title": "Youtube",
+        "icon": require('./assets/img/icons/youtube.svg')
 			}, {
-			    "url": "https://quora.com",
-			    "title": "Quora",
-			    "icon": require('./assets/img/icons/quora.svg')
+        "url": "https://quora.com",
+        "title": "Quora",
+        "icon": require('./assets/img/icons/quora.svg')
 			}, {
-			    "url": "https://getpocket.com/",
-			    "title": "Pocket",
-			    "icon": require('./assets/img/icons/pocket.svg')
+        "url": "https://getpocket.com/",
+        "title": "Pocket",
+        "icon": require('./assets/img/icons/pocket.svg')
 			}, {
-			    "url": "http://stackoverflow.com/",
-			    "title": "Stack Overflow",
-			    "icon": require('./assets/img/icons/stackoverflow.svg')
+        "url": "http://stackoverflow.com/",
+        "title": "Stack Overflow",
+        "icon": require('./assets/img/icons/stackoverflow.svg')
 			}, {
-			    "url": "https://www.amazon.com/",
-			    "title": "Amazon",
-			    "icon": require('./assets/img/icons/amazon.svg')
+        "url": "https://www.amazon.com/",
+        "title": "Amazon",
+        "icon": require('./assets/img/icons/amazon.svg')
 			}, {
-			    "url": "https://taobao.com/",
-			    "title": "淘宝",
-			    "icon": require('./assets/img/icons/taobao.svg')
+        "url": "https://taobao.com/",
+        "title": "淘宝",
+        "icon": require('./assets/img/icons/taobao.svg')
 			}, {
-			    "url": "http://coolapk.com",
-			    "title": "酷安",
-			    "icon": require('./assets/img/icons/coolapk.svg')
+        "url": "http://coolapk.com",
+        "title": "酷安",
+        "icon": require('./assets/img/icons/coolapk.svg')
 			}, {
-			    "url": "http://douban.com",
-			    "title": "豆瓣",
-			    "icon": require('./assets/img/icons/douban.svg')
+        "url": "http://douban.com",
+        "title": "豆瓣",
+        "icon": require('./assets/img/icons/douban.svg')
 			}, {
-			    "url": "http://www.latexstudio.net",
-			    "title": "LaTeX工作室",
-			    "icon": require('./assets/img/icons/latexstudio.svg')
+        "url": "http://www.latexstudio.net",
+        "title": "LaTeX工作室",
+        "icon": require('./assets/img/icons/latexstudio.svg')
 			}, {
-			    "url": "http://weixin.sogou.com",
-			    "title": "搜狗微信",
-			    "icon": require('./assets/img/icons/weixin-sogou.svg')
+        "url": "http://weixin.sogou.com",
+        "title": "搜狗微信",
+        "icon": require('./assets/img/icons/weixin-sogou.svg')
 			}, {
-			    "url": "https://www.ted.com",
-			    "title": "TED",
-			    "icon": require('./assets/img/icons/ted.svg')
+        "url": "https://www.ted.com",
+        "title": "TED",
+        "icon": require('./assets/img/icons/ted.svg')
 			}, {
-			    "url": "https://libraries.io",
-			    "title": "Libraries.io",
-			    "icon": require('./assets/img/icons/libraries-io.svg')
+        "url": "https://libraries.io",
+        "title": "Libraries.io",
+        "icon": require('./assets/img/icons/libraries-io.svg')
 			}, {
-			    "url": "http://theme.npm.edu.tw/opendata",
-			    "title": "故宮Open Data專區",
-			    "icon": require('./assets/img/icons/npm-opendata.svg')
+        "url": "http://theme.npm.edu.tw/opendata",
+        "title": "故宮Open Data專區",
+        "icon": require('./assets/img/icons/npm-opendata.svg')
 			}, {
-			    "url": "https://itch.io",
-			    "title": "itch.io",
-			    "icon": require('./assets/img/icons/itch-io.svg')
+        "url": "https://itch.io",
+        "title": "itch.io",
+        "icon": require('./assets/img/icons/itch-io.svg')
 			}, {
-			    "url": "https://www.humblebundle.com",
-			    "title": "Humble Bundle",
-			    "icon": require('./assets/img/icons/humblebundle.svg')
+        "url": "https://www.humblebundle.com",
+        "title": "Humble Bundle",
+        "icon": require('./assets/img/icons/humblebundle.svg')
 			}, {
-			    "url": "https://indienova.com",
-			    "title": "indienova 独立游戏",
-			    "icon": require('./assets/img/icons/indienova.svg')
+        "url": "https://indienova.com",
+        "title": "indienova 独立游戏",
+        "icon": require('./assets/img/icons/indienova.svg')
 			}, {
-			    "url": "https://agirls.aotter.net",
-			    "title": "電獺少女",
-			    "icon": require('./assets/img/icons/agirls.svg')
+        "url": "https://agirls.aotter.net",
+        "title": "電獺少女",
+        "icon": require('./assets/img/icons/agirls.svg')
 			}, {
-			    "url": "https://luooqi.com",
-			    "title": "鱼声音乐",
-			    "icon": require('./assets/img/icons/luooqi.svg')
+        "url": "https://luooqi.com",
+        "title": "鱼声音乐",
+        "icon": require('./assets/img/icons/luooqi.svg')
 			}, {
-				"url": "https://www.tianfateng.cn",
-			    "title": "田间小站",
-			    "icon": require('./assets/img/icons/default.svg')
+        "url": "https://www.tianfateng.cn",
+        "title": "田间小站",
+        "icon": require('./assets/img/icons/default.svg')
 			}, {
-				"url": "https://www.yixi.tv",
-			    "title": "一席",
-			    "icon": require('./assets/img/icons/yixi.svg')
+        "url": "https://www.yixi.tv",
+        "title": "一席",
+        "icon": require('./assets/img/icons/yixi.svg')
 			}, {
-				"url": "https://www.britishcouncil.org",
-			    "title": "British Council",
-			    "icon": require('./assets/img/icons/britishcouncil.svg')
+        "url": "https://www.britishcouncil.org",
+        "title": "British Council",
+        "icon": require('./assets/img/icons/britishcouncil.svg')
 			}, {
-				"url": "https://tw.voicetube.com",
-			    "title": "VoiceTube",
-			    "icon": require('./assets/img/icons/voicetube.svg')
+        "url": "https://tw.voicetube.com",
+        "title": "VoiceTube",
+        "icon": require('./assets/img/icons/voicetube.svg')
 			}, {
-				"url": "http://songtasty.com/song",
-			    "title": "SongTasty",
-			    "icon": require('./assets/img/icons/songtasty.svg')
+        "url": "http://songtasty.com/song",
+        "title": "SongTasty",
+        "icon": require('./assets/img/icons/songtasty.svg')
 			}, {
-				"url": "https://musescore.org",
-			    "title": "Musescore",
-			    "icon": require('./assets/img/icons/musescore.svg')
+        "url": "https://musescore.org",
+        "title": "Musescore",
+        "icon": require('./assets/img/icons/musescore.svg')
 			}, {
-				"url": "https://www.hqgq.com",
-			    "title": "环球钢琴网",
-			    "icon": require('./assets/img/icons/hqgq.svg')
+        "url": "https://www.hqgq.com",
+        "title": "环球钢琴网",
+        "icon": require('./assets/img/icons/hqgq.svg')
 			}, {
-				"url": "https://www.exound.com",
-			    "title": "人人都来玩音乐 | 叉烧网",
-			    "icon": require('./assets/img/icons/default.svg')
+        "url": "https://www.exound.com",
+        "title": "人人都来玩音乐 | 叉烧网",
+        "icon": require('./assets/img/icons/default.svg')
 			}, {
-				"url": "https://www.kuaiyilicai.com",
-			    "title": "快易理财网--理财改变生活",
-			    "icon": require('./assets/img/icons/default.svg')
+        "url": "https://www.kuaiyilicai.com",
+        "title": "快易理财网--理财改变生活",
+        "icon": require('./assets/img/icons/default.svg')
 			}, {
-				"url": "https://lookao.com",
-			    "title": "Lookao",
-			    "icon": require('./assets/img/icons/lookao.svg')
+        "url": "https://lookao.com",
+        "title": "Lookao",
+        "icon": require('./assets/img/icons/lookao.svg')
 			}, {
-				"url": "https://wht.im",
-			    "title": "万花筒",
-			    "icon": require('./assets/img/icons/wht.svg')
+        "url": "https://wht.im",
+        "title": "万花筒",
+        "icon": require('./assets/img/icons/wht.svg')
 			}, {
-				"url": "https://www.vmovier.com",
-			    "title": "场库",
-			    "icon": require('./assets/img/icons/vmovier.svg')
+        "url": "https://www.vmovier.com",
+        "title": "场库",
+        "icon": require('./assets/img/icons/vmovier.svg')
 			}
 
 		])
@@ -1056,15 +1056,22 @@ var info_items = [
 		"title": "zFrontier 装备前线",
 		"icon": require('./assets/img/icons/zfrontier.svg')
 	},{
-	    "url": "https://creatorsdaily.com",
-	    "title": "创造者日报 - 让灵感完美爆炸",
-	    "icon": require('./assets/img/icons/creatorsdaily.svg')
-    },{
-	    "url": "https://www.jiligame.com",
-	    "title": "叽哩叽哩单机游戏",
-	    "icon": require('./assets/img/icons/jiligame.svg')
-    }
-
+    "url": "https://creatorsdaily.com",
+    "title": "创造者日报 - 让灵感完美爆炸",
+    "icon": require('./assets/img/icons/creatorsdaily.svg')
+  },{
+    "url": "https://iois.me",
+    "title": "Dailyio – 一份深度洞察和全球视野的科技商业评论",
+    "icon": require('./assets/img/icons/iois.svg')
+  },{
+    "url": "https://kenengba.com",
+    "title": "可能吧",
+    "icon": require('./assets/img/icons/kenengba.svg')
+  },{
+    "url": "https://www.jiligame.com",
+    "title": "叽哩叽哩单机游戏",
+    "icon": require('./assets/img/icons/jiligame.svg')
+  }
 ];
 
 // 社区
