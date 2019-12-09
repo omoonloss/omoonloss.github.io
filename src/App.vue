@@ -854,6 +854,10 @@ if (!Store.getCookie('visited')) {
         "title": "故宮Open Data專區",
         "icon": require('./assets/img/icons/npm-opendata.svg')
 			}, {
+        "url": "https://www.dpm.org.cn",
+        "title": "故宫博物院",
+        "icon": require('./assets/img/icons/dpm.svg')
+			}, {
         "url": "https://itch.io",
         "title": "itch.io",
         "icon": require('./assets/img/icons/itch-io.svg')
