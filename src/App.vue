@@ -1285,6 +1285,10 @@ var design_items = [
 		"url": "http://refs.cn",
 		"title": "原型设计元件库",
 		"icon": require('./assets/img/icons/default.svg')
+	},{
+		"url": "https://illlustrations.co",
+		"title": "illlustrations - open source illustrations kit",
+		"icon": require('./assets/img/icons/illlustrations.svg')
 	}
 ];
 
