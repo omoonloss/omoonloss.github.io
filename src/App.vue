@@ -1188,6 +1188,10 @@ var coding_items = [
 		"title": "LeetCode",
 		"icon": require('./assets/img/icons/leetcode.svg')
 	},{
+		"url": "https://leetcode-cn.com",
+		"title": "力扣(LeetCode)",
+		"icon": require('./assets/img/icons/leetcode.svg')
+	},{
 		"url": "http://www.lintcode.com/zh-cn",
 		"title": "LintCode",
 		"icon": require('./assets/img/icons/lintcode.svg')
@@ -1289,6 +1293,10 @@ var design_items = [
 		"url": "https://illlustrations.co",
 		"title": "illlustrations - open source illustrations kit",
 		"icon": require('./assets/img/icons/illlustrations.svg')
+	},{
+		"url": "https://www.manypixels.co/gallery",
+		"title": "illlustrations - open source illustrations kit",
+		"icon": require('./assets/img/icons/manypixels.svg')
 	}
 ];
 
