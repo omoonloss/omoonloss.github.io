@@ -650,7 +650,7 @@
       </ul>
 
       <p class="copyright">
-        © 2017~2019 &nbsp;<a href="https://sogaso.ga" target="_blank">HOME</a>
+        © 2017~2020 &nbsp;<a href="https://sogaso.ga" target="_blank">HOME</a>
       </p>
   </div>
 
