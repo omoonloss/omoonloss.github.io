@@ -980,13 +980,13 @@ var info_items = [
 		"title": "每日时报",
 		"icon": require('./assets/img/icons/default.svg')
 	},{
-		"url": "http://gank.io",
-		"title": "干货集中营",
-		"icon": require('./assets/img/icons/gank.svg')
-	},{
 		"url": "https://weekly.75team.com",
 		"title": "奇舞周刊",
 		"icon": require('./assets/img/icons/75team.svg')
+	},{
+		"url": "https://weekly.codetengu.com",
+		"title": "CodeTengu Weekly（码天狗週刊）",
+		"icon": require('./assets/img/icons/codetengu.svg')
 	},{
 		"url": "https://wanqu.co",
 		"title": "湾区日报",
