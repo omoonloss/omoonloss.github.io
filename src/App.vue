@@ -1101,10 +1101,6 @@ var community_items = [
 		"title": "黑客派",
 		"icon": require('./assets/img/icons/hacpai.svg')
 	},{
-		"url": "http://www.jcodecraeer.com",
-		"title": "泡在网上的日子",
-		"icon": require('./assets/img/icons/jcodecraeer.svg')
-	},{
 		"url": "https://www.reddit.com",
 		"title": "Reddit",
 		"icon": require('./assets/img/icons/reddit.svg')
