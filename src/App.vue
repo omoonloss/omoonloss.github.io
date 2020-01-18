@@ -746,37 +746,37 @@ if (!Store.getCookie('visited')) {
 		    "title": "Coding",
 		    "icon": require('./assets/img/icons/coding.svg')
 		}, {
-			"url": "https://codepen.io",
-			"title": "CodePen",
-			"icon": require('./assets/img/icons/codepen.svg')
+  			"url": "https://codepen.io",
+  			"title": "CodePen",
+  			"icon": require('./assets/img/icons/codepen.svg')
 		}, {
-			"url": "https://codesandbox.io",
-			"title": "CodeSandbox",
-			"icon": require('./assets/img/icons/codesandbox.svg')
+  			"url": "https://codesandbox.io",
+  			"title": "CodeSandbox",
+  			"icon": require('./assets/img/icons/codesandbox.svg')
 		}, {
-			"url": "https://www.wikipedia.org",
-			"title": "Wikipedia",
-			"icon": require('./assets/img/icons/wikipedia.svg')
+  			"url": "https://www.wikipedia.org",
+  			"title": "Wikipedia",
+  			"icon": require('./assets/img/icons/wikipedia.svg')
 		}, {
-			"url": "https://medium.com",
-			"title": "Medium",
-			"icon": require('./assets/img/icons/medium.svg')
+  			"url": "https://medium.com",
+  			"title": "Medium",
+  			"icon": require('./assets/img/icons/medium.svg')
 		}, {
-			"url": "https://facebook.com/",
-			"title": "Facebook",
-			"icon": require('./assets/img/icons/facebook.svg')
+  			"url": "https://facebook.com/",
+  			"title": "Facebook",
+  			"icon": require('./assets/img/icons/facebook.svg')
 		}, {
-			"url": "https://twitter.com/",
-			"title": "Twitter",
-			"icon": require('./assets/img/icons/twitter.svg')
+  			"url": "https://twitter.com/",
+  			"title": "Twitter",
+  			"icon": require('./assets/img/icons/twitter.svg')
 		}, {
-			"url": "https://zhihu.com",
-			"title": "知乎",
-			"icon": require('./assets/img/icons/zhihu.svg')
+  			"url": "https://zhihu.com",
+  			"title": "知乎",
+  			"icon": require('./assets/img/icons/zhihu.svg')
 		}, {
-		    "url": "http://www.jianshu.com",
-		    "title": "简书",
-		    "icon": require('./assets/img/icons/jianshu.svg')
+		    "url": "https://www.bilibili.com",
+		    "title": "哔哩哔哩",
+		    "icon": require('./assets/img/icons/bilibili.svg')
 		}, {
 		    "url": "https://wx.qq.com",
 		    "title": "微信网页版",
