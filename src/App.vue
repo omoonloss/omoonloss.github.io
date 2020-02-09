@@ -408,11 +408,11 @@
 
     </div>
 
-    <!-- Coding -->
+    <!-- Coding & Course -->
     <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
       <!-- Card title -->
       <div class="mdui-card-header card-header">
-        Coding
+        Coding & Course
       </div>
 
       <div class="mdui-divider"></div>
@@ -1177,7 +1177,7 @@ var documentary_items = [
     }
 ];
 
-// Coding
+// Coding & Course
 var coding_items = [
 	{
 		"url": "http://www.spoj.com",
@@ -1216,9 +1216,18 @@ var coding_items = [
 		"title": "实验楼",
 		"icon": require('./assets/img/icons/shiyanlou.svg')
 	},{
-		"url": "http://www.imooc.com",
+		"url": "https://www.imooc.com",
 		"title": "慕课网",
 		"icon": require('./assets/img/icons/imooc.svg')
+	},{
+		/* 
+		 * Schoo 是日本最大的 MOOC 网站，全部课程都是日语授课，
+		 * 科技趋势、经营创业、商业技巧等是主要的课程内容，
+		 * 网站受众也以职场新鲜人为主，一些课程限定付费会员才能观看，日语学习者可以考虑学习
+		*/
+		"url": "https://schoo.jp",
+		"title": "Schoo - 大人たちがずっと学び続ける生放送コミュニティ",
+		"icon": require('./assets/img/icons/schoo.svg')
 	},{
 		"url": "https://uiiiuiii.com",
 		"title": "优优教程网",
@@ -1712,6 +1721,10 @@ var tool_items = [
 		"url": "https://apkcombo.com",
 		"title": "APKCombo | APK Downloader",
 		"icon": require('./assets/img/icons/apkcombo.svg')
+	},{
+		"url": "http://worldofviruses.unl.edu",
+		"title": "Biology of Human/World of Viruses",
+		"icon": require('./assets/img/icons/default.svg')
 	}
 
 ];
@@ -1796,6 +1809,10 @@ var blog_items = [
 		"url": "https://jesor.me",
 		"title": "大破进击",
 		"icon": require('./assets/img/icons/jesor.svg')
+	},{
+		"url": "https://hesamkaveh.com",
+		"title": "حسام‌ کاوه | روزنوشته های یک توسعه دهنده",
+		"icon": require('./assets/img/icons/hesamkaveh.svg')
 	}
 
 ];
