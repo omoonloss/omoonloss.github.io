@@ -758,15 +758,19 @@ if (!Store.getCookie('visited')) {
   			"title": "Wikipedia",
   			"icon": require('./assets/img/icons/wikipedia.svg')
 		}, {
+  			"url": "https://www.wikiart.org",
+  			"title": "WikiArt - Visual Art Encyclopedia",
+  			"icon": require('./assets/img/icons/wikiart.svg')
+		}, {
   			"url": "https://medium.com",
   			"title": "Medium",
   			"icon": require('./assets/img/icons/medium.svg')
 		}, {
-  			"url": "https://facebook.com/",
+  			"url": "https://facebook.com",
   			"title": "Facebook",
   			"icon": require('./assets/img/icons/facebook.svg')
 		}, {
-  			"url": "https://twitter.com/",
+  			"url": "https://twitter.com",
   			"title": "Twitter",
   			"icon": require('./assets/img/icons/twitter.svg')
 		}, {
@@ -794,7 +798,7 @@ if (!Store.getCookie('visited')) {
 		    "title": "QZone",
 		    "icon": require('./assets/img/icons/qzone.svg')
 		}, {
-		    "url": "http://weibo.com/",
+		    "url": "http://weibo.com",
 		    "title": "微博",
 		    "icon": require('./assets/img/icons/weibo.svg')
 		}, {
@@ -810,19 +814,19 @@ if (!Store.getCookie('visited')) {
 		    "title": "Quora",
 		    "icon": require('./assets/img/icons/quora.svg')
 		}, {
-		    "url": "https://getpocket.com/",
+		    "url": "https://getpocket.com",
 		    "title": "Pocket",
 		    "icon": require('./assets/img/icons/pocket.svg')
 		}, {
-		    "url": "http://stackoverflow.com/",
+		    "url": "http://stackoverflow.com",
 		    "title": "Stack Overflow",
 		    "icon": require('./assets/img/icons/stackoverflow.svg')
 		}, {
-		    "url": "https://www.amazon.com/",
+		    "url": "https://www.amazon.com",
 		    "title": "Amazon",
 		    "icon": require('./assets/img/icons/amazon.svg')
 		}, {
-		    "url": "https://taobao.com/",
+		    "url": "https://taobao.com",
 		    "title": "淘宝",
 		    "icon": require('./assets/img/icons/taobao.svg')
 		}, {
@@ -1449,6 +1453,10 @@ var book_items = [
         "url": "https://www.neohytung.com",
         "title": "瀚堂近代报刊数据库",
         "icon": require('./assets/img/icons/neohytung.svg')
+    },{
+        "url": "http://book.gonginxweb.com",
+        "title": "周读",
+        "icon": require('./assets/img/icons/default.svg')
     }
 
 ];
@@ -1725,6 +1733,10 @@ var tool_items = [
 		"url": "http://worldofviruses.unl.edu",
 		"title": "Biology of Human/World of Viruses",
 		"icon": require('./assets/img/icons/default.svg')
+	},{
+		"url": "https://www.hoverstat.es",
+		"title": "HOVERSTAT.ES | The home of alternative web-design.",
+		"icon": require('./assets/img/icons/hoverstat.svg')
 	}
 
 ];
