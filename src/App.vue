@@ -1087,6 +1087,10 @@ var info_items = [
 		"url": "https://v2te.com",
 		"title": "v2te",
 		"icon": require('./assets/img/icons/default.svg')
+	},{
+		"url": "https://nicelinks.site",
+		"title": "倾城之链",
+		"icon": require('./assets/img/icons/nicelinks.svg')
 	}
 ];
 
@@ -1737,6 +1741,10 @@ var tool_items = [
 		"url": "https://www.hoverstat.es",
 		"title": "HOVERSTAT.ES | The home of alternative web-design.",
 		"icon": require('./assets/img/icons/hoverstat.svg')
+	},{
+		"url": "https://www.gushiwen.org",
+		"title": "古诗文网-古诗文经典传承",
+		"icon": require('./assets/img/icons/gushiwen.svg')
 	}
 
 ];
