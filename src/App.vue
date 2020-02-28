@@ -935,7 +935,7 @@ if (!Store.getCookie('visited')) {
 		    "icon": require('./assets/img/icons/podlink.svg')
 		}
 
-    ])
+  ])
 }
 
   // test
@@ -1179,10 +1179,10 @@ var documentary_items = [
 		"title": "每天一小时纪录片",
 		"icon": require('./assets/img/icons/onehourlife.svg')
 	},{
-        "url": "https://immian.com",
-        "title": "巷子內的生活，國內外美食旅遊隨筆",
-        "icon": require('./assets/img/icons/immian.svg')
-    }
+    "url": "https://immian.com",
+    "title": "巷子內的生活，國內外美食旅遊隨筆",
+    "icon": require('./assets/img/icons/immian.svg')
+  }
 ];
 
 // Coding & Course
@@ -1354,10 +1354,6 @@ var book_items = [
 		"title": "书格",
 		"icon": require('./assets/img/icons/shuge.svg')
 	},{
-		"url": "https://bookset.me",
-		"title": "Bookset",
-		"icon": require('./assets/img/icons/bookset.svg')
-	},{
 		"url": "http://www.gutenberg.org",
 		"title": "古登堡计划",
 		"icon": require('./assets/img/icons/gutenberg.svg')
@@ -1378,10 +1374,18 @@ var book_items = [
 		"title": "书伴",
 		"icon": require('./assets/img/icons/bookfere.svg')
 	},{
+    "url": "http://cn.epubee.com/books",
+    "title": "ePUBee 书库",
+    "icon": require('./assets/img/icons/epubee.svg')
+  },{
 		"url": "https://www.jiumodiary.com",
 		"title": "鸠摩搜索",
 		"icon": require('./assets/img/icons/jiumodiary.svg')
 	},{
+    "url": "https://booksc.org",
+    "title": "BookSC",
+    "icon": require('./assets/img/icons/booksc.svg')
+  },{
 		"url": "http://gen.lib.rus.ec",
 		"title": "Library Genesis",
 		"icon": require('./assets/img/icons/libgen.svg')
@@ -1393,10 +1397,6 @@ var book_items = [
 		"url": "https://ctext.org",
 		"title": "中国哲学书籍电子化计划",
 		"icon": require('./assets/img/icons/default.svg')
-	},{
-		"url": "http://mebook.cc",
-		"title": "我的小书屋",
-		"icon": require('./assets/img/icons/mebook.svg')
 	},{
 		"url": "https://sobooks.cc",
 		"title": "SoBooks",
@@ -1426,9 +1426,9 @@ var book_items = [
 		"title": "计算机书籍控",
 		"icon": require('./assets/img/icons/bestcbooks.svg')
 	},{
-	    "url": "https://ebookee.org",
-	    "title": "EBOOKEE",
-	    "icon": require('./assets/img/icons/ebookee.svg')
+    "url": "https://ebookee.org",
+    "title": "EBOOKEE",
+    "icon": require('./assets/img/icons/ebookee.svg')
 	},{
 		"url": "http://www.xkreading.com",
 		"title": "醒客读书",
@@ -1450,18 +1450,18 @@ var book_items = [
 		"title": "七彩英语",
 		"icon": require('./assets/img/icons/default.svg')
 	},{
-        "url": "https://www.tianfateng.cn/tag/magazine",
-        "title": "原版英文杂志 - 田间小站",
-        "icon": require('./assets/img/icons/default.svg')
-    },{
-        "url": "https://www.neohytung.com",
-        "title": "瀚堂近代报刊数据库",
-        "icon": require('./assets/img/icons/neohytung.svg')
-    },{
-        "url": "http://book.gonginxweb.com",
-        "title": "周读",
-        "icon": require('./assets/img/icons/default.svg')
-    }
+    "url": "https://www.tianfateng.cn/tag/magazine",
+    "title": "原版英文杂志 - 田间小站",
+    "icon": require('./assets/img/icons/default.svg')
+  },{
+    "url": "https://www.neohytung.com",
+    "title": "瀚堂近代报刊数据库",
+    "icon": require('./assets/img/icons/neohytung.svg')
+  },{
+    "url": "http://book.gonginxweb.com",
+    "title": "周读",
+    "icon": require('./assets/img/icons/default.svg')
+  }
 
 ];
 
@@ -1476,22 +1476,22 @@ var publishing_items = [
 		"title": "Manning",
 		"icon": require('./assets/img/icons/manning.svg')
 	},{
-        "url": "https://leanpub.com",
-        "title": "Leanpub",
-        "icon": require('./assets/img/icons/leanpub.svg')
-    },{
-        "url": "https://www.ituring.com.cn",
-        "title": "图灵社区",
-        "icon": require('./assets/img/icons/ituring.svg')
-    },{
-        "url": "http://www.epubit.com.cn",
-        "title": "异步社区",
-        "icon": require('./assets/img/icons/epubit.svg')
-    },{
-        "url": "https://www.oreilly.com",
-        "title": "O'Reilly Media",
-        "icon": require('./assets/img/icons/oreilly.svg')
-    }
+    "url": "https://leanpub.com",
+    "title": "Leanpub",
+    "icon": require('./assets/img/icons/leanpub.svg')
+  },{
+    "url": "https://www.ituring.com.cn",
+    "title": "图灵社区",
+    "icon": require('./assets/img/icons/ituring.svg')
+  },{
+    "url": "http://www.epubit.com.cn",
+    "title": "异步社区",
+    "icon": require('./assets/img/icons/epubit.svg')
+  },{
+    "url": "https://www.oreilly.com",
+    "title": "O'Reilly Media",
+    "icon": require('./assets/img/icons/oreilly.svg')
+  }
 
 ];
 
@@ -1722,9 +1722,9 @@ var tool_items = [
 		"title": "ColorKitty - Find the perfect color palettes from pictures.",
 		"icon": require('./assets/img/icons/colorkitty.svg')
 	},{
-	    "url": "https://gitmind.cn",
-	    "title": "GitMind - 在线免费思维导图软件",
-	    "icon": require('./assets/img/icons/gitmind.svg')
+    "url": "https://gitmind.cn",
+    "title": "GitMind - 在线免费思维导图软件",
+    "icon": require('./assets/img/icons/gitmind.svg')
 	},{
 		"url": "http://www.faxin.cn/keyword/index.aspx",
 		"title": "法信大纲 - 法信 - 懂法，更懂法律人",
