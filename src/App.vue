@@ -1819,8 +1819,8 @@ var blog_items = [
 		"icon": require('./assets/img/icons/true-me.svg')
 	},{
 		"url": "https://zty.js.org",
-		"title": "Alume",
-		"icon": require('./assets/img/icons/alu-me.svg')
+		"title": "Zetao's Blog",
+		"icon": require('./assets/img/icons/zty.svg')
 	},{
 		"url": "https://lepture.com",
 		"title": "Just lepture",
