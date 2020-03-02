@@ -965,7 +965,7 @@ if (!Store.getCookie('visited')) {
 	}
 }
 
-// 资讯&阅读
+// 资讯 & 阅读
 var info_items = [
 	{
 		"url": "https://news.ycombinator.com",
@@ -1091,6 +1091,10 @@ var info_items = [
 		"url": "https://nicelinks.site",
 		"title": "倾城之链",
 		"icon": require('./assets/img/icons/nicelinks.svg')
+	},{
+		"url": "https://storystudio.tw",
+		"title": "故事 StoryStudio",
+		"icon": require('./assets/img/icons/storystudio.svg')
 	}
 ];
 
