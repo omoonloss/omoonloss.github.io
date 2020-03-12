@@ -1808,6 +1808,10 @@ var photos_items = [
 		"url": "https://himawari8.nict.go.jp",
 		"title": "向日葵-8号",
 		"icon": require('./assets/img/icons/himawari8.svg')
+	},{
+		"url": "https://wall.alphacoders.com",
+		"title": "Wallpaper Abyss - HD Wallpapers, Background Images",
+		"icon": require('./assets/img/icons/wallalphacoders.svg')
 	}
 ];
 
