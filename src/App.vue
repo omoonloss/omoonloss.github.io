@@ -933,6 +933,10 @@ if (!Store.getCookie('visited')) {
 		    "url": "https://pod.link",
 		    "title": "PodLink",
 		    "icon": require('./assets/img/icons/podlink.svg')
+		}, {
+		    "url": "https://getpodcast.xyz",
+		    "title": "播客 RSS Feed",
+		    "icon": require('./assets/img/icons/getpodcast.svg')
 		}
 
   ])
