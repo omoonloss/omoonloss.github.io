@@ -1236,6 +1236,10 @@ var coding_items = [
 		"title": "慕课网",
 		"icon": require('./assets/img/icons/imooc.svg')
 	},{
+		"url": "https://time.geekbang.org",
+		"title": "极客时间",
+		"icon": require('./assets/img/icons/timegeekbang.svg')
+	},{
 		/* 
 		 * Schoo 是日本最大的 MOOC 网站，全部课程都是日语授课，
 		 * 科技趋势、经营创业、商业技巧等是主要的课程内容，
