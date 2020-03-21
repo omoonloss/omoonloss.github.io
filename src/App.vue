@@ -937,6 +937,10 @@ if (!Store.getCookie('visited')) {
 		    "url": "https://getpodcast.xyz",
 		    "title": "播客 RSS Feed",
 		    "icon": require('./assets/img/icons/getpodcast.svg')
+		}, {
+		    "url": "https://typlog.com/podlist/",
+		    "title": "中文独立播客",
+		    "icon": require('./assets/img/icons/podlist.svg')
 		}
 
   ])
