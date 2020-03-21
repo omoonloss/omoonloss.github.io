@@ -1830,6 +1830,10 @@ var photos_items = [
 // Blog
 var blog_items = [
 	{
+		"url": "https://github.com/timqian/chinese-independent-blogs",
+		"title": "中文独立博客列表",
+		"icon": require('./assets/img/icons/default.svg')
+	},{
 		"url": "https://blog.spoongraphics.co.uk",
 		"title": "Spoon Graphics",
 		"icon": require('./assets/img/icons/spoongraphics.svg')
