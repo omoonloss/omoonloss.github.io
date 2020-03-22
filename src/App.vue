@@ -1765,6 +1765,10 @@ var tool_items = [
 		"url": "https://www.gushiwen.org",
 		"title": "古诗文网-古诗文经典传承",
 		"icon": require('./assets/img/icons/gushiwen.svg')
+	},{
+		"url": "https://astexplorer.net",
+		"title": "AST explorer",
+		"icon": require('./assets/img/icons/astexplorer.svg')
 	}
 
 ];
