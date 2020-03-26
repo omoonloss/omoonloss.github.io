@@ -858,6 +858,10 @@ if (!Store.getCookie('visited')) {
 		    "title": "每日诗词",
 		    "icon": require('./assets/img/icons/meirishici.svg')
 		}, {
+		    "url": "https://www.gushiwen.org",
+		    "title": "古诗文网",
+		    "icon": require('./assets/img/icons/gushiwen.svg')
+		}, {
 		    "url": "http://theme.npm.edu.tw/opendata",
 		    "title": "故宮Open Data專區",
 		    "icon": require('./assets/img/icons/npm-opendata.svg')
@@ -1769,10 +1773,6 @@ var tool_items = [
 		"url": "https://www.hoverstat.es",
 		"title": "HOVERSTAT.ES | The home of alternative web-design.",
 		"icon": require('./assets/img/icons/hoverstat.svg')
-	},{
-		"url": "https://www.gushiwen.org",
-		"title": "古诗文网-古诗文经典传承",
-		"icon": require('./assets/img/icons/gushiwen.svg')
 	},{
 		"url": "https://astexplorer.net",
 		"title": "AST explorer",
