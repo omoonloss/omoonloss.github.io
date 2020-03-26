@@ -1064,33 +1064,33 @@ var info_items = [
 		"title": "Developer Jobs in Japan - A Job A Day Keeps The Doctor Away",
 		"icon": require('./assets/img/icons/japanjobs.svg')
 	},{
-    "url": "https://cosx.org",
-    "title": "统计之都",
-    "icon": require('./assets/img/icons/cosx.svg')
+		"url": "https://cosx.org",
+		"title": "统计之都",
+		"icon": require('./assets/img/icons/cosx.svg')
 	},{
-    "url": "https://www.gcores.com",
-    "title": "机核 GCORES",
-    "icon": require('./assets/img/icons/gcores.svg')
+		"url": "https://www.gcores.com",
+		"title": "机核 GCORES",
+		"icon": require('./assets/img/icons/gcores.svg')
 	},{
-    "url": "https://www.zfrontier.com",
-    "title": "zFrontier 装备前线",
-    "icon": require('./assets/img/icons/zfrontier.svg')
+		"url": "https://www.zfrontier.com",
+		"title": "zFrontier 装备前线",
+		"icon": require('./assets/img/icons/zfrontier.svg')
 	},{
-    "url": "https://creatorsdaily.com",
-    "title": "创造者日报 - 让灵感完美爆炸",
-    "icon": require('./assets/img/icons/creatorsdaily.svg')
-  },{
-    "url": "https://iois.me",
-    "title": "Dailyio – 一份深度洞察和全球视野的科技商业评论",
-    "icon": require('./assets/img/icons/iois.svg')
-  },{
-    "url": "https://kenengba.com",
-    "title": "可能吧",
-    "icon": require('./assets/img/icons/kenengba.svg')
-  },{
-    "url": "https://www.jiligame.com",
-    "title": "叽哩叽哩单机游戏",
-    "icon": require('./assets/img/icons/jiligame.svg')
+		"url": "https://creatorsdaily.com",
+		"title": "创造者日报 - 让灵感完美爆炸",
+		"icon": require('./assets/img/icons/creatorsdaily.svg')
+  	},{
+		"url": "https://iois.me",
+		"title": "Dailyio – 一份深度洞察和全球视野的科技商业评论",
+		"icon": require('./assets/img/icons/iois.svg')
+  	},{
+		"url": "https://kenengba.com",
+		"title": "可能吧",
+		"icon": require('./assets/img/icons/kenengba.svg')
+  	},{
+		"url": "https://www.jiligame.com",
+		"title": "叽哩叽哩单机游戏",
+		"icon": require('./assets/img/icons/jiligame.svg')
 	},{
 		"url": "https://v2te.com",
 		"title": "v2te",
@@ -1103,7 +1103,7 @@ var info_items = [
 		"url": "https://storystudio.tw",
 		"title": "故事 StoryStudio",
 		"icon": require('./assets/img/icons/storystudio.svg')
-  }
+  	}
 ];
 
 // 社区
@@ -1137,10 +1137,10 @@ var community_items = [
 		"title": "*CUP - 每日十條世界要聞 與你清醒同行",
 		"icon": require('./assets/img/icons/cup.svg')
 	},{
-    "url": "https://krita-artists.org",
-    "title": "Krita Artists - Krita community forum",
-    "icon": require('./assets/img/icons/krita-artists.svg')
-  }
+		"url": "https://krita-artists.org",
+		"title": "Krita Artists - Krita community forum",
+		"icon": require('./assets/img/icons/krita-artists.svg')
+  	}
 ];
 
 // Travel literature
@@ -1773,6 +1773,10 @@ var tool_items = [
 		"url": "https://astexplorer.net",
 		"title": "AST explorer",
 		"icon": require('./assets/img/icons/astexplorer.svg')
+	},{
+		"url": "https://time.is",
+		"title": "Time.is",
+		"icon": require('./assets/img/icons/timeis.svg')
 	}
 
 ];
