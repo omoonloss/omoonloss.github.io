@@ -854,6 +854,10 @@ if (!Store.getCookie('visited')) {
 		    "title": "Libraries.io",
 		    "icon": require('./assets/img/icons/libraries-io.svg')
 		}, {
+		    "url": "http://meirishici.com",
+		    "title": "每日诗词",
+		    "icon": require('./assets/img/icons/meirishici.svg')
+		}, {
 		    "url": "http://theme.npm.edu.tw/opendata",
 		    "title": "故宮Open Data專區",
 		    "icon": require('./assets/img/icons/npm-opendata.svg')
