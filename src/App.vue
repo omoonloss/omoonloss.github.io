@@ -1346,6 +1346,10 @@ var design_items = [
 		"url": "https://www.manypixels.co/gallery",
 		"title": "illlustrations - open source illustrations kit",
 		"icon": require('./assets/img/icons/manypixels.svg')
+	},{
+		"url": "https://openmoji.org",
+		"title": "illlustrations - open source illustrations kit",
+		"icon": require('./assets/img/icons/openmoji.svg')
 	}
 ];
 
