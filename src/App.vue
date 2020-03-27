@@ -1789,6 +1789,10 @@ var tool_items = [
 		"url": "https://time.is",
 		"title": "Time.is",
 		"icon": require('./assets/img/icons/timeis.svg')
+	},{
+		"url": "https://gitexplorer.com",
+		"title": "Git Explorer",
+		"icon": require('./assets/img/icons/gitexplorer.svg')
 	}
 
 ];
