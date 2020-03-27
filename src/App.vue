@@ -984,9 +984,9 @@ if (!Store.getCookie('visited')) {
 // 资讯 & 阅读
 var info_items = [
 	{
-    "url": "https://news.ycombinator.com",
-    "title": "Hacker News",
-    "icon": require('./assets/img/icons/hacker-news.svg')
+	    "url": "https://news.ycombinator.com",
+	    "title": "Hacker News",
+	    "icon": require('./assets/img/icons/hacker-news.svg')
 	},{
 		"url": "http://www.echojs.com",
 		"title": "Echo JS",
@@ -1111,6 +1111,10 @@ var info_items = [
 		"url": "https://storystudio.tw",
 		"title": "故事 StoryStudio",
 		"icon": require('./assets/img/icons/storystudio.svg')
+  	},{
+		"url": "https://www.qbitai.com",
+		"title": "量子位",
+		"icon": require('./assets/img/icons/qbitai.svg')
   	}
 ];
 
