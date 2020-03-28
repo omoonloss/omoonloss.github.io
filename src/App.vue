@@ -742,10 +742,16 @@ if (!Store.getCookie('visited')) {
 		    "title": "Bitbucket",
 		    "icon": require('./assets/img/icons/bitbucket.svg')
 		}, {
-		    "url": "https://coding.net",
-		    "title": "Coding",
-		    "icon": require('./assets/img/icons/coding.svg')
-		}, {
+		    "url": "https://csrankings.org",
+		    "title": "CSRankings: Computer Science Rankings",
+		    "icon": require('./assets/img/icons/csrankings.svg')
+		}
+		// {
+		//     "url": "https://coding.net",
+		//     "title": "Coding",
+		//     "icon": require('./assets/img/icons/coding.svg')
+		// }
+		,  {
   			"url": "https://codepen.io",
   			"title": "CodePen",
   			"icon": require('./assets/img/icons/codepen.svg')
