@@ -1562,6 +1562,10 @@ var tool_items = [
 		"title": "ASCIIFlow",
 		"icon": require('./assets/img/icons/asciiflow.svg')
 	},{
+		"url": "https://asciinema.org",
+		"title": "asciinema - Record and share your terminal sessions, the right way",
+		"icon": require('./assets/img/icons/asciinema.svg')
+	},{
 		"url": "https://sketch.io/sketchpad",
 		"title": "Sketchpad",
 		"icon": require('./assets/img/icons/sketchpad.svg')
