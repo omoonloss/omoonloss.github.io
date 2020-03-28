@@ -1548,6 +1548,10 @@ var tool_items = [
 		"title": "Repl.it",
 		"icon": require('./assets/img/icons/repl.svg')
 	},{
+    "url": "https://godbolt.org",
+    "title": "Compiler Explorer",
+    "icon": require('./assets/img/icons/godbolt.svg')
+  },{
 		"url": "https://www.tutorialspoint.com/execute_bash_online.php",
 		"title": "Bash Online",
 		"icon": require('./assets/img/icons/bash-online.svg')
