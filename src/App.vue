@@ -1807,6 +1807,10 @@ var tool_items = [
     "url": "https://dnsspy.io",
     "title": "DNS Spy",
     "icon": require('./assets/img/icons/dnsspy.svg')
+  },{
+    "url": "https://ssl-config.mozilla.org",
+    "title": "Mozilla SSL Configuration Generator",
+    "icon": require('./assets/img/icons/default.svg')
   }
 
 ];
