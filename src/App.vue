@@ -868,6 +868,10 @@ if (!Store.getCookie('visited')) {
 		    "title": "古诗文网",
 		    "icon": require('./assets/img/icons/gushiwen.svg')
 		}, {
+        "url": "https://www.jinrishici.com",
+        "title": "今日诗词",
+        "icon": require('./assets/img/icons/jinrishici.svg')
+    }, {
 		    "url": "http://theme.npm.edu.tw/opendata",
 		    "title": "故宮Open Data專區",
 		    "icon": require('./assets/img/icons/npm-opendata.svg')
