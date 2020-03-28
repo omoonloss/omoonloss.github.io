@@ -1899,6 +1899,10 @@ var blog_items = [
 		"url": "https://hesamkaveh.com",
 		"title": "حسام‌ کاوه | روزنوشته های یک توسعه دهنده",
 		"icon": require('./assets/img/icons/hesamkaveh.svg')
+	},{
+		"url": "https://kexue.fm",
+		"title": "科学空间",
+		"icon": require('./assets/img/icons/kexue.svg')
 	}
 
 ];
