@@ -1919,6 +1919,10 @@ var blog_items = [
 		"url": "https://kexue.fm",
 		"title": "科学空间",
 		"icon": require('./assets/img/icons/kexue.svg')
+	},{
+		"url": "https://www.darmau.com",
+		"title": "城中村群租房",
+		"icon": require('./assets/img/icons/darmau.svg')
 	}
 
 ];
