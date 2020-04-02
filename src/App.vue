@@ -1552,14 +1552,18 @@ var tool_items = [
 		"title": "Repl.it",
 		"icon": require('./assets/img/icons/repl.svg')
 	},{
-	    "url": "https://godbolt.org",
-	    "title": "Compiler Explorer",
-	    "icon": require('./assets/img/icons/godbolt.svg')
-    },{
+    "url": "https://godbolt.org",
+    "title": "Compiler Explorer",
+    "icon": require('./assets/img/icons/godbolt.svg')
+  },{
 		"url": "https://www.tutorialspoint.com/execute_bash_online.php",
 		"title": "Bash Online",
 		"icon": require('./assets/img/icons/bash-online.svg')
 	},{
+    "url": "https://latexbase.com",
+    "title": "LaTeX Base | Online LaTeX Editor and Compiler",
+    "icon": require('./assets/img/icons/latexbase.svg')
+  },{
 		"url": "https://unicode-table.com",
 		"title": "Unicode 字符百科",
 		"icon": require('./assets/img/icons/unicode.svg')
@@ -1784,9 +1788,9 @@ var tool_items = [
 		"title": "ColorKitty - Find the perfect color palettes from pictures.",
 		"icon": require('./assets/img/icons/colorkitty.svg')
 	},{
-	    "url": "https://gitmind.cn",
-	    "title": "GitMind - 在线免费思维导图软件",
-	    "icon": require('./assets/img/icons/gitmind.svg')
+    "url": "https://gitmind.cn",
+    "title": "GitMind - 在线免费思维导图软件",
+    "icon": require('./assets/img/icons/gitmind.svg')
 	},{
 		"url": "http://www.faxin.cn/keyword/index.aspx",
 		"title": "法信大纲 - 法信 - 懂法，更懂法律人",
@@ -1816,14 +1820,14 @@ var tool_items = [
 		"title": "Git Explorer",
 		"icon": require('./assets/img/icons/gitexplorer.svg')
 	},{
-	    "url": "https://dnsspy.io",
-	    "title": "DNS Spy",
-	    "icon": require('./assets/img/icons/dnsspy.svg')
-  	},{
-	    "url": "https://ssl-config.mozilla.org",
-	    "title": "Mozilla SSL Configuration Generator",
-	    "icon": require('./assets/img/icons/default.svg')
-  	}
+    "url": "https://dnsspy.io",
+    "title": "DNS Spy",
+    "icon": require('./assets/img/icons/dnsspy.svg')
+	},{
+    "url": "https://ssl-config.mozilla.org",
+    "title": "Mozilla SSL Configuration Generator",
+    "icon": require('./assets/img/icons/default.svg')
+	}
 
 ];
 
