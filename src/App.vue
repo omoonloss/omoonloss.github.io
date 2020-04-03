@@ -1014,6 +1014,10 @@ var info_items = [
 		"title": "奇舞周刊",
 		"icon": require('./assets/img/icons/75team.svg')
 	},{
+    "url": "http://xlbd.me",
+    "title": "前端技术栈月刊 | 小蘿蔔丁",
+    "icon": require('./assets/img/icons/xlbd.svg')
+  },{
 		"url": "https://weekly.codetengu.com",
 		"title": "CodeTengu Weekly（码天狗週刊）",
 		"icon": require('./assets/img/icons/codetengu.svg')
