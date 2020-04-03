@@ -1217,10 +1217,14 @@ var documentary_items = [
 		"title": "每天一小时纪录片",
 		"icon": require('./assets/img/icons/onehourlife.svg')
 	},{
-	    "url": "https://immian.com",
-	    "title": "巷子內的生活，國內外美食旅遊隨筆",
-	    "icon": require('./assets/img/icons/immian.svg')
-    }
+    "url": "https://immian.com",
+    "title": "巷子內的生活，國內外美食旅遊隨筆",
+    "icon": require('./assets/img/icons/immian.svg')
+  },{
+    "url": "http://xiongmaopan.com",
+    "title": "熊猫盘纪录片|推荐好看的纪录片",
+    "icon": require('./assets/img/icons/xiongmaopan.svg')
+  }
 ];
 
 // Coding & Course
