@@ -1939,7 +1939,11 @@ var blog_items = [
 		"url": "https://www.darmau.com",
 		"title": "城中村群租房",
 		"icon": require('./assets/img/icons/darmau.svg')
-	}
+	},{
+    "url": "https://tingtalk.me",
+    "title": "庭说",
+    "icon": require('./assets/img/icons/tingtalk.svg')
+  }
 
 ];
 
