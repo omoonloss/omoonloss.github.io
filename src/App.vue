@@ -56,7 +56,7 @@
 
 	<!-- Header -->
 	<div class="header mdui-color-blue mdui-col-xs-12 mdui-toolbar">
-		<div>oSoga</div>
+		<div>oMoonLoss</div>
 		<div class="mdui-toolbar-spacer"></div>
 		<!-- <div class="weather_entry" v-on:click="toggleWeather">
 			<p class="now_city"></p>
@@ -646,11 +646,11 @@
   <div class="footer mdui-card mdui-col-xs-12">
       <ul class="social-buttons">
         <!-- <li><a href="https://github.com/viosey/O" target="_blank"><img src="./assets/img/footer/github.svg" alt="" width="24px" height="24px;"></a></li> -->
-        <li><a href="https://github.com/ZetaoYang/oSoga" target="_blank"><img src="./assets/img/footer/about.svg" alt="" width="24px" height="24px;"></i></a></li>
+        <li><a href="https://github.com/ZetaoYang/oMoonLoss" target="_blank"><img src="./assets/img/footer/about.svg" alt="" width="24px" height="24px;"></i></a></li>
       </ul>
 
       <p class="copyright">
-        © 2017~2020 &nbsp;<a href="https://sogaso.ga" target="_blank">HOME</a>
+        © 2017~2020 &nbsp;<a href="https://o.moonloss.com" target="_blank">HOME</a>
       </p>
   </div>
 
@@ -667,7 +667,7 @@ import Store from './store'
 //     Store.setCookie("cityid", $(".area").val(), 365);
 //   });
 //   // City select
-//   $.cxSelect.defaults.url = "https://o.sogaso.ga/static/cityid.min.json";
+//   $.cxSelect.defaults.url = "https://o.moonloss.com/static/cityid.min.json";
 //   $("#cities").cxSelect({
 //     selects : ["province", "city", "area"],
 //     nodata : "none",
