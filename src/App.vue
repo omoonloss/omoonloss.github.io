@@ -1656,10 +1656,6 @@ var tool_items = [
 		"title": "Audio Rip",
 		"icon": require('./assets/img/icons/audio-rip.svg')
 	},{
-		"url": "https://zh-hans.tld-list.com",
-		"title": "TLD LIST",
-		"icon": require('./assets/img/icons/tld-list.svg')
-	},{
 		"url": "https://www.remove.bg",
 		"title": "Remove Background from Image",
 		"icon": require('./assets/img/icons/remove-bg.svg')
@@ -1835,7 +1831,23 @@ var tool_items = [
     "url": "https://ssl-config.mozilla.org",
     "title": "Mozilla SSL Configuration Generator",
     "icon": require('./assets/img/icons/default.svg')
-	}
+	},{
+    "url": "https://www.namemesh.com",
+    "title": "Domain Name Generator For Perfectionists",
+    "icon": require('./assets/img/icons/namemesh.svg')
+  },{
+    "url": "https://www.domcomp.com",
+    "title": "Domain Name Price and Availability",
+    "icon": require('./assets/img/icons/domcomp.svg')
+  },{
+    "url": "https://namebeta.com",
+    "title": "NameBeta: 国际域名搜索 | 域名注册 | 国别域名注册 | 域名比价",
+    "icon": require('./assets/img/icons/namebeta.svg')
+  },{
+    "url": "https://zh-hans.tld-list.com",
+    "title": "比较所有顶级域名的价格 | TLD List",
+    "icon": require('./assets/img/icons/tld-list.svg')
+  }
 
 ];
 
