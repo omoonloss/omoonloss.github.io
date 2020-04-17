@@ -1014,10 +1014,10 @@ var info_items = [
 		"title": "奇舞周刊",
 		"icon": require('./assets/img/icons/75team.svg')
 	},{
-    "url": "http://xlbd.me",
-    "title": "前端技术栈月刊 | 小蘿蔔丁",
-    "icon": require('./assets/img/icons/xlbd.svg')
-  },{
+	    "url": "http://xlbd.me",
+	    "title": "前端技术栈月刊 | 小蘿蔔丁",
+	    "icon": require('./assets/img/icons/xlbd.svg')
+  	},{
 		"url": "https://weekly.codetengu.com",
 		"title": "CodeTengu Weekly（码天狗週刊）",
 		"icon": require('./assets/img/icons/codetengu.svg')
@@ -1082,6 +1082,10 @@ var info_items = [
 		"title": "数字移民",
 		"icon": require('./assets/img/icons/digitalimmigrant.svg')
 	},{
+		"url": "https://www.iyouport.org",
+		"title": "iYouPort - IYP 不是过眼云烟的新闻网站，我们提供实战能力，这里是值得您反复回看的档案室",
+		"icon": require('./assets/img/icons/iyouport.svg')
+	},{
 		"url": "https://japanjobs.dev",
 		"title": "Developer Jobs in Japan - A Job A Day Keeps The Doctor Away",
 		"icon": require('./assets/img/icons/japanjobs.svg')
@@ -1101,15 +1105,15 @@ var info_items = [
 		"url": "https://creatorsdaily.com",
 		"title": "创造者日报 - 让灵感完美爆炸",
 		"icon": require('./assets/img/icons/creatorsdaily.svg')
-  },{
+  	},{
 		"url": "https://iois.me",
 		"title": "Dailyio – 一份深度洞察和全球视野的科技商业评论",
 		"icon": require('./assets/img/icons/iois.svg')
-  },{
+  	},{
 		"url": "https://kenengba.com",
 		"title": "可能吧",
 		"icon": require('./assets/img/icons/kenengba.svg')
-  },{
+  	},{
 		"url": "https://www.jiligame.com",
 		"title": "叽哩叽哩单机游戏",
 		"icon": require('./assets/img/icons/jiligame.svg')
@@ -1221,14 +1225,14 @@ var documentary_items = [
 		"title": "每天一小时纪录片",
 		"icon": require('./assets/img/icons/onehourlife.svg')
 	},{
-    "url": "https://immian.com",
-    "title": "巷子內的生活，國內外美食旅遊隨筆",
-    "icon": require('./assets/img/icons/immian.svg')
-  },{
-    "url": "http://xiongmaopan.com",
-    "title": "熊猫盘纪录片|推荐好看的纪录片",
-    "icon": require('./assets/img/icons/xiongmaopan.svg')
-  }
+	    "url": "https://immian.com",
+	    "title": "巷子內的生活，國內外美食旅遊隨筆",
+	    "icon": require('./assets/img/icons/immian.svg')
+  	},{
+	    "url": "http://xiongmaopan.com",
+	    "title": "熊猫盘纪录片|推荐好看的纪录片",
+	    "icon": require('./assets/img/icons/xiongmaopan.svg')
+  	}
 ];
 
 // Coding & Course
@@ -1364,6 +1368,10 @@ var design_items = [
 		"url": "https://illlustrations.co",
 		"title": "illlustrations - open source illustrations kit",
 		"icon": require('./assets/img/icons/illlustrations.svg')
+	},{
+		"url": "https://app.itg.digital",
+		"title": "ITG.Builder — Start Creating Your Cool Illustrations",
+		"icon": require('./assets/img/icons/itg.svg')
 	},{
 		"url": "https://www.manypixels.co/gallery",
 		"title": "illlustrations - open source illustrations kit",
@@ -1549,6 +1557,10 @@ var publishing_items = [
     	"url": "https://www.oreilly.com",
 	    "title": "O'Reilly Media",
 	    "icon": require('./assets/img/icons/oreilly.svg')
+	},{
+    	"url": "https://zenodo.org",
+	    "title": "Zenodo - Research. Shared.",
+	    "icon": require('./assets/img/icons/default.svg')
 	}
 
 ];
@@ -1560,18 +1572,22 @@ var tool_items = [
 		"title": "Repl.it",
 		"icon": require('./assets/img/icons/repl.svg')
 	},{
-    "url": "https://godbolt.org",
-    "title": "Compiler Explorer",
-    "icon": require('./assets/img/icons/godbolt.svg')
-  },{
+	    "url": "https://godbolt.org",
+	    "title": "Compiler Explorer",
+	    "icon": require('./assets/img/icons/godbolt.svg')
+  	},{
 		"url": "https://www.tutorialspoint.com/execute_bash_online.php",
 		"title": "Bash Online",
 		"icon": require('./assets/img/icons/bash-online.svg')
 	},{
-    "url": "https://latexbase.com",
-    "title": "LaTeX Base | Online LaTeX Editor and Compiler",
-    "icon": require('./assets/img/icons/latexbase.svg')
-  },{
+		"url": "https://codefence.io",
+		"title": "codefence - an easily embeddable interactive code editor",
+		"icon": require('./assets/img/icons/codefence.svg')
+	},{
+	    "url": "https://latexbase.com",
+	    "title": "LaTeX Base | Online LaTeX Editor and Compiler",
+	    "icon": require('./assets/img/icons/latexbase.svg')
+  	},{
 		"url": "https://unicode-table.com",
 		"title": "Unicode 字符百科",
 		"icon": require('./assets/img/icons/unicode.svg')
@@ -1792,9 +1808,9 @@ var tool_items = [
 		"title": "ColorKitty - Find the perfect color palettes from pictures.",
 		"icon": require('./assets/img/icons/colorkitty.svg')
 	},{
-    "url": "https://gitmind.cn",
-    "title": "GitMind - 在线免费思维导图软件",
-    "icon": require('./assets/img/icons/gitmind.svg')
+	    "url": "https://gitmind.cn",
+	    "title": "GitMind - 在线免费思维导图软件",
+	    "icon": require('./assets/img/icons/gitmind.svg')
 	},{
 		"url": "http://www.faxin.cn/keyword/index.aspx",
 		"title": "法信大纲 - 法信 - 懂法，更懂法律人",
@@ -1824,30 +1840,30 @@ var tool_items = [
 		"title": "Git Explorer",
 		"icon": require('./assets/img/icons/gitexplorer.svg')
 	},{
-    "url": "https://dnsspy.io",
-    "title": "DNS Spy",
-    "icon": require('./assets/img/icons/dnsspy.svg')
+	    "url": "https://dnsspy.io",
+	    "title": "DNS Spy",
+	    "icon": require('./assets/img/icons/dnsspy.svg')
 	},{
-    "url": "https://ssl-config.mozilla.org",
-    "title": "Mozilla SSL Configuration Generator",
-    "icon": require('./assets/img/icons/default.svg')
+	    "url": "https://ssl-config.mozilla.org",
+	    "title": "Mozilla SSL Configuration Generator",
+	    "icon": require('./assets/img/icons/default.svg')
 	},{
-    "url": "https://www.namemesh.com",
-    "title": "Domain Name Generator For Perfectionists",
-    "icon": require('./assets/img/icons/namemesh.svg')
-  },{
-    "url": "https://www.domcomp.com",
-    "title": "Domain Name Price and Availability",
-    "icon": require('./assets/img/icons/domcomp.svg')
-  },{
-    "url": "https://namebeta.com",
-    "title": "NameBeta: 国际域名搜索 | 域名注册 | 国别域名注册 | 域名比价",
-    "icon": require('./assets/img/icons/namebeta.svg')
-  },{
-    "url": "https://zh-hans.tld-list.com",
-    "title": "比较所有顶级域名的价格 | TLD List",
-    "icon": require('./assets/img/icons/tld-list.svg')
-  }
+	    "url": "https://www.namemesh.com",
+	    "title": "Domain Name Generator For Perfectionists",
+	    "icon": require('./assets/img/icons/namemesh.svg')
+  	},{
+	    "url": "https://www.domcomp.com",
+	    "title": "Domain Name Price and Availability",
+	    "icon": require('./assets/img/icons/domcomp.svg')
+  	},{
+	    "url": "https://namebeta.com",
+	    "title": "NameBeta: 国际域名搜索 | 域名注册 | 国别域名注册 | 域名比价",
+    	"icon": require('./assets/img/icons/namebeta.svg')
+  	},{
+	    "url": "https://zh-hans.tld-list.com",
+	    "title": "比较所有顶级域名的价格 | TLD List",
+	    "icon": require('./assets/img/icons/tld-list.svg')
+  	}
 
 ];
 
@@ -1906,6 +1922,10 @@ var photos_items = [
 		"url": "https://wall.alphacoders.com",
 		"title": "Wallpaper Abyss - HD Wallpapers, Background Images",
 		"icon": require('./assets/img/icons/wallalphacoders.svg')
+	},{
+		"url": "https://www.freepik.com",
+		"title": "Freepik | Graphic Resources for everyone",
+		"icon": require('./assets/img/icons/freepik.svg')
 	}
 ];
 
@@ -1952,10 +1972,18 @@ var blog_items = [
 		"title": "城中村群租房",
 		"icon": require('./assets/img/icons/darmau.svg')
 	},{
-    "url": "https://tingtalk.me",
-    "title": "庭说",
-    "icon": require('./assets/img/icons/tingtalk.svg')
-  }
+	    "url": "https://tingtalk.me",
+	    "title": "庭说",
+	    "icon": require('./assets/img/icons/tingtalk.svg')
+  	},{
+	    "url": "hhttp://weiwuhui.com",
+	    "title": "扯氮集 -- 上海魏武挥的Blog",
+	    "icon": require('./assets/img/icons/weiwuhui.svg')
+  	},{
+	    "url": "https://redstonewill.com",
+	    "title": "红色石头的个人博客-机器学习、深度学习之路",
+	    "icon": require('./assets/img/icons/default.svg')
+  	}
 
 ];
 
