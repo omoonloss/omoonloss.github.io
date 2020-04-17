@@ -1948,8 +1948,8 @@ var blog_items = [
 		"title": "True Me",
 		"icon": require('./assets/img/icons/true-me.svg')
 	},{
-		"url": "https://zty.js.org",
-		"title": "Zetao's Blog",
+		"url": "https://www.moonloss.com",
+		"title": "MoonLoss",
 		"icon": require('./assets/img/icons/zty.svg')
 	},{
 		"url": "https://lepture.com",
