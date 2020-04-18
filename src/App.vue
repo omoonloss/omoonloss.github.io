@@ -1576,6 +1576,10 @@ var tool_items = [
 	    "title": "Compiler Explorer",
 	    "icon": require('./assets/img/icons/godbolt.svg')
   	},{
+	    "url": "https://colab.research.google.com",
+	    "title": "Colaboratory",
+	    "icon": require('./assets/img/icons/colaboratory.svg')
+  	},{
 		"url": "https://www.tutorialspoint.com/execute_bash_online.php",
 		"title": "Bash Online",
 		"icon": require('./assets/img/icons/bash-online.svg')
