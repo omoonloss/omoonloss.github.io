@@ -959,6 +959,10 @@ if (!Store.getCookie('visited')) {
 		    "url": "https://typlog.com/podlist/",
 		    "title": "中文独立播客",
 		    "icon": require('./assets/img/icons/podlist.svg')
+		},	{
+			"url": "https://www.listennotes.com",
+			"title": "Listen Notes",
+			"icon": require('./assets/img/icons/listennotes.svg')
 		}
 
   ])
@@ -1386,7 +1390,7 @@ var design_items = [
 // 翻译
 var translate_items = [
 	{
-		"url": "http://www.zcfy.cc",
+		"url": "https://www.zcfy.cc",
 		"title": "众成翻译",
 		"icon": require('./assets/img/icons/zcfy.svg')
 	},{
@@ -1527,7 +1531,23 @@ var book_items = [
 	    "url": "https://duzhege.cn",
 	    "title": "读者阁",
 	    "icon": require('./assets/img/icons/duzhege.svg')
-  	}
+  	},{
+		"url": "https://journals.sagepub.com",
+		"title": "SAGE Journals: Your gateway to world-class research journals",
+		"icon": require('./assets/img/icons/sagepub.svg')
+	},{
+		"url": "https://www.sciencedirect.com",
+		"title": "ScienceDirect.com | Science, health and medical journals, full text articles and books.",
+		"icon": require('./assets/img/icons/sciencedirect.svg')
+	},{
+		"url": "https://sci-hub.tw",
+		"title": "Sci-Hub: removing barriers in the way of science",
+		"icon": require('./assets/img/icons/sci-hub.svg')
+	},{
+		"url": "https://lunwen.im",
+		"title": "喵咪论文",
+		"icon": require('./assets/img/icons/lunwen.svg')
+	}
 
 ];
 
@@ -1739,18 +1759,6 @@ var tool_items = [
 		"url": "https://regex101.com",
 		"title": "regex101",
 		"icon": require('./assets/img/icons/regex101.svg')
-	},{
-		"url": "https://lunwen.im",
-		"title": "喵咪论文",
-		"icon": require('./assets/img/icons/lunwen.svg')
-	},{
-		"url": "https://www.80xueshu.com",
-		"title": "80学术",
-		"icon": require('./assets/img/icons/default.svg')
-	},{
-		"url": "https://www.listennotes.com",
-		"title": "Listen Notes",
-		"icon": require('./assets/img/icons/listennotes.svg')
 	},{
 		"url": "https://squoosh.app",
 		"title": "Squoosh",
