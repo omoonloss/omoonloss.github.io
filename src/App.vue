@@ -1416,7 +1416,7 @@ var book_items = [
 		"title": "广西壮族自治区图书馆 | 电子资源平台",
 		"icon": require('./assets/img/icons/default.svg')
 	},{
-		"url": "https://shuge.org",
+		"url": "https://new.shuge.org",
 		"title": "书格",
 		"icon": require('./assets/img/icons/shuge.svg')
 	},{
@@ -1451,7 +1451,7 @@ var book_items = [
 	    "url": "https://booksc.org",
 	    "title": "BookSC",
 	    "icon": require('./assets/img/icons/booksc.svg')
-  	},{
+    },{
 		"url": "http://gen.lib.rus.ec",
 		"title": "Library Genesis",
 		"icon": require('./assets/img/icons/libgen.svg')
@@ -1471,10 +1471,6 @@ var book_items = [
 		"url": "https://b-ok.xyz",
 		"title": "Electronic library",
 		"icon": require('./assets/img/icons/b-ok.svg')
-	},{
-		"url": "http://ebook.lorefree.com",
-		"title": "LoreFree",
-		"icon": require('./assets/img/icons/lorefree.svg')
 	},{
 		"url": "https://book.douban.com",
 		"title": "豆瓣读书",
@@ -1508,6 +1504,18 @@ var book_items = [
 		"title": "好读",
 		"icon": require('./assets/img/icons/haodoo.svg')
 	},{
+        "url": "https://ebook2.lorefree.com",
+        "title": "LoreFree-去中心化免费电子书共享社区",
+        "icon": require('./assets/img/icons/lorefree.svg')
+    },{
+        "url": "https://www.bukebook.cn",
+        "title": "布克书屋--您的图书分享之家",
+        "icon": require('./assets/img/icons/bukebook.svg')
+    },{
+        "url": "https://obook.cc",
+        "title": "偶书 - 偶遇小驻，发现好书",
+        "icon": require('./assets/img/icons/obook.svg')
+    },{
 		"url": "https://epubw.com",
 		"title": "ePUBw",
 		"icon": require('./assets/img/icons/epubw.svg')
