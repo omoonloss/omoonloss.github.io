@@ -780,6 +780,10 @@ if (!Store.getCookie('visited')) {
   			"title": "Twitter",
   			"icon": require('./assets/img/icons/twitter.svg')
 		}, {
+  			"url": "https://business.yandex.ru/mail",
+  			"title": "Yandex Mail",
+  			"icon": require('./assets/img/icons/yandex-mail.svg')
+		}, {
   			"url": "https://zhihu.com",
   			"title": "知乎",
   			"icon": require('./assets/img/icons/zhihu.svg')
@@ -959,7 +963,7 @@ if (!Store.getCookie('visited')) {
 		    "url": "https://typlog.com/podlist/",
 		    "title": "中文独立播客",
 		    "icon": require('./assets/img/icons/podlist.svg')
-		},	{
+		}, {
 			"url": "https://www.listennotes.com",
 			"title": "Listen Notes",
 			"icon": require('./assets/img/icons/listennotes.svg')
@@ -1174,7 +1178,7 @@ var community_items = [
 		"url": "https://krita-artists.org",
 		"title": "Krita Artists - Krita community forum",
 		"icon": require('./assets/img/icons/krita-artists.svg')
-  }
+  	}
 ];
 
 // Travel literature
@@ -1600,10 +1604,6 @@ var tool_items = [
 		"title": "Repl.it",
 		"icon": require('./assets/img/icons/repl.svg')
 	},{
-	    "url": "https://godbolt.org",
-	    "title": "Compiler Explorer",
-	    "icon": require('./assets/img/icons/godbolt.svg')
-  	},{
 	    "url": "https://colab.research.google.com",
 	    "title": "Colaboratory",
 	    "icon": require('./assets/img/icons/colaboratory.svg')
@@ -1612,6 +1612,14 @@ var tool_items = [
 		"title": "Bash Online",
 		"icon": require('./assets/img/icons/bash-online.svg')
 	},{
+		"url": "https://astexplorer.net",
+		"title": "AST explorer",
+		"icon": require('./assets/img/icons/astexplorer.svg')
+	},{
+	    "url": "https://godbolt.org",
+	    "title": "Compiler Explorer",
+	    "icon": require('./assets/img/icons/godbolt.svg')
+  	},{
 		"url": "https://codefence.io",
 		"title": "codefence - an easily embeddable interactive code editor",
 		"icon": require('./assets/img/icons/codefence.svg')
@@ -1619,6 +1627,10 @@ var tool_items = [
 	    "url": "https://latexbase.com",
 	    "title": "LaTeX Base | Online LaTeX Editor and Compiler",
 	    "icon": require('./assets/img/icons/latexbase.svg')
+  	},{
+	    "url": "https://www.freeformatter.com",
+	    "title": "Free Online Tools For Developers - FreeFormatter.com",
+	    "icon": require('./assets/img/icons/freeformatter.svg')
   	},{
 		"url": "https://unicode-table.com",
 		"title": "Unicode 字符百科",
@@ -1848,10 +1860,6 @@ var tool_items = [
 		"title": "HOVERSTAT.ES | The home of alternative web-design.",
 		"icon": require('./assets/img/icons/hoverstat.svg')
 	},{
-		"url": "https://astexplorer.net",
-		"title": "AST explorer",
-		"icon": require('./assets/img/icons/astexplorer.svg')
-	},{
 		"url": "https://time.is",
 		"title": "Time.is",
 		"icon": require('./assets/img/icons/timeis.svg')
@@ -1864,6 +1872,14 @@ var tool_items = [
 	    "title": "DNS Spy",
 	    "icon": require('./assets/img/icons/dnsspy.svg')
 	},{
+	    "url": "https://www.mail-tester.com",
+	    "title": "Newsletters spam test by mail-tester.com",
+	    "icon": require('./assets/img/icons/mail-tester.svg')
+  	},{
+	    "url": "https://bcrypt-generator.com",
+	    "title": "Bcrypt-Generator.com - Online Bcrypt Hash Generator & Checker",
+	    "icon": require('./assets/img/icons/bcrypt-generator.svg')
+  	},{
 	    "url": "https://ssl-config.mozilla.org",
 	    "title": "Mozilla SSL Configuration Generator",
 	    "icon": require('./assets/img/icons/default.svg')
@@ -1883,6 +1899,10 @@ var tool_items = [
 	    "url": "https://zh-hans.tld-list.com",
 	    "title": "比较所有顶级域名的价格 | TLD List",
 	    "icon": require('./assets/img/icons/tld-list.svg')
+  	},{
+	    "url": "https://www.iana.org/assignments/media-types/media-types.xhtml",
+	    "title": "Media Types",
+	    "icon": require('./assets/img/icons/media-types.svg')
   	}
 
 ];
