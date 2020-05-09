@@ -1672,6 +1672,10 @@ var tool_items = [
 		"title": "Uptime Robot",
 		"icon": require('./assets/img/icons/uptime-robot.svg')
 	},{
+		"url": "https://realfavicongenerator.net",
+		"title": "Favicon Generator for perfect icons on all browsers",
+		"icon": require('./assets/img/icons/realfavicongenerator.svg')
+	},{
 		"url": "https://code2flow.com",
 		"title": "code2flow",
 		"icon": require('./assets/img/icons/code2flow.svg')
@@ -1990,6 +1994,10 @@ var blog_items = [
 	},{
 		"url": "https://www.moonloss.com",
 		"title": "MoonLoss",
+		"icon": require('./assets/img/icons/moonloss.svg')
+	},{
+		"url": "https://zty.js.org",
+		"title": "ZTY",
 		"icon": require('./assets/img/icons/zty.svg')
 	},{
 		"url": "https://lepture.com",
