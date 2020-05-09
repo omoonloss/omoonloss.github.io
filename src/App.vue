@@ -1764,6 +1764,10 @@ var tool_items = [
 		"title": "開放中文轉換",
 		"icon": require('./assets/img/icons/occ.svg')
 	},{
+		"url": "https://online.easyscreenocr.com",
+		"title": "Free Online Image OCR - EasyScreenOCR",
+		"icon": require('./assets/img/icons/easyscreenocr.svg')
+	},{
 		"url": "http://www.nirsoft.net",
 		"title": "NirSoft",
 		"icon": require('./assets/img/icons/nirsoft.svg')
