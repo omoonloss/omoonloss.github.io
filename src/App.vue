@@ -1086,6 +1086,10 @@ var info_items = [
 		"title": "Indie Hackers",
 		"icon": require('./assets/img/icons/indiehacker.svg')
 	},{
+		"url": "https://labs.xda-developers.com",
+		"title": "XDA Labs",
+		"icon": require('./assets/img/icons/xdalabs.svg')
+	},{
 		"url": "https://digitalimmigrant.org",
 		"title": "数字移民",
 		"icon": require('./assets/img/icons/digitalimmigrant.svg')
