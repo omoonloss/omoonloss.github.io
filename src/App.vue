@@ -1644,6 +1644,10 @@ var tool_items = [
 		"title": "Online image converter",
 		"icon": require('./assets/img/icons/online-converter.svg')
 	},{
+		"url": "https://codebeautify.org",
+		"title": "Free Online Tools For Developers - to Beautify, Validate, Minify, Analyse, Convert JSON, XML, JavaScript, CSS, HTML, Excel",
+		"icon": require('./assets/img/icons/codebeautify.svg')
+	},{
 		"url": "http://hslpicker.com",
 		"title": "HSL Color Picker",
 		"icon": require('./assets/img/icons/hsl-color-picker.svg')
