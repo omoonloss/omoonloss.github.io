@@ -1182,6 +1182,10 @@ var community_items = [
 		"url": "https://krita-artists.org",
 		"title": "Krita Artists - Krita community forum",
 		"icon": require('./assets/img/icons/krita-artists.svg')
+  	},{
+		"url": "https://www.newgrounds.com",
+		"title": "Newgrounds.com — Everything, By Everyone",
+		"icon": require('./assets/img/icons/newgrounds.svg')
   	}
 ];
 
