@@ -1943,6 +1943,10 @@ var photos_items = [
 		"title": "必应壁纸",
 		"icon": require('./assets/img/icons/bing.svg')
 	},{
+		"url": "https://windows10spotlight.com",
+		"title": "Windows 10 Spotlight Images",
+		"icon": require('./assets/img/icons/windows10spotlight.svg')
+	},{
 		"url": "https://www.novapattern.com",
 		"title": "Novapattern",
 		"icon": require('./assets/img/icons/novapattern.svg')
