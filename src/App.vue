@@ -1476,6 +1476,10 @@ var book_items = [
 		"title": "中国哲学书籍电子化计划",
 		"icon": require('./assets/img/icons/default.svg')
 	},{
+		"url": "https://www.gujiguan.com/index.aspx",
+		"title": "古籍馆-中国最大的古籍图书馆",
+		"icon": require('./assets/img/icons/gujiguan.svg')
+	},{
 		"url": "https://sobooks.cc",
 		"title": "SoBooks",
 		"icon": require('./assets/img/icons/sobooks.svg')
