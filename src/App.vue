@@ -1034,6 +1034,10 @@ var info_items = [
 		"title": "湾区日报",
 		"icon": require('./assets/img/icons/wanqu.svg')
 	},{
+		"url": "https://www.solidot.org",
+		"title": "Solidot: 奇客的资讯，重要的东西",
+		"icon": require('./assets/img/icons/solidot.svg')
+	},{
 		"url": "https://coolshell.cn",
 		"title": "酷壳",
 		"icon": require('./assets/img/icons/coolshell.svg')
