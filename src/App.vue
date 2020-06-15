@@ -1436,6 +1436,10 @@ var book_items = [
 		"title": "书格",
 		"icon": require('./assets/img/icons/shuge.svg')
 	},{
+		"url": "https://bookfere.com",
+		"title": "书伴",
+		"icon": require('./assets/img/icons/bookfere.svg')
+	},{
 		"url": "http://www.gutenberg.org",
 		"title": "古登堡计划",
 		"icon": require('./assets/img/icons/gutenberg.svg')
@@ -1444,17 +1448,9 @@ var book_items = [
 		"title": "Planet eBook",
 		"icon": require('./assets/img/icons/planetebook.svg')
 	},{
-		"url": "http://ebooksplan.club",
-		"title": "扫地僧的橱柜",
-		"icon": require('./assets/img/icons/ebooksplan.svg')
-	},{
 		"url": "https://itbook.download",
 		"title": "Itbook",
 		"icon": require('./assets/img/icons/itbook.svg')
-	},{
-		"url": "https://bookfere.com",
-		"title": "书伴",
-		"icon": require('./assets/img/icons/bookfere.svg')
 	},{
 	    "url": "http://cn.epubee.com/books",
 	    "title": "ePUBee 书库",
@@ -1468,6 +1464,10 @@ var book_items = [
 	    "title": "BookSC",
 	    "icon": require('./assets/img/icons/booksc.svg')
     },{
+		"url": "https://b-ok.xyz",
+		"title": "Electronic library",
+		"icon": require('./assets/img/icons/b-ok.svg')
+	},{
 		"url": "http://gen.lib.rus.ec",
 		"title": "Library Genesis",
 		"icon": require('./assets/img/icons/libgen.svg')
@@ -1475,6 +1475,14 @@ var book_items = [
 		"url": "https://ebook.huzerui.com",
 		"title": "熊猫搜书",
 		"icon": require('./assets/img/icons/panda-search.svg')
+	},{
+        "url": "https://ebook2.lorefree.com",
+        "title": "LoreFree-去中心化免费电子书共享社区",
+        "icon": require('./assets/img/icons/lorefree.svg')
+    },{
+		"url": "https://epubw.com",
+		"title": "ePUBw",
+		"icon": require('./assets/img/icons/epubw.svg')
 	},{
 		"url": "https://ctext.org",
 		"title": "中国哲学书籍电子化计划",
@@ -1484,61 +1492,17 @@ var book_items = [
 		"title": "古籍馆-中国最大的古籍图书馆",
 		"icon": require('./assets/img/icons/gujiguan.svg')
 	},{
-		"url": "https://sobooks.cc",
-		"title": "SoBooks",
-		"icon": require('./assets/img/icons/sobooks.svg')
-	},{
-		"url": "https://b-ok.xyz",
-		"title": "Electronic library",
-		"icon": require('./assets/img/icons/b-ok.svg')
-	},{
+	    "url": "https://www.neohytung.com",
+	    "title": "瀚堂近代报刊数据库",
+	    "icon": require('./assets/img/icons/neohytung.svg')
+  	},{
 		"url": "https://book.douban.com",
 		"title": "豆瓣读书",
 		"icon": require('./assets/img/icons/douban.svg')
 	},{
-		"url": "https://love2.io",
-		"title": "LOVE2.io",
-		"icon": require('./assets/img/icons/love2io.svg')
-	},{
 		"url": "https://manybooks.net",
 		"title": "Manybooks",
 		"icon": require('./assets/img/icons/manybooks.svg')
-	},{
-		"url": "http://bestcbooks.com",
-		"title": "计算机书籍控",
-		"icon": require('./assets/img/icons/bestcbooks.svg')
-	},{
-	    "url": "https://ebookee.org",
-	    "title": "EBOOKEE",
-	    "icon": require('./assets/img/icons/ebookee.svg')
-	},{
-		"url": "http://www.xkreading.com",
-		"title": "醒客读书",
-		"icon": require('./assets/img/icons/default.svg')
-	},{
-		"url": "http://audiobookbay.nl",
-		"title": "AudioBookBay",
-		"icon": require('./assets/img/icons/audiobookbay.svg')
-	},{
-		"url": "http://www.haodoo.net",
-		"title": "好读",
-		"icon": require('./assets/img/icons/haodoo.svg')
-	},{
-        "url": "https://ebook2.lorefree.com",
-        "title": "LoreFree-去中心化免费电子书共享社区",
-        "icon": require('./assets/img/icons/lorefree.svg')
-    },{
-        "url": "https://www.bukebook.cn",
-        "title": "布克书屋--您的图书分享之家",
-        "icon": require('./assets/img/icons/bukebook.svg')
-    },{
-        "url": "https://obook.cc",
-        "title": "偶书 - 偶遇小驻，发现好书",
-        "icon": require('./assets/img/icons/obook.svg')
-    },{
-		"url": "https://epubw.com",
-		"title": "ePUBw",
-		"icon": require('./assets/img/icons/epubw.svg')
 	},{
 		"url": "http://www.qcenglish.com",
 		"title": "七彩英语",
@@ -1548,18 +1512,22 @@ var book_items = [
 	    "title": "原版英文杂志 - 田间小站",
 	    "icon": require('./assets/img/icons/default.svg')
  	},{
-	    "url": "https://www.neohytung.com",
-	    "title": "瀚堂近代报刊数据库",
-	    "icon": require('./assets/img/icons/neohytung.svg')
-  	},{
-	    "url": "http://book.gonginxweb.com",
-	    "title": "周读",
-	    "icon": require('./assets/img/icons/default.svg')
-  	},{
 	    "url": "https://duzhege.cn",
 	    "title": "读者阁",
 	    "icon": require('./assets/img/icons/duzhege.svg')
   	},{
+		"url": "http://bestcbooks.com",
+		"title": "计算机书籍控",
+		"icon": require('./assets/img/icons/bestcbooks.svg')
+	},{
+		"url": "http://www.haodoo.net",
+		"title": "好读",
+		"icon": require('./assets/img/icons/haodoo.svg')
+	},{
+		"url": "http://audiobookbay.nl",
+		"title": "AudioBookBay",
+		"icon": require('./assets/img/icons/audiobookbay.svg')
+	},{
 		"url": "https://journals.sagepub.com",
 		"title": "SAGE Journals: Your gateway to world-class research journals",
 		"icon": require('./assets/img/icons/sagepub.svg')
