@@ -1907,6 +1907,11 @@ var tool_items = [
 // Photos
 var photos_items = [
 	{
+		// 收集古典艺术品影像资料的网站，支持免费下载使用。
+		"url": "https://artvee.com",
+		"title": "Artvee",
+		"icon": require('./assets/img/icons/artvee.svg')
+	},{
 		"url": "https://unsplash.com",
 		"title": "Unsplash",
 		"icon": require('./assets/img/icons/unsplash.svg')
