@@ -1066,6 +1066,10 @@ var info_items = [
 		"title": "Foxnews",
 		"icon": require('./assets/img/icons/foxnews.svg')
 	},{
+		"url": "http://cn.nikkei.com",
+		"title": "日经中文网--日本经济新闻中文版",
+		"icon": require('./assets/img/icons/nikkei.svg')
+	},{
 		"url": "https://sspai.com",
 		"title": "少数派",
 		"icon": require('./assets/img/icons/sspai.svg')
