@@ -1,8 +1,8 @@
 {
   "name": "maps",
-  "version": "1.2.0",
+  "version": "1.2.5",
   "description": "A Vue.js project about personal front page.",
-  "author": "Viosey <imviosey@gmail.com>, Ahmed <vitzys@outlook.com>",
+  "author": "Ahmed Zetao Yang <vitzys@outlook.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
