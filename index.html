@@ -44,25 +44,36 @@
           -o-filter: grayscale(100%);
         }
       </style> -->
+      <!-- seniverse weather css style -->
+      <style type="text/css">
+        #tp-weather-widget .sw-container {
+          left: unset;
+          right: 12px;
+          top: unset;
+          bottom: 10px;
+          z-index: 2;
+        }
+      </style>
     </head>
-    <script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))</script>
-    <script>
-      tpwidget("init", {
-        "flavor": "bubble",
-        "location": "WX4FBXXFKE4F",
-        "geolocation": "enabled",
-        "position": "top-right",
-        "margin": "8px 10px",
-        "language": "auto",
-        "unit": "c",
-        "theme": "chameleon",
-        "uid": "UC991016E0",
-        "hash": "1b9278eb3f451b1ef76a7d31d2d07efc"
-    });
-    tpwidget("show");
-    </script>
 
     <body class="mdui-theme-teal mdui-theme-accent-blue">
+      <!-- seniverse weather widget -->
+      <div id="tp-weather-widget"></div>
+      <script>
+        (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+        window.SeniverseWeatherWidget('show', {
+          flavor: "bubble",
+          location: "WSQQMXBCC2VS",
+          geolocation: true,
+          language: "auto",
+          position: "top-right",
+          unit: "c",
+          theme: "auto",
+          token: "4919886f-7eb1-4efe-b70a-d509ffc416f0",
+          hover: "enabled",
+          container: "tp-weather-widget"
+        })
+      </script>
       <div id="app"></div>
       <!-- built files will be auto injected -->
     </body>
