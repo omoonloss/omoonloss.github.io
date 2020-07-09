@@ -810,7 +810,7 @@ if (!Store.getCookie('visited')) {
 		    "title": "QZone",
 		    "icon": require('./assets/img/icons/qzone.svg')
 		}, {
-		    "url": "http://weibo.com",
+		    "url": "https://weibo.com",
 		    "title": "微博",
 		    "icon": require('./assets/img/icons/weibo.svg')
 		}, {
@@ -830,7 +830,7 @@ if (!Store.getCookie('visited')) {
 		    "title": "Pocket",
 		    "icon": require('./assets/img/icons/pocket.svg')
 		}, {
-		    "url": "http://stackoverflow.com",
+		    "url": "https://stackoverflow.com",
 		    "title": "Stack Overflow",
 		    "icon": require('./assets/img/icons/stackoverflow.svg')
 		}, {
@@ -842,19 +842,19 @@ if (!Store.getCookie('visited')) {
 		    "title": "淘宝",
 		    "icon": require('./assets/img/icons/taobao.svg')
 		}, {
-		    "url": "http://coolapk.com",
+		    "url": "https://coolapk.com",
 		    "title": "酷安",
 		    "icon": require('./assets/img/icons/coolapk.svg')
 		}, {
-		    "url": "http://douban.com",
+		    "url": "https://www.douban.com",
 		    "title": "豆瓣",
 		    "icon": require('./assets/img/icons/douban.svg')
 		}, {
-		    "url": "http://www.latexstudio.net",
+		    "url": "https://www.latexstudio.net",
 		    "title": "LaTeX工作室",
 		    "icon": require('./assets/img/icons/latexstudio.svg')
 		}, {
-		    "url": "http://weixin.sogou.com",
+		    "url": "https://weixin.sogou.com",
 		    "title": "搜狗微信",
 		    "icon": require('./assets/img/icons/weixin-sogou.svg')
 		}, {
@@ -866,7 +866,7 @@ if (!Store.getCookie('visited')) {
 		    "title": "Libraries.io",
 		    "icon": require('./assets/img/icons/libraries-io.svg')
 		}, {
-		    "url": "http://meirishici.com",
+		    "url": "https://meirishici.com",
 		    "title": "每日诗词",
 		    "icon": require('./assets/img/icons/meirishici.svg')
 		}, {
@@ -878,7 +878,7 @@ if (!Store.getCookie('visited')) {
 	        "title": "今日诗词",
 	        "icon": require('./assets/img/icons/jinrishici.svg')
     	}, {
-		    "url": "http://theme.npm.edu.tw/opendata",
+		    "url": "https://theme.npm.edu.tw/opendata",
 		    "title": "故宮Open Data專區",
 		    "icon": require('./assets/img/icons/npm-opendata.svg')
 		}, {
@@ -922,7 +922,7 @@ if (!Store.getCookie('visited')) {
 		    "title": "VoiceTube",
 		    "icon": require('./assets/img/icons/voicetube.svg')
 		}, {
-		    "url": "http://songtasty.com/song",
+		    "url": "https://songtasty.com/song",
 		    "title": "SongTasty",
 		    "icon": require('./assets/img/icons/songtasty.svg')
 		}, {
@@ -1008,7 +1008,7 @@ var info_items = [
 	    "title": "Hacker News",
 	    "icon": require('./assets/img/icons/hacker-news.svg')
 	},{
-		"url": "http://www.echojs.com",
+		"url": "https://www.echojs.com",
 		"title": "Echo JS",
 		"icon": require('./assets/img/icons/echo-js.svg')
 	},{
@@ -1024,7 +1024,7 @@ var info_items = [
 		"title": "奇舞周刊",
 		"icon": require('./assets/img/icons/75team.svg')
 	},{
-	    "url": "http://xlbd.me",
+	    "url": "https://www.xlbd.me",
 	    "title": "前端技术栈月刊 | 小蘿蔔丁",
 	    "icon": require('./assets/img/icons/xlbd.svg')
   	},{
@@ -1052,7 +1052,7 @@ var info_items = [
 		"title": "It's FOSS",
 		"icon": require('./assets/img/icons/itsfoss.svg')
 	},{
-		"url": "http://digg.com",
+		"url": "https://digg.com",
 		"title": "Digg",
 		"icon": require('./assets/img/icons/digg.svg')
 	},{
@@ -1060,15 +1060,15 @@ var info_items = [
 		"title": "USA TODAY",
 		"icon": require('./assets/img/icons/usatoday.svg')
 	},{
-		"url": "http://fortune.com",
+		"url": "https://fortune.com",
 		"title": "Fortune",
 		"icon": require('./assets/img/icons/fortune.svg')
 	},{
-		"url": "http://www.foxnews.com",
+		"url": "https://www.foxnews.com",
 		"title": "Foxnews",
 		"icon": require('./assets/img/icons/foxnews.svg')
 	},{
-		"url": "http://cn.nikkei.com",
+		"url": "https://cn.nikkei.com",
 		"title": "日经中文网--日本经济新闻中文版",
 		"icon": require('./assets/img/icons/nikkei.svg')
 	},{
@@ -1177,7 +1177,7 @@ var community_items = [
 		"title": "Reddit",
 		"icon": require('./assets/img/icons/reddit.svg')
 	},{
-		"url": "http://liqi.io",
+		"url": "https://liqi.io",
 		"title": "利器",
 		"icon": require('./assets/img/icons/liqi.svg')
 	},{
@@ -1210,13 +1210,9 @@ var travel_literature_items = [
 		"title": "流浪者",
 		"icon": require('./assets/img/icons/default.svg')
 	},{
-		"url": "http://www.mafengwo.cn",
+		"url": "https://www.mafengwo.cn",
 		"title": "马蜂窝",
 		"icon": require('./assets/img/icons/mafengwo.svg')
-	},{
-		"url": "https://space.bilibili.com/19577966",
-		"title": "李子柒",
-		"icon": require('./assets/img/icons/liziqi.svg')
 	}
 ];
 
@@ -1255,7 +1251,7 @@ var documentary_items = [
 	    "title": "巷子內的生活，國內外美食旅遊隨筆",
 	    "icon": require('./assets/img/icons/immian.svg')
   	},{
-	    "url": "http://xiongmaopan.com",
+	    "url": "https://xiongmaopan.com",
 	    "title": "熊猫盘纪录片|推荐好看的纪录片",
 	    "icon": require('./assets/img/icons/xiongmaopan.svg')
   	}
@@ -1264,11 +1260,11 @@ var documentary_items = [
 // Coding & Course
 var coding_items = [
 	{
-		"url": "http://www.spoj.com",
+		"url": "https://www.spoj.com",
 		"title": "SPOJ",
 		"icon": require('./assets/img/icons/spoj.svg')
 	},{
-		"url": "http://www.hihocoder.com",
+		"url": "https://www.hihocoder.com",
 		"title": "hihoCoder",
 		"icon": require('./assets/img/icons/hiho.svg')
 	},{
@@ -1280,7 +1276,7 @@ var coding_items = [
 		"title": "力扣(LeetCode)",
 		"icon": require('./assets/img/icons/leetcode.svg')
 	},{
-		"url": "http://www.lintcode.com/zh-cn",
+		"url": "https://www.lintcode.com/zh-cn",
 		"title": "LintCode",
 		"icon": require('./assets/img/icons/lintcode.svg')
 	},{
@@ -1288,11 +1284,11 @@ var coding_items = [
 		"title": "牛客网",
 		"icon": require('./assets/img/icons/nowcoder.svg')
 	},{
-		"url": "http://cssreference.io",
+		"url": "https://cssreference.io",
 		"title": "CSS Reference",
 		"icon": require('./assets/img/icons/css-reference.svg')
 	},{
-		"url": "http://htmlreference.io",
+		"url": "https://htmlreference.io",
 		"title": "HTML Reference",
 		"icon": require('./assets/img/icons/html-reference.svg')
 	},{
@@ -1359,11 +1355,11 @@ var design_items = [
 		"title": "Artstation",
 		"icon": require('./assets/img/icons/artstation.svg')
 	},{
-		"url": "http://www.ui.cn",
+		"url": "https://www.ui.cn",
 		"title": "UI中国",
 		"icon": require('./assets/img/icons/ui-cn.svg')
 	},{
-		"url": "http://www.uisdc.com",
+		"url": "https://www.uisdc.com",
 		"title": "优设",
 		"icon": require('./assets/img/icons/uisdc.svg')
 	},{
@@ -1375,7 +1371,7 @@ var design_items = [
 		"title": "coolHue",
 		"icon": require('./assets/img/icons/coolhue.svg')
 	},{
-		"url": "http://tgideas.qq.com",
+		"url": "https://tgideas.qq.com",
 		"title": "TGideas",
 		"icon": require('./assets/img/icons/tgideas.svg')
 	},{
@@ -1386,10 +1382,6 @@ var design_items = [
 		"url": "https://stubborn.fun",
 		"title": "Stubborn - Free Illustrations Generator",
 		"icon": require('./assets/img/icons/stubborn.svg')
-	},{
-		"url": "http://refs.cn",
-		"title": "原型设计元件库",
-		"icon": require('./assets/img/icons/default.svg')
 	},{
 		"url": "https://illlustrations.co",
 		"title": "illlustrations - open source illustrations kit",
@@ -1446,7 +1438,7 @@ var book_items = [
 		"title": "书伴",
 		"icon": require('./assets/img/icons/bookfere.svg')
 	},{
-		"url": "http://www.gutenberg.org",
+		"url": "https://www.gutenberg.org",
 		"title": "古登堡计划",
 		"icon": require('./assets/img/icons/gutenberg.svg')
 	},{
@@ -1572,7 +1564,7 @@ var publishing_items = [
 	    "title": "图灵社区",
 	    "icon": require('./assets/img/icons/ituring.svg')
 	},{
-	    "url": "http://www.epubit.com.cn",
+	    "url": "https://www.epubit.com",
 	    "title": "异步社区",
 	    "icon": require('./assets/img/icons/epubit.svg')
 	},{
@@ -1634,11 +1626,7 @@ var tool_items = [
 		"title": "Free Online Tools For Developers - to Beautify, Validate, Minify, Analyse, Convert JSON, XML, JavaScript, CSS, HTML, Excel",
 		"icon": require('./assets/img/icons/codebeautify.svg')
 	},{
-		"url": "http://hslpicker.com",
-		"title": "HSL Color Picker",
-		"icon": require('./assets/img/icons/hsl-color-picker.svg')
-	},{
-		"url": "http://www.favicon.cc",
+		"url": "https://www.favicon.cc",
 		"title": "favicon Generator",
 		"icon": require('./assets/img/icons/favicon-generator.svg')
 	},{
@@ -1654,7 +1642,7 @@ var tool_items = [
 		"title": "Sketchpad",
 		"icon": require('./assets/img/icons/sketchpad.svg')
 	},{
-		"url": "http://ping.chinaz.com",
+		"url": "https://ping.chinaz.com",
 		"title": "Ping 检测",
 		"icon": require('./assets/img/icons/chinaz.svg')
 	},{
@@ -1694,10 +1682,6 @@ var tool_items = [
 		"title": "快递100",
 		"icon": require('./assets/img/icons/kuaidi100.svg')
 	},{
-		"url": "http://www.freesmsverifications.com",
-		"title": "Receive Free SMS Online",
-		"icon": require('./assets/img/icons/freesmsverifications.svg')
-	},{
 		"url": "https://www.onlineocr.net",
 		"title": "Online OCR",
 		"icon": require('./assets/img/icons/onlineocr.svg')
@@ -1718,7 +1702,7 @@ var tool_items = [
 		"title": "Remove Background from Image",
 		"icon": require('./assets/img/icons/remove-bg.svg')
 	},{
-		"url": "http://devdocs.io",
+		"url": "https://devdocs.io",
 		"title": "DevDocs API Documentation",
 		"icon": require('./assets/img/icons/devdocs.svg')
 	},{
@@ -1738,10 +1722,6 @@ var tool_items = [
 		"title": "OSBoxes",
 		"icon": require('./assets/img/icons/osboxes.svg')
 	},{
-		"url": "http://www.downfi.com/video",
-		"title": "小视频下载",
-		"icon": require('./assets/img/icons/downfi-video.svg')
-	},{
 		"url": "https://www.parsevideo.com",
 		"title": "视频解析网",
 		"icon": require('./assets/img/icons/parsevideo.svg')
@@ -1750,7 +1730,7 @@ var tool_items = [
 		"title": "Molecular Wallpaper Generator",
 		"icon": require('./assets/img/icons/avogadr.svg')
 	},{
-		"url": "http://papersizes.io",
+		"url": "https://papersizes.io",
 		"title": "Paper Sizes",
 		"icon": require('./assets/img/icons/papersizes.svg')
 	},{
@@ -1762,17 +1742,13 @@ var tool_items = [
 		"title": "Free Online Image OCR - EasyScreenOCR",
 		"icon": require('./assets/img/icons/easyscreenocr.svg')
 	},{
-		"url": "http://www.nirsoft.net",
+		"url": "https://www.nirsoft.net",
 		"title": "NirSoft",
 		"icon": require('./assets/img/icons/nirsoft.svg')
 	},{
 		"url": "https://randomkeygen.com",
 		"title": "RandomKeygen",
 		"icon": require('./assets/img/icons/randomkeygen.svg')
-	},{
-		"url": "http://www.feemic.cn/mooc",
-		"title": "Mooc search",
-		"icon": require('./assets/img/icons/mooc-search.svg')
 	},{
 		"url": "http://www.tlhiv.org/rast2vec",
 		"title": "Rast2Vec",
@@ -1798,7 +1774,7 @@ var tool_items = [
 		"title": "FindYoutube",
 		"icon": require('./assets/img/icons/findyoutube.svg')
 	},{
-		"url": "http://www.everyonepiano.cn",
+		"url": "https://www.everyonepiano.cn",
 		"title": "人人钢琴网",
 		"icon": require('./assets/img/icons/everyonepiano.svg')
 	},{
@@ -1809,10 +1785,6 @@ var tool_items = [
 		"url": "https://dbdiagram.io/home",
 		"title": "dbdiagram",
 		"icon": require('./assets/img/icons/dbdiagram.svg')
-	},{
-		"url": "http://fulichaoshi.com",
-		"title": "fulichaoshi",
-		"icon": require('./assets/img/icons/fulichaoshi.svg')
 	},{
 		"url": "https://mybinder.org",
 		"title": "Binder",
@@ -1834,7 +1806,7 @@ var tool_items = [
 		"title": "MidiShow",
 		"icon": require('./assets/img/icons/midishow.svg')
 	},{
-		"url": "http://duilian.msra.cn",
+		"url": "https://duilian.msra.cn",
 		"title": "微软对联",
 		"icon": require('./assets/img/icons/default.svg')
 	},{
@@ -1846,7 +1818,7 @@ var tool_items = [
 	    "title": "GitMind - 在线免费思维导图软件",
 	    "icon": require('./assets/img/icons/gitmind.svg')
 	},{
-		"url": "http://www.faxin.cn/keyword/index.aspx",
+		"url": "https://www.faxin.cn/keyword/index.aspx",
 		"title": "法信大纲 - 法信 - 懂法，更懂法律人",
 		"icon": require('./assets/img/icons/default.svg')
 	},{
@@ -1854,7 +1826,7 @@ var tool_items = [
 		"title": "APKCombo | APK Downloader",
 		"icon": require('./assets/img/icons/apkcombo.svg')
 	},{
-		"url": "http://worldofviruses.unl.edu",
+		"url": "https://worldofviruses.unl.edu",
 		"title": "Biology of Human/World of Viruses",
 		"icon": require('./assets/img/icons/default.svg')
 	},{
@@ -2031,7 +2003,7 @@ var blog_items = [
 	    "title": "庭说",
 	    "icon": require('./assets/img/icons/tingtalk.svg')
   	},{
-	    "url": "hhttp://weiwuhui.com",
+	    "url": "http://weiwuhui.com",
 	    "title": "扯氮集 -- 上海魏武挥的Blog",
 	    "icon": require('./assets/img/icons/weiwuhui.svg')
   	},{
