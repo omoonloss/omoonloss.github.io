@@ -67,8 +67,10 @@
 	</div>
 
 	<!-- Search bar -->
-	<div class="searchbar mdui-toolbar mdui-color-blue mdui-col-xs-12"
-    v-bind:class="{searchbar_active: isSearch}">
+  <!-- 	<div class="searchbar mdui-toolbar mdui-color-blue mdui-col-xs-12"
+    v-bind:class="{searchbar_active: isSearch}"> -->
+    <!-- remove 'searchbar_active' due to blocking the weather widget.  -->
+  <div class="searchbar mdui-toolbar mdui-color-blue mdui-col-xs-12">
 		<!-- <input
 			v-on:click="toSearch"
 			v-bind:class="{searchbar_input_active: isSearch}"
