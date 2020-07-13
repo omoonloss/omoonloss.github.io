@@ -2006,10 +2006,6 @@ var blog_items = [
 	    "url": "http://weiwuhui.com",
 	    "title": "扯氮集 -- 上海魏武挥的Blog",
 	    "icon": require('./assets/img/icons/weiwuhui.svg')
-  	},{
-	    "url": "https://redstonewill.com",
-	    "title": "红色石头的个人博客-机器学习、深度学习之路",
-	    "icon": require('./assets/img/icons/default.svg')
   	}
 
 ];
