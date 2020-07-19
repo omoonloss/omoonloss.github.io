@@ -936,9 +936,9 @@ if (!Store.getCookie('visited')) {
 		}, {
 		    "url": "https://www.exound.com",
 		    "title": "人人都来玩音乐 | 叉烧网",
-		    "icon": require('./assets/img/icons/default.svg')
+		    "icon": require('./assets/img/icons/exound.svg')
 		}, {
-		    "url": "https://www.kuaiyilicai.com",
+		    "url": "https://www.kylc.com",
 		    "title": "快易理财网--理财改变生活",
 		    "icon": require('./assets/img/icons/default.svg')
 		}, {
