@@ -1072,6 +1072,10 @@ var info_items = [
 		"title": "日经中文网--日本经济新闻中文版",
 		"icon": require('./assets/img/icons/nikkei.svg')
 	},{
+		"url": "https://money.udn.com/money/index",
+		"title": "經濟日報",
+		"icon": require('./assets/img/icons/money-udn.svg')
+	},{
 		"url": "https://sspai.com",
 		"title": "少数派",
 		"icon": require('./assets/img/icons/sspai.svg')
@@ -1140,10 +1144,6 @@ var info_items = [
 		"title": "叽哩叽哩单机游戏",
 		"icon": require('./assets/img/icons/jiligame.svg')
 	},{
-		"url": "https://v2te.com",
-		"title": "v2te",
-		"icon": require('./assets/img/icons/default.svg')
-	},{
 		"url": "https://nicelinks.site",
 		"title": "倾城之链",
 		"icon": require('./assets/img/icons/nicelinks.svg')
@@ -1152,9 +1152,13 @@ var info_items = [
 		"title": "故事 StoryStudio",
 		"icon": require('./assets/img/icons/storystudio.svg')
     },{
-		"url": "https://www.qbitai.com",
-		"title": "量子位",
-		"icon": require('./assets/img/icons/qbitai.svg')
+		"url": "https://www.ithome.com.tw",
+		"title": "iThome | iThome Online 是臺湾第一个网路原生报，提供IT產业即时新闻、企业IT產品报导与测试、技术专题、IT应用报导、IT书讯，以及面向丰富的名家专栏",
+		"icon": require('./assets/img/icons/ithome-tw.svg')
+    },{
+		"url": "https://www.ithome.com",
+		"title": "IT之家 - 数码，科技，生活",
+		"icon": require('./assets/img/icons/ithome.svg')
     }
 ];
 
@@ -1706,10 +1710,6 @@ var tool_items = [
 		"title": "DevDocs API Documentation",
 		"icon": require('./assets/img/icons/devdocs.svg')
 	},{
-		"url": "https://www.flightradar24.com",
-		"title": "Flightradar24",
-		"icon": require('./assets/img/icons/flightradar24.svg')
-	},{
 		"url": "https://carbon.now.sh",
 		"title": "Carbon",
 		"icon": require('./assets/img/icons/carbon.svg')
@@ -1877,7 +1877,11 @@ var tool_items = [
 	    "url": "https://www.iana.org/assignments/media-types/media-types.xhtml",
 	    "title": "Media Types",
 	    "icon": require('./assets/img/icons/media-types.svg')
-  	}
+  	},{
+		"url": "https://www.flightradar24.com",
+		"title": "Flightradar24",
+		"icon": require('./assets/img/icons/flightradar24.svg')
+	}
 
 ];
 
