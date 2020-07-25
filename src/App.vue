@@ -886,6 +886,11 @@ if (!Store.getCookie('visited')) {
 		    "title": "故宫博物院",
 		    "icon": require('./assets/img/icons/dpm.svg')
 		}, {
+			// 日本法隆寺金堂壁画数字网站，设计直观简洁，展示了20世纪初大火烧掉的7世纪壁画的高清图像。敦煌之外的唐代寺观壁画十分稀少，这里算是其中最重要的一批作品
+		    "url": "https://view.horyuji-kondohekiga.jp",
+		    "title": "法隆寺金堂壁画ガラス原板 デジタルビューア｜Glass Photographic Plates of the Murals in the Kondō Hall of Hōryūji Temple―Digital Viewer―",
+		    "icon": require('./assets/img/icons/horyuji-kondohekiga.svg')
+		}, {
 		    "url": "https://itch.io",
 		    "title": "itch.io",
 		    "icon": require('./assets/img/icons/itch-io.svg')
@@ -969,6 +974,11 @@ if (!Store.getCookie('visited')) {
 			"url": "https://www.listennotes.com",
 			"title": "Listen Notes",
 			"icon": require('./assets/img/icons/listennotes.svg')
+		}, {
+			// 一个词汇语法搜索引擎
+			"url": "https://linggle.com",
+			"title": "Linggle 10^12- Language Reference Search Engines - NLPLab",
+			"icon": require('./assets/img/icons/linggle.svg')
 		}
 
   ])
@@ -1462,16 +1472,16 @@ var book_items = [
 		"title": "鸠摩搜索",
 		"icon": require('./assets/img/icons/jiumodiary.svg')
 	},{
-	    "url": "https://booksc.org",
-	    "title": "BookSC",
+	    "url": "https://booksc.org", 
+	    "title": "BookSC",  
 	    "icon": require('./assets/img/icons/booksc.svg')
     },{
 		"url": "https://b-ok.xyz",
-		"title": "Electronic library",
+		"title": "Electronic library",  // mirror: https://b-ok.cc
 		"icon": require('./assets/img/icons/b-ok.svg')
 	},{
 		"url": "http://gen.lib.rus.ec",
-		"title": "Library Genesis",
+		"title": "Library Genesis", // 创世纪图书馆
 		"icon": require('./assets/img/icons/libgen.svg')
 	},{
 		"url": "https://ebook.huzerui.com",
@@ -1485,6 +1495,10 @@ var book_items = [
 		"url": "https://epubw.com",
 		"title": "ePUBw",
 		"icon": require('./assets/img/icons/epubw.svg')
+	},{
+		"url": "https://salttiger.com",
+		"title": "SaltTiger | 每天一本编程书，每天进步一点点",
+		"icon": require('./assets/img/icons/salttiger.svg')
 	},{
 		"url": "https://ctext.org",
 		"title": "中国哲学书籍电子化计划",
@@ -1514,9 +1528,26 @@ var book_items = [
 	    "title": "原版英文杂志 - 田间小站",
 	    "icon": require('./assets/img/icons/default.svg')
  	},{
+ 		// 在线免费阅读和下载电子书
+	    "url": "https://www.classicly.com",
+	    "title": "Read free books online in PDF, Kindle & ePub",
+	    "icon": require('./assets/img/icons/classicly.svg')
+ 	},{
 	    "url": "https://duzhege.cn",
 	    "title": "读者阁",
 	    "icon": require('./assets/img/icons/duzhege.svg')
+  	},{
+	    "url": "https://www.kgbook.com",
+	    "title": "苦瓜书盘",
+	    "icon": require('./assets/img/icons/default.svg')
+  	},{
+	    "url": "https://yabook.org",
+	    "title": "雅书 - PDF电子书学习下载站",
+	    "icon": require('./assets/img/icons/yabook.svg')
+  	},{
+	    "url": "https://hdpdf.blog",
+	    "title": "高清PDF电子书分享 – 万卷PDF扫描版电子书免费下载",
+	    "icon": require('./assets/img/icons/hdpdf.svg')
   	},{
 		"url": "http://bestcbooks.com",
 		"title": "计算机书籍控",
@@ -1545,6 +1576,11 @@ var book_items = [
 		"url": "https://lunwen.im",
 		"title": "喵咪论文",
 		"icon": require('./assets/img/icons/lunwen.svg')
+	},{
+		// 此文库分为15个学科专辑，覆盖自然科学、工程与技术科学、人文与社会科学、医药科学、农业科学五大门类的所有一级学科，所有图书按标准学科和中图法两个体系进行分类。包括专著、教材、图集、报告、工具书、大众科普等，满足科研、教学、管理等各个系列的专业用户。几乎囊括科学出版社60余年来所有获奖作品、院士著作、重点丛书、各学科必备经典专著等，堪称“科学宝库、数字典藏”
+		"url": "http://book.sciencereading.cn",
+		"title": "科学文库",
+		"icon": require('./assets/img/icons/sciencereading.svg')
 	}
 
 ];
