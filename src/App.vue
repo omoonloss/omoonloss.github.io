@@ -1531,7 +1531,7 @@ var book_items = [
  		// 在线免费阅读和下载电子书
 	    "url": "https://www.classicly.com",
 	    "title": "Read free books online in PDF, Kindle & ePub",
-	    "icon": require('./assets/img/icons/classicly.svg')
+	    "icon": require('./assets/img/icons/default.svg')
  	},{
 	    "url": "https://duzhege.cn",
 	    "title": "读者阁",
