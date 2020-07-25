@@ -1476,6 +1476,10 @@ var book_items = [
 	    "title": "BookSC",  
 	    "icon": require('./assets/img/icons/booksc.svg')
     },{
+	    "url": "https://www.letmeread.net", 
+	    "title": "Let Me Read » Best Books to Read in a Lifetime",  
+	    "icon": require('./assets/img/icons/letmeread.svg')
+    },{
 		"url": "https://b-ok.xyz",
 		"title": "Electronic library",  // mirror: https://b-ok.cc
 		"icon": require('./assets/img/icons/b-ok.svg')
