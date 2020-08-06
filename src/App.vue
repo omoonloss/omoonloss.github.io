@@ -1018,6 +1018,10 @@ var info_items = [
 	    "title": "Hacker News",
 	    "icon": require('./assets/img/icons/hacker-news.svg')
 	},{
+	    "url": "https://hn.moonloss.com",
+	    "title": "Nuxt HN",
+	    "icon": require('./assets/img/icons/nuxt-hn.svg')
+	},{
 		"url": "https://www.echojs.com",
 		"title": "Echo JS",
 		"icon": require('./assets/img/icons/echo-js.svg')
