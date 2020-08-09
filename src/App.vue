@@ -1476,6 +1476,10 @@ var book_items = [
 		"title": "鸠摩搜索",
 		"icon": require('./assets/img/icons/jiumodiary.svg')
 	},{
+		"url": "https://lib.yufan.me",
+		"title": "观海阁",
+		"icon": require('./assets/img/icons/libyufan.svg')
+	},{
 	    "url": "https://booksc.org", 
 	    "title": "BookSC",  
 	    "icon": require('./assets/img/icons/booksc.svg')
