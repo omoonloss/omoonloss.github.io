@@ -1082,6 +1082,10 @@ var info_items = [
 		"title": "Foxnews",
 		"icon": require('./assets/img/icons/foxnews.svg')
 	},{
+		"url": "https://hk.appledaily.com",
+		"title": "蘋果日報",
+		"icon": require('./assets/img/icons/appledaily.svg')
+	},{
 		"url": "https://cn.nikkei.com",
 		"title": "日经中文网--日本经济新闻中文版",
 		"icon": require('./assets/img/icons/nikkei.svg')
@@ -1350,6 +1354,19 @@ var coding_items = [
 		"url": "https://visualgo.net/zh",
 		"title": "Visualgo",
 		"icon": require('./assets/img/icons/visualgo.svg')
+	},{
+		// 一个在线公开课课程的网站，目前可搜索51163门在线课程，大部分可免费学习
+		"url": "https://www.coursade.com",
+		"title": "Coursade - Discover online learning",
+		"icon": require('./assets/img/icons/coursade.svg')
+	},{
+		"url": "http://open.nlc.cn/onlineedu/client/index.htm",
+		"title": "国图公开课",
+		"icon": require('./assets/img/icons/open-nlc.svg')
+	},{
+		"url": "http://opencourse.pku.edu.cn/course/opencourse2/index.html",
+		"title": "北京大学公开课",
+		"icon": require('./assets/img/icons/default.svg')
 	}
 
 ];
@@ -1493,8 +1510,13 @@ var book_items = [
 		"icon": require('./assets/img/icons/b-ok.svg')
 	},{
 		"url": "http://gen.lib.rus.ec",
-		"title": "Library Genesis", // 创世纪图书馆
+		"title": "Library Genesis", // Libgen
 		"icon": require('./assets/img/icons/libgen.svg')
+	},{
+		// 有很多 Libgen 上都没有的学术著作 pdf 下载，很多都是新书.
+		"url": "https://oapen.org",
+		"title": "Online Library and Publication Platform | OAPEN", 
+		"icon": require('./assets/img/icons/oapen.svg')
 	},{
 		"url": "https://ebook.huzerui.com",
 		"title": "熊猫搜书",
@@ -1540,6 +1562,10 @@ var book_items = [
 	    "title": "原版英文杂志 - 田间小站",
 	    "icon": require('./assets/img/icons/default.svg')
  	},{
+	    "url": "https://www.pdfdrive.com",
+	    "title": "PDF Drive - Search and download PDF files for free.",
+	    "icon": require('./assets/img/icons/pdfdrive.svg')
+ 	},{
  		// 在线免费阅读和下载电子书
 	    "url": "https://www.classicly.com",
 	    "title": "Read free books online in PDF, Kindle & ePub",
@@ -1549,6 +1575,10 @@ var book_items = [
 	    "title": "读者阁",
 	    "icon": require('./assets/img/icons/duzhege.svg')
   	},{
+		"url": "https://www.enjing.com",
+		"title": "恩京的书房",
+		"icon": require('./assets/img/icons/enjing.svg')
+	},{
 	    "url": "https://www.kgbook.com",
 	    "title": "苦瓜书盘",
 	    "icon": require('./assets/img/icons/default.svg')
@@ -1561,6 +1591,15 @@ var book_items = [
 	    "title": "高清PDF电子书分享 – 万卷PDF扫描版电子书免费下载",
 	    "icon": require('./assets/img/icons/hdpdf.svg')
   	},{
+		"url": "https://ebook.ipfs-lab.com",
+		"title": "Ebook",
+		"icon": require('./assets/img/icons/ebook.svg')
+	},{
+		// 一个收录各种优质程序书籍的网站，还在不断丰富中…… 
+		"url": "https://www.best-books.dev",
+		"title": "The best Programming books",
+		"icon": require('./assets/img/icons/best-books.svg')
+	},{
 		"url": "http://bestcbooks.com",
 		"title": "计算机书籍控",
 		"icon": require('./assets/img/icons/bestcbooks.svg')
@@ -1593,6 +1632,11 @@ var book_items = [
 		"url": "http://book.sciencereading.cn",
 		"title": "科学文库",
 		"icon": require('./assets/img/icons/sciencereading.svg')
+	},{
+		// 库问搜索免费提供超过千万开源学术论文资源检索和下载，涵盖宗教哲学、社会科学、政治法律、军事经济、文化教育、文学艺术、历史地理、IT信息、自然科学、生物医...
+		"url": "http://www.koovin.com",
+		"title": "库问搜索 - 打造免费开源文献资源共享平台",
+		"icon": require('./assets/img/icons/koovin.svg')
 	}
 
 ];
@@ -1658,6 +1702,10 @@ var tool_items = [
 		"title": "codefence - an easily embeddable interactive code editor",
 		"icon": require('./assets/img/icons/codefence.svg')
 	},{
+	    "url": "https://www.ankitube.com",
+	    "title": "Anki | 一键生成听力卡 音频听力 Youtube 油管牌组",
+	    "icon": require('./assets/img/icons/default.svg')
+  	},{
 	    "url": "https://latexbase.com",
 	    "title": "LaTeX Base | Online LaTeX Editor and Compiler",
 	    "icon": require('./assets/img/icons/latexbase.svg')
@@ -1929,6 +1977,15 @@ var tool_items = [
 		"url": "https://www.flightradar24.com",
 		"title": "Flightradar24",
 		"icon": require('./assets/img/icons/flightradar24.svg')
+	},{
+	    "url": "https://readhacker.news",
+	    "title": "Read Hacker News",
+	    "icon": require('./assets/img/icons/readhackernews.svg')
+	},{
+		// 将任意一个网页链接放在这个网站都可以启动 Bionic Reading 阅读模式，还能将转换后的样式下载 为Epub 或 PDF.
+	    "url": "https://bionic-reading.com/en/",
+	    "title": "A higher dimension of reading. - Bionic Reading",
+	    "icon": require('./assets/img/icons/bionic-reading.svg')
 	}
 
 ];
@@ -2058,7 +2115,15 @@ var blog_items = [
 	    "url": "http://weiwuhui.com",
 	    "title": "扯氮集 -- 上海魏武挥的Blog",
 	    "icon": require('./assets/img/icons/weiwuhui.svg')
-  	}
+  	},{
+	    "url": "https://yurichev.com",
+	    "title": "Dennis Yurichev",
+	    "icon": require('./assets/img/icons/yurichev.svg')
+  	},{
+      "url": "https://linghao.io",
+      "title": "Synthesist in the Shell",
+      "icon": require('./assets/img/icons/linghao.svg')
+    }
 
 ];
 
@@ -2067,7 +2132,7 @@ export default {
 	data() {
 		return {
       		editOrComplete: '编辑',
-      // test: 'test',
+            // test: 'test',
       		searchEngine: Store.getCookie('se'),
 			newSiteurl: '',
 			newSitetitle: '',
@@ -2076,8 +2141,8 @@ export default {
 			canRemove: false,
 			hasAddPanel: false,
 			isSearch: false,
-	      //hasWeather: false,
-	      // test_sites: Store.fetch_test_site(),
+	       // hasWeather: false,
+	       // test_sites: Store.fetch_test_site(),
 			sites: Store.fetch_site(),
 			info_sites: info_items,
 			community_sites: community_items,
