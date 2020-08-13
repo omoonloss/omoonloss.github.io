@@ -1986,6 +1986,11 @@ var tool_items = [
 	    "url": "https://bionic-reading.com/en/",
 	    "title": "A higher dimension of reading. - Bionic Reading",
 	    "icon": require('./assets/img/icons/bionic-reading.svg')
+	},{
+		// Create 3D plots out of paper.
+	    "url": "https://felixboiii.github.io/paper-plotter/",
+	    "title": "Paper plotter",
+	    "icon": require('./assets/img/icons/paper-plotter.svg')
 	}
 
 ];
