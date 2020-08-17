@@ -2063,6 +2063,10 @@ var photos_items = [
 		"url": "https://www.freepik.com",
 		"title": "Freepik | Graphic Resources for everyone",
 		"icon": require('./assets/img/icons/freepik.svg')
+	},{
+		"url": "https://best-wallpaper.net",
+		"title": "Best Wallpaper | Free and Best High Quality 2K 4K 5K 8K HD UHD Desktop Wallpapers & iPhone 11 Pro XS Max XR 8 7 6 Plus Wallpapers.",
+		"icon": require('./assets/img/icons/best-wallpaper.svg')
 	}
 ];
 
