@@ -1698,6 +1698,10 @@ var tool_items = [
 	    "title": "Compiler Explorer",
 	    "icon": require('./assets/img/icons/godbolt.svg')
   	},{
+        "url": "https://web.baimiaoapp.com",
+        "title": "白描网页版 - 在线OCR文字识别、图片文字提取",
+        "icon": require('./assets/img/icons/baimiaoapp.svg')
+    },{
 		"url": "https://codefence.io",
 		"title": "codefence - an easily embeddable interactive code editor",
 		"icon": require('./assets/img/icons/codefence.svg')
