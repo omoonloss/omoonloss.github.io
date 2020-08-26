@@ -754,6 +754,10 @@ if (!Store.getCookie('visited')) {
 		//     "icon": require('./assets/img/icons/coding.svg')
 		// }
 		,  {
+		    "url": "https://www.figma.com",
+		    "title": "Figma",
+		    "icon": require('./assets/img/icons/figma.svg')
+		}, {
   			"url": "https://codepen.io",
   			"title": "CodePen",
   			"icon": require('./assets/img/icons/codepen.svg')
@@ -1022,13 +1026,24 @@ var info_items = [
 	    "title": "Nuxt HN",
 	    "icon": require('./assets/img/icons/nuxt-hn.svg')
 	},{
+		// 四大领域及内容：
+		// - Morning Brew：晨酿，可以理解为早报；涉及（美）国内外政治新闻、股市经济、教育、运动、生活等多方面内容
+		// - Emering Tech Brew：科技新闻；涉及科技企业、IPO 上市、人工智能、数码电子等内容
+		// - Retail Brew：零售业新闻；涉及电子商务、房地产、零售经验与技巧等内容
+		// - Marketing Brew：市场与营销新闻；涉及新营销策略、案例、广告创意封内容
+		// 其中晨酿和科技新闻 Newsletters 在美国早晨（北京时间下午）定时推送，另两份则是在下午。晨酿每日一更，周日除外；而其余三份除周日停更外，每隔一天更新一次，大家可以分别订阅它们。我和主编们通过邮箱订阅了这些 Newsletters，大家如果不想订阅也可以直接在 Archive 中直接查看。订阅完全免费，但会在 Newsletters 插入一则 AD，处理得也比较优雅，个人认为不影响阅读。
+		// Morning Brew 的 Slogan 是「Become smarter in just 5 minutes」，阅读后不见得一定能让人 smarter，但我们都很享受信息差被弥补的满足感。自留地主要关注数码科技新闻和流媒体信息，Morning Brew 则像一飞周报（财经向）一样，能够给我们的读者带来新领域的讯息。短短几分钟，可以了解一个大概，对于感兴趣的话题也有链接可供进一步了解。
+		"url": "https://www.morningbrew.com/emerging-tech/stories",
+		"title": "Morning Brew",
+		"icon": require('./assets/img/icons/morningbrew.svg')
+	},{
+		"url": "https://www.geekpark.net",
+		"title": "极客公园",
+		"icon": require('./assets/img/icons/geekpark.svg')
+	},{
 		"url": "https://www.echojs.com",
 		"title": "Echo JS",
 		"icon": require('./assets/img/icons/echo-js.svg')
-	},{
-		"url": "https://juejin.im",
-		"title": "掘金",
-		"icon": require('./assets/img/icons/juejin.svg')
 	},{
 		"url": "https://wubaiqing.github.io/zaobao/other/latest.html",
 		"title": "每日时报",
@@ -1177,7 +1192,11 @@ var info_items = [
 		"url": "https://www.ithome.com",
 		"title": "IT之家 - 数码，科技，生活",
 		"icon": require('./assets/img/icons/ithome.svg')
-    }
+    },{
+		"url": "https://juejin.im",
+		"title": "掘金",
+		"icon": require('./assets/img/icons/juejin.svg')
+	}
 ];
 
 // 社区
@@ -1374,11 +1393,11 @@ var coding_items = [
 // Design
 var design_items = [
 	{
-		"url": "https://www.behance.net/",
+		"url": "https://www.behance.net",
 		"title": "Behance",
 		"icon": require('./assets/img/icons/behance.svg')
 	},{
-		"url": "https://dribbble.com/",
+		"url": "https://dribbble.com",
 		"title": "Dribbble",
 		"icon": require('./assets/img/icons/dribbble.svg')
 	},{
@@ -1431,8 +1450,16 @@ var design_items = [
 		"icon": require('./assets/img/icons/manypixels.svg')
 	},{
 		"url": "https://openmoji.org",
-		"title": "illlustrations - open source illustrations kit",
+		"title": "OpenMoji",
 		"icon": require('./assets/img/icons/openmoji.svg')
+	},{
+		"url": "https://beautifulwebtype.com",
+		"title": "In-Depth Guide to the Best Free Fonts • Beautiful Web Type",
+		"icon": require('./assets/img/icons/beautifulwebtype.svg')
+	},{
+		"url": "https://figmachina.com",
+		"title": "FigmaChina：Figma 中文网，学习 Figma 从这里开始",
+		"icon": require('./assets/img/icons/figmachina.svg')
 	}
 ];
 
@@ -2133,9 +2160,17 @@ var blog_items = [
 	    "title": "Dennis Yurichev",
 	    "icon": require('./assets/img/icons/yurichev.svg')
   	},{
-      "url": "https://linghao.io",
-      "title": "Synthesist in the Shell",
-      "icon": require('./assets/img/icons/linghao.svg')
+		"url": "https://linghao.io",
+		"title": "Synthesist in the Shell",
+		"icon": require('./assets/img/icons/linghao.svg')
+    },{
+		"url": "https://draveness.me",
+		"title": "面向信仰编程",
+		"icon": require('./assets/img/icons/draveness.svg')
+    },{
+		"url": "https://linmi.cc",
+		"title": "Linmi - 探索未知，迭代新知，沉淀认知。",
+		"icon": require('./assets/img/icons/linmi.svg')
     }
 
 ];
