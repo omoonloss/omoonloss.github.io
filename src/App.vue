@@ -895,10 +895,14 @@ if (!Store.getCookie('visited')) {
 		    "title": "法隆寺金堂壁画ガラス原板 デジタルビューア｜Glass Photographic Plates of the Murals in the Kondō Hall of Hōryūji Temple―Digital Viewer―",
 		    "icon": require('./assets/img/icons/horyuji-kondohekiga.svg')
 		}, {
-		    "url": "https://itch.io",
-		    "title": "itch.io",
-		    "icon": require('./assets/img/icons/itch-io.svg')
+		    "url": "https://www.wdl.org/zh",
+		    "title": "世界数字图书馆主页",
+		    "icon": require('./assets/img/icons/wdl.svg')
 		}, {
+            "url": "https://itch.io",
+            "title": "itch.io",
+            "icon": require('./assets/img/icons/itch-io.svg')
+        }, {
 		    "url": "https://www.humblebundle.com",
 		    "title": "Humble Bundle",
 		    "icon": require('./assets/img/icons/humblebundle.svg')
@@ -1177,6 +1181,10 @@ var info_items = [
 		"title": "叽哩叽哩单机游戏",
 		"icon": require('./assets/img/icons/jiligame.svg')
 	},{
+        "url": "https://keylol.com",
+        "title": "其乐 Keylol - 驱动正版游戏的引擎！",
+        "icon": require('./assets/img/icons/keylol.svg')
+    },{
 		"url": "https://nicelinks.site",
 		"title": "倾城之链",
 		"icon": require('./assets/img/icons/nicelinks.svg')
@@ -1209,6 +1217,10 @@ var community_items = [
 		"url": "https://segmentfault.com",
 		"title": "SegmentFault",
 		"icon": require('./assets/img/icons/segmentfault.svg')
+	},{
+		"url": "https://www.freebuf.com",
+		"title": "FreeBuf网络安全行业门户",
+		"icon": require('./assets/img/icons/freebuf.svg')
 	},{
 		"url": "https://hacpai.com",
 		"title": "黑客派",
@@ -2029,7 +2041,11 @@ var tool_items = [
 
 // Photos
 var photos_items = [
-	{
+    {
+        "url": "https://wallpaperhub.app",
+        "title": "WallpaperHub | Free wallpapers for your PC, phone and tablet",
+        "icon": require('./assets/img/icons/wallpaperhub.svg')
+    },{
 		// 收集古典艺术品影像资料的网站，支持免费下载使用。
 		"url": "https://artvee.com",
 		"title": "Artvee",
