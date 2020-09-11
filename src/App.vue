@@ -1084,11 +1084,13 @@ var info_items = [
   		"url": "https://coolshell.cn",
   		"title": "酷壳",
   		"icon": require('./assets/img/icons/coolshell.svg')
-	}, {
-  		"url": "https://www.oschina.net",
-  		"title": "OSChina",
-  		"icon": require('./assets/img/icons/oschina.svg')
-	}, {
+	}
+ //  {
+ //  		"url": "https://www.oschina.net",
+ //  		"title": "OSChina",
+ //  		"icon": require('./assets/img/icons/oschina.svg')
+ //  }
+  , {
   		"url": "https://itsfoss.com",
   		"title": "It's FOSS",
   		"icon": require('./assets/img/icons/itsfoss.svg')
