@@ -236,7 +236,7 @@
   	<div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
   		<!-- Card title -->
   		<div class="mdui-card-header card-header">
-  			网站
+  			網站
   			<div v-on:click="editSites" class="edit">{{editOrComplete}}</div>
   		</div>
 
@@ -272,15 +272,15 @@
   			v-bind:class="{new_site_active: hasAddPanel}"
   		>
   			<div class="new-site-info mdui-textfield mdui-textfield-floating-label">
-  				<label class="mdui-textfield-label">网站地址</label>
+  				<label class="mdui-textfield-label">網站地址</label>
   				<input class="mdui-textfield-input" type="url" v-model="newSiteurl" />
   			</div>
   			<div class="new-site-info mdui-textfield mdui-textfield-floating-label">
-  				<label class="mdui-textfield-label">网站名称</label>
+  				<label class="mdui-textfield-label">網站名稱</label>
   				<input class="mdui-textfield-input" type="text" v-model="newSitetitle" />
   			</div>
   			<div class="new-site-info mdui-textfield mdui-textfield-floating-label">
-  				<label class="mdui-textfield-label">网站图标地址</label>
+  				<label class="mdui-textfield-label">網站圖標地址</label>
   				<input class="mdui-textfield-input" type="text" v-model="newSiteicon" />
   			</div>
   			<button class="addtodo_button mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple" v-on:click="addSite">添加</button>
@@ -314,11 +314,11 @@
 <!--     </div> -->
 
 
-    <!-- 咨讯 -->
+    <!-- News & Information-->
     <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
       <!-- Card title -->
       <div class="mdui-card-header card-header">
-        咨讯
+        新聞與資訊
       </div>
 
       <div class="mdui-divider"></div>
@@ -338,11 +338,11 @@
 
     </div>
 
-    <!-- 社区 -->
+    <!-- Community -->
     <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
       <!-- Card title -->
       <div class="mdui-card-header card-header">
-        社区
+        社區
       </div>
 
       <div class="mdui-divider"></div>
@@ -362,23 +362,23 @@
 
     </div>
 
-    <!-- 游记 -->
+    <!-- Documentary & Travel vlog -->
     <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
       <!-- Card title -->
       <div class="mdui-card-header card-header">
-        游记
+        紀錄片與旅行記錄
       </div>
 
       <div class="mdui-divider"></div>
 
       <!-- Sites list -->
       <ul class="mdui-list">
-        <li v-for="(travel_literature_site, index) in travel_literature_sites" class="site">
-          <a v-bind:href="travel_literature_site.url" target="_blank">
+        <li v-for="(documentary_travel_site, index) in documentary_travel_sites" class="site">
+          <a v-bind:href="documentary_travel_site.url" target="_blank">
             <div>
-              <img v-bind:src="travel_literature_site.icon" width="55px" height="55px" />
+              <img v-bind:src="documentary_travel_site.icon" width="55px" height="55px" />
             </div>
-            <div class="site-title">{{ travel_literature_site.title }}</div>
+            <div class="site-title">{{ documentary_travel_site.title }}</div>
           </a>
         </li>
        
@@ -386,35 +386,11 @@
 
     </div>
 
-    <!-- documentary -->
+    <!-- Coding-->
     <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
       <!-- Card title -->
       <div class="mdui-card-header card-header">
-        纪录片 & Vlog
-      </div>
-
-      <div class="mdui-divider"></div>
-
-      <!-- Sites list -->
-      <ul class="mdui-list">
-        <li v-for="(documentary_site, index) in documentary_sites" class="site">
-          <a v-bind:href="documentary_site.url" target="_blank">
-            <div>
-              <img v-bind:src="documentary_site.icon" width="55px" height="55px" />
-            </div>
-            <div class="site-title">{{ documentary_site.title }}</div>
-          </a>
-        </li>
-       
-      </ul>
-
-    </div>
-
-    <!-- Coding & Course -->
-    <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
-      <!-- Card title -->
-      <div class="mdui-card-header card-header">
-        Coding & Course
+        程式
       </div>
 
       <div class="mdui-divider"></div>
@@ -434,12 +410,36 @@
 
     </div>
 
+    <!-- Course-->
+    <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
+      <!-- Card title -->
+      <div class="mdui-card-header card-header">
+        課程
+      </div>
+
+      <div class="mdui-divider"></div>
+
+      <!-- Sites list -->
+      <ul class="mdui-list">
+        <li v-for="(course_site, index) in course_sites" class="site">
+          <a v-bind:href="course_site.url" target="_blank">
+            <div>
+              <img v-bind:src="course_site.icon" width="55px" height="55px" />
+            </div>
+            <div class="site-title">{{ course_site.title }}</div>
+          </a>
+        </li>
+       
+      </ul>
+
+    </div>
+
 
     <!-- Design -->
     <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
       <!-- Card title -->
       <div class="mdui-card-header card-header">
-        Design
+        設計
       </div>
 
       <div class="mdui-divider"></div>
@@ -459,23 +459,23 @@
 
     </div>
 
-    <!-- 翻译 -->
+    <!-- Publishing & Book -->
     <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
       <!-- Card title -->
       <div class="mdui-card-header card-header">
-        翻译
+        出版與書籍
       </div>
 
       <div class="mdui-divider"></div>
 
       <!-- Sites list -->
       <ul class="mdui-list">
-        <li v-for="(translate_site, index) in translate_sites" class="site">
-          <a v-bind:href="translate_site.url" target="_blank">
+        <li v-for="(publishing_book_site, index) in publishing_book_sites" class="site">
+          <a v-bind:href="publishing_book_site.url" target="_blank">
             <div>
-              <img v-bind:src="translate_site.icon" width="55px" height="55px" />
+              <img v-bind:src="publishing_book_site.icon" width="55px" height="55px" />
             </div>
-            <div class="site-title">{{ translate_site.title }}</div>
+            <div class="site-title">{{ publishing_book_site.title }}</div>
           </a>
         </li>
        
@@ -483,48 +483,23 @@
 
     </div>
 
-
-    <!-- Book -->
+    <!-- Academic -->
     <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
       <!-- Card title -->
       <div class="mdui-card-header card-header">
-        Book
+        學術
       </div>
 
       <div class="mdui-divider"></div>
 
       <!-- Sites list -->
       <ul class="mdui-list">
-        <li v-for="(book_site, index) in book_sites" class="site">
-          <a v-bind:href="book_site.url" target="_blank">
+        <li v-for="(academic_site, index) in academic_sites" class="site">
+          <a v-bind:href="academic_site.url" target="_blank">
             <div>
-              <img v-bind:src="book_site.icon" width="55px" height="55px" />
+              <img v-bind:src="academic_site.icon" width="55px" height="55px" />
             </div>
-            <div class="site-title">{{ book_site.title }}</div>
-          </a>
-        </li>
-       
-      </ul>
-
-    </div>
-
-    <!-- Publishing -->
-    <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
-      <!-- Card title -->
-      <div class="mdui-card-header card-header">
-        Publishing
-      </div>
-
-      <div class="mdui-divider"></div>
-
-      <!-- Sites list -->
-      <ul class="mdui-list">
-        <li v-for="(publishing_site, index) in publishing_sites" class="site">
-          <a v-bind:href="publishing_site.url" target="_blank">
-            <div>
-              <img v-bind:src="publishing_site.icon" width="55px" height="55px" />
-            </div>
-            <div class="site-title">{{ publishing_site.title }}</div>
+            <div class="site-title">{{ academic_site.title }}</div>
           </a>
         </li>
        
@@ -556,23 +531,23 @@
 
     </div>
 
-    <!-- Photos -->
+    <!-- Pictures & images -->
     <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
       <!-- Card title -->
       <div class="mdui-card-header card-header">
-        Photos
+        圖片
       </div>
 
       <div class="mdui-divider"></div>
 
       <!-- Sites list -->
       <ul class="mdui-list">
-        <li v-for="(photos_site, index) in photos_sites" class="site">
-          <a v-bind:href="photos_site.url" target="_blank">
+        <li v-for="(pictures_site, index) in pictures_sites" class="site">
+          <a v-bind:href="pictures_site.url" target="_blank">
             <div>
-              <img v-bind:src="photos_site.icon" width="55px" height="55px" />
+              <img v-bind:src="pictures_site.icon" width="55px" height="55px" />
             </div>
-            <div class="site-title">{{ photos_site.title }}</div>
+            <div class="site-title">{{ pictures_site.title }}</div>
           </a>
         </li>
        
@@ -580,7 +555,7 @@
 
     </div>
 
-    <!-- 博客 -->
+    <!-- Blog -->
     <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
       <!-- Card title -->
       <div class="mdui-card-header card-header">
@@ -608,7 +583,7 @@
   	<div class="mdui-card mdui-col-xs-12 mdui-col-md-5 mdui-col-offset-md-1 mdui-col-lg-3 mdui-shadow-0 todos-card">
       <!-- Card title -->
   		<div class="mdui-card-header card-header">
-  			待办事项
+  			待辦事項
   		</div>
 
   		<div class="mdui-divider"></div>
@@ -626,7 +601,7 @@
             <i class="mdui-collapse-item-arrow mdui-icon material-icons" v-on:click="removeTodo(todo, index)" style="font-size: 19px;">close</i>
           </div>
           <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
-            <li class="mdui-list-item mdui-ripple todo-sub-list" v-on:click="removeTodo(todo, index)">删除</li>
+            <li class="mdui-list-item mdui-ripple todo-sub-list" v-on:click="removeTodo(todo, index)">刪除</li>
           </ul>
         </li>
 
@@ -744,40 +719,18 @@ if (!Store.getCookie('visited')) {
 		    "title": "Bitbucket",
 		    "icon": require('./assets/img/icons/bitbucket.svg')
 		}, {
-		    "url": "https://csrankings.org",
-		    "title": "CSRankings: Computer Science Rankings",
-		    "icon": require('./assets/img/icons/csrankings.svg')
-		}
-		// {
-		//     "url": "https://coding.net",
-		//     "title": "Coding",
-		//     "icon": require('./assets/img/icons/coding.svg')
-		// }
-		,  {
-		    "url": "https://www.figma.com",
-		    "title": "Figma",
-		    "icon": require('./assets/img/icons/figma.svg')
-		}, {
   			"url": "https://codepen.io",
   			"title": "CodePen",
   			"icon": require('./assets/img/icons/codepen.svg')
 		}, {
-  			"url": "https://codesandbox.io",
-  			"title": "CodeSandbox",
-  			"icon": require('./assets/img/icons/codesandbox.svg')
+		    "url": "https://www.figma.com",
+		    "title": "Figma",
+		    "icon": require('./assets/img/icons/figma.svg')
 		}, {
   			"url": "https://www.wikipedia.org",
   			"title": "Wikipedia",
   			"icon": require('./assets/img/icons/wikipedia.svg')
 		}, {
-        "url": "https://www.deepl.com/translator",
-        "title": "DeepL Translator",
-        "icon": require('./assets/img/icons/deepl.svg')
-    }, {
-        "url": "https://www.linguee.com",
-        "title": "Linguee | Dictionary for German, French, Spanish, and more",
-        "icon": require('./assets/img/icons/linguee.svg')
-    }, {
   			"url": "https://www.wikiart.org",
   			"title": "WikiArt - Visual Art Encyclopedia",
   			"icon": require('./assets/img/icons/wikiart.svg')
@@ -785,6 +738,18 @@ if (!Store.getCookie('visited')) {
   			"url": "https://medium.com",
   			"title": "Medium",
   			"icon": require('./assets/img/icons/medium.svg')
+		}, {
+	  		"url": "https://www.reddit.com",
+	  		"title": "Reddit",
+	  		"icon": require('./assets/img/icons/reddit.svg')
+	  }, {
+		    "url": "https://stackoverflow.com",
+		    "title": "Stack Overflow",
+		    "icon": require('./assets/img/icons/stackoverflow.svg')
+		}, {
+		    "url": "https://quora.com",
+		    "title": "Quora",
+		    "icon": require('./assets/img/icons/quora.svg')
 		}, {
   			"url": "https://facebook.com",
   			"title": "Facebook",
@@ -794,21 +759,29 @@ if (!Store.getCookie('visited')) {
   			"title": "Twitter",
   			"icon": require('./assets/img/icons/twitter.svg')
 		}, {
-  			"url": "https://business.yandex.ru/mail",
-  			"title": "Yandex Mail",
-  			"icon": require('./assets/img/icons/yandex-mail.svg')
+		    "url": "https://www.youtube.com",
+		    "title": "Youtube",
+		    "icon": require('./assets/img/icons/youtube.svg')
 		}, {
-  			"url": "https://zhihu.com",
-  			"title": "知乎",
-  			"icon": require('./assets/img/icons/zhihu.svg')
+		    "url": "https://www.ted.com",
+		    "title": "TED",
+		    "icon": require('./assets/img/icons/ted.svg')
+		}, {
+		    "url": "https://www.yixi.tv",
+		    "title": "一席",
+		    "icon": require('./assets/img/icons/yixi.svg')
 		}, {
 		    "url": "https://www.bilibili.com",
 		    "title": "哔哩哔哩",
 		    "icon": require('./assets/img/icons/bilibili.svg')
 		}, {
-		    "url": "https://wx.qq.com",
-		    "title": "微信网页版",
-		    "icon": require('./assets/img/icons/weixin.svg')
+		    "url": "https://www.vmovier.com",
+		    "title": "场库",
+		    "icon": require('./assets/img/icons/vmovier.svg')
+		}, {
+		    "url": "https://www.douban.com",
+		    "title": "豆瓣",
+		    "icon": require('./assets/img/icons/douban.svg')
 		}, {
 		    "url": "https://weread.qq.com",
 		    "title": "微信读书",
@@ -818,65 +791,41 @@ if (!Store.getCookie('visited')) {
 		    "title": "知识星球",
 		    "icon": require('./assets/img/icons/zsxq.svg')
 		}, {
-		    "url": "https://qzone.qq.com",
-		    "title": "QZone",
-		    "icon": require('./assets/img/icons/qzone.svg')
-		}, {
 		    "url": "https://weibo.com",
 		    "title": "微博",
 		    "icon": require('./assets/img/icons/weibo.svg')
 		}, {
-		    "url": "https://www.dropbox.com",
-		    "title": "Dropbox",
-		    "icon": require('./assets/img/icons/dropbox.svg')
+		    "url": "https://wx.qq.com",
+		    "title": "微信网页版",
+		    "icon": require('./assets/img/icons/weixin.svg')
 		}, {
-		    "url": "https://www.youtube.com",
-		    "title": "Youtube",
-		    "icon": require('./assets/img/icons/youtube.svg')
+		    "url": "https://qzone.qq.com",
+		    "title": "QZone",
+		    "icon": require('./assets/img/icons/qzone.svg')
 		}, {
-		    "url": "https://quora.com",
-		    "title": "Quora",
-		    "icon": require('./assets/img/icons/quora.svg')
-		}, {
-		    "url": "https://getpocket.com",
-		    "title": "Pocket",
-		    "icon": require('./assets/img/icons/pocket.svg')
-		}, {
-		    "url": "https://stackoverflow.com",
-		    "title": "Stack Overflow",
-		    "icon": require('./assets/img/icons/stackoverflow.svg')
-		}, {
-		    "url": "https://www.amazon.com",
-		    "title": "Amazon",
-		    "icon": require('./assets/img/icons/amazon.svg')
-		}, {
-		    "url": "https://taobao.com",
-		    "title": "淘宝",
-		    "icon": require('./assets/img/icons/taobao.svg')
+  			"url": "https://zhihu.com",
+  			"title": "知乎",
+  			"icon": require('./assets/img/icons/zhihu.svg')
 		}, {
 		    "url": "https://coolapk.com",
 		    "title": "酷安",
 		    "icon": require('./assets/img/icons/coolapk.svg')
 		}, {
-		    "url": "https://www.douban.com",
-		    "title": "豆瓣",
-		    "icon": require('./assets/img/icons/douban.svg')
-		}, {
-		    "url": "https://www.latexstudio.net",
-		    "title": "LaTeX工作室",
-		    "icon": require('./assets/img/icons/latexstudio.svg')
-		}, {
 		    "url": "https://weixin.sogou.com",
 		    "title": "搜狗微信",
 		    "icon": require('./assets/img/icons/weixin-sogou.svg')
 		}, {
-		    "url": "https://www.ted.com",
-		    "title": "TED",
-		    "icon": require('./assets/img/icons/ted.svg')
+		    "url": "https://www.britishcouncil.org",
+		    "title": "British Council",
+		    "icon": require('./assets/img/icons/britishcouncil.svg')
 		}, {
-		    "url": "https://libraries.io",
-		    "title": "Libraries.io",
-		    "icon": require('./assets/img/icons/libraries-io.svg')
+		    "url": "https://www.tianfateng.cn",
+		    "title": "田间小站",
+		    "icon": require('./assets/img/icons/default.svg')
+		}, {
+		    "url": "https://tw.voicetube.com",
+		    "title": "VoiceTube",
+		    "icon": require('./assets/img/icons/voicetube.svg')
 		}, {
 		    "url": "https://meirishici.com",
 		    "title": "每日诗词",
@@ -907,41 +856,9 @@ if (!Store.getCookie('visited')) {
 		    "title": "世界数字图书馆主页",
 		    "icon": require('./assets/img/icons/wdl.svg')
 		}, {
-        "url": "https://itch.io",
-        "title": "itch.io",
-        "icon": require('./assets/img/icons/itch-io.svg')
-    }, {
-		    "url": "https://www.humblebundle.com",
-		    "title": "Humble Bundle",
-		    "icon": require('./assets/img/icons/humblebundle.svg')
-		}, {
-		    "url": "https://indienova.com",
-		    "title": "indienova 独立游戏",
-		    "icon": require('./assets/img/icons/indienova.svg')
-		}, {
-		    "url": "https://agirls.aotter.net",
-		    "title": "電獺少女",
-		    "icon": require('./assets/img/icons/agirls.svg')
-		}, {
 		    "url": "https://luooqi.com",
 		    "title": "鱼声音乐",
 		    "icon": require('./assets/img/icons/luooqi.svg')
-		}, {
-		    "url": "https://www.tianfateng.cn",
-		    "title": "田间小站",
-		    "icon": require('./assets/img/icons/default.svg')
-		}, {
-		    "url": "https://www.yixi.tv",
-		    "title": "一席",
-		    "icon": require('./assets/img/icons/yixi.svg')
-		}, {
-		    "url": "https://www.britishcouncil.org",
-		    "title": "British Council",
-		    "icon": require('./assets/img/icons/britishcouncil.svg')
-		}, {
-		    "url": "https://tw.voicetube.com",
-		    "title": "VoiceTube",
-		    "icon": require('./assets/img/icons/voicetube.svg')
 		}, {
 		    "url": "https://songtasty.com/song",
 		    "title": "SongTasty",
@@ -955,26 +872,22 @@ if (!Store.getCookie('visited')) {
 		    "title": "环球钢琴网",
 		    "icon": require('./assets/img/icons/hqgq.svg')
 		}, {
+	  		"url": "https://www.everyonepiano.cn",
+	  		"title": "人人钢琴网",
+	  		"icon": require('./assets/img/icons/everyonepiano.svg')
+	  }, {
 		    "url": "https://www.exound.com",
 		    "title": "人人都来玩音乐 | 叉烧网",
 		    "icon": require('./assets/img/icons/exound.svg')
 		}, {
-		    "url": "https://www.kylc.com",
-		    "title": "快易理财网--理财改变生活",
-		    "icon": require('./assets/img/icons/default.svg')
-		}, {
-		    "url": "https://lookao.com",
-		    "title": "Lookao",
-		    "icon": require('./assets/img/icons/lookao.svg')
-		}, {
-		    "url": "https://wht.im",
-		    "title": "万花筒",
-		    "icon": require('./assets/img/icons/wht.svg')
-		}, {
-		    "url": "https://www.vmovier.com",
-		    "title": "场库",
-		    "icon": require('./assets/img/icons/vmovier.svg')
-		}, {
+	  		"url": "https://www.midifan.com",
+	  		"title": "Midifan",
+	  		"icon": require('./assets/img/icons/midifan.svg')
+	  }, {
+	  		"url": "https://www.midishow.com",
+	  		"title": "MidiShow",
+	  		"icon": require('./assets/img/icons/midishow.svg')
+	  }, {
 		    "url": "https://pod.link",
 		    "title": "PodLink",
 		    "icon": require('./assets/img/icons/podlink.svg')
@@ -991,11 +904,47 @@ if (!Store.getCookie('visited')) {
     		"title": "Listen Notes",
     		"icon": require('./assets/img/icons/listennotes.svg')
 		}, {
+        "url": "https://www.deepl.com/translator",
+        "title": "DeepL Translator",
+        "icon": require('./assets/img/icons/deepl.svg')
+    }, {
+        "url": "https://www.linguee.com",
+        "title": "Linguee | Dictionary for German, French, Spanish, and more",
+        "icon": require('./assets/img/icons/linguee.svg')
+    }, {
   			// 一个词汇语法搜索引擎
   			"url": "https://linggle.com",
   			"title": "Linggle 10^12- Language Reference Search Engines - NLPLab",
   			"icon": require('./assets/img/icons/linggle.svg')
-  	}
+  	}, {
+		    "url": "https://www.latexstudio.net",
+		    "title": "LaTeX工作室",
+		    "icon": require('./assets/img/icons/latexstudio.svg')
+		}, {
+		    "url": "https://www.amazon.com",
+		    "title": "Amazon",
+		    "icon": require('./assets/img/icons/amazon.svg')
+		}, {
+		    "url": "https://taobao.com",
+		    "title": "淘宝",
+		    "icon": require('./assets/img/icons/taobao.svg')
+		}, {
+		    "url": "https://getpocket.com",
+		    "title": "Pocket",
+		    "icon": require('./assets/img/icons/pocket.svg')
+		}, {
+		    "url": "https://www.dropbox.com",
+		    "title": "Dropbox",
+		    "icon": require('./assets/img/icons/dropbox.svg')
+		}, {
+  			"url": "https://business.yandex.ru/mail",
+  			"title": "Yandex Mail",
+  			"icon": require('./assets/img/icons/yandex-mail.svg')
+		}, {
+		    "url": "https://www.kylc.com",
+		    "title": "快易理财网--理财改变生活",
+		    "icon": require('./assets/img/icons/default.svg')
+		}
 
   ])
 }
@@ -1012,10 +961,10 @@ if (!Store.getCookie('visited')) {
   // }
 
 	if(Store.fetch_todo().length == 0){
-	Store.save_todo([
-		  	{
-		    "label": "1. Add your own TODO ITEMS.",
-					"isFinished": false
+		Store.save_todo([
+			{
+				"label": "1. Add your own TODO ITEMS.",
+				"isFinished": false
 			}
 		])
 	}
@@ -1027,9 +976,9 @@ if (!Store.getCookie('visited')) {
 	}
 }
 
-// 资讯 & 阅读
+// News & Information
 var info_items = [
-	{
+  {
 	    "url": "https://news.ycombinator.com",
 	    "title": "Hacker News",
 	    "icon": require('./assets/img/icons/hacker-news.svg')
@@ -1038,62 +987,16 @@ var info_items = [
 	    "title": "Nuxt HN",
 	    "icon": require('./assets/img/icons/nuxt-hn.svg')
 	}, {
-		// 四大领域及内容：
-		// - Morning Brew：晨酿，可以理解为早报；涉及（美）国内外政治新闻、股市经济、教育、运动、生活等多方面内容
-		// - Emering Tech Brew：科技新闻；涉及科技企业、IPO 上市、人工智能、数码电子等内容
-		// - Retail Brew：零售业新闻；涉及电子商务、房地产、零售经验与技巧等内容
-		// - Marketing Brew：市场与营销新闻；涉及新营销策略、案例、广告创意封内容
-		// 其中晨酿和科技新闻 Newsletters 在美国早晨（北京时间下午）定时推送，另两份则是在下午。晨酿每日一更，周日除外；而其余三份除周日停更外，每隔一天更新一次，大家可以分别订阅它们。我和主编们通过邮箱订阅了这些 Newsletters，大家如果不想订阅也可以直接在 Archive 中直接查看。订阅完全免费，但会在 Newsletters 插入一则 AD，处理得也比较优雅，个人认为不影响阅读。
-		// Morning Brew 的 Slogan 是「Become smarter in just 5 minutes」，阅读后不见得一定能让人 smarter，但我们都很享受信息差被弥补的满足感。自留地主要关注数码科技新闻和流媒体信息，Morning Brew 则像一飞周报（财经向）一样，能够给我们的读者带来新领域的讯息。短短几分钟，可以了解一个大概，对于感兴趣的话题也有链接可供进一步了解。
+			// 四大领域及内容：
+			// - Morning Brew：晨酿，可以理解为早报；涉及（美）国内外政治新闻、股市经济、教育、运动、生活等多方面内容
+			// - Emering Tech Brew：科技新闻；涉及科技企业、IPO 上市、人工智能、数码电子等内容
+			// - Retail Brew：零售业新闻；涉及电子商务、房地产、零售经验与技巧等内容
+			// - Marketing Brew：市场与营销新闻；涉及新营销策略、案例、广告创意封内容
+			// 其中晨酿和科技新闻 Newsletters 在美国早晨（北京时间下午）定时推送，另两份则是在下午。晨酿每日一更，周日除外；而其余三份除周日停更外，每隔一天更新一次，大家可以分别订阅它们。我和主编们通过邮箱订阅了这些 Newsletters，大家如果不想订阅也可以直接在 Archive 中直接查看。订阅完全免费，但会在 Newsletters 插入一则 AD，处理得也比较优雅，个人认为不影响阅读。
+			// Morning Brew 的 Slogan 是「Become smarter in just 5 minutes」，阅读后不见得一定能让人 smarter，但我们都很享受信息差被弥补的满足感。自留地主要关注数码科技新闻和流媒体信息，Morning Brew 则像一飞周报（财经向）一样，能够给我们的读者带来新领域的讯息。短短几分钟，可以了解一个大概，对于感兴趣的话题也有链接可供进一步了解。
   		"url": "https://www.morningbrew.com/emerging-tech/stories",
   		"title": "Morning Brew",
   		"icon": require('./assets/img/icons/morningbrew.svg')
-	}, {
-  		"url": "https://www.geekpark.net",
-  		"title": "极客公园",
-  		"icon": require('./assets/img/icons/geekpark.svg')
-	}, {
-  		"url": "https://www.echojs.com",
-  		"title": "Echo JS",
-  		"icon": require('./assets/img/icons/echo-js.svg')
-	}, {
-  		"url": "https://wubaiqing.github.io/zaobao/other/latest.html",
-  		"title": "每日时报",
-  		"icon": require('./assets/img/icons/default.svg')
-	}, {
-  		"url": "https://weekly.75team.com",
-  		"title": "奇舞周刊",
-  		"icon": require('./assets/img/icons/75team.svg')
-	}, {
-	    "url": "https://www.xlbd.me",
-	    "title": "前端技术栈月刊 | 小蘿蔔丁",
-	    "icon": require('./assets/img/icons/xlbd.svg')
-  }, {
-  		"url": "https://weekly.codetengu.com",
-  		"title": "CodeTengu Weekly（码天狗週刊）",
-  		"icon": require('./assets/img/icons/codetengu.svg')
-	}, {
-  		"url": "https://wanqu.co",
-  		"title": "湾区日报",
-  		"icon": require('./assets/img/icons/wanqu.svg')
-	}, {
-  		"url": "https://www.solidot.org",
-  		"title": "Solidot: 奇客的资讯，重要的东西",
-  		"icon": require('./assets/img/icons/solidot.svg')
-	}, {
-  		"url": "https://coolshell.cn",
-  		"title": "酷壳",
-  		"icon": require('./assets/img/icons/coolshell.svg')
-	}
- //  {
- //  		"url": "https://www.oschina.net",
- //  		"title": "OSChina",
- //  		"icon": require('./assets/img/icons/oschina.svg')
- //  }
-  , {
-  		"url": "https://itsfoss.com",
-  		"title": "It's FOSS",
-  		"icon": require('./assets/img/icons/itsfoss.svg')
 	}, {
   		"url": "https://digg.com",
   		"title": "Digg",
@@ -1123,9 +1026,33 @@ var info_items = [
   		"title": "經濟日報",
   		"icon": require('./assets/img/icons/money-udn.svg')
 	}, {
-  		"url": "https://sspai.com",
-  		"title": "少数派",
-  		"icon": require('./assets/img/icons/sspai.svg')
+  		"url": "https://www.geekpark.net",
+  		"title": "极客公园",
+  		"icon": require('./assets/img/icons/geekpark.svg')
+	}, {
+  		"url": "https://wanqu.co",
+  		"title": "湾区日报",
+  		"icon": require('./assets/img/icons/wanqu.svg')
+	}, {
+  		"url": "https://japanjobs.dev",
+  		"title": "Developer Jobs in Japan - A Job A Day Keeps The Doctor Away",
+  		"icon": require('./assets/img/icons/japanjobs.svg')
+	}, {
+  		"url": "https://www.solidot.org",
+  		"title": "Solidot: 奇客的资讯，重要的东西",
+  		"icon": require('./assets/img/icons/solidot.svg')
+	}, {
+  		"url": "https://coolshell.cn",
+  		"title": "酷壳",
+  		"icon": require('./assets/img/icons/coolshell.svg')
+	}, {
+  		"url": "https://www.echojs.com",
+  		"title": "Echo JS",
+  		"icon": require('./assets/img/icons/echo-js.svg')
+	}, {
+  		"url": "https://weekly.75team.com",
+  		"title": "奇舞周刊",
+  		"icon": require('./assets/img/icons/75team.svg')
 	}, {
   		"url": "http://www.qdaily.com",
   		"title": "好奇心日报",
@@ -1135,45 +1062,21 @@ var info_items = [
   		"title": "理想生活实验室",
   		"icon": require('./assets/img/icons/toodaylab.svg')
 	}, {
-  		"url": "https://matters.news",
-  		"title": "Matters",
-  		"icon": require('./assets/img/icons/matters.svg')
+  		"url": "https://indiehacker.im",
+  		"title": "Indie Hackers",
+  		"icon": require('./assets/img/icons/indiehacker.svg')
 	}, {
   		"url": "https://chengbao.bitcron.com",
   		"title": "城堡阅读周刊",
   		"icon": require('./assets/img/icons/chengbao.svg')
 	}, {
-  		"url": "https://indiehacker.im",
-  		"title": "Indie Hackers",
-  		"icon": require('./assets/img/icons/indiehacker.svg')
-	}, {
-  		"url": "https://labs.xda-developers.com",
-  		"title": "XDA Labs",
-  		"icon": require('./assets/img/icons/xdalabs.svg')
-	}, {
-  		"url": "https://digitalimmigrant.org",
-  		"title": "数字移民",
-  		"icon": require('./assets/img/icons/digitalimmigrant.svg')
-	}, {
-  		"url": "https://www.iyouport.org",
-  		"title": "iYouPort - IYP 不是过眼云烟的新闻网站，我们提供实战能力，这里是值得您反复回看的档案室",
-  		"icon": require('./assets/img/icons/iyouport.svg')
-	}, {
-  		"url": "https://japanjobs.dev",
-  		"title": "Developer Jobs in Japan - A Job A Day Keeps The Doctor Away",
-  		"icon": require('./assets/img/icons/japanjobs.svg')
-	}, {
-  		"url": "https://cosx.org",
-  		"title": "统计之都",
-  		"icon": require('./assets/img/icons/cosx.svg')
-	}, {
-  		"url": "https://www.gcores.com",
-  		"title": "机核 GCORES",
-  		"icon": require('./assets/img/icons/gcores.svg')
-	}, {
   		"url": "https://www.zfrontier.com",
   		"title": "zFrontier 装备前线",
   		"icon": require('./assets/img/icons/zfrontier.svg')
+	}, {
+	    "url": "https://agirls.aotter.net",
+	    "title": "電獺少女",
+	    "icon": require('./assets/img/icons/agirls.svg')
 	}, {
   		"url": "https://creatorsdaily.com",
   		"title": "创造者日报 - 让灵感完美爆炸",
@@ -1183,26 +1086,34 @@ var info_items = [
   		"title": "Dailyio – 一份深度洞察和全球视野的科技商业评论",
   		"icon": require('./assets/img/icons/iois.svg')
   }, {
-  		"url": "https://kenengba.com",
-  		"title": "可能吧",
-  		"icon": require('./assets/img/icons/kenengba.svg')
-  }, {
-  		"url": "https://www.jiligame.com",
-  		"title": "叽哩叽哩单机游戏",
-  		"icon": require('./assets/img/icons/jiligame.svg')
-	}, {
-      "url": "https://keylol.com",
-      "title": "其乐 Keylol - 驱动正版游戏的引擎！",
-      "icon": require('./assets/img/icons/keylol.svg')
-  }, {
-  		"url": "https://nicelinks.site",
-  		"title": "倾城之链",
-  		"icon": require('./assets/img/icons/nicelinks.svg')
-	}, {
   		"url": "https://storystudio.tw",
   		"title": "故事 StoryStudio",
   		"icon": require('./assets/img/icons/storystudio.svg')
   }, {
+  		"url": "https://cosx.org",
+  		"title": "统计之都",
+  		"icon": require('./assets/img/icons/cosx.svg')
+	}, {
+  		"url": "https://digitalimmigrant.org",
+  		"title": "数字移民",
+  		"icon": require('./assets/img/icons/digitalimmigrant.svg')
+	}, {
+  		"url": "https://kenengba.com",
+  		"title": "可能吧",
+  		"icon": require('./assets/img/icons/kenengba.svg')
+  }, {
+  		"url": "https://www.iyouport.org",
+  		"title": "iYouPort - IYP 不是过眼云烟的新闻网站，我们提供实战能力，这里是值得您反复回看的档案室",
+  		"icon": require('./assets/img/icons/iyouport.svg')
+	}, {
+  		"url": "https://itsfoss.com",
+  		"title": "It's FOSS",
+  		"icon": require('./assets/img/icons/itsfoss.svg')
+	}, {
+  		"url": "https://sspai.com",
+  		"title": "少数派",
+  		"icon": require('./assets/img/icons/sspai.svg')
+	}, {
   		"url": "https://www.ithome.com.tw",
   		"title": "iThome | iThome Online 是臺湾第一个网路原生报，提供IT產业即时新闻、企业IT產品报导与测试、技术专题、IT应用报导、IT书讯，以及面向丰富的名家专栏",
   		"icon": require('./assets/img/icons/ithome-tw.svg')
@@ -1214,31 +1125,67 @@ var info_items = [
   		"url": "https://juejin.im",
   		"title": "掘金",
   		"icon": require('./assets/img/icons/juejin.svg')
-	}
+	}, {
+	    "url": "https://www.humblebundle.com",
+	    "title": "Humble Bundle",
+	    "icon": require('./assets/img/icons/humblebundle.svg')
+	}, {
+	    "url": "https://indienova.com",
+	    "title": "indienova 独立游戏",
+	    "icon": require('./assets/img/icons/indienova.svg')
+	}, {
+  		"url": "https://www.gcores.com",
+  		"title": "机核 GCORES",
+  		"icon": require('./assets/img/icons/gcores.svg')
+	}, {
+  		"url": "https://www.jiligame.com",
+  		"title": "叽哩叽哩单机游戏",
+  		"icon": require('./assets/img/icons/jiligame.svg')
+	}, {
+      "url": "https://keylol.com",
+      "title": "其乐 Keylol - 驱动正版游戏的引擎！",
+      "icon": require('./assets/img/icons/keylol.svg')
+  }
 ];
 
-// 社区
+// Community
 var community_items = [
 	{
+  		"url": "https://krita-artists.org",
+  		"title": "Krita Artists - Krita community forum",
+  		"icon": require('./assets/img/icons/krita-artists.svg')
+  }, {
+  		"url": "https://labs.xda-developers.com",
+  		"title": "XDA Labs",
+  		"icon": require('./assets/img/icons/xdalabs.svg')
+	}, {
+      "url": "https://itch.io",
+      "title": "itch.io",
+      "icon": require('./assets/img/icons/itch-io.svg')
+  }, {
+  		"url": "https://www.newgrounds.com",
+  		"title": "Newgrounds.com — Everything, By Everyone",
+  		"icon": require('./assets/img/icons/newgrounds.svg')
+  }, {
+  		"url": "https://matters.news",
+  		"title": "Matters",
+  		"icon": require('./assets/img/icons/matters.svg')
+	}, {
   		"url": "https://v2ex.com",
   		"title": "V2EX",
   		"icon": require('./assets/img/icons/v2ex.svg')
-	}, {
-  		"url": "https://segmentfault.com",
-  		"title": "SegmentFault",
-  		"icon": require('./assets/img/icons/segmentfault.svg')
 	}, {
   		"url": "https://www.freebuf.com",
   		"title": "FreeBuf网络安全行业门户",
   		"icon": require('./assets/img/icons/freebuf.svg')
 	}, {
-  		"url": "https://hacpai.com",
-  		"title": "黑客派",
-  		"icon": require('./assets/img/icons/hacpai.svg')
+  		"url": "https://www.nowcoder.com",
+  		"title": "牛客网",
+  		"icon": require('./assets/img/icons/nowcoder.svg')
 	}, {
-  		"url": "https://www.reddit.com",
-  		"title": "Reddit",
-  		"icon": require('./assets/img/icons/reddit.svg')
+  		"url": "https://segmentfault.com",
+  		"title": "SegmentFault",
+  		"icon": require('./assets/img/icons/segmentfault.svg')
 	}, {
   		"url": "https://liqi.io",
   		"title": "利器",
@@ -1252,36 +1199,32 @@ var community_items = [
   		"title": "*CUP - 每日十條世界要聞 與你清醒同行",
   		"icon": require('./assets/img/icons/cup.svg')
 	}, {
-  		"url": "https://krita-artists.org",
-  		"title": "Krita Artists - Krita community forum",
-  		"icon": require('./assets/img/icons/krita-artists.svg')
-  }, {
-  		"url": "https://www.newgrounds.com",
-  		"title": "Newgrounds.com — Everything, By Everyone",
-  		"icon": require('./assets/img/icons/newgrounds.svg')
-  }
+  		"url": "https://ld246.com",
+  		"title": "链滴",
+  		"icon": require('./assets/img/icons/ld246.svg')
+	}, {
+  		"url": "https://www.zcfy.cc",
+  		"title": "众成翻译",
+  		"icon": require('./assets/img/icons/zcfy.svg')
+	}, {
+  		"url": "https://github.com/xitu/gold-miner",
+  		"title": "掘金翻译",
+  		"icon": require('./assets/img/icons/juejin.svg')
+	}, {
+  		"url": "http://g.yeeyan.org",
+  		"title": "译言古登堡计划",
+  		"icon": require('./assets/img/icons/yeeyan.svg')
+	}
+
 ];
 
-// Travel literature
-var travel_literature_items = [
+// Documentary & Travel vlog
+var documentary_travel_items = [
 	{
   		"url": "http://www.sao.com",
   		"title": "SAO",
   		"icon": require('./assets/img/icons/sao.svg')
 	}, {
-  		"url": "http://vagaband.blog.sohu.com",
-  		"title": "流浪者",
-  		"icon": require('./assets/img/icons/default.svg')
-	}, {
-  		"url": "https://www.mafengwo.cn",
-  		"title": "马蜂窝",
-  		"icon": require('./assets/img/icons/mafengwo.svg')
-	}
-];
-
-// Documentary film
-var documentary_items = [
-	{
   		"url": "https://rocumentaries.com",
   		"title": "Rocumentaries — Watch the best documentaries online",
   		"icon": require('./assets/img/icons/rocumentaries.svg')
@@ -1310,26 +1253,55 @@ var documentary_items = [
   		"title": "每天一小时纪录片",
   		"icon": require('./assets/img/icons/onehourlife.svg')
 	}, {
+	    "url": "https://xiongmaopan.com",
+	    "title": "熊猫盘纪录片|推荐好看的纪录片",
+	    "icon": require('./assets/img/icons/xiongmaopan.svg')
+  }, {
+  		"url": "http://vagaband.blog.sohu.com",
+  		"title": "流浪者",
+  		"icon": require('./assets/img/icons/default.svg')
+	}, {
 	    "url": "https://immian.com",
 	    "title": "巷子內的生活，國內外美食旅遊隨筆",
 	    "icon": require('./assets/img/icons/immian.svg')
   }, {
-	    "url": "https://xiongmaopan.com",
-	    "title": "熊猫盘纪录片|推荐好看的纪录片",
-	    "icon": require('./assets/img/icons/xiongmaopan.svg')
-  }
+  		"url": "https://www.mafengwo.cn",
+  		"title": "马蜂窝",
+  		"icon": require('./assets/img/icons/mafengwo.svg')
+	}
+
 ];
 
-// Coding & Course
+// Coding
 var coding_items = [
-	{
-  		"url": "https://www.spoj.com",
-  		"title": "SPOJ",
-  		"icon": require('./assets/img/icons/spoj.svg')
+  {
+  		"url": "https://repl.it",
+  		"title": "Repl.it",
+  		"icon": require('./assets/img/icons/repl.svg')
 	}, {
-  		"url": "https://www.hihocoder.com",
-  		"title": "hihoCoder",
-  		"icon": require('./assets/img/icons/hiho.svg')
+			"url": "https://codesandbox.io",
+			"title": "CodeSandbox",
+			"icon": require('./assets/img/icons/codesandbox.svg')
+	}, {
+	    "url": "https://colab.research.google.com",
+	    "title": "Colaboratory",
+	    "icon": require('./assets/img/icons/colaboratory.svg')
+  }, {
+  		"url": "https://www.tutorialspoint.com/execute_bash_online.php",
+  		"title": "Bash Online",
+  		"icon": require('./assets/img/icons/bash-online.svg')
+	}, {
+  		"url": "https://astexplorer.net",
+  		"title": "AST explorer",
+  		"icon": require('./assets/img/icons/astexplorer.svg')
+	}, {
+	    "url": "https://godbolt.org",
+	    "title": "Compiler Explorer",
+	    "icon": require('./assets/img/icons/godbolt.svg')
+  }, {
+  		"url": "https://visualgo.net/zh",
+  		"title": "Visualgo",
+  		"icon": require('./assets/img/icons/visualgo.svg')
 	}, {
   		"url": "https://leetcode.com",
   		"title": "LeetCode",
@@ -1343,22 +1315,20 @@ var coding_items = [
   		"title": "LintCode",
   		"icon": require('./assets/img/icons/lintcode.svg')
 	}, {
-  		"url": "https://www.nowcoder.com",
-  		"title": "牛客网",
-  		"icon": require('./assets/img/icons/nowcoder.svg')
+  		"url": "https://www.hihocoder.com",
+  		"title": "hihoCoder",
+  		"icon": require('./assets/img/icons/hiho.svg')
 	}, {
-  		"url": "https://cssreference.io",
-  		"title": "CSS Reference",
-  		"icon": require('./assets/img/icons/css-reference.svg')
-	}, {
-  		"url": "https://htmlreference.io",
-  		"title": "HTML Reference",
-  		"icon": require('./assets/img/icons/html-reference.svg')
-	}, {
-  		"url": "https://www.shiyanlou.com",
-  		"title": "实验楼",
-  		"icon": require('./assets/img/icons/shiyanlou.svg')
-	}, {
+  		"url": "https://www.spoj.com",
+  		"title": "SPOJ",
+  		"icon": require('./assets/img/icons/spoj.svg')
+	}
+
+];
+
+// Course
+var course_items = [
+	{
   		"url": "https://www.imooc.com",
   		"title": "慕课网",
   		"icon": require('./assets/img/icons/imooc.svg')
@@ -1380,6 +1350,10 @@ var coding_items = [
   		"title": "优优教程网",
   		"icon": require('./assets/img/icons/uiiiuiii.svg')
 	}, {
+  		"url": "https://www.shiyanlou.com",
+  		"title": "实验楼",
+  		"icon": require('./assets/img/icons/shiyanlou.svg')
+	}, {
   		"url": "https://www.tutorialspoint.com",
   		"title": "TutorialSpoint",
   		"icon": require('./assets/img/icons/tutorialspoint.svg')
@@ -1391,10 +1365,6 @@ var coding_items = [
   		"url": "https://www.w3cplus.com",
   		"title": "w3cplus",
   		"icon": require('./assets/img/icons/w3cplus.svg')
-	}, {
-  		"url": "https://visualgo.net/zh",
-  		"title": "Visualgo",
-  		"icon": require('./assets/img/icons/visualgo.svg')
 	}, {
 		  // 一个在线公开课课程的网站，目前可搜索51163门在线课程，大部分可免费学习
   		"url": "https://www.coursade.com",
@@ -1471,10 +1441,6 @@ var design_items = [
   		"title": "illlustrations - open source illustrations kit",
   		"icon": require('./assets/img/icons/manypixels.svg')
 	}, {
-  		"url": "https://openmoji.org",
-  		"title": "OpenMoji",
-  		"icon": require('./assets/img/icons/openmoji.svg')
-	}, {
   		"url": "https://beautifulwebtype.com",
   		"title": "In-Depth Guide to the Best Free Fonts • Beautiful Web Type",
   		"icon": require('./assets/img/icons/beautifulwebtype.svg')
@@ -1483,29 +1449,36 @@ var design_items = [
   		"title": "FigmaChina：Figma 中文网，学习 Figma 从这里开始",
   		"icon": require('./assets/img/icons/figmachina.svg')
 	}
-];
-
-// 翻译
-var translate_items = [
-	{
-  		"url": "https://www.zcfy.cc",
-  		"title": "众成翻译",
-  		"icon": require('./assets/img/icons/zcfy.svg')
-	}, {
-  		"url": "https://github.com/xitu/gold-miner",
-  		"title": "掘金翻译",
-  		"icon": require('./assets/img/icons/juejin.svg')
-	}, {
-  		"url": "http://g.yeeyan.org",
-  		"title": "译言古登堡计划",
-  		"icon": require('./assets/img/icons/yeeyan.svg')
-	}
 
 ];
 
-// Book
-var book_items = [
+// Publishing & Book
+var publishing_book_items = [
 	{
+  		"url": "https://www.packtpub.com",
+  		"title": "Packtpub",
+  		"icon": require('./assets/img/icons/packtpub.svg')
+	}, {
+  		"url": "https://www.manning.com",
+  		"title": "Manning",
+  		"icon": require('./assets/img/icons/manning.svg')
+	}, {
+	    "url": "https://leanpub.com",
+	    "title": "Leanpub",
+	    "icon": require('./assets/img/icons/leanpub.svg')
+	}, {
+	    "url": "https://www.ituring.com.cn",
+	    "title": "图灵社区",
+	    "icon": require('./assets/img/icons/ituring.svg')
+	}, {
+	    "url": "https://www.epubit.com",
+	    "title": "异步社区",
+	    "icon": require('./assets/img/icons/epubit.svg')
+	}, {
+    	"url": "https://www.oreilly.com",
+	    "title": "O'Reilly Media",
+	    "icon": require('./assets/img/icons/oreilly.svg')
+	}, {
   		"url": "https://www.zjlib.cn",
   		"title": "浙江图书馆",
   		"icon": require('./assets/img/icons/zjlib.svg')
@@ -1660,7 +1633,13 @@ var book_items = [
   		"url": "http://audiobookbay.nl",
   		"title": "AudioBookBay",
   		"icon": require('./assets/img/icons/audiobookbay.svg')
-	}, {
+	}
+
+];
+
+// Academic
+var academic_items = [
+	{
   		"url": "https://journals.sagepub.com",
   		"title": "SAGE Journals: Your gateway to world-class research journals",
   		"icon": require('./assets/img/icons/sagepub.svg')
@@ -1668,6 +1647,10 @@ var book_items = [
   		"url": "https://www.sciencedirect.com",
   		"title": "ScienceDirect.com | Science, health and medical journals, full text articles and books.",
   		"icon": require('./assets/img/icons/sciencedirect.svg')
+	}, {
+    	"url": "https://zenodo.org",
+	    "title": "Zenodo - Research. Shared.",
+	    "icon": require('./assets/img/icons/default.svg')
 	}, {
   		"url": "https://sci-hub.tw",
   		"title": "Sci-Hub: removing barriers in the way of science",
@@ -1690,67 +1673,21 @@ var book_items = [
 
 ];
 
-// Publishing
-var publishing_items = [
-	{
-  		"url": "https://www.packtpub.com",
-  		"title": "Packtpub",
-  		"icon": require('./assets/img/icons/packtpub.svg')
-	}, {
-  		"url": "https://www.manning.com",
-  		"title": "Manning",
-  		"icon": require('./assets/img/icons/manning.svg')
-	}, {
-	    "url": "https://leanpub.com",
-	    "title": "Leanpub",
-	    "icon": require('./assets/img/icons/leanpub.svg')
-	}, {
-	    "url": "https://www.ituring.com.cn",
-	    "title": "图灵社区",
-	    "icon": require('./assets/img/icons/ituring.svg')
-	}, {
-	    "url": "https://www.epubit.com",
-	    "title": "异步社区",
-	    "icon": require('./assets/img/icons/epubit.svg')
-	}, {
-    	"url": "https://www.oreilly.com",
-	    "title": "O'Reilly Media",
-	    "icon": require('./assets/img/icons/oreilly.svg')
-	}, {
-    	"url": "https://zenodo.org",
-	    "title": "Zenodo - Research. Shared.",
-	    "icon": require('./assets/img/icons/default.svg')
-	}
-
-];
-
 // 工具
 var tool_items = [
 	{
-  		"url": "https://repl.it",
-  		"title": "Repl.it",
-  		"icon": require('./assets/img/icons/repl.svg')
+	    "url": "https://csrankings.org",
+	    "title": "CSRankings: Computer Science Rankings",
+	    "icon": require('./assets/img/icons/csrankings.svg')
 	}, {
-	    "url": "https://colab.research.google.com",
-	    "title": "Colaboratory",
-	    "icon": require('./assets/img/icons/colaboratory.svg')
-  }, {
-  		"url": "https://www.tutorialspoint.com/execute_bash_online.php",
-  		"title": "Bash Online",
-  		"icon": require('./assets/img/icons/bash-online.svg')
-	}, {
-  		"url": "https://astexplorer.net",
-  		"title": "AST explorer",
-  		"icon": require('./assets/img/icons/astexplorer.svg')
-	}, {
-	    "url": "https://godbolt.org",
-	    "title": "Compiler Explorer",
-	    "icon": require('./assets/img/icons/godbolt.svg')
-  }, {
       "url": "https://web.baimiaoapp.com",
       "title": "白描网页版 - 在线OCR文字识别、图片文字提取",
       "icon": require('./assets/img/icons/baimiaoapp.svg')
   }, {
+  		"url": "https://www.onlineocr.net",
+  		"title": "Online OCR",
+  		"icon": require('./assets/img/icons/onlineocr.svg')
+	}, {
   		"url": "https://codefence.io",
   		"title": "codefence - an easily embeddable interactive code editor",
   		"icon": require('./assets/img/icons/codefence.svg')
@@ -1834,10 +1771,6 @@ var tool_items = [
   		"url": "https://www.kuaidi100.com",
   		"title": "快递100",
   		"icon": require('./assets/img/icons/kuaidi100.svg')
-	}, {
-  		"url": "https://www.onlineocr.net",
-  		"title": "Online OCR",
-  		"icon": require('./assets/img/icons/onlineocr.svg')
 	}, {
   		"url": "https://explainshell.com",
   		"title": "ExplainShell",
@@ -1923,14 +1856,6 @@ var tool_items = [
   		"title": "FindYoutube",
   		"icon": require('./assets/img/icons/findyoutube.svg')
 	}, {
-  		"url": "https://www.everyonepiano.cn",
-  		"title": "人人钢琴网",
-  		"icon": require('./assets/img/icons/everyonepiano.svg')
-	}, {
-  		"url": "https://www.midifan.com",
-  		"title": "Midifan",
-  		"icon": require('./assets/img/icons/midifan.svg')
-	}, {
   		"url": "https://dbdiagram.io/home",
   		"title": "dbdiagram",
   		"icon": require('./assets/img/icons/dbdiagram.svg')
@@ -1950,10 +1875,6 @@ var tool_items = [
   		"url": "https://kroki.io",
   		"title": "Kroki!",
   		"icon": require('./assets/img/icons/default.svg')
-	}, {
-  		"url": "https://www.midishow.com",
-  		"title": "MidiShow",
-  		"icon": require('./assets/img/icons/midishow.svg')
 	}, {
   		"url": "https://duilian.msra.cn",
   		"title": "微软对联",
@@ -2044,14 +1965,42 @@ var tool_items = [
 	    "url": "https://felixboiii.github.io/paper-plotter/",
 	    "title": "Paper plotter",
 	    "icon": require('./assets/img/icons/paper-plotter.svg')
+	}, {
+  		"url": "https://cssreference.io",
+  		"title": "CSS Reference",
+  		"icon": require('./assets/img/icons/css-reference.svg')
+	}, {
+  		"url": "https://htmlreference.io",
+  		"title": "HTML Reference",
+  		"icon": require('./assets/img/icons/html-reference.svg')
+	}, {
+  		"url": "https://openmoji.org",
+  		"title": "OpenMoji",
+  		"icon": require('./assets/img/icons/openmoji.svg')
 	}
 
 ];
 
 
-// Photos
-var photos_items = [
+// Pictures & images
+var pictures_items = [
   {
+  		"url": "https://imgur.com",
+  		"title": "imgur",
+  		"icon": require('./assets/img/icons/imgur.svg')
+	}, {
+  		"url": "https://www.flickr.com",
+  		"title": "Flickr",
+  		"icon": require('./assets/img/icons/flickr.svg')
+	}, {
+  		"url": "https://sm.ms",
+  		"title": "SM.MS",
+  		"icon": require('./assets/img/icons/smms.svg')
+	}, {
+  		"url": "https://www.z4a.net",
+  		"title": "Z4A图床",
+  		"icon": require('./assets/img/icons/z4a.svg')
+	}, {
       "url": "https://wallpaperhub.app",
       "title": "WallpaperHub | Free wallpapers for your PC, phone and tablet",
       "icon": require('./assets/img/icons/wallpaperhub.svg')
@@ -2081,22 +2030,6 @@ var photos_items = [
   		"title": "Novapattern",
   		"icon": require('./assets/img/icons/novapattern.svg')
 	}, {
-  		"url": "https://www.z4a.net",
-  		"title": "Z4A图床",
-  		"icon": require('./assets/img/icons/z4a.svg')
-	}, {
-  		"url": "https://sm.ms",
-  		"title": "SM.MS",
-  		"icon": require('./assets/img/icons/smms.svg')
-	}, {
-  		"url": "https://imgur.com",
-  		"title": "imgur",
-  		"icon": require('./assets/img/icons/imgur.svg')
-	}, {
-  		"url": "https://www.flickr.com",
-  		"title": "Flickr",
-  		"icon": require('./assets/img/icons/flickr.svg')
-	}, {
   		"url": "http://pngimg.com",
   		"title": "PNG images with transparent background",
   		"icon": require('./assets/img/icons/pngimg.svg')
@@ -2109,10 +2042,6 @@ var photos_items = [
   		"title": "HD/4K/5K Resolution Wallpapers/Backgrounds",
   		"icon": require('./assets/img/icons/wallroom.svg')
 	}, {
-  		"url": "https://himawari8.nict.go.jp",
-  		"title": "向日葵-8号",
-  		"icon": require('./assets/img/icons/himawari8.svg')
-	}, {
   		"url": "https://wall.alphacoders.com",
   		"title": "Wallpaper Abyss - HD Wallpapers, Background Images",
   		"icon": require('./assets/img/icons/wallalphacoders.svg')
@@ -2124,6 +2053,10 @@ var photos_items = [
   		"url": "https://best-wallpaper.net",
   		"title": "Best Wallpaper | Free and Best High Quality 2K 4K 5K 8K HD UHD Desktop Wallpapers & iPhone 11 Pro XS Max XR 8 7 6 Plus Wallpapers.",
   		"icon": require('./assets/img/icons/best-wallpaper.svg')
+	}, {
+  		"url": "https://himawari8.nict.go.jp",
+  		"title": "向日葵-8号",
+  		"icon": require('./assets/img/icons/himawari8.svg')
 	}
 ];
 
@@ -2190,10 +2123,6 @@ var blog_items = [
   		"title": "Synthesist in the Shell",
   		"icon": require('./assets/img/icons/linghao.svg')
   }, {
-  		"url": "https://draveness.me",
-  		"title": "面向信仰编程",
-  		"icon": require('./assets/img/icons/draveness.svg')
-  }, {
   		"url": "https://linmi.cc",
   		"title": "Linmi - 探索未知，迭代新知，沉淀认知。",
   		"icon": require('./assets/img/icons/linmi.svg')
@@ -2201,34 +2130,33 @@ var blog_items = [
 
 ];
 
-  //  console.log(Store.fetch_site().length)
+//  console.log(Store.fetch_site().length)
 export default {
 	data() {
 		return {
-      		editOrComplete: '编辑',
-            // test: 'test',
-      		searchEngine: Store.getCookie('se'),
+  		editOrComplete: '編輯',
+       // test: 'test',
+  		searchEngine: Store.getCookie('se'),
 			newSiteurl: '',
 			newSitetitle: '',
 			newSiteicon: '',
-      		newTodo: '',
+      newTodo: '',
 			canRemove: false,
 			hasAddPanel: false,
 			isSearch: false,
-	       // hasWeather: false,
-	       // test_sites: Store.fetch_test_site(),
+       // hasWeather: false,
+       // test_sites: Store.fetch_test_site(),
 			sites: Store.fetch_site(),
 			info_sites: info_items,
 			community_sites: community_items,
-			travel_literature_sites: travel_literature_items,
-			documentary_sites: documentary_items,
+			documentary_travel_sites: documentary_travel_items,
 			coding_sites: coding_items,
+      course_sites: course_items,
 			design_sites: design_items,
-			translate_sites: translate_items,
-			book_sites: book_items,
-			publishing_sites: publishing_items,
+			publishing_book_sites: publishing_book_items,
+      academic_sites: academic_items,
 			tool_sites: tool_items,
-			photos_sites: photos_items,
+			pictures_sites: pictures_items,
 			blog_sites: blog_items,
 			todos: Store.fetch_todo()
 		}
@@ -2245,67 +2173,67 @@ export default {
 				Store.save_site(sites)
 			},
 			deep: true
-		},
-	    info_sites: {
-	        handler: function(info_sites) {
-	        	Store.fetch_nostore_site(info_sites)
-	        },
-	        deep: true
-	    },
-	    community_sites: {
-	        handler: function(community_sites) {
-	        	Store.fetch_nostore_site(community_sites)
-	        },
-	        deep: true
-	    },
-	    coding_sites: {
-	        handler: function(coding_sites) {
-	        	Store.fetch_nostore_site(coding_sites)
-	        },
-	        deep: true
-	    },
-	    design_sites: {
-	        handler: function(design_sites) {
-	        	Store.fetch_nostore_site(design_sites)
-	        },
-	        deep: true
-	    },
-	    translate_sites:{
-	        handler: function(translate_sites) {
-	        	Store.fetch_nostore_site(translate_sites)
-	        },
-	        deep: true
-	    },
-	    book_sites:{
-	        handler: function(book_sites) {
-	        	Store.fetch_nostore_site(book_sites)
-	        },
-	        deep: true
-	    },
-	    tool_sites:{
-	        handler: function(tool_sites) {
-	        	Store.fetch_nostore_site(tool_sites)
-	        },
-	        deep: true
-	    },
-	    photos_sites:{
-	        handler: function(photos_sites) {
-	            Store.fetch_nostore_site(photos_sites)
-	        },
-	        deep: true
-	    },
-	    blog_sites:{
+	  },
+    info_sites: {
+      handler: function(info_sites) {
+      	Store.fetch_nostore_site(info_sites)
+      },
+      deep: true
+    },
+    community_sites: {
+      handler: function(community_sites) {
+      	Store.fetch_nostore_site(community_sites)
+      },
+      deep: true
+    },
+    coding_sites: {
+      handler: function(coding_sites) {
+      	Store.fetch_nostore_site(coding_sites)
+      },
+      deep: true
+    },
+    design_sites: {
+      handler: function(design_sites) {
+      	Store.fetch_nostore_site(design_sites)
+      },
+      deep: true
+    },
+    translate_sites:{
+      handler: function(translate_sites) {
+      	Store.fetch_nostore_site(translate_sites)
+      },
+      deep: true
+    },
+    book_sites:{
+      handler: function(book_sites) {
+      	Store.fetch_nostore_site(book_sites)
+      },
+      deep: true
+    },
+    tool_sites:{
+      handler: function(tool_sites) {
+      	Store.fetch_nostore_site(tool_sites)
+      },
+      deep: true
+    },
+    photos_sites:{
+      handler: function(photos_sites) {
+          Store.fetch_nostore_site(photos_sites)
+      },
+      deep: true
+    },
+    blog_sites:{
 			handler: function(blog_sites) {
 				Store.fetch_nostore_site(blog_sites)
 			},
-	        deep: true
-	    },
-	    todos: {
+      deep: true
+    },
+    todos: {
 			handler: function (todos) {
 				Store.save_todo(todos)
 			},
-	    	deep: true
-	    }
+    	deep: true
+    }
 	},
 	methods: {
 		showAddpanel: function(){
@@ -2326,8 +2254,8 @@ export default {
 		},
 		editSites: function() {
 			this.canRemove = !this.canRemove;
-		    if(this.canRemove == true) this.editOrComplete = '完成';
-		    if(this.canRemove == false) this.editOrComplete = '编辑';
+	    if(this.canRemove == true) this.editOrComplete = '完成';
+	    if(this.canRemove == false) this.editOrComplete = '編輯';
 		},
 	  addTodo: function(){
 			this.todos.push({
@@ -2343,7 +2271,7 @@ export default {
 			message: 'Item deleted',
 			buttonText: 'undo',
 			onButtonClick: function(){
-					_this.todos.push({
+				_this.todos.push({
 						label: todo.label,
 						isFinished: todo.isFinished
 					})
