@@ -1155,6 +1155,14 @@ var community_items = [
   		"title": "Krita Artists - Krita community forum",
   		"icon": require('./assets/img/icons/krita-artists.svg')
   }, {
+  		"url": "https://www.1point3acres.com",
+  		"title": "一亩三分地社区: 留学|申请|求职|移民|生活 - 高信噪比 + 纯干货",
+  		"icon": require('./assets/img/icons/1point3acres.svg')
+  }, {
+  		"url": "https://1o24bbs.com",
+  		"title": "1024 BBS",
+  		"icon": require('./assets/img/icons/1o24bbs.svg')
+  }, {
   		"url": "https://labs.xda-developers.com",
   		"title": "XDA Labs",
   		"icon": require('./assets/img/icons/xdalabs.svg')
