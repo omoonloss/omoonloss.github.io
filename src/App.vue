@@ -1191,6 +1191,10 @@ var community_items = [
   		"title": "牛客网",
   		"icon": require('./assets/img/icons/nowcoder.svg')
 	}, {
+  		"url": "http://www.cskaoyan.com/forum.php",
+  		"title": "王道论坛",
+  		"icon": require('./assets/img/icons/cskaoyan.svg')
+	}, {
   		"url": "https://segmentfault.com",
   		"title": "SegmentFault",
   		"icon": require('./assets/img/icons/segmentfault.svg')
@@ -1341,6 +1345,18 @@ var coding_items = [
 // Course
 var course_items = [
 	{
+  		"url": "https://www.udemy.com",
+  		"title": "Udemy | 在线课程 - 时间自由，学您想学",
+  		"icon": require('./assets/img/icons/udemy.svg')
+	}, {
+  		"url": "https://www.coursera.org",
+  		"title": "Coursera | Build Skills with Online Courses from Top Institutions",
+  		"icon": require('./assets/img/icons/coursera.svg')
+	}, {
+  		"url": "https://www.educative.io",
+  		"title": "Educative: Interactive Courses for Software Developers",
+  		"icon": require('./assets/img/icons/educative.svg')
+	}, {
   		"url": "https://www.imooc.com",
   		"title": "慕课网",
   		"icon": require('./assets/img/icons/imooc.svg')
@@ -1989,6 +2005,10 @@ var tool_items = [
   		"url": "https://openmoji.org",
   		"title": "OpenMoji",
   		"icon": require('./assets/img/icons/openmoji.svg')
+	}, {
+  		"url": "https://www.qsc.zju.edu.cn/box",
+  		"title": "求是潮云U盘",
+  		"icon": require('./assets/img/icons/qsc.svg')
 	}
 
 ];
