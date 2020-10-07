@@ -1030,10 +1030,46 @@ var info_items = [
   		"title": "經濟日報",
   		"icon": require('./assets/img/icons/money-udn.svg')
 	}, {
-  		"url": "https://www.geekpark.net",
-  		"title": "极客公园",
-  		"icon": require('./assets/img/icons/geekpark.svg')
+  		"url": "https://www.theverge.com",
+  		"title": "The Verge",
+  		"icon": require('./assets/img/icons/theverge.svg')
 	}, {
+      "url": "https://techcrunch.com",
+      "title": "TechCrunch – Startup and Technology News",
+      "icon": require('./assets/img/icons/techcrunch.svg')
+  }, {
+      "url": "https://www.wired.com",
+      "title": "WIRED",
+      "icon": require('./assets/img/icons/wired.svg')
+  }, {
+      "url": "https://arstechnica.com",
+      "title": "Ars Technica",
+      "icon": require('./assets/img/icons/arstechnica.svg')
+  }, {
+      "url": "https://www.technologyreview.com",
+      "title": "MIT Technology Review",
+      "icon": require('./assets/img/icons/technologyreview.svg')
+  }, {
+      "url": "https://www.macrumors.com",
+      "title": "MacRumors: Apple Mac iPhone Rumors and News",
+      "icon": require('./assets/img/icons/macrumors.svg')
+  }, {
+      "url": "https://slashdot.org",
+      "title": "Slashdot: News for nerds, stuff that matters",
+      "icon": require('./assets/img/icons/slashdot.svg')
+  }, {
+      "url": "https://mashable.com",
+      "title": "Mashable",
+      "icon": require('./assets/img/icons/mashable.svg')
+  }, {
+      "url": "https://www.fastcompany.com",
+      "title": "Fast Company | The future of business",
+      "icon": require('./assets/img/icons/fastcompany.svg')
+  }, {
+      "url": "https://www.geekpark.net",
+      "title": "极客公园",
+      "icon": require('./assets/img/icons/geekpark.svg')
+  }, {
   		"url": "https://wanqu.co",
   		"title": "湾区日报",
   		"icon": require('./assets/img/icons/wanqu.svg')
