@@ -1098,9 +1098,9 @@ var info_items = [
   		"title": "统计之都",
   		"icon": require('./assets/img/icons/cosx.svg')
 	}, {
-  		"url": "https://digitalimmigrant.org",
+  		"url": "https://blog.shuziyimin.org",
   		"title": "数字移民",
-  		"icon": require('./assets/img/icons/digitalimmigrant.svg')
+  		"icon": require('./assets/img/icons/shuziyimin.svg')
 	}, {
   		"url": "https://kenengba.com",
   		"title": "可能吧",
