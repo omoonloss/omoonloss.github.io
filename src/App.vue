@@ -1014,6 +1014,10 @@ var info_items = [
   		"title": "Foxnews",
   		"icon": require('./assets/img/icons/foxnews.svg')
 	}, {
+  		"url": "https://theinitium.com",
+  		"title": "端傳媒 Initium Media",
+  		"icon": require('./assets/img/icons/theinitium.svg')
+	}, {
   		"url": "https://hk.appledaily.com",
   		"title": "蘋果日報",
   		"icon": require('./assets/img/icons/appledaily.svg')
@@ -1303,6 +1307,10 @@ var coding_items = [
       "title": "Deepnote - Data science notebook for teams",
       "icon": require('./assets/img/icons/deepnote.svg')
   }, {
+			"url": "https://wandbox.org",
+			"title": "[Wandbox]三へ( へ՞ਊ ՞)へ ﾊｯﾊｯ",
+			"icon": require('./assets/img/icons/wandbox.svg')
+	}, {
   		"url": "https://www.tutorialspoint.com/execute_bash_online.php",
   		"title": "Bash Online",
   		"icon": require('./assets/img/icons/bash-online.svg')
