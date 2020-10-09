@@ -2122,10 +2122,14 @@ var pictures_items = [
   		"title": "HD/4K/5K Resolution Wallpapers/Backgrounds",
   		"icon": require('./assets/img/icons/wallroom.svg')
 	}, {
-  		"url": "https://wall.alphacoders.com",
-  		"title": "Wallpaper Abyss - HD Wallpapers, Background Images",
-  		"icon": require('./assets/img/icons/wallalphacoders.svg')
+  		"url": "https://wallhaven.cc",
+  		"title": "Awesome Wallpapers - wallhaven.cc",
+  		"icon": require('./assets/img/icons/wallhaven.svg')
 	}, {
+      "url": "https://wall.alphacoders.com",
+      "title": "Wallpaper Abyss - HD Wallpapers, Background Images",
+      "icon": require('./assets/img/icons/wallalphacoders.svg')
+  }, {
   		"url": "https://www.freepik.com",
   		"title": "Freepik | Graphic Resources for everyone",
   		"icon": require('./assets/img/icons/freepik.svg')
