@@ -1066,6 +1066,14 @@ var info_items = [
       "title": "Fast Company | The future of business",
       "icon": require('./assets/img/icons/fastcompany.svg')
   }, {
+      "url": "https://9to5google.com",
+      "title": "9to5Google - Google news, Pixel, Android, Home, Chrome OS, more",
+      "icon": require('./assets/img/icons/9to5google.svg')
+  }, {
+      "url": "https://9to5mac.com",
+      "title": "9to5Mac - Apple News & Mac Rumors Breaking All Day",
+      "icon": require('./assets/img/icons/9to5mac.svg')
+  }, {
       "url": "https://www.geekpark.net",
       "title": "极客公园",
       "icon": require('./assets/img/icons/geekpark.svg')
