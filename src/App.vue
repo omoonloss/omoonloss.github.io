@@ -815,7 +815,8 @@ if (!Store.getCookie('visited')) {
 		    "title": "搜狗微信",
 		    "icon": require('./assets/img/icons/weixin-sogou.svg')
 		}, {
-		    "url": "https://www.britishcouncil.org",
+        // 英语听力学习 BritishCouncil，一个来自于英国文化协会成立的免费英语听力学习网站，网站提供了相应的文字稿。它是个完全免费的网站，你可以在线收听或观看影片，配合网站提供的习题进行学习。
+		    "url": "https://learnenglish.britishcouncil.org/skills/listening",
 		    "title": "British Council",
 		    "icon": require('./assets/img/icons/britishcouncil.svg')
 		}, {
@@ -827,10 +828,14 @@ if (!Store.getCookie('visited')) {
 		    "title": "VoiceTube",
 		    "icon": require('./assets/img/icons/voicetube.svg')
 		}, {
-		    "url": "https://meirishici.com",
-		    "title": "每日诗词",
-		    "icon": require('./assets/img/icons/meirishici.svg')
+		    "url": "https://classicalpoets.org",
+		    "title": "Society of Classical Poets",
+		    "icon": require('./assets/img/icons/classicalpoets.svg')
 		}, {
+        "url": "https://meirishici.com",
+        "title": "每日诗词",
+        "icon": require('./assets/img/icons/meirishici.svg')
+    }, {
 		    "url": "https://www.gushiwen.org",
 		    "title": "古诗文网",
 		    "icon": require('./assets/img/icons/gushiwen.svg')
@@ -1154,6 +1159,10 @@ var info_items = [
   		"title": "iYouPort - IYP 不是过眼云烟的新闻网站，我们提供实战能力，这里是值得您反复回看的档案室",
   		"icon": require('./assets/img/icons/iyouport.svg')
 	}, {
+      "url": "https://sec-wiki.com",
+      "title": "SecWiki-安全维基,汇集国内外优秀安全资讯、工具和网站",
+      "icon": require('./assets/img/icons/sec-wiki.svg')
+  }, {
   		"url": "https://itsfoss.com",
   		"title": "It's FOSS",
   		"icon": require('./assets/img/icons/itsfoss.svg')
@@ -1575,6 +1584,7 @@ var publishing_book_items = [
   		"title": "书伴",
   		"icon": require('./assets/img/icons/bookfere.svg')
 	}, {
+      // Project Gutenberg 古腾堡免费电子书 已超过60000本
   		"url": "https://www.gutenberg.org",
   		"title": "古登堡计划",
   		"icon": require('./assets/img/icons/gutenberg.svg')
@@ -1620,6 +1630,11 @@ var publishing_book_items = [
   		"title": "Online Library and Publication Platform | OAPEN", 
   		"icon": require('./assets/img/icons/oapen.svg')
 	}, {
+      // 一个日本的书籍和图像等资源整合查询浏览网站
+      "url": "https://cultural.jp/en",
+      "title": "Cultural Japan (カルチュラル・ジャパン)", 
+      "icon": require('./assets/img/icons/cultural.svg')
+  }, {
   		"url": "https://ebook.huzerui.com",
   		"title": "熊猫搜书",
   		"icon": require('./assets/img/icons/panda-search.svg')
@@ -1736,6 +1751,11 @@ var academic_items = [
   		"title": "Sci-Hub: removing barriers in the way of science",
   		"icon": require('./assets/img/icons/sci-hub.svg')
 	}, {
+      // 输入想找的paper或者作者，直接会生成一张graph关联图，可以找到和这篇文章有关的大部分文章！
+      "url": "https://www.connectedpapers.com",
+      "title": "Connected Papers | Find and explore academic papers",
+      "icon": require('./assets/img/icons/connectedpapers.svg')
+  }, {
   		"url": "https://lunwen.im",
   		"title": "喵咪论文",
   		"icon": require('./assets/img/icons/lunwen.svg')
@@ -1900,8 +1920,9 @@ var tool_items = [
   		"title": "Paper Sizes",
   		"icon": require('./assets/img/icons/papersizes.svg')
 	}, {
-  		"url": "https://opencc.byvoid.com",
-  		"title": "開放中文轉換",
+  		// Conversion between Traditional and Simplified Chinese
+      "url": "https://opencc.byvoid.com",
+      "title": "開放中文轉換 Open Chinese Convert (OpenCC)",
   		"icon": require('./assets/img/icons/occ.svg')
 	}, {
   		"url": "https://online.easyscreenocr.com",
@@ -2065,7 +2086,35 @@ var tool_items = [
   		"url": "https://www.qsc.zju.edu.cn/box",
   		"title": "求是潮云U盘",
   		"icon": require('./assets/img/icons/qsc.svg')
-	}
+	}, {
+      "url": "https://www.biliob.com",
+      "title": "BiliOB观测者 - B站历史数据统计分析站点 - 哔哩哔哩数据查询",
+      "icon": require('./assets/img/icons/biliob.svg')
+  }, {
+      // 实时查看全球气象
+      "url": "https://earth.nullschool.net",
+      "title": "earth :: a global map of wind, weather, and ocean conditions",
+      "icon": require('./assets/img/icons/default.svg')
+  }, {
+      "url": "https://countrycode.org",
+      "title": "Country Codes, Phone Codes, Dialing Codes, Telephone Codes, ISO Country Codes",
+      "icon": require('./assets/img/icons/countrycode.svg')
+  }, {
+      // 日语熟练程度检查-互联网打字练习
+      "url": "https://www.e-typing.ne.jp/roma/check/",
+      "title": "腕试しレベルチェック - インターネットでタイピング练习 イータイピング | e-typing ローマ字タイピング",
+      "icon": require('./assets/img/icons/e-typing.svg')
+  }, {
+      // 《说文解字》 是一个致力于中国语言学和文字学中全文检索平台，用户可以根据拼音、部首、构件来查询想要了解的文字，《说文解字》的书名，许慎这样解释：「仓颉之初作书也，盖依类象形，故谓之文。其后形声相益，即谓之字。文者，物象之本;字者，言孳乳而浸多也。」 搜索引擎说文解字
+      "url": "http://www.shuowen.org",
+      "title": "「说文解字」在线查询 Shuowen.org - 篆书字典 - 「说文解字注」在线查询",
+      "icon": require('./assets/img/icons/shuowen.svg')
+  }, {
+      // 声音搜索引擎
+      "url": "https://www.tosound.com",
+      "title": "淘声网 - toSound声音搜索引擎 - 免费音效素材资源|视频游戏配乐下载",
+      "icon": require('./assets/img/icons/tosound.svg')
+  }
 
 ];
 
@@ -2106,6 +2155,11 @@ var pictures_items = [
   		"title": "500px",
   		"icon": require('./assets/img/icons/500.svg')
 	}, {
+      // 免费高质量图库 Skitterphoto，所有图片都是摄影师亲自拍摄上传的，可自由使用
+      "url": "https://skitterphoto.com",
+      "title": "Skitterphoto: a place to find, show and share public domain images.",
+      "icon": require('./assets/img/icons/skitterphoto.svg')
+  }, {
   		"url": "https://bing.ioliu.cn",
   		"title": "必应壁纸",
   		"icon": require('./assets/img/icons/bing.svg')
@@ -2215,9 +2269,21 @@ var blog_items = [
   		"title": "Synthesist in the Shell",
   		"icon": require('./assets/img/icons/linghao.svg')
   }, {
-  		"url": "https://linmi.cc",
-  		"title": "Linmi - 探索未知，迭代新知，沉淀认知。",
-  		"icon": require('./assets/img/icons/linmi.svg')
+  		"url": "https://haohailong.net",
+  		"title": "郝海龙",
+  		"icon": require('./assets/img/icons/haohailong.svg')
+  }, {
+      "url": "https://linmi.cc",
+      "title": "Linmi - 探索未知，迭代新知，沉淀认知。",
+      "icon": require('./assets/img/icons/linmi.svg')
+  }, {
+      "url": "https://nojimikiko.jp/en",
+      "title": "MIKIKO NOJI",
+      "icon": require('./assets/img/icons/default.svg')
+  }, {
+      "url": "https://hiwannz.com",
+      "title": "见字如面 - 抽离自我，冷眼旁观",
+      "icon": require('./assets/img/icons/hiwannz.svg')
   }
 
 ];
