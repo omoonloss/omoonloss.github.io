@@ -2114,6 +2114,11 @@ var tool_items = [
       "url": "https://www.tosound.com",
       "title": "淘声网 - toSound声音搜索引擎 - 免费音效素材资源|视频游戏配乐下载",
       "icon": require('./assets/img/icons/tosound.svg')
+  }, {
+      // 丁香园用药助手_药品说明书
+      "url": "https://drugs.dxy.cn/index.htm",
+      "title": "用药助手",
+      "icon": require('./assets/img/icons/drugs-dxy.svg')
   }
 
 ];
@@ -2203,7 +2208,12 @@ var pictures_items = [
   		"url": "https://himawari8.nict.go.jp",
   		"title": "向日葵-8号",
   		"icon": require('./assets/img/icons/himawari8.svg')
-	}
+	}, {
+      // 免费可商用的高清视频素材网站 Mixkit 视频质量高，类型包含商业科技、动画、大自然、户外和交通工具等等。将鼠标放在缩略图上就可以预览视频的效果，也可以选择全屏展示或直接点击右下角进行下载。网站除了视频素材，还有Pr模板，Jazz、Hip-Hop等风格的音乐素材提供，无论商业或非商业用途皆可自由使用
+      "url": "https://mixkit.co",
+      "title": "Mixkit - Awesome free assets for your next video project",
+      "icon": require('./assets/img/icons/mixkit.svg')
+  }
 ];
 
 // Blog
