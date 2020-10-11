@@ -2294,6 +2294,10 @@ var blog_items = [
       "url": "https://hiwannz.com",
       "title": "见字如面 - 抽离自我，冷眼旁观",
       "icon": require('./assets/img/icons/hiwannz.svg')
+  }, {
+      "url": "https://codechina.org",
+      "title": "Tinyfool的个人网站",
+      "icon": require('./assets/img/icons/codechina.svg')
   }
 
 ];
