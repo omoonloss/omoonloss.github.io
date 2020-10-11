@@ -2197,6 +2197,10 @@ var pictures_items = [
       "title": "Wallpaper Abyss - HD Wallpapers, Background Images",
       "icon": require('./assets/img/icons/wallalphacoders.svg')
   }, {
+      "url": "http://getwallpapers.com",
+      "title": "Get the Best HD Wallpapers and Background pictures",
+      "icon": require('./assets/img/icons/getwallpapers.svg')
+  }, {
   		"url": "https://www.freepik.com",
   		"title": "Freepik | Graphic Resources for everyone",
   		"icon": require('./assets/img/icons/freepik.svg')
