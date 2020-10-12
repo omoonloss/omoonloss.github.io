@@ -1406,10 +1406,14 @@ var coding_items = [
 // Course
 var course_items = [
 	{
-  		"url": "https://www.udemy.com",
-  		"title": "Udemy | 在线课程 - 时间自由，学您想学",
-  		"icon": require('./assets/img/icons/udemy.svg')
+  		"url": "https://openlearning.mit.edu",
+  		"title": "MIT Open Learning brings Online Learning to MIT and the world",
+  		"icon": require('./assets/img/icons/mit.svg')
 	}, {
+      "url": "https://www.udemy.com",
+      "title": "Udemy | 在线课程 - 时间自由，学您想学",
+      "icon": require('./assets/img/icons/udemy.svg')
+  }, {
   		"url": "https://www.coursera.org",
   		"title": "Coursera | Build Skills with Online Courses from Top Institutions",
   		"icon": require('./assets/img/icons/coursera.svg')
