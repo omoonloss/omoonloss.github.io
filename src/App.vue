@@ -820,6 +820,11 @@ if (!Store.getCookie('visited')) {
 		    "title": "British Council",
 		    "icon": require('./assets/img/icons/britishcouncil.svg')
 		}, {
+			  // 英语听力 口语练习网站Breaking News English，网站里都是近日的新闻，新闻难易程度被划分了等级，可以挑选适合自己水平的新闻进行阅读，另外同一则新闻也划分了级别，阅读程度从易到难。新闻看完后会有对应的练习题，可以从Listen / Read / Spell / Words等方面对文章进行学习。在听新闻时可以选择语速。
+		    "url": "https://breakingnewsenglish.com",
+		    "title": "Breaking News English Lessons: Easy English World News Materials - ESL",
+		    "icon": require('./assets/img/icons/breakingnewsenglish.svg')
+		}, {
 		    "url": "https://www.tianfateng.cn",
 		    "title": "田间小站",
 		    "icon": require('./assets/img/icons/default.svg')
@@ -922,6 +927,10 @@ if (!Store.getCookie('visited')) {
   			"title": "Linggle 10^12- Language Reference Search Engines - NLPLab",
   			"icon": require('./assets/img/icons/linggle.svg')
   	}, {
+		    "url": "https://youglish.com",
+		    "title": "YouGlish | Improve your English pronunciation using YouTube",
+		    "icon": require('./assets/img/icons/youglish.svg')
+		}, {
 		    "url": "https://www.latexstudio.net",
 		    "title": "LaTeX工作室",
 		    "icon": require('./assets/img/icons/latexstudio.svg')
@@ -1166,6 +1175,10 @@ var info_items = [
   		"url": "https://itsfoss.com",
   		"title": "It's FOSS",
   		"icon": require('./assets/img/icons/itsfoss.svg')
+	}, {
+  		"url": "https://fedoramagazine.org",
+  		"title": "Fedora Magazine - Guides, information, and news about the Fedora operating system for users, developers, system administrators, and community members.",
+  		"icon": require('./assets/img/icons/fedoramagazine.svg')
 	}, {
   		"url": "https://sspai.com",
   		"title": "少数派",
@@ -1755,6 +1768,11 @@ var academic_items = [
   		"title": "Sci-Hub: removing barriers in the way of science",
   		"icon": require('./assets/img/icons/sci-hub.svg')
 	}, {
+		  // 免费科技 文献论文 网站，涵盖了计算机科学，材料，工程等方面超过200多部免费书籍和8000多免费专业论文的网站。
+  		"url": "https://www.intechopen.com",
+  		"title": "IntechOpen - Open Science Open Minds | IntechOpen",
+  		"icon": require('./assets/img/icons/intechopen.svg')
+	}, {
       // 输入想找的paper或者作者，直接会生成一张graph关联图，可以找到和这篇文章有关的大部分文章！
       "url": "https://www.connectedpapers.com",
       "title": "Connected Papers | Find and explore academic papers",
@@ -1800,6 +1818,10 @@ var tool_items = [
   		"title": "Songwhip | Music links to every platform | Free",
   		"icon": require('./assets/img/icons/songwhip.svg')
 	}, {
+  		"url": "https://www.desmos.com",
+  		"title": "Desmos | 免费领略数学之美",
+  		"icon": require('./assets/img/icons/desmos.svg')
+	}, {
   		"url": "https://codefence.io",
   		"title": "codefence - an easily embeddable interactive code editor",
   		"icon": require('./assets/img/icons/codefence.svg')
@@ -1824,9 +1846,17 @@ var tool_items = [
   		"title": "Online image converter",
   		"icon": require('./assets/img/icons/online-converter.svg')
 	}, {
+  		"url": "https://vectr.com",
+  		"title": "Vectr - Free Online Vector Graphics Editor",
+  		"icon": require('./assets/img/icons/vectr.svg')
+	}, {
   		"url": "https://codebeautify.org",
   		"title": "Free Online Tools For Developers - to Beautify, Validate, Minify, Analyse, Convert JSON, XML, JavaScript, CSS, HTML, Excel",
   		"icon": require('./assets/img/icons/codebeautify.svg')
+	}, {
+  		"url": "https://www.uuidgenerator.net",
+  		"title": "Online UUID Generator Tool",
+  		"icon": require('./assets/img/icons/uuidgenerator.svg')
 	}, {
   		"url": "https://www.favicon.cc",
   		"title": "favicon Generator",
@@ -1968,6 +1998,10 @@ var tool_items = [
   		"url": "https://www.findyoutube.net",
   		"title": "FindYoutube",
   		"icon": require('./assets/img/icons/findyoutube.svg')
+	}, {
+  		"url": "https://youtubecut.com",
+  		"title": "Download and Cut Youtube Video Online",
+  		"icon": require('./assets/img/icons/youtubecut.svg')
 	}, {
   		"url": "https://dbdiagram.io/home",
   		"title": "dbdiagram",
@@ -2168,6 +2202,11 @@ var pictures_items = [
   		"title": "500px",
   		"icon": require('./assets/img/icons/500.svg')
 	}, {
+		  // 是一个由AI智能分类的无版权图片 分享网站，为了获得更好的搜索结果，该网站中的每张照片都是手动命名，并且该团队还开发了一个智能AI神经网络来对每张招聘进行美学评分，只有评分最高的图片才会在搜索中展示。
+  		"url": "https://www.pickpik.com",
+  		"title": "PickPik - Beautiful Royalty-Free Photos Sorted By AI",
+  		"icon": require('./assets/img/icons/pickpik.svg')
+	}, {
       // 免费高质量图库 Skitterphoto，所有图片都是摄影师亲自拍摄上传的，可自由使用
       "url": "https://skitterphoto.com",
       "title": "Skitterphoto: a place to find, show and share public domain images.",
@@ -2239,6 +2278,14 @@ var blog_items = [
   		"title": "Spoon Graphics",
   		"icon": require('./assets/img/icons/spoongraphics.svg')
 	}, {
+      "url": "https://www.voxelmade.com",
+      "title": "Voxelmade",
+      "icon": require('./assets/img/icons/voxelmade.svg')
+  }, {
+      "url": "http://www.ex-machina.fr/index.php",
+      "title": "ExMachina | Gears and craft | Site personnel de Thibault Simar, graphiste 2D/3D",
+      "icon": require('./assets/img/icons/ex-machina.svg')
+  }, {
   		"url": "http://www.ruanyifeng.com/blog",
   		"title": "阮一峰的网络日志",
   		"icon": require('./assets/img/icons/ruanyifeng.svg')
