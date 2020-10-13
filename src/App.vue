@@ -1796,6 +1796,10 @@ var tool_items = [
   		"title": "Online OCR",
   		"icon": require('./assets/img/icons/onlineocr.svg')
 	}, {
+  		"url": "https://songwhip.com",
+  		"title": "Songwhip | Music links to every platform | Free",
+  		"icon": require('./assets/img/icons/songwhip.svg')
+	}, {
   		"url": "https://codefence.io",
   		"title": "codefence - an easily embeddable interactive code editor",
   		"icon": require('./assets/img/icons/codefence.svg')
