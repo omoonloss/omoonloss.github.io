@@ -1926,6 +1926,10 @@ var tool_items = [
   		"title": "Audio Rip",
   		"icon": require('./assets/img/icons/audio-rip.svg')
 	}, {
+  		"url": "https://mixtapemanager.ca",
+  		"title": "Mixtape Manager",
+  		"icon": require('./assets/img/icons/mixtapemanager.svg')
+	}, {
   		"url": "https://www.remove.bg",
   		"title": "Remove Background from Image",
   		"icon": require('./assets/img/icons/remove-bg.svg')
