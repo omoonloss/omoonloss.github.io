@@ -1001,6 +1001,11 @@ var info_items = [
 	    "title": "Nuxt HN",
 	    "icon": require('./assets/img/icons/nuxt-hn.svg')
 	}, {
+			// 关于科技，商业，金钱，地缘政治和中美关系的双语出版物。每个星期四和星期日都有新帖子。
+  		"url": "https://interconnected.blog",
+  		"title": "Interconnected | Analyzing Businesses and Trends From the Lens of Builders, Operators, Investors, Regulators, and How They Are Connected",
+  		"icon": require('./assets/img/icons/interconnected.svg')
+	}, {
 			// 四大领域及内容：
 			// - Morning Brew：晨酿，可以理解为早报；涉及（美）国内外政治新闻、股市经济、教育、运动、生活等多方面内容
 			// - Emering Tech Brew：科技新闻；涉及科技企业、IPO 上市、人工智能、数码电子等内容
