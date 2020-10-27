@@ -1544,6 +1544,10 @@ var design_items = [
       "title": "Artstation",
       "icon": require('./assets/img/icons/artstation.svg')
   }, {
+      "url": "https://www.pixiv.net",
+      "title": "Pixiv",
+      "icon": require('./assets/img/icons/pixiv.svg')
+  }, {
       "url": "https://www.ui.cn",
       "title": "UI中国",
       "icon": require('./assets/img/icons/ui-cn.svg')
