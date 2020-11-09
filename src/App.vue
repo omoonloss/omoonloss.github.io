@@ -998,6 +998,7 @@ if (!Store.getCookie('visited')) {
 // News & Information
 var info_items = [
   {
+  		// 偏技术与创业，由著名孵化器 YC 发起，用户可以自发投稿和 upvote，可以看到热门的技术资讯、开源项目、商业投资文章等。
       "url": "https://news.ycombinator.com",
       "title": "Hacker News",
       "icon": require('./assets/img/icons/hacker-news.svg')
@@ -1007,9 +1008,16 @@ var info_items = [
       "icon": require('./assets/img/icons/nuxt-hn.svg')
   }, {
       // 关于科技，商业，金钱，地缘政治和中美关系的双语出版物。每个星期四和星期日都有新帖子。
+			// 互联是一个电子周刊，从分析创建者（企业家，工程师）、运营者（企业经理）、投资者（资本家）和监管者（政客和政府官员）的角度和「维纳图」，以及他们之间的相互联系，来分析各个行业和思考宏观趋势。
+			// 其主理人曾经做过一家电商和医疗保险公司的创始人，美国白宫和奥巴马总统竞选团队的工作人员，跨国企业科技公司的高管和顾问，以及风险投资。详细介绍可转 https://interconnected.blog/about/# 处查看。
       "url": "https://interconnected.blog",
       "title": "Interconnected | Analyzing Businesses and Trends From the Lens of Builders, Operators, Investors, Regulators, and How They Are Connected",
       "icon": require('./assets/img/icons/interconnected.svg')
+  }, {
+  	 // 最有名的独立创投分析评论博主 Ben Thompson，除了每天更新一些简短的资讯评论，付费后可以完整查看他每周一篇的深度文章，有自己一套的分析体系。
+      "url": "https://stratechery.com",
+      "title": "Stratechery by Ben Thompson – On the business, strategy, and impact of technology.",
+      "icon": require('./assets/img/icons/stratechery.svg')
   }, {
       // 四大领域及内容：
       // - Morning Brew：晨酿，可以理解为早报；涉及（美）国内外政治新闻、股市经济、教育、运动、生活等多方面内容
@@ -1174,6 +1182,7 @@ var info_items = [
       "title": "数字移民",
       "icon": require('./assets/img/icons/shuziyimin.svg')
   }, {
+  		// 「可能吧」建立于 2007 年 4 月，经历了中国博客潮流最辉煌的时光，获得了中外数个博客奖项，包括德国之声的 2010 年的「最佳中文博客奖」。2010 年 3 月 23 日可能吧被和谐，至今仍需科学访问。关注「有用有趣的互联网趋势」，不管这个趋势是中国还是中国以外的。
       "url": "https://kenengba.com",
       "title": "可能吧",
       "icon": require('./assets/img/icons/kenengba.svg')
@@ -2436,6 +2445,10 @@ var blog_items = [
       "url": "https://codechina.org",
       "title": "Tinyfool的个人网站",
       "icon": require('./assets/img/icons/codechina.svg')
+  }, {
+      "url": "https://www.runningcheese.com",
+      "title": "奔跑中的奶酪",
+      "icon": require('./assets/img/icons/runningcheese.svg')
   }
 
 ];
