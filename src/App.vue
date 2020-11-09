@@ -830,9 +830,9 @@ if (!Store.getCookie('visited')) {
         "title": "NewsinLevels",
         "icon": require('./assets/img/icons/newsinlevels.svg')
     }, {
-        "url": "https://www.tianfateng.cn",
+        "url": "https://www.tjxz.cc",
         "title": "田间小站",
-        "icon": require('./assets/img/icons/default.svg')
+        "icon": require('./assets/img/icons/tjxz.svg')
     }, {
         "url": "https://tw.voicetube.com",
         "title": "VoiceTube",
