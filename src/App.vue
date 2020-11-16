@@ -2204,10 +2204,6 @@ var tool_items = [
       "title": "求是潮云U盘",
       "icon": require('./assets/img/icons/qsc.svg')
   }, {
-      "url": "https://www.biliob.com",
-      "title": "BiliOB观测者 - B站历史数据统计分析站点 - 哔哩哔哩数据查询",
-      "icon": require('./assets/img/icons/biliob.svg')
-  }, {
       // 实时查看全球气象
       "url": "https://earth.nullschool.net",
       "title": "earth :: a global map of wind, weather, and ocean conditions",
