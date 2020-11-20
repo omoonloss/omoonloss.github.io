@@ -763,6 +763,10 @@ if (!Store.getCookie('visited')) {
         "title": "Youtube",
         "icon": require('./assets/img/icons/youtube.svg')
     }, {
+        "url": "https://music.youtube.com",
+        "title": "YouTube Music",
+        "icon": require('./assets/img/icons/youtubemusic.svg')
+    }, {
         "url": "https://www.ted.com",
         "title": "TED",
         "icon": require('./assets/img/icons/ted.svg')
