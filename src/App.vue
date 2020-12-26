@@ -2070,14 +2070,6 @@ var tool_items = [
       "title": "ChannelsHunt",
       "icon": require('./assets/img/icons/channelshunt.svg')
   }, {
-      "url": "https://www.findyoutube.net",
-      "title": "FindYoutube",
-      "icon": require('./assets/img/icons/findyoutube.svg')
-  }, {
-      "url": "https://youtubecut.com",
-      "title": "Download and Cut Youtube Video Online",
-      "icon": require('./assets/img/icons/youtubecut.svg')
-  }, {
       "url": "https://dbdiagram.io/home",
       "title": "dbdiagram",
       "icon": require('./assets/img/icons/dbdiagram.svg')
