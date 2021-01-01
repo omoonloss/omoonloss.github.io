@@ -871,6 +871,7 @@ if (!Store.getCookie('visited')) {
         "title": "法隆寺金堂壁画ガラス原板 デジタルビューア｜Glass Photographic Plates of the Murals in the Kondō Hall of Hōryūji Temple―Digital Viewer―",
         "icon": require('./assets/img/icons/horyuji-kondohekiga.svg')
     }, {
+        // 将在互联网上以多语种格式免费提供世界各地的重要材料,包括手稿、地图、珍本书籍、乐谱、录音、电影、印刷品、照片、建筑图等等
         "url": "https://www.wdl.org/zh",
         "title": "世界数字图书馆主页",
         "icon": require('./assets/img/icons/wdl.svg')
@@ -1659,6 +1660,7 @@ var publishing_book_items = [
       "title": "广西壮族自治区图书馆 | 电子资源平台",
       "icon": require('./assets/img/icons/default.svg')
   }, {
+      // 可能是最好用的古籍资料下载网站
       "url": "https://new.shuge.org",
       "title": "书格",
       "icon": require('./assets/img/icons/shuge.svg')
@@ -1667,9 +1669,10 @@ var publishing_book_items = [
       "title": "书伴",
       "icon": require('./assets/img/icons/bookfere.svg')
   }, {
-      // Project Gutenberg 古腾堡免费电子书 已超过60000本
+      // Project Gutenberg (古登堡计划) 古腾堡免费电子书 已超过60000本
+      // 同英文网站，资 源储备惊人！别看是英文的，选择书籍语言，可以看到很多中文书籍（大多是繁体，你懂我意思吧。）
       "url": "https://www.gutenberg.org",
-      "title": "古登堡计划",
+      "title": "Gutenberg",
       "icon": require('./assets/img/icons/gutenberg.svg')
   }, {
       "url": "https://www.planetebook.com",
@@ -1684,9 +1687,20 @@ var publishing_book_items = [
       "title": "ePUBee 书库",
       "icon": require('./assets/img/icons/epubee.svg')
   }, {
+      // 快搜电子书搜索，有多个资源站点可选择
+      "url": "https://ebook.chongbuluo.com",
+      "title": "电子书搜索",
+      "icon": require('./assets/img/icons/book-chongbuluo.svg')
+  }, {
+      // 除了资源多，鸠摩还贴心地按照不同的格式对书籍进行了分类
       "url": "https://www.jiumodiary.com",
       "title": "鸠摩搜索",
       "icon": require('./assets/img/icons/jiumodiary.svg')
+  }, {
+      // 这是一个下载到国外教材的电子书网站
+      "url": "https://cnx.org/browse",
+      "title": "OpenStax CNX Library",
+      "icon": require('./assets/img/icons/cnx.svg')
   }, {
       "url": "https://lib.yufan.me",
       "title": "观海阁",
@@ -1701,9 +1715,10 @@ var publishing_book_items = [
       "icon": require('./assets/img/icons/letmeread.svg')
   }, {
       "url": "https://b-ok.xyz",
-      "title": "Electronic library",  // mirror: https://b-ok.cc
+      "title": "Electronic library",  // mirror: https://b-ok.cc, https://b-ok.org
       "icon": require('./assets/img/icons/b-ok.svg')
   }, {
+      // 超有名的俄罗斯网站，真的有超多书籍！教科书在这里甚至能直接找到原版！中文书籍也超丰富的啊！
       "url": "http://gen.lib.rus.ec",
       "title": "Library Genesis", // Libgen
       "icon": require('./assets/img/icons/libgen.svg')
@@ -1717,6 +1732,11 @@ var publishing_book_items = [
       "url": "https://cultural.jp/en",
       "title": "Cultural Japan (カルチュラル・ジャパン)", 
       "icon": require('./assets/img/icons/cultural.svg')
+  }, {
+      // 外刊下载！巨强！全站免费，更新即时，全高清PDF！
+      "url": "https://magazinelib.com",
+      "title": "Magzinelib",
+      "icon": require('./assets/img/icons/magzinelib.svg')
   }, {
       "url": "https://ebook.huzerui.com",
       "title": "熊猫搜书",
@@ -1804,8 +1824,9 @@ var publishing_book_items = [
       "title": "计算机书籍控",
       "icon": require('./assets/img/icons/bestcbooks.svg')
   }, {
+      // 繁体字的界面，一个推广中文电子书的公益网站，建站于2001年。
       "url": "http://www.haodoo.net",
-      "title": "好读",
+      "title": "好讀",
       "icon": require('./assets/img/icons/haodoo.svg')
   }, {
       "url": "http://audiobookbay.nl",
