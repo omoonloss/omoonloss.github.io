@@ -1035,6 +1035,14 @@ var info_items = [
       "title": "Morning Brew",
       "icon": require('./assets/img/icons/morningbrew.svg')
   }, {
+      "url": "https://www.vox.com",
+      "title": "Vox - Understand the News",
+      "icon": require('./assets/img/icons/vox.svg')
+  }, {
+      "url": "https://www.nytimes.com",
+      "title": "The New York Times - Breaking News, World News & Multimedia",
+      "icon": require('./assets/img/icons/nytimes.svg')
+  }, {
       "url": "https://digg.com",
       "title": "Digg",
       "icon": require('./assets/img/icons/digg.svg')
@@ -1786,7 +1794,7 @@ var publishing_book_items = [
       "title": "PDF Drive - Search and download PDF files for free.",
       "icon": require('./assets/img/icons/pdfdrive.svg')
   }, {
-    // 在线免费阅读和下载电子书
+    	// 在线免费阅读和下载电子书
       "url": "https://www.classicly.com",
       "title": "Read free books online in PDF, Kindle & ePub",
       "icon": require('./assets/img/icons/default.svg')
@@ -1799,30 +1807,14 @@ var publishing_book_items = [
       "title": "恩京的书房",
       "icon": require('./assets/img/icons/enjing.svg')
   }, {
-      "url": "https://www.kgbook.com",
-      "title": "苦瓜书盘",
-      "icon": require('./assets/img/icons/default.svg')
-  }, {
       "url": "https://yabook.org",
       "title": "雅书 - PDF电子书学习下载站",
       "icon": require('./assets/img/icons/yabook.svg')
-  }, {
-      "url": "https://hdpdf.blog",
-      "title": "高清PDF电子书分享 – 万卷PDF扫描版电子书免费下载",
-      "icon": require('./assets/img/icons/hdpdf.svg')
-  }, {
-      "url": "https://ebook.ipfs-lab.com",
-      "title": "Ebook",
-      "icon": require('./assets/img/icons/ebook.svg')
   }, {
       // 一个收录各种优质程序书籍的网站，还在不断丰富中…… 
       "url": "https://www.best-books.dev",
       "title": "The best Programming books",
       "icon": require('./assets/img/icons/best-books.svg')
-  }, {
-      "url": "http://bestcbooks.com",
-      "title": "计算机书籍控",
-      "icon": require('./assets/img/icons/bestcbooks.svg')
   }, {
       // 繁体字的界面，一个推广中文电子书的公益网站，建站于2001年。
       "url": "http://www.haodoo.net",
@@ -2378,10 +2370,6 @@ var blog_items = [
       "url": "https://blog.spoongraphics.co.uk",
       "title": "Spoon Graphics",
       "icon": require('./assets/img/icons/spoongraphics.svg')
-  }, {
-      "url": "https://www.voxelmade.com",
-      "title": "Voxelmade",
-      "icon": require('./assets/img/icons/voxelmade.svg')
   }, {
       "url": "http://www.ex-machina.fr/index.php",
       "title": "ExMachina | Gears and craft | Site personnel de Thibault Simar, graphiste 2D/3D",
