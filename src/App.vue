@@ -747,6 +747,10 @@ if (!Store.getCookie('visited')) {
         "title": "Stack Overflow",
         "icon": require('./assets/img/icons/stackoverflow.svg')
     }, {
+        "url": "https://tex.stackexchange.com",
+        "title": "TeX - LaTeX Stack Exchange",
+        "icon": require('./assets/img/icons/texstackexchange.svg')
+    }, {
         "url": "https://quora.com",
         "title": "Quora",
         "icon": require('./assets/img/icons/quora.svg')
@@ -1798,6 +1802,10 @@ var publishing_book_items = [
       "url": "https://www.classicly.com",
       "title": "Read free books online in PDF, Kindle & ePub",
       "icon": require('./assets/img/icons/default.svg')
+  }, {
+      "url": "https://52doc.com",
+      "title": "我爱电子书",
+      "icon": require('./assets/img/icons/52doc.svg')
   }, {
       "url": "https://duzhege.cn",
       "title": "读者阁",
