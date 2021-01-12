@@ -850,6 +850,10 @@ if (!Store.getCookie('visited')) {
         "title": "Society of Classical Poets",
         "icon": require('./assets/img/icons/classicalpoets.svg')
     }, {
+        "url": "https://www.shicimingju.com",
+        "title": "诗词名句网 -古诗词大全|诗歌|诗词鉴赏|古诗名句|诗句赏析！",
+        "icon": require('./assets/img/icons/shicimingju.svg')
+    }, {
         "url": "https://meirishici.com",
         "title": "每日诗词",
         "icon": require('./assets/img/icons/meirishici.svg')
@@ -866,11 +870,15 @@ if (!Store.getCookie('visited')) {
         "title": "故宮Open Data專區",
         "icon": require('./assets/img/icons/npm-opendata.svg')
     }, {
+        "url": "https://www.npm.gov.tw",
+        "title": "国立故宫博物院",
+        "icon": require('./assets/img/icons/npm.svg')
+    }, {
         "url": "https://www.dpm.org.cn",
         "title": "故宫博物院",
         "icon": require('./assets/img/icons/dpm.svg')
     }, {
-      // 日本法隆寺金堂壁画数字网站，设计直观简洁，展示了20世纪初大火烧掉的7世纪壁画的高清图像。敦煌之外的唐代寺观壁画十分稀少，这里算是其中最重要的一批作品
+        // 日本法隆寺金堂壁画数字网站，设计直观简洁，展示了20世纪初大火烧掉的7世纪壁画的高清图像。敦煌之外的唐代寺观壁画十分稀少，这里算是其中最重要的一批作品
         "url": "https://view.horyuji-kondohekiga.jp",
         "title": "法隆寺金堂壁画ガラス原板 デジタルビューア｜Glass Photographic Plates of the Murals in the Kondō Hall of Hōryūji Temple―Digital Viewer―",
         "icon": require('./assets/img/icons/horyuji-kondohekiga.svg')
