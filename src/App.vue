@@ -1722,10 +1722,6 @@ var publishing_book_items = [
       "title": "OpenStax CNX Library",
       "icon": require('./assets/img/icons/cnx.svg')
   }, {
-      "url": "https://lib.yufan.me",
-      "title": "观海阁",
-      "icon": require('./assets/img/icons/libyufan.svg')
-  }, {
       "url": "https://booksc.org", 
       "title": "BookSC",  
       "icon": require('./assets/img/icons/booksc.svg')
@@ -2466,6 +2462,10 @@ var blog_items = [
       "url": "https://www.runningcheese.com",
       "title": "奔跑中的奶酪",
       "icon": require('./assets/img/icons/runningcheese.svg')
+  }, {
+      "url": "https://yufan.me",
+      "title": "且听书吟 - 诗与梦想的远方",
+      "icon": require('./assets/img/icons/yufan.svg')
   }
 
 ];
