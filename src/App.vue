@@ -787,6 +787,10 @@ if (!Store.getCookie('visited')) {
         "title": "场库",
         "icon": require('./assets/img/icons/vmovier.svg')
     }, {
+        "url": "https://www.goodreads.com",
+        "title": "Goodreads | Meet your next favorite book",
+        "icon": require('./assets/img/icons/goodreads.svg')
+    }, {
         "url": "https://www.douban.com",
         "title": "豆瓣",
         "icon": require('./assets/img/icons/douban.svg')
