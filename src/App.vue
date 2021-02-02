@@ -1664,6 +1664,10 @@ var publishing_book_items = [
       "title": "No Starch Press | The finest in geek entertainment",
       "icon": require('./assets/img/icons/nostarch.svg')
   }, {
+      "url": "https://readmoo.com",
+      "title": "Readmoo读墨电子书 ─ 台湾最大繁体中文EPUB电子书服务",
+      "icon": require('./assets/img/icons/readmoo.svg')
+  }, {
       "url": "https://www.ituring.com.cn",
       "title": "图灵社区",
       "icon": require('./assets/img/icons/ituring.svg')
