@@ -1738,8 +1738,8 @@ var publishing_book_items = [
       "title": "Let Me Read » Best Books to Read in a Lifetime",  
       "icon": require('./assets/img/icons/letmeread.svg')
   }, {
-      "url": "https://b-ok.xyz",
-      "title": "Electronic library",  // mirror: https://b-ok.cc, https://b-ok.org
+      "url": "https://b-ok.cc",
+      "title": "Electronic library", // https://z-lib.org
       "icon": require('./assets/img/icons/b-ok.svg')
   }, {
       // 超有名的俄罗斯网站，真的有超多书籍！教科书在这里甚至能直接找到原版！中文书籍也超丰富的啊！
