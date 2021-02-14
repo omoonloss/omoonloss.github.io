@@ -842,6 +842,11 @@ if (!Store.getCookie('visited')) {
         "title": "NewsinLevels",
         "icon": require('./assets/img/icons/newsinlevels.svg')
     }, {
+    	  // 话题特别多，与雅思阅难度相当
+        "url": "https://www.sciencedaily.com",
+        "title": "ScienceDaily",
+        "icon": require('./assets/img/icons/sciencedaily.svg')
+    }, {
         "url": "https://www.tjxz.cc",
         "title": "田间小站",
         "icon": require('./assets/img/icons/tjxz.svg')
@@ -1946,6 +1951,11 @@ var tool_items = [
       "title": "Unicode 字符百科",
       "icon": require('./assets/img/icons/unicode.svg')
   }, {
+  	   // 字体包 ttc 格式转 ttf 工具
+      "url": "https://transfonter.org/ttc-unpack",
+      "title": "Transfonter — Convert TTC or DFONT to TTF online",
+      "icon": require('./assets/img/icons/transfonter.svg')
+  }, {
       "url": "https://image.online-convert.com",
       "title": "Online image converter",
       "icon": require('./assets/img/icons/online-converter.svg')
@@ -2298,10 +2308,15 @@ var pictures_items = [
       "title": "WallpaperHub | Free wallpapers for your PC, phone and tablet",
       "icon": require('./assets/img/icons/wallpaperhub.svg')
   }, {
-      // 收集古典艺术品影像资料的网站，支持免费下载使用。
+      // 这个网站可以下载一些高品质艺术品图片，汇集了大都会博物馆 、耶鲁大学美术馆、盖蒂博物馆、波士顿公共图书馆、维也纳博物馆等知名机构发布的藏品图片，点击即可直接下载，速度一般，不过查找起来方便快捷
       "url": "https://artvee.com",
       "title": "Artvee",
       "icon": require('./assets/img/icons/artvee.svg')
+  }, {
+  	  // 复古插图 分享网站，可以下载站长搜集的各类公共版权书籍/报刊中的美丽插图，但有些链接也是会转到购买印刷品的页面上，那些图直接右键另存到本地即可，图片质量是一样的
+      "url": "https://freevintageillustrations.com",
+      "title": "Free Vintage Illustrations | Free full-color vintage illustrations in the public domain! Curated from postcards, books, ads, and more antique media from the 19th to early 20th-century.",
+      "icon": require('./assets/img/icons/freevintageillustrations.svg')
   }, {
       "url": "https://unsplash.com",
       "title": "Unsplash",
@@ -2364,6 +2379,11 @@ var pictures_items = [
       "url": "https://www.freepik.com",
       "title": "Freepik | Graphic Resources for everyone",
       "icon": require('./assets/img/icons/freepik.svg')
+  }, {
+  		// 免费的公共版权矢量图形下载网站，6万多笔素材 ，标签丰富，点击绿色的 download 直接下载
+      "url": "https://publicdomainvectors.org",
+      "title": "Royalty-free vector clip art, svg files and graphics | Public domain vectors",
+      "icon": require('./assets/img/icons/publicdomainvectors.svg')
   }, {
       "url": "https://best-wallpaper.net",
       "title": "Best Wallpaper | Free and Best High Quality 2K 4K 5K 8K HD UHD Desktop Wallpapers & iPhone 11 Pro XS Max XR 8 7 6 Plus Wallpapers.",
