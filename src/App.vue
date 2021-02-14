@@ -1669,6 +1669,10 @@ var publishing_book_items = [
       "title": "No Starch Press | The finest in geek entertainment",
       "icon": require('./assets/img/icons/nostarch.svg')
   }, {
+      "url": "https://mitpress.mit.edu",
+      "title": "The MIT Press",
+      "icon": require('./assets/img/icons/mitpress.svg')
+  }, {
       "url": "https://readmoo.com",
       "title": "Readmoo读墨电子书 ─ 台湾最大繁体中文EPUB电子书服务",
       "icon": require('./assets/img/icons/readmoo.svg')
@@ -1730,8 +1734,8 @@ var publishing_book_items = [
       "title": "鸠摩搜索",
       "icon": require('./assets/img/icons/jiumodiary.svg')
   }, {
-      // 这是一个下载到国外教材的电子书网站
-      "url": "https://cnx.org/browse",
+      // 这个站点可以找到一些国外的教材，可按分类查找，每本书都有介绍和目录。也不用注册，直接就能免费下载。
+      "url": "https://cnx.org",
       "title": "OpenStax CNX Library",
       "icon": require('./assets/img/icons/cnx.svg')
   }, {
@@ -1743,8 +1747,9 @@ var publishing_book_items = [
       "title": "Let Me Read » Best Books to Read in a Lifetime",  
       "icon": require('./assets/img/icons/letmeread.svg')
   }, {
+			// https://z-lib.org 
       "url": "https://b-ok.cc",
-      "title": "Electronic library", // https://z-lib.org
+      "title": "Electronic library", // https://b-ok.asia
       "icon": require('./assets/img/icons/b-ok.svg')
   }, {
       // 超有名的俄罗斯网站，真的有超多书籍！教科书在这里甚至能直接找到原版！中文书籍也超丰富的啊！
@@ -1783,7 +1788,13 @@ var publishing_book_items = [
       "title": "SaltTiger | 每天一本编程书，每天进步一点点",
       "icon": require('./assets/img/icons/salttiger.svg')
   }, {
-      "url": "https://ctext.org",
+  		// IT类英文电子书 下载，分享的书籍出版日期较新，可自助搜索，近年来在 IT 基础上增加了很多其他学科。
+      "url": "http://www.itebookshare.com",
+      "title": "ITeBookShare | IT eBook Share – Free IT eBook Download.PDF,CHM,ePub,djvu",
+      "icon": require('./assets/img/icons/default.svg')
+  }, {
+  		// 这个网站收藏的文本已超过三万部著作，并有五十亿字之多，可免费浏览，为历代中文文献资料库最大者。
+      "url": "https://ctext.org/zhs",
       "title": "中国哲学书籍电子化计划",
       "icon": require('./assets/img/icons/default.svg')
   }, {
@@ -2280,6 +2291,10 @@ var tool_items = [
       "url": "https://origamisimulator.org",
       "title": "Origami Simulator",
       "icon": require('./assets/img/icons/origamisimulator.svg')
+  }, {
+      "url": "https://xiezuocat.com",
+      "title": "秘塔写作猫",
+      "icon": require('./assets/img/icons/xiezuocat.svg')
   }
 
 ];
@@ -2397,6 +2412,11 @@ var pictures_items = [
       "url": "https://mixkit.co",
       "title": "Mixkit - Awesome free assets for your next video project",
       "icon": require('./assets/img/icons/mixkit.svg')
+  }, {
+      // 徕卡旗下网站 既有全球顶级摄影作品展示，又可在线浏览徕卡旗下的摄影杂志。比较小众，作品质量非常高
+      "url": "https://beta.1x.com",
+      "title": "1x. Photographers that make you feel.",
+      "icon": require('./assets/img/icons/default.svg')
   }
 ];
 
