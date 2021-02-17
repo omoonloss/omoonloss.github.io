@@ -897,6 +897,11 @@ if (!Store.getCookie('visited')) {
         "title": "世界数字图书馆主页",
         "icon": require('./assets/img/icons/wdl.svg')
     }, {
+        // Discover amazing new music and directly support the artists who make it.
+        "url": "https://bandcamp.com",
+        "title": "Bandcamp",
+        "icon": require('./assets/img/icons/bandcamp.svg')
+    }, {
         "url": "https://luooqi.com",
         "title": "鱼声音乐",
         "icon": require('./assets/img/icons/luooqi.svg')
@@ -1103,6 +1108,10 @@ var info_items = [
       "url": "https://www.theverge.com",
       "title": "The Verge",
       "icon": require('./assets/img/icons/theverge.svg')
+  }, {
+      "url": "https://tw.live",
+      "title": "TW live",
+      "icon": require('./assets/img/icons/tw-live.svg')
   }, {
       "url": "https://techcrunch.com",
       "title": "TechCrunch – Startup and Technology News",
@@ -1706,6 +1715,11 @@ var publishing_book_items = [
       "title": "书伴",
       "icon": require('./assets/img/icons/bookfere.svg')
   }, {
+      // worldmiao.two | 世界喵兔 | ebook search engine
+      "url": "https://www.worldmiao.com",
+      "title": "worldmiao.two",
+      "icon": require('./assets/img/icons/worldmiao.svg')
+  }, {
       // Project Gutenberg (古登堡计划) 古腾堡免费电子书 已超过60000本
       // 同英文网站，资 源储备惊人！别看是英文的，选择书籍语言，可以看到很多中文书籍（大多是繁体，你懂我意思吧。）
       "url": "https://www.gutenberg.org",
@@ -1802,6 +1816,10 @@ var publishing_book_items = [
       "title": "古籍馆-中国最大的古籍图书馆",
       "icon": require('./assets/img/icons/gujiguan.svg')
   }, {
+      "url": "https://sou-yun.cn/eBookIndex.aspx",
+      "title": "影印古籍资料",
+      "icon": require('./assets/img/icons/sou-yun.svg')
+  }, {
       "url": "https://www.neohytung.com",
       "title": "瀚堂近代报刊数据库",
       "icon": require('./assets/img/icons/neohytung.svg')
@@ -1843,6 +1861,10 @@ var publishing_book_items = [
       "title": "恩京的书房",
       "icon": require('./assets/img/icons/enjing.svg')
   }, {
+      "url": "https://sobooks.cc",
+      "title": "SoBooks - 一起分享阅读的乐趣~",
+      "icon": require('./assets/img/icons/sobooks.svg')
+  }, {
       "url": "https://yabook.org",
       "title": "雅书 - PDF电子书学习下载站",
       "icon": require('./assets/img/icons/yabook.svg')
@@ -1856,6 +1878,10 @@ var publishing_book_items = [
       "url": "http://www.haodoo.net",
       "title": "好讀",
       "icon": require('./assets/img/icons/haodoo.svg')
+  }, {
+      "url": "https://www.e-booksdirectory.com",
+      "title": "E-Books Directory - Categorized Links to Free Books",
+      "icon": require('./assets/img/icons/e-booksdirectory.svg')
   }, {
       "url": "http://audiobookbay.nl",
       "title": "AudioBookBay",
@@ -2087,6 +2113,11 @@ var tool_items = [
       "title": "Paper Sizes",
       "icon": require('./assets/img/icons/papersizes.svg')
   }, {
+      // 一个纸盒制作网站，各种形状的都有
+      "url": "https://www.templatemaker.nl",
+      "title": "Templatemaker",
+      "icon": require('./assets/img/icons/templatemaker.svg')
+  }, {
       // Conversion between Traditional and Simplified Chinese
       "url": "https://opencc.byvoid.com",
       "title": "開放中文轉換 Open Chinese Convert (OpenCC)",
@@ -2203,6 +2234,10 @@ var tool_items = [
       "url": "https://www.nslookup.io",
       "title": "Online nslookup — Find DNS records",
       "icon": require('./assets/img/icons/nslookup.svg')
+  }, {
+      "url": "https://iknowwhatyoudownload.com",
+      "title": "I Know What You Download",
+      "icon": require('./assets/img/icons/iknowwhatyoudownload.svg')
   }, {
       "url": "https://www.domcomp.com",
       "title": "Domain Name Price and Availability",
@@ -2351,6 +2386,11 @@ var pictures_items = [
       "title": "Skitterphoto: a place to find, show and share public domain images.",
       "icon": require('./assets/img/icons/skitterphoto.svg')
   }, {
+      // 他们家的壁纸质量都蛮高的，每天自动换的壁纸经常有惊喜的感觉，windows 安卓上有客户端，可下载壁纸
+      "url": "https://backiee.com",
+      "title": "backiee - Free Ultra HD wallpaper platform",
+      "icon": require('./assets/img/icons/backiee.svg')
+  }, {
       "url": "https://bing.ioliu.cn",
       "title": "必应壁纸",
       "icon": require('./assets/img/icons/bing.svg')
@@ -2417,6 +2457,14 @@ var pictures_items = [
       "url": "https://beta.1x.com",
       "title": "1x. Photographers that make you feel.",
       "icon": require('./assets/img/icons/default.svg')
+  }, {
+      "url": "https://www.obzhi.com",
+      "title": "乌云高清壁纸站 | 每日分享美丽壁纸",
+      "icon": require('./assets/img/icons/obzhi.svg')
+  }, {
+      "url": "https://www.sigoo.com",
+      "title": "极像素-超高像素看世界",
+      "icon": require('./assets/img/icons/sigoo.svg')
   }
 ];
 
