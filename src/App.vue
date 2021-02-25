@@ -1476,6 +1476,10 @@ var coding_items = [
       "title": "Visualgo",
       "icon": require('./assets/img/icons/visualgo.svg')
   }, {
+      "url": "https://algorithm-visualizer.org",
+      "title": "Algorithm Visualizer",
+      "icon": require('./assets/img/icons/algorithm-visualizer.svg')
+  }, {
       "url": "https://leetcode.com",
       "title": "LeetCode",
       "icon": require('./assets/img/icons/leetcode.svg')
