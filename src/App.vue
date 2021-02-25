@@ -897,6 +897,10 @@ if (!Store.getCookie('visited')) {
         "title": "世界数字图书馆主页",
         "icon": require('./assets/img/icons/wdl.svg')
     }, {
+        "url": "https://podcasts.google.com",
+        "title": "Google 播客",
+        "icon": require('./assets/img/icons/googlepodcasts.svg')
+    }, {
         // Discover amazing new music and directly support the artists who make it.
         "url": "https://bandcamp.com",
         "title": "Bandcamp",
