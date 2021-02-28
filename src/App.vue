@@ -1781,8 +1781,8 @@ var publishing_book_items = [
       "icon": require('./assets/img/icons/letmeread.svg')
   }, {
 			// https://z-lib.org 
-      "url": "https://b-ok.cc",
-      "title": "Electronic library", // https://b-ok.asia
+      "url": "https://b-ok.asia",
+      "title": "Electronic library",
       "icon": require('./assets/img/icons/b-ok.svg')
   }, {
       // 超有名的俄罗斯网站，真的有超多书籍！教科书在这里甚至能直接找到原版！中文书籍也超丰富的啊！
