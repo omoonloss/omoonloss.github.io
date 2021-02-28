@@ -807,14 +807,21 @@ if (!Store.getCookie('visited')) {
         "title": "微博",
         "icon": require('./assets/img/icons/weibo.svg')
     }, {
-        "url": "https://wx.qq.com",
-        "title": "微信网页版",
-        "icon": require('./assets/img/icons/weixin.svg')
-    }, {
-        "url": "https://qzone.qq.com",
-        "title": "QZone",
-        "icon": require('./assets/img/icons/qzone.svg')
-    }, {
+        "url": "https://www.inoreader.com",
+        "title": "Inoreader",
+        "icon": require('./assets/img/icons/inoreader.svg')
+    }, 
+    // {
+    //     "url": "https://wx.qq.com",
+    //     "title": "微信网页版",
+    //     "icon": require('./assets/img/icons/weixin.svg')
+    // },
+    // {
+    //     "url": "https://qzone.qq.com",
+    //     "title": "QZone",
+    //     "icon": require('./assets/img/icons/qzone.svg')
+    // },
+      {
         "url": "https://zhihu.com",
         "title": "知乎",
         "icon": require('./assets/img/icons/zhihu.svg')
