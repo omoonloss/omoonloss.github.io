@@ -810,6 +810,10 @@ if (!Store.getCookie('visited')) {
         "url": "https://www.inoreader.com",
         "title": "Inoreader",
         "icon": require('./assets/img/icons/inoreader.svg')
+    }, {
+        "url": "https://www.instapaper.com",
+        "title": "Instapaper",
+        "icon": require('./assets/img/icons/instapaper.svg')
     }, 
     // {
     //     "url": "https://wx.qq.com",
