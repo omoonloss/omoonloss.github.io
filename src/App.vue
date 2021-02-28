@@ -978,6 +978,10 @@ if (!Store.getCookie('visited')) {
         "title": "Linggle 10^12- Language Reference Search Engines - NLPLab",
         "icon": require('./assets/img/icons/linggle.svg')
     }, {
+        "url": "https://forvo.com",
+        "title": "Forvo: the pronunciation dictionary. All the words in the world pronounced by native speakers",
+        "icon": require('./assets/img/icons/forvo.svg')
+    }, {
         "url": "https://youglish.com",
         "title": "YouGlish | Improve your English pronunciation using YouTube",
         "icon": require('./assets/img/icons/youglish.svg')
