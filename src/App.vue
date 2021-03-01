@@ -1785,7 +1785,7 @@ var publishing_book_items = [
       "icon": require('./assets/img/icons/letmeread.svg')
   }, {
 			// https://z-lib.org 
-      "url": "https://b-ok.asia",
+      "url": "https://b-ok.asia",  // https://zh.jp1lib.org  https://1lib.us   https://jp1lib.org
       "title": "Electronic library",
       "icon": require('./assets/img/icons/b-ok.svg')
   }, {
