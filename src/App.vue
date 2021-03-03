@@ -1738,7 +1738,7 @@ var publishing_book_items = [
       "title": "书伴",
       "icon": require('./assets/img/icons/bookfere.svg')
   }, {
-      // worldmiao.two | 世界喵兔 | ebook search engine
+      // 据说是北大学生做的，整合了Google Books、Library Genesis、Open Library、eBook Databases、Z Library、Memory of the World等常用书库，有这一个就够了。 
       "url": "https://www.worldmiao.com",
       "title": "worldmiao.two",
       "icon": require('./assets/img/icons/worldmiao.svg')
