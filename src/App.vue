@@ -707,6 +707,10 @@ if (!Store.getCookie('visited')) {
   if(Store.fetch_site().length == 0){
     Store.save_site([
     {
+        "url": "https://www.wolframalpha.com",
+        "title": "Wolfram|Alpha: Computational Intelligence",
+        "icon": require('./assets/img/icons/wolframalpha.svg')
+    }, {
         "url": "https://github.com",
         "title": "GitHub",
         "icon": require('./assets/img/icons/github.svg')
@@ -2079,10 +2083,6 @@ var tool_items = [
       "url": "https://cn.office-converter.com",
       "title": "Office-converter",
       "icon": require('./assets/img/icons/office-converter.svg')
-  }, {
-      "url": "https://www.wolframalpha.com",
-      "title": "WolframAlpha",
-      "icon": require('./assets/img/icons/wolframalpha.svg')
   }, {
       "url": "https://www.kuaidi100.com",
       "title": "快递100",
