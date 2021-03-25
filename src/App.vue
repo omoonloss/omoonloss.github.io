@@ -902,6 +902,12 @@ if (!Store.getCookie('visited')) {
         "title": "故宫博物院",
         "icon": require('./assets/img/icons/dpm.svg')
     }, {
+        // 荷兰阿姆斯特丹国家博物馆 70 万幅数字版本发布到公有领域。
+        // 荷兰阿姆斯特丹国家博物馆 发布了其艺术收藏品的 数字版本，数量超过 70 万幅，可供任何人自由使用。这些数字图像采用了 Creative Commons 1.0 Universal (CC0 1.0) Public Domain Dedication 许可证，即无需任何版税使用费。这批收藏品包含了 2000 多幅来自荷兰黄金时代著名画家的作品，包括 Jacob van Ruisdael、Frans Hals、Johannes Vermeer、Jan Steen、伦勃朗及其学生。
+        "url": "https://www.rijksmuseum.nl/en",
+        "title": "荷兰阿姆斯特丹国家博物馆",
+        "icon": require('./assets/img/icons/rijksmuseum.svg')
+    }, {
         // 日本法隆寺金堂壁画数字网站，设计直观简洁，展示了20世纪初大火烧掉的7世纪壁画的高清图像。敦煌之外的唐代寺观壁画十分稀少，这里算是其中最重要的一批作品
         "url": "https://view.horyuji-kondohekiga.jp",
         "title": "法隆寺金堂壁画ガラス原板 デジタルビューア｜Glass Photographic Plates of the Murals in the Kondō Hall of Hōryūji Temple―Digital Viewer―",
@@ -989,6 +995,11 @@ if (!Store.getCookie('visited')) {
         "url": "https://youglish.com",
         "title": "YouGlish | Improve your English pronunciation using YouTube",
         "icon": require('./assets/img/icons/youglish.svg')
+    }, {
+        // 英文写作知识库+高效练习网站，这个网站每天都发布新的文章来探讨英文写作相关的标点符号与文法使用，以及英文单字词汇拼写跟用法。网路使用普及的时代，不只用电子邮件非常频繁，能够写出清楚而正确的英文比以往任何时候都更加重要。无论你是上班族或学生，利用这个网站的文章解说，能够改善英文写作上的常犯错误，并且学习优异的英文书面表达能力
+        "url": "https://www.dailywritingtips.com",
+        "title": "Daily Writing Tips",
+        "icon": require('./assets/img/icons/dailywritingtips.svg')
     }, {
         "url": "https://www.latexstudio.net",
         "title": "LaTeX工作室",
@@ -1731,6 +1742,11 @@ var publishing_book_items = [
       "url": "http://wap.gxlib.org.cn/ermsClient/browse.do",
       "title": "广西壮族自治区图书馆 | 电子资源平台",
       "icon": require('./assets/img/icons/default.svg')
+  }, {
+      // 台湾一个社科书籍推荐网站
+      "url": "https://whogovernstw.org",
+      "title": "菜市场政治学",
+      "icon": require('./assets/img/icons/whogovernstw.svg')
   }, {
       // 可能是最好用的古籍资料下载网站
       "url": "https://new.shuge.org",
