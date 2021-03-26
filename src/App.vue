@@ -913,6 +913,10 @@ if (!Store.getCookie('visited')) {
         "title": "法隆寺金堂壁画ガラス原板 デジタルビューア｜Glass Photographic Plates of the Murals in the Kondō Hall of Hōryūji Temple―Digital Viewer―",
         "icon": require('./assets/img/icons/horyuji-kondohekiga.svg')
     }, {
+        "url": "https://omniatlas.com",
+        "title": "Omniatlas - Interactive Atlas of World History",
+        "icon": require('./assets/img/icons/omniatlas.svg')
+    }, {
         // 将在互联网上以多语种格式免费提供世界各地的重要材料,包括手稿、地图、珍本书籍、乐谱、录音、电影、印刷品、照片、建筑图等等
         "url": "https://www.wdl.org/zh",
         "title": "世界数字图书馆主页",
