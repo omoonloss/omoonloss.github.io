@@ -1299,6 +1299,10 @@ var info_items = [
       "title": "掘金",
       "icon": require('./assets/img/icons/juejin.svg')
   }, {
+      "url": "https://kotaku.com",
+      "title": "Kotaku | Gaming Reviews, News, Tips and More.",
+      "icon": require('./assets/img/icons/kotaku.svg')
+  }, {
       "url": "https://www.humblebundle.com",
       "title": "Humble Bundle",
       "icon": require('./assets/img/icons/humblebundle.svg')
