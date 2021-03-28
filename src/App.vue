@@ -1102,9 +1102,41 @@ var info_items = [
       "title": "Vox - Understand the News",
       "icon": require('./assets/img/icons/vox.svg')
   }, {
+      "url": "https://www.newyorker.com",
+      "title": "The New Yorker",
+      "icon": require('./assets/img/icons/newyorker.svg')
+  }, {
       "url": "https://www.nytimes.com",
       "title": "The New York Times - Breaking News, World News & Multimedia",
       "icon": require('./assets/img/icons/nytimes.svg')
+  }, {
+      "url": "https://www.ft.com",
+      "title": "Financial Times",
+      "icon": require('./assets/img/icons/ft.svg')
+  }, {
+      "url": "https://www.latimes.com",
+      "title": "Los Angeles Times - News from California, the nation and world",
+      "icon": require('./assets/img/icons/latimes.svg')
+  }, {
+      "url": "https://www.wsj.com",
+      "title": "The Wall Street Journal - Breaking News, Business, Financial & Economic News, World News and Video",
+      "icon": require('./assets/img/icons/wsj.svg')
+  }, {
+      "url": "https://www.washingtonpost.com",
+      "title": "The Washington Post: Breaking News, World, US, DC News and Analysis",
+      "icon": require('./assets/img/icons/washingtonpost.svg')
+  }, {
+      "url": "https://www.economist.com",
+      "title": "The Economist - World News, Politics, Economics, Business & Finance",
+      "icon": require('./assets/img/icons/economist.svg')
+  }, {
+      "url": "https://time.com",
+      "title": "TIME | Current & Breaking News | National & World Updates",
+      "icon": require('./assets/img/icons/time.svg')
+  }, {
+      "url": "https://www.scientificamerican.com",
+      "title": "Scientific American: Science News, Expert Analysis, Health Research - Scientific American",
+      "icon": require('./assets/img/icons/scientificamerican.svg')
   }, {
       "url": "https://digg.com",
       "title": "Digg",
@@ -1121,10 +1153,6 @@ var info_items = [
       "url": "https://www.foxnews.com",
       "title": "Foxnews",
       "icon": require('./assets/img/icons/foxnews.svg')
-  }, {
-      "url": "https://www.wsj.com",
-      "title": "The Wall Street Journal - Breaking News, Business, Financial & Economic News, World News and Video",
-      "icon": require('./assets/img/icons/wsj.svg')
   }, {
       "url": "https://theinitium.com",
       "title": "端傳媒 Initium Media",
@@ -1242,6 +1270,14 @@ var info_items = [
       "title": "電獺少女",
       "icon": require('./assets/img/icons/agirls.svg')
   }, {
+      "url": "https://www.engadget.com",
+      "title": "Engadget",
+      "icon": require('./assets/img/icons/engadget.svg')
+  }, {
+      "url": "https://chinese.engadget.com",
+      "title": "Engadget 中文版 - 消费性电子產品新闻和评测",
+      "icon": require('./assets/img/icons/chinese-engadget.svg')
+  }, {
       "url": "https://creatorsdaily.com",
       "title": "创造者日报 - 让灵感完美爆炸",
       "icon": require('./assets/img/icons/creatorsdaily.svg')
@@ -1302,6 +1338,10 @@ var info_items = [
       "url": "https://kotaku.com",
       "title": "Kotaku | Gaming Reviews, News, Tips and More.",
       "icon": require('./assets/img/icons/kotaku.svg')
+  }, {
+      "url": "https://www.polygon.com",
+      "title": "Polygon",
+      "icon": require('./assets/img/icons/polygon.svg')
   }, {
       "url": "https://www.humblebundle.com",
       "title": "Humble Bundle",
