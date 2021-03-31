@@ -1371,6 +1371,10 @@ var info_items = [
       "url": "https://rizime.substack.com",
       "title": "Λ-Reading Newsletter",
       "icon": require('./assets/img/icons/rizime.svg')
+  }, {
+      "url": "https://acacess.substack.com",
+      "title": "Sustainable Productivity",
+      "icon": require('./assets/img/icons/acacess.svg')
   }
 ];
 
