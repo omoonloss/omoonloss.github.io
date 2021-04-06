@@ -711,6 +711,10 @@ if (!Store.getCookie('visited')) {
         "title": "Wolfram|Alpha: Computational Intelligence",
         "icon": require('./assets/img/icons/wolframalpha.svg')
     }, {
+        "url": "https://libbyapp.com",
+        "title": "Libby",
+        "icon": require('./assets/img/icons/libby.svg')
+    }, {
         "url": "https://github.com",
         "title": "GitHub",
         "icon": require('./assets/img/icons/github.svg')
@@ -1037,6 +1041,10 @@ if (!Store.getCookie('visited')) {
         "url": "https://www.imdb.com",
         "title": "IMDb: Ratings, Reviews, and Where to Watch the Best Movies & TV Shows",
         "icon": require('./assets/img/icons/imdb.svg')
+    }, {
+        "url": "https://www.pressreader.com",
+        "title": "PressReader.com -透过新闻将世界连结",
+        "icon": require('./assets/img/icons/pressreader.svg')
     }
   ])
 }
@@ -1860,8 +1868,12 @@ var publishing_book_items = [
       "title": "Let Me Read » Best Books to Read in a Lifetime",  
       "icon": require('./assets/img/icons/letmeread.svg')
   }, {
-			// https://z-lib.org 
-      "url": "https://b-ok.asia",  // https://zh.jp1lib.org  https://1lib.us   https://jp1lib.org
+      // https://z-lib.org  https://1lib.us  https://zh.jp1lib.org  https://jp1lib.org  https://zh.1lib.org
+      // Z-Library 项目部分. 全球最大的数字图书馆
+      // 自2009年起的免费图书馆. 
+      // 免费下载epub、pdf、mobi格式电子书
+      // 支持转换为FB2、TXT、RTF等格式
+      "url": "https://b-ok.asia",
       "title": "Electronic library",
       "icon": require('./assets/img/icons/b-ok.svg')
   }, {
