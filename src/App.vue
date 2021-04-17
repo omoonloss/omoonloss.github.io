@@ -715,6 +715,10 @@ if (!Store.getCookie('visited')) {
         "title": "Libby",
         "icon": require('./assets/img/icons/libby.svg')
     }, {
+        "url": "https://www.goodreads.com",
+        "title": "Goodreads | Meet your next favorite book",
+        "icon": require('./assets/img/icons/goodreads.svg')
+    }, {
         "url": "https://github.com",
         "title": "GitHub",
         "icon": require('./assets/img/icons/github.svg')
@@ -794,10 +798,6 @@ if (!Store.getCookie('visited')) {
         "url": "https://www.vmovier.com",
         "title": "场库",
         "icon": require('./assets/img/icons/vmovier.svg')
-    }, {
-        "url": "https://www.goodreads.com",
-        "title": "Goodreads | Meet your next favorite book",
-        "icon": require('./assets/img/icons/goodreads.svg')
     }, {
         "url": "https://www.douban.com",
         "title": "豆瓣",
@@ -916,6 +916,11 @@ if (!Store.getCookie('visited')) {
         "url": "https://www.rijksmuseum.nl/en",
         "title": "荷兰阿姆斯特丹国家博物馆",
         "icon": require('./assets/img/icons/rijksmuseum.svg')
+    }, {
+        // 大都会艺术博物馆 (The Metropolitan Museum of Art) 位于美国纽约州纽约市曼哈顿中央公园旁，是世界上最大的、参观人数最多的艺术博物馆之一。
+        "url": "https://www.metmuseum.org",
+        "title": "大都会艺术博物馆",
+        "icon": require('./assets/img/icons/metmuseum.svg')
     }, {
         // 日本法隆寺金堂壁画数字网站，设计直观简洁，展示了20世纪初大火烧掉的7世纪壁画的高清图像。敦煌之外的唐代寺观壁画十分稀少，这里算是其中最重要的一批作品
         "url": "https://view.horyuji-kondohekiga.jp",
@@ -2681,6 +2686,10 @@ var blog_items = [
       "url": "https://yufan.me",
       "title": "且听书吟 - 诗与梦想的远方",
       "icon": require('./assets/img/icons/yufan.svg')
+  }, {
+      "url": "https://netflixtechblog.com",
+      "title": "Netflix TechBlog",
+      "icon": require('./assets/img/icons/netflixtechblog.svg')
   }
 
 ];
