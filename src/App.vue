@@ -1045,6 +1045,14 @@ if (!Store.getCookie('visited')) {
         "url": "https://www.pressreader.com",
         "title": "PressReader.com -透过新闻将世界连结",
         "icon": require('./assets/img/icons/pressreader.svg')
+    }, {
+        "url": "https://earth.google.com/web",
+        "title": "Google Earth",
+        "icon": require('./assets/img/icons/google-earth.svg')
+    }, {
+        "url": "https://earthengine.google.com/timelapse",
+        "title": "Google Earth Timelapse",
+        "icon": require('./assets/img/icons/google-earth-timelapse.svg')
     }
   ])
 }
@@ -2086,6 +2094,10 @@ var tool_items = [
       "url": "https://www.ankitube.com",
       "title": "Anki | 一键生成听力卡 音频听力 Youtube 油管牌组",
       "icon": require('./assets/img/icons/default.svg')
+  }, {
+      "url": "https://downsub.com",
+      "title": "DownSub - Download subtitles from Youtube, Viki, Viu, Vlive and more!",
+      "icon": require('./assets/img/icons/downsub.svg')
   }, {
       "url": "https://latexbase.com",
       "title": "LaTeX Base | Online LaTeX Editor and Compiler",
