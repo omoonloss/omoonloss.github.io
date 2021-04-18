@@ -1890,8 +1890,8 @@ var publishing_book_items = [
       "title": "Electronic library",
       "icon": require('./assets/img/icons/b-ok.svg')
   }, {
-      // 超有名的俄罗斯网站，真的有超多书籍！教科书在这里甚至能直接找到原版！中文书籍也超丰富的啊！
-      "url": "http://gen.lib.rus.ec",
+      // http://gen.lib.rus.ec 超有名的俄罗斯网站，真的有超多书籍！教科书在这里甚至能直接找到原版！中文书籍也超丰富的啊！
+      "url": "http://libgen.rs",
       "title": "Library Genesis", // Libgen
       "icon": require('./assets/img/icons/libgen.svg')
   }, {
