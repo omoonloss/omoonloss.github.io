@@ -898,6 +898,11 @@ if (!Store.getCookie('visited')) {
         "title": "故宮Open Data專區",
         "icon": require('./assets/img/icons/npm-opendata.svg')
     }, {
+        // 故宫博物院数字文物库，共收藏故宫珍藏文物68006件
+        "url": "https://digicol.dpm.org.cn",
+        "title": "故宫博物院数字文物库",
+        "icon": require('./assets/img/icons/dpm-digicol.svg')
+    }, {
     	  // 法国巴黎卢浮宫将其 48.2 万件收藏品数字化后 发布到网上，供任何人免费浏览。馆长 Jean-Luc Martinez 表示他们已经为此准备了好多年，其目的旨在服务于公众和研究人员，可访问性是其使命的核心。在线数据库不仅包括公开展示的收藏品，还包括保存的收藏。
         "url": "https://collections.louvre.fr/en/",
         "title": "Louvre site des collections",
@@ -2454,6 +2459,11 @@ var tool_items = [
       "url": "https://xiezuocat.com",
       "title": "秘塔写作猫",
       "icon": require('./assets/img/icons/xiezuocat.svg')
+  }, {
+      // 秒懂101個台灣人必知的垃圾
+      "url": "https://recycle.rethinktw.org",
+      "title": "回收大百科",
+      "icon": require('./assets/img/icons/recycle-rethinktw.svg')
   }
 
 ];
