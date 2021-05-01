@@ -1145,6 +1145,10 @@ var info_items = [
       "title": "Financial Times",
       "icon": require('./assets/img/icons/ft.svg')
   }, {
+      "url": "https://www.ftchinese.com",
+      "title": "FT中文网 － 全球财经精粹",
+      "icon": require('./assets/img/icons/ftchinese.svg')
+  }, {
       "url": "https://www.latimes.com",
       "title": "Los Angeles Times - News from California, the nation and world",
       "icon": require('./assets/img/icons/latimes.svg')
@@ -1192,6 +1196,10 @@ var info_items = [
       "url": "https://hk.appledaily.com",
       "title": "蘋果日報",
       "icon": require('./assets/img/icons/appledaily.svg')
+  }, {
+      "url": "https://www.rfi.fr/cn",
+      "title": "RFI 华语 - 法国国际广播电台",
+      "icon": require('./assets/img/icons/rfi.svg')
   }, {
       "url": "https://cn.nikkei.com",
       "title": "日经中文网--日本经济新闻中文版",
