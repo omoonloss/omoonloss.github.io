@@ -2422,10 +2422,6 @@ var tool_items = [
       "title": "OpenMoji",
       "icon": require('./assets/img/icons/openmoji.svg')
   }, {
-      "url": "https://www.qsc.zju.edu.cn/box",
-      "title": "求是潮云U盘",
-      "icon": require('./assets/img/icons/qsc.svg')
-  }, {
       // 实时查看全球气象
       "url": "https://earth.nullschool.net",
       "title": "earth :: a global map of wind, weather, and ocean conditions",
