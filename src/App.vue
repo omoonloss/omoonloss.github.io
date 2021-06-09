@@ -787,6 +787,10 @@ if (!Store.getCookie('visited')) {
         "title": "TED",
         "icon": require('./assets/img/icons/ted.svg')
     }, {
+        "url": "https://ideas.ted.com",
+        "title": "IDEAS.TED.COM | Explore ideas worth spreading",
+        "icon": require('./assets/img/icons/default.svg')
+    }, {
         "url": "https://www.yixi.tv",
         "title": "一席",
         "icon": require('./assets/img/icons/yixi.svg')
@@ -870,6 +874,11 @@ if (!Store.getCookie('visited')) {
         "title": "田间小站",
         "icon": require('./assets/img/icons/tjxz.svg')
     }, {
+        // 一个练听力的网站，内容丰富，可以直接下载
+        "url": "https://www.51voa.com",
+        "title": "美国之音-VOA听力下载,慢速英语,常速英语,VOA视频",
+        "icon": require('./assets/img/icons/51voa.svg')
+    }, {
         "url": "https://tw.voicetube.com",
         "title": "VoiceTube",
         "icon": require('./assets/img/icons/voicetube.svg')
@@ -893,6 +902,10 @@ if (!Store.getCookie('visited')) {
         "url": "https://www.jinrishici.com",
         "title": "今日诗词",
         "icon": require('./assets/img/icons/jinrishici.svg')
+    }, {
+        "url": "https://www.mingyantong.com",
+        "title": "名言通 | 美句佳句大全 伤感的句子 唯美的句子 优美的句子",
+        "icon": require('./assets/img/icons/mingyantong.svg')
     }, {
         "url": "https://theme.npm.edu.tw/opendata",
         "title": "故宮Open Data專區",
@@ -2069,6 +2082,11 @@ var academic_items = [
       "url": "http://www.koovin.com",
       "title": "库问搜索 - 打造免费开源文献资源共享平台",
       "icon": require('./assets/img/icons/koovin.svg')
+  }, {
+      // Seminar Live 是一个免费、开放的在线学术信息平台，在这里，你可以分享、追踪、保存、参与在线学术讲座以及过往的学术影音记录。如果从最基本的功能来说，你可以把Seminar Live当做一个每日线上学术活动指南来用
+      "url": "https://www.seminar-live.com",
+      "title": "Seminar Live",
+      "icon": require('./assets/img/icons/seminar-live.svg')
   }
 
 ];
@@ -2603,6 +2621,11 @@ var pictures_items = [
       "url": "https://www.sigoo.com",
       "title": "极像素-超高像素看世界",
       "icon": require('./assets/img/icons/sigoo.svg')
+  }, {
+      // 可以免费下载。 名画挺多，可以拿来作插画、配图、自用等等
+      "url": "https://www.nbfox.com",
+      "title": "麦田艺术 - 收尽世界名画，无水印高清油画免费下载",
+      "icon": require('./assets/img/icons/nbfox.svg')
   }
 ];
 
