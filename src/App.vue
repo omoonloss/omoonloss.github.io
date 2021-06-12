@@ -837,15 +837,17 @@ if (!Store.getCookie('visited')) {
     //     "title": "QZone",
     //     "icon": require('./assets/img/icons/qzone.svg')
     // },
+    // {
+    //     "url": "https://zhihu.com",
+    //     "title": "知乎",
+    //     "icon": require('./assets/img/icons/zhihu.svg')
+    // }, 
+    // {
+    //     "url": "https://coolapk.com",
+    //     "title": "酷安",
+    //     "icon": require('./assets/img/icons/coolapk.svg')
+    // }, 
       {
-        "url": "https://zhihu.com",
-        "title": "知乎",
-        "icon": require('./assets/img/icons/zhihu.svg')
-    }, {
-        "url": "https://coolapk.com",
-        "title": "酷安",
-        "icon": require('./assets/img/icons/coolapk.svg')
-    }, {
         "url": "https://weixin.sogou.com",
         "title": "搜狗微信",
         "icon": require('./assets/img/icons/weixin-sogou.svg')
@@ -882,6 +884,10 @@ if (!Store.getCookie('visited')) {
         "url": "https://tw.voicetube.com",
         "title": "VoiceTube",
         "icon": require('./assets/img/icons/voicetube.svg')
+    }, {
+        "url": "https://www.3blue1brown.com",
+        "title": "3Blue1Brown",
+        "icon": require('./assets/img/icons/3blue1brown.svg')
     }, {
         "url": "https://classicalpoets.org",
         "title": "Society of Classical Poets",
@@ -1076,6 +1082,10 @@ if (!Store.getCookie('visited')) {
         "url": "https://earthengine.google.com/timelapse",
         "title": "Google Earth Timelapse",
         "icon": require('./assets/img/icons/google-earth-timelapse.svg')
+    }, {
+        "url": "https://www.submarinecablemap.com",
+        "title": "Submarine Cable Map",
+        "icon": require('./assets/img/icons/submarinecablemap.svg')
     }
   ])
 }
@@ -2167,6 +2177,10 @@ var tool_items = [
       "url": "https://www.uuidgenerator.net",
       "title": "Online UUID Generator Tool",
       "icon": require('./assets/img/icons/uuidgenerator.svg')
+  }, {
+      "url": "https://utf-8-illustrator.com",
+      "title": "The UTF-8 Illustrator",
+      "icon": require('./assets/img/icons/utf-8-illustrator.svg')
   }, {
       "url": "https://www.favicon.cc",
       "title": "favicon Generator",
