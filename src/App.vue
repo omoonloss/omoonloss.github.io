@@ -719,6 +719,10 @@ if (!Store.getCookie('visited')) {
         "title": "Goodreads | Meet your next favorite book",
         "icon": require('./assets/img/icons/goodreads.svg')
     }, {
+        "url": "https://www.britannica.com",
+        "title": "大英百科全书 | Britannica",
+        "icon": require('./assets/img/icons/britannica.svg')
+    }, {
         "url": "https://github.com",
         "title": "GitHub",
         "icon": require('./assets/img/icons/github.svg')
@@ -951,6 +955,11 @@ if (!Store.getCookie('visited')) {
         "title": "法隆寺金堂壁画ガラス原板 デジタルビューア｜Glass Photographic Plates of the Murals in the Kondō Hall of Hōryūji Temple―Digital Viewer―",
         "icon": require('./assets/img/icons/horyuji-kondohekiga.svg')
     }, {
+        // 中研院數位文化中心，數位方輿，成果包含美國國會圖書館所藏之157件藏品、大英圖書館所藏之143件藏品、大英檔案館所藏之75件藏品，以及日本多所單位所藏之128件藏品，共計503件。包含單幅地圖、長幅卷軸、多幅卷軸與地圖冊等
+        "url": "https://digitalatlas.asdc.sinica.edu.tw",
+        "title": "数位方舆 Reading Digital Atlas",
+        "icon": require('./assets/img/icons/digitalatlas.svg')
+    }, {
         "url": "https://omniatlas.com",
         "title": "Omniatlas - Interactive Atlas of World History",
         "icon": require('./assets/img/icons/omniatlas.svg')
@@ -959,6 +968,10 @@ if (!Store.getCookie('visited')) {
         "url": "https://www.wdl.org/zh",
         "title": "世界数字图书馆主页",
         "icon": require('./assets/img/icons/wdl.svg')
+    }, {
+        "url": "https://cjjc.weblio.jp",
+        "title": "中国语辞书 - Weblio日中中日辞典",
+        "icon": require('./assets/img/icons/cjjc.svg')
     }, {
         "url": "https://podcasts.google.com",
         "title": "Google 播客",
@@ -1030,6 +1043,16 @@ if (!Store.getCookie('visited')) {
         "title": "Linggle 10^12- Language Reference Search Engines - NLPLab",
         "icon": require('./assets/img/icons/linggle.svg')
     }, {
+        // 各种网络习语、小众词汇解释
+        "url": "https://www.urbandictionary.com",
+        "title": "Urban Dictionary",
+        "icon": require('./assets/img/icons/urbandictionary.svg')
+    }, {
+        // 英语新造词词典 ，可以查询最新的英语新生网络词汇
+        "url": "https://www.wordspy.com",
+        "title": "Word Spy",
+        "icon": require('./assets/img/icons/wordspy.svg')
+    }, {
         "url": "https://forvo.com",
         "title": "Forvo: the pronunciation dictionary. All the words in the world pronounced by native speakers",
         "icon": require('./assets/img/icons/forvo.svg')
@@ -1046,15 +1069,18 @@ if (!Store.getCookie('visited')) {
         "url": "https://www.latexstudio.net",
         "title": "LaTeX工作室",
         "icon": require('./assets/img/icons/latexstudio.svg')
-    }, {
+    }, 
+    {
         "url": "https://www.amazon.com",
         "title": "Amazon",
         "icon": require('./assets/img/icons/amazon.svg')
-    }, {
-        "url": "https://taobao.com",
-        "title": "淘宝",
-        "icon": require('./assets/img/icons/taobao.svg')
-    }, {
+    }, 
+    // {
+    //     "url": "https://taobao.com",
+    //     "title": "淘宝",
+    //     "icon": require('./assets/img/icons/taobao.svg')
+    // },
+     {
         "url": "https://getpocket.com",
         "title": "Pocket",
         "icon": require('./assets/img/icons/pocket.svg')
@@ -1086,6 +1112,14 @@ if (!Store.getCookie('visited')) {
         "url": "https://www.submarinecablemap.com",
         "title": "Submarine Cable Map",
         "icon": require('./assets/img/icons/submarinecablemap.svg')
+    }, {
+        "url": "https://trace.moe",
+        "title": "Anime Scene Search Engine - trace.moe",
+        "icon": require('./assets/img/icons/trace-moe.svg')
+    }, {
+        "url": "https://saucenao.com",
+        "title": "SauceNAO Reverse Image Search",
+        "icon": require('./assets/img/icons/saucenao.svg')
     }
   ])
 }
@@ -1450,9 +1484,9 @@ var community_items = [
       "title": "1024 BBS",
       "icon": require('./assets/img/icons/1o24bbs.svg')
   }, {
-      "url": "https://labs.xda-developers.com",
-      "title": "XDA Labs",
-      "icon": require('./assets/img/icons/xdalabs.svg')
+      "url": "https://forum.xda-developers.com",
+      "title": "XDA Developers Forums",
+      "icon": require('./assets/img/icons/xdaforum.svg')
   }, {
       "url": "https://itch.io",
       "title": "itch.io",
@@ -2640,6 +2674,11 @@ var pictures_items = [
       "url": "https://www.nbfox.com",
       "title": "麦田艺术 - 收尽世界名画，无水印高清油画免费下载",
       "icon": require('./assets/img/icons/nbfox.svg')
+  }, {
+      // 可以免费下载。 名画挺多，可以拿来作插画、配图、自用等等
+      "url": "https://gallerix.asia",
+      "title": "绘画和绘画 – 加勒里克斯在线博物馆",
+      "icon": require('./assets/img/icons/gallerix.svg')
   }
 ];
 
