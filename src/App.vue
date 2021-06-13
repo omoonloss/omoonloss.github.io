@@ -463,7 +463,7 @@
     <div class="mdui-card mdui-col-xs-12 mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-10 mdui-col-offset-lg-1 mdui-shadow-0 sites-card ">
       <!-- Card title -->
       <div class="mdui-card-header card-header">
-        出版與書籍
+        出版、書籍與閱讀
       </div>
 
       <div class="mdui-divider"></div>
@@ -986,6 +986,10 @@ if (!Store.getCookie('visited')) {
         "title": "鱼声音乐",
         "icon": require('./assets/img/icons/luooqi.svg')
     }, {
+        "url": "https://bailemi.com/index.php/dance",
+        "title": "百乐米 - 专注于分享好听的外文歌曲！",
+        "icon": require('./assets/img/icons/bailemi.svg')
+    }, {
         "url": "https://songtasty.com/song",
         "title": "SongTasty",
         "icon": require('./assets/img/icons/songtasty.svg')
@@ -1170,7 +1174,12 @@ var info_items = [
       "title": "Interconnected | Analyzing Businesses and Trends From the Lens of Builders, Operators, Investors, Regulators, and How They Are Connected",
       "icon": require('./assets/img/icons/interconnected.svg')
   }, {
-  	 // 最有名的独立创投分析评论博主 Ben Thompson，除了每天更新一些简短的资讯评论，付费后可以完整查看他每周一篇的深度文章，有自己一套的分析体系。
+  	  // 用中文浏览国外社交媒体里的热门讨论。 母语快速导读， 感兴趣再进原文深度阅读
+      "url": "https://www.buzzing.cc",
+      "title": "Buzzing - 用中文浏览国外社交媒体里的热门讨论",
+      "icon": require('./assets/img/icons/buzzing.svg')
+  }, {
+      // 最有名的独立创投分析评论博主 Ben Thompson，除了每天更新一些简短的资讯评论，付费后可以完整查看他每周一篇的深度文章，有自己一套的分析体系。
       "url": "https://stratechery.com",
       "title": "Stratechery by Ben Thompson – On the business, strategy, and impact of technology.",
       "icon": require('./assets/img/icons/stratechery.svg')
@@ -1840,7 +1849,7 @@ var design_items = [
 
 ];
 
-// Publishing & Book
+// Publishing & Book & Reading
 var publishing_book_items = [
   {
       "url": "https://www.packtpub.com",
@@ -1866,6 +1875,10 @@ var publishing_book_items = [
       "url": "https://mitpress.mit.edu",
       "title": "The MIT Press",
       "icon": require('./assets/img/icons/mitpress.svg')
+  }, {
+      "url": "https://www.newline.co",
+      "title": "newline | Learn to build React, Angular, Vue, GraphQL, and Node.js Apps with real-world projects",
+      "icon": require('./assets/img/icons/newline.svg')
   }, {
       "url": "https://readmoo.com",
       "title": "Readmoo读墨电子书 ─ 台湾最大繁体中文EPUB电子书服务",
@@ -2033,6 +2046,26 @@ var publishing_book_items = [
       "url": "https://www.tianfateng.cn/tag/magazine",
       "title": "原版英文杂志 - 田间小站",
       "icon": require('./assets/img/icons/default.svg')
+  }, {
+      // 英文长文阅读网站
+      "url": "https://longreads.com",
+      "title": "Longreads : The best longform stories on the web",
+      "icon": require('./assets/img/icons/longreads.svg')
+  }, {
+      // 英文长文阅读网站
+      "url": "https://nautil.us",
+      "title": "Nautilus | Science Connected",
+      "icon": require('./assets/img/icons/nautil.svg')
+  }, {
+      // 英文长文阅读网站
+      "url": "https://longform.org",
+      "title": "Longform",
+      "icon": require('./assets/img/icons/longform.svg')
+  }, {
+      // 英文长文阅读网站
+      "url": "https://thebrowser.com",
+      "title": "The Browser",
+      "icon": require('./assets/img/icons/thebrowser.svg')
   }, {
       "url": "https://www.pdfdrive.com",
       "title": "PDF Drive - Search and download PDF files for free.",
