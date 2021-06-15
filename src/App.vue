@@ -1018,6 +1018,10 @@ if (!Store.getCookie('visited')) {
         "title": "MidiShow",
         "icon": require('./assets/img/icons/midishow.svg')
     }, {
+        "url": "https://learningmusic.ableton.com/zh-Hans/",
+        "title": "Learning Music | 开始音乐创作之旅",
+        "icon": require('./assets/img/icons/learningmusic.svg')
+    }, {
         "url": "https://pod.link",
         "title": "PodLink",
         "icon": require('./assets/img/icons/podlink.svg')
@@ -1904,6 +1908,10 @@ var publishing_book_items = [
       "title": "广西壮族自治区图书馆 | 电子资源平台",
       "icon": require('./assets/img/icons/default.svg')
   }, {
+      "url": "http://ebooks.lib.ntu.edu.tw/Home/ListBooks",
+      "title": "臺湾大学图书馆＊公开取用电子书",
+      "icon": require('./assets/img/icons/default.svg')
+  }, {
       // 台湾一个社科书籍推荐网站
       "url": "https://whogovernstw.org",
       "title": "菜市场政治学",
@@ -1922,6 +1930,14 @@ var publishing_book_items = [
       "url": "https://www.worldmiao.com",
       "title": "worldmiao.two",
       "icon": require('./assets/img/icons/worldmiao.svg')
+  }, {
+      "url": "https://www.forgottenbooks.com/en",
+      "title": "Forgotten Books",
+      "icon": require('./assets/img/icons/forgottenbooks.svg')
+  }, {
+      "url": "https://digilibraries.com",
+      "title": "DigiLibraries | Free eBooks library",
+      "icon": require('./assets/img/icons/digilibraries.svg')
   }, {
       // Project Gutenberg (古登堡计划) 古腾堡免费电子书 已超过60000本
       // 同英文网站，资 源储备惊人！别看是英文的，选择书籍语言，可以看到很多中文书籍（大多是繁体，你懂我意思吧。）
