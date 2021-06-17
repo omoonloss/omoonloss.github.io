@@ -1428,6 +1428,11 @@ var info_items = [
       "title": "Fedora Magazine - Guides, information, and news about the Fedora operating system for users, developers, system administrators, and community members.",
       "icon": require('./assets/img/icons/fedoramagazine.svg')
   }, {
+      // 适用于 Web 设计师和开发人员
+      "url": "https://www.smashingmagazine.com",
+      "title": "Smashing Magazine – For Professional Web Designers and Developers",
+      "icon": require('./assets/img/icons/smashingmagazine.svg')
+  }, {
       "url": "https://sspai.com",
       "title": "少数派",
       "icon": require('./assets/img/icons/sspai.svg')
@@ -1560,6 +1565,11 @@ var community_items = [
       "url": "http://g.yeeyan.org",
       "title": "译言古登堡计划",
       "icon": require('./assets/img/icons/yeeyan.svg')
+  }, {
+      // 用真实的技术专家撰写的不受束缚的故事和观点反映了技术行业。
+      "url": "https://hackernoon.com",
+      "title": "Hacker Noon",
+      "icon": require('./assets/img/icons/hackernoon.svg')
   }
 
 ];
@@ -2289,6 +2299,10 @@ var tool_items = [
       "title": "IPIP.NET",
       "icon": require('./assets/img/icons/ipip.svg')
   }, {
+      "url": "https://ipinfo.io",
+      "title": "IPinfo.io | Comprehensive IP address data, IP geolocation API and database",
+      "icon": require('./assets/img/icons/ipinfo.svg')
+  }, {
       "url": "https://uptimerobot.com",
       "title": "Uptime Robot",
       "icon": require('./assets/img/icons/uptime-robot.svg')
@@ -2533,6 +2547,11 @@ var tool_items = [
       "title": "HTML Reference",
       "icon": require('./assets/img/icons/html-reference.svg')
   }, {
+      // HTTP状态代码目录，其中包含定义，详细信息和有用的代码参考
+      "url": "https://httpstatuses.com",
+      "title": "HTTP Status Codes",
+      "icon": require('./assets/img/icons/httpstatuses.svg')
+  }, {
       "url": "https://openmoji.org",
       "title": "OpenMoji",
       "icon": require('./assets/img/icons/openmoji.svg')
@@ -2583,6 +2602,16 @@ var tool_items = [
       "url": "https://recycle.rethinktw.org",
       "title": "回收大百科",
       "icon": require('./assets/img/icons/recycle-rethinktw.svg')
+  }, {
+      // 轉動地球，免費線上收聽全世界廣播電台頻道
+      "url": "http://radio.garden",
+      "title": "Radio Garden",
+      "icon": require('./assets/img/icons/radio-garden.svg')
+  }, {
+      // 查找将npm软件包添加到软件包中的成本
+      "url": "https://bundlephobia.com",
+      "title": "Bundlephobia | Size of NPM dependencies",
+      "icon": require('./assets/img/icons/bundlephobia.svg')
   }
 
 ];
