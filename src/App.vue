@@ -917,6 +917,11 @@ if (!Store.getCookie('visited')) {
         "title": "名言通 | 美句佳句大全 伤感的句子 唯美的句子 优美的句子",
         "icon": require('./assets/img/icons/mingyantong.svg')
     }, {
+        // 号称是全球最大的名言名句引用网站。 在这里不仅能找到国外历史上杰出人士所说的名句，还能发现当今著名的新闻人、作家等所说的话语
+        "url": "https://www.brainyquote.com",
+        "title": "Inspirational Quotes at BrainyQuote",
+        "icon": require('./assets/img/icons/brainyquote.svg')
+    }, {
         "url": "https://theme.npm.edu.tw/opendata",
         "title": "故宮Open Data專區",
         "icon": require('./assets/img/icons/npm-opendata.svg')
@@ -1018,6 +1023,7 @@ if (!Store.getCookie('visited')) {
         "title": "MidiShow",
         "icon": require('./assets/img/icons/midishow.svg')
     }, {
+        // 一个很酷的免费在线音乐课程 —— 用一种可交互的方式来学习如何制作音乐，并且只需要浏览器就可以完成这个课程。当然，也可以把在线制作的作品导出到 Ableton Live 的软件上。教程从最简单的互动展开，分别介绍了节奏、音符和音阶、和弦、贝斯、旋律、歌曲结构，并且在高级话题中讨论了很多音阶、调式以及和弦方面的进阶课题。目前还是Beta版，有中文版
         "url": "https://learningmusic.ableton.com/zh-Hans/",
         "title": "Learning Music | 开始音乐创作之旅",
         "icon": require('./assets/img/icons/learningmusic.svg')
@@ -1050,6 +1056,15 @@ if (!Store.getCookie('visited')) {
         "url": "https://linggle.com",
         "title": "Linggle 10^12- Language Reference Search Engines - NLPLab",
         "icon": require('./assets/img/icons/linggle.svg')
+    }, {
+        "url": "https://dictionary.cambridge.org",
+        "title": "Cambridge Dictionary | English Dictionary, Translations & Thesaurus",
+        "icon": require('./assets/img/icons/cambridge-dictionary.svg')
+    }, {
+        // 输入你认为是同义或近义的两个英文单词，它会告诉你差别
+        "url": "https://wikidiff.com",
+        "title": "WikiDiff",
+        "icon": require('./assets/img/icons/wikidiff.svg')
     }, {
         // 各种网络习语、小众词汇解释
         "url": "https://www.urbandictionary.com",
@@ -1108,18 +1123,6 @@ if (!Store.getCookie('visited')) {
         "url": "https://www.pressreader.com",
         "title": "PressReader.com -透过新闻将世界连结",
         "icon": require('./assets/img/icons/pressreader.svg')
-    }, {
-        "url": "https://earth.google.com/web",
-        "title": "Google Earth",
-        "icon": require('./assets/img/icons/google-earth.svg')
-    }, {
-        "url": "https://earthengine.google.com/timelapse",
-        "title": "Google Earth Timelapse",
-        "icon": require('./assets/img/icons/google-earth-timelapse.svg')
-    }, {
-        "url": "https://www.submarinecablemap.com",
-        "title": "Submarine Cable Map",
-        "icon": require('./assets/img/icons/submarinecablemap.svg')
     }, {
         "url": "https://trace.moe",
         "title": "Anime Scene Search Engine - trace.moe",
@@ -1182,6 +1185,10 @@ var info_items = [
       "url": "https://www.buzzing.cc",
       "title": "Buzzing - 用中文浏览国外社交媒体里的热门讨论",
       "icon": require('./assets/img/icons/buzzing.svg')
+  }, {
+      "url": "https://www.outsightchina.com",
+      "title": "看鉴中国 | Outsight China",
+      "icon": require('./assets/img/icons/outsightchina.svg')
   }, {
       // 最有名的独立创投分析评论博主 Ben Thompson，除了每天更新一些简短的资讯评论，付费后可以完整查看他每周一篇的深度文章，有自己一套的分析体系。
       "url": "https://stratechery.com",
@@ -1672,6 +1679,7 @@ var coding_items = [
       "title": "Compiler Explorer",
       "icon": require('./assets/img/icons/godbolt.svg')
   }, {
+      // 包含了排序、链表、哈希表、二叉搜索树、递归树、循环查找等常见算法动画。在动画执行的过程中，还会在网站右下角高亮显示当前动画的代码逻辑。网站还提供了一些算法练习题供用户训练，可巩固自己的算法知识。
       "url": "https://visualgo.net/zh",
       "title": "Visualgo",
       "icon": require('./assets/img/icons/visualgo.svg')
@@ -1718,6 +1726,14 @@ var course_items = [
       "url": "https://www.udemy.com",
       "title": "Udemy | 在线课程 - 时间自由，学您想学",
       "icon": require('./assets/img/icons/udemy.svg')
+  }, {
+      "url": "https://www.edx.org",
+      "title": "edX | Free Online Courses by Harvard, MIT, & more | edX",
+      "icon": require('./assets/img/icons/edx.svg')
+  }, {
+      "url": "https://www.freecodecamp.org",
+      "title": "Learn to Code — For Free — Coding Courses for Busy People",
+      "icon": require('./assets/img/icons/freecodecamp.svg')
   }, {
       "url": "https://www.coursera.org",
       "title": "Coursera | Build Skills with Online Courses from Top Institutions",
@@ -1866,6 +1882,10 @@ var design_items = [
 // Publishing & Book & Reading
 var publishing_book_items = [
   {
+      "url": "https://www.penguin.co.uk",
+      "title": "Penguin Books UK | Official Website",
+      "icon": require('./assets/img/icons/penguin.svg')
+  }, {
       "url": "https://www.packtpub.com",
       "title": "Packtpub",
       "icon": require('./assets/img/icons/packtpub.svg')
@@ -2561,6 +2581,27 @@ var tool_items = [
       "title": "earth :: a global map of wind, weather, and ocean conditions",
       "icon": require('./assets/img/icons/default.svg')
   }, {
+      // 可以让你看到地球表面的实时卫星照片
+      "url": "https://zoom.earth/storms/",
+      "title": "Zoom Earth | 缩放地球",
+      "icon": require('./assets/img/icons/zoom-earth.svg')
+  }, {
+      "url": "https://himawari8.nict.go.jp",
+      "title": "向日葵-8号",
+      "icon": require('./assets/img/icons/himawari8.svg')
+  }, {
+        "url": "https://earth.google.com/web",
+        "title": "Google Earth",
+        "icon": require('./assets/img/icons/google-earth.svg')
+  }, {
+        "url": "https://earthengine.google.com/timelapse",
+        "title": "Google Earth Timelapse",
+        "icon": require('./assets/img/icons/google-earth-timelapse.svg')
+  }, {
+        "url": "https://www.submarinecablemap.com",
+        "title": "Submarine Cable Map",
+        "icon": require('./assets/img/icons/submarinecablemap.svg')
+  }, {
       "url": "https://countrycode.org",
       "title": "Country Codes, Phone Codes, Dialing Codes, Telephone Codes, ISO Country Codes",
       "icon": require('./assets/img/icons/countrycode.svg')
@@ -2612,6 +2653,10 @@ var tool_items = [
       "url": "https://bundlephobia.com",
       "title": "Bundlephobia | Size of NPM dependencies",
       "icon": require('./assets/img/icons/bundlephobia.svg')
+  }, {
+      "url": "https://archive.is",
+      "title": "Webpage archive",
+      "icon": require('./assets/img/icons/archive.svg')
   }
 
 ];
@@ -2725,10 +2770,6 @@ var pictures_items = [
       "url": "https://best-wallpaper.net",
       "title": "Best Wallpaper | Free and Best High Quality 2K 4K 5K 8K HD UHD Desktop Wallpapers & iPhone 11 Pro XS Max XR 8 7 6 Plus Wallpapers.",
       "icon": require('./assets/img/icons/best-wallpaper.svg')
-  }, {
-      "url": "https://himawari8.nict.go.jp",
-      "title": "向日葵-8号",
-      "icon": require('./assets/img/icons/himawari8.svg')
   }, {
       // 免费可商用的高清视频素材网站 Mixkit 视频质量高，类型包含商业科技、动画、大自然、户外和交通工具等等。将鼠标放在缩略图上就可以预览视频的效果，也可以选择全屏展示或直接点击右下角进行下载。网站除了视频素材，还有Pr模板，Jazz、Hip-Hop等风格的音乐素材提供，无论商业或非商业用途皆可自由使用
       "url": "https://mixkit.co",
@@ -2858,6 +2899,36 @@ var blog_items = [
       "url": "https://netflixtechblog.com",
       "title": "Netflix TechBlog",
       "icon": require('./assets/img/icons/netflixtechblog.svg')
+  }, {
+      // ECMA 技术委员会成员，开发设计过各种编程语言，妥妥的技术大佬，也是 Stack Overflow 排名前五十的用户，写了超多回答。
+      "url": "https://ericlippert.com",
+      "title": "Eric Lippert's blog",
+      "icon": require('./assets/img/icons/default.svg')
+  }, {
+      // 缓存数据库 Redis 的创始人的博客。
+      "url": "http://antirez.com",
+      "title": "<antirez>",
+      "icon": require('./assets/img/icons/default.svg')
+  }, {
+      // EA 的游戏开发工程师，生活很丰富的一个人，搞开发、写书、玩摄影、混乐队，这些他都干过。
+      "url": "http://journal.stuffwithstuff.com",
+      "title": "Bob Nystrom",
+      "icon": require('./assets/img/icons/default.svg')
+  }, {
+      // 一个很简洁的个人博客，研究计算机如何工作的，经常会针对一个问题长篇大论地深挖，也会经常分享一些关于 Rust 的东西。
+      "url": "https://fasterthanli.me",
+      "title": "Amos",
+      "icon": require('./assets/img/icons/default.svg')
+  }, {
+      // 前端工程师的博客，讲了很多 CSS 的知识，有一定的设计师功底。
+      "url": "https://www.joshwcomeau.com",
+      "title": "Josh W Comeau",
+      "icon": require('./assets/img/icons/joshwcomeau.svg')
+  }, {
+      // 分享计算机知识，文章很多，涉及的方面也非常广泛，也会分享一些很硬的东西，比如说内核，数据库等。
+      "url": "https://jvns.ca",
+      "title": "Julia Evans",
+      "icon": require('./assets/img/icons/jvns.svg')
   }
 
 ];
