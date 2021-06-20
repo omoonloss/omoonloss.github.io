@@ -965,9 +965,19 @@ if (!Store.getCookie('visited')) {
         "title": "数位方舆 Reading Digital Atlas",
         "icon": require('./assets/img/icons/digitalatlas.svg')
     }, {
+        // 由韓國國立中央圖書館（NLK）與日本國立國會圖書館（NDL）聯合建構的東亞數位圖書館（East Asia Digital Library，EADL） (https://eadl.asia/home/)已開放使用，該資料庫現有兩館珍貴古籍8000件，稍後還將不斷增補，內容涵蓋文史多領域，可通過書名、關鍵字、作者、主題等方式檢索，是研究東亞文史的重要工具
+        "url": "https://eadl.asia/home/",
+        "title": "East Asia Digital Library | 東亞數位圖書館",
+        "icon": require('./assets/img/icons/default.svg')
+    }, {
         "url": "https://omniatlas.com",
         "title": "Omniatlas - Interactive Atlas of World History",
         "icon": require('./assets/img/icons/omniatlas.svg')
+    }, {
+        // 以 AI 知识图谱为核心引擎，通过高度时空化、关联化数据的方式构造及展现数字人文内容，尤其是历史知识
+        "url": "https://www.allhistory.com",
+        "title": "全历史",
+        "icon": require('./assets/img/icons/allhistory.svg')
     }, {
         // 将在互联网上以多语种格式免费提供世界各地的重要材料,包括手稿、地图、珍本书籍、乐谱、录音、电影、印刷品、照片、建筑图等等
         "url": "https://www.wdl.org/zh",
@@ -1131,6 +1141,10 @@ if (!Store.getCookie('visited')) {
         "url": "https://saucenao.com",
         "title": "SauceNAO Reverse Image Search",
         "icon": require('./assets/img/icons/saucenao.svg')
+    }, {
+        "url": "https://www.openstreetmap.org",
+        "title": "OpenStreetMap",
+        "icon": require('./assets/img/icons/openstreetmap.svg')
     }
   ])
 }
@@ -1189,6 +1203,10 @@ var info_items = [
       "url": "https://www.outsightchina.com",
       "title": "看鉴中国 | Outsight China",
       "icon": require('./assets/img/icons/outsightchina.svg')
+  }, {
+      "url": "https://www.cup.com.hk",
+      "title": "*CUP - 每日十條世界要聞 與你清醒同行",
+      "icon": require('./assets/img/icons/cup.svg')
   }, {
       // 最有名的独立创投分析评论博主 Ben Thompson，除了每天更新一些简短的资讯评论，付费后可以完整查看他每周一篇的深度文章，有自己一套的分析体系。
       "url": "https://stratechery.com",
@@ -1529,6 +1547,7 @@ var community_items = [
       "title": "V2EX",
       "icon": require('./assets/img/icons/v2ex.svg')
   }, {
+      // FreeBuf 是国内活跃度比较高的垂直类网络安全网站。上面有大量国外优秀的技术文章，专业性比较高。比较适合相对资深的极客、黑客人群，以及网站安全类岗位的从业人员。
       "url": "https://www.freebuf.com",
       "title": "FreeBuf网络安全行业门户",
       "icon": require('./assets/img/icons/freebuf.svg')
@@ -1552,10 +1571,6 @@ var community_items = [
       "url": "https://4think.net",
       "title": "4THINK | 為增進思考而閱讀",
       "icon": require('./assets/img/icons/4think.svg')
-  }, {
-      "url": "https://www.cup.com.hk",
-      "title": "*CUP - 每日十條世界要聞 與你清醒同行",
-      "icon": require('./assets/img/icons/cup.svg')
   }, {
       "url": "https://ld246.com",
       "title": "链滴",
@@ -1797,6 +1812,11 @@ var course_items = [
       "url": "https://www.mookit.in",
       "title": "mooKIT",
       "icon": require('./assets/img/icons/mookit.svg')
+  }, {
+      // 一个汇集了世界一流高校的在线课程资源平台。在OnlineCourses，你可以找到500多个经认证的免费在线大学课程，这些课程为你提供了世界上一些最好大学的研究型学术资源的机会。
+      "url": "https://www.onlinecourses.com",
+      "title": "OnlineCourses",
+      "icon": require('./assets/img/icons/onlinecourses.svg')
   }
 
 ];
@@ -1961,6 +1981,7 @@ var publishing_book_items = [
       "title": "worldmiao.two",
       "icon": require('./assets/img/icons/worldmiao.svg')
   }, {
+      // 一个外文电子书 网站，目前有1271515本书可供在线阅读
       "url": "https://www.forgottenbooks.com/en",
       "title": "Forgotten Books",
       "icon": require('./assets/img/icons/forgottenbooks.svg')
@@ -2117,6 +2138,11 @@ var publishing_book_items = [
       "title": "PDF Drive - Search and download PDF files for free.",
       "icon": require('./assets/img/icons/pdfdrive.svg')
   }, {
+      // 在线出版社网站，致力于免费图书在线分享，主要是公共版权图书的在线阅读和下载（pdf），小说、古典文学、历史传记等等
+      "url": "https://freeditorial.com",
+      "title": "Freeditorial",
+      "icon": require('./assets/img/icons/freeditorial.svg')
+  }, {
     	// 在线免费阅读和下载电子书
       "url": "https://www.classicly.com",
       "title": "Read free books online in PDF, Kindle & ePub",
@@ -2156,9 +2182,19 @@ var publishing_book_items = [
       "title": "E-Books Directory - Categorized Links to Free Books",
       "icon": require('./assets/img/icons/e-booksdirectory.svg')
   }, {
-      "url": "http://audiobookbay.nl",
-      "title": "AudioBookBay",
-      "icon": require('./assets/img/icons/audiobookbay.svg')
+      // 一个可以免费下载绝版艺术书籍的网站 ，盖蒂博物馆虚拟图书馆 。馆中收藏有三百多本绝版艺术书，包含了从艺术流派到特定艺术家的作品。盖蒂出版社的一位经理说：“当一本绝版书的再版没有经济意义时，就几乎不会有出版社将这本书再次出版，很多好书也因此消失。盖蒂图书馆希望能用电子版书籍的形式，让更多人能看到这些濒临消失的书籍。”
+      "url": "https://www.getty.edu/publications/virtuallibrary",
+      "title": "Getty Publications Virtual Library",
+      "icon": require('./assets/img/icons/getty-virtuallibrary.svg')
+  }, {
+      "url": "https://lithub.com",
+      "title": "Literary Hub",
+      "icon": require('./assets/img/icons/lithub.svg')
+  }, {
+      // 以新的方式发现书籍，就像逛书店一样
+      "url": "https://shepherd.com",
+      "title": "Shepherd | Discover The Best Books To Read 📚",
+      "icon": require('./assets/img/icons/shepherd.svg')
   }
 
 ];
@@ -2630,10 +2666,25 @@ var tool_items = [
       "title": "书签地球-中国首家浏览器书签共享平台",
       "icon": require('./assets/img/icons/bookmarkearth.svg')
   }, {
+      // 在线魔方解密网站，只需要把你的魔方颜色输入进去，就能自动获得解法
+      "url": "https://rubiks-cube-solver.com",
+      "title": "Rubik's Cube Solver",
+      "icon": require('./assets/img/icons/rubiks-cube-solver.svg')
+  }, {
       // 日本折纸模拟器
       "url": "https://origamisimulator.org",
       "title": "Origami Simulator",
       "icon": require('./assets/img/icons/origamisimulator.svg')
+  }, {
+      // 在方格纸生成界面上，有包括笔记纸、方格纸、网格纸、画稿纸、乐谱纸、康奈尔笔记等 17 种类型的笔记纸可供选择。 选择好类型后，下面还能对笔记纸进行自定义调整。
+      "url": "https://www.mygraphpaper.com",
+      "title": "My Graph Paper",
+      "icon": require('./assets/img/icons/default.svg')
+  }, {
+      // 方格纸生成器，支持自定义方格大小和线条粗细 纸张大小 pdf导出下载
+      "url": "https://incompetech.com/graphpaper/lite/",
+      "title": "Free Online Graph Paper / Simple Grid",
+      "icon": require('./assets/img/icons/graphpaper.svg')
   }, {
       "url": "https://xiezuocat.com",
       "title": "秘塔写作猫",
@@ -2643,6 +2694,10 @@ var tool_items = [
       "url": "https://recycle.rethinktw.org",
       "title": "回收大百科",
       "icon": require('./assets/img/icons/recycle-rethinktw.svg')
+  }, {
+      "url": "https://twdrivingtest.com",
+      "title": "台湾考驾照",
+      "icon": require('./assets/img/icons/twdrivingtest.svg')
   }, {
       // 轉動地球，免費線上收聽全世界廣播電台頻道
       "url": "http://radio.garden",
@@ -2657,6 +2712,14 @@ var tool_items = [
       "url": "https://archive.is",
       "title": "Webpage archive",
       "icon": require('./assets/img/icons/archive.svg')
+  }, {
+      "url": "https://http3check.net",
+      "title": "HTTP/3 Check",
+      "icon": require('./assets/img/icons/http3check.svg')
+  }, {
+      "url": "https://www.socpk.com",
+      "title": "移动芯片性能排行榜",
+      "icon": require('./assets/img/icons/socpk.svg')
   }
 
 ];
@@ -2798,6 +2861,16 @@ var pictures_items = [
       "url": "https://gallerix.asia",
       "title": "绘画和绘画 – 加勒里克斯在线博物馆",
       "icon": require('./assets/img/icons/gallerix.svg')
+  }, {
+      // 日本浮世绘 风俗画检索库是由John Resig创办，一个风俗画狂热爱好者，他通过各种方式寻找了很多的类似印花品，收集起来展示为世人
+      "url": "https://ukiyo-e.org",
+      "title": "Ukiyo-e Search | Japanese Woodblock Print Search",
+      "icon": require('./assets/img/icons/ukiyo-e.svg')
+  }, {
+      // 梵高作品、手稿资源站：这里有最全的梵高作品资源、目录、年表
+      "url": "http://www.vggallery.com/index.html",
+      "title": "The Vincent van Gogh Gallery",
+      "icon": require('./assets/img/icons/default.svg')
   }
 ];
 
@@ -2929,11 +3002,15 @@ var blog_items = [
       "url": "https://jvns.ca",
       "title": "Julia Evans",
       "icon": require('./assets/img/icons/jvns.svg')
+  }, {
+      "url": "https://io-oi.me",
+      "title": "reuixiy",
+      "icon": require('./assets/img/icons/io-oi.svg')
   }
 
 ];
 
-//  console.log(Store.fetch_site().length)
+// console.log(Store.fetch_site().length)
 export default {
   data() {
     return {
