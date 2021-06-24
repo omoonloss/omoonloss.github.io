@@ -1290,7 +1290,7 @@ var info_items = [
   }, {
       "url": "https://hk.appledaily.com",
       "title": "蘋果日報",
-      "icon": require('./assets/img/icons/appledaily.svg')
+      "icon": require('./assets/img/icons/appledaily-gray.svg')
   }, {
       "url": "https://www.rfi.fr/cn",
       "title": "RFI 华语 - 法国国际广播电台",
