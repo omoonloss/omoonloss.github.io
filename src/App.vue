@@ -1918,6 +1918,10 @@ var publishing_book_items = [
       "title": "Manning - Free Content Center",
       "icon": require('./assets/img/icons/manning.svg')
   }, {
+      "url": "https://pragprog.com",
+      "title": "Pragmatic Bookshelf: By Developers, For Developers",
+      "icon": require('./assets/img/icons/pragprog.svg')
+  }, {
       "url": "https://leanpub.com",
       "title": "Leanpub",
       "icon": require('./assets/img/icons/leanpub.svg')
