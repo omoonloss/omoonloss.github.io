@@ -1208,6 +1208,10 @@ var info_items = [
       "title": "*CUP - 每日十條世界要聞 與你清醒同行",
       "icon": require('./assets/img/icons/cup.svg')
   }, {
+      "url": "https://www.jiemian.com",
+      "title": "界面新闻-只服务于独立思考的人群-Jiemian.com",
+      "icon": require('./assets/img/icons/jiemian.svg')
+  }, {
       // 最有名的独立创投分析评论博主 Ben Thompson，除了每天更新一些简短的资讯评论，付费后可以完整查看他每周一篇的深度文章，有自己一套的分析体系。
       "url": "https://stratechery.com",
       "title": "Stratechery by Ben Thompson – On the business, strategy, and impact of technology.",
