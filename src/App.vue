@@ -1260,6 +1260,10 @@ var info_items = [
       "title": "The Economist - World News, Politics, Economics, Business & Finance",
       "icon": require('./assets/img/icons/economist.svg')
   }, {
+      "url": "https://www.nature.com",
+      "title": "Nature",
+      "icon": require('./assets/img/icons/nature.svg')
+  }, {
       "url": "https://time.com",
       "title": "TIME | Current & Breaking News | National & World Updates",
       "icon": require('./assets/img/icons/time.svg')
@@ -1656,6 +1660,10 @@ var coding_items = [
       "url": "https://repl.it",
       "title": "Repl.it",
       "icon": require('./assets/img/icons/repl.svg')
+  }, {
+      "url": "https://ide.goorm.io",
+      "title": "goormIDE - A Powerful Cloud IDE Service",
+      "icon": require('./assets/img/icons/goorm.svg')
   }, {
       "url": "https://codesandbox.io",
       "title": "CodeSandbox",
