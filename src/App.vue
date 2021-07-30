@@ -2905,9 +2905,9 @@ var blog_items = [
       "title": "ExMachina | Gears and craft | Site personnel de Thibault Simar, graphiste 2D/3D",
       "icon": require('./assets/img/icons/ex-machina.svg')
   }, {
-      "url": "http://www.ruanyifeng.com/blog",
-      "title": "阮一峰的网络日志",
-      "icon": require('./assets/img/icons/ruanyifeng.svg')
+      "url": "https://hellogithub.com",
+      "title": "HelloGitHub 分享 GitHub 上入门级、有趣的开源项目",
+      "icon": require('./assets/img/icons/hellogithub.svg')
   }, {
       "url": "https://vitzy.me",
       "title": "True Me",
@@ -3022,6 +3022,10 @@ var blog_items = [
       "url": "https://io-oi.me",
       "title": "reuixiy",
       "icon": require('./assets/img/icons/io-oi.svg')
+  }, {
+      "url": "https://www.ruanyifeng.com/blog",
+      "title": "阮一峰的网络日志",
+      "icon": require('./assets/img/icons/ruanyifeng.svg')
   }
 
 ];
