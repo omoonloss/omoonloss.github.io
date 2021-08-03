@@ -2066,6 +2066,10 @@ var publishing_book_items = [
       "title": "Online Library and Publication Platform | OAPEN", 
       "icon": require('./assets/img/icons/oapen.svg')
   }, {
+      "url": "https://downmagaz.net",
+      "title": "Magazines Commumity! | Download PDF magazines", 
+      "icon": require('./assets/img/icons/downmagaz.svg')
+  }, {
       // 一个日本的书籍和图像等资源整合查询浏览网站
       "url": "https://cultural.jp/en",
       "title": "Cultural Japan (カルチュラル・ジャパン)", 
