@@ -814,11 +814,13 @@ if (!Store.getCookie('visited')) {
         "url": "https://weread.qq.com",
         "title": "微信读书",
         "icon": require('./assets/img/icons/weread.svg')
-    }, {
-        "url": "https://wx.zsxq.com/dweb",
-        "title": "知识星球",
-        "icon": require('./assets/img/icons/zsxq.svg')
-    }, {
+    }
+    // , {
+    //     "url": "https://wx.zsxq.com/dweb",
+    //     "title": "知识星球",
+    //     "icon": require('./assets/img/icons/zsxq.svg')
+    // }
+    , {
         "url": "https://weibo.com",
         "title": "微博",
         "icon": require('./assets/img/icons/weibo.svg')
@@ -954,6 +956,16 @@ if (!Store.getCookie('visited')) {
         "url": "https://www.metmuseum.org",
         "title": "大都会艺术博物馆",
         "icon": require('./assets/img/icons/metmuseum.svg')
+    }, {
+        // Philadelphia Art Museum 数字资源开放获取，其中关涉中国藏品较多 
+        "url": "https://philamuseum.org",
+        "title": "费城艺术博物馆",
+        "icon": require('./assets/img/icons/philamuseum.svg')
+    }, {
+        // 德国科隆东方艺术博物馆 数字资源开放获取，馆藏丰富，清晰度一般 
+        "url": "https://museum-fuer-ostasiatische-kunst.de/Start",
+        "title": "德国科隆东方艺术博物馆",
+        "icon": require('./assets/img/icons/museum-fuer-ostasiatische-kunst.svg')
     }, {
         // 日本法隆寺金堂壁画数字网站，设计直观简洁，展示了20世纪初大火烧掉的7世纪壁画的高清图像。敦煌之外的唐代寺观壁画十分稀少，这里算是其中最重要的一批作品
         "url": "https://view.horyuji-kondohekiga.jp",
@@ -1942,6 +1954,10 @@ var publishing_book_items = [
       "title": "No Starch Press | The finest in geek entertainment",
       "icon": require('./assets/img/icons/nostarch.svg')
   }, {
+      "url": "https://www.pearson.com",
+      "title": "Pearson | The world's learning company",
+      "icon": require('./assets/img/icons/pearson.svg')
+  }, {
       "url": "https://mitpress.mit.edu",
       "title": "The MIT Press",
       "icon": require('./assets/img/icons/mitpress.svg')
@@ -2034,6 +2050,10 @@ var publishing_book_items = [
       "title": "鸠摩搜索",
       "icon": require('./assets/img/icons/jiumodiary.svg')
   }, {
+      "url": "https://openstax.org",
+      "title": "OpenStax Homepage - OpenStax",
+      "icon": require('./assets/img/icons/openstax.svg')
+  }, {
       // 这个站点可以找到一些国外的教材，可按分类查找，每本书都有介绍和目录。也不用注册，直接就能免费下载。
       "url": "https://cnx.org",
       "title": "OpenStax CNX Library",
@@ -2070,15 +2090,26 @@ var publishing_book_items = [
       "title": "Magazines Commumity! | Download PDF magazines", 
       "icon": require('./assets/img/icons/downmagaz.svg')
   }, {
+      "url": "https://www.worldmags.net",
+      "title": "PDF Digital Magazines", 
+      "icon": require('./assets/img/icons/worldmags.svg')
+  }, {
+      "url": "https://magazinelib.com",
+      "title": "Magzinelib",
+      "icon": require('./assets/img/icons/magzinelib.svg')
+  }, {
+      "url": "https://www.worldofmagazine.com",
+      "title": "Free Download PDF Magazines - World of Magazine",
+      "icon": require('./assets/img/icons/default.svg')
+  }, {
+      "url": "https://freemagazinepdf.com",
+      "title": "Magazines PDF download free - E-magazines free download in pdf",
+      "icon": require('./assets/img/icons/freemagazinepdf.svg')
+  }, {
       // 一个日本的书籍和图像等资源整合查询浏览网站
       "url": "https://cultural.jp/en",
       "title": "Cultural Japan (カルチュラル・ジャパン)", 
       "icon": require('./assets/img/icons/cultural.svg')
-  }, {
-      // 外刊下载！巨强！全站免费，更新即时，全高清PDF！
-      "url": "https://magazinelib.com",
-      "title": "Magzinelib",
-      "icon": require('./assets/img/icons/magzinelib.svg')
   }, {
       "url": "https://ebook.huzerui.com",
       "title": "熊猫搜书",
