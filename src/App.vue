@@ -878,6 +878,10 @@ if (!Store.getCookie('visited')) {
         "title": "ScienceDaily",
         "icon": require('./assets/img/icons/sciencedaily.svg')
     }, {
+        "url": "https://mangolanguages.com",
+        "title": "Mango Languages | Online Language Learning Software",
+        "icon": require('./assets/img/icons/mangolanguages.svg')
+    }, {
         "url": "https://www.tjxz.cc",
         "title": "田间小站",
         "icon": require('./assets/img/icons/tjxz.svg')
@@ -1457,7 +1461,8 @@ var info_items = [
       "title": "可能吧",
       "icon": require('./assets/img/icons/kenengba.svg')
   }, {
-      "url": "https://www.iyouport.org",
+      // https://www.iyouport.org
+      "url": "https://iyouport.substack.com",
       "title": "iYouPort - IYP 不是过眼云烟的新闻网站，我们提供实战能力，这里是值得您反复回看的档案室",
       "icon": require('./assets/img/icons/iyouport.svg')
   }, {
