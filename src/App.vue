@@ -882,10 +882,6 @@ if (!Store.getCookie('visited')) {
         "title": "Mango Languages | Online Language Learning Software",
         "icon": require('./assets/img/icons/mangolanguages.svg')
     }, {
-        "url": "https://www.tjxz.cc",
-        "title": "田间小站",
-        "icon": require('./assets/img/icons/tjxz.svg')
-    }, {
         // 一个练听力的网站，内容丰富，可以直接下载
         "url": "https://www.51voa.com",
         "title": "美国之音-VOA听力下载,慢速英语,常速英语,VOA视频",
@@ -1975,6 +1971,10 @@ var publishing_book_items = [
       "title": "Readmoo读墨电子书 ─ 台湾最大繁体中文EPUB电子书服务",
       "icon": require('./assets/img/icons/readmoo.svg')
   }, {
+      "url": "https://ebook.hyread.com.tw",
+      "title": "HyRead ebook 電子書店",
+      "icon": require('./assets/img/icons/hyread.svg')
+  }, {
       "url": "https://www.ituring.com.cn",
       "title": "图灵社区",
       "icon": require('./assets/img/icons/ituring.svg')
@@ -1999,11 +1999,6 @@ var publishing_book_items = [
       "title": "臺湾大学图书馆＊公开取用电子书",
       "icon": require('./assets/img/icons/default.svg')
   }, {
-      // 台湾一个社科书籍推荐网站
-      "url": "https://whogovernstw.org",
-      "title": "菜市场政治学",
-      "icon": require('./assets/img/icons/whogovernstw.svg')
-  }, {
       // 可能是最好用的古籍资料下载网站
       "url": "https://new.shuge.org",
       "title": "书格",
@@ -2012,11 +2007,6 @@ var publishing_book_items = [
       "url": "https://bookfere.com",
       "title": "书伴",
       "icon": require('./assets/img/icons/bookfere.svg')
-  }, {
-      // 据说是北大学生做的，整合了Google Books、Library Genesis、Open Library、eBook Databases、Z Library、Memory of the World等常用书库，有这一个就够了。 
-      "url": "https://www.worldmiao.com",
-      "title": "worldmiao.two",
-      "icon": require('./assets/img/icons/worldmiao.svg')
   }, {
       // 一个外文电子书 网站，目前有1271515本书可供在线阅读
       "url": "https://www.forgottenbooks.com/en",
@@ -2037,19 +2027,6 @@ var publishing_book_items = [
       "title": "Planet eBook",
       "icon": require('./assets/img/icons/planetebook.svg')
   }, {
-      "url": "https://itbook.download",
-      "title": "Itbook",
-      "icon": require('./assets/img/icons/itbook.svg')
-  }, {
-      "url": "http://cn.epubee.com/books",
-      "title": "ePUBee 书库",
-      "icon": require('./assets/img/icons/epubee.svg')
-  }, {
-      // 快搜电子书搜索，有多个资源站点可选择
-      "url": "https://ebook.chongbuluo.com",
-      "title": "电子书搜索",
-      "icon": require('./assets/img/icons/book-chongbuluo.svg')
-  }, {
       // 除了资源多，鸠摩还贴心地按照不同的格式对书籍进行了分类
       "url": "https://www.jiumodiary.com",
       "title": "鸠摩搜索",
@@ -2064,13 +2041,14 @@ var publishing_book_items = [
       "title": "OpenStax CNX Library",
       "icon": require('./assets/img/icons/cnx.svg')
   }, {
-      "url": "https://booksc.org", 
-      "title": "BookSC",  
-      "icon": require('./assets/img/icons/booksc.svg')
-  }, {
       "url": "https://www.letmeread.net", 
       "title": "Let Me Read » Best Books to Read in a Lifetime",  
       "icon": require('./assets/img/icons/letmeread.svg')
+  }, {
+      // Z-Library
+      "url": "https://booksc.org", 
+      "title": "Z-Lib-1",  
+      "icon": require('./assets/img/icons/zlib.svg')
   }, {
       // https://z-lib.org  https://1lib.us  https://zh.jp1lib.org  https://jp1lib.org  https://zh.1lib.org
       // Z-Library 项目部分. 全球最大的数字图书馆
@@ -2078,8 +2056,8 @@ var publishing_book_items = [
       // 免费下载epub、pdf、mobi格式电子书
       // 支持转换为FB2、TXT、RTF等格式
       "url": "https://b-ok.asia",
-      "title": "Electronic library",
-      "icon": require('./assets/img/icons/b-ok.svg')
+      "title": "Z-Lib-2",
+      "icon": require('./assets/img/icons/zlib.svg')
   }, {
       // http://gen.lib.rus.ec 超有名的俄罗斯网站，真的有超多书籍！教科书在这里甚至能直接找到原版！中文书籍也超丰富的啊！
       "url": "http://libgen.rs",
@@ -2116,26 +2094,17 @@ var publishing_book_items = [
       "title": "Cultural Japan (カルチュラル・ジャパン)", 
       "icon": require('./assets/img/icons/cultural.svg')
   }, {
-      "url": "https://ebook.huzerui.com",
+      "url": "https://xmsoushu.com",
       "title": "熊猫搜书",
-      "icon": require('./assets/img/icons/panda-search.svg')
+      "icon": require('./assets/img/icons/xmsoushu.svg')
   }, {
       "url": "https://ebook2.lorefree.com",
       "title": "LoreFree-去中心化免费电子书共享社区",
       "icon": require('./assets/img/icons/lorefree.svg')
   }, {
-      "url": "https://epubw.com",
-      "title": "ePUBw",
-      "icon": require('./assets/img/icons/epubw.svg')
-  }, {
       "url": "https://salttiger.com",
       "title": "SaltTiger | 每天一本编程书，每天进步一点点",
       "icon": require('./assets/img/icons/salttiger.svg')
-  }, {
-  		// IT类英文电子书 下载，分享的书籍出版日期较新，可自助搜索，近年来在 IT 基础上增加了很多其他学科。
-      "url": "http://www.itebookshare.com",
-      "title": "ITeBookShare | IT eBook Share – Free IT eBook Download.PDF,CHM,ePub,djvu",
-      "icon": require('./assets/img/icons/default.svg')
   }, {
   		// 这个网站收藏的文本已超过三万部著作，并有五十亿字之多，可免费浏览，为历代中文文献资料库最大者。
       "url": "https://ctext.org/zhs",
@@ -2166,29 +2135,9 @@ var publishing_book_items = [
       "title": "七彩英语",
       "icon": require('./assets/img/icons/default.svg')
   }, {
-      "url": "https://www.tianfateng.cn/tag/magazine",
-      "title": "原版英文杂志 - 田间小站",
-      "icon": require('./assets/img/icons/default.svg')
-  }, {
-      // 英文长文阅读网站
-      "url": "https://longreads.com",
-      "title": "Longreads : The best longform stories on the web",
-      "icon": require('./assets/img/icons/longreads.svg')
-  }, {
-      // 英文长文阅读网站
-      "url": "https://nautil.us",
-      "title": "Nautilus | Science Connected",
-      "icon": require('./assets/img/icons/nautil.svg')
-  }, {
-      // 英文长文阅读网站
-      "url": "https://longform.org",
-      "title": "Longform",
-      "icon": require('./assets/img/icons/longform.svg')
-  }, {
-      // 英文长文阅读网站
-      "url": "https://thebrowser.com",
-      "title": "The Browser",
-      "icon": require('./assets/img/icons/thebrowser.svg')
+      "url": "https://www.tjxz.cc",
+      "title": "田间小站",
+      "icon": require('./assets/img/icons/tjxz.svg')
   }, {
       "url": "https://www.pdfdrive.com",
       "title": "PDF Drive - Search and download PDF files for free.",
@@ -2199,12 +2148,7 @@ var publishing_book_items = [
       "title": "Freeditorial",
       "icon": require('./assets/img/icons/freeditorial.svg')
   }, {
-    	// 在线免费阅读和下载电子书
-      "url": "https://www.classicly.com",
-      "title": "Read free books online in PDF, Kindle & ePub",
-      "icon": require('./assets/img/icons/default.svg')
-  }, {
-      "url": "https://52doc.com",
+      "url": "https://www.52doc.com",
       "title": "我爱电子书",
       "icon": require('./assets/img/icons/52doc.svg')
   }, {
@@ -2251,6 +2195,31 @@ var publishing_book_items = [
       "url": "https://shepherd.com",
       "title": "Shepherd | Discover The Best Books To Read 📚",
       "icon": require('./assets/img/icons/shepherd.svg')
+  }, {
+      // 英文长文阅读网站
+      "url": "https://longreads.com",
+      "title": "Longreads : The best longform stories on the web",
+      "icon": require('./assets/img/icons/longreads.svg')
+  }, {
+      // 英文长文阅读网站
+      "url": "https://nautil.us",
+      "title": "Nautilus | Science Connected",
+      "icon": require('./assets/img/icons/nautil.svg')
+  }, {
+      // 英文长文阅读网站
+      "url": "https://longform.org",
+      "title": "Longform",
+      "icon": require('./assets/img/icons/longform.svg')
+  }, {
+      // 英文长文阅读网站
+      "url": "https://thebrowser.com",
+      "title": "The Browser",
+      "icon": require('./assets/img/icons/thebrowser.svg')
+  }, {
+      // 台湾一个社科书籍推荐网站
+      "url": "https://whogovernstw.org",
+      "title": "菜市场政治学",
+      "icon": require('./assets/img/icons/whogovernstw.svg')
   }
 
 ];
