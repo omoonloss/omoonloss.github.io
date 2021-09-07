@@ -715,6 +715,10 @@ if (!Store.getCookie('visited')) {
         "title": "Libby",
         "icon": require('./assets/img/icons/libby.svg')
     }, {
+        "url": "https://www.thestorygraph.com",
+        "title": "StoryGraph",
+        "icon": require('./assets/img/icons/thestorygraph.svg')
+    }, {
         "url": "https://www.goodreads.com",
         "title": "Goodreads | Meet your next favorite book",
         "icon": require('./assets/img/icons/goodreads.svg')
@@ -1998,6 +2002,10 @@ var publishing_book_items = [
       "url": "http://ebooks.lib.ntu.edu.tw/Home/ListBooks",
       "title": "臺湾大学图书馆＊公开取用电子书",
       "icon": require('./assets/img/icons/default.svg')
+  }, {
+      "url": "https://www.thriftbooks.com",
+      "title": "ThriftBooks | New & Used Books | Buy Cheap Books Online at ThriftBooks",
+      "icon": require('./assets/img/icons/thriftbooks.svg')
   }, {
       // 可能是最好用的古籍资料下载网站
       "url": "https://new.shuge.org",
