@@ -1690,6 +1690,10 @@ var coding_items = [
       "title": "CodeSandbox",
       "icon": require('./assets/img/icons/codesandbox.svg')
   }, {
+      "url": "https://www.kaggle.com",
+      "title": "Kaggle | Find Open Datasets and Machine Learning Projects",
+      "icon": require('./assets/img/icons/kaggle.svg')
+  }, {
       "url": "https://colab.research.google.com",
       "title": "Colaboratory",
       "icon": require('./assets/img/icons/colaboratory.svg')
