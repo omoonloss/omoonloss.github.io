@@ -1706,6 +1706,12 @@ var coding_items = [
       "title": "DB Fiddle - SQL Database Playground",
       "icon": require('./assets/img/icons/db-fiddle.svg')
   }, {
+      // 代码可视化网站，可将代码按执行步骤，分段可视化展示，并允许将可视化代码内嵌到网站上。
+      // 目前已支持 Python、Java、C、C++、JavaScript、Ruby 等编程语言，该工具可应用到文档教程、技术讲座、团队新手指引项目等场景上
+      "url": "https://pythontutor.com",
+      "title": "Python Tutor - Visualize Python, Java, C, C++, JavaScript, TypeScript, and Ruby code execution",
+      "icon": require('./assets/img/icons/pythontutor.svg')
+  }, {
       "url": "https://wandbox.org",
       "title": "[Wandbox]三へ( へ՞ਊ ՞)へ ﾊｯﾊｯ",
       "icon": require('./assets/img/icons/wandbox.svg')
