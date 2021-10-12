@@ -2091,6 +2091,11 @@ var publishing_book_items = [
       "title": "Online Library and Publication Platform | OAPEN", 
       "icon": require('./assets/img/icons/oapen.svg')
   }, {
+      // 是美国一个免费在线阅读网站，是由宾夕法尼亚大学数字图书馆的策划研究员John Mark Ockerbloom创建并校订的，目前由宾夕法尼亚大学图书馆负责管理运作 
+      "url": "https://onlinebooks.library.upenn.edu",
+      "title": "The Online Books Page", 
+      "icon": require('./assets/img/icons/onlinebooks.svg')
+  }, {
       "url": "https://downmagaz.net",
       "title": "Magazines Commumity! | Download PDF magazines", 
       "icon": require('./assets/img/icons/downmagaz.svg')
