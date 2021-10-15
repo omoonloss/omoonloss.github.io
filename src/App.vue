@@ -2321,6 +2321,10 @@ var tool_items = [
       "title": "Online OCR",
       "icon": require('./assets/img/icons/onlineocr.svg')
   }, {
+      "url": "https://fontmeme.com/shadow-effect/",
+      "title": "Shadow Effect Online",
+      "icon": require('./assets/img/icons/fontmeme.svg')
+  }, {
       "url": "https://songwhip.com",
       "title": "Songwhip | Music links to every platform | Free",
       "icon": require('./assets/img/icons/songwhip.svg')
