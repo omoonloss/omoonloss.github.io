@@ -715,9 +715,9 @@ if (!Store.getCookie('visited')) {
         "title": "Libby",
         "icon": require('./assets/img/icons/libby.svg')
     }, {
-        "url": "https://www.thestorygraph.com",
-        "title": "StoryGraph",
-        "icon": require('./assets/img/icons/thestorygraph.svg')
+        "url": "https://www.notion.so",
+        "title": "Notion – The all-in-one workspace for your notes, tasks, wikis, and databases.",
+        "icon": require('./assets/img/icons/notion.svg')
     }, {
         "url": "https://www.goodreads.com",
         "title": "Goodreads | Meet your next favorite book",
