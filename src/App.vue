@@ -1698,6 +1698,10 @@ var coding_items = [
       "title": "Colaboratory",
       "icon": require('./assets/img/icons/colaboratory.svg')
   }, {
+      "url": "https://gradient.run",
+      "title": "Gradient - Use machine learning to make anything.",
+      "icon": require('./assets/img/icons/gradient.svg')
+  }, {
       "url": "https://deepnote.com",
       "title": "Deepnote - Data science notebook for teams",
       "icon": require('./assets/img/icons/deepnote.svg')
