@@ -2071,18 +2071,17 @@ var publishing_book_items = [
       "title": "Let Me Read » Best Books to Read in a Lifetime",  
       "icon": require('./assets/img/icons/letmeread.svg')
   }, {
-      // Z-Library
-      "url": "https://booksc.org", 
-      "title": "Z-Lib-1",  
-      "icon": require('./assets/img/icons/zlib.svg')
-  }, {
-      // https://z-lib.org  https://1lib.us  https://zh.jp1lib.org  https://jp1lib.org  https://zh.1lib.org
       // Z-Library 项目部分. 全球最大的数字图书馆
       // 自2009年起的免费图书馆. 
       // 免费下载epub、pdf、mobi格式电子书
       // 支持转换为FB2、TXT、RTF等格式
+      "url": "https://z-lib.org", 
+      "title": "Z-Lib",  
+      "icon": require('./assets/img/icons/zlib.svg')
+  }, {
+      // https://1lib.us  https://zh.1lib.us  https://jp1lib.org  https://zh.jp1lib.org  https://ru1lib.org  https://zh.ru1lib.org  https://b-ok.cc
       "url": "https://b-ok.asia",
-      "title": "Z-Lib-2",
+      "title": "Z-Lib-mirror",
       "icon": require('./assets/img/icons/zlib.svg')
   }, {
       // http://gen.lib.rus.ec 超有名的俄罗斯网站，真的有超多书籍！教科书在这里甚至能直接找到原版！中文书籍也超丰富的啊！
