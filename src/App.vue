@@ -1312,10 +1312,17 @@ var info_items = [
       "title": "端傳媒 Initium Media",
       "icon": require('./assets/img/icons/theinitium.svg')
   }, {
-      "url": "https://hk.appledaily.com",
-      "title": "蘋果日報",
-      "icon": require('./assets/img/icons/appledaily-gray.svg')
-  }, {
+      "url": "https://www.inmediahk.net",
+      "title": "獨立媒體",
+      "icon": require('./assets/img/icons/inmediahk.png')
+  }
+  // goodbye at 2021-06-24 00:00:00
+  // , {
+  //     "url": "https://hk.appledaily.com",
+  //     "title": "蘋果日報",
+  //     "icon": require('./assets/img/icons/appledaily-gray.svg')
+  // }
+  , {
       "url": "https://www.rfi.fr/cn",
       "title": "RFI 华语 - 法国国际广播电台",
       "icon": require('./assets/img/icons/rfi.svg')
@@ -1383,6 +1390,10 @@ var info_items = [
       "url": "https://wanqu.co",
       "title": "湾区日报",
       "icon": require('./assets/img/icons/wanqu.svg')
+  }, {
+      "url": "https://www.trackawesomelist.com",
+      "title": "Track Awesome List | Track your Favorite Github Awesome Repo",
+      "icon": require('./assets/img/icons/trackawesomelist.svg')
   }, {
       "url": "https://japanjobs.dev",
       "title": "Developer Jobs in Japan - A Job A Day Keeps The Doctor Away",
@@ -1531,8 +1542,8 @@ var info_items = [
       "title": "Λ-Reading Newsletter",
       "icon": require('./assets/img/icons/rizime.svg')
   }, {
-      "url": "https://acacess.substack.com",
-      "title": "Sustainable Productivity",
+      "url": "https://letters.acacess.com",
+      "title": "DPS - Daily Productivity Sharing",
       "icon": require('./assets/img/icons/acacess.svg')
   }
 ];
@@ -1617,6 +1628,10 @@ var community_items = [
       "url": "https://hackernoon.com",
       "title": "Hacker Noon",
       "icon": require('./assets/img/icons/hackernoon.svg')
+  }, {
+      "url": "https://www.ptt.cc/bbs/index.html",
+      "title": "批踢踢實業坊",
+      "icon": require('./assets/img/icons/default.svg')
   }
 
 ];
