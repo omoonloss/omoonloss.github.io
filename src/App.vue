@@ -739,6 +739,10 @@ if (!Store.getCookie('visited')) {
         "title": "Bitbucket",
         "icon": require('./assets/img/icons/bitbucket.svg')
     }, {
+        "url": "https://codeberg.org",
+        "title": "Codeberg",
+        "icon": require('./assets/img/icons/codeberg.svg')
+    }, {
         "url": "https://codepen.io",
         "title": "CodePen",
         "icon": require('./assets/img/icons/codepen.svg')
