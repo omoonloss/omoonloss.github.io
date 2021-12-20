@@ -1697,9 +1697,9 @@ var documentary_travel_items = [
 // Coding
 var coding_items = [
   {
-      "url": "https://repl.it",
-      "title": "Repl.it",
-      "icon": require('./assets/img/icons/repl.svg')
+      "url": "https://replit.com",
+      "title": "Replit",
+      "icon": require('./assets/img/icons/replit.svg')
   }, {
       "url": "https://ide.goorm.io",
       "title": "goormIDE - A Powerful Cloud IDE Service",
