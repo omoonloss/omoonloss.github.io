@@ -627,7 +627,7 @@
       </ul>
 
       <p class="copyright">
-        © 2017~2021 &nbsp;<a href="https://o.moonloss.com" target="_blank">HOME</a>
+        © 2017~2022 &nbsp;<a href="https://o.moonloss.com" target="_blank">HOME</a>
       </p>
   </div>
 
@@ -775,11 +775,11 @@ if (!Store.getCookie('visited')) {
         "title": "TeX - LaTeX Stack Exchange",
         "icon": require('./assets/img/icons/texstackexchange.svg')
     }, {
-        "url": "https://quora.com",
+        "url": "https://www.quora.com",
         "title": "Quora",
         "icon": require('./assets/img/icons/quora.svg')
     }, {
-        "url": "https://facebook.com",
+        "url": "https://www.facebook.com",
         "title": "Facebook",
         "icon": require('./assets/img/icons/facebook.svg')
     }, {
@@ -907,15 +907,11 @@ if (!Store.getCookie('visited')) {
         "title": "Society of Classical Poets",
         "icon": require('./assets/img/icons/classicalpoets.svg')
     }, {
-        "url": "https://www.shicimingju.com",
-        "title": "诗词名句网 -古诗词大全|诗歌|诗词鉴赏|古诗名句|诗句赏析！",
-        "icon": require('./assets/img/icons/shicimingju.svg')
-    }, {
         "url": "https://meirishici.com",
         "title": "每日诗词",
         "icon": require('./assets/img/icons/meirishici.svg')
     }, {
-        "url": "https://www.gushiwen.org",
+        "url": "https://www.gushiwen.cn",
         "title": "古诗文网",
         "icon": require('./assets/img/icons/gushiwen.svg')
     }, {
@@ -999,10 +995,10 @@ if (!Store.getCookie('visited')) {
         "title": "全历史",
         "icon": require('./assets/img/icons/allhistory.svg')
     }, {
-        // 将在互联网上以多语种格式免费提供世界各地的重要材料,包括手稿、地图、珍本书籍、乐谱、录音、电影、印刷品、照片、建筑图等等
-        "url": "https://www.wdl.org/zh",
-        "title": "世界数字图书馆主页",
-        "icon": require('./assets/img/icons/wdl.svg')
+        // 国会图书馆
+        "url": "https://www.loc.gov",
+        "title": "Library of Congress",
+        "icon": require('./assets/img/icons/loc.svg')
     }, {
         "url": "https://cjjc.weblio.jp",
         "title": "中国语辞书 - Weblio日中中日辞典",
@@ -1017,17 +1013,13 @@ if (!Store.getCookie('visited')) {
         "title": "Bandcamp",
         "icon": require('./assets/img/icons/bandcamp.svg')
     }, {
-        "url": "https://luooqi.com",
+        "url": "https://ifish.fun",
         "title": "鱼声音乐",
-        "icon": require('./assets/img/icons/luooqi.svg')
+        "icon": require('./assets/img/icons/ifish.svg')
     }, {
         "url": "https://bailemi.com/index.php/dance",
         "title": "百乐米 - 专注于分享好听的外文歌曲！",
         "icon": require('./assets/img/icons/bailemi.svg')
-    }, {
-        "url": "https://songtasty.com/song",
-        "title": "SongTasty",
-        "icon": require('./assets/img/icons/songtasty.svg')
     }, {
         "url": "https://musescore.org",
         "title": "Musescore",
@@ -1399,10 +1391,6 @@ var info_items = [
       "title": "Track Awesome List | Track your Favorite Github Awesome Repo",
       "icon": require('./assets/img/icons/trackawesomelist.svg')
   }, {
-      "url": "https://japanjobs.dev",
-      "title": "Developer Jobs in Japan - A Job A Day Keeps The Doctor Away",
-      "icon": require('./assets/img/icons/japanjobs.svg')
-  }, {
       "url": "https://www.solidot.org",
       "title": "Solidot: 奇客的资讯，重要的东西",
       "icon": require('./assets/img/icons/solidot.svg')
@@ -1415,7 +1403,7 @@ var info_items = [
       "title": "Echo JS",
       "icon": require('./assets/img/icons/echo-js.svg')
   }, {
-      "url": "https://weekly.75team.com",
+      "url": "https://weekly.75.team",
       "title": "奇舞周刊",
       "icon": require('./assets/img/icons/75team.svg')
   }, {
@@ -1510,7 +1498,7 @@ var info_items = [
       "title": "IT之家 - 数码，科技，生活",
       "icon": require('./assets/img/icons/ithome.svg')
   }, {
-      "url": "https://juejin.im",
+      "url": "https://juejin.cn",
       "title": "掘金",
       "icon": require('./assets/img/icons/juejin.svg')
   }, {
@@ -1534,7 +1522,7 @@ var info_items = [
       "title": "机核 GCORES",
       "icon": require('./assets/img/icons/gcores.svg')
   }, {
-      "url": "https://www.jiligame.com",
+      "url": "https://www.jiligamefun.com/category/game/jiligame",
       "title": "叽哩叽哩单机游戏",
       "icon": require('./assets/img/icons/jiligame.svg')
   }, {
@@ -1616,15 +1604,11 @@ var community_items = [
       "title": "链滴",
       "icon": require('./assets/img/icons/ld246.svg')
   }, {
-      "url": "https://www.zcfy.cc",
-      "title": "众成翻译",
-      "icon": require('./assets/img/icons/zcfy.svg')
-  }, {
       "url": "https://github.com/xitu/gold-miner",
       "title": "掘金翻译",
       "icon": require('./assets/img/icons/juejin.svg')
   }, {
-      "url": "http://g.yeeyan.org",
+      "url": "http://g.yeeyan.com",
       "title": "译言古登堡计划",
       "icon": require('./assets/img/icons/yeeyan.svg')
   }, {
@@ -1643,10 +1627,6 @@ var community_items = [
 // Documentary & Travel vlog
 var documentary_travel_items = [
   {
-      "url": "http://www.sao.com",
-      "title": "SAO",
-      "icon": require('./assets/img/icons/sao.svg')
-  }, {
       "url": "https://rocumentaries.com",
       "title": "Rocumentaries — Watch the best documentaries online",
       "icon": require('./assets/img/icons/rocumentaries.svg')
@@ -1654,10 +1634,6 @@ var documentary_travel_items = [
       "url": "https://vdianying.cc",
       "title": "唯电影",
       "icon": require('./assets/img/icons/vdianying.svg')
-  }, {
-      "url": "https://v.qq.com/x/channel/doco",
-      "title": "腾讯视频纪录片频道",
-      "icon": require('./assets/img/icons/default.svg')
   }, {
       "url": "http://jishi.cctv.com",
       "title": "CCTV 纪实频道",
@@ -1668,16 +1644,12 @@ var documentary_travel_items = [
       "icon": require('./assets/img/icons/default.svg')
   }, {
       "url": "https://www.douban.com/doulist/223273/",
-      "title": "豆瓣豆列",
+      "title": "豆瓣高分纪录片豆列",
       "icon": require('./assets/img/icons/default.svg')
   }, {
       "url": "https://www.onehourlife.com",
       "title": "每天一小时纪录片",
       "icon": require('./assets/img/icons/onehourlife.svg')
-  }, {
-      "url": "https://xiongmaopan.com",
-      "title": "熊猫盘纪录片|推荐好看的纪录片",
-      "icon": require('./assets/img/icons/xiongmaopan.svg')
   }, {
       "url": "http://vagaband.blog.sohu.com",
       "title": "流浪者",
@@ -1777,7 +1749,7 @@ var coding_items = [
       "title": "力扣(LeetCode)",
       "icon": require('./assets/img/icons/leetcode.svg')
   }, {
-      "url": "https://www.lintcode.com/zh-cn",
+      "url": "https://www.lintcode.com",
       "title": "LintCode",
       "icon": require('./assets/img/icons/lintcode.svg')
   }, {
@@ -1845,9 +1817,9 @@ var course_items = [
       "title": "优优教程网",
       "icon": require('./assets/img/icons/uiiiuiii.svg')
   }, {
-      "url": "https://www.shiyanlou.com",
-      "title": "实验楼",
-      "icon": require('./assets/img/icons/shiyanlou.svg')
+      "url": "https://www.lanqiao.cn/courses/",
+      "title": "蓝桥云课",
+      "icon": require('./assets/img/icons/lanqiao.svg')
   }, {
       "url": "https://www.tutorialspoint.com",
       "title": "TutorialSpoint",
@@ -1942,7 +1914,7 @@ var design_items = [
       "title": "illlustrations - open source illustrations kit",
       "icon": require('./assets/img/icons/illlustrations.svg')
   }, {
-      "url": "https://www.pixeltrue.com/illustrations",
+      "url": "https://www.pixeltrue.com/packs",
       "title": "Pixel True - Beautiful illustration packs",
       "icon": require('./assets/img/icons/pixeltrue.svg')
   }, {
@@ -2164,9 +2136,9 @@ var publishing_book_items = [
       "title": "古籍馆-中国最大的古籍图书馆",
       "icon": require('./assets/img/icons/gujiguan.svg')
   }, {
-      "url": "https://sou-yun.cn/eBookIndex.aspx",
-      "title": "影印古籍资料",
-      "icon": require('./assets/img/icons/sou-yun.svg')
+      "url": "https://cnkgraph.com/Book",
+      "title": "知識圖譜",
+      "icon": require('./assets/img/icons/cnkgraph.svg')
   }, {
       "url": "https://www.neohytung.com",
       "title": "瀚堂近代报刊数据库",
@@ -2307,7 +2279,7 @@ var academic_items = [
       "icon": require('./assets/img/icons/lunwen.svg')
   }, {
       // 此文库分为15个学科专辑，覆盖自然科学、工程与技术科学、人文与社会科学、医药科学、农业科学五大门类的所有一级学科，所有图书按标准学科和中图法两个体系进行分类。包括专著、教材、图集、报告、工具书、大众科普等，满足科研、教学、管理等各个系列的专业用户。几乎囊括科学出版社60余年来所有获奖作品、院士著作、重点丛书、各学科必备经典专著等，堪称“科学宝库、数字典藏”
-      "url": "http://book.sciencereading.cn",
+      "url": "https://book.sciencereading.cn",
       "title": "科学文库",
       "icon": require('./assets/img/icons/sciencereading.svg')
   }, {
@@ -2787,7 +2759,7 @@ var tool_items = [
       "title": "Bundlephobia | Size of NPM dependencies",
       "icon": require('./assets/img/icons/bundlephobia.svg')
   }, {
-      "url": "https://archive.is",
+      "url": "https://archive.ph",
       "title": "Webpage archive",
       "icon": require('./assets/img/icons/archive.svg')
   }, {
@@ -2918,7 +2890,7 @@ var pictures_items = [
       "icon": require('./assets/img/icons/mixkit.svg')
   }, {
       // 徕卡旗下网站 既有全球顶级摄影作品展示，又可在线浏览徕卡旗下的摄影杂志。比较小众，作品质量非常高
-      "url": "https://beta.1x.com",
+      "url": "https://1x.com",
       "title": "1x. Photographers that make you feel.",
       "icon": require('./assets/img/icons/default.svg')
   }, {
