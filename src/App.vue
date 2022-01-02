@@ -707,6 +707,10 @@ if (!Store.getCookie('visited')) {
   if(Store.fetch_site().length == 0){
     Store.save_site([
     {
+        "url": "https://todoist.com",
+        "title": "Todoist",
+        "icon": require('./assets/img/icons/todoist.svg')
+    }, {
         "url": "https://www.wolframalpha.com",
         "title": "Wolfram|Alpha: Computational Intelligence",
         "icon": require('./assets/img/icons/wolframalpha.svg')
@@ -3060,6 +3064,10 @@ var blog_items = [
       "url": "https://www.ruanyifeng.com/blog",
       "title": "阮一峰的网络日志",
       "icon": require('./assets/img/icons/ruanyifeng.svg')
+  }, {
+      "url": "https://tsb2blog.com",
+      "title": "TSBBLOG",
+      "icon": require('./assets/img/icons/tsb2blog.svg')
   }
 
 ];
