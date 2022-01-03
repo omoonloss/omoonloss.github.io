@@ -3068,6 +3068,10 @@ var blog_items = [
       "url": "https://tsb2blog.com",
       "title": "TSBBLOG",
       "icon": require('./assets/img/icons/tsb2blog.svg')
+  }, {
+      "url": "https://kenshinji.me",
+      "title": "Fred's Blog",
+      "icon": require('./assets/img/icons/kenshinji.svg')
   }
 
 ];
