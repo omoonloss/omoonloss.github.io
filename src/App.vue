@@ -3023,10 +3023,6 @@ var blog_items = [
       "title": "且听书吟 - 诗与梦想的远方",
       "icon": require('./assets/img/icons/yufan.svg')
   }, {
-      "url": "https://netflixtechblog.com",
-      "title": "Netflix TechBlog",
-      "icon": require('./assets/img/icons/netflixtechblog.svg')
-  }, {
       // ECMA 技术委员会成员，开发设计过各种编程语言，妥妥的技术大佬，也是 Stack Overflow 排名前五十的用户，写了超多回答。
       "url": "https://ericlippert.com",
       "title": "Eric Lippert's blog",
@@ -3072,6 +3068,26 @@ var blog_items = [
       "url": "https://kenshinji.me",
       "title": "Fred's Blog",
       "icon": require('./assets/img/icons/kenshinji.svg')
+  }, {
+      "url": "https://netflixtechblog.com",
+      "title": "Netflix TechBlog",
+      "icon": require('./assets/img/icons/netflixtechblog.svg')
+  }, {
+      "url": "https://developers.googleblog.com",
+      "title": "Google Developers Blog",
+      "icon": require('./assets/img/icons/googleblog.svg')
+  }, {
+      "url": "https://slack.engineering",
+      "title": "Slack Engineering",
+      "icon": require('./assets/img/icons/slack.svg')
+  }, {
+      "url": "https://engineering.atspotify.com",
+      "title": "Spotify Engineering",
+      "icon": require('./assets/img/icons/atspotify.svg')
+  }, {
+      "url": "https://dropbox.tech",
+      "title": "Dropbox Tech Blog",
+      "icon": require('./assets/img/icons/dropbox.svg')
   }
 
 ];
