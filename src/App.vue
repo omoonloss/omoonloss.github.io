@@ -252,7 +252,7 @@
           >
             <i class="mdui-icon material-icons">close</i>
           </button>
-          <a v-bind:href="site.url" target="_blank">
+          <a v-bind:href="site.url" target="_blank" rel="noopener noreferrer nofollow">
             <div>
               <img v-bind:src="site.icon" width="55px" height="55px" v-bind:class="{remove_active: canRemove}"/>
             </div>
@@ -302,7 +302,7 @@
       <!-- Sites list -->
    <!--    <ul class="mdui-list">
         <li v-for="(test_site, index) in test_sites" class="site">
-          <a v-bind:href="design_site.url" target="_blank">
+          <a v-bind:href="design_site.url" target="_blank" rel="noopener noreferrer nofollow">
             <div>
               <img v-bind:src="design_site.icon" width="55px" height="55px" />
             </div>
@@ -326,7 +326,7 @@
       <!-- Sites list -->
       <ul class="mdui-list">
         <li v-for="(info_site, index) in info_sites" class="site">
-          <a v-bind:href="info_site.url" target="_blank">
+          <a v-bind:href="info_site.url" target="_blank" rel="noopener noreferrer nofollow">
             <div>
               <img v-bind:src="info_site.icon" width="55px" height="55px" />
             </div>
@@ -350,7 +350,7 @@
       <!-- Sites list -->
       <ul class="mdui-list">
         <li v-for="(community_site, index) in community_sites" class="site">
-          <a v-bind:href="community_site.url" target="_blank">
+          <a v-bind:href="community_site.url" target="_blank" rel="noopener noreferrer nofollow">
             <div>
               <img v-bind:src="community_site.icon" width="55px" height="55px" />
             </div>
@@ -374,7 +374,7 @@
       <!-- Sites list -->
       <ul class="mdui-list">
         <li v-for="(documentary_travel_site, index) in documentary_travel_sites" class="site">
-          <a v-bind:href="documentary_travel_site.url" target="_blank">
+          <a v-bind:href="documentary_travel_site.url" target="_blank" rel="noopener noreferrer nofollow">
             <div>
               <img v-bind:src="documentary_travel_site.icon" width="55px" height="55px" />
             </div>
@@ -398,7 +398,7 @@
       <!-- Sites list -->
       <ul class="mdui-list">
         <li v-for="(coding_site, index) in coding_sites" class="site">
-          <a v-bind:href="coding_site.url" target="_blank">
+          <a v-bind:href="coding_site.url" target="_blank" rel="noopener noreferrer nofollow">
             <div>
               <img v-bind:src="coding_site.icon" width="55px" height="55px" />
             </div>
@@ -422,7 +422,7 @@
       <!-- Sites list -->
       <ul class="mdui-list">
         <li v-for="(course_site, index) in course_sites" class="site">
-          <a v-bind:href="course_site.url" target="_blank">
+          <a v-bind:href="course_site.url" target="_blank" rel="noopener noreferrer nofollow">
             <div>
               <img v-bind:src="course_site.icon" width="55px" height="55px" />
             </div>
@@ -447,7 +447,7 @@
       <!-- Sites list -->
       <ul class="mdui-list">
         <li v-for="(design_site, index) in design_sites" class="site">
-          <a v-bind:href="design_site.url" target="_blank">
+          <a v-bind:href="design_site.url" target="_blank" rel="noopener noreferrer nofollow">
             <div>
               <img v-bind:src="design_site.icon" width="55px" height="55px" />
             </div>
@@ -471,7 +471,7 @@
       <!-- Sites list -->
       <ul class="mdui-list">
         <li v-for="(publishing_book_site, index) in publishing_book_sites" class="site">
-          <a v-bind:href="publishing_book_site.url" target="_blank">
+          <a v-bind:href="publishing_book_site.url" target="_blank" rel="noopener noreferrer nofollow">
             <div>
               <img v-bind:src="publishing_book_site.icon" width="55px" height="55px" />
             </div>
@@ -495,7 +495,7 @@
       <!-- Sites list -->
       <ul class="mdui-list">
         <li v-for="(academic_site, index) in academic_sites" class="site">
-          <a v-bind:href="academic_site.url" target="_blank">
+          <a v-bind:href="academic_site.url" target="_blank" rel="noopener noreferrer nofollow">
             <div>
               <img v-bind:src="academic_site.icon" width="55px" height="55px" />
             </div>
@@ -519,7 +519,7 @@
       <!-- Sites list -->
       <ul class="mdui-list">
         <li v-for="(tool_site, index) in tool_sites" class="site">
-          <a v-bind:href="tool_site.url" target="_blank">
+          <a v-bind:href="tool_site.url" target="_blank" rel="noopener noreferrer nofollow">
             <div>
               <img v-bind:src="tool_site.icon" width="55px" height="55px" />
             </div>
@@ -543,7 +543,7 @@
       <!-- Sites list -->
       <ul class="mdui-list">
         <li v-for="(pictures_site, index) in pictures_sites" class="site">
-          <a v-bind:href="pictures_site.url" target="_blank">
+          <a v-bind:href="pictures_site.url" target="_blank" rel="noopener noreferrer nofollow">
             <div>
               <img v-bind:src="pictures_site.icon" width="55px" height="55px" />
             </div>
@@ -567,7 +567,7 @@
       <!-- Sites list -->
       <ul class="mdui-list">
         <li v-for="(blog_site, index) in blog_sites" class="site">
-          <a v-bind:href="blog_site.url" target="_blank">
+          <a v-bind:href="blog_site.url" target="_blank" rel="noopener noreferrer nofollow">
             <div>
               <img v-bind:src="blog_site.icon" width="55px" height="55px" />
             </div>
@@ -622,12 +622,12 @@
   <!-- Footer -->
   <div class="footer mdui-card mdui-col-xs-12">
       <ul class="social-buttons">
-        <!-- <li><a href="https://github.com/viosey/O" target="_blank"><img src="./assets/img/footer/github.svg" alt="" width="24px" height="24px;"></a></li> -->
-        <li><a href="https://github.com/ZetaoYang/oMoonLoss" target="_blank"><img src="./assets/img/footer/about.svg" alt="" width="24px" height="24px;"></i></a></li>
+        <!-- <li><a href="https://github.com/viosey/O" target="_blank" rel="noopener noreferrer nofollow"><img src="./assets/img/footer/github.svg" alt="" width="24px" height="24px;"></a></li> -->
+        <li><a href="https://github.com/ZetaoYang/oMoonLoss" target="_blank" rel="noopener noreferrer nofollow"><img src="./assets/img/footer/about.svg" alt="" width="24px" height="24px;"></i></a></li>
       </ul>
 
       <p class="copyright">
-        © 2017~2022 &nbsp;<a href="https://o.moonloss.com" target="_blank">HOME</a>
+        © 2017~2022 &nbsp;<a href="https://o.moonloss.com" target="_blank" rel="noopener noreferrer nofollow">HOME</a>
       </p>
   </div>
 
