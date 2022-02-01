@@ -1201,8 +1201,8 @@ var info_items = [
       "icon": require('./assets/img/icons/hacker-news.svg')
   }, {
       "url": "https://hn.moonloss.com",
-      "title": "Nuxt HN",
-      "icon": require('./assets/img/icons/nuxt-hn.svg')
+      "title": "Next HN",
+      "icon": require('./assets/img/icons/hn.svg')
   }, {
       // 关于科技，商业，金钱，地缘政治和中美关系的双语出版物。每个星期四和星期日都有新帖子。
 			// 互联是一个电子周刊，从分析创建者（企业家，工程师）、运营者（企业经理）、投资者（资本家）和监管者（政客和政府官员）的角度和「维纳图」，以及他们之间的相互联系，来分析各个行业和思考宏观趋势。
