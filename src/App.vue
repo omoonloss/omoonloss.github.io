@@ -2084,6 +2084,10 @@ var publishing_book_items = [
       "title": "Library Genesis", // Libgen
       "icon": require('./assets/img/icons/libgen.svg')
   }, {
+      "url": "https://archive.org/details/books",
+      "title": "Internet Archiv e| Books", 
+      "icon": require('./assets/img/icons/archive.svg')
+  }, {
       // 有很多 Libgen 上都没有的学术著作 pdf 下载，很多都是新书.
       "url": "https://oapen.org",
       "title": "Online Library and Publication Platform | OAPEN", 
@@ -2093,6 +2097,10 @@ var publishing_book_items = [
       "url": "https://onlinebooks.library.upenn.edu",
       "title": "The Online Books Page", 
       "icon": require('./assets/img/icons/onlinebooks.svg')
+  }, {
+      "url": "https://www.free-ebooks.net",
+      "title": "Free-eBooks.net | Download free Fiction, Health, Romance and many more books", 
+      "icon": require('./assets/img/icons/free-ebooks.svg')
   }, {
       "url": "https://downmagaz.net",
       "title": "Magazines Commumity! | Download PDF magazines", 
@@ -2202,6 +2210,10 @@ var publishing_book_items = [
       "url": "http://www.haodoo.net",
       "title": "好讀",
       "icon": require('./assets/img/icons/haodoo.svg')
+  }, {
+      "url": "https://www.obooko.com",
+      "title": "Best Free Books Online | Download Ebooks in PDF & EPUB",
+      "icon": require('./assets/img/icons/obooko.svg')
   }, {
       "url": "https://www.e-booksdirectory.com",
       "title": "E-Books Directory - Categorized Links to Free Books",
@@ -2763,9 +2775,13 @@ var tool_items = [
       "title": "Bundlephobia | Size of NPM dependencies",
       "icon": require('./assets/img/icons/bundlephobia.svg')
   }, {
+      "url": "https://archive.org",
+      "title": "Internet Archive: Digital Library of Free Books, Movies, Music & Wayback Machine",
+      "icon": require('./assets/img/icons/archive.svg')
+  }, {
       "url": "https://archive.ph",
       "title": "Webpage archive",
-      "icon": require('./assets/img/icons/archive.svg')
+      "icon": require('./assets/img/icons/archive-ph.svg')
   }, {
       "url": "https://http3check.net",
       "title": "HTTP/3 Check",
