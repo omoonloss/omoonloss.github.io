@@ -2008,10 +2008,6 @@ var publishing_book_items = [
       "title": "浙江图书馆",
       "icon": require('./assets/img/icons/zjlib.svg')
   }, {
-      "url": "http://wap.gxlib.org.cn/ermsClient/browse.do",
-      "title": "广西壮族自治区图书馆 | 电子资源平台",
-      "icon": require('./assets/img/icons/default.svg')
-  }, {
       "url": "http://ebooks.lib.ntu.edu.tw/Home/ListBooks",
       "title": "臺湾大学图书馆＊公开取用电子书",
       "icon": require('./assets/img/icons/default.svg')
