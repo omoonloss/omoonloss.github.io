@@ -2040,6 +2040,21 @@ var publishing_book_items = [
       "title": "Gutenberg",
       "icon": require('./assets/img/icons/gutenberg.svg')
   }, {
+      // 基于古登堡计划的图书重新制作封面、优化排版的图书源, 相当于古登堡图书的精装版, 封面、排版都是由相关人员自己制作。当您的书架中摆满 Standard Ebooks 书籍时，仿佛置身于文艺复兴时期的图书馆，让您的阅读体验得到大幅提升! 
+      "url": "https://standardebooks.org",
+      "title": "Standard Ebooks",
+      "icon": require('./assets/img/icons/standardebooks.svg')
+  }, {
+      // 一个包含经济学人、纽约客、自然、新科学人、卫报、连线等优质杂志的图书源, 让你能够阅读最前沿、优质的英文内容。
+      "url": "https://emagazine.link",
+      "title": "英语杂志社",
+      "icon": require('./assets/img/icons/emagazine.svg')
+  }, {
+      // 在线电子书分享平台是法国一个成立于2007年的老牌便携式移动设备电子书籍下载及其付费阅读的网站，用户可以下载超过8万本的免费电子书。
+      "url": "https://www.feedbooks.com",
+      "title": "Feedbooks",
+      "icon": require('./assets/img/icons/feedbooks.svg')
+  }, {
       "url": "https://www.planetebook.com",
       "title": "Planet eBook",
       "icon": require('./assets/img/icons/planetebook.svg')
@@ -2057,6 +2072,11 @@ var publishing_book_items = [
       "url": "https://cnx.org",
       "title": "OpenStax CNX Library",
       "icon": require('./assets/img/icons/cnx.svg')
+  }, {
+      // Minitext 的一个开源的电子书库, OPDS 格式。
+      "url": "https://open.umn.edu/opentextbooks",
+      "title": "The Open Textbook Library",
+      "icon": require('./assets/img/icons/opentextbooks.svg')
   }, {
       "url": "https://www.letmeread.net", 
       "title": "Let Me Read » Best Books to Read in a Lifetime",  
