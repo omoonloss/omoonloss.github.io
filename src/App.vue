@@ -1780,6 +1780,11 @@ var course_items = [
       "title": "MIT Open Learning brings Online Learning to MIT and the world",
       "icon": require('./assets/img/icons/mit.svg')
   }, {
+      // MIT OpenCourseWare (麻省理工学院开放式课程) 是麻省理工学院的一项倡议，旨在向所有人在任何地方免费和公开地发布其本科和研究生水平课程的所有教育资料。麻省理工学院开放式课件是麻省理工学院课程教材的大型网络出版物。该项目于2001年4月4日宣布并使用知识共享署名 - 非商业性使用 - 相同方式共享许可。该倡议激励了250多个其他机构通过开放教育联盟将其课程材料作为开放教育资源提供。目前有超过2,400门课程。
+      "url": "https://ocw.mit.edu",
+      "title": "MIT OpenCourseWare | Free Online Course Materials",
+      "icon": require('./assets/img/icons/ocw.svg')
+  }, {
       "url": "https://www.udemy.com",
       "title": "Udemy | 在线课程 - 时间自由，学您想学",
       "icon": require('./assets/img/icons/udemy.svg')
