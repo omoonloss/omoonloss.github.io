@@ -2340,9 +2340,9 @@ var tool_items = [
       "title": "CSRankings: Computer Science Rankings",
       "icon": require('./assets/img/icons/csrankings.svg')
   }, {
-      "url": "https://outline.com",
-      "title": "Outline - Read & annotate without distractions",
-      "icon": require('./assets/img/icons/outline.svg')
+      "url": "https://12ft.io",
+      "title": "12ft Ladder",
+      "icon": require('./assets/img/icons/12ft.svg')
   }, {
       "url": "https://web.baimiaoapp.com",
       "title": "白描网页版 - 在线OCR文字识别、图片文字提取",
