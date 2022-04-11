@@ -3125,6 +3125,14 @@ var blog_items = [
       "url": "https://dropbox.tech",
       "title": "Dropbox Tech Blog",
       "icon": require('./assets/img/icons/dropbox.svg')
+  }, {
+      "url": "https://wattenberger.com",
+      "title": "Amelia Wattenberger",
+      "icon": require('./assets/img/icons/wattenberger.svg')
+  }, {
+      "url": "https://luolei.org",
+      "title": "罗磊的独立博客",
+      "icon": require('./assets/img/icons/luolei.svg')
   }
 
 ];
