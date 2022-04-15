@@ -1736,6 +1736,10 @@ var coding_items = [
       "title": "Compiler Explorer",
       "icon": require('./assets/img/icons/godbolt.svg')
   }, {
+      "url": "https://tryclojure.org",
+      "title": "Try Clojure",
+      "icon": require('./assets/img/icons/tryclojure.svg')
+  }, {
       // 包含了排序、链表、哈希表、二叉搜索树、递归树、循环查找等常见算法动画。在动画执行的过程中，还会在网站右下角高亮显示当前动画的代码逻辑。网站还提供了一些算法练习题供用户训练，可巩固自己的算法知识。
       "url": "https://visualgo.net/zh",
       "title": "Visualgo",
@@ -2343,6 +2347,11 @@ var tool_items = [
       "url": "https://12ft.io",
       "title": "12ft Ladder",
       "icon": require('./assets/img/icons/12ft.svg')
+  }, {
+      // 这个网站可以查询每个国家或地区的贸易数据，并用图文进行通俗解释。
+      "url": "https://oec.world/en",
+      "title": "OEC - The Observatory of Economic Complexity",
+      "icon": require('./assets/img/icons/oec.svg')
   }, {
       "url": "https://web.baimiaoapp.com",
       "title": "白描网页版 - 在线OCR文字识别、图片文字提取",
