@@ -2231,6 +2231,10 @@ var publishing_book_items = [
       "title": "The best Programming books",
       "icon": require('./assets/img/icons/best-books.svg')
   }, {
+      "url": "https://www.jb51.net/books/",
+      "title": "脚本之家",
+      "icon": require('./assets/img/icons/jb51-books.svg')
+  }, {
       // 繁体字的界面，一个推广中文电子书的公益网站，建站于2001年。
       "url": "http://www.haodoo.net",
       "title": "好讀",
