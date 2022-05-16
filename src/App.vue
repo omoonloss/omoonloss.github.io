@@ -1078,14 +1078,18 @@ if (!Store.getCookie('visited')) {
         "title": "Linguee | Dictionary for German, French, Spanish, and more",
         "icon": require('./assets/img/icons/linguee.svg')
     }, {
-        // 一个词汇语法搜索引擎
-        "url": "https://linggle.com",
-        "title": "Linggle 10^12- Language Reference Search Engines - NLPLab",
-        "icon": require('./assets/img/icons/linggle.svg')
+        "url": "https://www.ldoceonline.com",
+        "title": "Longman Dictionary of Contemporary English | LDOCE",
+        "icon": require('./assets/img/icons/ldoceonline.svg')
     }, {
         "url": "https://dictionary.cambridge.org",
         "title": "Cambridge Dictionary | English Dictionary, Translations & Thesaurus",
         "icon": require('./assets/img/icons/cambridge-dictionary.svg')
+    }, {
+        // 一个词汇语法搜索引擎
+        "url": "https://linggle.com",
+        "title": "Linggle 10^12- Language Reference Search Engines - NLPLab",
+        "icon": require('./assets/img/icons/linggle.svg')
     }, {
         // 输入你认为是同义或近义的两个英文单词，它会告诉你差别
         "url": "https://wikidiff.com",
