@@ -2005,6 +2005,40 @@ var publishing_book_items = [
       "title": "HyRead ebook 電子書店",
       "icon": require('./assets/img/icons/hyread.svg')
   }, {
+      "url": "https://www.pubu.com.tw",
+      "title": "Pubu - 電子書自由閱讀、自由出版",
+      "icon": require('./assets/img/icons/pubu.svg')
+  }, {
+      "url": "https://www.books.com.tw",
+      "title": "博客來",
+      "icon": require('./assets/img/icons/books_tw.svg')
+  }, {
+      "url": "https://www.kingstone.com.tw",
+      "title": "金石堂",
+      "icon": require('./assets/img/icons/kingstone_tw.svg')
+  }, {
+      "url": "https://www.bookwalker.com.tw",
+      "title": "BOOKWALKER 中文電子書",
+      "icon": require('./assets/img/icons/bookwalker.svg')
+  }, {
+      // Rakuten Kobo
+      "url": "https://www.kobo.com/tw/zh",
+      "title": "Kobo 台灣商店",
+      "icon": require('./assets/img/icons/kobo_tw.svg')
+  }, {
+      "url": "https://www.amazon.com/Chinese-Traditional-eBooks/b?ie=UTF8&node=18327575011",
+      "title": "Kindle 繁體中文電子書店",
+      "icon": require('./assets/img/icons/amazon.svg')
+  }, {
+      // 远流博识网
+      "url": "https://m.ylib.com",
+      "title": "YLib 遠流博識網",
+      "icon": require('./assets/img/icons/amazon.svg')
+  }, {
+      "url": "https://www.ebookservice.tw",
+      "title": "台灣雲端書庫",
+      "icon": require('./assets/img/icons/ebookservice_tw.svg')
+  }, {
       "url": "https://www.ituring.com.cn",
       "title": "图灵社区",
       "icon": require('./assets/img/icons/ituring.svg')
@@ -2099,6 +2133,7 @@ var publishing_book_items = [
       // 自2009年起的免费图书馆. 
       // 免费下载epub、pdf、mobi格式电子书
       // 支持转换为FB2、TXT、RTF等格式
+      // https://1lib.domains
       "url": "https://z-lib.org", 
       "title": "Z-Lib",  
       "icon": require('./assets/img/icons/zlib.svg')
