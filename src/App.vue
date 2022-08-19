@@ -2203,6 +2203,10 @@ var publishing_book_items = [
       "title": "SaltTiger | 每天一本编程书，每天进步一点点",
       "icon": require('./assets/img/icons/salttiger.svg')
   }, {
+      "url": "https://readnote.org",
+      "title": "Readnote | Free download ebook on Literary, Computers, Fiction, Non-Fiction and Many More.",
+      "icon": require('./assets/img/icons/default.svg')
+  }, {
   		// 这个网站收藏的文本已超过三万部著作，并有五十亿字之多，可免费浏览，为历代中文文献资料库最大者。
       "url": "https://ctext.org/zhs",
       "title": "中国哲学书籍电子化计划",
