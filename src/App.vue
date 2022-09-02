@@ -627,7 +627,7 @@
       </ul>
 
       <p class="copyright">
-        © 2017~2022 &nbsp;<a href="https://o.moonloss.com" target="_blank" rel="noopener noreferrer nofollow">HOME</a>
+        © 2017~2023 &nbsp;<a href="https://o.moonloss.com" target="_blank" rel="noopener noreferrer nofollow">HOME</a>
       </p>
   </div>
 
@@ -730,6 +730,10 @@ if (!Store.getCookie('visited')) {
         "url": "https://www.britannica.com",
         "title": "大英百科全书 | Britannica",
         "icon": require('./assets/img/icons/britannica.svg')
+    }, {
+        "url": "https://ossinsight.io",
+        "title": "OSS Insight",
+        "icon": require('./assets/img/icons/ossinsight.svg')
     }, {
         "url": "https://github.com",
         "title": "GitHub",
