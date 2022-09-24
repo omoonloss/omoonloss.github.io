@@ -1,0 +1,38 @@
+.bookmark-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.bookmark-row .link {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bookmark-row .icon-bookmark,
+.bookmark-row .icon-bookmark-filled {
+  top: 2px;
+}
+
+.bookmark-row .icon-bookmark,
+.bookmark-row:hover .icon-bookmark-filled {
+  display: initial;
+}
+
+.bookmark-row:hover .icon-bookmark,
+.bookmark-row .icon-bookmark-filled {
+  display: none;
+}
+
+.bookmark-row .button-expand {
+  margin-left: 10px;
+  margin-right: -10px;
+  margin-top: 3px;
+}
+
+.bookmark-row .button-expand.expanded .icon {
+  transform: rotate(180deg);
+}

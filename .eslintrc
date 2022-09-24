@@ -1,0 +1,17 @@
+{
+  "extends": ["@darekkay/eslint-config/react"],
+
+  "rules": {
+    "no-invalid-this": "off",
+    "import/no-unresolved": "off",
+    "react/prop-types": "off",
+
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["url"]
+      }
+    ]
+  }
+}
