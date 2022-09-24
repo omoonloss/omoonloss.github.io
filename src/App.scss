@@ -1,0 +1,41 @@
+main {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (min-width: 481px) {
+  main {
+    bottom: 35px;
+  }
+}
+
+.scrollable-y {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.no-results {
+  display: none;
+  margin-top: 5rem;
+  font-size: 1.7rem;
+  text-align: center;
+  cursor: default;
+}
+
+@media screen and (min-width: 481px) {
+  .collections {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.collections:empty ~ .no-results {
+  display: block;
+}

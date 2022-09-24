@@ -1,0 +1,33 @@
+.collection {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.collection-title {
+  font-size: 2.1rem;
+  font-weight: 500;
+  padding-bottom: 0.8rem;
+  margin: 0 0.8rem;
+  cursor: default;
+
+  display: flex;
+  align-items: center;
+
+  .icon {
+    width: 18px;
+    height: 18px;
+    top: 2px;
+  }
+}
+
+.buckets {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 481px) {
+  .buckets {
+    flex-direction: row;
+  }
+}

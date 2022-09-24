@@ -1,0 +1,30 @@
+.menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item .icon {
+  top: 2px;
+}
+
+.menu-item a {
+  color: inherit;
+  width: 100%;
+  padding: 5px 25px;
+  white-space: nowrap;
+}
+
+.menu-item a:hover {
+  text-decoration: none;
+  background-color: var(--color-background-offset);
+}
+
+.menu-item a.active .item-active,
+.menu-item a .item-inactive {
+  display: initial;
+}
+
+.menu-item a .item-active,
+.menu-item a.active .item-inactive {
+  display: none;
+}

@@ -1,0 +1,15 @@
+.icon {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  background: no-repeat center;
+  position: relative;
+}
+
+.icon-right {
+  margin-left: 10px;
+}
+.icon-left {
+  margin-right: 10px;
+}
