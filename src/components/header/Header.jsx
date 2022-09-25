@@ -20,8 +20,8 @@ const Header = ({ projectKeys, applyFilter, currentFilter }) => {
   }
   
   const switchTheme = () => {
-    let theme = localStorage.getItem('theme');
-    if (theme != 'dark') {
+    const theme = localStorage.getItem('theme');
+    if (theme !== 'dark') {
       enableDark();
     } else {
       disableDark();

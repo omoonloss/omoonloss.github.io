@@ -16,4 +16,5 @@ const Link = ({ title, url, external = true, children }) => (
 );
 
 // The link content does not ever change
+// eslint-disable-next-line react/display-name
 export default React.memo(Link, () => true);
