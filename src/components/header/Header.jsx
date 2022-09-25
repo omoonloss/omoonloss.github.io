@@ -7,7 +7,8 @@ import Button from "../button/Button";
 import "./Header.scss";
 
 const Header = ({ projectKeys, applyFilter, currentFilter }) => {
-  const [dark, setDark] = React.useState(false);
+  const theme = localStorage.getItem('theme');
+  const [dark, setDark] = React.useState(theme === 'dark');
   const enableDark = () => {
     document.documentElement.dataset.theme = "dark";
     localStorage.setItem('theme', 'dark');
@@ -20,7 +21,6 @@ const Header = ({ projectKeys, applyFilter, currentFilter }) => {
   }
   
   const switchTheme = () => {
-    const theme = localStorage.getItem('theme');
     if (theme !== 'dark') {
       enableDark();
     } else {
