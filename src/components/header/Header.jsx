@@ -33,7 +33,7 @@ const Header = ({ projectKeys, applyFilter, currentFilter }) => {
       <div className="header-inner">
         <Filter applyFilter={applyFilter} currentValue={currentFilter} />
 
-        <Button icon={dark ? "sun": "moon"} className="theme-switcher" onClick={switchTheme} />
+        <Button icon={dark ? "sun": "moon"} className="theme-switcher" onClick={switchTheme} title="Set theme to dark" />
 
         {projectKeys.length > 1 && (
           // Display project selection only for more than 1 projects
