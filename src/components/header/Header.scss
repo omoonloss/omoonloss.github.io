@@ -46,3 +46,12 @@ header .logo {
     display: block;
   }
 }
+
+header .theme-switcher {
+  margin-left: auto;
+}
+
+header .theme-switcher:focus {
+  outline: none;
+  box-shadow: none;
+}
