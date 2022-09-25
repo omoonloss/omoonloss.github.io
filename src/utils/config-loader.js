@@ -1,12 +1,14 @@
+import { BOOKMARKS } from '../../bookmarks.config.js'
 // Bookmarks and config in stored in a global "window.staticmarks" variable
 // This makes it possible to add them at runtime, after the project was built
 const loadProjects = () => {
   if (window.staticmarks) {
     return window.staticmarks.bookmarks;
   }
-  if (import.meta.env.VITE_BOOKMARKS) {
+  if (import.meta.env.VITE_USE_BOOKMARKS_CONFIG_JS === 'true') {
     // Pass the bookmarks as an environmental variable. The bookmarks will be added at build time.
-    return JSON.parse(import.meta.env.VITE_BOOKMARKS);
+    // return JSON.parse(import.meta.env.VITE_BOOKMARKS);
+    return BOOKMARKS;
   }
 
   return [];
@@ -20,7 +22,7 @@ const loadQueryParameter = (parameter) => {
 
 const loadConfig = () => ({
   projects: loadProjects(),
-  title: window?.staticmarks?.title || "Static Marks",
+  title: window?.staticmarks?.title || "oMoonLoss",
   filter: loadQueryParameter("search") || "",
 });
 
