@@ -768,6 +768,34 @@ export const BOOKMARKS = [
                 "title": "Mango Languages | Online Language Learning Software",
                 "url": "https://mangolanguages.com"
               },
+              {
+                /*
+                英文长文阅读网站
+                */
+                "title": "Longreads : The best longform stories on the web",
+                "url": "https://longreads.com"
+              },
+              {
+                /*
+                英文长文阅读网站
+                */
+                "title": "Nautilus | Science Connected",
+                "url": "https://nautil.us"
+              },
+              {
+                /*
+                英文长文阅读网站
+                */
+                "title": "Longform",
+                "url": "https://longform.org"
+              },
+              {
+                /*
+                英文长文阅读网站
+                */
+                "title": "The Browser",
+                "url": "https://thebrowser.com"
+              },
             ]
           },
         ]
@@ -1963,458 +1991,6 @@ export const BOOKMARKS = [
             ]
           },
           {
-            "title": "Book",
-            "links": [
-              {
-                "title": "译言古登堡计划",
-                "url": "http://g.yeeyan.com"
-              },
-              {
-                "title": "Penguin Books UK | Official Website",
-                "url": "https://www.penguin.co.uk"
-              },
-              {
-                "title": "Packtpub",
-                "url": "https://www.packtpub.com"
-              },
-              {
-                "title": "Manning",
-                "url": "https://www.manning.com",
-                "notes": [
-                  {
-                    "title": "Manning - Free Content Center",
-                    "url": "https://freecontent.manning.com"
-                  }
-                ]
-              },
-              {
-                "title": "Pragmatic Bookshelf: By Developers, For Developers",
-                "url": "https://pragprog.com"
-              },
-              {
-                "title": "Leanpub",
-                "url": "https://leanpub.com"
-              },
-              {
-                "title": "No Starch Press | The finest in geek entertainment",
-                "url": "https://nostarch.com"
-              },
-              {
-                "title": "Pearson | The world's learning company",
-                "url": "https://www.pearson.com"
-              },
-              {
-                "title": "The MIT Press",
-                "url": "https://mitpress.mit.edu"
-              },
-              {
-                "title": "newline | Learn to build React, Angular, Vue, GraphQL, and Node.js Apps with real-world projects",
-                "url": "https://www.newline.co"
-              },
-              {
-                "title": "Readmoo读墨电子书 ─ 台湾最大繁体中文EPUB电子书服务",
-                "url": "https://readmoo.com"
-              },
-              {
-                "title": "HyRead ebook 電子書店",
-                "url": "https://ebook.hyread.com.tw"
-              },
-              {
-                "title": "Pubu - 電子書自由閱讀、自由出版",
-                "url": "https://www.pubu.com.tw"
-              },
-              {
-                "title": "博客來",
-                "url": "https://www.books.com.tw"
-              },
-              {
-                "title": "金石堂",
-                "url": "https://www.kingstone.com.tw"
-              },
-              {
-                "title": "BOOKWALKER 中文電子書",
-                "url": "https://www.bookwalker.com.tw"
-              },
-              {
-                "title": "Kobo 台灣商店",
-                "url": "https://www.kobo.com/tw/zh"
-              },
-              {
-                "title": "Kindle 繁體中文電子書店",
-                "url": "https://www.amazon.com/Chinese-Traditional-eBooks/b?ie=UTF8&node=18327575011"
-              },
-              {
-                /*
-                远流博识网
-                */
-                "title": "YLib 遠流博識網",
-                "url": "https://m.ylib.com"
-              },
-              {
-                "title": "台灣雲端書庫",
-                "url": "https://www.ebookservice.tw"
-              },
-              {
-                "title": "图灵社区",
-                "url": "https://www.ituring.com.cn"
-              },
-              {
-                "title": "异步社区",
-                "url": "https://www.epubit.com"
-              },
-              {
-                "title": "O'Reilly Media",
-                "url": "https://www.oreilly.com"
-              },
-              {
-                "title": "浙江图书馆",
-                "url": "https://www.zjlib.cn"
-              },
-              {
-                "title": "臺湾大学图书馆＊公开取用电子书",
-                "url": "http://ebooks.lib.ntu.edu.tw/Home/ListBooks"
-              },
-              {
-                "title": "ThriftBooks | New & Used Books | Buy Cheap Books Online at ThriftBooks",
-                "url": "https://www.thriftbooks.com"
-              },
-              {
-                /*
-                可能是最好用的古籍资料下载网站
-                */
-                "title": "书格",
-                "url": "https://new.shuge.org"
-              },
-              {
-                "title": "书伴",
-                "url": "https://bookfere.com"
-              },
-              {
-                /*
-                一个外文电子书 网站，目前有1271515本书可供在线阅读
-                */
-                "title": "Forgotten Books",
-                "url": "https://www.forgottenbooks.com/en"
-              },
-              {
-                "title": "DigiLibraries | Free eBooks library",
-                "url": "https://digilibraries.com"
-              },
-              {
-                /*
-                Project Gutenberg (古登堡计划) 古腾堡免费电子书 已超过60000本
-                同英文网站，资 源储备惊人！别看是英文的，选择书籍语言，可以看到很多中文书籍
-                */
-                "title": "Gutenberg",
-                "url": "https://www.gutenberg.org"
-              },
-              {
-                /*
-                基于古登堡计划的图书重新制作封面、优化排版的图书源, 相当于古登堡图书的精装版, 
-                封面、排版都是由相关人员自己制作。当您的书架中摆满 Standard Ebooks 书籍时，
-                仿佛置身于文艺复兴时期的图书馆，让您的阅读体验得到大幅提升! 
-                */
-                "title": "Standard Ebooks",
-                "url": "https://standardebooks.org"
-              },
-              {
-                /*
-                一个包含经济学人、纽约客、自然、新科学人、卫报、连线等优质杂志的图书源, 
-                让你能够阅读最前沿、优质的英文内容。
-                */
-                "title": "英语杂志社",
-                "url": "https://emagazine.link"
-              },
-              {
-                /*
-                在线电子书分享平台是法国一个成立于2007年的老牌便携式移动设备电子书籍下载及其付费阅读的网站，
-                用户可以下载超过8万本的免费电子书。
-                */
-                "title": "Feedbooks",
-                "url": "https://www.feedbooks.com"
-              },
-              {
-                "title": "Planet eBook",
-                "url": "https://www.planetebook.com"
-              },
-              {
-                /*
-                除了资源多，鸠摩还贴心地按照不同的格式对书籍进行了分类
-                */
-                "title": "鸠摩搜索",
-                "url": "https://www.jiumodiary.com"
-              },
-              {
-                "title": "OpenStax Homepage - OpenStax",
-                "url": "https://openstax.org"
-              },
-              {
-                /*
-                这个站点可以找到一些国外的教材，可按分类查找，每本书都有介绍和目录。
-                也不用注册，直接就能免费下载。
-                */
-                "title": "OpenStax CNX Library",
-                "url": "https://cnx.org"
-              },
-              {
-                /*
-                Minitext 的一个开源的电子书库, OPDS 格式。
-                */
-                "title": "The Open Textbook Library",
-                "url": "https://open.umn.edu/opentextbooks"
-              },
-              {
-                "title": "Let Me Read » Best Books to Read in a Lifetime",
-                "url": "https://www.letmeread.net"
-              },
-              {
-                /*
-                Z-Library 项目部分. 全球最大的数字图书馆
-                自2009年起的免费图书馆. 
-                免费下载epub、pdf、mobi格式电子书
-                支持转换为FB2、TXT、RTF等格式
-                https://1lib.domains
-                https://1lib.us
-                https://zh.1lib.us
-                https://jp1lib.org
-                https://zh.jp1lib.org
-                https://ru1lib.org
-                https://zh.ru1lib.org
-                https://b-ok.cc
-                https://b-ok.asia
-                */
-                "title": "Z-Lib",
-                "url": "https://z-lib.org",
-                "notes": [
-                  {
-                    "title": "Z-Lib-mirror",
-                    "url": "https://book4you.org"
-                  }
-                ]
-              },
-              {
-                /*
-                http://gen.lib.rus.ec 超有名的俄罗斯网站，真的有超多书籍！
-                教科书在这里甚至能直接找到原版！中文书籍也超丰富的啊！
-                */
-                "title": "Library Genesis",
-                "url": "http://libgen.rs"
-              },
-              {
-                "title": "Internet Archiv e| Books",
-                "url": "https://archive.org/details/books"
-              },
-              {
-                /*
-                有很多 Libgen 上都没有的学术著作 pdf 下载，很多都是新书.
-                */
-                "title": "Online Library and Publication Platform | OAPEN", 
-                "url": "https://oapen.org"
-              },
-              {
-                /*
-                是美国一个免费在线阅读网站，是由宾夕法尼亚大学数字图书馆的策划研究员John Mark Ockerbloom创建并校订的，
-                目前由宾夕法尼亚大学图书馆负责管理运作
-                */
-                "title": "The Online Books Page",
-                "url": "https://onlinebooks.library.upenn.edu"
-              },
-              {
-                "title": "Free-eBooks.net | Download free Fiction, Health, Romance and many more books",
-                "url": "https://www.free-ebooks.net"
-              },
-              {
-                "title": "Magazines Commumity! | Download PDF magazines",
-                "url": "https://downmagaz.net"
-              },
-              {
-                "title": "PDF Digital Magazines",
-                "url": "https://www.worldmags.net"
-              },
-              {
-                "title": "Magzinelib",
-                "url": "https://magazinelib.com"
-              },
-              {
-                "title": "Free Download PDF Magazines - World of Magazine",
-                "url": "https://www.worldofmagazine.com"
-              },
-              {
-                "title": "Magazines PDF download free - E-magazines free download in pdf",
-                "url": "https://freemagazinepdf.com"
-              },
-              {
-                /*
-                一个日本的书籍和图像等资源整合查询浏览网站
-                */
-                "title": "Cultural Japan (カルチュラル・ジャパン)",
-                "url": "https://cultural.jp/en"
-              },
-              {
-                "title": "熊猫搜书",
-                "url": "https://xmsoushu.com"
-              },
-              {
-                "title": "LoreFree-去中心化免费电子书共享社区",
-                "url": "https://ebook2.lorefree.com"
-              },
-              {
-                "title": "SaltTiger | 每天一本编程书，每天进步一点点",
-                "url": "https://salttiger.com"
-              },
-              {
-                "title": "Readnote | Free download ebook on Literary, Computers, Fiction, Non-Fiction and Many More.",
-                "url": "https://readnote.org"
-              },
-              {
-                /*
-                这个网站收藏的文本已超过三万部著作，并有五十亿字之多，
-                可免费浏览，为历代中文文献资料库最大者。
-                */
-                "title": "中国哲学书籍电子化计划",
-                "url": "https://ctext.org/zhs"
-              },
-              {
-                "title": "古籍馆-中国最大的古籍图书馆",
-                "url": "https://www.gujiguan.com/index.aspx"
-              },
-              {
-                "title": "知識圖譜",
-                "url": "https://cnkgraph.com/Book"
-              },
-              {
-                "title": "瀚堂近代报刊数据库",
-                "url": "https://www.neohytung.com"
-              },
-              {
-                "title": "豆瓣读书",
-                "url": "https://book.douban.com"
-              },
-              {
-                "title": "Manybooks",
-                "url": "https://manybooks.net"
-              },
-              {
-                "title": "七彩英语",
-                "url": "http://www.qcenglish.com"
-              },
-              {
-                "title": "PDF Drive - Search and download PDF files for free.",
-                "url": "https://www.pdfdrive.com"
-              },
-              {
-                /*
-                在线出版社网站，致力于免费图书在线分享，
-                主要是公共版权图书的在线阅读和下载（pdf），小说、古典文学、历史传记等等
-                */
-                "title": "Freeditorial",
-                "url": "https://freeditorial.com"
-              },
-              {
-                "title": "我爱电子书",
-                "url": "https://www.52doc.com"
-              },
-              {
-                "title": "读者阁",
-                "url": "https://duzhege.cn"
-              },
-              {
-                "title": "恩京的书房",
-                "url": "https://www.enjing.com"
-              },
-              {
-                "title": "SoBooks - 一起分享阅读的乐趣",
-                "url": "https://sobooks.cc"
-              },
-              {
-                "title": "雅书 - PDF电子书学习下载站",
-                "url": "https://yabook.org"
-              },
-              {
-                /*
-                一个收录各种优质程序书籍的网站，还在不断丰富中…… 
-                */
-                "title": "The best Programming books",
-                "url": "https://www.best-books.dev"
-              },
-              {
-                "title": "脚本之家",
-                "url": "https://www.jb51.net/books/"
-              },
-              {
-                /*
-                繁体字的界面，一个推广中文电子书的公益网站，建站于2001年。
-                */
-                "title": "好讀",
-                "url": "http://www.haodoo.net"
-              },
-              {
-                "title": "Best Free Books Online | Download Ebooks in PDF & EPUB",
-                "url": "https://www.obooko.com"
-              },
-              {
-                "title": "E-Books Directory - Categorized Links to Free Books",
-                "url": "https://www.e-booksdirectory.com"
-              },
-              {
-                /*
-                一个可以免费下载绝版艺术书籍的网站 ，盖蒂博物馆虚拟图书馆。
-                馆中收藏有三百多本绝版艺术书，包含了从艺术流派到特定艺术家的作品。
-                盖蒂出版社的一位经理说：“当一本绝版书的再版没有经济意义时，就几乎不会有出版社将这本书再次出版，
-                很多好书也因此消失。盖蒂图书馆希望能用电子版书籍的形式，让更多人能看到这些濒临消失的书籍。”
-                */
-                "title": "Getty Publications Virtual Library",
-                "url": "https://www.getty.edu/publications/virtuallibrary"
-              },
-              {
-                "title": "Literary Hub",
-                "url": "https://lithub.com"
-              },
-              {
-                /*
-                以新的方式发现书籍，就像逛书店一样
-                */
-                "title": "Shepherd | Discover The Best Books To Read 📚",
-                "url": "https://shepherd.com"
-              },
-              {
-                /*
-                英文长文阅读网站
-                */
-                "title": "Longreads : The best longform stories on the web",
-                "url": "https://longreads.com"
-              },
-              {
-                /*
-                英文长文阅读网站
-                */
-                "title": "Nautilus | Science Connected",
-                "url": "https://nautil.us"
-              },
-              {
-                /*
-                英文长文阅读网站
-                */
-                "title": "Longform",
-                "url": "https://longform.org"
-              },
-              {
-                /*
-                英文长文阅读网站
-                */
-                "title": "The Browser",
-                "url": "https://thebrowser.com"
-              },
-              {
-                /*
-                台湾一个社科书籍推荐网站
-                */
-                "title": "菜市场政治学",
-                "url": "https://whogovernstw.org"
-              }
-            ]
-          },
-          {
             "title": "Design",
             "links": [
               {
@@ -3003,6 +2579,461 @@ export const BOOKMARKS = [
                 "title": "移动芯片性能排行榜",
                 "url": "https://www.socpk.com"
               }
+            ]
+          },
+        ]
+      },
+    ]
+  },
+  {
+    "key": "book",
+    "collections": [
+      {
+        "title": "Book",
+        "buckets": [
+          {
+            "title": "Publisher",
+            "links": [
+              {
+                "title": "Penguin Books UK | Official Website",
+                "url": "https://www.penguin.co.uk"
+              },
+              {
+                "title": "Packtpub",
+                "url": "https://www.packtpub.com"
+              },
+              {
+                "title": "Manning",
+                "url": "https://www.manning.com",
+                "notes": [
+                  {
+                    "title": "Manning - Free Content Center",
+                    "url": "https://freecontent.manning.com"
+                  }
+                ]
+              },
+              {
+                "title": "Pragmatic Bookshelf: By Developers, For Developers",
+                "url": "https://pragprog.com"
+              },
+              {
+                "title": "Leanpub",
+                "url": "https://leanpub.com"
+              },
+              {
+                "title": "No Starch Press | The finest in geek entertainment",
+                "url": "https://nostarch.com"
+              },
+              {
+                "title": "Pearson",
+                "url": "https://www.pearson.com"
+              },
+              {
+                "title": "The MIT Press",
+                "url": "https://mitpress.mit.edu"
+              },
+              {
+                "title": "newline",
+                "url": "https://www.newline.co",
+                "notes": [
+                  {
+                    "title": "Learn to build React, Angular, Vue, GraphQL, and Node.js Apps with real-world projects"
+                  }
+                ]
+              },
+              {
+                "title": "译言古登堡计划",
+                "url": "http://g.yeeyan.com"
+              },
+              {
+                "title": "图灵社区",
+                "url": "https://www.ituring.com.cn"
+              },
+              {
+                "title": "O'Reilly Media",
+                "url": "https://www.oreilly.com"
+              },
+            ]
+          },
+          {
+            "title": "Bookstore",
+            "links": [
+              {
+                "title": "ThriftBooks | New & Used Books | Buy Cheap Books Online at ThriftBooks",
+                "url": "https://www.thriftbooks.com"
+              },
+              {
+                "title": "Readmoo 读墨电子书 ─ 台湾最大繁体中文EPUB电子书服务",
+                "url": "https://readmoo.com"
+              },
+              {
+                "title": "HyRead ebook 電子書店",
+                "url": "https://ebook.hyread.com.tw"
+              },
+              {
+                "title": "Pubu - 電子書自由閱讀、自由出版",
+                "url": "https://www.pubu.com.tw"
+              },
+              {
+                "title": "博客來",
+                "url": "https://www.books.com.tw"
+              },
+              {
+                "title": "金石堂",
+                "url": "https://www.kingstone.com.tw"
+              },
+              {
+                "title": "BOOKWALKER 中文電子書",
+                "url": "https://www.bookwalker.com.tw"
+              },
+              {
+                "title": "Kobo 台灣商店",
+                "url": "https://www.kobo.com/tw/zh"
+              },
+              {
+                "title": "Kindle 繁體中文電子書店",
+                "url": "https://www.amazon.com/Chinese-Traditional-eBooks/b?ie=UTF8&node=18327575011"
+              },
+              {
+                /*
+                远流博识网
+                */
+                "title": "YLib 遠流博識網",
+                "url": "https://m.ylib.com"
+              },
+              {
+                "title": "异步社区",
+                "url": "https://www.epubit.com"
+              },
+            ]
+          },
+          {
+            "title": "Library",
+            "links": [
+              {
+                "title": "台灣雲端書庫",
+                "url": "https://www.ebookservice.tw"
+              },
+              {
+                "title": "國立臺灣大學圖書館",
+                "url": "https://www.lib.ntu.edu.tw"
+              },
+              {
+                /*
+                是美国一个免费在线阅读网站，是由宾夕法尼亚大学数字图书馆的策划研究员 
+                John Mark Ockerbloom 创建并校订的，
+                目前由宾夕法尼亚大学图书馆负责管理运作
+                */
+                "title": "The Online Books Page",
+                "url": "https://onlinebooks.library.upenn.edu"
+              },
+              {
+                "title": "知識圖譜",
+                "url": "https://cnkgraph.com/Book"
+              },
+              {
+                "title": "豆瓣读书",
+                "url": "https://book.douban.com"
+              },
+              {
+                /*
+                以新的方式发现书籍，就像逛书店一样
+                */
+                "title": "Shepherd | Discover The Best Books To Read",
+                "url": "https://shepherd.com"
+              },
+              {
+                /*
+                台湾一个社科书籍推荐网站
+                */
+                "title": "菜市场政治学",
+                "url": "https://whogovernstw.org"
+              },
+              {
+                /*
+                一个日本的书籍和图像等资源整合查询浏览网站
+                */
+                "title": "Cultural Japan (カルチュラル・ジャパン)",
+                "url": "https://cultural.jp/en"
+              },
+              {
+                "title": "浙江图书馆",
+                "url": "https://www.zjlib.cn"
+              },
+            ]
+          },
+          {
+            "title": "Download",
+            "links": [
+              {
+                /*
+                可能是最好用的古籍资料下载网站
+                */
+                "title": "书格",
+                "url": "https://new.shuge.org"
+              },
+              {
+                "title": "书伴",
+                "url": "https://bookfere.com"
+              },
+              {
+                /*
+                一个外文电子书 网站，目前有 1271515 本书可供在线阅读
+                */
+                "title": "Forgotten Books",
+                "url": "https://www.forgottenbooks.com/en"
+              },
+              {
+                "title": "DigiLibraries | Free eBooks library",
+                "url": "https://digilibraries.com"
+              },
+              {
+                /*
+                Project Gutenberg (古登堡计划) 古腾堡免费电子书 已超过60000本
+                同英文网站，资 源储备惊人！别看是英文的，选择书籍语言，可以看到很多中文书籍
+                */
+                "title": "Gutenberg",
+                "url": "https://www.gutenberg.org"
+              },
+              {
+                /*
+                基于古登堡计划的图书重新制作封面、优化排版的图书源, 相当于古登堡图书的精装版, 
+                封面、排版都是由相关人员自己制作。当您的书架中摆满 Standard Ebooks 书籍时，
+                仿佛置身于文艺复兴时期的图书馆，让您的阅读体验得到大幅提升! 
+                */
+                "title": "Standard Ebooks",
+                "url": "https://standardebooks.org"
+              },
+              {
+                /*
+                一个包含经济学人、纽约客、自然、新科学人、卫报、连线等优质杂志的图书源, 
+                让你能够阅读最前沿、优质的英文内容。
+                */
+                "title": "英语杂志社",
+                "url": "https://emagazine.link"
+              },
+              {
+                /*
+                在线电子书分享平台是法国一个成立于2007年的老牌便携式移动设备电子书籍下载及其付费阅读的网站，
+                用户可以下载超过8万本的免费电子书。
+                */
+                "title": "Feedbooks",
+                "url": "https://www.feedbooks.com"
+              },
+              {
+                "title": "Planet eBook",
+                "url": "https://www.planetebook.com"
+              },
+              {
+                /*
+                除了资源多，鸠摩还贴心地按照不同的格式对书籍进行了分类
+                */
+                "title": "鸠摩搜索",
+                "url": "https://www.jiumodiary.com"
+              },
+              {
+                "title": "OpenStax Homepage - OpenStax",
+                "url": "https://openstax.org"
+              },
+              {
+                /*
+                这个站点可以找到一些国外的教材，可按分类查找，每本书都有介绍和目录。
+                也不用注册，直接就能免费下载。
+                */
+                "title": "OpenStax CNX Library",
+                "url": "https://cnx.org"
+              },
+              {
+                /*
+                Minitext 的一个开源的电子书库, OPDS 格式。
+                */
+                "title": "The Open Textbook Library",
+                "url": "https://open.umn.edu/opentextbooks"
+              },
+              {
+                "title": "Let Me Read » Best Books to Read in a Lifetime",
+                "url": "https://www.letmeread.net"
+              },
+              {
+                /*
+                Z-Library 项目部分. 全球最大的数字图书馆
+                自2009年起的免费图书馆. 
+                免费下载epub、pdf、mobi格式电子书
+                支持转换为FB2、TXT、RTF等格式
+                https://1lib.domains
+                https://1lib.us
+                https://zh.1lib.us
+                https://jp1lib.org
+                https://zh.jp1lib.org
+                https://ru1lib.org
+                https://zh.ru1lib.org
+                https://b-ok.cc
+                https://b-ok.asia
+                */
+                "title": "Z-Lib",
+                "url": "https://z-lib.org",
+                "notes": [
+                  {
+                    "title": "Z-Lib-mirror",
+                    "url": "https://book4you.org"
+                  }
+                ]
+              },
+              {
+                /*
+                http://gen.lib.rus.ec 超有名的俄罗斯网站，真的有超多书籍！
+                教科书在这里甚至能直接找到原版！中文书籍也超丰富的啊！
+                */
+                "title": "Library Genesis",
+                "url": "http://libgen.rs"
+              },
+              {
+                "title": "Internet Archiv e| Books",
+                "url": "https://archive.org/details/books"
+              },
+              {
+                /*
+                有很多 Libgen 上都没有的学术著作 pdf 下载，很多都是新书.
+                */
+                "title": "Online Library and Publication Platform | OAPEN", 
+                "url": "https://oapen.org"
+              },
+              {
+                "title": "Free-eBooks.net | Download free Fiction, Health, Romance and many more books",
+                "url": "https://www.free-ebooks.net"
+              },
+              {
+                "title": "Magazines Commumity! | Download PDF magazines",
+                "url": "https://downmagaz.net"
+              },
+              {
+                "title": "PDF Digital Magazines",
+                "url": "https://www.worldmags.net"
+              },
+              {
+                "title": "Magzinelib",
+                "url": "https://magazinelib.com"
+              },
+              {
+                "title": "Free Download PDF Magazines - World of Magazine",
+                "url": "https://www.worldofmagazine.com"
+              },
+              {
+                "title": "Magazines PDF download free - E-magazines free download in pdf",
+                "url": "https://freemagazinepdf.com"
+              },
+              {
+                "title": "熊猫搜书",
+                "url": "https://xmsoushu.com"
+              },
+              {
+                "title": "LoreFree-去中心化免费电子书共享社区",
+                "url": "https://ebook2.lorefree.com"
+              },
+              {
+                "title": "SaltTiger | 每天一本编程书，每天进步一点点",
+                "url": "https://salttiger.com"
+              },
+              {
+                "title": "Readnote | Free download ebook on Literary, Computers, Fiction, Non-Fiction and Many More.",
+                "url": "https://readnote.org"
+              },
+              {
+                /*
+                这个网站收藏的文本已超过三万部著作，并有五十亿字之多，
+                可免费浏览，为历代中文文献资料库最大者。
+                */
+                "title": "中国哲学书籍电子化计划",
+                "url": "https://ctext.org/zhs"
+              },
+              {
+                "title": "古籍馆-中国最大的古籍图书馆",
+                "url": "https://www.gujiguan.com/index.aspx"
+              },
+              {
+                "title": "瀚堂近代报刊数据库",
+                "url": "https://www.neohytung.com"
+              },
+              {
+                "title": "Manybooks",
+                "url": "https://manybooks.net"
+              },
+              {
+                "title": "PDF Drive - Search and download PDF files for free.",
+                "url": "https://www.pdfdrive.com"
+              },
+              {
+                /*
+                在线出版社网站，致力于免费图书在线分享，
+                主要是公共版权图书的在线阅读和下载（pdf），小说、古典文学、历史传记等等
+                */
+                "title": "Freeditorial",
+                "url": "https://freeditorial.com"
+              },
+              {
+                "title": "我爱电子书",
+                "url": "https://www.52doc.com"
+              },
+              {
+                "title": "读者阁",
+                "url": "https://duzhege.cn"
+              },
+              {
+                "title": "恩京的书房",
+                "url": "https://www.enjing.com"
+              },
+              {
+                "title": "雅书 - PDF电子书学习下载站",
+                "url": "https://yabook.org"
+              },
+              {
+                /*
+                一个收录各种优质程序书籍的网站，还在不断丰富中…… 
+                */
+                "title": "The best Programming books",
+                "url": "https://www.best-books.dev"
+              },
+              {
+                "title": "脚本之家",
+                "url": "https://www.jb51.net/books/"
+              },
+              {
+                /*
+                繁体字的界面，一个推广中文电子书的公益网站，建站于2001年。
+                */
+                "title": "好讀",
+                "url": "http://www.haodoo.net"
+              },
+              {
+                /*
+                一个可以免费下载绝版艺术书籍的网站 ，盖蒂博物馆虚拟图书馆。
+                馆中收藏有三百多本绝版艺术书，包含了从艺术流派到特定艺术家的作品。
+                盖蒂出版社的一位经理说：“当一本绝版书的再版没有经济意义时，就几乎不会有出版社将这本书再次出版，
+                很多好书也因此消失。盖蒂图书馆希望能用电子版书籍的形式，让更多人能看到这些濒临消失的书籍。”
+                */
+                "title": "Getty Publications Virtual Library",
+                "url": "https://www.getty.edu/publications/virtuallibrary"
+              },
+              {
+                "title": "Literary Hub",
+                "url": "https://lithub.com"
+              },
+              {
+                "title": "七彩英语",
+                "url": "http://www.qcenglish.com"
+              },
+              {
+                "title": "Best Free Books Online | Download Ebooks in PDF & EPUB",
+                "url": "https://www.obooko.com"
+              },
+              {
+                "title": "E-Books Directory - Categorized Links to Free Books",
+                "url": "https://www.e-booksdirectory.com"
+              },
+              {
+                "title": "SoBooks - 一起分享阅读的乐趣",
+                "url": "sobooks.net"
+              },
             ]
           },
         ]
