@@ -15,7 +15,7 @@ const Icon = ({ name, position, className }) => {
         className
       )}
     >
-      <use xlinkHref={`#icon-${name}`} />
+      <use href={`#icon-${name}`} />
     </svg>
   );
 };
