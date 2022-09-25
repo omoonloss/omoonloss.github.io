@@ -8,7 +8,13 @@ const Footer = () => (
     <div className="footer-inner">
       <span>
         <span>&copy; 2017~{new Date().getFullYear()} </span>
-        <Link url="https://o.moonloss.com">Oh, the moon forgot to be full</Link>
+        <a
+          className="link"
+          href="https://o.moonloss.com"
+          title="Oh, the moon forgot to be full"
+          >
+          Oh, the moon forgot to be full
+        </a>
       </span>
 
       {import.meta.env.PACKAGE_VERSION && (
