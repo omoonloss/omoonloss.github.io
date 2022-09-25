@@ -7,15 +7,21 @@ const Footer = () => (
   <footer>
     <div className="footer-inner">
       <span>
-        <span>Handmade with &hearts; by </span>
-        <Link url="https://darekkay.com">Darek Kay</Link>
+        <span>&copy; 2017~{new Date().getFullYear()} </span>
+        <Link url="https://o.moonloss.com">Oh, the moon forgot to be full</Link>
       </span>
 
       {import.meta.env.PACKAGE_VERSION && (
         <span>
-          <Link url="https://github.com/darekkay/static-marks">
-            Static Marks
+          <Link url="https://github.com/zetaoyang/omoonloss">
+            I
           </Link>
+          <span> &hearts; </span>
+          <span>
+            <Link url="https://github.com/darekkay/static-marks-app">
+            Static Marks
+            </Link>
+          </span>
           <span> {import.meta.env.PACKAGE_VERSION}</span>
         </span>
       )}
