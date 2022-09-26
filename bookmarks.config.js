@@ -2,11 +2,311 @@
 
 export const BOOKMARKS = [
   {
-    "key": "collections",
+    "key": "apps",
     "collections": [
       {
-        "title": "Collections",
+        "title": "Apps",
         "buckets": [
+          {
+            "title": "Search",
+            "links": [
+              {
+                "title": "Wolfram|Alpha: Computational Intelligence",
+                "url": "https://www.wolframalpha.com"
+              },
+              {
+                "title": "Google",
+                "url": "https://www.google.com/ncr"
+              },
+              {
+                "title": "Bing",
+                "url": "https://www.bing.com/search"
+              },
+              {
+                "title": "Duckduckgo",
+                "url": "https://duckduckgo.com"
+              },
+              {
+                "title": "trace.moe",
+                "url": "https://trace.moe",
+                "notes": [
+                  {
+                    "title": "Anime Scene Search Engine"
+                  }
+                ]
+              },
+              {
+                "title": "SauceNAO",
+                "url": "https://saucenao.com",
+                "notes": [
+                  {
+                    "title": "Reverse Image Search"
+                  }
+                ]
+              },
+              {
+                /*
+                声音搜索引擎
+                */
+                "title": "淘声网 - toSound声音搜索引擎 - 免费音效素材资源|视频游戏配乐下载",
+                "url": "https://www.tosound.com"
+              },
+              {
+                "title": "SogouWeixin",
+                "url": "https://weixin.sogou.com",
+                "notes": [
+                  {
+                    "title": "搜狗的微信搜索"
+                  }
+                ]
+              },
+            ]
+          },
+          {
+            "title": "Reading",
+            "links": [
+              {
+                "title": "Libby",
+                "url": "https://libbyapp.com"
+              },
+              {
+                "title": "Goodreads | Meet your next favorite book",
+                "url": "https://www.goodreads.com"
+              },
+              {
+                "title": "Inoreader",
+                "url": "https://www.inoreader.com"
+              },
+              {
+                "title": "Instapaper",
+                "url": "https://www.instapaper.com"
+              },
+              {
+                "title": "Pocket",
+                "url": "https://getpocket.com"
+              },
+              {
+                "title": "PressReader",
+                "url": "https://www.pressreader.com"
+              },
+              {
+                "title": "微信读书",
+                "url": "https://weread.qq.com"
+              }
+            ]
+          },
+          {
+            "title": "Social",
+            "links": [
+              {
+                "title": "Medium",
+                "url": "https://medium.com"
+              },
+              {
+                "title": "Reddit",
+                "url": "https://www.reddit.com"
+              },
+              {
+                "title": "Facebook",
+                "url": "https://www.facebook.com"
+              },
+              {
+                "title": "Twitter",
+                "url": "https://twitter.com"
+              },
+              {
+                "title": "微博",
+                "url": "https://weibo.com"
+              },
+              {
+                "title": "豆瓣",
+                "url": "https://www.douban.com"
+              },
+            ]
+          },
+          {
+            "title": "Questions & Answers",
+            "links": [
+              {
+                "title": "Stack Overflow",
+                "url": "https://stackoverflow.com"
+              },
+              {
+                "title": "Quora",
+                "url": "https://www.quora.com"
+              }
+            ]
+          },
+          {
+            "title": "Movies & TV Shows",
+            "links": [
+              {
+                "title": "IMDb",
+                "url": "https://www.imdb.com",
+                "notes": [
+                  {
+                    "title": "Ratings, Reviews, and Where to Watch the Best Movies & TV Shows"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Podcasts",
+            "links": [
+              {
+                "title": "Google Podcast",
+                "url": "https://podcasts.google.com"
+              },
+              {
+                "title": "PodLink",
+                "url": "https://pod.link"
+              },
+              {
+                "title": "播客 RSS Feed",
+                "url": "https://getpodcast.xyz"
+              },
+              {
+                "title": "中文独立播客",
+                "url": "https://typlog.com/podlist/"
+              },
+              {
+                "title": "Listen Notes",
+                "url": "https://www.listennotes.com"
+              }
+            ]
+          },
+          {
+            "title": "Storage",
+            "links": [
+              {
+                "title": "Dropbox",
+                "url": "https://www.dropbox.com"
+              }
+            ]
+          },
+          {
+            "title": "Todo lists",
+            "links": [
+              {
+                "title": "Todoist",
+                "url": "https://todoist.com"
+              },
+            ]
+          },
+          {
+            "title": "Note-taking",
+            "links": [
+              {
+                "title": "Notion",
+                "url": "https://www.notion.so"
+              },
+              {
+                "title": "Obsidian",
+                "url": "https://obsidian.md"
+              }
+            ]
+          },
+          {
+            "title": "Map & Weather",
+            "links": [
+              {
+                "title": "OpenStreetMap",
+                "url": "https://www.openstreetmap.org"
+              },
+              {
+                "title": "Google Earth",
+                "url": "https://earth.google.com/web"
+              },
+              {
+                "title": "Google Earth Timelapse",
+                "url": "https://earthengine.google.com/timelapse"
+              },
+              {
+                "title": "向日葵-8号",
+                "url": "https://himawari8.nict.go.jp"
+              },
+              {
+                "title": "Submarine Cable Map",
+                "url": "https://www.submarinecablemap.com"
+              },
+              {
+                /*
+                可以让你看到地球表面的实时卫星照片
+                */
+                "title": "Zoom Earth",
+                "url": "https://zoom.earth/storms/"
+              },
+              {
+                /*
+                实时查看全球气象
+                */
+                "title": "earth :: a global map of wind, weather, and ocean conditions",
+                "url": "https://earth.nullschool.net"
+              }
+            ]
+          },
+          {
+            "title": "Translator & Dictionary",
+            "links": [
+              {
+                "title": "DeepL Translator",
+                "url": "https://www.deepl.com/translator"
+              },
+              {
+                "title": "大英百科全书 | Britannica",
+                "url": "https://www.britannica.com"
+              },
+              {
+                "title": "中国语辞书 - Weblio日中中日辞典",
+                "url": "https://cjjc.weblio.jp"
+              },
+              {
+                "title": "Linguee | Dictionary for German, French, Spanish, and more",
+                "url": "https://www.linguee.com"
+              },
+              {
+                "title": "Longman Dictionary of Contemporary English | LDOCE",
+                "url": "https://www.ldoceonline.com"
+              },
+              {
+                "title": "Cambridge Dictionary | English Dictionary, Translations & Thesaurus",
+                "url": "https://dictionary.cambridge.org"
+              },
+              {
+                /*
+                一个词汇语法搜索引擎
+                */
+                "title": "Linggle 10^12- Language Reference Search Engines - NLPLab",
+                "url": "https://linggle.com"
+              },
+              {
+                /*
+                输入你认为是同义或近义的两个英文单词，它会告诉你差别
+                */
+                "title": "WikiDiff",
+                "url": "https://wikidiff.com"
+              },
+              {
+                /*
+                各种网络习语、小众词汇解释
+                */
+                "title": "Urban Dictionary",
+                "url": "https://www.urbandictionary.com"
+              },
+              {
+                /*
+                英语新造词词典 ，可以查询最新的英语新生网络词汇
+                */
+                "title": "Word Spy",
+                "url": "https://www.wordspy.com"
+              },
+              {
+                "title": "Forvo: the pronunciation dictionary. All the words in the world pronounced by native speakers",
+                "url": "https://forvo.com"
+              },
+            ]
+          },
           {
             "title": "Music",
             "links": [
@@ -90,67 +390,26 @@ export const BOOKMARKS = [
               }
             ]
           },
+        ]
+      },
+    ]
+  },
+  {
+    "key": "collections",
+    "collections": [
+      {
+        "title": "Collections",
+        "buckets": [
           {
-            "title": "Map & Weather",
+            "title": "Wiki",
             "links": [
               {
-                "title": "OpenStreetMap",
-                "url": "https://www.openstreetmap.org"
+                "title": "Wikipedia",
+                "url": "https://www.wikipedia.org"
               },
               {
-                "title": "Google Earth",
-                "url": "https://earth.google.com/web"
-              },
-              {
-                "title": "Google Earth Timelapse",
-                "url": "https://earthengine.google.com/timelapse"
-              },
-              {
-                "title": "向日葵-8号",
-                "url": "https://himawari8.nict.go.jp"
-              },
-              {
-                "title": "Submarine Cable Map",
-                "url": "https://www.submarinecablemap.com"
-              },
-              {
-                /*
-                可以让你看到地球表面的实时卫星照片
-                */
-                "title": "Zoom Earth",
-                "url": "https://zoom.earth/storms/"
-              },
-              {
-                /*
-                实时查看全球气象
-                */
-                "title": "earth :: a global map of wind, weather, and ocean conditions",
-                "url": "https://earth.nullschool.net"
-              }
-            ]
-          },
-          {
-            "title": "Podcasts",
-            "links": [
-              {
-                "title": "Google Podcast",
-                "url": "https://podcasts.google.com"
-              },
-              {
-                "title": "PodLink",
-                "url": "https://pod.link"
-              },
-              {
-                "title": "播客 RSS Feed",
-                "url": "https://getpodcast.xyz"
-              },
-              {
-                "title": "中文独立播客",
-                "url": "https://typlog.com/podlist/"
-              },
-              {
-                "title": "Listen Notes",
-                "url": "https://www.listennotes.com"
+                "title": "WikiArt - Visual Art Encyclopedia",
+                "url": "https://www.wikiart.org"
               }
             ]
           },
@@ -258,6 +517,10 @@ export const BOOKMARKS = [
                 "title": "Library of Congress",
                 "url": "https://www.loc.gov"
               },
+              {
+                "title": "Biology of Human/World of Viruses",
+                "url": "https://worldofviruses.unl.edu"
+              },
             ]
           },
           {
@@ -294,67 +557,6 @@ export const BOOKMARKS = [
               },
             ]
           },
-          {
-            "title": "Translator & Dictionary",
-            "links": [
-              {
-                "title": "DeepL Translator",
-                "url": "https://www.deepl.com/translator"
-              },
-              {
-                "title": "大英百科全书 | Britannica",
-                "url": "https://www.britannica.com"
-              },
-              {
-                "title": "中国语辞书 - Weblio日中中日辞典",
-                "url": "https://cjjc.weblio.jp"
-              },
-              {
-                "title": "Linguee | Dictionary for German, French, Spanish, and more",
-                "url": "https://www.linguee.com"
-              },
-              {
-                "title": "Longman Dictionary of Contemporary English | LDOCE",
-                "url": "https://www.ldoceonline.com"
-              },
-              {
-                "title": "Cambridge Dictionary | English Dictionary, Translations & Thesaurus",
-                "url": "https://dictionary.cambridge.org"
-              },
-              {
-                /*
-                一个词汇语法搜索引擎
-                */
-                "title": "Linggle 10^12- Language Reference Search Engines - NLPLab",
-                "url": "https://linggle.com"
-              },
-              {
-                /*
-                输入你认为是同义或近义的两个英文单词，它会告诉你差别
-                */
-                "title": "WikiDiff",
-                "url": "https://wikidiff.com"
-              },
-              {
-                /*
-                各种网络习语、小众词汇解释
-                */
-                "title": "Urban Dictionary",
-                "url": "https://www.urbandictionary.com"
-              },
-              {
-                /*
-                英语新造词词典 ，可以查询最新的英语新生网络词汇
-                */
-                "title": "Word Spy",
-                "url": "https://www.wordspy.com"
-              },
-              {
-                "title": "Forvo: the pronunciation dictionary. All the words in the world pronounced by native speakers",
-                "url": "https://forvo.com"
-              },
-            ]
-          }
         ]
       }
     ]
@@ -543,7 +745,27 @@ export const BOOKMARKS = [
                 */
                 "title": "Devhints — TL;DR for developer documentation",
                 "url": "https://devhints.io"
-              }
+              },
+              {
+                "title": "DevDocs API Documentation",
+                "url": "https://devdocs.io"
+              },
+              {
+                "title": "Unicode 字符百科",
+                "url": "https://unicode-table.com"
+              },
+              {
+                "title": "Git Explorer",
+                "url": "https://gitexplorer.com"
+              },
+              {
+                "title": "CSS Reference",
+                "url": "https://cssreference.io"
+              },
+              {
+                "title": "HTML Reference",
+                "url": "https://htmlreference.io"
+              },
             ]
           },
           {
@@ -559,6 +781,106 @@ export const BOOKMARKS = [
               }
             ]
           },
+          {
+            "title": "Toolbox",
+            "links": [
+              {
+                "title": "Free Online Tools For Developers - FreeFormatter.com",
+                "url": "https://www.freeformatter.com"
+              },
+              {
+                "title": "Free Online Tools For Developers - to Beautify, Validate, Minify, Analyse, Convert JSON, XML, JavaScript, CSS, HTML, Excel",
+                "url": "https://codebeautify.org"
+              },
+              {
+                "title": "Online UUID Generator Tool",
+                "url": "https://www.uuidgenerator.net"
+              },
+              {
+                "title": "The UTF-8 Illustrator",
+                "url": "https://utf-8-illustrator.com"
+              },
+              {
+                "title": "favicon Generator",
+                "url": "https://www.favicon.cc"
+              },
+              {
+                "title": "ASCIIFlow",
+                "url": "http://asciiflow.com"
+              },
+              {
+                "title": "asciinema - Record and share your terminal sessions, the right way",
+                "url": "https://asciinema.org"
+              },
+              {
+                "title": "Carbon",
+                "url": "https://carbon.now.sh",
+                "notes": [
+                  {
+                    "title": "Create and share beautiful images of your source code."
+                  }
+                ]
+              },
+              {
+                "title": "code2flow",
+                "url": "https://code2flow.com"
+              },
+              {
+                "title": "Chart Mage",
+                "url": "http://chartmage.com/intro.html"
+              },
+              {
+                "title": "Diagrams",
+                "url": "https://app.diagrams.net"
+              },
+              {
+                "title": "Kroki!",
+                "url": "https://kroki.io"
+              },
+              {
+                "title": "RandomKeygen",
+                "url": "https://randomkeygen.com"
+              },
+              {
+                "title": "Bcrypt-Generator.com - Online Bcrypt Hash Generator & Checker",
+                "url": "https://bcrypt-generator.com"
+              },
+            ]
+          },
+          {
+            "title": "Domain Finder",
+            "links": [
+              {
+                "title": "Namechk",
+                "url": "https://namechk.com"
+              },
+              {
+                "title": "NameMesh",
+                "url": "https://www.namemesh.com",
+                "notes": [
+                  {
+                    "title": "Domain Name Generator For Perfectionists"
+                  }
+                ]
+              },
+              {
+                "title": "Domize",
+                "url": "https://domize.com"
+              },
+              {
+                "title": "Domain Name Price and Availability",
+                "url": "https://www.domcomp.com"
+              },
+              {
+                "title": "NameBeta: 国际域名搜索 | 域名注册 | 国别域名注册 | 域名比价",
+                "url": "https://namebeta.com"
+              },
+              {
+                "title": "比较所有顶级域名的价格 | TLD List",
+                "url": "https://zh-hans.tld-list.com"
+              },
+            ]
+          }
         ]
       },
     ]
@@ -585,11 +907,11 @@ export const BOOKMARKS = [
                 该倡议激励了250多个其他机构通过开放教育联盟将其课程材料作为开放教育资源提供。
                 目前有超过2,400门课程。
                 */
-                "title": "MIT OpenCourseWare | Free Online Course Materials",
+                "title": "MIT OpenCourseWare",
                 "url": "https://ocw.mit.edu"
               },
               {
-                "title": "Udemy | 在线课程 - 时间自由，学您想学",
+                "title": "Udemy",
                 "url": "https://www.udemy.com"
               },
               {
@@ -803,197 +1125,6 @@ export const BOOKMARKS = [
     ]
   },
   {
-    "key": "apps",
-    "collections": [
-      {
-        "title": "Apps",
-        "buckets": [
-          {
-            "title": "Search",
-            "links": [
-              {
-                "title": "Wolfram|Alpha: Computational Intelligence",
-                "url": "https://www.wolframalpha.com"
-              },
-              {
-                "title": "Google",
-                "url": "https://www.google.com/ncr"
-              },
-              {
-                "title": "Bing",
-                "url": "https://www.bing.com/search"
-              },
-              {
-                "title": "Duckduckgo",
-                "url": "https://duckduckgo.com"
-              },
-              {
-                "title": "trace.moe",
-                "url": "https://trace.moe",
-                "notes": [
-                  {
-                    "title": "Anime Scene Search Engine"
-                  }
-                ]
-              },
-              {
-                "title": "SauceNAO",
-                "url": "https://saucenao.com",
-                "notes": [
-                  {
-                    "title": "Reverse Image Search"
-                  }
-                ]
-              },
-              {
-                "title": "SogouWeixin",
-                "url": "https://weixin.sogou.com",
-                "notes": [
-                  {
-                    "title": "搜狗的微信搜索"
-                  }
-                ]
-              },
-            ]
-          },
-          {
-            "title": "Reading",
-            "links": [
-              {
-                "title": "Libby",
-                "url": "https://libbyapp.com"
-              },
-              {
-                "title": "Goodreads | Meet your next favorite book",
-                "url": "https://www.goodreads.com"
-              },
-              {
-                "title": "Inoreader",
-                "url": "https://www.inoreader.com"
-              },
-              {
-                "title": "Instapaper",
-                "url": "https://www.instapaper.com"
-              },
-              {
-                "title": "Pocket",
-                "url": "https://getpocket.com"
-              },
-              {
-                "title": "PressReader",
-                "url": "https://www.pressreader.com"
-              },
-              {
-                "title": "微信读书",
-                "url": "https://weread.qq.com"
-              }
-            ]
-          },
-          {
-            "title": "Social",
-            "links": [
-              {
-                "title": "Medium",
-                "url": "https://medium.com"
-              },
-              {
-                "title": "Reddit",
-                "url": "https://www.reddit.com"
-              },
-              {
-                "title": "Facebook",
-                "url": "https://www.facebook.com"
-              },
-              {
-                "title": "Twitter",
-                "url": "https://twitter.com"
-              },
-              {
-                "title": "微博",
-                "url": "https://weibo.com"
-              },
-              {
-                "title": "豆瓣",
-                "url": "https://www.douban.com"
-              },
-            ]
-          },
-          {
-            "title": "Wiki",
-            "links": [
-              {
-                "title": "Wikipedia",
-                "url": "https://www.wikipedia.org"
-              },
-              {
-                "title": "WikiArt - Visual Art Encyclopedia",
-                "url": "https://www.wikiart.org"
-              }
-            ]
-          },
-          {
-            "title": "Questions & Answers",
-            "links": [
-              {
-                "title": "Stack Overflow",
-                "url": "https://stackoverflow.com"
-              },
-              {
-                "title": "Quora",
-                "url": "https://www.quora.com"
-              }
-            ]
-          },
-          {
-            "title": "Movies & TV Shows",
-            "links": [
-              {
-                "title": "IMDb",
-                "url": "https://www.imdb.com",
-                "notes": [
-                  {
-                    "title": "Ratings, Reviews, and Where to Watch the Best Movies & TV Shows"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "title": "Storage",
-            "links": [
-              {
-                "title": "Dropbox",
-                "url": "https://www.dropbox.com"
-              }
-            ]
-          },
-          {
-            "title": "Todo lists",
-            "links": [
-              {
-                "title": "Todoist",
-                "url": "https://todoist.com"
-              },
-            ]
-          },
-          {
-            "title": "Note-taking",
-            "links": [
-              {
-                "title": "Notion",
-                "url": "https://www.notion.so"
-              },
-              {
-                "title": "Obsidian",
-                "url": "https://obsidian.md"
-              }
-            ]
-          },
-        ]
-      },
-    ]
-  },
-  {
     "key": "media",
     "collections": [
       {
@@ -1185,7 +1316,11 @@ export const BOOKMARKS = [
                   {
                     "title": "Next HN",
                     "url": "https://hn.moonloss.com"
-                  }
+                  },
+                  {
+                    "title": "Read Hacker News",
+                    "url": "https://readhacker.news"
+                  },
                 ]
               },
               {
@@ -2100,8 +2235,13 @@ export const BOOKMARKS = [
                 /*
                 这个网站可以查询每个国家或地区的贸易数据，并用图文进行通俗解释。
                 */
-                "title": "OEC - The Observatory of Economic Complexity",
-                "url": "https://oec.world/en"
+                "title": "OEC",
+                "url": "https://oec.world/en",
+                "notes": [
+                  {
+                    "title": "The best place to explore trade data"
+                  }
+                ]
               },
               {
                 "title": "白描网页版 - 在线OCR文字识别、图片文字提取",
@@ -2124,10 +2264,6 @@ export const BOOKMARKS = [
                 "url": "https://www.desmos.com"
               },
               {
-                "title": "codefence - an easily embeddable interactive code editor",
-                "url": "https://codefence.io"
-              },
-              {
                 /*
                 Bulk install Windows apps quickly with Windows Package Manager.
                 */
@@ -2135,20 +2271,8 @@ export const BOOKMARKS = [
                 "url": "https://winstall.app"
               },
               {
-                "title": "Anki | 一键生成听力卡 音频听力 Youtube 油管牌组",
-                "url": "https://www.ankitube.com"
-              },
-              {
                 "title": "DownSub - Download subtitles from Youtube, Viki, Viu, Vlive and more!",
                 "url": "https://downsub.com"
-              },
-              {
-                "title": "Free Online Tools For Developers - FreeFormatter.com",
-                "url": "https://www.freeformatter.com"
-              },
-              {
-                "title": "Unicode 字符百科",
-                "url": "https://unicode-table.com"
               },
               {
                 /*
@@ -2164,30 +2288,6 @@ export const BOOKMARKS = [
               {
                 "title": "Vectr - Free Online Vector Graphics Editor",
                 "url": "https://vectr.com"
-              },
-              {
-                "title": "Free Online Tools For Developers - to Beautify, Validate, Minify, Analyse, Convert JSON, XML, JavaScript, CSS, HTML, Excel",
-                "url": "https://codebeautify.org"
-              },
-              {
-                "title": "Online UUID Generator Tool",
-                "url": "https://www.uuidgenerator.net"
-              },
-              {
-                "title": "The UTF-8 Illustrator",
-                "url": "https://utf-8-illustrator.com"
-              },
-              {
-                "title": "favicon Generator",
-                "url": "https://www.favicon.cc"
-              },
-              {
-                "title": "ASCIIFlow",
-                "url": "http://asciiflow.com"
-              },
-              {
-                "title": "asciinema - Record and share your terminal sessions, the right way",
-                "url": "https://asciinema.org"
               },
               {
                 "title": "Sketchpad",
@@ -2214,10 +2314,6 @@ export const BOOKMARKS = [
                 "url": "https://realfavicongenerator.net"
               },
               {
-                "title": "code2flow",
-                "url": "https://code2flow.com"
-              },
-              {
                 "title": "iLoveIMG",
                 "url": "https://www.iloveimg.com"
               },
@@ -2238,32 +2334,12 @@ export const BOOKMARKS = [
                 "url": "https://explainshell.com"
               },
               {
-                "title": "GitPitch",
-                "url": "https://gitpitch.com"
-              },
-              {
-                "title": "Audio Rip",
-                "url": "https://audio.rip"
-              },
-              {
                 "title": "Mixtape Manager",
                 "url": "https://mixtapemanager.ca"
               },
               {
                 "title": "Remove Background from Image",
                 "url": "https://www.remove.bg"
-              },
-              {
-                "title": "DevDocs API Documentation",
-                "url": "https://devdocs.io"
-              },
-              {
-                "title": "Carbon",
-                "url": "https://carbon.now.sh"
-              },
-              {
-                "title": "Chart Mage",
-                "url": "http://chartmage.com/intro.html"
               },
               {
                 "title": "OSBoxes",
@@ -2304,10 +2380,6 @@ export const BOOKMARKS = [
                 "url": "https://www.nirsoft.net"
               },
               {
-                "title": "RandomKeygen",
-                "url": "https://randomkeygen.com"
-              },
-              {
                 "title": "Rast2Vec",
                 "url": "http://www.tlhiv.org/rast2vec"
               },
@@ -2318,14 +2390,6 @@ export const BOOKMARKS = [
               {
                 "title": "Squoosh",
                 "url": "https://squoosh.app"
-              },
-              {
-                "title": "Draw",
-                "url": "https://www.draw.io"
-              },
-              {
-                "title": "ChannelsHunt",
-                "url": "https://www.channelshunt.com"
               },
               {
                 "title": "dbdiagram",
@@ -2344,14 +2408,6 @@ export const BOOKMARKS = [
                 "url": "https://www.geogebra.org"
               },
               {
-                "title": "Kroki!",
-                "url": "https://kroki.io"
-              },
-              {
-                "title": "微软对联",
-                "url": "https://duilian.msra.cn"
-              },
-              {
                 "title": "ColorKitty - Find the perfect color palettes from pictures.",
                 "url": "https://colorkitty.com"
               },
@@ -2364,20 +2420,12 @@ export const BOOKMARKS = [
                 "url": "https://apkcombo.com"
               },
               {
-                "title": "Biology of Human/World of Viruses",
-                "url": "https://worldofviruses.unl.edu"
-              },
-              {
                 "title": "HOVERSTAT.ES | The home of alternative web-design.",
                 "url": "https://www.hoverstat.es"
               },
               {
                 "title": "Time.is",
                 "url": "https://time.is"
-              },
-              {
-                "title": "Git Explorer",
-                "url": "https://gitexplorer.com"
               },
               {
                 "title": "DNS Spy",
@@ -2388,16 +2436,8 @@ export const BOOKMARKS = [
                 "url": "https://www.mail-tester.com"
               },
               {
-                "title": "Bcrypt-Generator.com - Online Bcrypt Hash Generator & Checker",
-                "url": "https://bcrypt-generator.com"
-              },
-              {
                 "title": "Mozilla SSL Configuration Generator",
                 "url": "https://ssl-config.mozilla.org"
-              },
-              {
-                "title": "Domain Name Generator For Perfectionists",
-                "url": "https://www.namemesh.com"
               },
               {
                 "title": "Online nslookup — Find DNS records",
@@ -2408,28 +2448,12 @@ export const BOOKMARKS = [
                 "url": "https://iknowwhatyoudownload.com"
               },
               {
-                "title": "Domain Name Price and Availability",
-                "url": "https://www.domcomp.com"
-              },
-              {
-                "title": "NameBeta: 国际域名搜索 | 域名注册 | 国别域名注册 | 域名比价",
-                "url": "https://namebeta.com"
-              },
-              {
-                "title": "比较所有顶级域名的价格 | TLD List",
-                "url": "https://zh-hans.tld-list.com"
-              },
-              {
                 "title": "Media Types",
                 "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
               },
               {
                 "title": "Flightradar24",
                 "url": "https://www.flightradar24.com"
-              },
-              {
-                "title": "Read Hacker News",
-                "url": "https://readhacker.news"
               },
               {
                 /*
@@ -2445,14 +2469,6 @@ export const BOOKMARKS = [
                 */
                 "title": "Paper plotter",
                 "url": "https://felixboiii.github.io/paper-plotter/"
-              },
-              {
-                "title": "CSS Reference",
-                "url": "https://cssreference.io"
-              },
-              {
-                "title": "HTML Reference",
-                "url": "https://htmlreference.io"
               },
               {
                 /*
@@ -2485,13 +2501,6 @@ export const BOOKMARKS = [
                 */
                 "title": "「说文解字」在线查询 Shuowen.org - 篆书字典 - 「说文解字注」在线查询",
                 "url": "http://www.shuowen.org"
-              },
-              {
-                /*
-                声音搜索引擎
-                */
-                "title": "淘声网 - toSound声音搜索引擎 - 免费音效素材资源|视频游戏配乐下载",
-                "url": "https://www.tosound.com"
               },
               {
                 /*
@@ -2533,10 +2542,6 @@ export const BOOKMARKS = [
                 */
                 "title": "Free Online Graph Paper / Simple Grid",
                 "url": "https://incompetech.com/graphpaper/lite/"
-              },
-              {
-                "title": "秘塔写作猫",
-                "url": "https://xiezuocat.com"
               },
               {
                 /*
@@ -2870,11 +2875,11 @@ export const BOOKMARKS = [
                 https://b-ok.cc
                 https://b-ok.asia
                 */
-                "title": "Z-Lib",
+                "title": "Z-Library",
                 "url": "https://z-lib.org",
                 "notes": [
                   {
-                    "title": "Z-Lib-mirror",
+                    "title": "Z-Library-Mirror",
                     "url": "https://book4you.org"
                   }
                 ]
