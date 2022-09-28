@@ -98,6 +98,15 @@ export const BOOKMARKS = [
                   }
                 ]
               },
+              {
+                "title": "Shodan",
+                "url": "https://www.shodan.io",
+                "notes": [
+                  {
+                    "title": "Search Engine for the Internet of Everything"
+                  }
+                ]
+              },
             ]
           },
           {
@@ -211,7 +220,29 @@ export const BOOKMARKS = [
               {
                 "title": "Listen Notes",
                 "url": "https://www.listennotes.com"
-              }
+              },
+              {
+                "title": "SoundOn 聲浪",
+                "url": "https://www.soundon.fm",
+                "notes": [
+                  {
+                    "title": "台灣 Podcast 公司，提供 Podcast 服務，從原創節目、Podcast 播放器，到 Hosting平台與商務服務。"
+                  }
+                ]
+              },
+              {
+                "title": "The Type",
+                "url": "https://www.thetype.com",
+                "notes": [
+                  {
+                    "title": "文字 / 设计 / 文化"
+                  },
+                  {
+                    "title": "字谈字畅",
+                    "url": "https://www.thetype.com/typechat"
+                  }
+                ]
+              },
             ]
           },
           {
@@ -420,6 +451,10 @@ export const BOOKMARKS = [
               {
                 "title": "Midifan",
                 "url": "https://www.midifan.com"
+              },
+              {
+                "title": "musicForProgramming();",
+                "url": "https://musicforprogramming.net"
               }
             ]
           },
@@ -654,6 +689,10 @@ export const BOOKMARKS = [
                     "title": "Read Hacker News",
                     "url": "https://readhacker.news"
                   },
+                  {
+                    "title": "Hacker News RSS",
+                    "url": "https://hnrss.github.io"
+                  },
                 ]
               },
               {
@@ -732,6 +771,10 @@ export const BOOKMARKS = [
               {
                 "title": "奇舞週刊",
                 "url": "https://weekly.75.team"
+              },
+              {
+                "title": "前端精读周刊",
+                "url": "https://github.com/ascoders/weekly"
               },
               {
                 "title": "理想生活實驗室",
@@ -877,10 +920,6 @@ export const BOOKMARKS = [
                 "url": "https://iyouport.substack.com"
               },
               {
-                "title": "Λ-Reading",
-                "url": "https://rizime.substack.com"
-              },
-              {
                 "title": "DPS",
                 "url": "https://letters.acacess.com",
                 "notes": [
@@ -888,7 +927,15 @@ export const BOOKMARKS = [
                     "title": "Daily Productivity Sharing"
                   }
                 ]
-              }
+              },
+              {
+                "title": "产品沉思录",
+                "url": "https://pmthinking.com"
+              },
+              {
+                "title": "Λ-Reading",
+                "url": "https://rizime.substack.com"
+              },
             ]
           },
           {
@@ -922,6 +969,10 @@ export const BOOKMARKS = [
               {
                 "title": "机核 GCORES",
                 "url": "https://www.gcores.com"
+              },
+              {
+                "title": "发现 | 奶牛关",
+                "url": "https://cowlevel.net/discover"
               },
               {
                 "title": "叽哩叽哩单机游戏",
@@ -990,8 +1041,25 @@ export const BOOKMARKS = [
                 "url": "https://www.ptt.cc/bbs/index.html"
               },
               {
+                "title": "R0 CREW",
+                "url": "https://forum.reverse4you.org"
+              },
+              {
+                "title": "0xFFFF",
+                "url": "https://0xffff.one"
+              },
+              {
                 "title": "zFrontier 装备前线",
                 "url": "https://www.zfrontier.com"
+              },
+              {
+                "title": "Forumosa",
+                "url": "https://tw.forumosa.com",
+                "notes": [
+                  {
+                    "title": "Taiwan's largest and most active Taiwan-oriented global online community in English"
+                  }
+                ]
               }
             ]
           },
@@ -1626,6 +1694,16 @@ export const BOOKMARKS = [
                 "title": "Codeberg",
                 "url": "https://codeberg.org"
               },
+              {
+                "title": "Sourcehut",
+                "url": "https://sourcehut.org",
+                "notes": [
+                  {
+                    "title": "sourcehut hub",
+                    "url": "https://sr.ht"
+                  }
+                ]
+              },
             ]
           },
           {
@@ -1718,6 +1796,15 @@ export const BOOKMARKS = [
                 "url": "https://www.tutorialspoint.com/execute_bash_online.php"
               },
               {
+                "title": "Ideone",
+                "url": "https://ideone.com",
+                "notes": [
+                  {
+                    "title": "Online Compiler and IDE >> C/C++, Java, PHP, Python, Perl and 70+ other compilers and interpreters"
+                  }
+                ]
+              },
+              {
                 "title": "CodePen",
                 "url": "https://codepen.io"
               },
@@ -1728,6 +1815,10 @@ export const BOOKMARKS = [
               {
                 "title": "JSFiddle",
                 "url": "https://jsfiddle.net"
+              },
+              {
+                "title": "CoCalc",
+                "url": "https://cocalc.com"
               },
               {
                 "title": "Binder",
@@ -1967,6 +2058,14 @@ export const BOOKMARKS = [
                   }
                 ]
               },
+              {
+                "title": "Bcrypt Hash Generator & Verifier",
+                "url": "https://bcrypt.online"
+              },
+              {
+                "title": "Argon2 Hash Generator, Validator & Verifier",
+                "url": "https://argon2.online"
+              },
             ]
           },
           {
@@ -2204,6 +2303,10 @@ export const BOOKMARKS = [
                 "title": "瀚堂近代报刊数据库",
                 "url": "https://www.neohytung.com"
               },
+              {
+                "title": "台灣電子書搜尋",
+                "url": "https://taiwan-ebook-lover.github.io"
+              },
             ]
           },
           {
@@ -2254,6 +2357,15 @@ export const BOOKMARKS = [
                 */
                 "title": "中国哲学书籍电子化计划",
                 "url": "https://ctext.org/zhs"
+              },
+              {
+                "title": "David Rumsey Historical Map Collection",
+                "url": "https://www.davidrumsey.com",
+                "notes": [
+                  {
+                    "title": "大卫拉姆齐地图图书馆"
+                  }
+                ]
               },
               {
                 "title": "浙江图书馆",
@@ -2490,6 +2602,10 @@ export const BOOKMARKS = [
               {
                 "title": "E-magazines free download in pdf",
                 "url": "https://freemagazinepdf.com"
+              },
+              {
+                "title": "Free Magazines Online",
+                "url": "https://freemagazines.top"
               },
             ]
           },
@@ -3131,6 +3247,10 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "Visual Capitalist",
+                "url": "https://www.visualcapitalist.com"
+              },
+              {
                 "title": "12ft Ladder",
                 "url": "https://12ft.io"
               },
@@ -3266,6 +3386,14 @@ export const BOOKMARKS = [
                 "url": "https://ssl-config.mozilla.org"
               },
               {
+                "title": "Digitalocean NGINX Config",
+                "url": "https://www.digitalocean.com/community/tools/nginx"
+              },
+              {
+                "title": "NGINX Config",
+                "url": "https://www.serverion.com/nginx-config"
+              },
+              {
                 "title": "I Know What You Download",
                 "url": "https://iknowwhatyoudownload.com"
               },
@@ -3362,6 +3490,10 @@ export const BOOKMARKS = [
               {
                 "title": "HTTP/3 Check",
                 "url": "https://http3check.net"
+              },
+              {
+                "title": "Mouse Guide - Sensors",
+                "url": "https://sensor.fyi/sensors"
               },
               {
                 "title": "移动芯片性能排行榜",
