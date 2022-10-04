@@ -2116,6 +2116,10 @@ export const BOOKMARKS = [
             "title": "Publisher",
             "links": [
               {
+                "title": "Linking Publishing(聯經出版)",
+                "url": "https://www.linkingbooks.com.tw"
+              },
+              {
                 "title": "Penguin Books UK",
                 "url": "https://www.penguin.co.uk"
               },
@@ -2487,14 +2491,14 @@ export const BOOKMARKS = [
                 免费下载 epub、pdf、mobi 格式电子书，支持转换为 FB2、TXT、RTF等格式
                 https://1lib.domains https://1lib.us https://zh.1lib.us https://jp1lib.org
                 https://zh.jp1lib.org https://ru1lib.org https://zh.ru1lib.org https://b-ok.cc
-                https://b-ok.asia
+                https://b-ok.asia https://book4you.org
                 */
                 "title": "Z-Library",
                 "url": "https://z-lib.org",
                 "notes": [
                   {
                     "title": "Z-Library-Mirror",
-                    "url": "https://book4you.org"
+                    "url": "https://b-ok.cc"
                   }
                 ]
               },
