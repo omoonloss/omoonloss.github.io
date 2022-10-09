@@ -394,6 +394,23 @@ export const BOOKMARKS = [
                   }
                 ]
               },
+              {
+                /*
+                TechTerms是一个在线计算机技术术语词典，
+                免费的计算机和互联网术语在线词典，词典包含 1200 多个具有易于理解定义的技术术语，
+                每个定义均使用日常语言编写，以使技术术语和高级概念易于理解
+                */
+                "title": "TechTerms",
+                "url": "https://techterms.com"
+              },
+              {
+                /*
+                一个能够查找近似短语和相关术语的工具，
+                支持中文和英文的近邻词检索，支持检索成语、诗歌流行语。
+                */
+                "title": "近邻词汇检索",
+                "url": "https://tool.mingdawoo.com/lang/nearby_word"
+              },
             ]
           },
           {
@@ -431,6 +448,15 @@ export const BOOKMARKS = [
               {
                 "title": "Musescore sheet music",
                 "url": "https://musescore.com/sheetmusic"
+              },
+              {
+                /*
+                IMSLP，也被称为国际音乐乐谱图书馆项目或 Petrucci 音乐图书馆，
+                于2006年开始，是一个基于订阅的项目，用于创建虚拟库公共区域音乐总谱，
+                并提供免费乐谱下载，主要pdf格式的，用户可以通过网站交流音乐思想，提交自己的作品，或者聆听他人的作品。
+                */
+                "title": "国际乐谱库(IMSLP)",
+                "url": "https://imslp.org"
               },
               {
                 "title": "MidiShow",
@@ -1433,8 +1459,13 @@ export const BOOKMARKS = [
                 大都会艺术博物馆 (The Metropolitan Museum of Art) 位于美国纽约州纽约市曼哈顿中央公园旁，
                 是世界上最大的、参观人数最多的艺术博物馆之一。
                 */
-                "title": "大都会艺术博物馆",
-                "url": "https://www.metmuseum.org"
+                "title": "The Metropolitan Museum of Art",
+                "url": "https://www.metmuseum.org",
+                "notes": [
+                  {
+                    "title": "大都会艺术博物馆"
+                  }
+                ]
               },
               {
                 /*
@@ -1449,6 +1480,52 @@ export const BOOKMARKS = [
                 */
                 "title": "德国科隆东方艺术博物馆",
                 "url": "https://museum-fuer-ostasiatische-kunst.de/Start"
+              },
+              {
+                /*
+                可以免费下载。 名画挺多，可以拿来作插画、配图、自用等等
+                */
+                "title": "加勒里克斯在线博物馆",
+                "url": "https://gallerix.asia",
+                "notes": [
+                  {
+                    "title": "世界名画档案馆 Gallerix 专门收集世界著名画家的作品，收集超过 4 万多名艺术家的近 17 多万幅作品。"
+                  }
+                ]
+              },
+              {
+                "title": "The Art Institute of Chicago",
+                "url": "https://www.artic.edu",
+                "notes": [
+                  {
+                    "title": "芝加哥艺术博物馆"
+                  }
+                ]
+              },
+              {
+                "title": "美国国家艺术馆",
+                "url": "https://www.nga.gov/open-access-images.html"
+              },
+              {
+                /*
+                收藏了超过10万件的高清艺术品，提供了公开免费下载的入口。
+                */
+                "title": "盖蒂博物馆",
+                "url": "https://www.getty.edu/art/collection"
+              },
+              {
+                /*
+                提供超10万张藏品图，可免费商用，包含画作、装饰品、雕塑等。
+                */
+                "title": "巴黎博物馆协会",
+                "url": "https://www.parismuseescollections.paris.fr/en"
+              },
+              {
+                /*
+                该网站收集作品4369幅，可按艺术家、位置、年份、类型等进行查找，可免费下载不可商用。
+                */
+                "title": "梵高博物馆",
+                "url": "https://www.vangoghmuseum.nl/zh/collection"
               },
               {
                 /*
@@ -3049,13 +3126,6 @@ export const BOOKMARKS = [
                     "title": "收尽世界名画，无水印高清油画"
                   }
                 ]
-              },
-              {
-                /*
-                可以免费下载。 名画挺多，可以拿来作插画、配图、自用等等
-                */
-                "title": "加勒里克斯在线博物馆",
-                "url": "https://gallerix.asia"
               },
               {
                 /*
