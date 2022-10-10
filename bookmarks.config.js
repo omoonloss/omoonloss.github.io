@@ -321,12 +321,29 @@ export const BOOKMARKS = [
             ]
           },
           {
-            "title": "Translator & Dictionary",
+            "title": "Translator",
             "links": [
               {
                 "title": "DeepL Translator",
                 "url": "https://www.deepl.com/translator"
               },
+              {
+                "title": "Google 翻譯",
+                "url": "https://translate.google.com"
+              },
+              {
+                "title": "Bing Microsoft Translator",
+                "url": "https://www.bing.com/translator"
+              },
+              {
+                "title": "彩云小译",
+                "url": "https://fanyi.caiyunapp.com"
+              },
+            ]
+          },
+          {
+            "title": "Dictionary",
+            "links": [
               {
                 "title": "Britannica",
                 "url": "https://www.britannica.com",
