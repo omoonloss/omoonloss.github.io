@@ -2248,6 +2248,10 @@ export const BOOKMARKS = [
                 "url": "https://www.pearson.com"
               },
               {
+                "title": "Wiley",
+                "url": "https://www.wiley.com/en-us"
+              },
+              {
                 "title": "The MIT Press",
                 "url": "https://mitpress.mit.edu"
               },
@@ -2278,6 +2282,28 @@ export const BOOKMARKS = [
                 "notes": [
                   {
                     "title": "Forgotten Books is a London-based book publisher specializing in the restoration of old books, both fiction and non-fiction."
+                  }
+                ]
+              },
+              {
+                "title": "SitePoint",
+                "url": "https://www.sitepoint.com/premium/library/books/"
+              },
+              {
+                "title": "Routledge",
+                "url": "https://www.routledge.com",
+                "notes": [
+                  {
+                    "title": "Publisher of Professional & Academic Books"
+                  }
+                ]
+              },
+              {
+                "title": "raywenderlich",
+                "url": "https://www.raywenderlich.com",
+                "notes": [
+                  {
+                    "title": "High quality programming tutorials: iOS, Android, Swift, Kotlin, Flutter, Server Side Swift, Unity, and more!"
                   }
                 ]
               },
@@ -2341,6 +2367,17 @@ export const BOOKMARKS = [
                 "title": "Feedbooks",
                 "url": "https://www.feedbooks.com"
               },
+              {
+                "title": "McGraw Hill Professional",
+                "url": "https://www.mhprofessional.com"
+              },
+              {
+                /*
+                万圣书园是位于北京市海淀区的一家私营书店，以经营人文、学术类的书为主。
+                */
+                "title": "万圣书园",
+                "url": "http://www.allsagesbooks.com"
+              }
             ]
           },
           {
@@ -2673,14 +2710,6 @@ export const BOOKMARKS = [
           {
             "title": "Magzine Resources",
             "links": [
-              {
-                /*
-                一个包含经济学人、纽约客、自然、新科学人、卫报、连线等优质杂志的图书源, 
-                让你能够阅读最前沿、优质的英文内容。
-                */
-                "title": "英语杂志社",
-                "url": "https://emagazine.link"
-              },
               {
                 "title": "Magazines Commumity",
                 "url": "https://downmagaz.net"
