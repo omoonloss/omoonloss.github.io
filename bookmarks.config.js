@@ -159,7 +159,13 @@ export const BOOKMARKS = [
               },
               {
                 "title": "Twitter",
-                "url": "https://twitter.com"
+                "url": "https://twitter.com",
+                "notes": [
+                  {
+                    "title": "nitter",
+                    "url": "https://nitter.net"
+                  }
+                ]
               },
               {
                 "title": "微博",
@@ -2630,6 +2636,14 @@ export const BOOKMARKS = [
                   {
                     "title": "Z-Library-Mirror",
                     "url": "https://b-ok.cc"
+                  },
+                  {
+                    "title": "Z-Library-Tor",
+                    "url": "http://zlibrary24tuxziyiyfr7zd46ytefdqbqd2axkmxm4o5374ptpc52fad.onion"
+                  },
+                  {
+                    "title": "Pirate Library Mirror",
+                    "url": "http://pilimi.org/zlib.html"
                   }
                 ]
               },
@@ -2639,7 +2653,17 @@ export const BOOKMARKS = [
                 教科书在这里甚至能直接找到原版！中文书籍也超丰富的啊！
                 */
                 "title": "Library Genesis",
-                "url": "http://libgen.rs"
+                "url": "http://libgen.rs",
+                "notes": [
+                  {
+                    "title": "Library Genesis-Mirror1",
+                    "url": "http://libgen.is"
+                  },
+                  {
+                    "title": "Library Genesis-Mirror2",
+                    "url": "http://libgen.st"
+                  }
+                ]
               },
               {
                 "title": "Let Me Read",
