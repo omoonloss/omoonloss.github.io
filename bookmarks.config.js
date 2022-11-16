@@ -2634,8 +2634,8 @@ export const BOOKMARKS = [
                 "url": "https://z-lib.org",
                 "notes": [
                   {
-                    "title": "Z-Library-Mirror",
-                    "url": "https://b-ok.cc"
+                    "title": "Z-Library-LoginPage",
+                    "url": "https://singlelogin.me"
                   },
                   {
                     "title": "Z-Library-Tor",
