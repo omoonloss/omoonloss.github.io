@@ -19,7 +19,7 @@ const Footer = () => (
 
       {import.meta.env.PACKAGE_VERSION && (
         <span>
-          <Link url="https://github.com/zetaoyang/omoonloss">
+          <Link url="https://github.com">
             I
           </Link>
           <span> &hearts; </span>
