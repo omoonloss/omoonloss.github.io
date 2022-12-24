@@ -2166,6 +2166,10 @@ export const BOOKMARKS = [
                 "title": "Argon2 Hash Generator, Validator & Verifier",
                 "url": "https://argon2.online"
               },
+              {
+                "title": "VirusTotal",
+                "url": "https://www.virustotal.com"
+              },
             ]
           },
           {
@@ -3638,6 +3642,10 @@ export const BOOKMARKS = [
               {
                 "title": "Mouse Guide - Sensors",
                 "url": "https://sensor.fyi/sensors"
+              },
+              {
+                "title": "YouTube Transcript",
+                "url": "https://youtubetranscript.com"
               },
               {
                 "title": "移动芯片性能排行榜",
