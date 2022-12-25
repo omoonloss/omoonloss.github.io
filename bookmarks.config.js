@@ -529,6 +529,18 @@ export const BOOKMARKS = [
               {
                 "title": "TW live",
                 "url": "https://tw.live"
+              },
+              {
+                /*
+                一个免费的电视直播服务 Samsung TV Plus ，可播放 120+ 英文电视频道，网页版
+                完全免费，需登陆 Samsung 账号换台
+                支持 720P 或更高分辨率，支持 CC 字幕
+                在20多个国家可用，美区可播放 120+ 频道
+                多数频道本就提供免费流播
+                国外三星电视内置此服务
+                */
+                "title": "Samsung TV Plus",
+                "url": "https://www.samsungtvplus.com"
               }
             ]
           },
@@ -708,12 +720,30 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "AppleInsider",
+                "url": "https://appleinsider.com",
+                "notes": [
+                  {
+                    "title": "Apple News, Rumors, Reviews, Prices & Deals"
+                  }
+                ]
+              },
+              {
                 "title": "Engadget",
                 "url": "https://www.engadget.com",
                 "notes": [
                   {
                     "title": "Engadget 中文版 - 消费性电子產品新闻和评测",
                     "url": "https://chinese.engadget.com"
+                  }
+                ]
+              },
+              {
+                "title": "Rest of World",
+                "url": "https://restofworld.org",
+                "notes": [
+                  {
+                    "title": "Reporting Global Tech Stories"
                   }
                 ]
               },
@@ -985,6 +1015,10 @@ export const BOOKMARKS = [
                 "title": "Λ-Reading",
                 "url": "https://rizime.substack.com"
               },
+              {
+                "title": "新闻实验室",
+                "url": "https://www.getrevue.co/profile/newslab"
+              },
             ]
           },
           {
@@ -1064,6 +1098,10 @@ export const BOOKMARKS = [
               {
                 "title": "V2EX",
                 "url": "https://v2ex.com"
+              },
+              {
+                "title": "Indie Hackers",
+                "url": "https://www.indiehackers.com"
               },
               {
                 "title": "FreeMdict Forum",
@@ -1608,6 +1646,20 @@ export const BOOKMARKS = [
               {
                 "title": "Biology of Human/World of Viruses",
                 "url": "https://worldofviruses.unl.edu"
+              },
+              {
+                /*
+                摩根图书馆与博物馆,建于1906年，最初为私人图书馆，1924年开始对公众开放。
+                博物馆主要收藏各类古籍珍本、文学艺术历史手稿和艺术品，重要藏品包括3本《古登堡圣经》、
+                弥尔顿《失乐园》唯一现存的手稿、美国《独立宣言》等。数字资源开放获取，可下载高清图
+                */
+                "title": "The Morgan Library & Museum",
+                "url": "https://www.themorgan.org",
+                "notes": [
+                  {
+                    "title": "Founded by Pierpont Morgan"
+                  }
+                ]
               },
             ]
           },
@@ -2167,8 +2219,26 @@ export const BOOKMARKS = [
                 "url": "https://argon2.online"
               },
               {
+                "title": "WinLibs",
+                "url": "https://winlibs.com",
+                "notes": [
+                  {
+                    "title": "Standalone build of GCC and MinGW-w64 for Windows"
+                  }
+                ]
+              },
+              {
                 "title": "VirusTotal",
                 "url": "https://www.virustotal.com"
+              },
+              {
+                "title": "Zero Width Shortener",
+                "url": "https://zws.im",
+                "notes": [
+                  {
+                    "title": "零宽度短网址生成器"
+                  }
+                ]
               },
             ]
           },
@@ -2273,6 +2343,10 @@ export const BOOKMARKS = [
                     "title": "Learn to build React, Angular, Vue, GraphQL, and Node.js Apps with real-world projects"
                   }
                 ]
+              },
+              {
+                "title": "Dark Horse Digital Comics",
+                "url": "https://digital.darkhorse.com"
               },
               {
                 "title": "译言古登堡计划",
@@ -3010,6 +3084,13 @@ export const BOOKMARKS = [
                 "url": "https://jvns.ca"
               },
               {
+                /*
+                Samantha Ming 是一名加拿大前端工程师，她在个人网站上分享了很多前端代码的技巧，内容质量很高，制作精美。
+                */
+                "title": "SamanthaMing",
+                "url": "https://www.samanthaming.com"
+              },
+              {
                 "title": "reuixiy",
                 "url": "https://io-oi.me"
               },
@@ -3059,8 +3140,24 @@ export const BOOKMARKS = [
                 "url": "https://engineering.atspotify.com"
               },
               {
+                "title": "Windows Blog",
+                "url": "https://blogs.windows.com"
+              },
+              {
                 "title": "Dropbox Tech Blog",
                 "url": "https://dropbox.tech"
+              },
+              {
+                "title": "Discord Blog",
+                "url": "https://discord.com/blog"
+              },
+              {
+                "title": "Notion Blog",
+                "url": "https://www.notion.so/blog"
+              },
+              {
+                "title": "CyberAgent Developers Blog",
+                "url": "https://developers.cyberagent.co.jp/blog"
               },
             ]
           },
@@ -3242,6 +3339,10 @@ export const BOOKMARKS = [
               {
                 "title": "Sketchpad",
                 "url": "https://sketch.io/sketchpad"
+              },
+              {
+                "title": "Excalidraw",
+                "url": "https://excalidraw.com"
               },
             ]
           },
@@ -3648,8 +3749,30 @@ export const BOOKMARKS = [
                 "url": "https://youtubetranscript.com"
               },
               {
+                "title": "UUP dump",
+                "url": "https://uupdump.net",
+                "notes": [
+                  {
+                    "title": "Download UUP files from Windows Update servers with ease."
+                  }
+                ]
+              },
+              {
+                "title": "Microsoft Store - Generation Project",
+                "url": "https://store.rg-adguard.net",
+                "notes": [
+                  {
+                    "title": "Online link generator for Microsoft Store."
+                  }
+                ]
+              },
+              {
                 "title": "移动芯片性能排行榜",
                 "url": "https://www.socpk.com"
+              },
+              {
+                "title": "Analyse your HTTP response headers",
+                "url": "https://securityheaders.com"
               }
             ]
           },
