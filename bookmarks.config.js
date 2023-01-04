@@ -2731,15 +2731,15 @@ export const BOOKMARKS = [
                 教科书在这里甚至能直接找到原版！中文书籍也超丰富的啊！
                 */
                 "title": "Library Genesis",
-                "url": "http://libgen.rs",
+                "url": "https://libgen.rs",
                 "notes": [
                   {
                     "title": "Library Genesis-Mirror1",
-                    "url": "http://libgen.is"
+                    "url": "https://libgen.is"
                   },
                   {
                     "title": "Library Genesis-Mirror2",
-                    "url": "http://libgen.st"
+                    "url": "https://libgen.st"
                   }
                 ]
               },
