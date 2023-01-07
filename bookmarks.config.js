@@ -593,15 +593,23 @@ export const BOOKMARKS = [
               },
               {
                 "title": "Financial Times",
-                "url": "https://www.ft.com"
-              },
-              {
-                "title": "FT 中文網",
-                "url": "https://www.ftchinese.com"
+                "url": "https://www.ft.com",
+                "notes": [
+                  {
+                    "title": "FT 中文",
+                    "url": "https://www.ftchinese.com"
+                  }
+                ]
               },
               {
                 "title": "The New York Times",
-                "url": "https://www.nytimes.com"
+                "url": "https://www.nytimes.com",
+                "notes": [
+                  {
+                    "title": "纽约时报中文",
+                    "url": "https://cn.nytimes.com"
+                  }
+                ]
               },
               {
                 "title": "Los Angeles Times",
@@ -609,7 +617,13 @@ export const BOOKMARKS = [
               },
               {
                 "title": "The Wall Street Journal",
-                "url": "https://www.wsj.com"
+                "url": "https://www.wsj.com",
+                "notes": [
+                  {
+                    "title": "华尔街日报中文",
+                    "url": "https://cn.wsj.com"
+                  }
+                ]
               },
               {
                 "title": "The Washington Post",
@@ -1009,7 +1023,13 @@ export const BOOKMARKS = [
               },
               {
                 "title": "产品沉思录",
-                "url": "https://pmthinking.com"
+                "url": "https://xiaobot.net/p/pmthinking2023",
+                "notes": [
+                  {
+                    "title": "产品沉思录 - 免费精选集",
+                    "url": "https://pmthinking.com"
+                  }
+                ]
               },
               {
                 "title": "Λ-Reading",
@@ -2815,6 +2835,10 @@ export const BOOKMARKS = [
               {
                 "title": "Magazines Commumity",
                 "url": "https://downmagaz.net"
+              },
+              {
+                "title": "Magazine Reader",
+                "url": "https://mgreader.com"
               },
               {
                 "title": "PDF Digital Magazines",
