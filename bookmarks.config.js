@@ -1045,6 +1045,10 @@ export const BOOKMARKS = [
                 "url": "https://rizime.substack.com"
               },
               {
+                "title": "维舟",
+                "url": "https://weizhou.substack.com"
+              },
+              {
                 "title": "新闻实验室",
                 "url": "https://www.getrevue.co/profile/newslab"
               },
