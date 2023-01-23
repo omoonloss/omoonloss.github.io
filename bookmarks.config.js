@@ -867,11 +867,19 @@ export const BOOKMARKS = [
                 "url": "https://www.echojs.com"
               },
               {
-                "title": "極客公園",
+                "title": "极客公园",
                 "url": "https://www.geekpark.net"
               },
               {
-                "title": "奇舞週刊",
+                "title": "🥤可乐周报",
+                "url": "https://www.kele.me"
+              },
+              {
+                "title": "潮流周刊",
+                "url": "https://weekly.tw93.fun"
+              },
+              {
+                "title": "奇舞周刊",
                 "url": "https://weekly.75.team"
               },
               {
@@ -879,7 +887,7 @@ export const BOOKMARKS = [
                 "url": "https://github.com/ascoders/weekly"
               },
               {
-                "title": "理想生活實驗室",
+                "title": "理想生活实验室",
                 "url": "https://www.toodaylab.com"
               },
               {
@@ -1031,6 +1039,17 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "Daily Writing Habits",
+                "url": "https://dailywritinghabits.substack.com"
+              },
+              {
+                /*
+                一个质量挺不错的 data engineering / MLOps 的 newsletter，作者几乎每一期都会手绘一些架构图。
+                */
+                "title": "SwirlAI Newsletter",
+                "url": "https://swirlai.substack.com"
+              },
+              {
                 "title": "产品沉思录",
                 "url": "https://xiaobot.net/p/pmthinking2023",
                 "notes": [
@@ -1051,6 +1070,10 @@ export const BOOKMARKS = [
               {
                 "title": "新闻实验室",
                 "url": "https://www.getrevue.co/profile/newslab"
+              },
+              {
+                "title": "硬核周报",
+                "url": "https://hardcored.substack.com"
               },
             ]
           },
@@ -1345,6 +1368,13 @@ export const BOOKMARKS = [
               {
                 "title": "北京大学公开课",
                 "url": "http://opencourse.pku.edu.cn/course/opencourse2/index.html"
+              },
+              {
+                /*
+                一个免费的英文（多语言）学习网站，是Mooc跟外语高校联合做的平台，全是高校老师授课
+                */
+                "title": "中国高校外语慕课平台（UMOOCs）",
+                "url": "https://umoocs.unipus.cn"
               },
               {
                 /*
