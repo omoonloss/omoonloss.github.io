@@ -273,6 +273,16 @@ export const BOOKMARKS = [
             "title": "Todo lists",
             "links": [
               {
+                "title": "To Do",
+                "url": "https://to-do.live.com",
+                "notes": [
+                  {
+                    "title": "Microsoft To-Do",
+                    "utl": "https://todo.microsoft.com"
+                  }
+                ]
+              },
+              {
                 "title": "Todoist",
                 "url": "https://todoist.com"
               },
@@ -1050,12 +1060,24 @@ export const BOOKMARKS = [
                 "url": "https://swirlai.substack.com"
               },
               {
-                "title": "产品沉思录",
-                "url": "https://xiaobot.net/p/pmthinking2023",
+                "title": "产品沉思录 - 免费精选集",
+                "url": "https://pmthinking.com",
                 "notes": [
                   {
-                    "title": "产品沉思录 - 免费精选集",
-                    "url": "https://pmthinking.com"
+                    "title": "产品沉思录 | 2023",
+                    "url": "https://xiaobot.net/p/pmthinking2023"
+                  },
+                  {
+                    "title": "产品沉思录 | 2022",
+                    "url": "https://xiaobot.net/p/pmthinking2022"
+                  },
+                  {
+                    "title": "产品沉思录 | 2021",
+                    "url": "https://xiaobot.net/p/pmthinking2021"
+                  },
+                  {
+                    "title": "产品沉思录 | 2020",
+                    "url": "https://xiaobot.net/p/pmthinking2020"
                   }
                 ]
               },
@@ -1073,7 +1095,13 @@ export const BOOKMARKS = [
               },
               {
                 "title": "硬核周报",
-                "url": "https://hardcored.substack.com"
+                "url": "https://hardcored.substack.com",
+                "notes": [
+                  {
+                    "title": " 用 Notion 阅读",
+                    "url": "https://super-skate-261.notion.site/Newsletter-122f299011ea4242964ef0a55886fdad"
+                  }
+                ]
               },
             ]
           },
