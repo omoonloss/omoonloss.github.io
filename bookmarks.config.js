@@ -364,6 +364,10 @@ export const BOOKMARKS = [
                 "title": "彩云小译",
                 "url": "https://fanyi.caiyunapp.com"
               },
+              {
+                "title": "QuillBot AI",
+                "url": "https://quillbot.com"
+              },
             ]
           },
           {
@@ -452,6 +456,13 @@ export const BOOKMARKS = [
                 */
                 "title": "近邻词汇检索",
                 "url": "https://tool.mingdawoo.com/lang/nearby_word"
+              },
+              {
+                /*
+                同义词查找
+                */
+                "title": "Synonyms and Antonyms of Words",
+                "url": "https://www.thesaurus.com"
               },
             ]
           },
@@ -1100,6 +1111,16 @@ export const BOOKMARKS = [
                   {
                     "title": " 用 Notion 阅读",
                     "url": "https://super-skate-261.notion.site/Newsletter-122f299011ea4242964ef0a55886fdad"
+                  }
+                ]
+              },
+              {
+                "title": "Joe 的折腾日记",
+                "url": "https://houjoe.zhubai.love",
+                "notes": [
+                  {
+                    "title": " 用 Notion 阅读",
+                    "url": "https://houjoe.notion.site/houjoe/Joe-2a85f5be01004cd2b6a5ad26fbb948b1"
                   }
                 ]
               },
