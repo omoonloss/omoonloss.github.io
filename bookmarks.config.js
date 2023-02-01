@@ -480,6 +480,16 @@ export const BOOKMARKS = [
                 "url": "https://learningmusic.ableton.com"
               },
               {
+                "title": "Spotify",
+                "url": "https://open.spotify.com",
+                "notes": [
+                  {
+                    "title": "How-to-Spotify",
+                    "url": "https://howtospotify.com"
+                  }
+                ]
+              },
+              {
                 "title": "YouTube Music",
                 "url": "https://music.youtube.com"
               },
@@ -908,6 +918,10 @@ export const BOOKMARKS = [
                 "url": "https://www.toodaylab.com"
               },
               {
+                "title": "Untag",
+                "url": "https://utgd.net"
+              },
+              {
                 "title": "利器",
                 "url": "https://liqi.io"
               },
@@ -1123,6 +1137,10 @@ export const BOOKMARKS = [
                     "url": "https://houjoe.notion.site/houjoe/Joe-2a85f5be01004cd2b6a5ad26fbb948b1"
                   }
                 ]
+              },
+              {
+                "title": "不如读书",
+                "url": "https://wuyagege.substack.com"
               },
             ]
           },
