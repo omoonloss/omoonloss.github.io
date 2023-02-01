@@ -892,10 +892,6 @@ export const BOOKMARKS = [
                 "url": "https://www.geekpark.net"
               },
               {
-                "title": "🥤可乐周报",
-                "url": "https://www.kele.me"
-              },
-              {
                 "title": "潮流周刊",
                 "url": "https://weekly.tw93.fun"
               },
@@ -1103,6 +1099,10 @@ export const BOOKMARKS = [
               {
                 "title": "新闻实验室",
                 "url": "https://www.getrevue.co/profile/newslab"
+              },
+              {
+                "title": "🥤可乐周报",
+                "url": "https://www.kele.me"
               },
               {
                 "title": "硬核周报",
