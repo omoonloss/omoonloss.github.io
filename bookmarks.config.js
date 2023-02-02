@@ -1040,10 +1040,6 @@ export const BOOKMARKS = [
                 "url": "https://www.morningbrew.com/emerging-tech/stories"
               },
               {
-                "title": "灣區日報",
-                "url": "https://wanqu.co"
-              },
-              {
                 "title": "城堡閱讀",
                 "url": "https://cbydzk.zhubai.love"
               },
@@ -1111,19 +1107,19 @@ export const BOOKMARKS = [
                 "url": "https://weizhou.substack.com"
               },
               {
-                "title": "新闻实验室",
-                "url": "https://www.getrevue.co/profile/newslab"
-              },
-              {
                 "title": "🥤可乐周报",
                 "url": "https://www.kele.me"
+              },
+              {
+                "title": "不如读书",
+                "url": "https://wuyagege.substack.com"
               },
               {
                 "title": "硬核周报",
                 "url": "https://hardcored.substack.com",
                 "notes": [
                   {
-                    "title": " 用 Notion 阅读",
+                    "title": "用 Notion 阅读",
                     "url": "https://super-skate-261.notion.site/Newsletter-122f299011ea4242964ef0a55886fdad"
                   }
                 ]
@@ -1133,14 +1129,28 @@ export const BOOKMARKS = [
                 "url": "https://houjoe.zhubai.love",
                 "notes": [
                   {
-                    "title": " 用 Notion 阅读",
+                    "title": "用 Notion 阅读",
                     "url": "https://houjoe.notion.site/houjoe/Joe-2a85f5be01004cd2b6a5ad26fbb948b1"
                   }
                 ]
               },
               {
-                "title": "不如读书",
-                "url": "https://wuyagege.substack.com"
+                "title": "新闻实验室",
+                "url": "https://newsletter.newslab.info",
+                "notes": [
+                  {
+                    "title": "新闻实验室文章集合",
+                    "url": "https://github.com/Newslab2020/Collection"
+                  },
+                  {
+                    "title": "新闻实验室微信公众号和会员计划目录",
+                    "url": "https://github.com/Newslab2020/Contents"
+                  }
+                ]
+              },
+              {
+                "title": "灣區日報",
+                "url": "https://wanqu.co"
               },
             ]
           },
