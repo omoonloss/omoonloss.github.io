@@ -2531,6 +2531,10 @@ export const BOOKMARKS = [
                   }
                 ]
               },
+              {
+                "title": "Penguin Random House",
+                "url": "https://www.penguinrandomhouse.com"
+              },
             ]
           },
           {
@@ -2866,6 +2870,16 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "Anna's Archive",
+                "url": "https://annas-archive.org",
+                "notes": [
+                  {
+                    "title": "Anna's Blog",
+                    "url": "http://annas-blog.org"
+                  }
+                ]
+              },
+              {
                 /*
                 http://gen.lib.rus.ec 超有名的俄罗斯网站，真的有超多书籍！
                 教科书在这里甚至能直接找到原版！中文书籍也超丰富的啊！
@@ -2938,6 +2952,14 @@ export const BOOKMARKS = [
               {
                 "title": "SoBooks",
                 "url": "https://sobooks.net"
+              },
+              {
+                "title": "Calibre-Web",
+                "url": "https://calibre.leishi.io"
+              },
+              {
+                "title": "ReadHub",
+                "url": "https://readhub.one"
               },
               {
                 "title": "恩京的书房",
