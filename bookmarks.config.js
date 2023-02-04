@@ -994,6 +994,10 @@ export const BOOKMARKS = [
                 "title": "Hacker Noon",
                 "url": "https://hackernoon.com"
               },
+              {
+                "title": "Rust Magazine",
+                "url": "https://rustmagazine.org"
+              },
             ]
           },
           {
@@ -1063,11 +1067,12 @@ export const BOOKMARKS = [
                 "url": "https://iyouport.substack.com"
               },
               {
-                "title": "DPS",
+                "title": "Daily Productivity Sharing",
                 "url": "https://letters.acacess.com",
                 "notes": [
                   {
-                    "title": "Daily Productivity Sharing"
+                    "title": "生产力周报",
+                    "url": "https://sspai.com/column/266"
                   }
                 ]
               },
@@ -1137,6 +1142,10 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "林中来信",
+                "url": "https://laixin.one"
+              },
+              {
                 "title": "Joe 的折腾日记",
                 "url": "https://houjoe.zhubai.love",
                 "notes": [
@@ -1145,6 +1154,10 @@ export const BOOKMARKS = [
                     "url": "https://houjoe.notion.site/houjoe/Joe-2a85f5be01004cd2b6a5ad26fbb948b1"
                   }
                 ]
+              },
+              {
+                "title": "有趣产品咖啡馆",
+                "url": "https://yunyingxiaowanzi.zhubai.love"
               },
               {
                 "title": "新闻实验室",
@@ -1159,6 +1172,10 @@ export const BOOKMARKS = [
                     "url": "https://github.com/Newslab2020/Contents"
                   }
                 ]
+              },
+              {
+                "title": "Data Stitches",
+                "url": "https://datastitches.substack.com"
               },
               {
                 "title": "灣區日報",
@@ -2624,6 +2641,10 @@ export const BOOKMARKS = [
             "title": "Search",
             "links": [
               {
+                "title": "ScholarWorks",
+                "url": "https://scholarworks.calstate.edu"
+              },
+              {
                 "title": "台灣雲端書庫",
                 "url": "https://www.ebookservice.tw"
               },
@@ -2681,6 +2702,10 @@ export const BOOKMARKS = [
               {
                 "title": "台灣電子書搜尋",
                 "url": "https://taiwan-ebook-lover.github.io"
+              },
+              {
+                "title": "易书 书籍检索",
+                "url": "https://search.yibook.org"
               },
             ]
           },
@@ -2773,11 +2798,14 @@ export const BOOKMARKS = [
                 "url": "https://www.planetebook.com"
               },
               {
+                /*
+                在这里但凡找得到的公开教材，都是100%免费的。从数学、人文、商科、到science很多热门科目都可以找到。
+                */
                 "title": "OpenStax",
                 "url": "https://openstax.org"
               },
               {
-                "title": "Internet Archive| Books",
+                "title": "Internet Archive | Books",
                 "url": "https://archive.org/details/books"
               },
               {
@@ -2848,6 +2876,10 @@ export const BOOKMARKS = [
                 "url": "https://www.e-booksdirectory.com"
               },
               {
+                "title": "Archive for the History of Economic Thought",
+                "url": "https://socialsciences.mcmaster.ca/econ/ugcm/3ll3/"
+              },
+              {
                 "title": "亚马逊 Kindle 商店免费中文电子书",
                 "url": "https://www.amazon.cn/free?tag=personalass1014-23"
               },
@@ -2882,16 +2914,6 @@ export const BOOKMARKS = [
                 ]
               },
               {
-                "title": "Anna's Archive",
-                "url": "https://annas-archive.org",
-                "notes": [
-                  {
-                    "title": "Anna's Blog",
-                    "url": "http://annas-blog.org"
-                  }
-                ]
-              },
-              {
                 /*
                 http://gen.lib.rus.ec 超有名的俄罗斯网站，真的有超多书籍！
                 教科书在这里甚至能直接找到原版！中文书籍也超丰富的啊！
@@ -2906,6 +2928,16 @@ export const BOOKMARKS = [
                   {
                     "title": "Library Genesis-Mirror2",
                     "url": "https://libgen.st"
+                  }
+                ]
+              },
+              {
+                "title": "Anna's Archive",
+                "url": "https://annas-archive.org",
+                "notes": [
+                  {
+                    "title": "Anna's Blog",
+                    "url": "http://annas-blog.org"
                   }
                 ]
               },
@@ -2939,6 +2971,10 @@ export const BOOKMARKS = [
                     "title": "Free download ebook on Literary, Computers, Fiction, Non-Fiction and More."
                   }
                 ]
+              },
+              {
+                "title": "CoderProg",
+                "url": "https://coderprog.com"
               },
               {
                 "title": "PDF Drive",
