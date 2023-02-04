@@ -1040,8 +1040,14 @@ export const BOOKMARKS = [
                 "url": "https://www.morningbrew.com/emerging-tech/stories"
               },
               {
-                "title": "城堡閱讀",
-                "url": "https://cbydzk.zhubai.love"
+                "title": "🏰 城堡阅读",
+                "url": "https://cbydzk.zhubai.love",
+                "notes": [
+                  {
+                    "title": "往期存档",
+                    "url": "https://www.yuque.com/gaohui-bdaa2/chengbao"
+                  }
+                ]
               },
               {
                 "title": "Dailyio",
@@ -1100,7 +1106,13 @@ export const BOOKMARKS = [
               },
               {
                 "title": "Λ-Reading",
-                "url": "https://rizime.substack.com"
+                "url": "https://rizime.substack.com",
+                "notes": [
+                  {
+                    "title": "Λ-Reading 往期目录 (Notion)",
+                    "url": "https://www.notion.so/rizi/Reading-d77be691eb244db0b8add646b6ef7f3b"
+                  }
+                ]
               },
               {
                 "title": "维舟",
