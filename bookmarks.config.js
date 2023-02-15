@@ -1619,6 +1619,128 @@ export const BOOKMARKS = [
               },
             ]
           },
+          {
+            "title": "Academic",
+            "links": [
+              {
+                "title": "arXiv",
+                "url": "https://arxiv.org"
+              },
+              {
+                "title": "DBLP",
+                "url": "https://dblp.org",
+                "notes": [
+                  {
+                    "title": "computer science bibliography"
+                  }
+                ]
+              },
+              {
+                "title": "ACM Digital Library",
+                "url": "https://dl.acm.org"
+              },
+              {
+                "title": "IEEExplore",
+                "url": "https://ieeexplore.ieee.org"
+              },
+              {
+                "title": "OpenReview",
+                "url": "https://openreview.net"
+              },
+              {
+                "title": "PaperwithCode",
+                "url": "https://paperswithcode.com",
+                "notes": [
+                  {
+                    "title": "The latest in Machine Learning"
+                  }
+                ]
+              },
+              {
+                "title": "Google Scholar",
+                "url": "https://scholar.google.com"
+              },
+              {
+                "title": "JSTOR",
+                "url": "https://www.jstor.org"
+              },
+              {
+                "title": "SAGE Journals",
+                "url": "https://journals.sagepub.com",
+                "notes": [
+                  {
+                    "title": "Your gateway to world-class research journals"
+                  }
+                ]
+              },
+              {
+                "title": "ScienceDirect",
+                "url": "https://www.sciencedirect.com",
+                "notes": [
+                  {
+                    "title": "Science, health and medical journals, full text articles and books."
+                  }
+                ]
+              },
+              {
+                "title": "Zenodo",
+                "url": "https://zenodo.org"
+              },
+              {
+                "title": "Sci-Hub",
+                "url": "https://sci-hub.st",
+                "notes": [
+                  {
+                    "title": "removing barriers in the way of science"
+                  }
+                ]
+              },
+              {
+                /*
+                免费科技 文献论文 网站，涵盖了计算机科学，材料，
+                工程等方面超过200多部免费书籍和8000多免费专业论文的网站。
+                */
+                "title": "IntechOpen",
+                "url": "https://www.intechopen.com"
+              },
+              {
+                /*
+                输入想找的paper或者作者，直接会生成一张graph关联图，可以找到和这篇文章有关的大部分文章！
+                */
+                "title": "Connected Papers",
+                "url": "https://www.connectedpapers.com",
+                "notes": [
+                  {
+                    "title": "Find and explore academic papers"
+                  }
+                ]
+              },
+              {
+                "title": "喵咪论文",
+                "url": "https://lunwen.im"
+              },
+              {
+                /*
+                此文库分为15个学科专辑，覆盖自然科学、工程与技术科学、人文与社会科学、
+                医药科学、农业科学五大门类的所有一级学科，所有图书按标准学科和中图法两个体系进行分类。
+                包括专著、教材、图集、报告、工具书、大众科普等，满足科研、教学、管理等各个系列的专业用户。
+                几乎囊括科学出版社60余年来所有获奖作品、院士著作、重点丛书、各学科必备经典专著等，
+                堪称“科学宝库、数字典藏”
+                */
+                "title": "科学文库",
+                "url": "https://book.sciencereading.cn"
+              },
+              {
+                /*
+                Seminar Live 是一个免费、开放的在线学术信息平台，在这里，你可以分享、追踪、保存、
+                参与在线学术讲座以及过往的学术影音记录。如果从最基本的功能来说，
+                你可以把 Seminar Live 当做一个每日线上学术活动指南来用
+                */
+                "title": "Seminar Live",
+                "url": "https://www.seminar-live.com"
+              }
+            ]
+          },
         ]
       },
     ]
@@ -2505,6 +2627,10 @@ export const BOOKMARKS = [
                 "url": "https://mitpress.mit.edu"
               },
               {
+                "title": "Yale University Press",
+                "url": "https://yalebooks.yale.edu"
+              },
+              {
                 "title": "newline",
                 "url": "https://www.newline.co",
                 "notes": [
@@ -3051,87 +3177,7 @@ export const BOOKMARKS = [
                 "url": "https://freemagazines.top"
               },
             ]
-          },
-          {
-            "title": "Academic",
-            "links": [
-              {
-                "title": "SAGE Journals",
-                "url": "https://journals.sagepub.com",
-                "notes": [
-                  {
-                    "title": "Your gateway to world-class research journals"
-                  }
-                ]
-              },
-              {
-                "title": "ScienceDirect",
-                "url": "https://www.sciencedirect.com",
-                "notes": [
-                  {
-                    "title": "Science, health and medical journals, full text articles and books."
-                  }
-                ]
-              },
-              {
-                "title": "Zenodo",
-                "url": "https://zenodo.org"
-              },
-              {
-                "title": "Sci-Hub",
-                "url": "https://sci-hub.st",
-                "notes": [
-                  {
-                    "title": "removing barriers in the way of science"
-                  }
-                ]
-              },
-              {
-                /*
-                免费科技 文献论文 网站，涵盖了计算机科学，材料，
-                工程等方面超过200多部免费书籍和8000多免费专业论文的网站。
-                */
-                "title": "IntechOpen",
-                "url": "https://www.intechopen.com"
-              },
-              {
-                /*
-                输入想找的paper或者作者，直接会生成一张graph关联图，可以找到和这篇文章有关的大部分文章！
-                */
-                "title": "Connected Papers",
-                "url": "https://www.connectedpapers.com",
-                "notes": [
-                  {
-                    "title": "Find and explore academic papers"
-                  }
-                ]
-              },
-              {
-                "title": "喵咪论文",
-                "url": "https://lunwen.im"
-              },
-              {
-                /*
-                此文库分为15个学科专辑，覆盖自然科学、工程与技术科学、人文与社会科学、
-                医药科学、农业科学五大门类的所有一级学科，所有图书按标准学科和中图法两个体系进行分类。
-                包括专著、教材、图集、报告、工具书、大众科普等，满足科研、教学、管理等各个系列的专业用户。
-                几乎囊括科学出版社60余年来所有获奖作品、院士著作、重点丛书、各学科必备经典专著等，
-                堪称“科学宝库、数字典藏”
-                */
-                "title": "科学文库",
-                "url": "https://book.sciencereading.cn"
-              },
-              {
-                /*
-                Seminar Live 是一个免费、开放的在线学术信息平台，在这里，你可以分享、追踪、保存、
-                参与在线学术讲座以及过往的学术影音记录。如果从最基本的功能来说，
-                你可以把 Seminar Live 当做一个每日线上学术活动指南来用
-                */
-                "title": "Seminar Live",
-                "url": "https://www.seminar-live.com"
-              }
-            ]
-          },
+          }
         ]
       },
     ]
