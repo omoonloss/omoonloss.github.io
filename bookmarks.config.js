@@ -829,6 +829,10 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "YC Startup Library",
+                "url": "https://www.ycombinator.com/library"
+              },
+              {
                 "title": "故事 StoryStudio",
                 "url": "https://storystudio.tw"
               },
@@ -3026,8 +3030,12 @@ export const BOOKMARKS = [
                 "url": "https://z-lib.org",
                 "notes": [
                   {
-                    "title": "Z-Library-LoginPage",
+                    "title": "Z-Library-LoginPage1",
                     "url": "https://singlelogin.me"
+                  },
+                  {
+                    "title": "Z-Library-LoginPage2",
+                    "url": "https://1login.to"
                   },
                   {
                     "title": "Z-Library-Tor",
@@ -3090,11 +3098,12 @@ export const BOOKMARKS = [
                 ]
               },
               {
-                "title": "ReadnoteMany",
-                "url": "https://readnote.org",
+                "title": "Readnote",
+                "url": "https://ebook.readnote.org",
                 "notes": [
                   {
-                    "title": "Free download ebook on Literary, Computers, Fiction, Non-Fiction and More."
+                    "title": "Readnote Community",
+                    "url": "https://readnote.org"
                   }
                 ]
               },
