@@ -1164,6 +1164,16 @@ export const BOOKMARKS = [
                 "url": "https://yunyingxiaowanzi.zhubai.love"
               },
               {
+                "title": "推播助栏 Enrich Podcast Wave",
+                "url": "https://enrichpodwave.substack.com/",
+                "notes": [
+                  {
+                    "title": "推播助栏",
+                    "url": "https://cnpodpick.zhubai.love"
+                  }
+                ]
+              },
+              {
                 "title": "新闻实验室",
                 "url": "https://newsletter.newslab.info",
                 "notes": [
@@ -1820,6 +1830,10 @@ export const BOOKMARKS = [
                 "notes": [
                   {
                     "title": "大都会艺术博物馆"
+                  },
+                  {
+                    "title": "MetPublications",
+                    "url": "https://www.metmuseum.org/art/metpublications"
                   }
                 ]
               },
@@ -2660,13 +2674,11 @@ export const BOOKMARKS = [
                 "url": "https://www.oreilly.com"
               },
               {
+                /*
+                专门从事旧书的翻新，供在线阅读，或以电子书的形式下载，或以书面形式购买
+                */
                 "title": "Forgotten Books",
-                "url": "https://www.forgottenbooks.com/en",
-                "notes": [
-                  {
-                    "title": "Forgotten Books is a London-based book publisher specializing in the restoration of old books, both fiction and non-fiction."
-                  }
-                ]
+                "url": "https://www.forgottenbooks.com/en"
               },
               {
                 "title": "SitePoint",
@@ -2928,6 +2940,10 @@ export const BOOKMARKS = [
                 "url": "https://www.planetebook.com"
               },
               {
+                "title": "Freebookcentre | Free Computer books Download",
+                "url": "https://www.freebookcentre.net"
+              },
+              {
                 /*
                 在这里但凡找得到的公开教材，都是100%免费的。从数学、人文、商科、到science很多热门科目都可以找到。
                 */
@@ -3151,6 +3167,16 @@ export const BOOKMARKS = [
               {
                 "title": "雅书",
                 "url": "https://yabook.org"
+              },
+              {
+                "title": "天浪书屋",
+                "url": "https://www.tianlangbooks.com",
+                "notes": [
+                  {
+                    "title": "curl_tianlangbooks",
+                    "url": "https://gist.github.com/syhily/31d7b97168289a64369d052a7032fcf1"
+                  }
+                ]
               },
             ]
           },
