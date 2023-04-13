@@ -196,6 +196,10 @@ export const BOOKMARKS = [
               {
                 "title": "Quora",
                 "url": "https://www.quora.com"
+              },
+              {
+                "title": "Poe",
+                "url": "https://poe.com"
               }
             ]
           },
@@ -329,7 +333,7 @@ export const BOOKMARKS = [
                 可以让你看到地球表面的实时卫星照片
                 */
                 "title": "Zoom Earth",
-                "url": "https://zoom.earth/storms/"
+                "url": "https://zoom.earth"
               },
               {
                 /*
@@ -342,6 +346,13 @@ export const BOOKMARKS = [
                     "title": "A global map of wind, weather, and ocean conditions"
                   }
                 ]
+              },
+              {
+                /*
+                可以让你看到地球表面的实时卫星照片
+                */
+                "title": "IQAir | First in Air Quality",
+                "url": "https://www.iqair.com"
               }
             ]
           },
@@ -3797,6 +3808,10 @@ export const BOOKMARKS = [
               {
                 "title": "12ft Ladder",
                 "url": "https://12ft.io"
+              },
+              {
+                "title": "RemovePaywall | Free online paywall remover",
+                "url": "https://www.removepaywall.com"
               },
               {
                 /*
