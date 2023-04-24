@@ -200,6 +200,10 @@ export const BOOKMARKS = [
               {
                 "title": "Poe",
                 "url": "https://poe.com"
+              },
+              {
+                "title": "AI Playground by Vercel Labs",
+                "url": "https://play.vercel.ai"
               }
             ]
           },
@@ -713,6 +717,10 @@ export const BOOKMARKS = [
                 "url": "https://www.inmediahk.net"
               },
               {
+                "title": "日新说",
+                "url": "https://www.copernicium.tw"
+              },
+              {
                 "title": "法国国际广播电台 RFI",
                 "url": "https://www.rfi.fr/cn"
               },
@@ -1204,7 +1212,7 @@ export const BOOKMARKS = [
               },
               {
                 "title": "灣區日報",
-                "url": "https://wanqu.co"
+                "url": "https://www.wanqu.co"
               },
             ]
           },
