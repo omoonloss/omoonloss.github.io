@@ -1179,6 +1179,10 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "啰里啰唆",
+                "url": "https://luoliluosuo.zhubai.love"
+              },
+              {
                 "title": "有趣产品咖啡馆",
                 "url": "https://yunyingxiaowanzi.zhubai.love"
               },
