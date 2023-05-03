@@ -3070,15 +3070,22 @@ export const BOOKMARKS = [
                 "notes": [
                   {
                     "title": "Z-Library-LoginPage1",
-                    "url": "https://singlelogin.me"
+                    "url": "https://singlelogin.re"
                   },
                   {
                     "title": "Z-Library-LoginPage2",
+                    "url": "https://singlelogin.site"
+                  },
+                  {
+                    "title": "Z-Library-LoginPage3",
                     "url": "https://1login.to"
                   },
                   {
                     "title": "Z-Library-Tor",
                     "url": "http://zlibrary24tuxziyiyfr7zd46ytefdqbqd2axkmxm4o5374ptpc52fad.onion"
+                  },
+                  {
+                    "title": "blackbox@zlib.se",
                   },
                   {
                     "title": "Pirate Library Mirror",
