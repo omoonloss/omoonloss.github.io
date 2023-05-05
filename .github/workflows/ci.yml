@@ -12,7 +12,7 @@ jobs:
     name: node-${{ matrix.node }}
     strategy:
       matrix:
-        node: [16, 18]
+        node: [16, 20]
       fail-fast: false
 
     steps:
