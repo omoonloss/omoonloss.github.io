@@ -578,8 +578,8 @@ export const BOOKMARKS = [
                 "url": "https://www.bilibili.com"
               },
               {
-                "title": "场库",
-                "url": "https://www.vmovier.com"
+                "title": "新片场",
+                "url": "https://www.xinpianchang.com"
               },
               {
                 "title": "TW live",
