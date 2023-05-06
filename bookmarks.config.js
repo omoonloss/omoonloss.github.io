@@ -2799,7 +2799,11 @@ export const BOOKMARKS = [
                 */
                 "title": "万圣书园",
                 "url": "http://www.allsagesbooks.com"
-              }
+              },
+              {
+                "title": "大新書局-日文自學專家",
+                "url": "https://www.dahhsin.com.tw"
+              },
             ]
           },
           {
