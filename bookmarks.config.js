@@ -2198,15 +2198,6 @@ export const BOOKMARKS = [
                 "url": "https://replit.com"
               },
               {
-                "title": "goormIDE",
-                "url": "https://ide.goorm.io",
-                "notes": [
-                  {
-                    "title": "A Powerful Cloud IDE Service"
-                  }
-                ]
-              },
-              {
                 "title": "Kaggle",
                 "url": "https://www.kaggle.com",
                 "notes": [
@@ -2218,6 +2209,15 @@ export const BOOKMARKS = [
               {
                 "title": "Colaboratory",
                 "url": "https://colab.research.google.com"
+              },
+              {
+                "title": "goormIDE",
+                "url": "https://ide.goorm.io",
+                "notes": [
+                  {
+                    "title": "A Powerful Cloud IDE Service"
+                  }
+                ]
               },
               {
                 "title": "Gradient",
@@ -2249,6 +2249,10 @@ export const BOOKMARKS = [
               {
                 "title": "Wandbox",
                 "url": "https://wandbox.org"
+              },
+              {
+                "title": "Rust Playground",
+                "url": "https://play.rust-lang.org"
               },
               {
                 "title": "Online PHP editor",
@@ -2628,6 +2632,10 @@ export const BOOKMARKS = [
               {
                 "title": "Penguin Books UK",
                 "url": "https://www.penguin.co.uk"
+              },
+              {
+                "title": "DK | For the curious",
+                "url": "https://www.dk.com"
               },
               {
                 "title": "Packtpub",
