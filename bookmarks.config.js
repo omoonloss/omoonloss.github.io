@@ -50,6 +50,10 @@ export const BOOKMARKS = [
                 "url": "https://duckduckgo.com"
               },
               {
+                "title": "NAVER",
+                "url": "https://www.naver.com"
+              },
+              {
                 "title": "trace.moe",
                 "url": "https://trace.moe",
                 "notes": [
@@ -713,6 +717,10 @@ export const BOOKMARKS = [
                 "url": "https://www.foxnews.com"
               },
               {
+                "title": "報導者 The Reporter",
+                "url": "https://www.twreporter.org"
+              },
+              {
                 "title": "獨立媒體",
                 "url": "https://www.inmediahk.net"
               },
@@ -732,6 +740,10 @@ export const BOOKMARKS = [
                     "title": "日本經濟新聞中文版"
                   }
                 ]
+              },
+              {
+                "title": "联合早报",
+                "url": "https://www.zaobao.com.sg/global"
               },
               {
                 "title": "經濟日報",
@@ -820,6 +832,15 @@ export const BOOKMARKS = [
                   }
                 ]
               },
+              {
+                "title": "Quanta Magazine",
+                "url": "https://www.quantamagazine.org",
+                "notes": [
+                  {
+                    "title": "Science and Math News"
+                  }
+                ]
+              }
             ]
           },
           {
@@ -927,6 +948,10 @@ export const BOOKMARKS = [
               {
                 "title": "潮流周刊",
                 "url": "https://weekly.tw93.fun"
+              },
+              {
+                "title": "AIGC周刊",
+                "url": "https://op7418.zhubai.love"
               },
               {
                 "title": "奇舞周刊",
@@ -1065,6 +1090,10 @@ export const BOOKMARKS = [
                 */
                 "title": "Morning Brew",
                 "url": "https://www.morningbrew.com/emerging-tech/stories"
+              },
+              {
+                "title": "Coding Challenges",
+                "url": "https://codingchallenges.substack.com"
               },
               {
                 "title": "🏰 城堡阅读",
@@ -1218,6 +1247,10 @@ export const BOOKMARKS = [
                 "title": "灣區日報",
                 "url": "https://www.wanqu.co"
               },
+              {
+                "title": "SemiAnalysis",
+                "url": "https://www.semianalysis.com"
+              }
             ]
           },
           {
@@ -3064,6 +3097,15 @@ export const BOOKMARKS = [
                 "title": "亚马逊 Kindle 商店免费中文电子书",
                 "url": "https://www.amazon.cn/free?tag=personalass1014-23"
               },
+              {
+                "title": "LibriVox",
+                "url": "https://librivox.org",
+                "notes": [
+                  {
+                    "title": "Free Public Domain Audiobooks"
+                  }
+                ]
+              }
             ]
           },
           {
