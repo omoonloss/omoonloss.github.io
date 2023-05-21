@@ -208,6 +208,10 @@ export const BOOKMARKS = [
               {
                 "title": "AI Playground by Vercel Labs",
                 "url": "https://play.vercel.ai"
+              },
+              {
+                "title": "HuggingChat",
+                "url": "https://huggingface.co/chat"
               }
             ]
           },
@@ -855,6 +859,10 @@ export const BOOKMARKS = [
                 "url": "https://news.ycombinator.com",
                 "notes": [
                   {
+                    "title": "Search powered by Algolia",
+                    "url": "https://hn.algolia.com"
+                  },
+                  {
                     "title": "Next HN",
                     "url": "https://hn.moonloss.com"
                   },
@@ -1022,6 +1030,10 @@ export const BOOKMARKS = [
               {
                 "title": "IT 之家",
                 "url": "https://www.ithome.com"
+              },
+              {
+                "title": "机器之心",
+                "url": "https://www.jiqizhixin.com"
               },
               {
                 "title": "掘金",
@@ -1250,7 +1262,18 @@ export const BOOKMARKS = [
               {
                 "title": "SemiAnalysis",
                 "url": "https://www.semianalysis.com"
-              }
+              },
+              {
+                "title": "ByteByteGo Newsletter",
+                "url": "https://blog.bytebytego.com"
+              },
+              {
+                /*
+                一个关注创造力和生产力工具的 Newsletter。
+                */
+                "title": "Creativity",
+                "url": "https://creativerly.com"
+              },
             ]
           },
           {
@@ -1464,6 +1487,13 @@ export const BOOKMARKS = [
                 "url": "https://ocw.mit.edu"
               },
               {
+                /*
+                宾夕法尼亚州立大学发起的开放高质量教育学习资源
+                */
+                "title": "Penn State University Open Educational Resources",
+                "url": "https://roam.libraries.psu.edu/resources"
+              },
+              {
                 "title": "Udemy",
                 "url": "https://www.udemy.com"
               },
@@ -1547,7 +1577,7 @@ export const BOOKMARKS = [
               },
               {
                 /*
-                一个免费的英文（多语言）学习网站，是Mooc跟外语高校联合做的平台，全是高校老师授课
+                一个免费的英文（多语言）学习网站，是Mooc跟外语高校联合做的平台，全是高校老师授课。
                 */
                 "title": "中国高校外语慕课平台（UMOOCs）",
                 "url": "https://umoocs.unipus.cn"
@@ -1567,6 +1597,24 @@ export const BOOKMARKS = [
                 */
                 "title": "OnlineCourses",
                 "url": "https://www.onlinecourses.com"
+              },
+              {
+                /*
+                一个平台，包含来自顶尖大学的650多个CS课程, 精选了美国顶尖大学的免费计算机科学课程。
+                课程汇编涵盖数十个领域的数百个课程，从入门课程到研究生级别的研讨会。
+                主题包括：算法、数据科学、数据结构、系统、量子计算、密码学、网络安全、应用程序开发、视频游戏设计、软件工程等等！
+                平台上所有资源免费开源，适合所有想要学习计算机科学的人。
+                */
+                "title": "College Compendium",
+                "url": "https://collegecompendium.org"
+              },
+              {
+                "title": "Class Central",
+                "url": "https://www.classcentral.com"
+              },
+              {
+                "title": "ByteByteGo",
+                "url": "https://bytebytego.com"
               }
             ]
           },
@@ -1686,6 +1734,18 @@ export const BOOKMARKS = [
                 */
                 "title": "The Browser",
                 "url": "https://thebrowser.com"
+              },
+              {
+                /*
+                雅思官方推出个免费的雅思机考模拟系统，可以在线练习雅思考试，
+                如果准备考雅思的同学，可以到雅思的官网注册一个账号试试，
+                目前模考系统中提供了学术类和培训类的两种模考真题。
+                最终反馈成绩结果只有阅读和听力两个部分，
+                等级是按照欧洲语言共同参考框架（CEFR）等级的形式来评价的，需要的可以测试一下自己的水平。
+                雅思机考模拟系统地址
+                */
+                "title": "IELTS computer-based test simulation system",
+                "url": "https://cdielts.gelielts.com"
               },
             ]
           },
@@ -2025,6 +2085,16 @@ export const BOOKMARKS = [
                     "title": "Founded by Pierpont Morgan"
                   }
                 ]
+              },
+              {
+                /*
+                日本国家档案馆数字档案馆
+                国立公文書館 デジタルアーカイブ，是日本一个专门收藏古籍文化书籍的图书馆，
+                日本宪法、司法文件、古老的地图等等各种历史资料，而且资料的质量非常高清非常完好，
+                全部免费开放提供全球用户自由下载、打印、查阅，也可以通过搜索查找目录数据库持有的资料。
+                */
+                "title": "国立公文書館 デジタルアーカイブ",
+                "url": "https://www.digital.archives.go.jp"
               },
             ]
           },
@@ -2434,6 +2504,10 @@ export const BOOKMARKS = [
                   }
                 ]
               },
+              {
+                "title": "在线 LaTeX 公式编辑器",
+                "url": "https://www.latexlive.com"
+              },
             ]
           },
           {
@@ -2498,6 +2572,19 @@ export const BOOKMARKS = [
           {
             "title": "Toolbox",
             "links": [
+              {
+                /*
+                GitHub 最大的开源算法库：用许多编程语言实现的算法和数据结构。
+                */
+                "title": "The Algorithms",
+                "url": "https://the-algorithms.com",
+                "notes": [
+                  {
+                    "title": "Github",
+                    "url": "https://github.com/TheAlgorithms"
+                  }
+                ]
+              },
               {
                 "title": "FreeFormatter",
                 "url": "https://www.freeformatter.com",
@@ -2599,6 +2686,15 @@ export const BOOKMARKS = [
               {
                 "title": "VirusTotal",
                 "url": "https://www.virustotal.com"
+              },
+              {
+                /*
+                一个很好的在线防病毒扫描器，可以扫描文件、链接、IP地址、域名和哈希。
+                除了识别可能的威胁外，它还扫描文件元数据和请求的权限。进入网站，选择您需要的选项，
+                并上传一个不超过140MB的文件。一旦启动，它将开始对数据进行全面分析，并生成一份详细报告。
+                */
+                "title": "MetaDefender Cloud",
+                "url": "https://metadefender.opswat.com"
               },
               {
                 "title": "Zero Width Shortener",
@@ -2709,6 +2805,10 @@ export const BOOKMARKS = [
                 "url": "https://mitpress.mit.edu"
               },
               {
+                "title": "Princeton University Presss",
+                "url": "https://press.princeton.edu"
+              },
+              {
                 "title": "Yale University Press",
                 "url": "https://yalebooks.yale.edu"
               },
@@ -2769,6 +2869,10 @@ export const BOOKMARKS = [
               {
                 "title": "Penguin Random House",
                 "url": "https://www.penguinrandomhouse.com"
+              },
+              {
+                "title": "理想国",
+                "url": "https://www.ilixiangguo.com"
               },
             ]
           },
@@ -2851,6 +2955,13 @@ export const BOOKMARKS = [
             "title": "Search",
             "links": [
               {
+                /*
+                据说是世界上容量最大的图书馆目录，也可以查大学图书馆的馆藏。
+                */
+                "title": "WorldCat",
+                "url": "https://www.worldcat.org"
+              },
+              {
                 "title": "ScholarWorks",
                 "url": "https://scholarworks.calstate.edu"
               },
@@ -2923,6 +3034,15 @@ export const BOOKMARKS = [
             "title": "Information",
             "links": [
               {
+                /*
+                这个网站爬了整个 reddit 上所有人推荐的书，
+                并通过统计做出排名。
+                网站作者通过一些规则去重并保证尽量客观。
+                */
+                "title": "Reddit Reads: Book reccomendations from reddit",
+                "url": "https://www.redditreads.com"
+              },
+              {
                 "title": "豆瓣读书",
                 "url": "https://book.douban.com"
               },
@@ -2955,6 +3075,17 @@ export const BOOKMARKS = [
                 */
                 "title": "Getty Publications Virtual Library",
                 "url": "https://www.getty.edu/publications/virtuallibrary"
+              },
+              {
+                /*
+                青空文庫是一个无版权日语原版小说数字图书馆，
+                收藏包含数千种日语小说、非小说作品、海量版权失效的日文图书
+                （根据日本的版权法，作者去世50年后作为财产意义上的版权自动失效），
+                本着资源共享和文化交流的精神制作成电子版图书发布在网络上供所有人免费阅读和下载，由富田伦生建立。，
+                很多好书也因此消失。盖蒂图书馆希望能用电子版书籍的形式，让更多人能看到这些濒临消失的书籍。”
+                */
+                "title": "青空文庫",
+                "url": "https://www.aozora.gr.jp"
               },
               {
                 "title": "國立臺灣大學圖書館",
@@ -3496,6 +3627,10 @@ export const BOOKMARKS = [
               {
                 "title": "3Blue1Brown",
                 "url": "https://www.3blue1brown.com"
+              },
+              {
+                "title": "三帛的世界",
+                "url": "https://blog.vvzero.com"
               }
             ]
           },
@@ -4106,6 +4241,22 @@ export const BOOKMARKS = [
                 */
                 "title": "Radio Garden",
                 "url": "http://radio.garden"
+              },
+              {
+                /*
+                一个全球在线的网络广播电台，收集来自超过 235 个国家/地区的 65,000 多个网络广播电台，
+                无需月费或订阅，全部免费收听，有web的页面，可以直接在线收听全球网络广播电台，也有app。
+                */
+                "title": "OneStop Radio",
+                "url": "https://theonestopradio.com"
+              },
+              {
+                /*
+                公共领域电台（Public Domain Radio）是一个由瑞士公共领域基金会提供的免费的在线服务，
+                它在不同频道上 7*24 小时不间断播放古典、爵士、民俗音乐，总计超过 70000 张经过数字化处理的唱片。
+                */
+                "title": "Public Domain Radio",
+                "url": "http://publicdomainradio.org"
               },
               {
                 /*
