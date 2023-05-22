@@ -130,6 +130,15 @@ export const BOOKMARKS = [
                 "url": "https://libbyapp.com"
               },
               {
+                /*
+                1. 支持端：移动端，网页端，体验都不错
+                2. 支持格式：除了购买，也可以上传本地书籍，支持 epub，PDF，据说上限是 1000，但我没查到官方有这个说明
+                3. 导出：标注等同步到云端硬盘的书籍文件，双向回溯很方便。导入的书，也可以导出
+                */
+                "title": "Google Play Books",
+                "url": "https://play.google.com/books"
+              },
+              {
                 "title": "Goodreads",
                 "url": "https://www.goodreads.com"
               },
@@ -1273,6 +1282,16 @@ export const BOOKMARKS = [
                 */
                 "title": "Creativity",
                 "url": "https://creativerly.com"
+              },
+              {
+                "title": "On Substack",
+                "url": "https://on.substack.com",
+                "notes": [
+                  {
+                    "title": "Notes | Substack",
+                    "url": "https://substack.com/notes"
+                  }
+                ]
               },
             ]
           },
