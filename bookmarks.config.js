@@ -103,6 +103,15 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                /*
+                Google Drive 存储了数十亿个公开可用的文件，但内置的搜索只能让您查找自己的存储。
+                您可以在一个特殊的搜索引擎 De Digger 的帮助下解决这个问题，它可以让您通过关键字搜索其他人存储的公开可用的文件。
+                使用方法和所有搜索引擎一样简单。
+                */
+                "title": "de🔸digger",
+                "url": "https://www.dedigger.com"
+              },
+              {
                 "title": "ONYPHE",
                 "url": "https://www.onyphe.io",
                 "notes": [
@@ -950,7 +959,8 @@ export const BOOKMARKS = [
                 "url": "https://hellogithub.com",
                 "notes": [
                   {
-                    "title": "分享 GitHub 上入门级、有趣的开源项目"
+                    "title": "GitHub",
+                    "url": "https://github.com/521xueweihan/HelloGitHub"
                   }
                 ]
               },
@@ -1282,6 +1292,10 @@ export const BOOKMARKS = [
                 */
                 "title": "Creativity",
                 "url": "https://creativerly.com"
+              },
+              {
+                "title": "Catch Me in the Wild",
+                "url": "https://nananadanada.substack.com"
               },
               {
                 "title": "On Substack",
