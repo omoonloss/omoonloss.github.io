@@ -24,6 +24,12 @@ const Footer = () => (
           </Link>
           <span> &hearts; </span>
           <span>
+            <Link url="https://www.cloudflare.com">
+            Cloudflare
+            </Link>
+          </span>
+          <span> & </span>
+          <span>
             <Link url="https://github.com/darekkay/static-marks-app">
             Static Marks
             </Link>
