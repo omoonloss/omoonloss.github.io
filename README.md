@@ -3,7 +3,7 @@
 
 MoonLoss means "The moon forgot to be full".
 
-Hosted on [Cloudflare Pages](https://pages.cloudflare.com), made with [React.js](https://reactjs.org) & [Vite](https://vitejs.dev).
+Hosted on [Cloudflare](https://www.cloudflare.com) [Pages](https://pages.cloudflare.com), made with [React.js](https://reactjs.org) & [Vite](https://vitejs.dev).
 
 
 

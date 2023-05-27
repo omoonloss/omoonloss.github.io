@@ -3279,9 +3279,6 @@ export const BOOKMARKS = [
                 /*
                 Z-Library 项目部分，全球最大的数字图书馆，自2009年起的免费图书馆。
                 免费下载 epub、pdf、mobi 格式电子书，支持转换为 FB2、TXT、RTF等格式
-                https://1lib.domains https://1lib.us https://zh.1lib.us https://jp1lib.org
-                https://zh.jp1lib.org https://ru1lib.org https://zh.ru1lib.org https://b-ok.cc
-                https://b-ok.asia https://book4you.org
                 */
                 "title": "Z-Library",
                 "url": "https://z-lib.org",
@@ -3293,10 +3290,6 @@ export const BOOKMARKS = [
                   {
                     "title": "Z-Library-LoginPage2",
                     "url": "https://singlelogin.site"
-                  },
-                  {
-                    "title": "Z-Library-LoginPage3",
-                    "url": "https://1login.to"
                   },
                   {
                     "title": "Z-Library-Tor",
