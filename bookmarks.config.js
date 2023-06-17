@@ -195,6 +195,10 @@ export const BOOKMARKS = [
                   {
                     "title": "nitter",
                     "url": "https://nitter.net"
+                  },
+                  {
+                    "title": "nitter-git-repo",
+                    "url": "https://github.com/zedeus/nitter"
                   }
                 ]
               },
@@ -860,6 +864,15 @@ export const BOOKMARKS = [
                 "notes": [
                   {
                     "title": "Science and Math News"
+                  }
+                ]
+              },
+              {
+                "title": "The Millions",
+                "url": "https://themillions.com",
+                "notes": [
+                  {
+                    "title": "An online publication devoted to books, arts, and culture."
                   }
                 ]
               }
@@ -2981,6 +2994,16 @@ export const BOOKMARKS = [
               {
                 "title": "大新書局-日文自學專家",
                 "url": "https://www.dahhsin.com.tw"
+              },
+              {
+                "title": "岩波書店",
+                "url": "https://www.iwanami.co.jp",
+                "notes": [
+                  {
+                    "title": "岩波新书精选",
+                    "url": "https://book.douban.com/series/44880"
+                  }
+                ]
               },
             ]
           },
