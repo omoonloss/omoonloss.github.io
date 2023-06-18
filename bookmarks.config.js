@@ -228,6 +228,10 @@ export const BOOKMARKS = [
                 "url": "https://poe.com"
               },
               {
+                "title": "Next.js AI Chatbot",
+                "url": "https://chat.vercel.ai"
+              },
+              {
                 "title": "AI Playground by Vercel Labs",
                 "url": "https://play.vercel.ai"
               },
@@ -3684,7 +3688,11 @@ export const BOOKMARKS = [
               {
                 "title": "三帛的世界",
                 "url": "https://blog.vvzero.com"
-              }
+              },
+              {
+                "title": "Long Luo's Life Notes",
+                "url": "http://www.longluo.me"
+              },
             ]
           },
           {
