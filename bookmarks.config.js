@@ -1324,6 +1324,18 @@ export const BOOKMARKS = [
                   }
                 ]
               },
+              {
+                "title": "Python 潮流周刊",
+                "url": "https://pythoncat.top/archive"
+              },
+              {
+                "title": "隐形学园",
+                "url": "https://invisible.school"
+              },
+              {
+                "title": "有(冇)用",
+                "url": "https://usefulness.zhubai.love"
+              },
             ]
           },
           {
@@ -4069,6 +4081,14 @@ export const BOOKMARKS = [
                     "title": "Computer Science Rankings"
                   }
                 ]
+              },
+              {
+                "title": "Cloudflare Radar",
+                "url": "https://radar.cloudflare.com"
+              },
+              {
+                "title": "Is BGP safe yet?",
+                "url": "https://isbgpsafeyet.com"
               },
               {
                 "title": "Visual Capitalist",
