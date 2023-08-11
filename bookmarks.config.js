@@ -228,8 +228,8 @@ export const BOOKMARKS = [
                 "url": "https://poe.com"
               },
               {
-                "title": "Next.js AI Chatbot",
-                "url": "https://chat.vercel.ai"
+                "title": "Claude",
+                "url": "https://claude.ai/chats"
               },
               {
                 "title": "AI Playground by Vercel Labs",
