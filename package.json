@@ -1,7 +1,7 @@
 {
   "name": "o-moonloss",
   "description": "Frontend for personal front page.",
-  "version": "2.4.10",
+  "version": "3.0.0",
   "dependencies": {
     "@darekkay/styles": "4.3.0",
     "clsx": "2.0.0",
@@ -23,6 +23,14 @@
   "license": "MIT",
   "main": "src/index.js",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darekkay/static-marks-app.git"
+  },
+  "overrides": {
+    "string-width": "4.2.3",
+    "wrap-ansi": "7.0.0"
+  },
   "scripts": {
     "build": "run-s build:vite inline-sources",
     "build:vite": "vite build",
