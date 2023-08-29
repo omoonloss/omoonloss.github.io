@@ -232,8 +232,18 @@ export const BOOKMARKS = [
                 "url": "https://claude.ai/chats"
               },
               {
-                "title": "AI Playground by Vercel Labs",
-                "url": "https://play.vercel.ai"
+                /*
+                AI Playground by Vercel Labs
+                https://play.vercel.ai
+                */
+                "title": "Vercel AI SDK",
+                "url": "https://sdk.vercel.ai",
+                "notes": [
+                  {
+                    "title": "Next.js AI Chatbot",
+                    "url": "https://chat.vercel.ai"
+                  }
+                ]
               },
               {
                 "title": "HuggingChat",
