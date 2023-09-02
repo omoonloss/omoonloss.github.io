@@ -657,48 +657,8 @@ export const BOOKMARKS = [
             "title": "News",
             "links": [
               {
-                "title": "端傳媒 Initium Media",
-                "url": "https://theinitium.com"
-              },
-              {
-                "title": "*CUP",
-                "url": "https://www.cup.com.hk",
-                "notes": [
-                  {
-                    "title": "每日十條世界要聞 與你清醒同行"
-                  }
-                ]
-              },
-              {
-                "title": "界面新聞",
-                "url": "https://www.jiemian.com",
-                "notes": [
-                  {
-                    "title": "只服務於獨立思考的人羣"
-                  }
-                ]
-              },
-              {
-                "title": "Vox",
-                "url": "https://www.vox.com"
-              },
-              {
-                "title": "The New Yorker",
-                "url": "https://www.newyorker.com"
-              },
-              {
                 "title": "The Economist",
                 "url": "https://www.economist.com"
-              },
-              {
-                "title": "Financial Times",
-                "url": "https://www.ft.com",
-                "notes": [
-                  {
-                    "title": "FT 中文",
-                    "url": "https://www.ftchinese.com"
-                  }
-                ]
               },
               {
                 "title": "The New York Times",
@@ -711,8 +671,14 @@ export const BOOKMARKS = [
                 ]
               },
               {
-                "title": "Los Angeles Times",
-                "url": "https://www.latimes.com"
+                "title": "Financial Times",
+                "url": "https://www.ft.com",
+                "notes": [
+                  {
+                    "title": "FT 中文",
+                    "url": "https://www.ftchinese.com"
+                  }
+                ]
               },
               {
                 "title": "The Wall Street Journal",
@@ -725,52 +691,105 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "Barron's",
+                "url": "https://www.barrons.com",
+                "notes": [
+                  {
+                    "title": "Financial and Investment News"
+                  }
+                ]
+              },
+              {
                 "title": "The Washington Post",
                 "url": "https://www.washingtonpost.com"
               },
               {
-                "title": "Nature",
-                "url": "https://www.nature.com"
+                "title": "Vox",
+                "url": "https://www.vox.com"
+              },
+              {
+                "title": "Reuters",
+                "url": "https://www.reuters.com"
+              },
+              {
+                "title": "Bloomberg",
+                "url": "https://www.bloomberg.com"
+              },
+              {
+                "title": "Associated Press News",
+                "url": "https://apnews.com"
+              },
+              {
+                "title": "Los Angeles Times",
+                "url": "https://www.latimes.com"
               },
               {
                 "title": "TIME",
                 "url": "https://time.com"
               },
               {
-                "title": "Scientific American",
-                "url": "https://www.scientificamerican.com"
-              },
-              {
-                "title": "Digg",
-                "url": "https://digg.com"
-              },
-              {
-                "title": "USA TODAY",
-                "url": "https://www.usatoday.com"
+                "title": "Neue Zürcher Zeitung",
+                "url": "https://www.nzz.ch",
+                "notes": [
+                  {
+                    "title": "新苏黎世报，德语"
+                  }
+                ]
               },
               {
                 "title": "Fortune",
                 "url": "https://fortune.com"
               },
               {
+                "title": "USA TODAY",
+                "url": "https://www.usatoday.com"
+              },
+              {
+                "title": "Digg",
+                "url": "https://digg.com"
+              },
+              {
                 "title": "Foxnews",
                 "url": "https://www.foxnews.com"
               },
               {
+                "title": "法国国际广播电台 RFI",
+                "url": "https://www.rfi.fr/cn"
+              },
+              {
+                "title": "端傳媒 Initium Media",
+                "url": "https://theinitium.com"
+              },
+              {
+                "title": "*CUP",
+                "url": "https://www.cup.com.hk",
+                "notes": [
+                  {
+                    "title": "每日十條世界要聞，與你清醒同行"
+                  }
+                ]
+              },
+              {
+                "title": "日新说",
+                "url": "https://www.copernicium.tw",
+                "notes": [
+                  {
+                    "title": "期望构建一个简中世界的多元化严肃新媒体平台"
+                  }
+                ]
+              },
+              {
                 "title": "報導者 The Reporter",
-                "url": "https://www.twreporter.org"
+                "url": "https://www.twreporter.org",
+                "notes": [
+                  {
+                    "title": "由財團法人報導者文化基金會成立的網路媒體"
+                  }
+                ]
               },
               {
                 "title": "獨立媒體",
                 "url": "https://www.inmediahk.net"
-              },
-              {
-                "title": "日新说",
-                "url": "https://www.copernicium.tw"
-              },
-              {
-                "title": "法国国际广播电台 RFI",
-                "url": "https://www.rfi.fr/cn"
               },
               {
                 "title": "日經中文網",
@@ -782,32 +801,90 @@ export const BOOKMARKS = [
                 ]
               },
               {
-                "title": "联合早报",
-                "url": "https://www.zaobao.com.sg/global"
+                "title": "财新网",
+                "url": "https://www.caixin.com",
+                "notes": [
+                  {
+                    "title": "财新周刊",
+                    "url": "https://weekly.caixin.com"
+                  }
+                ]
               },
               {
-                "title": "經濟日報",
-                "url": "https://money.udn.com/money/index"
+                "title": "聯合新聞網",
+                "url": "https://udn.com",
+                "notes": [
+                  {
+                    "title": "經濟日報",
+                    "url": "https://money.udn.com"
+                  }
+                ]
               },
               {
-                "title": "The Verge",
-                "url": "https://www.theverge.com"
+                "title": "联合早报 国际版",
+                "url": "https://www.zaobao.com.sg",
+                "notes": [
+                  {
+                    "title": "联合早报网 中国版",
+                    "url": "https://www.zaobao.com"
+                  }
+                ]
+              },
+              {
+                "title": "界面新闻",
+                "url": "https://www.jiemian.com",
+                "notes": [
+                  {
+                    "title": "口号是只服务于独立思考的人群。归属于上海报业集团，属于财经商业新闻媒体。"
+                  }
+                ]
+              },
+              {
+                "title": "澎湃新闻",
+                "url": "https://www.thepaper.cn",
+                "notes": [
+                  {
+                    "title": "归属于上海报业集团"
+                  }
+                ]
+              },
+            ]
+          },
+          {
+            "title": "Science and Tech News",
+            "links": [
+              {
+                "title": "MIT Technology Review",
+                "url": "https://www.technologyreview.com"
+              },
+              {
+                "title": "Quanta Magazine",
+                "url": "https://www.quantamagazine.org",
+                "notes": [
+                  {
+                    "title": "Science and Math News"
+                  }
+                ]
               },
               {
                 "title": "WIRED",
                 "url": "https://www.wired.com"
               },
               {
+                "title": "Nature",
+                "url": "https://www.nature.com"
+              },
+              {
+                "title": "Scientific American",
+                "url": "https://www.scientificamerican.com"
+              },
+              {
+                "title": "The Verge",
+                "url": "https://www.theverge.com"
+              },
+              {
                 "title": "TechCrunch",
                 "url": "https://techcrunch.com"
-              },
-              {
-                "title": "Ars Technica",
-                "url": "https://arstechnica.com"
-              },
-              {
-                "title": "MIT Technology Review",
-                "url": "https://www.technologyreview.com"
               },
               {
                 "title": "MacRumors",
@@ -817,14 +894,6 @@ export const BOOKMARKS = [
                     "title": "Apple Mac iPhone Rumors and News"
                   }
                 ]
-              },
-              {
-                "title": "Mashable",
-                "url": "https://mashable.com"
-              },
-              {
-                "title": "Fast Company",
-                "url": "https://www.fastcompany.com"
               },
               {
                 "title": "9to5Google",
@@ -854,6 +923,14 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "Ars Technica",
+                "url": "https://arstechnica.com"
+              },
+              {
+                "title": "Mashable",
+                "url": "https://mashable.com"
+              },
+              {
                 "title": "Engadget",
                 "url": "https://www.engadget.com",
                 "notes": [
@@ -873,13 +950,17 @@ export const BOOKMARKS = [
                 ]
               },
               {
-                "title": "Quanta Magazine",
-                "url": "https://www.quantamagazine.org",
-                "notes": [
-                  {
-                    "title": "Science and Math News"
-                  }
-                ]
+                "title": "Fast Company",
+                "url": "https://www.fastcompany.com"
+              },
+            ]
+          },
+          {
+            "title": "Books, Arts and Culture",
+            "links": [
+              {
+                "title": "The New Yorker",
+                "url": "https://www.newyorker.com"
               },
               {
                 "title": "The Millions",
@@ -889,7 +970,7 @@ export const BOOKMARKS = [
                     "title": "An online publication devoted to books, arts, and culture."
                   }
                 ]
-              }
+              },
             ]
           },
           {
@@ -909,7 +990,7 @@ export const BOOKMARKS = [
                   },
                   {
                     "title": "Next HN",
-                    "url": "https://hn.moonloss.com"
+                    "url": "https://h.moonloss.com"
                   },
                   {
                     "title": "Read Hacker News",
@@ -1325,14 +1406,8 @@ export const BOOKMARKS = [
                 "url": "https://nananadanada.substack.com"
               },
               {
-                "title": "On Substack",
-                "url": "https://on.substack.com",
-                "notes": [
-                  {
-                    "title": "Notes | Substack",
-                    "url": "https://substack.com/notes"
-                  }
-                ]
+                "title": "Ahead of AI",
+                "url": "https://magazine.sebastianraschka.com"
               },
               {
                 "title": "Python 潮流周刊",
@@ -1345,6 +1420,16 @@ export const BOOKMARKS = [
               {
                 "title": "有(冇)用",
                 "url": "https://usefulness.zhubai.love"
+              },
+              {
+                "title": "On Substack",
+                "url": "https://on.substack.com",
+                "notes": [
+                  {
+                    "title": "Notes | Substack",
+                    "url": "https://substack.com/notes"
+                  }
+                ]
               },
             ]
           },
