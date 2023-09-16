@@ -704,6 +704,10 @@ export const BOOKMARKS = [
                 "url": "https://www.washingtonpost.com"
               },
               {
+                "title": "The Atlantic",
+                "url": "https://www.theatlantic.com"
+              },
+              {
                 "title": "Vox",
                 "url": "https://www.vox.com"
               },
@@ -3488,7 +3492,8 @@ export const BOOKMARKS = [
                 "url": "https://salttiger.com",
                 "notes": [
                   {
-                    "title": "每天一本编程书，每天进步一点点"
+                    "title": "存档页面 | 每天一本编程书，每天进步一点点",
+                    "url": "https://salttiger.com/archives/"
                   }
                 ]
               },
