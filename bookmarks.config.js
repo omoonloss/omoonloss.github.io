@@ -900,6 +900,10 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "Phoronix",
+                "url": "https://www.phoronix.com"
+              },
+              {
                 "title": "9to5Google",
                 "url": "https://9to5google.com",
                 "notes": [
@@ -989,21 +993,61 @@ export const BOOKMARKS = [
                 "url": "https://news.ycombinator.com",
                 "notes": [
                   {
+                    "title": "Next HN",
+                    "url": "https://h.moonloss.com"
+                  },
+                  {
+                    /*
+                    专门收集 HN 上的历史经典文章，质量相当不错，你还可以按年排序，上面还有 1321年的文章！
+                    */
+                    "title": "Lindy HN",
+                    "url": "https://hn.lindylearn.io"
+                  },
+                  {
+                    /*
+                    HN 的头版默认是按照自己的算法排序的，但是这位作者不喜欢这样，
+                    所以他制作了按照时间排序的Hacker News，你可以在里面方便的查看过去每一天的头版。
+                    */
+                    "title": "hckr news",
+                    "url": "https://hckrnews.com"
+                  },
+                  {
+                    /*
+                    如果你想查看 HN 历史上每个月份的好文章，那么这个应用 Wayback HN 就是为你量身定做的，
+                    你可以在里面按月，或者按年查看某个月份或者某年最好的文章，也许你会发现很多过去精彩的文章。
+                    */
+                    "title": "Wayback HN",
+                    "url": "http://www.waybackhn.com"
+                  },
+                  {
+                    /*
+                    如果你喜欢用报纸的风格来浏览 Hacker News，那么 Paper HN 就是为你准备的，
+                    它抓取了 Hacker News 每篇文章的图片，然后用报纸的排版重新排列 HN 当天的头版，效果非常好。
+                    */
+                    "title": "Paper HN",
+                    "url": "https://www.wolfgangfaust.com/project/paper-hn/"
+                  },
+                  {
+                    /*
+                    HN 的搜索  是 Algolia 提供的，这家专门做文档搜索的公司最开始也是被 YC 投资，后来变成了一个独角兽，
+                    他们经常帮助流行的开源项目文档接入免费的搜索，如果你体验过他们给 HN 做的搜索的话，
+                    你会发现整个搜索体验非常的丝滑，可以用它来搜索重要信息。
+                    */
                     "title": "Search powered by Algolia",
                     "url": "https://hn.algolia.com"
                   },
                   {
-                    "title": "Next HN",
-                    "url": "https://h.moonloss.com"
+                    "title": "Hacker News RSS",
+                    "url": "https://hnrss.github.io"
                   },
                   {
                     "title": "Read Hacker News",
                     "url": "https://readhacker.news"
                   },
                   {
-                    "title": "Hacker News RSS",
-                    "url": "https://hnrss.github.io"
-                  },
+                    "title": "Modern for Hacker News",
+                    "url": "https://www.modernhn.com"
+                  }
                 ]
               },
               {
