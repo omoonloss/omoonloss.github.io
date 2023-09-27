@@ -741,6 +741,15 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "Le Monde",
+                "url": "https://www.lemonde.fr/en/",
+                "notes": [
+                  {
+                    "title": "法国世界报"
+                  }
+                ]
+              },
+              {
                 "title": "Fortune",
                 "url": "https://fortune.com"
               },
@@ -3532,11 +3541,14 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                /*
+                每天一本编程书，每天进步一点点
+                */
                 "title": "SaltTiger",
                 "url": "https://salttiger.com",
                 "notes": [
                   {
-                    "title": "存档页面 | 每天一本编程书，每天进步一点点",
+                    "title": "存档页面",
                     "url": "https://salttiger.com/archives/"
                   }
                 ]
