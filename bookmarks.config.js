@@ -805,11 +805,12 @@ export const BOOKMARKS = [
                 "url": "https://www.inmediahk.net"
               },
               {
-                "title": "日經中文網",
-                "url": "https://cn.nikkei.com",
+                "title": "Nikkei Asia(日经亚洲)",
+                "url": "https://asia.nikkei.com",
                 "notes": [
                   {
-                    "title": "日本經濟新聞中文版"
+                    "title": "日经中文网",
+                    "url": "https://cn.nikkei.com"
                   }
                 ]
               },
