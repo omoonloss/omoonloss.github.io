@@ -2672,7 +2672,7 @@ export const BOOKMARKS = [
                 "url": "https://pythontutor.com",
                 "notes": [
                   {
-                    "title": "Visualize Python, Java, C, C++, JavaScript, TypeScript, and Ruby code execution",
+                    "title": "Python Tutor code visualizer",
                   }
                 ]
               },
@@ -2980,6 +2980,10 @@ export const BOOKMARKS = [
               {
                 "title": "DK | For the curious",
                 "url": "https://www.dk.com"
+              },
+              {
+                "title": "Stripe Press",
+                "url": "https://press.stripe.com"
               },
               {
                 "title": "Packtpub",
