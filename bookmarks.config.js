@@ -246,6 +246,10 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "Perplexity",
+                "url": "https://www.perplexity.ai"
+              },
+              {
                 "title": "HuggingChat",
                 "url": "https://huggingface.co/chat"
               }
