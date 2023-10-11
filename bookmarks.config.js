@@ -156,6 +156,10 @@ export const BOOKMARKS = [
                 "url": "https://www.inoreader.com"
               },
               {
+                "title": "Omnivore",
+                "url": "https://omnivore.app"
+              },
+              {
                 "title": "Instapaper",
                 "url": "https://www.instapaper.com"
               },
@@ -725,7 +729,21 @@ export const BOOKMARKS = [
               },
               {
                 "title": "Associated Press News",
-                "url": "https://apnews.com"
+                "url": "https://apnews.com",
+                "notes": [
+                  {
+                    "title": "美联社"
+                  }
+                ]
+              },
+              {
+                "title": "Agence France-Presse",
+                "url": "https://www.afp.com/en",
+                "notes": [
+                  {
+                    "title": "法新社"
+                  }
+                ]
               },
               {
                 "title": "Los Angeles Times",
