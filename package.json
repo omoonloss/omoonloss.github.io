@@ -14,7 +14,7 @@
     "@faker-js/faker": "^8.1.0",
     "@vitejs/plugin-react": "^4.1.0",
     "inline-source": "^8.0.2",
-    "sass": "^1.69.0",
+    "sass": "^1.69.2",
     "vite": "^4.4.11"
   },
   "engines": {
