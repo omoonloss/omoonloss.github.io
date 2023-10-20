@@ -193,6 +193,20 @@ export const BOOKMARKS = [
                 "url": "https://www.facebook.com"
               },
               {
+                "title": "Mastodon",
+                "url": "https://github.com/mastodon/mastodon",
+                "notes": [
+                  {
+                    "title": "Mastodon",
+                    "url": "https://mastodon.social"
+                  },
+                  {
+                    "title": "长毛象中文站",
+                    "url": "https://m.cmx.im"
+                  }
+                ]
+              },
+              {
                 "title": "Twitter",
                 "url": "https://twitter.com",
                 "notes": [
