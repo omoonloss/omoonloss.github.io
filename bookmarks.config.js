@@ -1445,6 +1445,10 @@ export const BOOKMARKS = [
                 "url": "https://luoliluosuo.zhubai.love"
               },
               {
+                "title": "13 的開發者週報",
+                "url": "https://www.ethanhuang13.com"
+              },
+              {
                 "title": "有趣产品咖啡馆",
                 "url": "https://yunyingxiaowanzi.zhubai.love"
               },
