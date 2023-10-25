@@ -1581,6 +1581,10 @@ export const BOOKMARKS = [
             "title": "Community",
             "links": [
               {
+                "title": "美卡论坛",
+                "url": "https://www.uscardforum.com"
+              },
+              {
                 "title": "一亩三分地",
                 "url": "https://www.1point3acres.com",
                 "notes": [
