@@ -1139,11 +1139,18 @@ export const BOOKMARKS = [
                 ]
               },
               {
-                "title": "Solidot",
-                "url": "https://www.solidot.org",
+                /*
+                News for nerds, stuff that matters
+                */
+                "title": "Slashdot",
+                "url": "https://slashdot.org",
                 "notes": [
                   {
-                    "title": "奇客的資訊，重要的東西"
+                    /*
+                    奇客的資訊，重要的東西，存在文字审查
+                    */
+                    "title": "Solidot (中文翻译版)",
+                    "url": "https://www.solidot.org"
                   }
                 ]
               },
@@ -3521,7 +3528,7 @@ export const BOOKMARKS = [
                 免费下载 epub、pdf、mobi 格式电子书，支持转换为 FB2、TXT、RTF等格式
                 */
                 "title": "Z-Library",
-                "url": "https://z-lib.org",
+                "url": "https://zlibrary-global.se",
                 "notes": [
                   {
                     "title": "Z-Library-LoginPage1",
@@ -3532,11 +3539,19 @@ export const BOOKMARKS = [
                     "url": "https://singlelogin.site"
                   },
                   {
-                    "title": "Z-Library-Tor",
-                    "url": "http://zlibrary24tuxziyiyfr7zd46ytefdqbqd2axkmxm4o5374ptpc52fad.onion"
+                    "title": "Z-Library-LoginPage3",
+                    "url": "https://singlelogin.se"
                   },
                   {
-                    "title": "blackbox@zlib.se",
+                    "title": "Z-Library-Clients",
+                    "url": "https://go-to-zlibrary.se"
+                  },
+                  {
+                    "title": "Z-Library-Tor",
+                    "url": "http://loginzlib2vrak5zzpcocc3ouizykn6k5qecgj2tzlnab5wcbqhembyd.onion"
+                  },
+                  {
+                    "title": "Just send any letter from your mailbox to this email blackbox@zlib.se, and you will receive your personal access to Z-Library in the auto-generated letter within 3–5 minutes.",
                   },
                   {
                     "title": "Pirate Library Mirror",
