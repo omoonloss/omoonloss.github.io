@@ -1130,15 +1130,6 @@ export const BOOKMARKS = [
                 ]
               },
               {
-                "title": "Slashdot",
-                "url": "https://slashdot.org",
-                "notes": [
-                  {
-                    "title": "News for nerds, stuff that matters"
-                  }
-                ]
-              },
-              {
                 /*
                 News for nerds, stuff that matters
                 */
