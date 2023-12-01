@@ -3,19 +3,19 @@
   "description": "Frontend for personal front page.",
   "version": "3.0.0",
   "dependencies": {
-    "@darekkay/styles": "5.0.2",
+    "@darekkay/styles": "5.0.3",
     "clsx": "2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.19.0"
+    "react-router-dom": "^6.20.0"
   },
   "devDependencies": {
     "@darekkay/scripts": "^2.6.2",
     "@faker-js/faker": "^8.3.1",
     "@vitejs/plugin-react": "^4.2.0",
-    "inline-source": "^8.0.2",
+    "inline-source": "^8.0.3",
     "sass": "^1.69.5",
-    "vite": "^5.0.0"
+    "vite": "^5.0.4"
   },
   "engines": {
     "node": ">=18.0.0"
