@@ -3609,16 +3609,6 @@ export const BOOKMARKS = [
                 ]
               },
               {
-                "title": "Readnote",
-                "url": "https://ebook.readnote.org",
-                "notes": [
-                  {
-                    "title": "Readnote Community",
-                    "url": "https://readnote.org"
-                  }
-                ]
-              },
-              {
                 "title": "CoderProg",
                 "url": "https://coderprog.com"
               },
