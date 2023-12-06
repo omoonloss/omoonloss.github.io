@@ -3096,7 +3096,13 @@ export const BOOKMARKS = [
               },
               {
                 "title": "O'Reilly Media",
-                "url": "https://www.oreilly.com"
+                "url": "https://www.oreilly.com",
+                "notes": [
+                  {
+                    "title": "O'Reilly Search",
+                    "url": "https://www.oreilly.com/search/"
+                  }
+                ]
               },
               {
                 /*
