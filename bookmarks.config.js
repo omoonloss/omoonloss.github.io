@@ -3644,8 +3644,18 @@ export const BOOKMARKS = [
                 "url": "https://sobooks.net"
               },
               {
-                "title": "Calibre-Web",
-                "url": "https://calibre.leishi.io"
+                "title": "Calibre-Web-MasterGo",
+                "url": "https://read.mastergo.life"
+              },
+              {
+                "title": "Calibre-Web-Leishi",
+                "url": "https://calibre.leishi.io",
+                "notes": [
+                  {
+                    "title": "Github",
+                    "url": "https://github.com/leishi1313/"
+                  }
+                ]
               },
               {
                 "title": "ReadHub",
