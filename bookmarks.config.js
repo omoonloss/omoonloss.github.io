@@ -662,6 +662,16 @@ export const BOOKMARKS = [
                 */
                 "title": "Samsung TV Plus",
                 "url": "https://www.samsungtvplus.com"
+              },
+              {
+                /*
+                NASA+ 流媒体服务，航天爱好者将可以收看该机构屡获艾美奖的直播报道，并通过各种原创视频系列深入了解 NASA 的任务。
+                它将播放各种知名节目，包括 NASA Explorers、The Color of Space、NASA Talks、
+                Space Out、First Light、Mars Is Hard 和 Artemis I Path To The Pad。该公司已经提供了太空节目的直播流，
+                但 NASA+ 流媒体服务推出后，还将加入一些新的视频系列。
+                */
+                "title": "NASA+",
+                "url": "https://plus.nasa.gov"
               }
             ]
           },
@@ -3529,11 +3539,11 @@ export const BOOKMARKS = [
                 "notes": [
                   {
                     "title": "Z-Library-LoginPage1",
-                    "url": "https://singlelogin.re"
+                    "url": "https://z-library.se"
                   },
                   {
                     "title": "Z-Library-LoginPage2",
-                    "url": "https://singlelogin.site"
+                    "url": "https://singlelogin.re"
                   },
                   {
                     "title": "Z-Library-LoginPage3",
