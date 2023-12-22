@@ -871,40 +871,12 @@ export const BOOKMARKS = [
                 ]
               },
               {
-                "title": "聯合新聞網",
-                "url": "https://udn.com",
-                "notes": [
-                  {
-                    "title": "經濟日報",
-                    "url": "https://money.udn.com"
-                  }
-                ]
-              },
-              {
                 "title": "联合早报 国际版",
                 "url": "https://www.zaobao.com.sg",
                 "notes": [
                   {
                     "title": "联合早报网 中国版",
                     "url": "https://www.zaobao.com"
-                  }
-                ]
-              },
-              {
-                "title": "界面新闻",
-                "url": "https://www.jiemian.com",
-                "notes": [
-                  {
-                    "title": "口号是只服务于独立思考的人群。归属于上海报业集团，属于财经商业新闻媒体。"
-                  }
-                ]
-              },
-              {
-                "title": "澎湃新闻",
-                "url": "https://www.thepaper.cn",
-                "notes": [
-                  {
-                    "title": "归属于上海报业集团"
                   }
                 ]
               },
