@@ -3751,8 +3751,8 @@ export const BOOKMARKS = [
                 "url": "https://www.moonloss.com"
               },
               {
-                "title": "ZTY",
-                "url": "https://zty.js.org"
+                "title": "holazt",
+                "url": "https://holazt.github.io"
               },
               {
                 "title": "Just lepture",
