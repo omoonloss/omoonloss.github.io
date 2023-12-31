@@ -372,6 +372,14 @@ export const BOOKMARKS = [
               {
                 "title": "Obsidian",
                 "url": "https://obsidian.md"
+              },
+              {
+                "title": "Airtable",
+                "url": "https://airtable.com"
+              },
+              {
+                "title": "Google Sheets",
+                "url": "https://docs.google.com/spreadsheets/"
               }
             ]
           },
