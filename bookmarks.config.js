@@ -374,10 +374,6 @@ export const BOOKMARKS = [
                 "url": "https://obsidian.md"
               },
               {
-                "title": "Airtable",
-                "url": "https://airtable.com"
-              },
-              {
                 "title": "Google Sheets",
                 "url": "https://docs.google.com/spreadsheets/"
               }
@@ -3333,6 +3329,10 @@ export const BOOKMARKS = [
           {
             "title": "Library",
             "links": [
+              {
+                "title": "Open Library",
+                "url": "https://openlibrary.org"
+              },
               {
                 /*
                 一个可以免费下载绝版艺术书籍的网站 ，盖蒂博物馆虚拟图书馆。
