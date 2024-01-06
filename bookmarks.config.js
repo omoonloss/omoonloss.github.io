@@ -3060,6 +3060,10 @@ export const BOOKMARKS = [
                 "url": "https://yalebooks.yale.edu"
               },
               {
+                "title": "Harvard University Press",
+                "url": "https://www.hup.harvard.edu"
+              },
+              {
                 "title": "newline",
                 "url": "https://www.newline.co",
                 "notes": [
