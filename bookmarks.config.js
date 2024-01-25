@@ -387,6 +387,15 @@ export const BOOKMARKS = [
                 "url": "https://www.openstreetmap.org"
               },
               {
+                /*
+                让地图纠偏: ?gl=CN
+                https://www.v2ex.com/t/909707
+                https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E9%99%90%E5%88%B6#GCJ-02
+                */
+                "title": "Google Maps",
+                "url": "https://maps.google.com/?gl=CN"
+              },
+              {
                 "title": "Google Earth",
                 "url": "https://earth.google.com/web"
               },
