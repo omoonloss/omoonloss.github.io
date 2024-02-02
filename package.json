@@ -3,15 +3,15 @@
   "description": "Frontend for personal front page.",
   "version": "3.0.0",
   "dependencies": {
-    "@darekkay/styles": "5.1.0",
+    "@darekkay/styles": "5.3.0",
     "clsx": "2.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.3"
+    "react-router-dom": "^6.22.0"
   },
   "devDependencies": {
     "@darekkay/scripts": "^3.0.1",
-    "@faker-js/faker": "^8.3.1",
+    "@faker-js/faker": "^8.4.0",
     "@vitejs/plugin-react": "^4.2.1",
     "inline-source": "^8.0.3",
     "sass": "^1.70.0",

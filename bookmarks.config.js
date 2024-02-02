@@ -1865,6 +1865,10 @@ export const BOOKMARKS = [
                 "url": "https://www.classcentral.com"
               },
               {
+                "title": "Coursade - Discover online learning",
+                "url": "https://www.coursade.com"
+              },
+              {
                 "title": "ByteByteGo",
                 "url": "https://bytebytego.com"
               }
@@ -2073,7 +2077,12 @@ export const BOOKMARKS = [
                 "url": "https://sci-hub.st",
                 "notes": [
                   {
-                    "title": "removing barriers in the way of science"
+                    "title": "Sci-Hub Links",
+                    "url": "https://sci-hub.41610.org"
+                  },
+                  {
+                    "title": "Sci-Hub 文献检索",
+                    "url": "https://sci-hub.org.cn"
                   }
                 ]
               },
@@ -2635,6 +2644,16 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "Judge0 IDE",
+                "url": "https://ide.judge0.com",
+                "notes": [
+                  {
+                    "title": "Github Repostery",
+                    "url": "https://github.com/judge0/ide"
+                  }
+                ]
+              },
+              {
                 "title": "Bash Online",
                 "url": "https://www.tutorialspoint.com/execute_bash_online.php"
               },
@@ -2759,6 +2778,10 @@ export const BOOKMARKS = [
               {
                 "title": "在线 LaTeX 公式编辑器",
                 "url": "https://www.latexlive.com"
+              },
+              {
+                "title": "Mathpix | convert images to LaTex",
+                "url": "https://mathpix.com"
               },
             ]
           },
@@ -3631,6 +3654,10 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "IT eBooks",
+                "url": "https://it-ebooks.info"
+              },
+              {
                 "title": "我爱电子书",
                 "url": "https://www.52doc.com"
               },
@@ -4323,6 +4350,10 @@ export const BOOKMARKS = [
                 "url": "https://www.removepaywall.com"
               },
               {
+                "title": "Unpaywall: An open database of 20 million free scholarly articles",
+                "url": "https://unpaywall.org"
+              },
+              {
                 /*
                 这个网站可以查询每个国家或地区的贸易数据，并用图文进行通俗解释。
                 */
@@ -4608,7 +4639,15 @@ export const BOOKMARKS = [
               {
                 "title": "Analyse your HTTP response headers",
                 "url": "https://securityheaders.com"
-              }
+              },
+              {
+                "title": "Exploits Database",
+                "url": "https://www.exploit-db.com"
+              },
+              {
+                "title": "Know it all",
+                "url": "https://know-it-all.io"
+              },
             ]
           },
           {
@@ -4643,6 +4682,10 @@ export const BOOKMARKS = [
               {
                 "title": "Online nslookup",
                 "url": "https://www.nslookup.io"
+              },
+              {
+                "title": "DNS Performance",
+                "url": "https://www.dnsperf.com"
               },
             ]
           },
@@ -4706,6 +4749,20 @@ export const BOOKMARKS = [
           {
             "title": "Graph Paper",
             "links": [
+              {
+                "title": "ASCIIFlow",
+                "url": "https://asciiflow.com"
+              },
+              {
+                "title": "Chart Mage",
+                "url": "https://chartmage.com",
+                "notes": [
+                  {
+                    "title": "Github Repostery",
+                    "url": "https://github.com/olindk/chart-mage"
+                  }
+                ]
+              },
               {
                 "title": "Paper Sizes",
                 "url": "https://papersizes.io"
