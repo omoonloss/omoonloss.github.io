@@ -3054,6 +3054,10 @@ export const BOOKMARKS = [
                 "url": "https://www.manning.com",
                 "notes": [
                   {
+                    "title": "Manning Search",
+                    "url": "https://www.manning.com/catalog"
+                  },
+                  {
                     "title": "Manning Free Content",
                     "url": "https://freecontent.manning.com"
                   }
