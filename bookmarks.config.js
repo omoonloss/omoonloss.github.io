@@ -246,6 +246,10 @@ export const BOOKMARKS = [
                 "url": "https://poe.com"
               },
               {
+                "title": "OpenAI",
+                "url": "https://chat.openai.com"
+              },
+              {
                 "title": "Claude",
                 "url": "https://claude.ai/chats"
               },
@@ -2986,33 +2990,32 @@ export const BOOKMARKS = [
             "title": "Domain Finder",
             "links": [
               {
-                "title": "Namechk",
-                "url": "https://namechk.com"
+                "title": "NameSilo",
+                "url": "https://www.namesilo.com"
               },
               {
-                "title": "NameMesh",
-                "url": "https://www.namemesh.com",
-                "notes": [
-                  {
-                    "title": "Domain Name Generator For Perfectionists"
-                  }
-                ]
+                "title": "Porkbun",
+                "url": "https://porkbun.com"
               },
               {
-                "title": "Domize",
-                "url": "https://domize.com"
+                "title": "Namecheap",
+                "url": "https://www.namecheap.com"
               },
               {
-                "title": "Domain Name Price and Availability",
+                "title": "Dynadot",
+                "url": "https://www.dynadot.com"
+              },
+              {
+                "title": "TLD List",
+                "url": "https://tld-list.com"
+              },
+              {
+                "title": "Domcomp",
                 "url": "https://www.domcomp.com"
               },
               {
                 "title": "NameBeta",
                 "url": "https://namebeta.com"
-              },
-              {
-                "title": "TLD List",
-                "url": "https://zh-hans.tld-list.com"
               },
             ]
           }
