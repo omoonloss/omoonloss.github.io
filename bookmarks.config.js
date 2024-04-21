@@ -295,10 +295,6 @@ export const BOOKMARKS = [
             "title": "Podcasts",
             "links": [
               {
-                "title": "Google Podcast",
-                "url": "https://podcasts.google.com"
-              },
-              {
                 "title": "PodLink",
                 "url": "https://pod.link"
               },
@@ -1506,7 +1502,13 @@ export const BOOKMARKS = [
               },
               {
                 "title": "Python 潮流周刊",
-                "url": "https://pythoncat.top/archive"
+                "url": "https://pythoncat.top/archive",
+                "notes": [
+                  {
+                    "title": "Python潮流周刊 | 每周连载中",
+                    "url": "https://xiaobot.net/p/python_weekly"
+                  }
+                ]
               },
               {
                 "title": "隐形学园",
