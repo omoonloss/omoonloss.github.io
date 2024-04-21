@@ -477,6 +477,14 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "Cambridge Dictionary",
+                "url": "https://dictionary.cambridge.org"
+              },
+              {
+                "title": "Merriam-Webster: America's Most Trusted Dictionary",
+                "url": "https://www.merriam-webster.com"
+              },
+              {
                 "title": "Weblio 日中中日辞典",
                 "url": "https://cjjc.weblio.jp"
               },
@@ -492,10 +500,6 @@ export const BOOKMARKS = [
                     "title": "Longman Dictionary of Contemporary English"
                   }
                 ]
-              },
-              {
-                "title": "Cambridge Dictionary",
-                "url": "https://dictionary.cambridge.org"
               },
               {
                 /*
@@ -765,6 +769,10 @@ export const BOOKMARKS = [
                 "url": "https://www.bloomberg.com"
               },
               {
+                "title": "Yahoo Finance",
+                "url": "https://finance.yahoo.com"
+              },
+              {
                 "title": "Associated Press News",
                 "url": "https://apnews.com",
                 "notes": [
@@ -813,6 +821,10 @@ export const BOOKMARKS = [
                 "url": "https://fortune.com"
               },
               {
+                "title": "NPR | Breaking News, Analysis, Music, Arts & Podcasts",
+                "url": "https://www.npr.org"
+              },
+              {
                 "title": "USA TODAY",
                 "url": "https://www.usatoday.com"
               },
@@ -833,13 +845,8 @@ export const BOOKMARKS = [
                 "url": "https://theinitium.com"
               },
               {
-                "title": "*CUP",
-                "url": "https://www.cup.com.hk",
-                "notes": [
-                  {
-                    "title": "每日十條世界要聞，與你清醒同行"
-                  }
-                ]
+                "title": "Yahoo 奇摩新聞",
+                "url": "https://tw.news.yahoo.com"
               },
               {
                 "title": "日新说",
@@ -1019,6 +1026,10 @@ export const BOOKMARKS = [
                     "title": "An online publication devoted to books, arts, and culture."
                   }
                 ]
+              },
+              {
+                "title": "Moss and Fog | Nature, design, and visual inspiration, every day.",
+                "url": "https://mossandfog.com"
               },
             ]
           },
@@ -1533,6 +1544,10 @@ export const BOOKMARKS = [
           {
             "title": "Game",
             "links": [
+              {
+                "title": "IGN | Video Game News, Reviews, and Walkthroughs",
+                "url": "https://www.ign.com"
+              },
               {
                 "title": "itch.io",
                 "url": "https://itch.io"
