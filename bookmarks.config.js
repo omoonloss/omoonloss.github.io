@@ -246,8 +246,14 @@ export const BOOKMARKS = [
                 "url": "https://poe.com"
               },
               {
-                "title": "OpenAI",
-                "url": "https://chat.openai.com"
+                "title": "ChatGPT",
+                "url": "https://chatgpt.com",
+                "notes": [
+                  {
+                    "title": "OpenAI",
+                    "url": "https://openai.com"
+                  }
+                ]
               },
               {
                 "title": "Claude",
