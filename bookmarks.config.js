@@ -1289,6 +1289,10 @@ export const BOOKMARKS = [
                 "title": "Rust Magazine",
                 "url": "https://rustmagazine.org"
               },
+              {
+                "title": "即食歷史 Cuphistory",
+                "url": "https://cuphistory.net"
+              }
             ]
           },
           {
@@ -1414,10 +1418,14 @@ export const BOOKMARKS = [
                   }
                 ]
               },
-              {
-                "title": "维舟",
-                "url": "https://weizhou.substack.com"
-              },
+              // {
+              //   "title": "维舟",
+              //   "url": "https://weizhou.substack.com"
+              // },
+              // {
+              //   "title": "WOMEN我们",
+              //   "url": "https://women4china.substack.com"
+              // },
               {
                 "title": "🥤可乐周报",
                 "url": "https://www.kele.me"
@@ -1542,6 +1550,16 @@ export const BOOKMARKS = [
                   {
                     "title": "Notes | Substack",
                     "url": "https://substack.com/notes"
+                  }
+                ]
+              },
+              {
+                "title": "Apptisan",
+                "url": "https://apptisan.substack.com",
+                "notes": [
+                  {
+                    "title": "Apptisan 中文",
+                    "url": "https://quail.ink/apptisan"
                   }
                 ]
               },
@@ -2712,6 +2730,10 @@ export const BOOKMARKS = [
               {
                 "title": "Binder",
                 "url": "https://mybinder.org"
+              },
+              {
+                "title": "py.space",
+                "url": "https://py.space"
               },
             ]
           },
