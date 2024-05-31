@@ -3607,20 +3607,16 @@ export const BOOKMARKS = [
                 "notes": [
                   {
                     "title": "Z-Library-LoginPage1",
-                    "url": "https://z-library.se"
-                  },
-                  {
-                    "title": "Z-Library-LoginPage2",
                     "url": "https://singlelogin.re"
                   },
                   {
-                    "title": "Z-Library-LoginPage3",
-                    "url": "https://singlelogin.se"
+                    "title": "Z-Library-LoginPage2",
+                    "url": "https://singlelogin.rs"
                   },
-                  {
-                    "title": "Z-Library-Clients",
-                    "url": "https://go-to-zlibrary.se"
-                  },
+                  // {
+                  //   "title": "Z-Library-Clients",
+                  //   "url": "https://go-to-zlibrary.se"
+                  // },
                   {
                     "title": "Z-Library-Tor",
                     "url": "http://loginzlib2vrak5zzpcocc3ouizykn6k5qecgj2tzlnab5wcbqhembyd.onion"
