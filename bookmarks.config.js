@@ -294,6 +294,10 @@ export const BOOKMARKS = [
                     "title": "Ratings, Reviews, and Where to Watch the Best Movies & TV Shows"
                   }
                 ]
+              },
+              {
+                "title": "Kanopy",
+                "url": "https://www.kanopy.com"
               }
             ]
           },
