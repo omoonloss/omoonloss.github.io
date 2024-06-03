@@ -1267,12 +1267,8 @@ export const BOOKMARKS = [
                 "url": "https://www.ithome.com"
               },
               {
-                "title": "机器之心",
-                "url": "https://www.jiqizhixin.com"
-              },
-              {
-                "title": "掘金",
-                "url": "https://juejin.cn"
+                "title": "FeedX | RSS 全文订阅",
+                "url": "https://feedx.net"
               },
               {
                 /*
