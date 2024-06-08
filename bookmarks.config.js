@@ -403,7 +403,7 @@ export const BOOKMARKS = [
                 https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9C%B0%E7%90%86%E6%95%B0%E6%8D%AE%E9%99%90%E5%88%B6#GCJ-02
                 */
                 "title": "Google Maps",
-                "url": "https://maps.google.com/?gl=CN"
+                "url": "https://www.google.com/maps?gl=CN"
               },
               {
                 "title": "Google Earth",
@@ -412,6 +412,10 @@ export const BOOKMARKS = [
               {
                 "title": "Google Earth Timelapse",
                 "url": "https://earthengine.google.com/timelapse"
+              },
+              {
+                "title": "Bing Maps",
+                "url": "https://www.bing.com/maps"
               },
               {
                 "title": "向日葵-8号",
