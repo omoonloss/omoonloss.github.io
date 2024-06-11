@@ -256,8 +256,8 @@ export const BOOKMARKS = [
                 ]
               },
               {
-                "title": "Claude",
-                "url": "https://claude.ai/chats"
+                "title": "Workers AI LLM Playground",
+                "url": "https://playground.ai.cloudflare.com"
               },
               {
                 /*
@@ -274,13 +274,17 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "HuggingChat",
+                "url": "https://huggingface.co/chat"
+              },
+              {
                 "title": "Perplexity",
                 "url": "https://www.perplexity.ai"
               },
               {
-                "title": "HuggingChat",
-                "url": "https://huggingface.co/chat"
-              }
+                "title": "Claude",
+                "url": "https://claude.ai/chats"
+              },
             ]
           },
           {
@@ -339,6 +343,24 @@ export const BOOKMARKS = [
                   {
                     "title": "字谈字畅",
                     "url": "https://www.thetype.com/typechat"
+                  }
+                ]
+              },
+              {
+                "title": "端聞 | 端傳媒新聞播客",
+                "url": "https://theinitium.com/channel/initium-reports-podcast",
+                "notes": [
+                  {
+                    "title": "Youtube",
+                    "url": "https://www.youtube.com/playlist?list=PLbA82LPydA8DMKEjAQ5IMdz70IsnRW37D"
+                  },
+                  {
+                    "title": "Spotify",
+                    "url": "https://open.spotify.com/show/6wmjViv2qxneOD7uoU3Mwb"
+                  },
+                  {
+                    "title": "Apple Podcasts",
+                    "url": "https://podcasts.apple.com/us/podcast/%E7%AB%AF%E8%81%9E-%E7%AB%AF%E5%82%B3%E5%AA%92%E6%96%B0%E8%81%9E%E6%92%AD%E5%AE%A2/id1572879315"
                   }
                 ]
               },
@@ -3617,10 +3639,10 @@ export const BOOKMARKS = [
                     "title": "Z-Library-LoginPage2",
                     "url": "https://singlelogin.rs"
                   },
-                  // {
-                  //   "title": "Z-Library-Clients",
-                  //   "url": "https://go-to-zlibrary.se"
-                  // },
+                  {
+                    "title": "Z-Library-Clients",
+                    "url": "https://go-to-library.sk"
+                  },
                   {
                     "title": "Z-Library-Tor",
                     "url": "http://loginzlib2vrak5zzpcocc3ouizykn6k5qecgj2tzlnab5wcbqhembyd.onion"
