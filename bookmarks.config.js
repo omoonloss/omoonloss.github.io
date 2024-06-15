@@ -1461,6 +1461,10 @@ export const BOOKMARKS = [
                 "url": "https://wuyagege.substack.com"
               },
               {
+                "title": "AwesomeVisa Exodus",
+                "url": "https://exodus.awesomevisa.com"
+              },
+              {
                 "title": "硬核周报",
                 "url": "https://hardcored.substack.com",
                 "notes": [
@@ -2924,6 +2928,19 @@ export const BOOKMARKS = [
             "links": [
               {
                 /*
+                Certificate Search.
+                */
+                "title": "crt.sh | Certificate Search",
+                "url": "https://crt.sh",
+                "notes": [
+                  {
+                    "title": "Github",
+                    "url": "https://github.com/crtsh"
+                  }
+                ]
+              },
+              {
+                /*
                 GitHub 最大的开源算法库：用许多编程语言实现的算法和数据结构。
                 */
                 "title": "The Algorithms",
@@ -3841,8 +3858,8 @@ export const BOOKMARKS = [
                 ]
               },
               {
-                "title": "数字移民",
-                "url": "https://blog.shuziyimin.org"
+                "title": "数字移民 (存档)",
+                "url": "https://web.archive.org/web/20240520143009/https://blog.shuziyimin.org"
               },
               {
                 "title": "统计之都",
@@ -4024,7 +4041,11 @@ export const BOOKMARKS = [
               },
               {
                 "title": "Long Luo's Life Notes",
-                "url": "http://www.longluo.me"
+                "url": "https://www.longluo.me"
+              },
+              {
+                "title": "滅茶苦茶",
+                "url": "https://miechakucha.com"
               },
             ]
           },
