@@ -3646,7 +3646,7 @@ export const BOOKMARKS = [
                 免费下载 epub、pdf、mobi 格式电子书，支持转换为 FB2、TXT、RTF等格式
                 */
                 "title": "Z-Library",
-                "url": "https://zlibrary-global.se",
+                "url": "https://z-library.rs",
                 "notes": [
                   {
                     "title": "Z-Library-LoginPage1",
