@@ -3882,16 +3882,18 @@ export const BOOKMARKS = [
                 "url": "http://www.ex-machina.fr/index.php"
               },
               {
-                "title": "True Me",
-                "url": "https://vitzy.me",
-              },
-              {
-                "title": "MoonLoss",
-                "url": "https://www.moonloss.com"
-              },
-              {
                 "title": "holazt",
-                "url": "https://holazt.github.io"
+                "url": "https://holazt.github.io",
+                "notes": [
+                  {
+                    "title": "mirror",
+                    "url": "https://blog.vitzy.me"
+                  }
+                ]
+              },
+              {
+                "title": "MoonLoss Blog",
+                "url": "https://blog.moonloss.com"
               },
               {
                 "title": "Just lepture",
