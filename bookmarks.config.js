@@ -3693,17 +3693,7 @@ export const BOOKMARKS = [
               },
               {
                 "title": "Anna's Archive",
-                "url": "https://annas-archive.org",
-                "notes": [
-                  {
-                    "title": "Anna's Archive-1",
-                    "url": "https://annas-archive.gs"
-                  },
-                  {
-                    "title": "Anna's Blog",
-                    "url": "http://annas-blog.org"
-                  }
-                ]
+                "url": "https://annas-archive.gs"
               },
               {
                 "title": "Let Me Read",
