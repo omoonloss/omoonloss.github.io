@@ -3437,6 +3437,16 @@ export const BOOKMARKS = [
                 "url": "https://www.redditreads.com"
               },
               {
+                "title": "NeoDB",
+                "url": "https://neodb.social",
+                "notes": [
+                  {
+                    "title": "Source Code",
+                    "url": "https://github.com/neodb-social/neodb"
+                  }
+                ]
+              },
+              {
                 "title": "豆瓣读书",
                 "url": "https://book.douban.com"
               },
@@ -3693,15 +3703,15 @@ export const BOOKMARKS = [
               },
               {
                 "title": "Anna's Archive",
-                "url": "https://annas-archive.org",
+                "url": "https://annas-archive.gs",
                 "notes": [
                   {
-                    "title": "Anna's Archive-1",
-                    "url": "https://annas-archive.gs"
+                    "title": "Anna's Archive-Mirror1",
+                    "url": "https://annas-archive.se"
                   },
                   {
-                    "title": "Anna's Blog",
-                    "url": "http://annas-blog.org"
+                    "title": "Anna's Archive-Mirror2",
+                    "url": "https://annas-archive.li"
                   }
                 ]
               },
@@ -3711,12 +3721,7 @@ export const BOOKMARKS = [
               },
               {
                 "title": "LoreFree",
-                "url": "https://ebook2.lorefree.com",
-                "notes": [
-                  {
-                    "title": "去中心化免费电子书共享社区"
-                  }
-                ]
+                "url": "https://ebook2.lorefree.com"
               },
               {
                 /*
