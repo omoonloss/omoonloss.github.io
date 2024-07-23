@@ -278,12 +278,12 @@ export const BOOKMARKS = [
                 "url": "https://huggingface.co/chat"
               },
               {
-                "title": "Perplexity",
-                "url": "https://www.perplexity.ai"
-              },
-              {
                 "title": "Claude",
                 "url": "https://claude.ai/chats"
+              },
+              {
+                "title": "DuckDuckGo AI Chat",
+                "url": "https://duckduckgo.com/?q=AI+Chat&ia=chat"
               },
             ]
           },
@@ -597,6 +597,10 @@ export const BOOKMARKS = [
                 */
                 "title": "Synonyms and Antonyms of Words",
                 "url": "https://www.thesaurus.com"
+              },
+              {
+                "title": "Weblio 辞書",
+                "url": "https://www.weblio.jp"
               },
             ]
           },
@@ -2077,6 +2081,16 @@ export const BOOKMARKS = [
                 */
                 "title": "IELTS computer-based test simulation system",
                 "url": "https://cdielts.gelielts.com"
+              },
+              {
+                "title": "NHK News",
+                "url": "https://www3.nhk.or.jp/news/",
+                "notes": [
+                  {
+                    "title": "NHK News Web Easy",
+                    "url": "https://www3.nhk.or.jp/news/easy/"
+                  }
+                ]
               },
             ]
           },
@@ -3644,7 +3658,15 @@ export const BOOKMARKS = [
                     "title": "Free Public Domain Audiobooks"
                   }
                 ]
-              }
+              },
+              {
+                /*
+                由香港中文大學、香港城市大學和香港大學三家高等教育院校的圖書館與出版社聯合發起，
+                是香港首個開放取用（open access）圖書計劃。
+                */
+                "title": "Open Books Hong Kong",
+                "url": "https://openbookshongkong.com"
+              },
             ]
           },
           {
