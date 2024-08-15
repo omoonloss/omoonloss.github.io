@@ -774,6 +774,10 @@ export const BOOKMARKS = [
                 "url": "https://www.wsj.com",
                 "notes": [
                   {
+                    "title": "华尔街日报日文",
+                    "url": "https://jp.wsj.com"
+                  },
+                  {
                     "title": "华尔街日报中文",
                     "url": "https://cn.wsj.com"
                   }
