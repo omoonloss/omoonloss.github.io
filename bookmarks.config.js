@@ -207,16 +207,20 @@ export const BOOKMARKS = [
                 ]
               },
               {
-                "title": "Twitter",
+                "title": "X/Twitter",
                 "url": "https://twitter.com",
                 "notes": [
                   {
-                    "title": "nitter",
-                    "url": "https://nitter.net"
-                  },
-                  {
                     "title": "nitter-git-repo",
                     "url": "https://github.com/zedeus/nitter"
+                  },
+                  {
+                    "title": "nitter instances",
+                    "url": "https://github.com/zedeus/nitter/wiki/Instances"
+                  },
+                  {
+                    "title": "nitter-status",
+                    "url": "https://status.d420.de"
                   }
                 ]
               },
@@ -308,6 +312,20 @@ export const BOOKMARKS = [
           {
             "title": "Podcasts",
             "links": [
+              {
+                "title": "Apple Podcast",
+                "url": "https://podcasts.apple.com",
+                "notes": [
+                  {
+                    "title": "US",
+                    "url": "https://podcasts.apple.com/us/browse"
+                  },
+                  {
+                    "title": "CN",
+                    "url": "https://podcasts.apple.com/cn/browse"
+                  }
+                ]
+              },
               {
                 "title": "PodLink",
                 "url": "https://pod.link"
@@ -438,6 +456,10 @@ export const BOOKMARKS = [
               {
                 "title": "Bing Maps",
                 "url": "https://www.bing.com/maps"
+              },
+              {
+                "title": "Apple Maps",
+                "url": "https://beta.maps.apple.com"
               },
               {
                 "title": "向日葵-8号",
