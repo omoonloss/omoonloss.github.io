@@ -75,13 +75,8 @@ export const BOOKMARKS = [
                 /*
                 声音搜索引擎
                 */
-                "title": "淘声网",
-                "url": "https://www.tosound.com",
-                "notes": [
-                  {
-                    "title": "声音搜索引擎"
-                  }
-                ]
+                "title": "淘声",
+                "url": "https://www.tosound.com"
               },
               {
                 /*
@@ -90,17 +85,12 @@ export const BOOKMARKS = [
                 许慎这样解释：「仓颉之初作书也，盖依类象形，故谓之文。其后形声相益，
                 即谓之字。文者，物象之本;字者，言孳乳而浸多也。」 搜索引擎说文解字
                 */
-                "title": "「说文解字」",
-                "url": "http://www.shuowen.org"
+                "title": "说文解字",
+                "url": "https://www.shuowen.org"
               },
               {
                 "title": "SogouWeixin",
-                "url": "https://weixin.sogou.com",
-                "notes": [
-                  {
-                    "title": "搜狗的微信搜索"
-                  }
-                ]
+                "url": "https://weixin.sogou.com"
               },
               {
                 /*
@@ -4102,6 +4092,10 @@ export const BOOKMARKS = [
                 "title": "滅茶苦茶",
                 "url": "https://miechakucha.com"
               },
+              {
+                "title": "非池中物",
+                "url": "https://www.chicheng.run"
+              },
             ]
           },
           {
@@ -4549,10 +4543,6 @@ export const BOOKMARKS = [
                 ]
               },
               {
-                "title": "Uptime Robot",
-                "url": "https://uptimerobot.com"
-              },
-              {
                 "title": "Favicon Generator for perfect icons on all browsers",
                 "url": "https://realfavicongenerator.net"
               },
@@ -4797,6 +4787,19 @@ export const BOOKMARKS = [
               {
                 "title": "Know it all",
                 "url": "https://know-it-all.io"
+              },
+            ]
+          },
+          {
+            "title": "Uptime Status",
+            "links": [
+              {
+                "title": "Cosε",
+                "url": "https://status.cose.eu.org"
+              },
+              {
+                "title": "Uptime Robot",
+                "url": "https://uptimerobot.com"
               },
             ]
           },
