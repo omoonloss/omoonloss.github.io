@@ -1757,12 +1757,19 @@ export const BOOKMARKS = [
             "links": [
               {
                 "title": "Rocumentaries",
-                "url": "https://rocumentaries.com",
-                "notes": [
-                  {
-                    "title": "Watch the best documentaries online"
-                  }
-                ]
+                "url": "https://rocumentaries.com"
+              },
+              {
+                "title": "ihavenotv",
+                "url": "https://ihavenotv.com"
+              },
+              {
+                "title": "每天一小时纪录片",
+                "url": "https://www.onehourlife.com"
+              },
+              {
+                "title": "豆瓣高分纪录片豆列",
+                "url": "https://www.douban.com/doulist/223273/"
               },
               {
                 "title": "CCTV 纪实频道",
@@ -1772,14 +1779,6 @@ export const BOOKMARKS = [
                 "title": "Bilibili 纪录片频道",
                 "url": "https://www.bilibili.com/documentary"
               },
-              {
-                "title": "豆瓣高分纪录片豆列",
-                "url": "https://www.douban.com/doulist/223273/"
-              },
-              {
-                "title": "每天一小时纪录片",
-                "url": "https://www.onehourlife.com"
-              }
             ]
           },
           {
