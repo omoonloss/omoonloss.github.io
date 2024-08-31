@@ -198,7 +198,7 @@ export const BOOKMARKS = [
               },
               {
                 "title": "X/Twitter",
-                "url": "https://twitter.com",
+                "url": "https://x.com",
                 "notes": [
                   {
                     "title": "nitter-git-repo",
@@ -258,12 +258,16 @@ export const BOOKMARKS = [
                 AI Playground by Vercel Labs
                 https://play.vercel.ai
                 */
-                "title": "Vercel AI SDK",
-                "url": "https://sdk.vercel.ai",
+                "title": "Vercel AI Playground",
+                "url": "https://sdk.vercel.ai/playground",
                 "notes": [
                   {
                     "title": "Next.js AI Chatbot",
                     "url": "https://chat.vercel.ai"
+                  },
+                  {
+                    "title": "Next.js AI Chatbot git repo",
+                    "url": "https://github.com/vercel/ai-chatbot"
                   }
                 ]
               },
@@ -277,7 +281,13 @@ export const BOOKMARKS = [
               },
               {
                 "title": "DuckDuckGo AI Chat",
-                "url": "https://duckduckgo.com/?q=AI+Chat&ia=chat"
+                "url": "https://duckduckgo.com/?q=AI+Chat&ia=chat&duckai=1",
+                "notes": [
+                  {
+                    "title": "Duck AI ",
+                    "url": "https://duck.ai"
+                  }
+                ]
               },
             ]
           },
