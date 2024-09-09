@@ -1310,13 +1310,8 @@ export const BOOKMARKS = [
                 "url": "https://sspai.com"
               },
               {
-                "title": "iThome",
-                "url": "https://www.ithome.com.tw",
-                "notes": [
-                  {
-                    "title": "iThome Online 是臺湾第一个网路原生报，提供IT產业即时新闻、企业IT產品报导与测试、技术专题、IT应用报导、IT书讯，以及面向丰富的名家专栏"
-                  }
-                ]
+                "title": "iThome TW",
+                "url": "https://www.ithome.com.tw"
               },
               {
                 "title": "IT 之家",
