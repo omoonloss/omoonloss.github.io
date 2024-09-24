@@ -513,12 +513,16 @@ export const BOOKMARKS = [
                 "url": "https://www.bing.com/translator"
               },
               {
-                "title": "彩云小译",
-                "url": "https://fanyi.caiyunapp.com"
+                "title": "Papago",
+                "url": "https://papago.naver.com"
               },
               {
-                "title": "QuillBot AI",
-                "url": "https://quillbot.com"
+                "title": "QuillBot",
+                "url": "https://quillbot.com/translate"
+              },
+              {
+                "title": "彩云小译",
+                "url": "https://fanyi.caiyunapp.com"
               },
             ]
           },
@@ -4488,6 +4492,10 @@ export const BOOKMARKS = [
               {
                 "title": "Visual Capitalist",
                 "url": "https://www.visualcapitalist.com"
+              },
+              {
+                "title": "PaywallBuster",
+                "url": "https://paywallbuster.com"
               },
               {
                 "title": "12ft Ladder",
