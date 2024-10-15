@@ -3702,15 +3702,11 @@ export const BOOKMARKS = [
                 免费下载 epub、pdf、mobi 格式电子书，支持转换为 FB2、TXT、RTF等格式
                 */
                 "title": "Z-Library",
-                "url": "https://z-library.rs",
+                "url": "https://z-library.sk",
                 "notes": [
                   {
                     "title": "Z-Library-LoginPage1",
                     "url": "https://singlelogin.re"
-                  },
-                  {
-                    "title": "Z-Library-LoginPage2",
-                    "url": "https://singlelogin.rs"
                   },
                   {
                     "title": "Z-Library-Clients",
@@ -3749,14 +3745,10 @@ export const BOOKMARKS = [
               },
               {
                 "title": "Anna's Archive",
-                "url": "https://annas-archive.gs",
+                "url": "https://annas-archive.org",
                 "notes": [
                   {
                     "title": "Anna's Archive-Mirror1",
-                    "url": "https://annas-archive.se"
-                  },
-                  {
-                    "title": "Anna's Archive-Mirror2",
                     "url": "https://annas-archive.li"
                   }
                 ]
