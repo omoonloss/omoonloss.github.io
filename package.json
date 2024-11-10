@@ -7,15 +7,15 @@
     "clsx": "2.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.27.0"
+    "react-router-dom": "^6.28.0"
   },
   "devDependencies": {
     "@darekkay/scripts": "^3.0.1",
-    "@faker-js/faker": "^9.0.3",
-    "@vitejs/plugin-react": "^4.3.2",
+    "@faker-js/faker": "^9.2.0",
+    "@vitejs/plugin-react": "^4.3.3",
     "inline-source": "^8.0.3",
-    "sass": "^1.79.5",
-    "vite": "^5.4.9"
+    "sass": "^1.80.6",
+    "vite": "^5.4.10"
   },
   "engines": {
     "node": ">=18.0.0"
