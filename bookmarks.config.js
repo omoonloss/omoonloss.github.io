@@ -839,8 +839,26 @@ export const BOOKMARKS = [
                 "url": "https://www.bloomberg.com"
               },
               {
-                "title": "Yahoo Finance",
-                "url": "https://finance.yahoo.com"
+                "title": "Yahoo News",
+                "url": "https://news.yahoo.com",
+                "notes": [
+                  {
+                    "title": "Yahoo Finance",
+                    "url": "https://finance.yahoo.com"
+                  },
+                  {
+                    "title": "Yahoo ニュース",
+                    "url": "https://news.yahoo.co.jp"
+                  },
+                  {
+                    "title": "Yahoo 奇摩新聞",
+                    "url": "https://tw.news.yahoo.com"
+                  },
+                  {
+                    "title": "Yahoo 新聞",
+                    "url": "https://hk.news.yahoo.com"
+                  }
+                ]
               },
               {
                 "title": "Associated Press News",
