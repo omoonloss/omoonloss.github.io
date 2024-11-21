@@ -4,7 +4,7 @@
 // {"Bookmark with notes":{"url":"https://example.com","notes":["Text Notes only"]}
 // {"Regular Bookmark":"https://example.com"}
 
-const fs = require("fs");
+const fs = require("node:fs");
 
 const { faker } = require("@faker-js/faker");
 
