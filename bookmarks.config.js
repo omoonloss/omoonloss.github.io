@@ -146,10 +146,6 @@ export const BOOKMARKS = [
                 "url": "https://www.inoreader.com"
               },
               {
-                "title": "Omnivore",
-                "url": "https://omnivore.app"
-              },
-              {
                 "title": "Instapaper",
                 "url": "https://www.instapaper.com"
               },
@@ -1677,6 +1673,10 @@ export const BOOKMARKS = [
               {
                 "title": "机核 GCORES",
                 "url": "https://www.gcores.com"
+              },
+              {
+                "title": "4Gamers",
+                "url": "https://www.4gamers.com.tw"
               },
               {
                 "title": "发现 | 奶牛关",
@@ -3722,10 +3722,10 @@ export const BOOKMARKS = [
                 "title": "Z-Library",
                 "url": "https://z-library.sk",
                 "notes": [
-                  {
-                    "title": "Z-Library-LoginPage1",
-                    "url": "https://singlelogin.re"
-                  },
+                  // {
+                  //   "title": "Z-Library-LoginPage1",
+                  //   "url": ""
+                  // },
                   {
                     "title": "Z-Library-Clients",
                     "url": "https://go-to-library.sk"
