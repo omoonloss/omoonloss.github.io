@@ -926,7 +926,13 @@ export const BOOKMARKS = [
               },
               {
                 "title": "端傳媒 Initium Media",
-                "url": "https://theinitium.com"
+                "url": "https://theinitium.com",
+                "notes": [
+                  {
+                    "title": "Initium",
+                    "url": "https://app.theinitium.com/t/latest/latest_sc/"
+                  }
+                ]
               },
               {
                 "title": "Yahoo 奇摩新聞",
