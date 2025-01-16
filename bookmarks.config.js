@@ -3774,6 +3774,10 @@ export const BOOKMARKS = [
                   {
                     "title": "Anna's Archive-Mirror1",
                     "url": "https://annas-archive.li"
+                  },
+                  {
+                    "title": "Anna's Archive-Mirror2",
+                    "url": "https://annas-archive.se"
                   }
                 ]
               },
