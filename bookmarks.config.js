@@ -1273,8 +1273,8 @@ export const BOOKMARKS = [
                 "url": "https://weekly.tw93.fun"
               },
               {
-                "title": "AIGC周刊",
-                "url": "https://op7418.zhubai.love"
+                "title": "AIGC 周刊",
+                "url": "https://quaily.com/op7418"
               },
               {
                 "title": "奇舞周刊",
@@ -1419,11 +1419,15 @@ export const BOOKMARKS = [
               },
               {
                 "title": "🏰 城堡阅读",
-                "url": "https://cbydzk.zhubai.love",
+                "url": "https://www.yuque.com/cbyd/chengbao",
                 "notes": [
                   {
-                    "title": "往期存档",
-                    "url": "https://www.yuque.com/gaohui-bdaa2/chengbao"
+                    "title": "Link1",
+                    "url": "https://quaily.com/cbyd1991"
+                  },
+                  {
+                    "title": "Link2",
+                    "url": "https://xiaobot.net/p/cbyd?refer=421ec143-c03f-4060-87db-8dedc211add4"
                   }
                 ]
               },
@@ -1528,26 +1532,12 @@ export const BOOKMARKS = [
                 "url": "https://laixin.one"
               },
               {
-                "title": "Joe 的折腾日记",
-                "url": "https://houjoe.zhubai.love",
-                "notes": [
-                  {
-                    "title": "用 Notion 阅读",
-                    "url": "https://houjoe.notion.site/houjoe/Joe-2a85f5be01004cd2b6a5ad26fbb948b1"
-                  }
-                ]
-              },
-              {
                 "title": "啰里啰唆",
-                "url": "https://luoliluosuo.zhubai.love"
+                "url": "https://notonlyshare.pages.dev"
               },
               {
                 "title": "13 的開發者週報",
                 "url": "https://www.ethanhuang13.com"
-              },
-              {
-                "title": "有趣产品咖啡馆",
-                "url": "https://yunyingxiaowanzi.zhubai.love"
               },
               {
                 "title": "推播助栏 Enrich Podcast Wave",
@@ -1617,10 +1607,6 @@ export const BOOKMARKS = [
               {
                 "title": "隐形学园",
                 "url": "https://invisible.school"
-              },
-              {
-                "title": "有(冇)用",
-                "url": "https://usefulness.zhubai.love"
               },
               {
                 "title": "On Substack",
@@ -4164,6 +4150,16 @@ export const BOOKMARKS = [
               {
                 "title": "CyberAgent Developers Blog",
                 "url": "https://developers.cyberagent.co.jp/blog"
+              },
+              {
+                "title": "Joe 的折腾日记",
+                "url": "https://houjoe.me",
+                "notes": [
+                  {
+                    "title": "用 Notion 阅读",
+                    "url": "https://houjoe.notion.site/houjoe/Joe-2a85f5be01004cd2b6a5ad26fbb948b1"
+                  }
+                ]
               },
             ]
           },
