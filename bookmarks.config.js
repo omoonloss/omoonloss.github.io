@@ -323,6 +323,10 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "Pocket Casts Web Player",
+                "url": "https://play.pocketcasts.com"
+              },
+              {
                 "title": "PodLink",
                 "url": "https://pod.link"
               },
@@ -1819,6 +1823,53 @@ export const BOOKMARKS = [
               {
                 "title": "一席",
                 "url": "https://www.yixi.tv"
+              },
+            ]
+          },
+          {
+            "title": "Islamic",
+            "links": [
+              {
+                "title": "中國回教協會",
+                "url": "https://www.cmainroc.org.tw",
+                "notes": [
+                  {
+                    "title": "台灣清真產業品質保證推廣協會",
+                    "url": "https://www.thida.org/tw"
+                  },
+                  {
+                    "title": "Wikipedia",
+                    "url": "https://zh.wikipedia.org/zh-tw/%E4%B8%AD%E5%9C%8B%E5%9B%9E%E6%95%99%E5%8D%94%E6%9C%83"
+                  }
+                ]
+              },
+              {
+                "title": "伊斯蘭之光",
+                "url": "https://www.islam.org.hk",
+                "notes": [
+                  {
+                    "title": "中華回教博愛社",
+                    "url": "https://www.cmcfa.org.hk"
+                  }
+                ]
+              },
+              {
+                "title": "Muis: Majlis Ugama Islam Singapura",
+                "url": "https://www.muis.gov.sg"
+              },
+              {
+                "title": "Nusuk Hajj Platform",
+                "url": "https://hajj.nusuk.sa"
+              },
+              {
+                "title": "Prayer Times and Adhan Player",
+                "url": "https://aladhan.com",
+                "notes": [
+                  {
+                    "title": "Git Repo",
+                    "url": "https://github.com/islamic-network"
+                  }
+                ]
               },
             ]
           },
