@@ -197,6 +197,10 @@ export const BOOKMARKS = [
                 "url": "https://x.com",
                 "notes": [
                   {
+                    "title": "nitter",
+                    "url": "https://nitter.net"
+                  },
+                  {
                     "title": "nitter-git-repo",
                     "url": "https://github.com/zedeus/nitter"
                   },
