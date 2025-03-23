@@ -2535,6 +2535,18 @@ export const BOOKMARKS = [
                 "title": "国立公文書館 デジタルアーカイブ",
                 "url": "https://www.digital.archives.go.jp"
               },
+              {
+                /*
+                梵蒂冈的圣彼得大教堂 3D 导览
+                */
+                "title": "St. Peter’s Basilica",
+                "url": "https://virtual.basilicasanpietro.va/en",
+                "notes": [
+                  {
+                    "title": "梵蒂冈的圣彼得大教堂 3D 导览"
+                  }
+                ]
+              },
             ]
           },
           {
