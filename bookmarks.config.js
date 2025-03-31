@@ -197,8 +197,12 @@ export const BOOKMARKS = [
                 "url": "https://x.com",
                 "notes": [
                   {
-                    "title": "nitter",
+                    "title": "nitter1",
                     "url": "https://nitter.net"
+                  },
+                  {
+                    "title": "nitter2",
+                    "url": "https://nitter.poast.org"
                   },
                   {
                     "title": "nitter-git-repo",
@@ -295,6 +299,10 @@ export const BOOKMARKS = [
             "title": "Movies & TV Shows",
             "links": [
               {
+                "title": "Kanopy",
+                "url": "https://www.kanopy.com"
+              },
+              {
                 "title": "IMDb",
                 "url": "https://www.imdb.com",
                 "notes": [
@@ -304,8 +312,12 @@ export const BOOKMARKS = [
                 ]
               },
               {
-                "title": "Kanopy",
-                "url": "https://www.kanopy.com"
+                "title": "NeoDB",
+                "url": "https://neodb.social/discover/"
+              },
+              {
+                "title": "Douban",
+                "url": "https://movie.douban.com"
               }
             ]
           },
