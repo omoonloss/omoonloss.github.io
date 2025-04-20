@@ -732,7 +732,13 @@ export const BOOKMARKS = [
             "links": [
               {
                 "title": "Youtube",
-                "url": "https://www.youtube.com"
+                "url": "https://www.youtube.com",
+                "notes": [
+                  {
+                    "title": "Your All Subscriptions",
+                    "url": "https://www.youtube.com/feed/channels"
+                  }
+                ]
               },
               {
                 "title": "Odysee",
