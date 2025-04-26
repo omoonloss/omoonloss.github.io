@@ -674,6 +674,10 @@ export const BOOKMARKS = [
                 "url": "https://music.youtube.com"
               },
               {
+                "title": "SoundCloud",
+                "url": "https://soundcloud.com"
+              },
+              {
                 /*
                 Discover amazing new music and directly support the artists who make it.
                 */
@@ -1342,6 +1346,10 @@ export const BOOKMARKS = [
                     "title": "Guides, information, and news about the Fedora operating system for users, developers, system administrators, and community members."
                   }
                 ]
+              },
+              {
+                "title": "openSUSE News",
+                "url": "https://news.opensuse.org"
               },
               {
                 /*
