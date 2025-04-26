@@ -674,6 +674,10 @@ export const BOOKMARKS = [
                 "url": "https://music.youtube.com"
               },
               {
+                "title": "SoundCloud",
+                "url": "https://soundcloud.com"
+              },
+              {
                 /*
                 Discover amazing new music and directly support the artists who make it.
                 */
