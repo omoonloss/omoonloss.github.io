@@ -2092,7 +2092,7 @@ export const BOOKMARKS = [
               },
               {
                 "title": "田间小站",
-                "url": "https://www.tjxz.cc"
+                "url": "https://www.tianfateng.cn"
               },
               {
                 /*
@@ -4607,8 +4607,14 @@ export const BOOKMARKS = [
                 "url": "https://paywallbuster.com"
               },
               {
-                "title": "12ft Ladder",
-                "url": "https://12ft.io"
+                "title": "13ft Ladder",
+                "url": "https://13ft.wasimaster.me",
+                "notes": [
+                  {
+                    "title": "Github Repostery",
+                    "url": "https://github.com/wasi-master/13ft"
+                  }
+                ]
               },
               {
                 "title": "RemovePaywall | Free online paywall remover",
