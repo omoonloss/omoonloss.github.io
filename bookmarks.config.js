@@ -262,22 +262,18 @@ export const BOOKMARKS = [
                 AI Playground by Vercel Labs
                 https://play.vercel.ai
                 */
-                "title": "Vercel AI Playground",
-                "url": "https://sdk.vercel.ai/playground",
+                "title": "AI Playground | Vercel",
+                "url": "https://ai-sdk.dev/playground",
                 "notes": [
                   {
-                    "title": "Next.js AI Chatbot",
-                    "url": "https://chat.vercel.ai"
+                    "title": "Next.js Chatbot Template",
+                    "url": "https://demo.chat-sdk.dev"
                   },
                   {
                     "title": "Next.js AI Chatbot git repo",
                     "url": "https://github.com/vercel/ai-chatbot"
                   }
                 ]
-              },
-              {
-                "title": "HuggingChat",
-                "url": "https://huggingface.co/chat"
               },
               {
                 "title": "Claude",
@@ -330,11 +326,23 @@ export const BOOKMARKS = [
                 "notes": [
                   {
                     "title": "US",
-                    "url": "https://podcasts.apple.com/us/browse"
+                    "url": "https://podcasts.apple.com/us/new"
+                  },
+                  {
+                    "title": "JP",
+                    "url": "https://podcasts.apple.com/jp/new"
+                  },
+                  {
+                    "title": "TW",
+                    "url": "https://podcasts.apple.com/tw/new"
+                  },
+                  {
+                    "title": "HK",
+                    "url": "https://podcasts.apple.com/hk/new"
                   },
                   {
                     "title": "CN",
-                    "url": "https://podcasts.apple.com/cn/browse"
+                    "url": "https://podcasts.apple.com/cn/new"
                   }
                 ]
               },
