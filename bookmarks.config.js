@@ -761,6 +761,10 @@ export const BOOKMARKS = [
                 "url": "https://www.bilibili.com"
               },
               {
+                "title": "巴哈姆特動畫瘋",
+                "url": "https://ani.gamer.com.tw"
+              },
+              {
                 "title": "新片场",
                 "url": "https://www.xinpianchang.com"
               },
