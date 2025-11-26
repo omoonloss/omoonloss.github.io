@@ -571,6 +571,10 @@ export const BOOKMARKS = [
                 "url": "https://www.merriam-webster.com"
               },
               {
+                "title": "Macquarie Dictionary (麦考瑞词典)",
+                "url": "https://www.macquariedictionary.com.au"
+              },
+              {
                 "title": "Weblio 日中中日辞典",
                 "url": "https://cjjc.weblio.jp"
               },
