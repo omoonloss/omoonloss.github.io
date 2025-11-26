@@ -769,6 +769,16 @@ export const BOOKMARKS = [
                 "url": "https://www.xinpianchang.com"
               },
               {
+                "title": "韩小圈 (原韩剧TV)",
+                "url": "https://www.hanju.com",
+                "notes": [
+                  {
+                    "title": "Microsoft Store",
+                    "url": "https://apps.microsoft.com/detail/xp9kg7jxzhkqmm?hl=zh-CN&gl=CN"
+                  }
+                ]
+              },
+              {
                 "title": "TW live",
                 "url": "https://tw.live"
               },
