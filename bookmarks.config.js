@@ -3817,27 +3817,39 @@ export const BOOKMARKS = [
                 免费下载 epub、pdf、mobi 格式电子书，支持转换为 FB2、TXT、RTF等格式
                 */
                 "title": "Z-Library",
-                "url": "https://z-library.sk",
+                "url": "https://z-library.hn",
                 "notes": [
-                  // {
-                  //   "title": "Z-Library-LoginPage1",
-                  //   "url": ""
-                  // },
+                  {
+                    "title": "Z-Library-LoginPage1",
+                    "url": "https://z-library.sk"
+                  },
+                  {
+                    "title": "Z-Library-LoginPage2",
+                    "url": "https://1lib.sk"
+                  },
+                  {
+                    "title": "Z-Library-LoginPage3",
+                    "url": "https://z-library.ec"
+                  },
                   {
                     "title": "Z-Library-Clients",
-                    "url": "https://go-to-library.sk"
+                    "url": "https://library-access.sk"
                   },
                   {
                     "title": "Z-Library-Tor",
                     "url": "http://loginzlib2vrak5zzpcocc3ouizykn6k5qecgj2tzlnab5wcbqhembyd.onion"
                   },
                   {
-                    "title": "Just send any letter from your mailbox to this email blackbox@zlib.se, and you will receive your personal access to Z-Library in the auto-generated letter within 3–5 minutes.",
+                    "title": "Wiki",
+                    "url": "https://en.wikipedia.org/wiki/Z-Library"
                   },
                   {
-                    "title": "Pirate Library Mirror",
-                    "url": "http://pilimi.org/zlib.html"
-                  }
+                    "title": "Reddit",
+                    "url": "https://www.reddit.com/r/zlibrary"
+                  },
+                  {
+                    "title": "You can access the website by contacting us via email at support@z-lib.fm. Alternatively, you can send a message to our 'magic box' at blackbox@z-library.so.The link to access the website will be sent to you in a reply email.",
+                  },
                 ]
               },
               {
@@ -3869,6 +3881,10 @@ export const BOOKMARKS = [
                   {
                     "title": "Anna's Archive-Mirror2",
                     "url": "https://annas-archive.se"
+                  },
+                  {
+                    "title": "Datasets",
+                    "url": "https://annas-archive.org/datasets"
                   }
                 ]
               },
