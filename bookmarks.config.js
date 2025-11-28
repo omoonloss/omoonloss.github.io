@@ -1914,6 +1914,10 @@ export const BOOKMARKS = [
                 "url": "https://www.muis.gov.sg"
               },
               {
+                "title": "東京ジャーミイ (Tokyo Mosque)",
+                "url": "https://tokyocamii.org"
+              },
+              {
                 "title": "Nusuk Hajj Platform",
                 "url": "https://hajj.nusuk.sa"
               },
@@ -2232,6 +2236,24 @@ export const BOOKMARKS = [
                     "url": "https://www3.nhk.or.jp/news/easy/"
                   }
                 ]
+              },
+              {
+                "title": "エリンが挑戦！にほんごできます。コンテンツライブラリー",
+                "url": "https://www.erin.jpf.go.jp",
+                "notes": [
+                  {
+                    "title": "国際交流基金",
+                    "url": "https://www.jpf.go.jp/j/urawa/"
+                  }
+                ]
+              },
+              {
+                "title": "GENKI",
+                "url": "https://genki3.japantimes.co.jp/en/"
+              },
+              {
+                "title": "QUARTET",
+                "url": "https://quartet.japantimes.co.jp/en/"
               },
             ]
           },
