@@ -5,17 +5,17 @@
   "dependencies": {
     "@darekkay/styles": "5.5.0",
     "clsx": "2.1.1",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-router-dom": "^7.6.1"
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "react-router-dom": "^7.10.1"
   },
   "devDependencies": {
     "@darekkay/scripts": "^3.1.0",
-    "@faker-js/faker": "^10.0.0",
-    "@vitejs/plugin-react": "^5.0.3",
+    "@faker-js/faker": "^10.1.0",
+    "@vitejs/plugin-react": "^5.1.1",
     "inline-source": "^8.0.3",
-    "sass": "^1.89.1",
-    "vite": "^7.1.7"
+    "sass": "^1.94.2",
+    "vite": "^7.2.6"
   },
   "engines": {
     "node": ">=18.0.0"
