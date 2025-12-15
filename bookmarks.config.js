@@ -482,8 +482,8 @@ export const BOOKMARKS = [
                 "url": "https://www.bing.com/maps"
               },
               {
-                "title": "Apple Maps",
-                "url": "https://beta.maps.apple.com"
+                "title": "高德地图",
+                "url": "https://www.amap.com"
               },
               {
                 "title": "向日葵-8号",
