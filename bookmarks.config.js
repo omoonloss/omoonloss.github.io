@@ -2255,6 +2255,10 @@ export const BOOKMARKS = [
                 "title": "QUARTET",
                 "url": "https://quartet.japantimes.co.jp/en/"
               },
+              {
+                "title": "LanguageTool",
+                "url": "https://languagetool.org"
+              },
             ]
           },
           {
@@ -3908,19 +3912,19 @@ export const BOOKMARKS = [
               },
               {
                 "title": "Anna's Archive",
-                "url": "https://annas-archive.org",
+                "url": "https://annas-archive.li",
                 "notes": [
                   {
                     "title": "Anna's Archive-Mirror1",
-                    "url": "https://annas-archive.li"
-                  },
-                  {
-                    "title": "Anna's Archive-Mirror2",
-                    "url": "https://annas-archive.se"
+                    "url": "https://annas-archive.pm"
                   },
                   {
                     "title": "Datasets",
-                    "url": "https://annas-archive.org/datasets"
+                    "url": "https://annas-archive.li/datasets"
+                  },
+                  {
+                    "title": "Wikipedia",
+                    "url": "https://en.wikipedia.org/wiki/Anna%27s_Archive"
                   }
                 ]
               },
@@ -3950,13 +3954,12 @@ export const BOOKMARKS = [
                 "url": "https://coderprog.com"
               },
               {
-                "title": "PDF Drive",
-                "url": "https://www.pdfdrive.com",
-                "notes": [
-                  {
-                    "title": "Search and download PDF files for free."
-                  }
-                ]
+                "title": "WeLib",
+                "url": "https://welib.org"
+              },
+              {
+                "title": "OceanofPDF",
+                "url": "https://oceanofpdf.com"
               },
               {
                 "title": "IT eBooks",
