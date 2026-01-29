@@ -280,14 +280,8 @@ export const BOOKMARKS = [
                 "url": "https://claude.ai/chats"
               },
               {
-                "title": "DuckDuckGo AI Chat",
-                "url": "https://duckduckgo.com/?q=AI+Chat&ia=chat&duckai=1",
-                "notes": [
-                  {
-                    "title": "Duck AI ",
-                    "url": "https://duck.ai"
-                  }
-                ]
+                "title": "Duck.ai by DuckDuckGo",
+                "url": "https://duck.ai"
               },
             ]
           },
@@ -1912,6 +1906,10 @@ export const BOOKMARKS = [
               {
                 "title": "Muis: Majlis Ugama Islam Singapura",
                 "url": "https://www.muis.gov.sg"
+              },
+              {
+                "title": "Consulate General of Malaysia in Shanghai",
+                "url": "https://www.kln.gov.my/web/chn_shanghai/news-from-mission"
               },
               {
                 "title": "東京ジャーミイ (Tokyo Mosque)",
