@@ -50,6 +50,24 @@ export const BOOKMARKS = [
                 "url": "https://duckduckgo.com"
               },
               {
+                "title": "Yahoo",
+                "url": "https://www.yahoo.com",
+                "notes": [
+                  {
+                    "title": "Yahoo TW",
+                    "url": "https://tw.yahoo.com"
+                  },
+                  {
+                    "title": "Yahoo HK",
+                    "url": "https://hk.yahoo.com"
+                  },
+                  {
+                    "title": "Yahoo JP",
+                    "url": "https://www.yahoo.co.jp"
+                  }
+                ]
+              },
+              {
                 "title": "NAVER",
                 "url": "https://www.naver.com"
               },
