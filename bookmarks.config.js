@@ -120,15 +120,6 @@ export const BOOKMARKS = [
                 "url": "https://www.dedigger.com"
               },
               {
-                "title": "ONYPHE",
-                "url": "https://www.onyphe.io",
-                "notes": [
-                  {
-                    "title": "Cyber Defense Search Engine"
-                  }
-                ]
-              },
-              {
                 "title": "Shodan",
                 "url": "https://www.shodan.io",
                 "notes": [
@@ -917,10 +908,6 @@ export const BOOKMARKS = [
                   {
                     "title": "Yahoo 奇摩新聞",
                     "url": "https://tw.news.yahoo.com"
-                  },
-                  {
-                    "title": "Yahoo 新聞",
-                    "url": "https://hk.news.yahoo.com"
                   }
                 ]
               },
@@ -1908,6 +1895,16 @@ export const BOOKMARKS = [
                   {
                     "title": "Wikipedia",
                     "url": "https://zh.wikipedia.org/zh-tw/%E4%B8%AD%E5%9C%8B%E5%9B%9E%E6%95%99%E5%8D%94%E6%9C%83"
+                  }
+                ]
+              },
+              {
+                "title": "台北清真寺 Taipei Grand Mosque",
+                "url": "https://www.taipeimosque.org.tw",
+                "notes": [
+                  {
+                    "title": "脸书",
+                    "url": "https://www.facebook.com/taipeimosque"
                   }
                 ]
               },
@@ -3928,15 +3925,23 @@ export const BOOKMARKS = [
               },
               {
                 "title": "Anna's Archive",
-                "url": "https://annas-archive.li",
+                "url": "https://annas-archive.gl",
                 "notes": [
                   {
                     "title": "Anna's Archive-Mirror1",
-                    "url": "https://annas-archive.pm"
+                    "url": "https://annas-archive.vg"
+                  },
+                  {
+                    "title": "Anna's Archive-Mirror2",
+                    "url": "https://annas-archive.pk"
+                  },
+                  {
+                    "title": "Anna's Archive-Mirror3",
+                    "url": "https://annas-archive.gd"
                   },
                   {
                     "title": "Datasets",
-                    "url": "https://annas-archive.li/datasets"
+                    "url": "https://annas-archive.gl/datasets"
                   },
                   {
                     "title": "Wikipedia",
