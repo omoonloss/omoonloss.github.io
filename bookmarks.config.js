@@ -3928,15 +3928,23 @@ export const BOOKMARKS = [
               },
               {
                 "title": "Anna's Archive",
-                "url": "https://annas-archive.li",
+                "url": "https://annas-archive.gl",
                 "notes": [
                   {
                     "title": "Anna's Archive-Mirror1",
-                    "url": "https://annas-archive.pm"
+                    "url": "https://annas-archive.vg"
+                  },
+                  {
+                    "title": "Anna's Archive-Mirror2",
+                    "url": "https://annas-archive.pk"
+                  },
+                  {
+                    "title": "Anna's Archive-Mirror3",
+                    "url": "https://annas-archive.gd"
                   },
                   {
                     "title": "Datasets",
-                    "url": "https://annas-archive.li/datasets"
+                    "url": "https://annas-archive.gl/datasets"
                   },
                   {
                     "title": "Wikipedia",
