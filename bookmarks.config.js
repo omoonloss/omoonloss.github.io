@@ -263,6 +263,10 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "Gemini",
+                "url": "https://gemini.google.com"
+              },
+              {
                 "title": "Workers AI LLM Playground",
                 "url": "https://playground.ai.cloudflare.com"
               },
