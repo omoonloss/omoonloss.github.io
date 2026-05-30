@@ -448,7 +448,7 @@ export const BOOKMARKS = [
             "links": [
               {
                 "title": "Notion",
-                "url": "https://www.notion.so"
+                "url": "https://app.notion.com"
               },
               {
                 "title": "Obsidian",
@@ -1195,7 +1195,7 @@ export const BOOKMARKS = [
                 "notes": [
                   {
                     "title": "Next HN",
-                    "url": "https://h.moonloss.com"
+                    "url": "https://hn-ng.vercel.app"
                   },
                   {
                     /*
@@ -1556,7 +1556,7 @@ export const BOOKMARKS = [
                 "notes": [
                   {
                     "title": "Λ-Reading 往期目录 (Notion)",
-                    "url": "https://www.notion.so/rizi/Reading-d77be691eb244db0b8add646b6ef7f3b"
+                    "url": "https://app.notion.com/p/rizi/Reading-d77be691eb244db0b8add646b6ef7f3b"
                   }
                 ]
               },
@@ -4330,7 +4330,7 @@ export const BOOKMARKS = [
               },
               {
                 "title": "Notion Blog",
-                "url": "https://www.notion.so/blog"
+                "url": "https://www.notion.com/blog"
               },
               {
                 "title": "CyberAgent Developers Blog",
