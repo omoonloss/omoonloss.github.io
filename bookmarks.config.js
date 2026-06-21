@@ -1835,6 +1835,84 @@ export const BOOKMARKS = [
             ]
           },
           {
+            "title": "Finance",
+            "links": [
+              {
+                "title": "Federal Reserve Economic Data | FRED",
+                "url": "https://fred.stlouisfed.org"
+              },
+              {
+                "title": "Yahoo 股市-國際金融",
+                "url": "https://tw.stock.yahoo.com/markets/"
+              },
+              {
+                "title": "Yahoo Finace-Markets",
+                "url": "https://finance.yahoo.com/markets/"
+              },
+              {
+                "title": "MarketWatch",
+                "url": "https://www.marketwatch.com"
+              },
+              {
+                "title": "CNBC",
+                "url": "https://www.cnbc.com/markets/",
+                "notes": [
+                  {
+                    "title": "Consumer News and Business Channel"
+                  }
+                ]
+              },
+              {
+                "title": "Bloomberg Markets",
+                "url": "https://www.bloomberg.com/markets/"
+              },
+              {
+                "title": "Morningstar",
+                "url": "https://www.morningstar.com"
+              },
+              {
+                "title": "Finviz",
+                "url": "https://finviz.com"
+              },
+              {
+                "title": "TradingView",
+                "url": "https://www.tradingview.com"
+              },
+              {
+                "title": "Investing",
+                "url": "https://www.investing.com"
+              },
+              {
+                "title": "WhaleWisdom",
+                "url": "https://whalewisdom.com"
+              },
+              {
+                "title": "WiseETF",
+                "url": "https://www.wise-etf.com"
+              },
+              {
+                "title": "Nikkei 225",
+                "url": "https://indexes.nikkei.co.jp/en/nkave/index/profile?idx=nk225",
+                "notes": [
+                  {
+                    "title": "日经平均股价指数（日经225）",
+                    "url": "https://indexes.nikkei.co.jp/cz/nkave/index/profile"
+                  }
+                ]
+              },
+              {
+                "title": "估价计算小助手",
+                "url": "http://16j.cn",
+                "notes": [
+                  {
+                    "title": "今日买卖明细清单",
+                    "url": "https://sdocapp.com/s/WsBm8XpqHPB35FTRH"
+                  }
+                ]
+              },
+            ]
+          },
+          {
             "title": "Documentary",
             "links": [
               {
