@@ -4867,8 +4867,14 @@ export const BOOKMARKS = [
                 /*
                 Conversion between Traditional and Simplified Chinese
                 */
-                "title": "開放中文轉換 Open Chinese Convert (OpenCC)",
-                "url": "https://opencc.byvoid.com"
+                "title": "OpenCC 開放中文轉換",
+                "url": "https://opencc.byvoid.com",
+                "notes": [
+                  {
+                    "title": "OpenCC WASM",
+                    "url": "https://opencc.js.org"
+                  }
+                ]
               },
               {
                 "title": "NirSoft",
