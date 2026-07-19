@@ -1030,6 +1030,24 @@ export const BOOKMARKS = [
                 ]
               },
               {
+                "title": "共同通讯社",
+                "url": "https://www.47news.jp",
+                "notes": [
+                  {
+                    "title": "English",
+                    "url": "https://english.kyodonews.net"
+                  },
+                  {
+                    "title": "简体中文",
+                    "url": "https://china.kyodonews.net"
+                  },
+                  {
+                    "title": "繁体中文",
+                    "url": "https://tchina.kyodonews.net"
+                  }
+                ]
+              },
+              {
                 "title": "财新网",
                 "url": "https://www.caixin.com",
                 "notes": [
