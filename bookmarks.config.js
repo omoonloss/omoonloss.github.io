@@ -50,6 +50,14 @@ export const BOOKMARKS = [
                 "url": "https://duckduckgo.com"
               },
               {
+                /**
+                 * No account required for the first 50 searches
+                 * (100 more upon registration)
+                 */
+                "title": "Kagi",
+                "url": "https://kagi.com"
+              },
+              {
                 "title": "Yahoo",
                 "url": "https://www.yahoo.com",
                 "notes": [
@@ -2446,8 +2454,20 @@ export const BOOKMARKS = [
                 "url": "https://sci-hub.st",
                 "notes": [
                   {
+                    "title": "Sci-Hub Mirror1",
+                    "url": "https://sci-hub.su"
+                  },
+                  {
+                    "title": "Sci-Hub Mirror2",
+                    "url": "https://sci-hub.box"
+                  },
+                  {
+                    "title": "Sci-Hub Mirror3",
+                    "url": "https://sci-hub.ru"
+                  },
+                  {
                     "title": "Sci-Hub Links",
-                    "url": "https://sci-hub.41610.org"
+                    "url": "https://shadowlibraries.github.io"
                   },
                   {
                     "title": "Sci-Hub 文献检索",
@@ -3427,7 +3447,7 @@ export const BOOKMARKS = [
             "title": "Publisher",
             "links": [
               {
-                "title": "Linking Publishing(聯經出版)",
+                "title": "聯經出版",
                 "url": "https://www.linkingbooks.com.tw"
               },
               {
@@ -3505,13 +3525,16 @@ export const BOOKMARKS = [
                   }
                 ]
               },
-              {
-                "title": "Dark Horse Digital Comics",
-                "url": "https://digital.darkhorse.com"
-              },
+              // {
+              //   /**
+              //    * Dark Horse Digital officially shut down its direct-to-consumer digital comics platform on February 24, 2025.
+              //    */
+              //   "title": "Dark Horse Digital Comics",
+              //   "url": "https://digital.darkhorse.com"
+              // },
               {
                 "title": "译言古登堡计划",
-                "url": "http://g.yeeyan.com"
+                "url": "https://g.yeeyan.com"
               },
               {
                 "title": "图灵社区",
@@ -3544,15 +3567,6 @@ export const BOOKMARKS = [
                 "notes": [
                   {
                     "title": "Publisher of Professional & Academic Books"
-                  }
-                ]
-              },
-              {
-                "title": "raywenderlich",
-                "url": "https://www.raywenderlich.com",
-                "notes": [
-                  {
-                    "title": "High quality programming tutorials: iOS, Android, Swift, Kotlin, Flutter, Server Side Swift, Unity, and more!"
                   }
                 ]
               },
@@ -3617,16 +3631,8 @@ export const BOOKMARKS = [
                 "url": "https://www.epubit.com"
               },
               {
-                /*
-                在线电子书分享平台是法国一个成立于2007年的老牌便携式移动设备电子书籍下载及其付费阅读的网站，
-                用户可以下载超过8万本的免费电子书。
-                */
-                "title": "Feedbooks",
-                "url": "https://www.feedbooks.com"
-              },
-              {
                 "title": "McGraw Hill Professional",
-                "url": "https://www.mhprofessional.com"
+                "url": "https://www.mheducation.com/highered.html"
               },
               {
                 /*
@@ -3659,7 +3665,7 @@ export const BOOKMARKS = [
                 据说是世界上容量最大的图书馆目录，也可以查大学图书馆的馆藏。
                 */
                 "title": "WorldCat",
-                "url": "https://www.worldcat.org"
+                "url": "https://search.worldcat.org"
               },
               {
                 "title": "ScholarWorks",
@@ -3674,25 +3680,7 @@ export const BOOKMARKS = [
                 可能是最好用的古籍资料下载网站
                 */
                 "title": "书格",
-                "url": "https://new.shuge.org"
-              },
-              {
-                "title": "知識圖譜",
-                "url": "https://cnkgraph.com/Book"
-              },
-              {
-                /*
-                以新的方式发现书籍，就像逛书店一样
-                */
-                "title": "Shepherd",
-                "url": "https://shepherd.com"
-              },
-              {
-                /*
-                台湾一个社科书籍推荐网站
-                */
-                "title": "菜市场政治学",
-                "url": "https://whogovernstw.org"
+                "url": "https://www.shuge.org"
               },
               {
                 /*
@@ -3702,19 +3690,12 @@ export const BOOKMARKS = [
                 "url": "https://cultural.jp/en"
               },
               {
-                /*
-                除了资源多，鸠摩还贴心地按照不同的格式对书籍进行了分类
-                */
-                "title": "鸠摩搜索",
-                "url": "https://www.jiumodiary.com"
-              },
-              {
                 "title": "熊猫搜书",
                 "url": "https://xmsoushu.com"
               },
               {
                 "title": "古籍馆",
-                "url": "https://www.gujiguan.com/index.aspx"
+                "url": "https://www.gujiguan.com"
               },
               {
                 "title": "瀚堂近代报刊数据库",
@@ -3723,10 +3704,6 @@ export const BOOKMARKS = [
               {
                 "title": "台灣電子書搜尋",
                 "url": "https://taiwan-ebook-lover.github.io"
-              },
-              {
-                "title": "易书 书籍检索",
-                "url": "https://search.yibook.org"
               },
             ]
           },
@@ -3762,10 +3739,10 @@ export const BOOKMARKS = [
               },
               {
                 /*
-                一个收录各种优质程序书籍的网站，还在不断丰富中…… 
+                * 台湾一个社科书籍推荐网站
                 */
-                "title": "The best Programming books",
-                "url": "https://www.best-books.dev"
+                "title": "菜市场政治学",
+                "url": "https://whogovernstw.org"
               },
               {
                 "title": "Literary Hub",
@@ -3787,8 +3764,8 @@ export const BOOKMARKS = [
                 盖蒂出版社的一位经理说：“当一本绝版书的再版没有经济意义时，就几乎不会有出版社将这本书再次出版，
                 很多好书也因此消失。盖蒂图书馆希望能用电子版书籍的形式，让更多人能看到这些濒临消失的书籍。”
                 */
-                "title": "Getty Publications Virtual Library",
-                "url": "https://www.getty.edu/publications/virtuallibrary"
+                "title": "Getty Publications",
+                "url": "https://www.getty.edu/publications-reports/"
               },
               {
                 /*
@@ -3824,7 +3801,17 @@ export const BOOKMARKS = [
               },
               {
                 "title": "浙江图书馆",
-                "url": "https://www.zjlib.cn"
+                "url": "https://www.zjlib.cn",
+                "notes": [
+                  {
+                    "title": "浙江图书馆网借平台",
+                    "url": "https://loan.zjlib.cn"
+                  },
+                  {
+                    "title": "杭州图书馆",
+                    "url": "https://www.zjhzlib.cn"
+                  }
+                ]
               },
             ]
           },
@@ -3917,10 +3904,19 @@ export const BOOKMARKS = [
               },
               {
                 /*
-                繁体字的界面，一个推广中文电子书的公益网站，建站于2001年。
+                * 繁体字的界面，一个推广中文电子书的公益网站，建站于2001年。
                 */
                 "title": "好讀",
-                "url": "http://www.haodoo.net"
+                "url": "https://haodoo.org",
+                "notes": [
+                  {
+                    /**
+                     * Haodoo.net continues to serve as a historical archive for the pre-2022 content.
+                     */
+                    "title": "the pre-2022 content",
+                    "url": "https://www.haodoo.net"
+                  }
+                ]
               },
               {
                 "title": "七彩英语",
@@ -3936,11 +3932,7 @@ export const BOOKMARKS = [
               },
               {
                 "title": "Archive for the History of Economic Thought",
-                "url": "https://socialsciences.mcmaster.ca/econ/ugcm/3ll3/"
-              },
-              {
-                "title": "亚马逊 Kindle 商店免费中文电子书",
-                "url": "https://www.amazon.cn/free?tag=personalass1014-23"
+                "url": "https://socserv.socsci.mcmaster.ca/~econ/ugcm/3ll3/"
               },
               {
                 "title": "LibriVox",
@@ -3974,15 +3966,23 @@ export const BOOKMARKS = [
                 "notes": [
                   {
                     "title": "Z-Library-LoginPage1",
-                    "url": "https://z-library.sk"
+                    "url": "https://z-lib.sk"
                   },
                   {
                     "title": "Z-Library-LoginPage2",
-                    "url": "https://1lib.sk"
+                    "url": "https://z-lib.gl"
                   },
                   {
                     "title": "Z-Library-LoginPage3",
-                    "url": "https://z-library.ec"
+                    "url": "https://z-lib.gd"
+                  },
+                  {
+                    "title": "Z-Library-LoginPage4",
+                    "url": "https://z-library.sk"
+                  },
+                  {
+                    "title": "Z-Library-LoginPage5",
+                    "url": "https://1lib.sk"
                   },
                   {
                     "title": "Z-Library-Clients",
@@ -4007,19 +4007,19 @@ export const BOOKMARKS = [
               },
               {
                 /*
-                http://gen.lib.rus.ec 超有名的俄罗斯网站，真的有超多书籍！
-                教科书在这里甚至能直接找到原版！中文书籍也超丰富的啊！
+                * 超有名的俄罗斯网站，真的有超多书籍！
+                * 教科书在这里甚至能直接找到原版！中文书籍也超丰富的啊！
                 */
                 "title": "Library Genesis",
-                "url": "https://libgen.rs",
+                "url": "https://libgen.bz",
                 "notes": [
                   {
                     "title": "Library Genesis-Mirror1",
-                    "url": "https://libgen.is"
+                    "url": "https://libgen.li"
                   },
                   {
                     "title": "Library Genesis-Mirror2",
-                    "url": "https://libgen.st"
+                    "url": "https://libgen.la"
                   }
                 ]
               },
@@ -4029,14 +4029,10 @@ export const BOOKMARKS = [
                 "notes": [
                   {
                     "title": "Anna's Archive-Mirror1",
-                    "url": "https://annas-archive.vg"
-                  },
-                  {
-                    "title": "Anna's Archive-Mirror2",
                     "url": "https://annas-archive.pk"
                   },
                   {
-                    "title": "Anna's Archive-Mirror3",
+                    "title": "Anna's Archive-Mirror2",
                     "url": "https://annas-archive.gd"
                   },
                   {
@@ -4048,14 +4044,6 @@ export const BOOKMARKS = [
                     "url": "https://en.wikipedia.org/wiki/Anna%27s_Archive"
                   }
                 ]
-              },
-              {
-                "title": "Let Me Read",
-                "url": "https://www.letmeread.net"
-              },
-              {
-                "title": "LoreFree",
-                "url": "https://ebook2.lorefree.com"
               },
               {
                 /*
@@ -4087,10 +4075,6 @@ export const BOOKMARKS = [
                 "url": "https://it-ebooks.info"
               },
               {
-                "title": "我爱电子书",
-                "url": "https://www.52doc.com"
-              },
-              {
                 "title": "读者阁",
                 "url": "https://duzhege.cn"
               },
@@ -4100,44 +4084,26 @@ export const BOOKMARKS = [
               },
               {
                 "title": "SoBooks",
-                "url": "https://sobooks.net"
-              },
-              {
-                "title": "Calibre-Web-MasterGo",
-                "url": "https://read.mastergo.life"
-              },
-              {
-                "title": "Calibre-Web-Leishi",
-                "url": "https://calibre.leishi.io",
-                "notes": [
-                  {
-                    "title": "Github",
-                    "url": "https://github.com/leishi1313/"
-                  }
-                ]
-              },
-              {
-                "title": "ReadHub",
-                "url": "https://readhub.one"
+                "url": "https://sobooks.cc"
               },
               {
                 "title": "恩京的书房",
-                "url": "https://www.enjing.com"
+                "url": "https://www.enjing.net"
               },
               {
                 "title": "雅书",
                 "url": "https://yabook.org"
               },
-              {
-                "title": "天浪书屋",
-                "url": "https://www.tianlangbooks.com",
-                "notes": [
-                  {
-                    "title": "curl_tianlangbooks",
-                    "url": "https://gist.github.com/syhily/31d7b97168289a64369d052a7032fcf1"
-                  }
-                ]
-              },
+              // {
+              //   "title": "天浪书屋",
+              //   "url": "https://www.tianlangbooks.com",
+              //   "notes": [
+              //     {
+              //       "title": "curl_tianlangbooks",
+              //       "url": "https://gist.github.com/syhily/31d7b97168289a64369d052a7032fcf1"
+              //     }
+              //   ]
+              // },
             ]
           },
           {
@@ -4148,24 +4114,8 @@ export const BOOKMARKS = [
                 "url": "https://downmagaz.net"
               },
               {
-                "title": "Magazine Reader",
-                "url": "https://mgreader.com"
-              },
-              {
-                "title": "PDF Digital Magazines",
-                "url": "https://www.worldmags.net"
-              },
-              {
                 "title": "Magzinelib",
                 "url": "https://magazinelib.com"
-              },
-              {
-                "title": "World of Magazine",
-                "url": "https://www.worldofmagazine.com"
-              },
-              {
-                "title": "E-magazines free download in pdf",
-                "url": "https://freemagazinepdf.com"
               },
               {
                 "title": "Free Magazines Online",
